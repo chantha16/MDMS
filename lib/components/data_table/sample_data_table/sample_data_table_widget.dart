@@ -2,7 +2,6 @@ import '/flutter_flow/flutter_flow_data_table.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'sample_data_table_model.dart';
 export 'sample_data_table_model.dart';
@@ -152,7 +151,7 @@ class _SampleDataTableWidgetState extends State<SampleDataTableWidget> {
               DataRow(
             selected: selected,
             onSelectChanged: onSelectChanged,
-            color: MaterialStateProperty.all(
+            color: WidgetStateProperty.all(
               itemIndex % 2 == 0
                   ? FlutterFlowTheme.of(context).secondaryBackground
                   : FlutterFlowTheme.of(context).primaryBackground,
@@ -238,9 +237,9 @@ class _SampleDataTableWidgetState extends State<SampleDataTableWidget> {
           addVerticalDivider: false,
           checkboxUnselectedFillColor: Colors.transparent,
           checkboxSelectedFillColor: Colors.transparent,
-          checkboxCheckColor: Color(0x8A000000),
-          checkboxUnselectedBorderColor: Color(0x8A000000),
-          checkboxSelectedBorderColor: Color(0x8A000000),
+          checkboxCheckColor: const Color(0x8A000000),
+          checkboxUnselectedBorderColor: const Color(0x8A000000),
+          checkboxSelectedBorderColor: const Color(0x8A000000),
         );
       },
     );

@@ -1,18 +1,12 @@
 import '/components/system_logic/barchat_comsumption/barchat_comsumption_widget.dart';
 import '/components/system_logic/com_map/com_map_widget.dart';
 import '/components/system_logic/linechart_voltage/linechart_voltage_widget.dart';
-import '/components/system_logic/search_device/search_device_widget.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/modules/deviecs/components/c_cos_info/c_cos_info_widget.dart';
 import '/modules/deviecs/components/c_tou_info/c_tou_info_widget.dart';
 import '/modules/deviecs/components/cloadprofile/cloadprofile_widget.dart';
-import 'dart:ui';
 import 'c_deviced_detail_widget.dart' show CDevicedDetailWidget;
-import 'package:aligned_dialog/aligned_dialog.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class CDevicedDetailModel extends FlutterFlowModel<CDevicedDetailWidget> {
   ///  State fields for stateful widgets in this component.

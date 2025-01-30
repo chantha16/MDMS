@@ -1,9 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'c_action_model.dart';
 export 'c_action_model.dart';
 
@@ -44,7 +41,7 @@ class _CActionWidgetState extends State<CActionWidget> {
       width: 190.0,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             blurRadius: 4.0,
             color: Color(0x33000000),
@@ -57,7 +54,7 @@ class _CActionWidgetState extends State<CActionWidget> {
         borderRadius: BorderRadius.circular(12.0),
       ),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -95,7 +92,7 @@ class _CActionWidgetState extends State<CActionWidget> {
                     ],
                   ),
                 ),
-              ].divide(SizedBox(width: 12.0)),
+              ].divide(const SizedBox(width: 12.0)),
             ),
             Row(
               mainAxisSize: MainAxisSize.max,
@@ -131,7 +128,7 @@ class _CActionWidgetState extends State<CActionWidget> {
                     ],
                   ),
                 ),
-              ].divide(SizedBox(width: 12.0)),
+              ].divide(const SizedBox(width: 12.0)),
             ),
             Row(
               mainAxisSize: MainAxisSize.max,
@@ -167,9 +164,9 @@ class _CActionWidgetState extends State<CActionWidget> {
                     ],
                   ),
                 ),
-              ].divide(SizedBox(width: 12.0)),
+              ].divide(const SizedBox(width: 12.0)),
             ),
-          ].divide(SizedBox(height: 16.0)),
+          ].divide(const SizedBox(height: 16.0)),
         ),
       ),
     );

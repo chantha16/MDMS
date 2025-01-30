@@ -5,15 +5,12 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
-import 'dart:ui';
 import '/custom_code/actions/index.dart' as actions;
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:aligned_dialog/aligned_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'table_model.dart';
 export 'table_model.dart';
 
@@ -32,11 +29,11 @@ class TableWidget extends StatefulWidget {
     bool? isNumeric,
     this.onHiddenColumnChanged,
     this.onRowCheckedItem,
-  })  : this.currentPage = currentPage ?? 0,
-        this.totalPage = totalPage ?? 0,
-        this.isCheckbox = isCheckbox ?? true,
-        this.isMoreOption = isMoreOption ?? true,
-        this.isNumeric = isNumeric ?? true;
+  })  : currentPage = currentPage ?? 0,
+        totalPage = totalPage ?? 0,
+        isCheckbox = isCheckbox ?? true,
+        isMoreOption = isMoreOption ?? true,
+        isNumeric = isNumeric ?? true;
 
   final List<ColumnModelStruct>? columns;
   final List<RowModelStruct>? rows;
@@ -72,13 +69,13 @@ class _TableWidgetState extends State<TableWidget> {
     // On component load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
       await actions.printLog(
-        'Table param column length: ${widget!.columns?.length?.toString()}',
+        'Table param column length: ${widget.columns?.length.toString()}',
       );
       await actions.printLog(
-        'Table param row length: ${widget!.rows?.length?.toString()}',
+        'Table param row length: ${widget.rows?.length.toString()}',
       );
-      _model.columns = widget!.columns!.toList().cast<ColumnModelStruct>();
-      _model.rows = widget!.rows!.toList().cast<RowModelStruct>();
+      _model.columns = widget.columns!.toList().cast<ColumnModelStruct>();
+      _model.rows = widget.rows!.toList().cast<RowModelStruct>();
       safeSetState(() {});
     });
 
@@ -95,7 +92,7 @@ class _TableWidgetState extends State<TableWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(16.0),
+      padding: const EdgeInsets.all(16.0),
       child: Container(
         width: double.infinity,
         height: double.infinity,
@@ -109,7 +106,7 @@ class _TableWidgetState extends State<TableWidget> {
               height: 50.0,
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).primaryBackground,
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(0.0),
                   bottomRight: Radius.circular(0.0),
                   topLeft: Radius.circular(10.0),
@@ -121,7 +118,7 @@ class _TableWidgetState extends State<TableWidget> {
                 children: [
                   Builder(
                     builder: (context) {
-                      if (widget!.isCheckbox) {
+                      if (widget.isCheckbox) {
                         return Container(
                           width: 50.0,
                           height: 50.0,
@@ -132,7 +129,7 @@ class _TableWidgetState extends State<TableWidget> {
                           child: Builder(
                             builder: (context) {
                               if (functions
-                                  .checkSelectAllRows(widget!.rows!.toList())) {
+                                  .checkSelectAllRows(widget.rows!.toList())) {
                                 return FlutterFlowIconButton(
                                   borderRadius: 8.0,
                                   buttonSize: 40.0,
@@ -145,7 +142,7 @@ class _TableWidgetState extends State<TableWidget> {
                                     _model.isSelectedAll = false;
                                     _model.rows = functions
                                         .updateRowsToSelectAll(
-                                            widget!.rows!.toList(), false)
+                                            widget.rows!.toList(), false)
                                         .toList()
                                         .cast<RowModelStruct>();
                                     safeSetState(() {});
@@ -165,7 +162,7 @@ class _TableWidgetState extends State<TableWidget> {
                                     _model.isSelectedAll = true;
                                     _model.rows = functions
                                         .updateRowsToSelectAll(
-                                            widget!.rows!.toList(), true)
+                                            widget.rows!.toList(), true)
                                         .toList()
                                         .cast<RowModelStruct>();
                                     safeSetState(() {});
@@ -187,7 +184,7 @@ class _TableWidgetState extends State<TableWidget> {
                   ),
                   Builder(
                     builder: (context) {
-                      if (widget!.isMoreOption) {
+                      if (widget.isMoreOption) {
                         return Container(
                           width: 50.0,
                           height: 50.0,
@@ -210,16 +207,16 @@ class _TableWidgetState extends State<TableWidget> {
                                   context: context,
                                   isGlobal: false,
                                   avoidOverflow: false,
-                                  targetAnchor: AlignmentDirectional(-1.0, 1.0)
+                                  targetAnchor: const AlignmentDirectional(-1.0, 1.0)
                                       .resolve(Directionality.of(context)),
                                   followerAnchor:
-                                      AlignmentDirectional(-1.0, -1.0)
+                                      const AlignmentDirectional(-1.0, -1.0)
                                           .resolve(Directionality.of(context)),
                                   builder: (dialogContext) {
                                     return Material(
                                       color: Colors.transparent,
                                       child: HidenColumnsWidget(
-                                        columns: widget!.columns,
+                                        columns: widget.columns,
                                         onColumnVisibleChanged:
                                             (columns) async {
                                           _model.columns = columns
@@ -227,7 +224,7 @@ class _TableWidgetState extends State<TableWidget> {
                                               .cast<ColumnModelStruct>();
                                           _model.rows = functions
                                               .onCellVisibility(
-                                                  widget!.rows!.toList(),
+                                                  widget.rows!.toList(),
                                                   functions
                                                       .getHiddenColumnId(
                                                           columns.toList())
@@ -260,14 +257,14 @@ class _TableWidgetState extends State<TableWidget> {
                   ),
                   Builder(
                     builder: (context) {
-                      if (widget!.isNumeric) {
+                      if (widget.isNumeric) {
                         return Container(
                           width: 75.0,
                           height: 50.0,
-                          decoration: BoxDecoration(),
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          decoration: const BoxDecoration(),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
                                 'um76ahy2' /* No. */,
@@ -285,7 +282,7 @@ class _TableWidgetState extends State<TableWidget> {
                         );
                       } else {
                         return Container(
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                         );
                       }
                     },
@@ -293,10 +290,10 @@ class _TableWidgetState extends State<TableWidget> {
                   Expanded(
                     child: Builder(
                       builder: (context) {
-                        final headerItms = widget!.columns
+                        final headerItms = widget.columns
                                 ?.where((e) => e.isHidden == false)
                                 .toList()
-                                ?.toList() ??
+                                .toList() ??
                             [];
 
                         return Row(
@@ -308,11 +305,11 @@ class _TableWidgetState extends State<TableWidget> {
                               child: Container(
                                 width: 500.0,
                                 height: 50.0,
-                                decoration: BoxDecoration(),
+                                decoration: const BoxDecoration(),
                                 child: Align(
-                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         10.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       headerItmsItem.name,
@@ -344,7 +341,7 @@ class _TableWidgetState extends State<TableWidget> {
                 ),
                 child: Builder(
                   builder: (context) {
-                    final rowItems = widget!.rows?.toList() ?? [];
+                    final rowItems = widget.rows?.toList() ?? [];
 
                     return Column(
                       mainAxisSize: MainAxisSize.max,
@@ -363,11 +360,11 @@ class _TableWidgetState extends State<TableWidget> {
                             children: [
                               Builder(
                                 builder: (context) {
-                                  if (widget!.isCheckbox) {
+                                  if (widget.isCheckbox) {
                                     return Container(
                                       width: 50.0,
                                       height: 50.0,
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Builder(
                                         builder: (context) {
                                           if (rowItemsItem.selected == true) {
@@ -382,7 +379,7 @@ class _TableWidgetState extends State<TableWidget> {
                                                 size: 24.0,
                                               ),
                                               onPressed: () async {
-                                                _model.rows = widget!.rows!
+                                                _model.rows = widget.rows!
                                                     .toList()
                                                     .cast<RowModelStruct>();
                                                 _model.updateRowsAtIndex(
@@ -404,7 +401,7 @@ class _TableWidgetState extends State<TableWidget> {
                                                 size: 24.0,
                                               ),
                                               onPressed: () async {
-                                                _model.rows = widget!.rows!
+                                                _model.rows = widget.rows!
                                                     .toList()
                                                     .cast<RowModelStruct>();
                                                 _model.updateRowsAtIndex(
@@ -430,11 +427,11 @@ class _TableWidgetState extends State<TableWidget> {
                               ),
                               Builder(
                                 builder: (context) {
-                                  if (widget!.isMoreOption) {
+                                  if (widget.isMoreOption) {
                                     return Container(
                                       width: 50.0,
                                       height: 50.0,
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: FlutterFlowIconButton(
                                         borderRadius: 8.0,
                                         buttonSize: 40.0,
@@ -461,14 +458,14 @@ class _TableWidgetState extends State<TableWidget> {
                               ),
                               Builder(
                                 builder: (context) {
-                                  if (widget!.isNumeric) {
+                                  if (widget.isNumeric) {
                                     return Container(
                                       width: 75.0,
                                       height: 50.0,
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: Text(
                                           functions
                                               .paginationNumIncrement(
@@ -486,7 +483,7 @@ class _TableWidgetState extends State<TableWidget> {
                                     );
                                   } else {
                                     return Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                     );
                                   }
                                 },
@@ -508,12 +505,12 @@ class _TableWidgetState extends State<TableWidget> {
                                           child: Container(
                                             width: 100.0,
                                             height: 100.0,
-                                            decoration: BoxDecoration(),
+                                            decoration: const BoxDecoration(),
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   -1.0, 0.0),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         10.0, 0.0, 0.0, 0.0),
                                                 child: Text(
@@ -563,7 +560,7 @@ class _TableWidgetState extends State<TableWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                     child: FlutterFlowDropDown<String>(
                       controller: _model.dropDownValueController ??=
                           FormFieldController<String>(null),
@@ -605,7 +602,7 @@ class _TableWidgetState extends State<TableWidget> {
                       borderWidth: 0.0,
                       borderRadius: 12.0,
                       margin:
-                          EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                       hidesUnderline: true,
                       isOverButton: false,
                       isSearchable: false,
@@ -628,11 +625,11 @@ class _TableWidgetState extends State<TableWidget> {
                       size: 24.0,
                     ),
                     onPressed: () async {
-                      if (((widget!.rows != null &&
-                                  (widget!.rows)!.isNotEmpty) !=
+                      if (((widget.rows != null &&
+                                  (widget.rows)!.isNotEmpty) !=
                               null) &&
-                          (widget!.rows?.length != 1) &&
-                          (widget!.rows?.length != 0)) {
+                          (widget.rows?.length != 1) &&
+                          (widget.rows?.length != 0)) {
                         await widget.onPreviousPage?.call();
                       }
                     },
@@ -644,7 +641,7 @@ class _TableWidgetState extends State<TableWidget> {
                     ),
                   ),
                   Text(
-                    '${widget!.currentPage.toString()} of ${widget!.totalPage.toString()}',
+                    '${widget.currentPage.toString()} of ${widget.totalPage.toString()}',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Inter',
                           letterSpacing: 0.0,
@@ -666,7 +663,7 @@ class _TableWidgetState extends State<TableWidget> {
                       size: 24.0,
                     ),
                     onPressed: () async {
-                      if (widget!.currentPage != widget!.totalPage) {
+                      if (widget.currentPage != widget.totalPage) {
                         await widget.onNextPage?.call();
                       }
                     },

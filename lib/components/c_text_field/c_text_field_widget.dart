@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'c_text_field_model.dart';
 export 'c_text_field_model.dart';
 
@@ -49,7 +47,7 @@ class _CTextFieldWidgetState extends State<CTextFieldWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: TextFormField(
         controller: _model.textController,
@@ -58,14 +56,14 @@ class _CTextFieldWidgetState extends State<CTextFieldWidget> {
         obscureText: false,
         decoration: InputDecoration(
           isDense: false,
-          labelText: widget!.txtHin,
+          labelText: widget.txtHin,
           alignLabelWithHint: true,
           hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
                 fontFamily: 'Inter',
                 letterSpacing: 0.0,
               ),
           enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(
+            borderSide: const BorderSide(
               color: Color(0x00000000),
               width: 1.0,
             ),

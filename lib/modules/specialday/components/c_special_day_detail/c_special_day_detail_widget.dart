@@ -7,13 +7,8 @@ import '/components/system_logic/secoundary_button/secoundary_button_widget.dart
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'dart:convert';
-import 'dart:ui';
-import 'package:flutter/foundation.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'c_special_day_detail_model.dart';
 export 'c_special_day_detail_model.dart';
@@ -56,7 +51,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
     _model = createModel(context, () => CSpecialDayDetailModel());
 
     _model.nameTextController ??=
-        TextEditingController(text: widget!.details?.name);
+        TextEditingController(text: widget.details?.name);
     _model.nameFocusNode ??= FocusNode();
 
     _model.startdateTextController ??= TextEditingController(
@@ -66,7 +61,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                 _model.datePicked2,
                 locale: FFLocalizations.of(context).languageCode,
               )
-            : widget!.details?.startDate);
+            : widget.details?.startDate);
     _model.startdateFocusNode ??= FocusNode();
 
     _model.endateTextController ??= TextEditingController(
@@ -76,11 +71,11 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                 _model.datePicked2,
                 locale: FFLocalizations.of(context).languageCode,
               )
-            : widget!.details?.endDate);
+            : widget.details?.endDate);
     _model.endateFocusNode ??= FocusNode();
 
     _model.descriptionTextController ??=
-        TextEditingController(text: widget!.details?.description);
+        TextEditingController(text: widget.details?.description);
     _model.descriptionFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
@@ -100,7 +95,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
     return Container(
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
           topLeft: Radius.circular(16.0),
@@ -108,7 +103,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
         ),
       ),
       child: Padding(
-        padding: EdgeInsets.all(24.0),
+        padding: const EdgeInsets.all(24.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
@@ -121,9 +116,9 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                   children: [
                     Text(
                       () {
-                        if (widget!.type == Flag.Add) {
+                        if (widget.type == Flag.Add) {
                           return 'Add Holiday';
-                        } else if (widget!.type == Flag.Update) {
+                        } else if (widget.type == Flag.Update) {
                           return 'Update Holiday';
                         } else {
                           return 'View Holiday';
@@ -136,9 +131,9 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                             fontWeight: FontWeight.w600,
                           ),
                     ),
-                  ].divide(SizedBox(height: 3.0)),
+                  ].divide(const SizedBox(height: 3.0)),
                 ),
-              ].divide(SizedBox(width: 16.0)),
+              ].divide(const SizedBox(width: 16.0)),
             ),
             Flexible(
               child: Form(
@@ -146,7 +141,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                 autovalidateMode: AutovalidateMode.disabled,
                 child: Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 150.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 150.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -159,7 +154,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 5.0),
                                   child: RichText(
                                     textScaler:
@@ -208,11 +203,11 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                   focusNode: _model.nameFocusNode,
                                   autofocus: false,
                                   readOnly: () {
-                                    if (widget!.type == Flag.Add) {
+                                    if (widget.type == Flag.Add) {
                                       return (FFAppState().view == true);
-                                    } else if (widget!.type == Flag.Update) {
+                                    } else if (widget.type == Flag.Update) {
                                       return (FFAppState().view != false);
-                                    } else if (widget!.type == Flag.Delete) {
+                                    } else if (widget.type == Flag.Delete) {
                                       return (FFAppState().view == false);
                                     } else {
                                       return (FFAppState().view == false);
@@ -237,7 +232,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                         Shadow(
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryText,
-                                          offset: Offset(2.0, 2.0),
+                                          offset: const Offset(2.0, 2.0),
                                           blurRadius: 2.0,
                                         )
                                       ],
@@ -278,7 +273,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                     fillColor: FlutterFlowTheme.of(context)
                                         .primaryBackground,
                                     contentPadding:
-                                        EdgeInsetsDirectional.fromSTEB(
+                                        const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 19.0, 16.0, 19.0),
                                     hoverColor: FlutterFlowTheme.of(context)
                                         .primaryBackground,
@@ -304,7 +299,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                               ],
                             ),
                           ),
-                        ].divide(SizedBox(width: 16.0)),
+                        ].divide(const SizedBox(width: 16.0)),
                       ),
                       Column(
                         mainAxisSize: MainAxisSize.max,
@@ -318,7 +313,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 5.0),
                                       child: RichText(
                                         textScaler:
@@ -372,9 +367,9 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                       hoverColor: Colors.transparent,
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
-                                        if ((widget!.type == Flag.Update) ||
-                                            (widget!.type == Flag.Add)) {
-                                          final _datePicked1Date =
+                                        if ((widget.type == Flag.Update) ||
+                                            (widget.type == Flag.Add)) {
+                                          final datePicked1Date =
                                               await showDatePicker(
                                             context: context,
                                             initialDate: getCurrentTimestamp,
@@ -421,12 +416,12 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                             },
                                           );
 
-                                          if (_datePicked1Date != null) {
+                                          if (datePicked1Date != null) {
                                             safeSetState(() {
                                               _model.datePicked1 = DateTime(
-                                                _datePicked1Date.year,
-                                                _datePicked1Date.month,
-                                                _datePicked1Date.day,
+                                                datePicked1Date.year,
+                                                datePicked1Date.month,
+                                                datePicked1Date.day,
                                               );
                                             });
                                           }
@@ -463,7 +458,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                         ),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   12.0, 0.0, 12.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -471,7 +466,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                                 MainAxisAlignment.spaceBetween,
                                             children: [
                                               Expanded(
-                                                child: Container(
+                                                child: SizedBox(
                                                   width: 200.0,
                                                   child: TextFormField(
                                                     controller: _model
@@ -507,7 +502,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                                               ),
                                                       enabledBorder:
                                                           OutlineInputBorder(
-                                                        borderSide: BorderSide(
+                                                        borderSide: const BorderSide(
                                                           color:
                                                               Color(0x00000000),
                                                           width: 1.0,
@@ -518,7 +513,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                                       ),
                                                       focusedBorder:
                                                           OutlineInputBorder(
-                                                        borderSide: BorderSide(
+                                                        borderSide: const BorderSide(
                                                           color:
                                                               Color(0x00000000),
                                                           width: 1.0,
@@ -552,7 +547,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                                                 .circular(8.0),
                                                       ),
                                                       contentPadding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   16.0,
                                                                   19.0,
@@ -591,7 +586,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                     ),
                                     if (_model.isPickStartDate == true)
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 10.0, 0.0, 0.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
@@ -618,7 +613,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 5.0),
                                       child: RichText(
                                         textScaler:
@@ -672,9 +667,9 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                       hoverColor: Colors.transparent,
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
-                                        if ((widget!.type == Flag.Update) ||
-                                            (widget!.type == Flag.Add)) {
-                                          final _datePicked2Date =
+                                        if ((widget.type == Flag.Update) ||
+                                            (widget.type == Flag.Add)) {
+                                          final datePicked2Date =
                                               await showDatePicker(
                                             context: context,
                                             initialDate: getCurrentTimestamp,
@@ -721,12 +716,12 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                             },
                                           );
 
-                                          if (_datePicked2Date != null) {
+                                          if (datePicked2Date != null) {
                                             safeSetState(() {
                                               _model.datePicked2 = DateTime(
-                                                _datePicked2Date.year,
-                                                _datePicked2Date.month,
-                                                _datePicked2Date.day,
+                                                datePicked2Date.year,
+                                                datePicked2Date.month,
+                                                datePicked2Date.day,
                                               );
                                             });
                                           }
@@ -762,7 +757,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                         ),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   12.0, 0.0, 12.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -770,7 +765,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                                 MainAxisAlignment.spaceBetween,
                                             children: [
                                               Expanded(
-                                                child: Container(
+                                                child: SizedBox(
                                                   width: 200.0,
                                                   child: TextFormField(
                                                     controller: _model
@@ -804,7 +799,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                                               ),
                                                       enabledBorder:
                                                           OutlineInputBorder(
-                                                        borderSide: BorderSide(
+                                                        borderSide: const BorderSide(
                                                           color:
                                                               Color(0x00000000),
                                                           width: 1.0,
@@ -815,7 +810,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                                       ),
                                                       focusedBorder:
                                                           OutlineInputBorder(
-                                                        borderSide: BorderSide(
+                                                        borderSide: const BorderSide(
                                                           color:
                                                               Color(0x00000000),
                                                           width: 1.0,
@@ -880,7 +875,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                     ),
                                     if (_model.isPickEndDate == true)
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 10.0, 0.0, 0.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
@@ -901,9 +896,9 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                   ],
                                 ),
                               ),
-                            ].divide(SizedBox(width: 16.0)),
+                            ].divide(const SizedBox(width: 16.0)),
                           ),
-                        ].divide(SizedBox(height: 2.0)),
+                        ].divide(const SizedBox(height: 2.0)),
                       ),
                       Row(
                         mainAxisSize: MainAxisSize.max,
@@ -914,7 +909,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 5.0),
                                   child: RichText(
                                     textScaler:
@@ -948,11 +943,11 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                   focusNode: _model.descriptionFocusNode,
                                   autofocus: false,
                                   readOnly: () {
-                                    if (widget!.type == Flag.Add) {
+                                    if (widget.type == Flag.Add) {
                                       return (FFAppState().view == true);
-                                    } else if (widget!.type == Flag.Update) {
+                                    } else if (widget.type == Flag.Update) {
                                       return (FFAppState().view != false);
-                                    } else if (widget!.type == Flag.Delete) {
+                                    } else if (widget.type == Flag.Delete) {
                                       return (FFAppState().view == false);
                                     } else {
                                       return (FFAppState().view == false);
@@ -977,7 +972,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                         Shadow(
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryText,
-                                          offset: Offset(2.0, 2.0),
+                                          offset: const Offset(2.0, 2.0),
                                           blurRadius: 2.0,
                                         )
                                       ],
@@ -1018,7 +1013,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                     fillColor: FlutterFlowTheme.of(context)
                                         .primaryBackground,
                                     contentPadding:
-                                        EdgeInsetsDirectional.fromSTEB(
+                                        const EdgeInsetsDirectional.fromSTEB(
                                             20.0, 18.0, 20.0, 18.0),
                                     hoverColor: FlutterFlowTheme.of(context)
                                         .primaryBackground,
@@ -1049,18 +1044,18 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                           ),
                         ],
                       ),
-                    ].divide(SizedBox(height: 16.0)),
+                    ].divide(const SizedBox(height: 16.0)),
                   ),
                 ),
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 150.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 150.0, 0.0),
               child: Builder(
                 builder: (context) {
-                  if ((widget!.type == Flag.Add) ||
-                      (widget!.type == Flag.Update) ||
-                      (widget!.type == Flag.Delete)) {
+                  if ((widget.type == Flag.Add) ||
+                      (widget.type == Flag.Update) ||
+                      (widget.type == Flag.Delete)) {
                     return Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.end,
@@ -1084,27 +1079,20 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                               '798khadn' /* Save */,
                             ),
                             btAction: () async {
-                              var _shouldSetState = false;
-                              if (widget!.type == Flag.Update) {
+                              var shouldSetState = false;
+                              if (widget.type == Flag.Update) {
                                 if ((_model.startdateTextController.text ==
-                                            null ||
-                                        _model.startdateTextController.text ==
                                             '') &&
-                                    (_model.endateTextController.text == null ||
-                                        _model.endateTextController.text ==
+                                    (_model.endateTextController.text ==
                                             '')) {
                                   if ((_model.endateTextController.text ==
-                                              null ||
-                                          _model.endateTextController.text ==
                                               '') &&
                                       (_model.startdateTextController.text ==
-                                              null ||
-                                          _model.startdateTextController.text ==
                                               '')) {
                                     _model.isPickStartDate = true;
                                     _model.isPickEndDate = true;
                                     safeSetState(() {});
-                                    if (_shouldSetState) safeSetState(() {});
+                                    if (shouldSetState) safeSetState(() {});
                                     return;
                                   } else {
                                     _model.isPickStartDate = false;
@@ -1120,19 +1108,11 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
 
                                   safeSetState(() {});
                                 } else if ((_model.endateTextController.text ==
-                                            null ||
-                                        _model.endateTextController.text ==
                                             '') ||
                                     (_model.startdateTextController.text ==
-                                            null ||
-                                        _model.startdateTextController.text ==
                                             '')) {
-                                  if (_model.endateTextController.text ==
-                                          null ||
-                                      _model.endateTextController.text == '') {
+                                  if (_model.endateTextController.text == '') {
                                     if (_model.endateTextController.text ==
-                                            null ||
-                                        _model.endateTextController.text ==
                                             '') {
                                       _model.isPickEndDate = true;
                                       safeSetState(() {});
@@ -1146,16 +1126,11 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                             .validate()) {
                                       return;
                                     }
-                                    if (_shouldSetState) safeSetState(() {});
+                                    if (shouldSetState) safeSetState(() {});
                                     return;
-                                  } else if (_model
-                                              .startdateTextController.text ==
-                                          null ||
-                                      _model.startdateTextController.text ==
+                                  } else if (_model.startdateTextController.text ==
                                           '') {
                                     if (_model.startdateTextController.text ==
-                                            null ||
-                                        _model.startdateTextController.text ==
                                             '') {
                                       _model.isPickStartDate = true;
                                       safeSetState(() {});
@@ -1169,7 +1144,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                             .validate()) {
                                       return;
                                     }
-                                    if (_shouldSetState) safeSetState(() {});
+                                    if (shouldSetState) safeSetState(() {});
                                     return;
                                   } else {
                                     _model.isPickStartDate = false;
@@ -1199,7 +1174,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                     await SpecialDayDetailsGroup
                                         .updateSpecialDayDetailsCall
                                         .call(
-                                  id: widget!.details?.id,
+                                  id: widget.details?.id,
                                   name: _model.nameTextController.text,
                                   description:
                                       _model.descriptionTextController.text,
@@ -1208,7 +1183,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                   endDate: _model.endateTextController.text,
                                 );
 
-                                _shouldSetState = true;
+                                shouldSetState = true;
                                 if ((_model.apiResult68v?.succeeded ?? true)) {
                                   context.safePop();
                                 } else {
@@ -1216,20 +1191,20 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                     context: context,
                                     builder: (alertDialogContext) {
                                       return AlertDialog(
-                                        title: Text('Message'),
-                                        content: Text('Update Error'),
+                                        title: const Text('Message'),
+                                        content: const Text('Update Error'),
                                         actions: [
                                           TextButton(
                                             onPressed: () => Navigator.pop(
                                                 alertDialogContext),
-                                            child: Text('Ok'),
+                                            child: const Text('Ok'),
                                           ),
                                         ],
                                       );
                                     },
                                   );
                                 }
-                              } else if (widget!.type == Flag.Delete) {
+                              } else if (widget.type == Flag.Delete) {
                                 if (_model.formKey.currentState == null ||
                                     !_model.formKey.currentState!.validate()) {
                                   return;
@@ -1238,10 +1213,10 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                     await SpecialDayDetailsGroup
                                         .deletespecialDayCall
                                         .call(
-                                  id: widget!.details?.id,
+                                  id: widget.details?.id,
                                 );
 
-                                _shouldSetState = true;
+                                shouldSetState = true;
                                 if ((_model.apiResult7ag?.succeeded ?? true)) {
                                   context.safePop();
                                 } else {
@@ -1249,13 +1224,13 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                     context: context,
                                     builder: (alertDialogContext) {
                                       return AlertDialog(
-                                        title: Text('Message'),
-                                        content: Text('Add Error'),
+                                        title: const Text('Message'),
+                                        content: const Text('Add Error'),
                                         actions: [
                                           TextButton(
                                             onPressed: () => Navigator.pop(
                                                 alertDialogContext),
-                                            child: Text('Ok'),
+                                            child: const Text('Ok'),
                                           ),
                                         ],
                                       );
@@ -1264,24 +1239,17 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                 }
                               } else {
                                 if ((_model.startdateTextController.text ==
-                                            null ||
-                                        _model.startdateTextController.text ==
                                             '') &&
-                                    (_model.endateTextController.text == null ||
-                                        _model.endateTextController.text ==
+                                    (_model.endateTextController.text ==
                                             '')) {
                                   if ((_model.endateTextController.text ==
-                                              null ||
-                                          _model.endateTextController.text ==
                                               '') &&
                                       (_model.startdateTextController.text ==
-                                              null ||
-                                          _model.startdateTextController.text ==
                                               '')) {
                                     _model.isPickStartDate = true;
                                     _model.isPickEndDate = true;
                                     safeSetState(() {});
-                                    if (_shouldSetState) safeSetState(() {});
+                                    if (shouldSetState) safeSetState(() {});
                                     return;
                                   } else {
                                     _model.isPickStartDate = false;
@@ -1297,19 +1265,11 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
 
                                   safeSetState(() {});
                                 } else if ((_model.endateTextController.text ==
-                                            null ||
-                                        _model.endateTextController.text ==
                                             '') ||
                                     (_model.startdateTextController.text ==
-                                            null ||
-                                        _model.startdateTextController.text ==
                                             '')) {
-                                  if (_model.endateTextController.text ==
-                                          null ||
-                                      _model.endateTextController.text == '') {
+                                  if (_model.endateTextController.text == '') {
                                     if (_model.endateTextController.text ==
-                                            null ||
-                                        _model.endateTextController.text ==
                                             '') {
                                       _model.isPickEndDate = true;
                                       safeSetState(() {});
@@ -1323,16 +1283,11 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                             .validate()) {
                                       return;
                                     }
-                                    if (_shouldSetState) safeSetState(() {});
+                                    if (shouldSetState) safeSetState(() {});
                                     return;
-                                  } else if (_model
-                                              .startdateTextController.text ==
-                                          null ||
-                                      _model.startdateTextController.text ==
+                                  } else if (_model.startdateTextController.text ==
                                           '') {
                                     if (_model.startdateTextController.text ==
-                                            null ||
-                                        _model.startdateTextController.text ==
                                             '') {
                                       _model.isPickStartDate = true;
                                       safeSetState(() {});
@@ -1346,7 +1301,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                             .validate()) {
                                       return;
                                     }
-                                    if (_shouldSetState) safeSetState(() {});
+                                    if (shouldSetState) safeSetState(() {});
                                     return;
                                   } else {
                                     _model.isPickStartDate = false;
@@ -1380,7 +1335,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                     await SpecialDayDetailsGroup
                                         .createSpecialDayDetailsCall
                                         .call(
-                                  specialDayId: widget!.specialDayId,
+                                  specialDayId: widget.specialDayId,
                                   name: _model.nameTextController.text,
                                   description:
                                       _model.descriptionTextController.text,
@@ -1404,7 +1359,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                       );
                                 }
 
-                                _shouldSetState = true;
+                                shouldSetState = true;
                                 if ((_model.apiResultCreate?.succeeded ??
                                     true)) {
                                   context.safePop();
@@ -1413,7 +1368,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                     context: context,
                                     builder: (alertDialogContext) {
                                       return AlertDialog(
-                                        title: Text('Message'),
+                                        title: const Text('Message'),
                                         content: Text(getJsonField(
                                           (_model.apiResultCreate?.jsonBody ??
                                               ''),
@@ -1423,7 +1378,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                           TextButton(
                                             onPressed: () => Navigator.pop(
                                                 alertDialogContext),
-                                            child: Text('Ok'),
+                                            child: const Text('Ok'),
                                           ),
                                         ],
                                       );
@@ -1433,16 +1388,16 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                               }
 
                               FFAppState().update(() {});
-                              if (_shouldSetState) safeSetState(() {});
+                              if (shouldSetState) safeSetState(() {});
                             },
                             exception: () async {},
                           ),
                         ),
-                      ].divide(SizedBox(width: 16.0)),
+                      ].divide(const SizedBox(width: 16.0)),
                     );
                   } else {
                     return Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(
+                      padding: const EdgeInsetsDirectional.fromSTEB(
                           10.0, 15.0, 10.0, 15.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
@@ -1460,14 +1415,14 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                               exception: () async {},
                             ),
                           ),
-                        ].divide(SizedBox(width: 16.0)),
+                        ].divide(const SizedBox(width: 16.0)),
                       ),
                     );
                   }
                 },
               ),
             ),
-          ].divide(SizedBox(height: 16.0)),
+          ].divide(const SizedBox(height: 16.0)),
         ),
       ),
     );

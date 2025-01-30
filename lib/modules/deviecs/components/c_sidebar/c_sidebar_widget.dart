@@ -5,9 +5,7 @@ import '/modules/deviecs/components/c_action_log/c_action_log_widget.dart';
 import '/modules/deviecs/components/c_cos_info/c_cos_info_widget.dart';
 import '/modules/deviecs/components/c_tou_info/c_tou_info_widget.dart';
 import '/modules/deviecs/components/cloadprofile/cloadprofile_widget.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'c_sidebar_model.dart';
 export 'c_sidebar_model.dart';
@@ -58,7 +56,7 @@ class _CSidebarWidgetState extends State<CSidebarWidget>
       height: double.infinity,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             blurRadius: 4.0,
             color: Color(0x33000000),
@@ -68,7 +66,7 @@ class _CSidebarWidgetState extends State<CSidebarWidget>
             ),
           )
         ],
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
           topLeft: Radius.circular(20.0),
@@ -76,13 +74,13 @@ class _CSidebarWidgetState extends State<CSidebarWidget>
         ),
       ),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -123,16 +121,16 @@ class _CSidebarWidgetState extends State<CSidebarWidget>
                       size: 24.0,
                     ),
                   ),
-                ].divide(SizedBox(width: 20.0)),
+                ].divide(const SizedBox(width: 20.0)),
               ),
             ),
             Expanded(
               child: Container(
-                decoration: BoxDecoration(),
+                decoration: const BoxDecoration(),
                 child: Column(
                   children: [
                     Align(
-                      alignment: Alignment(-1.0, 0),
+                      alignment: const Alignment(-1.0, 0),
                       child: TabBar(
                         isScrollable: true,
                         labelColor: FlutterFlowTheme.of(context).primary,
@@ -144,7 +142,7 @@ class _CSidebarWidgetState extends State<CSidebarWidget>
                                   fontSize: 14.0,
                                   letterSpacing: 0.0,
                                 ),
-                        unselectedLabelStyle: TextStyle(),
+                        unselectedLabelStyle: const TextStyle(),
                         indicatorColor: FlutterFlowTheme.of(context).primary,
                         tabs: [
                           Tab(
@@ -184,7 +182,7 @@ class _CSidebarWidgetState extends State<CSidebarWidget>
                         controller: _model.tabBarController,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 10.0, 0.0, 0.0),
                             child: SingleChildScrollView(
                               primary: false,
@@ -195,7 +193,7 @@ class _CSidebarWidgetState extends State<CSidebarWidget>
                                   wrapWithModel(
                                     model: _model.cTouInfoModel,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: CTouInfoWidget(),
+                                    child: const CTouInfoWidget(),
                                   ),
                                   Container(
                                     height: 450.0,
@@ -213,12 +211,12 @@ class _CSidebarWidgetState extends State<CSidebarWidget>
                                       ),
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 18.0)),
+                                ].divide(const SizedBox(height: 18.0)),
                               ),
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 10.0, 0.0, 0.0),
                             child: Container(
                               width: 100.0,
@@ -228,7 +226,7 @@ class _CSidebarWidgetState extends State<CSidebarWidget>
                                     .secondaryBackground,
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     10.0, 0.0, 10.0, 15.0),
                                 child: SingleChildScrollView(
                                   primary: false,
@@ -239,15 +237,15 @@ class _CSidebarWidgetState extends State<CSidebarWidget>
                                         model: _model.cCosInfoModel,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: CCosInfoWidget(),
+                                        child: const CCosInfoWidget(),
                                       ),
                                       Padding(
-                                        padding: EdgeInsets.all(10.0),
+                                        padding: const EdgeInsets.all(10.0),
                                         child: wrapWithModel(
                                           model: _model.comMapModel,
                                           updateCallback: () =>
                                               safeSetState(() {}),
-                                          child: ComMapWidget(),
+                                          child: const ComMapWidget(),
                                         ),
                                       ),
                                     ],
@@ -258,9 +256,9 @@ class _CSidebarWidgetState extends State<CSidebarWidget>
                           ),
                           Container(
                             height: double.infinity,
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 10.0, 0.0, 0.0),
                               child: SingleChildScrollView(
                                 primary: false,
@@ -271,7 +269,7 @@ class _CSidebarWidgetState extends State<CSidebarWidget>
                                     wrapWithModel(
                                       model: _model.cloadprofileModel,
                                       updateCallback: () => safeSetState(() {}),
-                                      child: CloadprofileWidget(),
+                                      child: const CloadprofileWidget(),
                                     ),
                                     Expanded(
                                       child: Container(
@@ -282,7 +280,7 @@ class _CSidebarWidgetState extends State<CSidebarWidget>
                                         ),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   10.0, 0.0, 10.0, 0.0),
                                           child: ClipRRect(
                                             borderRadius:
@@ -304,7 +302,7 @@ class _CSidebarWidgetState extends State<CSidebarWidget>
                                         ),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   10.0, 0.0, 10.0, 0.0),
                                           child: ClipRRect(
                                             borderRadius:
@@ -323,7 +321,7 @@ class _CSidebarWidgetState extends State<CSidebarWidget>
                                     ),
                                     Expanded(
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             10.0, 0.0, 10.0, 0.0),
                                         child: Container(
                                           height: 450.0,
@@ -333,7 +331,7 @@ class _CSidebarWidgetState extends State<CSidebarWidget>
                                           ),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     10.0, 0.0, 10.0, 0.0),
                                             child: ClipRRect(
                                               borderRadius:
@@ -347,7 +345,7 @@ class _CSidebarWidgetState extends State<CSidebarWidget>
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 16.0)),
+                                  ].divide(const SizedBox(height: 16.0)),
                                 ),
                               ),
                             ),
@@ -355,7 +353,7 @@ class _CSidebarWidgetState extends State<CSidebarWidget>
                           wrapWithModel(
                             model: _model.cActionLogModel,
                             updateCallback: () => safeSetState(() {}),
-                            child: CActionLogWidget(),
+                            child: const CActionLogWidget(),
                           ),
                         ],
                       ),

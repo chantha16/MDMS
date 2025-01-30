@@ -7,12 +7,9 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/modules/specialday/components/c_special_day_action/c_special_day_action_widget.dart';
-import 'dart:ui';
 import 'package:aligned_dialog/aligned_dialog.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'c_special_day_detail_list_model.dart';
 export 'c_special_day_detail_list_model.dart';
@@ -65,7 +62,7 @@ class _CSpecialDayDetailListWidgetState
     context.watch<FFAppState>();
 
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(0.0, 77.0, 0.0, 0.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 77.0, 0.0, 0.0),
       child: Container(
         width: 550.0,
         height: double.infinity,
@@ -78,7 +75,7 @@ class _CSpecialDayDetailListWidgetState
           ),
         ),
         child: Padding(
-          padding: EdgeInsets.all(24.0),
+          padding: const EdgeInsets.all(24.0),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.start,
@@ -120,7 +117,7 @@ class _CSpecialDayDetailListWidgetState
                               color: FlutterFlowTheme.of(context).alternate,
                             ),
                           ),
-                          child: Container(
+                          child: SizedBox(
                             width: double.infinity,
                             child: TextFormField(
                               controller: _model.textController,
@@ -145,14 +142,14 @@ class _CSpecialDayDetailListWidgetState
                                       letterSpacing: 0.0,
                                     ),
                                 enabledBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Colors.transparent,
                                     width: 1.0,
                                   ),
                                   borderRadius: BorderRadius.circular(20.0),
                                 ),
                                 focusedBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Colors.transparent,
                                     width: 1.0,
                                   ),
@@ -196,7 +193,7 @@ class _CSpecialDayDetailListWidgetState
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(width: 16.0)),
+                    ].divide(const SizedBox(width: 16.0)),
                   ),
                   Row(
                     mainAxisSize: MainAxisSize.max,
@@ -206,7 +203,7 @@ class _CSpecialDayDetailListWidgetState
                         updateCallback: () => safeSetState(() {}),
                         child: PrimaryButtonWithIconWidget(
                           tbName: 'Add',
-                          btIcon: Icon(
+                          btIcon: const Icon(
                             Icons.add,
                           ),
                           btAction: () async {
@@ -218,12 +215,12 @@ class _CSpecialDayDetailListWidgetState
                                   ParamType.Enum,
                                 ),
                                 'id': serializeParam(
-                                  widget!.specialDayId,
+                                  widget.specialDayId,
                                   ParamType.int,
                                 ),
                               }.withoutNulls,
                               extra: <String, dynamic>{
-                                kTransitionInfoKey: TransitionInfo(
+                                kTransitionInfoKey: const TransitionInfo(
                                   hasTransition: true,
                                   transitionType: PageTransitionType.fade,
                                   duration: Duration(milliseconds: 0),
@@ -245,7 +242,7 @@ class _CSpecialDayDetailListWidgetState
                     Container(
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(0.0),
                           bottomRight: Radius.circular(0.0),
                           topLeft: Radius.circular(10.0),
@@ -331,7 +328,7 @@ class _CSpecialDayDetailListWidgetState
                                   ),
                             ),
                           ),
-                        ].divide(SizedBox(width: 16.0)),
+                        ].divide(const SizedBox(width: 16.0)),
                       ),
                     ),
                     Expanded(
@@ -344,7 +341,7 @@ class _CSpecialDayDetailListWidgetState
                           children: [
                             FutureBuilder<ApiCallResponse>(
                               future: SpecialDayGroup.sepcialDayIdCall.call(
-                                id: widget!.specialDayId,
+                                id: widget.specialDayId,
                               ),
                               builder: (context, snapshot) {
                                 // Customize what your widget looks like when it's loading.
@@ -374,7 +371,7 @@ class _CSpecialDayDetailListWidgetState
                                                 as Iterable<
                                                     SpecialDayDetailsModelStruct?>)
                                             .withoutNulls
-                                            ?.toList() ??
+                                            .toList() ??
                                         [];
 
                                     return ListView.builder(
@@ -389,7 +386,7 @@ class _CSpecialDayDetailListWidgetState
                                             specialDayDetials[
                                                 specialDayDetialsIndex];
                                         return Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
@@ -419,13 +416,13 @@ class _CSpecialDayDetailListWidgetState
                                                       isGlobal: false,
                                                       avoidOverflow: true,
                                                       targetAnchor:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                                   0.0, 0.0)
                                                               .resolve(
                                                                   Directionality.of(
                                                                       context)),
                                                       followerAnchor:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                                   -1.0, -1.0)
                                                               .resolve(
                                                                   Directionality.of(
@@ -459,7 +456,7 @@ class _CSpecialDayDetailListWidgetState
                                                                   ),
                                                                   'id':
                                                                       serializeParam(
-                                                                    widget!
+                                                                    widget
                                                                         .specialDayId,
                                                                     ParamType
                                                                         .int,
@@ -468,7 +465,7 @@ class _CSpecialDayDetailListWidgetState
                                                                 extra: <String,
                                                                     dynamic>{
                                                                   kTransitionInfoKey:
-                                                                      TransitionInfo(
+                                                                      const TransitionInfo(
                                                                     hasTransition:
                                                                         true,
                                                                     transitionType:
@@ -506,7 +503,7 @@ class _CSpecialDayDetailListWidgetState
                                                                 extra: <String,
                                                                     dynamic>{
                                                                   kTransitionInfoKey:
-                                                                      TransitionInfo(
+                                                                      const TransitionInfo(
                                                                     hasTransition:
                                                                         true,
                                                                     transitionType:
@@ -542,7 +539,7 @@ class _CSpecialDayDetailListWidgetState
                                                                   ),
                                                                   'id':
                                                                       serializeParam(
-                                                                    widget!
+                                                                    widget
                                                                         .specialDayId,
                                                                     ParamType
                                                                         .int,
@@ -551,7 +548,7 @@ class _CSpecialDayDetailListWidgetState
                                                                 extra: <String,
                                                                     dynamic>{
                                                                   kTransitionInfoKey:
-                                                                      TransitionInfo(
+                                                                      const TransitionInfo(
                                                                     hasTransition:
                                                                         true,
                                                                     transitionType:
@@ -627,7 +624,7 @@ class _CSpecialDayDetailListWidgetState
                                                       ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 16.0)),
+                                            ].divide(const SizedBox(width: 16.0)),
                                           ),
                                         );
                                       },
@@ -650,7 +647,7 @@ class _CSpecialDayDetailListWidgetState
                   actionstruc: () async {},
                 ),
               ),
-            ].divide(SizedBox(height: 16.0)),
+            ].divide(const SizedBox(height: 16.0)),
           ),
         ),
       ),

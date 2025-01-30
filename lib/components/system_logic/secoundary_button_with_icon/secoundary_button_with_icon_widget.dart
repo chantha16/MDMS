@@ -2,8 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'secoundary_button_with_icon_model.dart';
 export 'secoundary_button_with_icon_model.dart';
 
@@ -55,14 +53,14 @@ class _SecoundaryButtonWithIconWidgetState
       onPressed: () async {
         await widget.btAction?.call();
       },
-      text: widget!.btName!,
-      icon: widget!.btIcon,
+      text: widget.btName!,
+      icon: widget.btIcon,
       options: FFButtonOptions(
         width: 120.0,
         height: 40.0,
-        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
         iconAlignment: IconAlignment.start,
-        iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+        iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
         color: FlutterFlowTheme.of(context).secondaryBackground,
         textStyle: FlutterFlowTheme.of(context).titleSmall.override(
               fontFamily: 'Inter Tight',

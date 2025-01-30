@@ -1,6 +1,4 @@
 import 'dart:convert';
-import 'dart:typed_data';
-import '../schema/structs/index.dart';
 
 import 'package:flutter/foundation.dart';
 
@@ -74,7 +72,7 @@ class IntrospectCall {
     return ApiManager.instance.makeApiCall(
       callName: 'Introspect',
       apiUrl:
-          '${baseUrl}/realms/${realm}/protocol/openid-connect/token/introspect',
+          '$baseUrl/realms/$realm/protocol/openid-connect/token/introspect',
       callType: ApiCallType.POST,
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
@@ -125,11 +123,11 @@ class GetProfileCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'Get Profile',
-      apiUrl: '${baseUrl}/realms/${realm}/protocol/openid-connect/userinfo',
+      apiUrl: '$baseUrl/realms/$realm/protocol/openid-connect/userinfo',
       callType: ApiCallType.GET,
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
-        'Authorization': 'Bearer ${token}',
+        'Authorization': 'Bearer $token',
       },
       params: {
         'client_id': clientId,
@@ -176,7 +174,7 @@ class RefreshTokenCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'Refresh Token',
-      apiUrl: '${baseUrl}/realms/${realm}/protocol/openid-connect/token',
+      apiUrl: '$baseUrl/realms/$realm/protocol/openid-connect/token',
       callType: ApiCallType.POST,
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
@@ -229,7 +227,7 @@ class ExchangeTokenCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'Exchange Token',
-      apiUrl: '${baseUrl}/realms/${realm}/protocol/openid-connect/token',
+      apiUrl: '$baseUrl/realms/$realm/protocol/openid-connect/token',
       callType: ApiCallType.POST,
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
@@ -283,7 +281,7 @@ class LogoutCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'Logout',
-      apiUrl: '${baseUrl}/realms/${realm}/protocol/openid-connect/logout',
+      apiUrl: '$baseUrl/realms/$realm/protocol/openid-connect/logout',
       callType: ApiCallType.POST,
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
@@ -335,7 +333,7 @@ class ReadAllSpecialDaysCall {
     return ApiManager.instance.makeApiCall(
       callName: 'Read All SpecialDays',
       apiUrl:
-          '${baseUrl}/api/rest/SpecialDay?search=%25${search}%25&includeSpecialDayDetail=${includeSpecialDayDetail}&limit=${limit}&offset=${offset}',
+          '$baseUrl/api/rest/SpecialDay?search=%25$search%25&includeSpecialDayDetail=$includeSpecialDayDetail&limit=$limit&offset=$offset',
       callType: ApiCallType.GET,
       headers: {
         'x-hasura-admin-secret': '4)-g&M0siAov3Fl4O',
@@ -370,7 +368,7 @@ class SepcialDayIdCall {
     return ApiManager.instance.makeApiCall(
       callName: 'SepcialDayId',
       apiUrl:
-          '${baseUrl}/api/rest/SpecialDay/${id}?includeSpecialDayDetail=true',
+          '$baseUrl/api/rest/SpecialDay/$id?includeSpecialDayDetail=true',
       callType: ApiCallType.GET,
       headers: {
         'x-hasura-admin-secret': '4)-g&M0siAov3Fl4O',
@@ -400,7 +398,7 @@ class DeleteSpecialDayCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'DeleteSpecialDay',
-      apiUrl: '${baseUrl}/api/rest/SpecialDay/${id}',
+      apiUrl: '$baseUrl/api/rest/SpecialDay/$id',
       callType: ApiCallType.DELETE,
       headers: {
         'x-hasura-admin-secret': '4)-g&M0siAov3Fl4O',
@@ -446,7 +444,7 @@ class CreateSpecialDayCall {
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'CreateSpecialDay',
-      apiUrl: '${baseUrl}/api/rest/SpecialDay',
+      apiUrl: '$baseUrl/api/rest/SpecialDay',
       callType: ApiCallType.POST,
       headers: {
         'x-hasura-admin-secret': '4)-g&M0siAov3Fl4O',
@@ -472,7 +470,7 @@ class CreateSpecialDayListCall {
     String? descriptionDetail = '',
     String? startDate = '',
     String? endDate = '',
-    dynamic? dataJson,
+    dynamic dataJson,
   }) async {
     final baseUrl = SpecialDayGroup.getBaseUrl();
 
@@ -483,13 +481,13 @@ class CreateSpecialDayListCall {
     "Name": "${escapeStringForJson(name)}",
     "Description": "${escapeStringForJson(description)}",
     "SpecialDayDetails": {
-      "data": ${data}
+      "data": $data
     }
   }
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'CreateSpecialDayList',
-      apiUrl: '${baseUrl}/api/rest/SpecialDay',
+      apiUrl: '$baseUrl/api/rest/SpecialDay',
       callType: ApiCallType.POST,
       headers: {
         'x-hasura-admin-secret': '4)-g&M0siAov3Fl4O',
@@ -524,7 +522,7 @@ class UpdateSpecialDayCall {
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'UpdateSpecialDay',
-      apiUrl: '${baseUrl}/api/rest/SpecialDay/${id}',
+      apiUrl: '$baseUrl/api/rest/SpecialDay/$id',
       callType: ApiCallType.POST,
       headers: {
         'x-hasura-admin-secret': '4)-g&M0siAov3Fl4O',
@@ -569,7 +567,7 @@ class ReadAllSeasonsCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'Read All Seasons',
-      apiUrl: '${baseUrl}/api/rest/v2/Season',
+      apiUrl: '$baseUrl/api/rest/v2/Season',
       callType: ApiCallType.GET,
       headers: {
         'x-hasura-admin-secret': '4)-g&M0siAov3Fl4O',
@@ -597,7 +595,7 @@ class ReadSeasonByIdCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'Read Season by Id',
-      apiUrl: '${baseUrl}/api/rest/Season/${id}',
+      apiUrl: '$baseUrl/api/rest/Season/$id',
       callType: ApiCallType.GET,
       headers: {
         'x-hasura-admin-secret': '4)-g&M0siAov3Fl4O',
@@ -631,7 +629,7 @@ class CreateSeasonCall {
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'Create Season',
-      apiUrl: '${baseUrl}/api/rest/Season',
+      apiUrl: '$baseUrl/api/rest/Season',
       callType: ApiCallType.POST,
       headers: {
         'x-hasura-admin-secret': '4)-g&M0siAov3Fl4O',
@@ -668,7 +666,7 @@ class UpdateSeasonCall {
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'Update Season',
-      apiUrl: '${baseUrl}/api/rest/Season/${id}',
+      apiUrl: '$baseUrl/api/rest/Season/$id',
       callType: ApiCallType.POST,
       headers: {
         'x-hasura-admin-secret': '4)-g&M0siAov3Fl4O',
@@ -694,7 +692,7 @@ class DeleteSeasonCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'Delete Season',
-      apiUrl: '${baseUrl}/api/rest/Season/${id}',
+      apiUrl: '$baseUrl/api/rest/Season/$id',
       callType: ApiCallType.DELETE,
       headers: {
         'x-hasura-admin-secret': '4)-g&M0siAov3Fl4O',
@@ -736,7 +734,7 @@ class SpecialDayDetailIdCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'SpecialDayDetailId',
-      apiUrl: '${baseUrl}/api/rest/SpecialDayDetail/${id}',
+      apiUrl: '$baseUrl/api/rest/SpecialDayDetail/$id',
       callType: ApiCallType.GET,
       headers: {
         'x-hasura-admin-secret': '4)-g&M0siAov3Fl4O',
@@ -773,7 +771,7 @@ class UpdateSpecialDayDetailsCall {
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'UpdateSpecialDayDetails',
-      apiUrl: '${baseUrl}/api/rest/SpecialDayDetail/${id}',
+      apiUrl: '$baseUrl/api/rest/SpecialDayDetail/$id',
       callType: ApiCallType.POST,
       headers: {
         'x-hasura-admin-secret': '4)-g&M0siAov3Fl4O',
@@ -799,7 +797,7 @@ class DeletespecialDayCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'DeletespecialDay',
-      apiUrl: '${baseUrl}/api/rest/SpecialDayDetail/${id}',
+      apiUrl: '$baseUrl/api/rest/SpecialDayDetail/$id',
       callType: ApiCallType.DELETE,
       headers: {
         'x-hasura-admin-secret': '4)-g&M0siAov3Fl4O',
@@ -828,7 +826,7 @@ class CreateSpecialDayDetailsCall {
     final ffApiRequestBody = '''
 {
   "SpecialDayDetail": {
-    "SpecialDayId": ${specialDayId},
+    "SpecialDayId": $specialDayId,
     "Name": "${escapeStringForJson(name)}",
     "Description": "${escapeStringForJson(description)}",
     "StartDate": "${escapeStringForJson(startDate)}",
@@ -837,7 +835,7 @@ class CreateSpecialDayDetailsCall {
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'CreateSpecialDayDetails',
-      apiUrl: '${baseUrl}/api/rest/SpecialDayDetail',
+      apiUrl: '$baseUrl/api/rest/SpecialDayDetail',
       callType: ApiCallType.POST,
       headers: {
         'x-hasura-admin-secret': '4)-g&M0siAov3Fl4O',

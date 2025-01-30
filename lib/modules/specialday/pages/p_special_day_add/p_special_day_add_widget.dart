@@ -3,11 +3,8 @@ import '/backend/schema/structs/index.dart';
 import '/components/layout/main_layout_v1/main_layout_v1_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/modules/specialday/components/c_special_day_add/c_special_day_add_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'p_special_day_add_model.dart';
 export 'p_special_day_add_model.dart';
 
@@ -64,7 +61,7 @@ class _PSpecialDayAddWidgetState extends State<PSpecialDayAddWidget> {
               activeMenu: MenuItems.TimeBands,
               body: () => CSpecialDayAddWidget(
                 types: FlagStruct(),
-                type: widget!.types,
+                type: widget.types,
               ),
             ),
           ),

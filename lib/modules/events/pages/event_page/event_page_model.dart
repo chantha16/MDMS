@@ -1,13 +1,7 @@
-import '/backend/schema/enums/enums.dart';
 import '/components/layout/main_layout_v2/main_layout_v2_widget.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import '/modules/events/components/event_view/event_view_widget.dart';
 import 'event_page_widget.dart' show EventPageWidget;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class EventPageModel extends FlutterFlowModel<EventPageWidget> {
   ///  State fields for stateful widgets in this page.

@@ -2,11 +2,8 @@ import '/components/system_logic/com_feature_map/com_feature_map_widget.dart';
 import '/flutter_flow/flutter_flow_google_map.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import 'package:aligned_dialog/aligned_dialog.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'com_map_model.dart';
 export 'com_map_model.dart';
 
@@ -58,7 +55,7 @@ class _ComMapWidgetState extends State<ComMapWidget> {
               controller: _model.googleMapsController,
               onCameraIdle: (latLng) => _model.googleMapsCenter = latLng,
               initialLocation: _model.googleMapsCenter ??=
-                  LatLng(13.106061, -59.613158),
+                  const LatLng(13.106061, -59.613158),
               markerColor: GoogleMarkerColor.violet,
               mapType: MapType.normal,
               style: GoogleMapStyle.standard,
@@ -74,7 +71,7 @@ class _ComMapWidgetState extends State<ComMapWidget> {
             ),
           ),
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -128,12 +125,12 @@ class _ComMapWidgetState extends State<ComMapWidget> {
                         context: context,
                         isGlobal: false,
                         avoidOverflow: false,
-                        targetAnchor: AlignmentDirectional(-1.0, 0.0)
+                        targetAnchor: const AlignmentDirectional(-1.0, 0.0)
                             .resolve(Directionality.of(context)),
-                        followerAnchor: AlignmentDirectional(1.0, 1.0)
+                        followerAnchor: const AlignmentDirectional(1.0, 1.0)
                             .resolve(Directionality.of(context)),
                         builder: (dialogContext) {
-                          return Material(
+                          return const Material(
                             color: Colors.transparent,
                             child: ComFeatureMapWidget(),
                           );
@@ -147,11 +144,11 @@ class _ComMapWidgetState extends State<ComMapWidget> {
                     ),
                   ),
                 ),
-              ].divide(SizedBox(width: 24.0)),
+              ].divide(const SizedBox(width: 24.0)),
             ),
           ),
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -182,10 +179,10 @@ class _ComMapWidgetState extends State<ComMapWidget> {
                     ],
                   ),
                 ),
-              ].divide(SizedBox(width: 24.0)),
+              ].divide(const SizedBox(width: 24.0)),
             ),
           ),
-        ].divide(SizedBox(height: 16.0)),
+        ].divide(const SizedBox(height: 16.0)),
       ),
     );
   }

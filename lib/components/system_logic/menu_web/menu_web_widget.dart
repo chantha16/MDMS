@@ -1,11 +1,8 @@
 import '/components/system_logic/logo_component/logo_component_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import 'package:badges/badges.dart' as badges;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'menu_web_model.dart';
 export 'menu_web_model.dart';
 
@@ -88,10 +85,10 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 1.0, 0.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 1.0, 0.0),
       child: Container(
         width: 270.0,
-        constraints: BoxConstraints(
+        constraints: const BoxConstraints(
           maxWidth: 300.0,
         ),
         decoration: BoxDecoration(
@@ -99,7 +96,7 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
           boxShadow: [
             BoxShadow(
               color: FlutterFlowTheme.of(context).alternate,
-              offset: Offset(
+              offset: const Offset(
                 1.0,
                 0.0,
               ),
@@ -107,7 +104,7 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
           ],
         ),
         child: Padding(
-          padding: EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16.0),
           child: Column(
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -119,7 +116,7 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
                   wrapWithModel(
                     model: _model.logoComponentModel,
                     updateCallback: () => safeSetState(() {}),
-                    child: LogoComponentWidget(),
+                    child: const LogoComponentWidget(),
                   ),
                 ],
               ),
@@ -135,22 +132,22 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
                 color: FlutterFlowTheme.of(context).alternate,
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                 child: Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: widget!.bgColorOne,
+                    color: widget.bgColorOne,
                     borderRadius: BorderRadius.circular(8.0),
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(8.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        widget!.iconOne!,
+                        widget.iconOne!,
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
@@ -159,7 +156,7 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
                             style:
                                 FlutterFlowTheme.of(context).bodyLarge.override(
                                       fontFamily: 'Inter',
-                                      color: widget!.textOne,
+                                      color: widget.textOne,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
                                     ),
@@ -171,7 +168,7 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -181,7 +178,7 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
                     context.pushNamed(
                       'DevicesPage',
                       extra: <String, dynamic>{
-                        kTransitionInfoKey: TransitionInfo(
+                        kTransitionInfoKey: const TransitionInfo(
                           hasTransition: true,
                           transitionType: PageTransitionType.fade,
                           duration: Duration(milliseconds: 0),
@@ -192,18 +189,18 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
                   child: Container(
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      color: widget!.bgColorTwo,
+                      color: widget.bgColorTwo,
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     child: Padding(
-                      padding: EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(8.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          widget!.iconTwo!,
+                          widget.iconTwo!,
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
@@ -213,7 +210,7 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
                                   .bodyLarge
                                   .override(
                                     fontFamily: 'Inter',
-                                    color: widget!.textTwo,
+                                    color: widget.textTwo,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
                                   ),
@@ -248,28 +245,28 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
                   shape: badges.BadgeShape.circle,
                   badgeColor: FlutterFlowTheme.of(context).cerise,
                   elevation: 0.0,
-                  padding: EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
                   position: badges.BadgePosition.topEnd(),
                   animationType: badges.BadgeAnimationType.scale,
                   toAnimate: true,
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                     child: Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
-                        color: widget!.bgColorThree,
+                        color: widget.bgColorThree,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            widget!.iconThree!,
+                            widget.iconThree!,
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
@@ -279,7 +276,7 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
                                     .bodyLarge
                                     .override(
                                       fontFamily: 'Inter',
-                                      color: widget!.textThree,
+                                      color: widget.textThree,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
                                     ),
@@ -292,22 +289,22 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
                   ),
                 ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                 child: Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: widget!.bgColorThree,
+                    color: widget.bgColorThree,
                     borderRadius: BorderRadius.circular(8.0),
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(8.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        widget!.iconThree!,
+                        widget.iconThree!,
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
@@ -316,7 +313,7 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
                             style:
                                 FlutterFlowTheme.of(context).bodyLarge.override(
                                       fontFamily: 'Inter',
-                                      color: widget!.textThree,
+                                      color: widget.textThree,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
                                     ),
@@ -328,22 +325,22 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                 child: Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: widget!.bgColorFour,
+                    color: widget.bgColorFour,
                     borderRadius: BorderRadius.circular(8.0),
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(8.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        widget!.iconFour!,
+                        widget.iconFour!,
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
@@ -352,7 +349,7 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
                             style:
                                 FlutterFlowTheme.of(context).bodyLarge.override(
                                       fontFamily: 'Inter',
-                                      color: widget!.textFour,
+                                      color: widget.textFour,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
                                     ),
@@ -363,13 +360,13 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
                   ),
                 ),
               ),
-              Spacer(),
+              const Spacer(),
               Divider(
                 thickness: 1.0,
                 color: FlutterFlowTheme.of(context).alternate,
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -379,7 +376,7 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
                     context.pushNamed(
                       'ResourcesPage',
                       extra: <String, dynamic>{
-                        kTransitionInfoKey: TransitionInfo(
+                        kTransitionInfoKey: const TransitionInfo(
                           hasTransition: true,
                           transitionType: PageTransitionType.fade,
                           duration: Duration(milliseconds: 0),
@@ -390,18 +387,18 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
                   child: Container(
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      color: widget!.bgColor6,
+                      color: widget.bgColor6,
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     child: Padding(
-                      padding: EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(8.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          widget!.icon6!,
+                          widget.icon6!,
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
@@ -411,7 +408,7 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
                                   .bodyLarge
                                   .override(
                                     fontFamily: 'Inter',
-                                    color: widget!.text6,
+                                    color: widget.text6,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
                                   ),
@@ -424,22 +421,22 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                 child: Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: widget!.bgColorFive,
+                    color: widget.bgColorFive,
                     borderRadius: BorderRadius.circular(8.0),
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(8.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        widget!.iconFive!,
+                        widget.iconFive!,
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
@@ -448,7 +445,7 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
                             style:
                                 FlutterFlowTheme.of(context).bodyLarge.override(
                                       fontFamily: 'Inter',
-                                      color: widget!.textFive,
+                                      color: widget.textFive,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
                                     ),
@@ -464,7 +461,7 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
                 color: FlutterFlowTheme.of(context).alternate,
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                 child: Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
@@ -472,14 +469,14 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
                     borderRadius: BorderRadius.circular(8.0),
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(8.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        widget!.icon7!,
+                        widget.icon7!,
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
@@ -488,7 +485,7 @@ class _MenuWebWidgetState extends State<MenuWebWidget> {
                             style:
                                 FlutterFlowTheme.of(context).bodyLarge.override(
                                       fontFamily: 'Inter',
-                                      color: widget!.textColor7,
+                                      color: widget.textColor7,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
                                     ),

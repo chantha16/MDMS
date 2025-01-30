@@ -47,6 +47,83 @@ void main() async {
       );
     });
   });
+
+  group('Nary', () {
+    testWidgets('add new device', (WidgetTester tester) async {
+      _overrideOnError();
+
+      await tester.pumpWidget(ChangeNotifierProvider(
+        create: (context) => FFAppState(),
+        child: MyApp(
+          entryPage: DevicesPageWidget(),
+        ),
+      ));
+
+      await tester.tap(find.byKey(ValueKey('Empty')));
+      await tester.pumpAndSettle(
+        Duration(milliseconds: 3000),
+        EnginePhase.sendSemanticsUpdate,
+        Duration(milliseconds: 5000),
+      );
+      expect(find.byKey(ValueKey('Empty')), findsOneWidget);
+      await tester.tap(find.byKey(ValueKey('Null')));
+      await tester.pumpAndSettle(
+        Duration(milliseconds: 3000),
+        EnginePhase.sendSemanticsUpdate,
+        Duration(milliseconds: 5000),
+      );
+      expect(find.byKey(ValueKey('Null')), findsOneWidget);
+      await tester.tap(find.byKey(ValueKey('3')));
+      await tester.pumpAndSettle(
+        Duration(milliseconds: 3000),
+        EnginePhase.sendSemanticsUpdate,
+        Duration(milliseconds: 5000),
+      );
+      expect(find.byKey(ValueKey('3')), findsOneWidget);
+    });
+  });
+
+  group('bunhai', () {
+    testWidgets('Create Season', (WidgetTester tester) async {
+      _overrideOnError();
+
+      await tester.pumpWidget(ChangeNotifierProvider(
+        create: (context) => FFAppState(),
+        child: MyApp(
+          entryPage: PSeasonWidget(),
+        ),
+      ));
+
+      await tester.tap(find.descendant(
+        of: find.byKey(ValueKey('MainLayoutV2_n2l0')),
+        matching: find.byKey(ValueKey('Container_wz25')),
+      ));
+      expect(find.byKey(ValueKey('pSeason_8nzo')), findsWidgets);
+      await tester.tap(find.text('Add'));
+      expect(find.byKey(ValueKey('MainLayoutV2_ihfl')), findsWidgets);
+      await tester.pumpAndSettle(Duration(milliseconds: 600));
+      await tester.enterText(
+          find.bySemanticsLabel(RegExp('Name')), 'Hello World');
+      await tester.tap(find.bySemanticsLabel(RegExp('ChoiceChips')));
+      await tester.tap(find.bySemanticsLabel(RegExp('PrimaryButton')));
+      expect(find.byKey(ValueKey('MainLayoutV2_nmyv')), findsOneWidget);
+    });
+  });
+
+  group('Thean', () {
+    testWidgets('SpecialDay', (WidgetTester tester) async {
+      _overrideOnError();
+
+      await tester.pumpWidget(ChangeNotifierProvider(
+        create: (context) => FFAppState(),
+        child: MyApp(
+          entryPage: PSpecialDayAddWidget(),
+        ),
+      ));
+
+      await tester.tap(find.text('Add'));
+    });
+  });
 }
 
 // There are certain types of errors that can happen during tests but

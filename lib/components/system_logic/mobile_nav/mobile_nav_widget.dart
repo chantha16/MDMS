@@ -1,9 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'mobile_nav_model.dart';
 export 'mobile_nav_model.dart';
 
@@ -58,7 +55,7 @@ class _MobileNavWidgetState extends State<MobileNavWidget> {
       height: 60.0,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             blurRadius: 3.0,
             color: Color(0x33000000),
@@ -78,9 +75,9 @@ class _MobileNavWidgetState extends State<MobileNavWidget> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                widget!.iconOne!,
+                widget.iconOne!,
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       'fbzwfr5f' /* Home */,
@@ -100,9 +97,9 @@ class _MobileNavWidgetState extends State<MobileNavWidget> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                widget!.iconTwo!,
+                widget.iconTwo!,
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       'ktet0neg' /* Documents */,
@@ -122,9 +119,9 @@ class _MobileNavWidgetState extends State<MobileNavWidget> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                widget!.iconThree!,
+                widget.iconThree!,
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       '5b8oknaf' /* Flow */,
@@ -144,9 +141,9 @@ class _MobileNavWidgetState extends State<MobileNavWidget> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                widget!.iconFour!,
+                widget.iconFour!,
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       '4z1tanpx' /* Reports */,
@@ -166,9 +163,9 @@ class _MobileNavWidgetState extends State<MobileNavWidget> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                widget!.iconFive!,
+                widget.iconFive!,
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       'd11wkhh8' /* Setting */,

@@ -1,9 +1,7 @@
 import '/flutter_flow/flutter_flow_charts.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'barchat_comsumption_model.dart';
 export 'barchat_comsumption_model.dart';
@@ -53,7 +51,7 @@ class _BarchatComsumptionWidgetState extends State<BarchatComsumptionWidget> {
         mainAxisSize: MainAxisSize.max,
         children: [
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 10.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 10.0),
             child: Row(
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.start,
@@ -80,12 +78,12 @@ class _BarchatComsumptionWidgetState extends State<BarchatComsumptionWidget> {
                 Expanded(
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
                     child: Container(
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                         child: FlutterFlowBarChart(
                           barData: [
                             FFBarChartData(
@@ -111,8 +109,8 @@ class _BarchatComsumptionWidgetState extends State<BarchatComsumptionWidget> {
                                 FlutterFlowTheme.of(context).secondaryText,
                             borderWidth: 1.0,
                           ),
-                          axisBounds: AxisBounds(),
-                          xAxisLabelInfo: AxisLabelInfo(
+                          axisBounds: const AxisBounds(),
+                          xAxisLabelInfo: const AxisLabelInfo(
                             reservedSize: 28.0,
                           ),
                           yAxisLabelInfo: AxisLabelInfo(

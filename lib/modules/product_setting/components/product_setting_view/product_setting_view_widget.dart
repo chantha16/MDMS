@@ -1,16 +1,11 @@
 import '/backend/api_requests/api_calls.dart';
-import '/backend/api_requests/api_streaming.dart';
 import '/backend/schema/structs/index.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:convert';
-import 'dart:ui';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'product_setting_view_model.dart';
 export 'product_setting_view_model.dart';
 
@@ -64,7 +59,7 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
                 color: FlutterFlowTheme.of(context).primaryText,
               ),
             ),
-            duration: Duration(milliseconds: 4000),
+            duration: const Duration(milliseconds: 4000),
             backgroundColor: FlutterFlowTheme.of(context).cerise,
           ),
         );
@@ -97,14 +92,14 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 children: [
-                  Container(
+                  SizedBox(
                     width: 200.0,
                     child: TextFormField(
                       controller: _model.textController,
                       focusNode: _model.textFieldFocusNode,
                       onChanged: (_) => EasyDebounce.debounce(
                         '_model.textController',
-                        Duration(milliseconds: 300),
+                        const Duration(milliseconds: 300),
                         () async {
                           await Future.delayed(
                               const Duration(milliseconds: 400));
@@ -139,7 +134,7 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
                                         .primaryText,
                                   ),
                                 ),
-                                duration: Duration(milliseconds: 4000),
+                                duration: const Duration(milliseconds: 4000),
                                 backgroundColor:
                                     FlutterFlowTheme.of(context).cerise,
                               ),
@@ -169,7 +164,7 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
                           borderRadius: BorderRadius.circular(12.0),
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Color(0x00000000),
                             width: 1.0,
                           ),
@@ -192,7 +187,7 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
                         filled: true,
                         fillColor:
                             FlutterFlowTheme.of(context).secondaryBackground,
-                        prefixIcon: Icon(
+                        prefixIcon: const Icon(
                           Icons.search,
                         ),
                         suffixIcon: _model.textController!.text.isNotEmpty
@@ -237,7 +232,7 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
                                                 .primaryText,
                                           ),
                                         ),
-                                        duration: Duration(milliseconds: 4000),
+                                        duration: const Duration(milliseconds: 4000),
                                         backgroundColor:
                                             FlutterFlowTheme.of(context).cerise,
                                       ),
@@ -283,9 +278,9 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
                     options: FFButtonOptions(
                       height: 40.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primary,
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
@@ -307,9 +302,9 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
                     options: FFButtonOptions(
                       height: 40.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primary,
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
@@ -321,13 +316,13 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                   ),
-                ].divide(SizedBox(width: 12.0)),
+                ].divide(const SizedBox(width: 12.0)),
               ),
             ),
-          ].divide(SizedBox(width: 12.0)),
+          ].divide(const SizedBox(width: 12.0)),
         ),
         Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
           child: Row(
             mainAxisSize: MainAxisSize.max,
             children: [
@@ -396,7 +391,7 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
                       ),
                 ),
               ),
-            ].divide(SizedBox(width: 12.0)),
+            ].divide(const SizedBox(width: 12.0)),
           ),
         ),
         Expanded(
@@ -413,7 +408,7 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
               }
 
               return ListView.separated(
-                padding: EdgeInsets.fromLTRB(
+                padding: const EdgeInsets.fromLTRB(
                   0,
                   12.0,
                   0,
@@ -422,16 +417,16 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
                 shrinkWrap: true,
                 scrollDirection: Axis.vertical,
                 itemCount: specialDays.length,
-                separatorBuilder: (_, __) => SizedBox(height: 12.0),
+                separatorBuilder: (_, __) => const SizedBox(height: 12.0),
                 itemBuilder: (context, specialDaysIndex) {
                   final specialDaysItem = specialDays[specialDaysIndex];
                   return Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                     child: Container(
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Padding(
-                        padding: EdgeInsets.all(12.0),
+                        padding: const EdgeInsets.all(12.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -510,7 +505,7 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
                                     ),
                               ),
                             ),
-                          ].divide(SizedBox(width: 12.0)),
+                          ].divide(const SizedBox(width: 12.0)),
                         ),
                       ),
                     ),
@@ -520,7 +515,7 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
             },
           ),
         ),
-      ].divide(SizedBox(height: 12.0)),
+      ].divide(const SizedBox(height: 12.0)),
     );
   }
 }

@@ -1,9 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'filterdatecomponent_model.dart';
 export 'filterdatecomponent_model.dart';
 
@@ -42,10 +39,10 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
       child: Container(
         height: 500.0,
-        constraints: BoxConstraints(
+        constraints: const BoxConstraints(
           maxWidth: 440.0,
         ),
         decoration: BoxDecoration(
@@ -56,12 +53,12 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
           ),
         ),
         child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 10.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 10.0),
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(10.0, 15.0, 10.0, 5.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(10.0, 15.0, 10.0, 5.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -92,7 +89,7 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
               ),
               Expanded(
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -105,7 +102,7 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                           ),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 10.0, 10.0, 10.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
@@ -119,6 +116,14 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                                     opaque: false,
                                     cursor:
                                         MouseCursor.defer ?? MouseCursor.defer,
+                                    onEnter: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered1 = true);
+                                    }),
+                                    onExit: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered1 = false);
+                                    }),
                                     child: Container(
                                       decoration: BoxDecoration(
                                         borderRadius:
@@ -129,7 +134,7 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(10.0),
+                                        padding: const EdgeInsets.all(10.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
@@ -161,18 +166,10 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                                                       .primary,
                                               size: 24.0,
                                             ),
-                                          ].divide(SizedBox(width: 10.0)),
+                                          ].divide(const SizedBox(width: 10.0)),
                                         ),
                                       ),
                                     ),
-                                    onEnter: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered1 = true);
-                                    }),
-                                    onExit: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered1 = false);
-                                    }),
                                   ),
                                   Text(
                                     FFLocalizations.of(context).getText(
@@ -192,6 +189,14 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                                     opaque: false,
                                     cursor:
                                         MouseCursor.defer ?? MouseCursor.defer,
+                                    onEnter: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered2 = true);
+                                    }),
+                                    onExit: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered2 = false);
+                                    }),
                                     child: Container(
                                       decoration: BoxDecoration(
                                         borderRadius:
@@ -202,7 +207,7 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(10.0),
+                                        padding: const EdgeInsets.all(10.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
@@ -234,20 +239,12 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                                                       .primary,
                                               size: 24.0,
                                             ),
-                                          ].divide(SizedBox(width: 10.0)),
+                                          ].divide(const SizedBox(width: 10.0)),
                                         ),
                                       ),
                                     ),
-                                    onEnter: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered2 = true);
-                                    }),
-                                    onExit: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered2 = false);
-                                    }),
                                   ),
-                                ].divide(SizedBox(width: 10.0)),
+                                ].divide(const SizedBox(width: 10.0)),
                               ),
                               Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -258,6 +255,14 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                                     opaque: false,
                                     cursor:
                                         MouseCursor.defer ?? MouseCursor.defer,
+                                    onEnter: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered3 = true);
+                                    }),
+                                    onExit: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered3 = false);
+                                    }),
                                     child: Container(
                                       decoration: BoxDecoration(
                                         borderRadius:
@@ -268,7 +273,7 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(10.0),
+                                        padding: const EdgeInsets.all(10.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
@@ -300,18 +305,10 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                                                       .primary,
                                               size: 24.0,
                                             ),
-                                          ].divide(SizedBox(width: 10.0)),
+                                          ].divide(const SizedBox(width: 10.0)),
                                         ),
                                       ),
                                     ),
-                                    onEnter: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered3 = true);
-                                    }),
-                                    onExit: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered3 = false);
-                                    }),
                                   ),
                                   Text(
                                     FFLocalizations.of(context).getText(
@@ -331,6 +328,14 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                                     opaque: false,
                                     cursor:
                                         MouseCursor.defer ?? MouseCursor.defer,
+                                    onEnter: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered4 = true);
+                                    }),
+                                    onExit: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered4 = false);
+                                    }),
                                     child: Container(
                                       decoration: BoxDecoration(
                                         borderRadius:
@@ -341,7 +346,7 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(10.0),
+                                        padding: const EdgeInsets.all(10.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
@@ -373,22 +378,14 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                                                       .primary,
                                               size: 24.0,
                                             ),
-                                          ].divide(SizedBox(width: 10.0)),
+                                          ].divide(const SizedBox(width: 10.0)),
                                         ),
                                       ),
                                     ),
-                                    onEnter: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered4 = true);
-                                    }),
-                                    onExit: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered4 = false);
-                                    }),
                                   ),
-                                ].divide(SizedBox(width: 10.0)),
+                                ].divide(const SizedBox(width: 10.0)),
                               ),
-                            ].divide(SizedBox(height: 15.0)),
+                            ].divide(const SizedBox(height: 15.0)),
                           ),
                         ),
                       ),
@@ -410,7 +407,7 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                             ),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(10.0),
+                            padding: const EdgeInsets.all(10.0),
                             child: SingleChildScrollView(
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -419,17 +416,25 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                                     opaque: false,
                                     cursor:
                                         MouseCursor.defer ?? MouseCursor.defer,
+                                    onEnter: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered5 = true);
+                                    }),
+                                    onExit: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered5 = false);
+                                    }),
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        color: _model.mouseRegionHovered5!
+                                        color: _model.mouseRegionHovered5
                                             ? FlutterFlowTheme.of(context)
                                                 .primaryBackground
-                                            : Color(0x00000000),
+                                            : const Color(0x00000000),
                                         borderRadius:
                                             BorderRadius.circular(12.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(10.0),
+                                        padding: const EdgeInsets.all(10.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
@@ -527,34 +532,34 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                                                 ),
                                               ],
                                             ),
-                                          ].divide(SizedBox(width: 10.0)),
+                                          ].divide(const SizedBox(width: 10.0)),
                                         ),
                                       ),
                                     ),
-                                    onEnter: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered5 = true);
-                                    }),
-                                    onExit: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered5 = false);
-                                    }),
                                   ),
                                   MouseRegion(
                                     opaque: false,
                                     cursor:
                                         MouseCursor.defer ?? MouseCursor.defer,
+                                    onEnter: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered6 = true);
+                                    }),
+                                    onExit: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered6 = false);
+                                    }),
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        color: _model.mouseRegionHovered6!
+                                        color: _model.mouseRegionHovered6
                                             ? FlutterFlowTheme.of(context)
                                                 .primaryBackground
-                                            : Color(0x00000000),
+                                            : const Color(0x00000000),
                                         borderRadius:
                                             BorderRadius.circular(12.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(10.0),
+                                        padding: const EdgeInsets.all(10.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
@@ -652,34 +657,34 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                                                 ),
                                               ],
                                             ),
-                                          ].divide(SizedBox(width: 10.0)),
+                                          ].divide(const SizedBox(width: 10.0)),
                                         ),
                                       ),
                                     ),
-                                    onEnter: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered6 = true);
-                                    }),
-                                    onExit: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered6 = false);
-                                    }),
                                   ),
                                   MouseRegion(
                                     opaque: false,
                                     cursor:
                                         MouseCursor.defer ?? MouseCursor.defer,
+                                    onEnter: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered7 = true);
+                                    }),
+                                    onExit: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered7 = false);
+                                    }),
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        color: _model.mouseRegionHovered7!
+                                        color: _model.mouseRegionHovered7
                                             ? FlutterFlowTheme.of(context)
                                                 .primaryBackground
-                                            : Color(0x00000000),
+                                            : const Color(0x00000000),
                                         borderRadius:
                                             BorderRadius.circular(12.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(10.0),
+                                        padding: const EdgeInsets.all(10.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
@@ -777,34 +782,34 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                                                 ),
                                               ],
                                             ),
-                                          ].divide(SizedBox(width: 10.0)),
+                                          ].divide(const SizedBox(width: 10.0)),
                                         ),
                                       ),
                                     ),
-                                    onEnter: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered7 = true);
-                                    }),
-                                    onExit: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered7 = false);
-                                    }),
                                   ),
                                   MouseRegion(
                                     opaque: false,
                                     cursor:
                                         MouseCursor.defer ?? MouseCursor.defer,
+                                    onEnter: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered8 = true);
+                                    }),
+                                    onExit: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered8 = false);
+                                    }),
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        color: _model.mouseRegionHovered8!
+                                        color: _model.mouseRegionHovered8
                                             ? FlutterFlowTheme.of(context)
                                                 .primaryBackground
-                                            : Color(0x00000000),
+                                            : const Color(0x00000000),
                                         borderRadius:
                                             BorderRadius.circular(12.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(10.0),
+                                        padding: const EdgeInsets.all(10.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
@@ -902,34 +907,34 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                                                 ),
                                               ],
                                             ),
-                                          ].divide(SizedBox(width: 10.0)),
+                                          ].divide(const SizedBox(width: 10.0)),
                                         ),
                                       ),
                                     ),
-                                    onEnter: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered8 = true);
-                                    }),
-                                    onExit: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered8 = false);
-                                    }),
                                   ),
                                   MouseRegion(
                                     opaque: false,
                                     cursor:
                                         MouseCursor.defer ?? MouseCursor.defer,
+                                    onEnter: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered9 = true);
+                                    }),
+                                    onExit: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered9 = false);
+                                    }),
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        color: _model.mouseRegionHovered9!
+                                        color: _model.mouseRegionHovered9
                                             ? FlutterFlowTheme.of(context)
                                                 .primaryBackground
-                                            : Color(0x00000000),
+                                            : const Color(0x00000000),
                                         borderRadius:
                                             BorderRadius.circular(12.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(10.0),
+                                        padding: const EdgeInsets.all(10.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
@@ -1029,34 +1034,34 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                                                 ),
                                               ],
                                             ),
-                                          ].divide(SizedBox(width: 10.0)),
+                                          ].divide(const SizedBox(width: 10.0)),
                                         ),
                                       ),
                                     ),
-                                    onEnter: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered9 = true);
-                                    }),
-                                    onExit: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered9 = false);
-                                    }),
                                   ),
                                   MouseRegion(
                                     opaque: false,
                                     cursor:
                                         MouseCursor.defer ?? MouseCursor.defer,
+                                    onEnter: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered10 = true);
+                                    }),
+                                    onExit: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered10 = false);
+                                    }),
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        color: _model.mouseRegionHovered10!
+                                        color: _model.mouseRegionHovered10
                                             ? FlutterFlowTheme.of(context)
                                                 .primaryBackground
-                                            : Color(0x00000000),
+                                            : const Color(0x00000000),
                                         borderRadius:
                                             BorderRadius.circular(12.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(10.0),
+                                        padding: const EdgeInsets.all(10.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
@@ -1156,34 +1161,34 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                                                 ),
                                               ],
                                             ),
-                                          ].divide(SizedBox(width: 10.0)),
+                                          ].divide(const SizedBox(width: 10.0)),
                                         ),
                                       ),
                                     ),
-                                    onEnter: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered10 = true);
-                                    }),
-                                    onExit: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered10 = false);
-                                    }),
                                   ),
                                   MouseRegion(
                                     opaque: false,
                                     cursor:
                                         MouseCursor.defer ?? MouseCursor.defer,
+                                    onEnter: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered11 = true);
+                                    }),
+                                    onExit: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered11 = false);
+                                    }),
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        color: _model.mouseRegionHovered11!
+                                        color: _model.mouseRegionHovered11
                                             ? FlutterFlowTheme.of(context)
                                                 .primaryBackground
-                                            : Color(0x00000000),
+                                            : const Color(0x00000000),
                                         borderRadius:
                                             BorderRadius.circular(12.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(10.0),
+                                        padding: const EdgeInsets.all(10.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
@@ -1283,34 +1288,34 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                                                 ),
                                               ],
                                             ),
-                                          ].divide(SizedBox(width: 10.0)),
+                                          ].divide(const SizedBox(width: 10.0)),
                                         ),
                                       ),
                                     ),
-                                    onEnter: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered11 = true);
-                                    }),
-                                    onExit: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered11 = false);
-                                    }),
                                   ),
                                   MouseRegion(
                                     opaque: false,
                                     cursor:
                                         MouseCursor.defer ?? MouseCursor.defer,
+                                    onEnter: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered12 = true);
+                                    }),
+                                    onExit: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered12 = false);
+                                    }),
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        color: _model.mouseRegionHovered12!
+                                        color: _model.mouseRegionHovered12
                                             ? FlutterFlowTheme.of(context)
                                                 .primaryBackground
-                                            : Color(0x00000000),
+                                            : const Color(0x00000000),
                                         borderRadius:
                                             BorderRadius.circular(12.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(10.0),
+                                        padding: const EdgeInsets.all(10.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
@@ -1410,34 +1415,34 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                                                 ),
                                               ],
                                             ),
-                                          ].divide(SizedBox(width: 10.0)),
+                                          ].divide(const SizedBox(width: 10.0)),
                                         ),
                                       ),
                                     ),
-                                    onEnter: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered12 = true);
-                                    }),
-                                    onExit: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered12 = false);
-                                    }),
                                   ),
                                   MouseRegion(
                                     opaque: false,
                                     cursor:
                                         MouseCursor.defer ?? MouseCursor.defer,
+                                    onEnter: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered13 = true);
+                                    }),
+                                    onExit: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered13 = false);
+                                    }),
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        color: _model.mouseRegionHovered13!
+                                        color: _model.mouseRegionHovered13
                                             ? FlutterFlowTheme.of(context)
                                                 .primaryBackground
-                                            : Color(0x00000000),
+                                            : const Color(0x00000000),
                                         borderRadius:
                                             BorderRadius.circular(12.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(10.0),
+                                        padding: const EdgeInsets.all(10.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
@@ -1537,34 +1542,34 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                                                 ),
                                               ],
                                             ),
-                                          ].divide(SizedBox(width: 10.0)),
+                                          ].divide(const SizedBox(width: 10.0)),
                                         ),
                                       ),
                                     ),
-                                    onEnter: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered13 = true);
-                                    }),
-                                    onExit: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered13 = false);
-                                    }),
                                   ),
                                   MouseRegion(
                                     opaque: false,
                                     cursor:
                                         MouseCursor.defer ?? MouseCursor.defer,
+                                    onEnter: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered14 = true);
+                                    }),
+                                    onExit: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered14 = false);
+                                    }),
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        color: _model.mouseRegionHovered14!
+                                        color: _model.mouseRegionHovered14
                                             ? FlutterFlowTheme.of(context)
                                                 .primaryBackground
-                                            : Color(0x00000000),
+                                            : const Color(0x00000000),
                                         borderRadius:
                                             BorderRadius.circular(12.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(10.0),
+                                        padding: const EdgeInsets.all(10.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
@@ -1664,34 +1669,34 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                                                 ),
                                               ],
                                             ),
-                                          ].divide(SizedBox(width: 10.0)),
+                                          ].divide(const SizedBox(width: 10.0)),
                                         ),
                                       ),
                                     ),
-                                    onEnter: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered14 = true);
-                                    }),
-                                    onExit: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered14 = false);
-                                    }),
                                   ),
                                   MouseRegion(
                                     opaque: false,
                                     cursor:
                                         MouseCursor.defer ?? MouseCursor.defer,
+                                    onEnter: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered15 = true);
+                                    }),
+                                    onExit: ((event) async {
+                                      safeSetState(() =>
+                                          _model.mouseRegionHovered15 = false);
+                                    }),
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        color: _model.mouseRegionHovered15!
+                                        color: _model.mouseRegionHovered15
                                             ? FlutterFlowTheme.of(context)
                                                 .primaryBackground
-                                            : Color(0x00000000),
+                                            : const Color(0x00000000),
                                         borderRadius:
                                             BorderRadius.circular(12.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(10.0),
+                                        padding: const EdgeInsets.all(10.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
@@ -1791,18 +1796,10 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                                                 ),
                                               ],
                                             ),
-                                          ].divide(SizedBox(width: 10.0)),
+                                          ].divide(const SizedBox(width: 10.0)),
                                         ),
                                       ),
                                     ),
-                                    onEnter: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered15 = true);
-                                    }),
-                                    onExit: ((event) async {
-                                      safeSetState(() =>
-                                          _model.mouseRegionHovered15 = false);
-                                    }),
                                   ),
                                 ],
                               ),
@@ -1810,7 +1807,7 @@ class _FilterdatecomponentWidgetState extends State<FilterdatecomponentWidget> {
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(height: 15.0)),
+                    ].divide(const SizedBox(height: 15.0)),
                   ),
                 ),
               ),

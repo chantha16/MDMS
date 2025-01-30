@@ -1,5 +1,4 @@
 import '/backend/api_requests/api_calls.dart';
-import '/backend/api_requests/api_streaming.dart';
 import '/backend/schema/enums/enums.dart';
 import '/backend/schema/structs/index.dart';
 import '/components/system_logic/primary_button_with_icon/primary_button_with_icon_widget.dart';
@@ -8,16 +7,12 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/modules/seasons/components/menuoption/menuoption_widget.dart';
 import '/modules/seasons/components/search_not_found/search_not_found_widget.dart';
-import 'dart:convert';
-import 'dart:ui';
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:aligned_dialog/aligned_dialog.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'c_season_copy2_team1_model.dart';
 export 'c_season_copy2_team1_model.dart';
 
@@ -94,7 +89,7 @@ class _CSeasonCopy2Team1WidgetState extends State<CSeasonCopy2Team1Widget> {
     return Container(
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
           topLeft: Radius.circular(20.0),
@@ -107,7 +102,7 @@ class _CSeasonCopy2Team1WidgetState extends State<CSeasonCopy2Team1Widget> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(16.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -126,15 +121,15 @@ class _CSeasonCopy2Team1WidgetState extends State<CSeasonCopy2Team1Widget> {
                         ),
                       ),
                       child: Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
-                        child: Container(
+                        alignment: const AlignmentDirectional(0.0, 0.0),
+                        child: SizedBox(
                           width: double.infinity,
                           child: TextFormField(
                             controller: _model.textController,
                             focusNode: _model.textFieldFocusNode,
                             onChanged: (_) => EasyDebounce.debounce(
                               '_model.textController',
-                              Duration(milliseconds: 300),
+                              const Duration(milliseconds: 300),
                               () async {
                                 _model.apiResult64i =
                                     await SeasonGroup.readAllSeasonsCall.call(
@@ -183,14 +178,14 @@ class _CSeasonCopy2Team1WidgetState extends State<CSeasonCopy2Team1Widget> {
                                     letterSpacing: 0.0,
                                   ),
                               enabledBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Colors.transparent,
                                   width: 1.0,
                                 ),
                                 borderRadius: BorderRadius.circular(20.0),
                               ),
                               focusedBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Colors.transparent,
                                   width: 1.0,
                                 ),
@@ -275,7 +270,7 @@ class _CSeasonCopy2Team1WidgetState extends State<CSeasonCopy2Team1Widget> {
                         ),
                       ),
                     ),
-                  ].divide(SizedBox(width: 16.0)),
+                  ].divide(const SizedBox(width: 16.0)),
                 ),
                 Row(
                   mainAxisSize: MainAxisSize.max,
@@ -303,7 +298,7 @@ class _CSeasonCopy2Team1WidgetState extends State<CSeasonCopy2Team1Widget> {
                               ),
                             }.withoutNulls,
                             extra: <String, dynamic>{
-                              kTransitionInfoKey: TransitionInfo(
+                              kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
                                 transitionType: PageTransitionType.fade,
                                 duration: Duration(milliseconds: 0),
@@ -328,17 +323,17 @@ class _CSeasonCopy2Team1WidgetState extends State<CSeasonCopy2Team1Widget> {
                         btAction: () async {},
                       ),
                     ),
-                  ].divide(SizedBox(width: 16.0)),
+                  ].divide(const SizedBox(width: 16.0)),
                 ),
               ],
             ),
           ),
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
             child: Container(
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).primaryBackground,
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(0.0),
                   bottomRight: Radius.circular(0.0),
                   topLeft: Radius.circular(10.0),
@@ -351,7 +346,7 @@ class _CSeasonCopy2Team1WidgetState extends State<CSeasonCopy2Team1Widget> {
                   Container(
                     width: 46.0,
                     height: 46.0,
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                     child: Builder(
                       builder: (context) => FlutterFlowIconButton(
                         borderColor: Colors.transparent,
@@ -418,20 +413,20 @@ class _CSeasonCopy2Team1WidgetState extends State<CSeasonCopy2Team1Widget> {
                           ),
                     ),
                   ),
-                ].divide(SizedBox(width: 16.0)),
+                ].divide(const SizedBox(width: 16.0)),
               ),
             ),
           ),
           Expanded(
             child: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Expanded(
                     child: Container(
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(10.0),
                           bottomRight: Radius.circular(10.0),
                           topLeft: Radius.circular(0.0),
@@ -445,7 +440,7 @@ class _CSeasonCopy2Team1WidgetState extends State<CSeasonCopy2Team1Widget> {
                         builder: (context) {
                           final model = _model.modelSeason.toList();
                           if (model.isEmpty) {
-                            return SearchNotFoundWidget();
+                            return const SearchNotFoundWidget();
                           }
 
                           return ListView.separated(
@@ -454,7 +449,7 @@ class _CSeasonCopy2Team1WidgetState extends State<CSeasonCopy2Team1Widget> {
                             shrinkWrap: true,
                             scrollDirection: Axis.vertical,
                             itemCount: model.length,
-                            separatorBuilder: (_, __) => SizedBox(height: 6.0),
+                            separatorBuilder: (_, __) => const SizedBox(height: 6.0),
                             itemBuilder: (context, modelIndex) {
                               final modelItem = model[modelIndex];
                               return SingleChildScrollView(
@@ -462,7 +457,7 @@ class _CSeasonCopy2Team1WidgetState extends State<CSeasonCopy2Team1Widget> {
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -493,19 +488,19 @@ class _CSeasonCopy2Team1WidgetState extends State<CSeasonCopy2Team1Widget> {
                                                   isGlobal: false,
                                                   avoidOverflow: true,
                                                   targetAnchor:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                               1.0, 1.0)
                                                           .resolve(
                                                               Directionality.of(
                                                                   context)),
                                                   followerAnchor:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                               0.0, -1.0)
                                                           .resolve(
                                                               Directionality.of(
                                                                   context)),
                                                   builder: (dialogContext) {
-                                                    return Material(
+                                                    return const Material(
                                                       color: Colors.transparent,
                                                       child: MenuoptionWidget(),
                                                     );
@@ -569,7 +564,7 @@ class _CSeasonCopy2Team1WidgetState extends State<CSeasonCopy2Team1Widget> {
                                                           ),
                                                     );
                                                   }).divide(
-                                                      SizedBox(width: 5.0)),
+                                                      const SizedBox(width: 5.0)),
                                                 );
                                               },
                                             ),
@@ -587,7 +582,7 @@ class _CSeasonCopy2Team1WidgetState extends State<CSeasonCopy2Team1Widget> {
                                                       ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 16.0)),
+                                        ].divide(const SizedBox(width: 16.0)),
                                       ),
                                     ),
                                   ],

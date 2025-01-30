@@ -3,11 +3,8 @@ import '/components/system_logic/pagenation_component/pagenation_component_widge
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'time_band_view_model.dart';
 export 'time_band_view_model.dart';
 
@@ -47,7 +44,7 @@ class _TimeBandViewWidgetState extends State<TimeBandViewWidget> {
     return Container(
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
           topLeft: Radius.circular(20.0),
@@ -55,7 +52,7 @@ class _TimeBandViewWidgetState extends State<TimeBandViewWidget> {
         ),
       ),
       child: Padding(
-        padding: EdgeInsets.all(24.0),
+        padding: const EdgeInsets.all(24.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.start,
@@ -65,11 +62,11 @@ class _TimeBandViewWidgetState extends State<TimeBandViewWidget> {
               updateCallback: () => safeSetState(() {}),
               child: BodyHeaderWidget(
                 tbName1: 'Export',
-                btIcon1: Icon(
+                btIcon1: const Icon(
                   Icons.ios_share,
                 ),
                 tbName2: 'Add',
-                btIcon2: Icon(
+                btIcon2: const Icon(
                   Icons.add_box,
                 ),
                 filterAction: () async {},
@@ -78,7 +75,7 @@ class _TimeBandViewWidgetState extends State<TimeBandViewWidget> {
                   context.pushNamed(
                     'TimeBandDetails',
                     extra: <String, dynamic>{
-                      kTransitionInfoKey: TransitionInfo(
+                      kTransitionInfoKey: const TransitionInfo(
                         hasTransition: true,
                         transitionType: PageTransitionType.fade,
                         duration: Duration(milliseconds: 0),
@@ -93,7 +90,7 @@ class _TimeBandViewWidgetState extends State<TimeBandViewWidget> {
               height: 48.0,
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).primaryBackground,
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(0.0),
                   bottomRight: Radius.circular(0.0),
                   topLeft: Radius.circular(16.0),
@@ -131,7 +128,7 @@ class _TimeBandViewWidgetState extends State<TimeBandViewWidget> {
                   Container(
                     width: 46.0,
                     height: 46.0,
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                     child: FlutterFlowIconButton(
                       borderColor: Colors.transparent,
                       borderRadius: 8.0,
@@ -255,12 +252,12 @@ class _TimeBandViewWidgetState extends State<TimeBandViewWidget> {
                           ),
                     ),
                   ),
-                ].divide(SizedBox(width: 16.0)),
+                ].divide(const SizedBox(width: 16.0)),
               ),
             ),
             Expanded(
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(16.0),
                     bottomRight: Radius.circular(16.0),
@@ -276,11 +273,17 @@ class _TimeBandViewWidgetState extends State<TimeBandViewWidget> {
                     MouseRegion(
                       opaque: false,
                       cursor: MouseCursor.defer ?? MouseCursor.defer,
+                      onEnter: ((event) async {
+                        safeSetState(() => _model.mouseRegionHovered1 = true);
+                      }),
+                      onExit: ((event) async {
+                        safeSetState(() => _model.mouseRegionHovered1 = false);
+                      }),
                       child: Container(
                         decoration: BoxDecoration(
-                          color: _model.mouseRegionHovered1!
+                          color: _model.mouseRegionHovered1
                               ? FlutterFlowTheme.of(context).cultured
-                              : Color(0x00000000),
+                              : const Color(0x00000000),
                         ),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -328,7 +331,7 @@ class _TimeBandViewWidgetState extends State<TimeBandViewWidget> {
                             Expanded(
                               flex: 1,
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     5.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
@@ -457,24 +460,24 @@ class _TimeBandViewWidgetState extends State<TimeBandViewWidget> {
                                     ),
                               ),
                             ),
-                          ].divide(SizedBox(width: 16.0)),
+                          ].divide(const SizedBox(width: 16.0)),
                         ),
                       ),
-                      onEnter: ((event) async {
-                        safeSetState(() => _model.mouseRegionHovered1 = true);
-                      }),
-                      onExit: ((event) async {
-                        safeSetState(() => _model.mouseRegionHovered1 = false);
-                      }),
                     ),
                     MouseRegion(
                       opaque: false,
                       cursor: MouseCursor.defer ?? MouseCursor.defer,
+                      onEnter: ((event) async {
+                        safeSetState(() => _model.mouseRegionHovered2 = true);
+                      }),
+                      onExit: ((event) async {
+                        safeSetState(() => _model.mouseRegionHovered2 = false);
+                      }),
                       child: Container(
                         decoration: BoxDecoration(
-                          color: _model.mouseRegionHovered2!
+                          color: _model.mouseRegionHovered2
                               ? FlutterFlowTheme.of(context).primaryBackground
-                              : Color(0x00000000),
+                              : const Color(0x00000000),
                         ),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -523,7 +526,7 @@ class _TimeBandViewWidgetState extends State<TimeBandViewWidget> {
                             Expanded(
                               flex: 1,
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     5.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
@@ -650,26 +653,20 @@ class _TimeBandViewWidgetState extends State<TimeBandViewWidget> {
                                     ),
                               ),
                             ),
-                          ].divide(SizedBox(width: 16.0)),
+                          ].divide(const SizedBox(width: 16.0)),
                         ),
                       ),
-                      onEnter: ((event) async {
-                        safeSetState(() => _model.mouseRegionHovered2 = true);
-                      }),
-                      onExit: ((event) async {
-                        safeSetState(() => _model.mouseRegionHovered2 = false);
-                      }),
                     ),
-                  ].divide(SizedBox(height: 0.0)),
+                  ].divide(const SizedBox(height: 0.0)),
                 ),
               ),
             ),
             wrapWithModel(
               model: _model.pagenationComponentModel,
               updateCallback: () => safeSetState(() {}),
-              child: PagenationComponentWidget(),
+              child: const PagenationComponentWidget(),
             ),
-          ].divide(SizedBox(height: 16.0)),
+          ].divide(const SizedBox(height: 16.0)),
         ),
       ),
     );

@@ -2,11 +2,8 @@ import '/backend/schema/enums/enums.dart';
 import '/components/layout/main_layout_v2/main_layout_v2_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/modules/seasons/components/c_season/c_season_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'p_season_model.dart';
 export 'p_season_model.dart';
 
@@ -53,8 +50,9 @@ class _PSeasonWidgetState extends State<PSeasonWidget> {
             model: _model.mainLayoutV2Model,
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutV2Widget(
+              key: const ValueKey('MainLayoutV2_nmyv'),
               menu: MenuItems.Seasons,
-              child: () => CSeasonWidget(),
+              child: () => const CSeasonWidget(),
             ),
           ),
         ),

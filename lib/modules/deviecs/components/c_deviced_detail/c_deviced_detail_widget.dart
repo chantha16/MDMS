@@ -7,11 +7,8 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/modules/deviecs/components/c_cos_info/c_cos_info_widget.dart';
 import '/modules/deviecs/components/c_tou_info/c_tou_info_widget.dart';
 import '/modules/deviecs/components/cloadprofile/cloadprofile_widget.dart';
-import 'dart:ui';
 import 'package:aligned_dialog/aligned_dialog.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'c_deviced_detail_model.dart';
 export 'c_deviced_detail_model.dart';
 
@@ -58,7 +55,7 @@ class _CDevicedDetailWidgetState extends State<CDevicedDetailWidget> {
         mainAxisSize: MainAxisSize.max,
         children: [
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 15.0, 15.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 15.0, 15.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               children: [
@@ -75,7 +72,7 @@ class _CDevicedDetailWidgetState extends State<CDevicedDetailWidget> {
                 Expanded(
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 0.0, 0.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -102,13 +99,13 @@ class _CDevicedDetailWidgetState extends State<CDevicedDetailWidget> {
                                     letterSpacing: 0.0,
                                   ),
                         ),
-                      ].divide(SizedBox(height: 7.0)),
+                      ].divide(const SizedBox(height: 7.0)),
                     ),
                   ),
                 ),
                 Builder(
                   builder: (context) => Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -119,12 +116,12 @@ class _CDevicedDetailWidgetState extends State<CDevicedDetailWidget> {
                           context: context,
                           isGlobal: false,
                           avoidOverflow: false,
-                          targetAnchor: AlignmentDirectional(1.0, -1.2)
+                          targetAnchor: const AlignmentDirectional(1.0, -1.2)
                               .resolve(Directionality.of(context)),
-                          followerAnchor: AlignmentDirectional(0.9, -1.0)
+                          followerAnchor: const AlignmentDirectional(0.9, -1.0)
                               .resolve(Directionality.of(context)),
                           builder: (dialogContext) {
-                            return Material(
+                            return const Material(
                               color: Colors.transparent,
                               child: SearchDeviceWidget(),
                             );
@@ -143,7 +140,7 @@ class _CDevicedDetailWidgetState extends State<CDevicedDetailWidget> {
                           ),
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             Icons.search_sharp,
                             color: FlutterFlowTheme.of(context).primary,
@@ -159,7 +156,7 @@ class _CDevicedDetailWidgetState extends State<CDevicedDetailWidget> {
           ),
           Expanded(
             child: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 15.0, 15.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 15.0, 15.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 children: [
@@ -181,7 +178,7 @@ class _CDevicedDetailWidgetState extends State<CDevicedDetailWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         15.0, 15.0, 15.0, 10.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -213,7 +210,7 @@ class _CDevicedDetailWidgetState extends State<CDevicedDetailWidget> {
                                     child: wrapWithModel(
                                       model: _model.cCosInfoModel,
                                       updateCallback: () => safeSetState(() {}),
-                                      child: CCosInfoWidget(),
+                                      child: const CCosInfoWidget(),
                                     ),
                                   ),
                                 ],
@@ -238,7 +235,7 @@ class _CDevicedDetailWidgetState extends State<CDevicedDetailWidget> {
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   15.0, 15.0, 15.0, 10.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -275,7 +272,7 @@ class _CDevicedDetailWidgetState extends State<CDevicedDetailWidget> {
                                             model: _model.cTouInfoModel,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: CTouInfoWidget(),
+                                            child: const CTouInfoWidget(),
                                           ),
                                         ),
                                       ],
@@ -286,7 +283,7 @@ class _CDevicedDetailWidgetState extends State<CDevicedDetailWidget> {
                             ],
                           ),
                         ),
-                      ].divide(SizedBox(height: 15.0)),
+                      ].divide(const SizedBox(height: 15.0)),
                     ),
                   ),
                   Expanded(
@@ -310,7 +307,7 @@ class _CDevicedDetailWidgetState extends State<CDevicedDetailWidget> {
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       15.0, 15.0, 15.0, 10.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -336,7 +333,7 @@ class _CDevicedDetailWidgetState extends State<CDevicedDetailWidget> {
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
-                                      borderRadius: BorderRadius.only(
+                                      borderRadius: const BorderRadius.only(
                                         bottomLeft: Radius.circular(12.0),
                                         bottomRight: Radius.circular(12.0),
                                         topLeft: Radius.circular(0.0),
@@ -346,7 +343,7 @@ class _CDevicedDetailWidgetState extends State<CDevicedDetailWidget> {
                                     child: wrapWithModel(
                                       model: _model.cloadprofileModel,
                                       updateCallback: () => safeSetState(() {}),
-                                      child: CloadprofileWidget(),
+                                      child: const CloadprofileWidget(),
                                     ),
                                   ),
                                 ),
@@ -354,7 +351,7 @@ class _CDevicedDetailWidgetState extends State<CDevicedDetailWidget> {
                             ),
                           ),
                         ),
-                      ].divide(SizedBox(height: 15.0)),
+                      ].divide(const SizedBox(height: 15.0)),
                     ),
                   ),
                   Expanded(
@@ -378,7 +375,7 @@ class _CDevicedDetailWidgetState extends State<CDevicedDetailWidget> {
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       10.0, 10.0, 10.0, 10.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -401,11 +398,11 @@ class _CDevicedDetailWidgetState extends State<CDevicedDetailWidget> {
                                 ),
                                 Expanded(
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         10.0, 0.0, 10.0, 10.0),
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.only(
+                                        borderRadius: const BorderRadius.only(
                                           bottomLeft: Radius.circular(12.0),
                                           bottomRight: Radius.circular(12.0),
                                           topLeft: Radius.circular(12.0),
@@ -420,7 +417,7 @@ class _CDevicedDetailWidgetState extends State<CDevicedDetailWidget> {
                                         model: _model.comMapModel,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: ComMapWidget(),
+                                        child: const ComMapWidget(),
                                       ),
                                     ),
                                   ),
@@ -429,30 +426,30 @@ class _CDevicedDetailWidgetState extends State<CDevicedDetailWidget> {
                             ),
                           ),
                         ),
-                      ].divide(SizedBox(height: 15.0)),
+                      ].divide(const SizedBox(height: 15.0)),
                     ),
                   ),
-                ].divide(SizedBox(width: 15.0)),
+                ].divide(const SizedBox(width: 15.0)),
               ),
             ),
           ),
           Expanded(
             child: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 15.0, 15.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 15.0, 15.0),
               child: SingleChildScrollView(
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 15.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 15.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Expanded(
                             flex: 10,
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 10.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -460,7 +457,7 @@ class _CDevicedDetailWidgetState extends State<CDevicedDetailWidget> {
                                 children: [
                                   Expanded(
                                     child: Container(
-                                      constraints: BoxConstraints(
+                                      constraints: const BoxConstraints(
                                         maxHeight: 500.0,
                                       ),
                                       decoration: BoxDecoration(
@@ -475,12 +472,12 @@ class _CDevicedDetailWidgetState extends State<CDevicedDetailWidget> {
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(10.0),
+                                        padding: const EdgeInsets.all(10.0),
                                         child: wrapWithModel(
                                           model: _model.barchatComsumptionModel,
                                           updateCallback: () =>
                                               safeSetState(() {}),
-                                          child: BarchatComsumptionWidget(),
+                                          child: const BarchatComsumptionWidget(),
                                         ),
                                       ),
                                     ),
@@ -497,7 +494,7 @@ class _CDevicedDetailWidgetState extends State<CDevicedDetailWidget> {
                               children: [
                                 Expanded(
                                   child: Container(
-                                    constraints: BoxConstraints(
+                                    constraints: const BoxConstraints(
                                       maxHeight: 500.0,
                                     ),
                                     decoration: BoxDecoration(
@@ -511,13 +508,13 @@ class _CDevicedDetailWidgetState extends State<CDevicedDetailWidget> {
                                       ),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           15.0, 10.0, 15.0, 10.0),
                                       child: wrapWithModel(
                                         model: _model.linechartVoltageModel,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: LinechartVoltageWidget(),
+                                        child: const LinechartVoltageWidget(),
                                       ),
                                     ),
                                   ),
@@ -525,7 +522,7 @@ class _CDevicedDetailWidgetState extends State<CDevicedDetailWidget> {
                               ],
                             ),
                           ),
-                        ].divide(SizedBox(width: 10.0)),
+                        ].divide(const SizedBox(width: 10.0)),
                       ),
                     ),
                   ],

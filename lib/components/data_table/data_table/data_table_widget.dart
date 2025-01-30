@@ -4,17 +4,15 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
-import 'dart:ui';
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'data_table_model.dart';
 export 'data_table_model.dart';
 
+/// created by ff.lyhoung.
 class DataTableWidget extends StatefulWidget {
-  /// created by ff.lyhoung.
   const DataTableWidget({
     super.key,
     bool? hidenCheckBox,
@@ -28,7 +26,7 @@ class DataTableWidget extends StatefulWidget {
     this.onSelectedItems,
     this.onRowTap,
     this.onSort,
-  }) : this.hidenCheckBox = hidenCheckBox ?? false;
+  }) : hidenCheckBox = hidenCheckBox ?? false;
 
   final bool hidenCheckBox;
   final List<String>? columnNames;
@@ -85,13 +83,13 @@ class _DataTableWidgetState extends State<DataTableWidget> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
             child: Container(
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).primaryBackground,
               ),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 15.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 15.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -136,7 +134,7 @@ class _DataTableWidgetState extends State<DataTableWidget> {
                     ),
                     Container(
                       width: 20.0,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Text(
                         FFLocalizations.of(context).getText(
                           'cu05nf6n' /* No */,
@@ -151,15 +149,15 @@ class _DataTableWidgetState extends State<DataTableWidget> {
                     ),
                     Expanded(
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             20.0, 15.0, 0.0, 15.0),
                         child: Builder(
                           builder: (context) {
                             final columnNames = functions
                                 .filterVisibleColumns(
                                     FFAppState().hidenColumn.toList(),
-                                    widget!.columnNames!.toList(),
-                                    widget!.columnNames!.toList())
+                                    widget.columnNames!.toList(),
+                                    widget.columnNames!.toList())
                                 .toList();
 
                             return Row(
@@ -207,7 +205,7 @@ class _DataTableWidgetState extends State<DataTableWidget> {
                                           }
                                         },
                                       ),
-                                    ].divide(SizedBox(width: 5.0)),
+                                    ].divide(const SizedBox(width: 5.0)),
                                   ),
                                 );
                               }),
@@ -216,17 +214,17 @@ class _DataTableWidgetState extends State<DataTableWidget> {
                         ),
                       ),
                     ),
-                  ].divide(SizedBox(width: 10.0)),
+                  ].divide(const SizedBox(width: 10.0)),
                 ),
               ),
             ),
           ),
           Expanded(
             child: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 15.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 15.0, 0.0),
               child: Builder(
                 builder: (context) {
-                  final rowItems = widget!.rowItems!
+                  final rowItems = widget.rowItems!
                       .map((e) => e)
                       .toList()
                       .sortedList(
@@ -244,7 +242,7 @@ class _DataTableWidgetState extends State<DataTableWidget> {
                       .toList();
 
                   return ListView.builder(
-                    padding: EdgeInsets.fromLTRB(
+                    padding: const EdgeInsets.fromLTRB(
                       0,
                       5.0,
                       0,
@@ -261,7 +259,7 @@ class _DataTableWidgetState extends State<DataTableWidget> {
                         numberItems: rowItemsIndex,
                         rowValue: rowItemsItem,
                         isCheck: _model.checkboxValue,
-                        columnHeader: widget!.columnNames!,
+                        columnHeader: widget.columnNames!,
                       );
                     },
                   );
@@ -283,7 +281,7 @@ class _DataTableWidgetState extends State<DataTableWidget> {
                     ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                 child: FlutterFlowDropDown<String>(
                   controller: _model.dropDownValueController ??=
                       FormFieldController<String>(null),
@@ -322,7 +320,7 @@ class _DataTableWidgetState extends State<DataTableWidget> {
                   borderColor: FlutterFlowTheme.of(context).alternate,
                   borderWidth: 0.0,
                   borderRadius: 12.0,
-                  margin: EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                  margin: const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                   hidesUnderline: true,
                   isOverButton: false,
                   isSearchable: false,
@@ -345,9 +343,9 @@ class _DataTableWidgetState extends State<DataTableWidget> {
                   size: 24.0,
                 ),
                 onPressed: () async {
-                  if ((widget!.currentPage != null) &&
-                      (widget!.currentPage != 1) &&
-                      (widget!.currentPage != 0)) {
+                  if ((widget.currentPage != null) &&
+                      (widget.currentPage != 1) &&
+                      (widget.currentPage != 0)) {
                     await widget.onPreviousPage?.call();
                   }
                 },
@@ -359,7 +357,7 @@ class _DataTableWidgetState extends State<DataTableWidget> {
                 ),
               ),
               Text(
-                '${widget!.currentPage?.toString()} of ${widget!.totalPage?.toString()}',
+                '${widget.currentPage?.toString()} of ${widget.totalPage?.toString()}',
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                       fontFamily: 'Inter',
                       letterSpacing: 0.0,
@@ -381,7 +379,7 @@ class _DataTableWidgetState extends State<DataTableWidget> {
                   size: 24.0,
                 ),
                 onPressed: () async {
-                  if (widget!.currentPage != widget!.totalPage) {
+                  if (widget.currentPage != widget.totalPage) {
                     await widget.onNextPage?.call();
                   }
                 },

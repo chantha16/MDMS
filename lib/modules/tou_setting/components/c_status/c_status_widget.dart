@@ -2,8 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'c_status_model.dart';
 export 'c_status_model.dart';
 
@@ -53,17 +51,17 @@ class _CStatusWidgetState extends State<CStatusWidget> {
       onPressed: () {
         print('Button pressed ...');
       },
-      text: widget!.nameStatus!,
+      text: widget.nameStatus!,
       options: FFButtonOptions(
         width: 131.0,
         height: 32.0,
-        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
         iconAlignment: IconAlignment.start,
-        iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-        color: widget!.bgStatus,
+        iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+        color: widget.bgStatus,
         textStyle: FlutterFlowTheme.of(context).titleSmall.override(
               fontFamily: 'Inter Tight',
-              color: widget!.textColor,
+              color: widget.textColor,
               fontSize: 14.0,
               letterSpacing: 0.0,
               fontWeight: FontWeight.normal,

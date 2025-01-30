@@ -1,9 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'more_detail_alert_model.dart';
 export 'more_detail_alert_model.dart';
 
@@ -45,7 +42,7 @@ class _MoreDetailAlertWidgetState extends State<MoreDetailAlertWidget> {
       height: 235.0,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             color: Color(0x33000000),
           )
@@ -53,7 +50,7 @@ class _MoreDetailAlertWidgetState extends State<MoreDetailAlertWidget> {
         borderRadius: BorderRadius.circular(12.0),
       ),
       child: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.start,
@@ -93,7 +90,7 @@ class _MoreDetailAlertWidgetState extends State<MoreDetailAlertWidget> {
                           letterSpacing: 0.0,
                         ),
                   ),
-                ].divide(SizedBox(width: 12.0)),
+                ].divide(const SizedBox(width: 12.0)),
               ),
             ),
             Row(
@@ -122,7 +119,7 @@ class _MoreDetailAlertWidgetState extends State<MoreDetailAlertWidget> {
                         letterSpacing: 0.0,
                       ),
                 ),
-              ].divide(SizedBox(width: 12.0)),
+              ].divide(const SizedBox(width: 12.0)),
             ),
             InkWell(
               splashColor: Colors.transparent,
@@ -158,7 +155,7 @@ class _MoreDetailAlertWidgetState extends State<MoreDetailAlertWidget> {
                           letterSpacing: 0.0,
                         ),
                   ),
-                ].divide(SizedBox(width: 12.0)),
+                ].divide(const SizedBox(width: 12.0)),
               ),
             ),
             InkWell(
@@ -195,7 +192,7 @@ class _MoreDetailAlertWidgetState extends State<MoreDetailAlertWidget> {
                           letterSpacing: 0.0,
                         ),
                   ),
-                ].divide(SizedBox(width: 12.0)),
+                ].divide(const SizedBox(width: 12.0)),
               ),
             ),
             Container(
@@ -204,7 +201,7 @@ class _MoreDetailAlertWidgetState extends State<MoreDetailAlertWidget> {
                 color: FlutterFlowTheme.of(context).alternate,
               ),
             ),
-          ].divide(SizedBox(height: 15.0)),
+          ].divide(const SizedBox(height: 15.0)),
         ),
       ),
     );

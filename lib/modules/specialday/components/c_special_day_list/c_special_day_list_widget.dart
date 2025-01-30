@@ -9,11 +9,9 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/modules/specialday/components/c_activity_log_special_day/c_activity_log_special_day_widget.dart';
 import '/modules/specialday/components/c_special_day_action/c_special_day_action_widget.dart';
 import '/modules/specialday/components/c_special_day_detail_list/c_special_day_detail_list_widget.dart';
-import 'dart:ui';
 import 'package:aligned_dialog/aligned_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'c_special_day_list_model.dart';
 export 'c_special_day_list_model.dart';
@@ -66,7 +64,7 @@ class _CSpecialDayListWidgetState extends State<CSpecialDayListWidget> {
         borderRadius: BorderRadius.circular(20.0),
       ),
       child: Padding(
-        padding: EdgeInsets.all(24.0),
+        padding: const EdgeInsets.all(24.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.start,
@@ -76,11 +74,11 @@ class _CSpecialDayListWidgetState extends State<CSpecialDayListWidget> {
               updateCallback: () => safeSetState(() {}),
               child: BodyHeaderWidget(
                 tbName1: 'Export',
-                btIcon1: Icon(
+                btIcon1: const Icon(
                   Icons.ios_share_sharp,
                 ),
                 tbName2: 'Add',
-                btIcon2: Icon(
+                btIcon2: const Icon(
                   Icons.add_box_sharp,
                 ),
                 filterAction: () async {},
@@ -99,7 +97,7 @@ class _CSpecialDayListWidgetState extends State<CSpecialDayListWidget> {
                       ),
                     }.withoutNulls,
                     extra: <String, dynamic>{
-                      kTransitionInfoKey: TransitionInfo(
+                      kTransitionInfoKey: const TransitionInfo(
                         hasTransition: true,
                         transitionType: PageTransitionType.fade,
                         duration: Duration(milliseconds: 0),
@@ -117,7 +115,7 @@ class _CSpecialDayListWidgetState extends State<CSpecialDayListWidget> {
                   Container(
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).primaryBackground,
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(0.0),
                         bottomRight: Radius.circular(0.0),
                         topLeft: Radius.circular(10.0),
@@ -130,7 +128,7 @@ class _CSpecialDayListWidgetState extends State<CSpecialDayListWidget> {
                         Container(
                           width: 46.0,
                           height: 46.0,
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                           child: Builder(
                             builder: (context) => FlutterFlowIconButton(
                               borderColor: Colors.transparent,
@@ -187,7 +185,7 @@ class _CSpecialDayListWidgetState extends State<CSpecialDayListWidget> {
                                     ),
                           ),
                         ),
-                      ].divide(SizedBox(width: 16.0)),
+                      ].divide(const SizedBox(width: 16.0)),
                     ),
                   ),
                   Expanded(
@@ -199,7 +197,7 @@ class _CSpecialDayListWidgetState extends State<CSpecialDayListWidget> {
                           FutureBuilder<ApiCallResponse>(
                             future: FFAppState().search(
                               uniqueQueryKey: valueOrDefault<String>(
-                                widget!.swearch,
+                                widget.swearch,
                                 'kh',
                               ),
                               overrideCache: FFAppState().isRefresh,
@@ -238,7 +236,7 @@ class _CSpecialDayListWidgetState extends State<CSpecialDayListWidget> {
                                               as Iterable<
                                                   SpecialDayModelStruct?>)
                                           .withoutNulls
-                                          ?.toList() ??
+                                          .toList() ??
                                       [];
 
                                   return ListView.builder(
@@ -260,7 +258,7 @@ class _CSpecialDayListWidgetState extends State<CSpecialDayListWidget> {
                                                     )
                                                 ? FlutterFlowTheme.of(context)
                                                     .alternate
-                                                : Color(0x00000000),
+                                                : const Color(0x00000000),
                                           ),
                                           child: Builder(
                                             builder: (context) => InkWell(
@@ -282,7 +280,7 @@ class _CSpecialDayListWidgetState extends State<CSpecialDayListWidget> {
                                                       backgroundColor:
                                                           Colors.transparent,
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                                   1.0, 0.0)
                                                               .resolve(
                                                                   Directionality.of(
@@ -330,13 +328,13 @@ class _CSpecialDayListWidgetState extends State<CSpecialDayListWidget> {
                                                           isGlobal: false,
                                                           avoidOverflow: true,
                                                           targetAnchor:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                       0.0, 0.0)
                                                                   .resolve(
                                                                       Directionality.of(
                                                                           context)),
                                                           followerAnchor:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                       -1.0,
                                                                       -1.0)
                                                                   .resolve(
@@ -382,7 +380,7 @@ class _CSpecialDayListWidgetState extends State<CSpecialDayListWidget> {
                                                                     extra: <String,
                                                                         dynamic>{
                                                                       kTransitionInfoKey:
-                                                                          TransitionInfo(
+                                                                          const TransitionInfo(
                                                                         hasTransition:
                                                                             true,
                                                                         transitionType:
@@ -419,7 +417,7 @@ class _CSpecialDayListWidgetState extends State<CSpecialDayListWidget> {
                                                                     extra: <String,
                                                                         dynamic>{
                                                                       kTransitionInfoKey:
-                                                                          TransitionInfo(
+                                                                          const TransitionInfo(
                                                                         hasTransition:
                                                                             true,
                                                                         transitionType:
@@ -463,7 +461,7 @@ class _CSpecialDayListWidgetState extends State<CSpecialDayListWidget> {
                                                                     extra: <String,
                                                                         dynamic>{
                                                                       kTransitionInfoKey:
-                                                                          TransitionInfo(
+                                                                          const TransitionInfo(
                                                                         hasTransition:
                                                                             true,
                                                                         transitionType:
@@ -489,9 +487,9 @@ class _CSpecialDayListWidgetState extends State<CSpecialDayListWidget> {
                                                                         backgroundColor:
                                                                             Colors.transparent,
                                                                         alignment:
-                                                                            AlignmentDirectional(0.0, 0.0).resolve(Directionality.of(context)),
+                                                                            const AlignmentDirectional(0.0, 0.0).resolve(Directionality.of(context)),
                                                                         child:
-                                                                            Container(
+                                                                            SizedBox(
                                                                           height:
                                                                               MediaQuery.sizeOf(context).height * 0.8,
                                                                           width:
@@ -558,7 +556,7 @@ class _CSpecialDayListWidgetState extends State<CSpecialDayListWidget> {
                                                           ),
                                                     ),
                                                   ),
-                                                ].divide(SizedBox(width: 16.0)),
+                                                ].divide(const SizedBox(width: 16.0)),
                                               ),
                                             ),
                                           ),
@@ -581,7 +579,7 @@ class _CSpecialDayListWidgetState extends State<CSpecialDayListWidget> {
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).secondaryBackground,
               ),
-              alignment: AlignmentDirectional(0.0, 1.0),
+              alignment: const AlignmentDirectional(0.0, 1.0),
             ),
             wrapWithModel(
               model: _model.cPaginationModel,
@@ -590,7 +588,7 @@ class _CSpecialDayListWidgetState extends State<CSpecialDayListWidget> {
                 actionstruc: () async {},
               ),
             ),
-          ].divide(SizedBox(height: 16.0)),
+          ].divide(const SizedBox(height: 16.0)),
         ),
       ),
     );

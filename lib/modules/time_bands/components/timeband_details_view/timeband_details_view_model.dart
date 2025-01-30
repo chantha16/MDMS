@@ -1,17 +1,9 @@
 import '/components/system_logic/primary_button/primary_button_widget.dart';
 import '/components/system_logic/secoundary_button/secoundary_button_widget.dart';
-import '/flutter_flow/flutter_flow_choice_chips.dart';
-import '/flutter_flow/flutter_flow_drop_down.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
-import 'dart:ui';
 import 'timeband_details_view_widget.dart' show TimebandDetailsViewWidget;
-import 'package:flutter/foundation.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class TimebandDetailsViewModel
     extends FlutterFlowModel<TimebandDetailsViewWidget> {
