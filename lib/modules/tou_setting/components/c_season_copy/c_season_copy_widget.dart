@@ -8,13 +8,11 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/modules/seasons/components/menuoption/menuoption_widget.dart';
-import 'dart:ui';
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:aligned_dialog/aligned_dialog.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'c_season_copy_model.dart';
 export 'c_season_copy_model.dart';
@@ -75,7 +73,7 @@ class _CSeasonCopyWidgetState extends State<CSeasonCopyWidget> {
     return Container(
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
           topLeft: Radius.circular(20.0),
@@ -88,7 +86,7 @@ class _CSeasonCopyWidgetState extends State<CSeasonCopyWidget> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(16.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -107,15 +105,15 @@ class _CSeasonCopyWidgetState extends State<CSeasonCopyWidget> {
                         ),
                       ),
                       child: Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
-                        child: Container(
+                        alignment: const AlignmentDirectional(0.0, 0.0),
+                        child: SizedBox(
                           width: double.infinity,
                           child: TextFormField(
                             controller: _model.textController1,
                             focusNode: _model.textFieldFocusNode,
                             onChanged: (_) => EasyDebounce.debounce(
                               '_model.textController1',
-                              Duration(milliseconds: 600),
+                              const Duration(milliseconds: 600),
                               () async {
                                 FFAppState().searchtext = '';
                                 safeSetState(() {});
@@ -141,14 +139,14 @@ class _CSeasonCopyWidgetState extends State<CSeasonCopyWidget> {
                                     letterSpacing: 0.0,
                                   ),
                               enabledBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Colors.transparent,
                                   width: 1.0,
                                 ),
                                 borderRadius: BorderRadius.circular(20.0),
                               ),
                               focusedBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Colors.transparent,
                                   width: 1.0,
                                 ),
@@ -217,7 +215,7 @@ class _CSeasonCopyWidgetState extends State<CSeasonCopyWidget> {
                         ),
                       ),
                     ),
-                  ].divide(SizedBox(width: 16.0)),
+                  ].divide(const SizedBox(width: 16.0)),
                 ),
                 Row(
                   mainAxisSize: MainAxisSize.max,
@@ -245,7 +243,7 @@ class _CSeasonCopyWidgetState extends State<CSeasonCopyWidget> {
                               ),
                             }.withoutNulls,
                             extra: <String, dynamic>{
-                              kTransitionInfoKey: TransitionInfo(
+                              kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
                                 transitionType: PageTransitionType.fade,
                                 duration: Duration(milliseconds: 0),
@@ -270,17 +268,17 @@ class _CSeasonCopyWidgetState extends State<CSeasonCopyWidget> {
                         btAction: () async {},
                       ),
                     ),
-                  ].divide(SizedBox(width: 16.0)),
+                  ].divide(const SizedBox(width: 16.0)),
                 ),
               ],
             ),
           ),
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
             child: Container(
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).primaryBackground,
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(0.0),
                   bottomRight: Radius.circular(0.0),
                   topLeft: Radius.circular(10.0),
@@ -293,7 +291,7 @@ class _CSeasonCopyWidgetState extends State<CSeasonCopyWidget> {
                   Container(
                     width: 46.0,
                     height: 46.0,
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                     child: Builder(
                       builder: (context) => FlutterFlowIconButton(
                         borderColor: Colors.transparent,
@@ -360,19 +358,19 @@ class _CSeasonCopyWidgetState extends State<CSeasonCopyWidget> {
                           ),
                     ),
                   ),
-                ].divide(SizedBox(width: 16.0)),
+                ].divide(const SizedBox(width: 16.0)),
               ),
             ),
           ),
           Expanded(
             child: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Expanded(
                     child: Container(
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: FutureBuilder<ApiCallResponse>(
                         future: SeasonGroup.readAllSeasonsCall.call(
                           search: _model.textController1.text,
@@ -401,7 +399,7 @@ class _CSeasonCopyWidgetState extends State<CSeasonCopyWidget> {
                                               .toList()
                                           as Iterable<SeasonModelStruct?>)
                                       .withoutNulls
-                                      ?.toList() ??
+                                      .toList() ??
                                   [];
 
                               return ListView.separated(
@@ -411,7 +409,7 @@ class _CSeasonCopyWidgetState extends State<CSeasonCopyWidget> {
                                 scrollDirection: Axis.vertical,
                                 itemCount: season.length,
                                 separatorBuilder: (_, __) =>
-                                    SizedBox(height: 6.0),
+                                    const SizedBox(height: 6.0),
                                 itemBuilder: (context, seasonIndex) {
                                   final seasonItem = season[seasonIndex];
                                   return SingleChildScrollView(
@@ -419,7 +417,7 @@ class _CSeasonCopyWidgetState extends State<CSeasonCopyWidget> {
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Container(
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
@@ -453,19 +451,19 @@ class _CSeasonCopyWidgetState extends State<CSeasonCopyWidget> {
                                                       isGlobal: false,
                                                       avoidOverflow: true,
                                                       targetAnchor:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                                   1.0, 1.0)
                                                               .resolve(
                                                                   Directionality.of(
                                                                       context)),
                                                       followerAnchor:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                                   0.0, -1.0)
                                                               .resolve(
                                                                   Directionality.of(
                                                                       context)),
                                                       builder: (dialogContext) {
-                                                        return Material(
+                                                        return const Material(
                                                           color: Colors
                                                               .transparent,
                                                           child:
@@ -538,7 +536,7 @@ class _CSeasonCopyWidgetState extends State<CSeasonCopyWidget> {
                                                               ),
                                                         );
                                                       }).divide(
-                                                          SizedBox(width: 5.0)),
+                                                          const SizedBox(width: 5.0)),
                                                     );
                                                   },
                                                 ),
@@ -556,7 +554,7 @@ class _CSeasonCopyWidgetState extends State<CSeasonCopyWidget> {
                                                       ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 16.0)),
+                                            ].divide(const SizedBox(width: 16.0)),
                                           ),
                                         ),
                                       ],
@@ -571,10 +569,10 @@ class _CSeasonCopyWidgetState extends State<CSeasonCopyWidget> {
                     ),
                   ),
                   Container(
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 3.0, 16.0, 3.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 3.0, 16.0, 3.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -639,14 +637,14 @@ class _CSeasonCopyWidgetState extends State<CSeasonCopyWidget> {
                                     .primaryBackground,
                                 borderWidth: 0.0,
                                 borderRadius: 8.0,
-                                margin: EdgeInsetsDirectional.fromSTEB(
+                                margin: const EdgeInsetsDirectional.fromSTEB(
                                     12.0, 0.0, 12.0, 0.0),
                                 hidesUnderline: true,
                                 isOverButton: false,
                                 isSearchable: false,
                                 isMultiSelect: false,
                               ),
-                            ].divide(SizedBox(width: 10.0)),
+                            ].divide(const SizedBox(width: 10.0)),
                           ),
                           Row(
                             mainAxisSize: MainAxisSize.max,
@@ -672,7 +670,7 @@ class _CSeasonCopyWidgetState extends State<CSeasonCopyWidget> {
                                   safeSetState(() {});
                                 },
                               ),
-                              Container(
+                              SizedBox(
                                 width: 40.0,
                                 child: TextFormField(
                                   controller: _model.currentPageTextController,
@@ -682,7 +680,7 @@ class _CSeasonCopyWidgetState extends State<CSeasonCopyWidget> {
                                   decoration: InputDecoration(
                                     isDense: true,
                                     enabledBorder: OutlineInputBorder(
-                                      borderSide: BorderSide(
+                                      borderSide: const BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
@@ -773,9 +771,9 @@ class _CSeasonCopyWidgetState extends State<CSeasonCopyWidget> {
                                   safeSetState(() {});
                                 },
                               ),
-                            ].divide(SizedBox(width: 5.0)),
+                            ].divide(const SizedBox(width: 5.0)),
                           ),
-                        ].divide(SizedBox(width: 12.0)),
+                        ].divide(const SizedBox(width: 12.0)),
                       ),
                     ),
                   ),

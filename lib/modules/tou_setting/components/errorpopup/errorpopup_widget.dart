@@ -1,10 +1,7 @@
 import '/components/system_logic/primary_button/primary_button_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'errorpopup_model.dart';
 export 'errorpopup_model.dart';
 
@@ -42,7 +39,7 @@ class _ErrorpopupWidgetState extends State<ErrorpopupWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 0.0),
+      alignment: const AlignmentDirectional(0.0, 0.0),
       child: Column(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.center,
@@ -51,7 +48,7 @@ class _ErrorpopupWidgetState extends State<ErrorpopupWidget> {
             width: 302.0,
             decoration: BoxDecoration(
               color: FlutterFlowTheme.of(context).secondaryBackground,
-              boxShadow: [
+              boxShadow: const [
                 BoxShadow(
                   blurRadius: 2.0,
                   color: Color(0x33000000),
@@ -69,7 +66,7 @@ class _ErrorpopupWidgetState extends State<ErrorpopupWidget> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -89,7 +86,7 @@ class _ErrorpopupWidgetState extends State<ErrorpopupWidget> {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 16.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 16.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -104,12 +101,12 @@ class _ErrorpopupWidgetState extends State<ErrorpopupWidget> {
                               letterSpacing: 0.0,
                             ),
                       ),
-                    ].divide(SizedBox(width: 2.0)),
+                    ].divide(const SizedBox(width: 2.0)),
                   ),
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 25.0, 16.0, 16.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 25.0, 16.0, 16.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.end,
@@ -129,8 +126,8 @@ class _ErrorpopupWidgetState extends State<ErrorpopupWidget> {
                         ),
                       ),
                     ]
-                        .divide(SizedBox(width: 10.0))
-                        .around(SizedBox(width: 10.0)),
+                        .divide(const SizedBox(width: 10.0))
+                        .around(const SizedBox(width: 10.0)),
                   ),
                 ),
               ],

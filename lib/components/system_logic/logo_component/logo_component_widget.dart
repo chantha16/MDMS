@@ -1,8 +1,5 @@
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'logo_component_model.dart';
 export 'logo_component_model.dart';
 
@@ -52,7 +49,7 @@ class _LogoComponentWidgetState extends State<LogoComponentWidget> {
           : 'assets/images/Oone.png',
       height: 45.0,
       fit: BoxFit.contain,
-      alignment: Alignment(-1.0, 0.0),
+      alignment: const Alignment(-1.0, 0.0),
     );
   }
 }

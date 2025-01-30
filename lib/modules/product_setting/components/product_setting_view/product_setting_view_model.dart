@@ -1,17 +1,8 @@
 import '/backend/api_requests/api_calls.dart';
-import '/backend/api_requests/api_streaming.dart';
 import '/backend/schema/structs/index.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:convert';
-import 'dart:ui';
 import 'product_setting_view_widget.dart' show ProductSettingViewWidget;
-import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class ProductSettingViewModel
     extends FlutterFlowModel<ProductSettingViewWidget> {

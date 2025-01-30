@@ -2,11 +2,8 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'body_header_model.dart';
 export 'body_header_model.dart';
 
@@ -67,7 +64,7 @@ class _BodyHeaderWidgetState extends State<BodyHeaderWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 0.0),
+      alignment: const AlignmentDirectional(0.0, 0.0),
       child: Row(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -87,14 +84,14 @@ class _BodyHeaderWidgetState extends State<BodyHeaderWidget> {
                     color: FlutterFlowTheme.of(context).alternate,
                   ),
                 ),
-                child: Container(
+                child: SizedBox(
                   width: double.infinity,
                   child: TextFormField(
                     controller: _model.textController1,
                     focusNode: _model.textFieldFocusNode1,
                     onChanged: (_) => EasyDebounce.debounce(
                       '_model.textController1',
-                      Duration(milliseconds: 6000),
+                      const Duration(milliseconds: 6000),
                       () => safeSetState(() {}),
                     ),
                     autofocus: false,
@@ -110,14 +107,14 @@ class _BodyHeaderWidgetState extends State<BodyHeaderWidget> {
                                 letterSpacing: 0.0,
                               ),
                       enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),
                         borderRadius: BorderRadius.circular(20.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),
@@ -180,8 +177,8 @@ class _BodyHeaderWidgetState extends State<BodyHeaderWidget> {
                   ),
                 ),
                 child: Align(
-                  alignment: AlignmentDirectional(0.0, 0.0),
-                  child: Container(
+                  alignment: const AlignmentDirectional(0.0, 0.0),
+                  child: SizedBox(
                     width: double.infinity,
                     child: TextFormField(
                       controller: _model.textController2,
@@ -205,7 +202,7 @@ class _BodyHeaderWidgetState extends State<BodyHeaderWidget> {
                                   fontWeight: FontWeight.w500,
                                 ),
                         enabledBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Colors.transparent,
                             width: 1.0,
                           ),
@@ -256,7 +253,7 @@ class _BodyHeaderWidgetState extends State<BodyHeaderWidget> {
                   ),
                 ),
               ),
-            ].divide(SizedBox(width: 16.0)),
+            ].divide(const SizedBox(width: 16.0)),
           ),
           Row(
             mainAxisSize: MainAxisSize.max,
@@ -266,14 +263,14 @@ class _BodyHeaderWidgetState extends State<BodyHeaderWidget> {
                 onPressed: () async {
                   await widget.btAction2?.call();
                 },
-                text: widget!.tbName2!,
-                icon: widget!.btIcon2,
+                text: widget.tbName2!,
+                icon: widget.btIcon2,
                 options: FFButtonOptions(
                   width: 120.0,
                   height: 40.0,
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   iconPadding:
-                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).primary,
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Inter Tight',
@@ -290,14 +287,14 @@ class _BodyHeaderWidgetState extends State<BodyHeaderWidget> {
                 onPressed: () async {
                   await widget.btAction1?.call();
                 },
-                text: widget!.tbName1!,
-                icon: widget!.btIcon1,
+                text: widget.tbName1!,
+                icon: widget.btIcon1,
                 options: FFButtonOptions(
                   width: 120.0,
                   height: 40.0,
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   iconPadding:
-                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Inter Tight',
@@ -313,7 +310,7 @@ class _BodyHeaderWidgetState extends State<BodyHeaderWidget> {
                   borderRadius: BorderRadius.circular(20.0),
                 ),
               ),
-            ].divide(SizedBox(width: 16.0)),
+            ].divide(const SizedBox(width: 16.0)),
           ),
         ],
       ),

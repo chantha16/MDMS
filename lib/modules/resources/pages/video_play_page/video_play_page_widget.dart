@@ -2,11 +2,8 @@ import '/backend/schema/enums/enums.dart';
 import '/components/layout/main_layout_v1/main_layout_v1_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/modules/dashboard/components/dashboard_view/dashboard_view_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'video_play_page_model.dart';
 export 'video_play_page_model.dart';
 
@@ -54,7 +51,7 @@ class _VideoPlayPageWidgetState extends State<VideoPlayPageWidget> {
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutV1Widget(
               activeMenu: MenuItems.Dashboard,
-              body: () => DashboardViewWidget(),
+              body: () => const DashboardViewWidget(),
             ),
           ),
         ),

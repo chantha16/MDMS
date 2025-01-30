@@ -2,11 +2,8 @@ import '/backend/schema/enums/enums.dart';
 import '/components/layout/main_layout_v2/main_layout_v2_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/modules/product_setting/components/product_setting_view/product_setting_view_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'product_setting_page_model.dart';
 export 'product_setting_page_model.dart';
 
@@ -55,7 +52,7 @@ class _ProductSettingPageWidgetState extends State<ProductSettingPageWidget> {
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutV2Widget(
               menu: MenuItems.ProductSettings,
-              child: () => ProductSettingViewWidget(),
+              child: () => const ProductSettingViewWidget(),
             ),
           ),
         ),

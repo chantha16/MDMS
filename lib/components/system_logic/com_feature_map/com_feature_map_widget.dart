@@ -1,10 +1,7 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'com_feature_map_model.dart';
 export 'com_feature_map_model.dart';
 
@@ -42,7 +39,7 @@ class _ComFeatureMapWidgetState extends State<ComFeatureMapWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 16.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 16.0),
       child: Container(
         width: 300.0,
         height: 300.0,
@@ -54,7 +51,7 @@ class _ComFeatureMapWidgetState extends State<ComFeatureMapWidget> {
           ),
         ),
         child: Padding(
-          padding: EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16.0),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -226,7 +223,7 @@ class _ComFeatureMapWidgetState extends State<ComFeatureMapWidget> {
                   ),
                 ],
               ),
-            ].divide(SizedBox(height: 16.0)),
+            ].divide(const SizedBox(height: 16.0)),
           ),
         ),
       ),

@@ -2,11 +2,8 @@ import '/backend/schema/enums/enums.dart';
 import '/components/layout/main_layout_v2/main_layout_v2_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/modules/deviecs/components/device_view/device_view_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'devices_page_model.dart';
 export 'devices_page_model.dart';
 
@@ -53,8 +50,9 @@ class _DevicesPageWidgetState extends State<DevicesPageWidget> {
             model: _model.mainLayoutV2Model,
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutV2Widget(
+              key: const ValueKey('MainLayoutV2_n2l0'),
               menu: MenuItems.Devices,
-              child: () => DeviceViewWidget(),
+              child: () => const DeviceViewWidget(),
             ),
           ),
         ),

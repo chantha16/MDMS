@@ -1,11 +1,8 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import '/custom_code/widgets/index.dart' as custom_widgets;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'row_items_model.dart';
 export 'row_items_model.dart';
 
@@ -16,7 +13,7 @@ class RowItemsWidget extends StatefulWidget {
     required this.rowValue,
     bool? isCheck,
     required this.columnHeader,
-  }) : this.isCheck = isCheck ?? false;
+  }) : isCheck = isCheck ?? false;
 
   final int? numberItems;
   final dynamic rowValue;
@@ -59,10 +56,16 @@ class _RowItemsWidgetState extends State<RowItemsWidget> {
         MouseRegion(
           opaque: false,
           cursor: SystemMouseCursors.click ?? MouseCursor.defer,
+          onEnter: ((event) async {
+            safeSetState(() => _model.mouseRegionHovered = true);
+          }),
+          onExit: ((event) async {
+            safeSetState(() => _model.mouseRegionHovered = false);
+          }),
           child: Container(
             decoration: BoxDecoration(
               color: valueOrDefault<Color>(
-                _model.mouseRegionHovered!
+                _model.mouseRegionHovered
                     ? FlutterFlowTheme.of(context).primaryBackground
                     : FlutterFlowTheme.of(context).secondaryBackground,
                 FlutterFlowTheme.of(context).secondaryBackground,
@@ -85,7 +88,7 @@ class _RowItemsWidgetState extends State<RowItemsWidget> {
                         FlutterFlowTheme.of(context).alternate,
                   ),
                   child: Checkbox(
-                    value: _model.checkboxValue ??= widget!.isCheck == true,
+                    value: _model.checkboxValue ??= widget.isCheck == true,
                     onChanged: (newValue) async {
                       safeSetState(() => _model.checkboxValue = newValue!);
                       if (newValue!) {
@@ -116,10 +119,10 @@ class _RowItemsWidgetState extends State<RowItemsWidget> {
                 ),
                 Container(
                   width: 20.0,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Text(
                     valueOrDefault<String>(
-                      widget!.numberItems?.toString(),
+                      widget.numberItems?.toString(),
                       '0',
                     ),
                     textAlign: TextAlign.center,
@@ -132,41 +135,35 @@ class _RowItemsWidgetState extends State<RowItemsWidget> {
                 Expanded(
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
                     child: Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
                         color: valueOrDefault<Color>(
-                          _model.mouseRegionHovered!
+                          _model.mouseRegionHovered
                               ? FlutterFlowTheme.of(context).primaryBackground
                               : FlutterFlowTheme.of(context)
                                   .secondaryBackground,
                           FlutterFlowTheme.of(context).secondaryBackground,
                         ),
                       ),
-                      child: Container(
+                      child: SizedBox(
                         width: double.infinity,
                         height: 40.0,
                         child: custom_widgets.DynamicRowValue(
                           width: double.infinity,
                           height: 40.0,
-                          row: widget!.rowValue!,
+                          row: widget.rowValue!,
                           isAscending: true,
-                          columnHeaders: widget!.columnHeader!,
+                          columnHeaders: widget.columnHeader!,
                         ),
                       ),
                     ),
                   ),
                 ),
-              ].divide(SizedBox(width: 10.0)),
+              ].divide(const SizedBox(width: 10.0)),
             ),
           ),
-          onEnter: ((event) async {
-            safeSetState(() => _model.mouseRegionHovered = true);
-          }),
-          onExit: ((event) async {
-            safeSetState(() => _model.mouseRegionHovered = false);
-          }),
         ),
       ],
     );

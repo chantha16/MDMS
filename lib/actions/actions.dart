@@ -1,15 +1,10 @@
 import '/backend/api_requests/api_calls.dart';
-import '/backend/api_requests/api_manager.dart';
-import '/backend/api_requests/api_streaming.dart';
-import '/backend/schema/enums/enums.dart';
 import '/backend/schema/structs/index.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:convert';
 import '/actions/actions.dart' as action_blocks;
 import '/custom_code/actions/index.dart' as actions;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 Future validateAuth(BuildContext context) async {
   String? handleRedirectCodeResponse;
@@ -29,10 +24,10 @@ Future validateAuth(BuildContext context) async {
         redirectUri: FFAppState().urlPath,
       );
 
-      if ((exchangeTokenResponse?.succeeded ?? true)) {
+      if ((exchangeTokenResponse.succeeded ?? true)) {
         FFAppState().isLoggedIn = true;
         FFAppState().token = TokenResponseModelStruct.maybeFromMap(
-            (exchangeTokenResponse?.jsonBody ?? ''))!;
+            (exchangeTokenResponse.jsonBody ?? ''))!;
         FFAppState().update(() {});
         FFAppState().updateTokenStruct(
           (e) => e,
@@ -40,19 +35,19 @@ Future validateAuth(BuildContext context) async {
         FFAppState().update(() {});
         getProfileResponse = await KeycloakGroup.getProfileCall.call(
           token: TokenResponseModelStruct.maybeFromMap(
-                  (exchangeTokenResponse?.jsonBody ?? ''))
+                  (exchangeTokenResponse.jsonBody ?? ''))
               ?.accessToken,
         );
 
-        if ((getProfileResponse?.succeeded ?? true)) {
+        if ((getProfileResponse.succeeded ?? true)) {
           FFAppState().profile = GetProfileResponseModelStruct.maybeFromMap(
-              (getProfileResponse?.jsonBody ?? ''))!;
+              (getProfileResponse.jsonBody ?? ''))!;
           // Go to dashboard
 
           context.goNamed(
             'ResourcesPage',
             extra: <String, dynamic>{
-              kTransitionInfoKey: TransitionInfo(
+              kTransitionInfoKey: const TransitionInfo(
                 hasTransition: true,
                 transitionType: PageTransitionType.fade,
                 duration: Duration(milliseconds: 0),
@@ -77,16 +72,15 @@ Future validateAuth(BuildContext context) async {
 Future checkSessionTokenBlock(BuildContext context) async {
   ApiCallResponse? introspectResponse;
 
-  if ((FFAppState().token.accessToken != null &&
-          FFAppState().token.accessToken != '') &&
+  if ((FFAppState().token.accessToken != '') &&
       FFAppState().isLoggedIn) {
     introspectResponse = await KeycloakGroup.introspectCall.call(
       token: FFAppState().token.accessToken,
     );
 
-    if ((introspectResponse?.succeeded ?? true)) {
+    if ((introspectResponse.succeeded ?? true)) {
       if (IntrospectModelStruct.maybeFromMap(
-                  (introspectResponse?.jsonBody ?? ''))
+                  (introspectResponse.jsonBody ?? ''))
               ?.active ==
           true) {
         // Go to dashboard
@@ -94,7 +88,7 @@ Future checkSessionTokenBlock(BuildContext context) async {
         context.pushNamed(
           'ResourcesPage',
           extra: <String, dynamic>{
-            kTransitionInfoKey: TransitionInfo(
+            kTransitionInfoKey: const TransitionInfo(
               hasTransition: true,
               transitionType: PageTransitionType.fade,
               duration: Duration(milliseconds: 0),
@@ -129,7 +123,7 @@ Future logoutBlock(BuildContext context) async {
 
   logoutResponse = await KeycloakGroup.logoutCall.call();
 
-  if ((logoutResponse?.succeeded ?? true)) {
+  if ((logoutResponse.succeeded ?? true)) {
     FFAppState().isLoggedIn = false;
     FFAppState().deleteToken();
     FFAppState().token = TokenResponseModelStruct();
@@ -149,7 +143,7 @@ Future logoutBlock(BuildContext context) async {
             color: FlutterFlowTheme.of(context).info,
           ),
         ),
-        duration: Duration(milliseconds: 4000),
+        duration: const Duration(milliseconds: 4000),
         backgroundColor: FlutterFlowTheme.of(context).error,
       ),
     );

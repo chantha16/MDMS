@@ -2,10 +2,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'alertdevice_test_model.dart';
 export 'alertdevice_test_model.dart';
 
@@ -43,13 +40,13 @@ class _AlertdeviceTestWidgetState extends State<AlertdeviceTestWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
       child: Container(
         width: 500.0,
         height: double.infinity,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               blurRadius: 4.0,
               color: Color(0x1A000000),
@@ -63,12 +60,12 @@ class _AlertdeviceTestWidgetState extends State<AlertdeviceTestWidget> {
           borderRadius: BorderRadius.circular(12.0),
         ),
         child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -133,7 +130,7 @@ class _AlertdeviceTestWidgetState extends State<AlertdeviceTestWidget> {
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 12.0, 0.0),
                               child: InkWell(
                                 splashColor: Colors.transparent,
@@ -144,7 +141,7 @@ class _AlertdeviceTestWidgetState extends State<AlertdeviceTestWidget> {
                                   context.pushNamed(
                                     'EventDetailPage',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType: PageTransitionType.fade,
                                         duration: Duration(milliseconds: 0),
@@ -154,7 +151,7 @@ class _AlertdeviceTestWidgetState extends State<AlertdeviceTestWidget> {
                                 },
                                 child: Container(
                                   decoration: BoxDecoration(
-                                    color: Color(0xFFFFF8F8),
+                                    color: const Color(0xFFFFF8F8),
                                     borderRadius: BorderRadius.circular(8.0),
                                     border: Border.all(
                                       color: FlutterFlowTheme.of(context).error,
@@ -162,7 +159,7 @@ class _AlertdeviceTestWidgetState extends State<AlertdeviceTestWidget> {
                                     ),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(12.0),
+                                    padding: const EdgeInsets.all(12.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
@@ -197,7 +194,7 @@ class _AlertdeviceTestWidgetState extends State<AlertdeviceTestWidget> {
                                                           letterSpacing: 0.0,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(width: 5.0)),
+                                                ].divide(const SizedBox(width: 5.0)),
                                               ),
                                               Row(
                                                 mainAxisSize: MainAxisSize.max,
@@ -310,21 +307,21 @@ class _AlertdeviceTestWidgetState extends State<AlertdeviceTestWidget> {
                                                   ),
                                                 ],
                                               ),
-                                            ].divide(SizedBox(height: 5.0)),
+                                            ].divide(const SizedBox(height: 5.0)),
                                           ),
                                         ),
-                                      ].divide(SizedBox(width: 12.0)),
+                                      ].divide(const SizedBox(width: 12.0)),
                                     ),
                                   ),
                                 ),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 12.0, 0.0),
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: Color(0xFFF0F9FF),
+                                  color: const Color(0xFFF0F9FF),
                                   borderRadius: BorderRadius.circular(8.0),
                                   border: Border.all(
                                     color: FlutterFlowTheme.of(context).primary,
@@ -332,7 +329,7 @@ class _AlertdeviceTestWidgetState extends State<AlertdeviceTestWidget> {
                                   ),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsets.all(12.0),
+                                  padding: const EdgeInsets.all(12.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
@@ -402,17 +399,17 @@ class _AlertdeviceTestWidgetState extends State<AlertdeviceTestWidget> {
                                           ],
                                         ),
                                       ),
-                                    ].divide(SizedBox(width: 12.0)),
+                                    ].divide(const SizedBox(width: 12.0)),
                                   ),
                                 ),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 12.0, 0.0),
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: Color(0xFFFFF8F8),
+                                  color: const Color(0xFFFFF8F8),
                                   borderRadius: BorderRadius.circular(8.0),
                                   border: Border.all(
                                     color: FlutterFlowTheme.of(context).warning,
@@ -420,13 +417,13 @@ class _AlertdeviceTestWidgetState extends State<AlertdeviceTestWidget> {
                                   ),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsets.all(12.0),
+                                  padding: const EdgeInsets.all(12.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, -1.0),
+                                            const AlignmentDirectional(0.0, -1.0),
                                         child: Icon(
                                           Icons.battery_alert,
                                           color: FlutterFlowTheme.of(context)
@@ -571,22 +568,22 @@ class _AlertdeviceTestWidgetState extends State<AlertdeviceTestWidget> {
                                           ],
                                         ),
                                       ),
-                                    ].divide(SizedBox(width: 12.0)),
+                                    ].divide(const SizedBox(width: 12.0)),
                                   ),
                                 ),
                               ),
                             ),
-                          ].divide(SizedBox(height: 16.0)),
+                          ].divide(const SizedBox(height: 16.0)),
                         ),
-                      ].divide(SizedBox(height: 16.0)),
+                      ].divide(const SizedBox(height: 16.0)),
                     ),
                   ),
                 ],
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 1.0),
+                alignment: const AlignmentDirectional(0.0, 1.0),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                   child: FFButtonWidget(
                     onPressed: () {
                       print('Button pressed ...');
@@ -598,9 +595,9 @@ class _AlertdeviceTestWidgetState extends State<AlertdeviceTestWidget> {
                       width: double.infinity,
                       height: 48.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primary,
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
@@ -609,7 +606,7 @@ class _AlertdeviceTestWidgetState extends State<AlertdeviceTestWidget> {
                                 letterSpacing: 0.0,
                               ),
                       elevation: 0.0,
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.transparent,
                         width: 1.0,
                       ),
@@ -618,7 +615,7 @@ class _AlertdeviceTestWidgetState extends State<AlertdeviceTestWidget> {
                   ),
                 ),
               ),
-            ].divide(SizedBox(height: 16.0)),
+            ].divide(const SizedBox(height: 16.0)),
           ),
         ),
       ),

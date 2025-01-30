@@ -1,23 +1,19 @@
 import '/backend/api_requests/api_calls.dart';
-import '/backend/api_requests/api_streaming.dart';
 import '/backend/schema/enums/enums.dart';
 import '/backend/schema/structs/index.dart';
 import '/components/system_logic/primary_button/primary_button_widget.dart';
 import '/components/system_logic/secoundary_button/secoundary_button_widget.dart';
 import '/flutter_flow/flutter_flow_choice_chips.dart';
+import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/modules/seasons/components/errorseason/errorseason_widget.dart';
-import 'dart:convert';
-import 'dart:ui';
 import '/custom_code/widgets/index.dart' as custom_widgets;
 import '/flutter_flow/custom_functions.dart' as functions;
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'c_season_details_model.dart';
 export 'c_season_details_model.dart';
@@ -52,11 +48,11 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
 
     // On component load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
-      if (widget!.type != Flag.Add) {
+      if (widget.type != Flag.Add) {
         FFAppState().loading = false;
         safeSetState(() {});
         _model.seasonRes = await SeasonGroup.readSeasonByIdCall.call(
-          id: widget!.seasonId,
+          id: widget.seasonId,
         );
 
         if ((_model.seasonRes?.succeeded ?? true)) {
@@ -111,7 +107,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
           return Container(
             decoration: BoxDecoration(
               color: FlutterFlowTheme.of(context).secondaryBackground,
-              borderRadius: BorderRadius.only(
+              borderRadius: const BorderRadius.only(
                 bottomLeft: Radius.circular(0.0),
                 bottomRight: Radius.circular(0.0),
                 topLeft: Radius.circular(16.0),
@@ -119,48 +115,54 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
               ),
             ),
             child: Padding(
-              padding: EdgeInsets.all(24.0),
+              padding: const EdgeInsets.all(24.0),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      Column(
-                        mainAxisSize: MainAxisSize.max,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            () {
-                              if (widget!.type == Flag.Add) {
-                                return 'Add Season';
-                              } else if (widget!.type == Flag.Update) {
-                                return 'Update Season';
-                              } else if (widget!.type == Flag.Delete) {
-                                return 'Delete Season';
-                              } else {
-                                return 'View Season';
-                              }
-                            }(),
-                            style: FlutterFlowTheme.of(context)
-                                .bodyMedium
-                                .override(
-                                  fontFamily: 'Inter',
-                                  fontSize: 16.0,
-                                  letterSpacing: 0.0,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                          ),
-                        ].divide(SizedBox(height: 5.0)),
+                      FlutterFlowIconButton(
+                        borderRadius: 8.0,
+                        buttonSize: 40.0,
+                        fillColor:
+                            FlutterFlowTheme.of(context).secondaryBackground,
+                        icon: Icon(
+                          Icons.arrow_back,
+                          color: FlutterFlowTheme.of(context).primaryText,
+                          size: 24.0,
+                        ),
+                        onPressed: () async {
+                          context.safePop();
+                        },
                       ),
-                    ].divide(SizedBox(width: 16.0)),
+                      Text(
+                        () {
+                          if (widget.type == Flag.Add) {
+                            return 'Add Season';
+                          } else if (widget.type == Flag.Update) {
+                            return 'Update Season';
+                          } else if (widget.type == Flag.Delete) {
+                            return 'Delete Season';
+                          } else {
+                            return 'View Season';
+                          }
+                        }(),
+                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                              fontFamily: 'Inter',
+                              fontSize: 16.0,
+                              letterSpacing: 0.0,
+                              fontWeight: FontWeight.w600,
+                            ),
+                      ),
+                    ].divide(const SizedBox(width: 16.0)),
                   ),
                   Expanded(
                     child: Form(
                       key: _model.formKey,
                       autovalidateMode: AutovalidateMode.disabled,
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             150.0, 0.0, 150.0, 0.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -175,7 +177,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 5.0),
                                         child: RichText(
                                           textScaler:
@@ -227,8 +229,8 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                         controller: _model.nameTextController,
                                         focusNode: _model.nameFocusNode,
                                         autofocus: false,
-                                        readOnly: (widget!.type == Flag.View) ||
-                                            (widget!.type == Flag.Delete),
+                                        readOnly: (widget.type == Flag.View) ||
+                                            (widget.type == Flag.Delete),
                                         obscureText: false,
                                         decoration: InputDecoration(
                                           isDense: true,
@@ -243,7 +245,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .secondaryText,
-                                                offset: Offset(1.0, 1.0),
+                                                offset: const Offset(1.0, 1.0),
                                                 blurRadius: 2.0,
                                               )
                                             ],
@@ -260,7 +262,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .secondaryText,
-                                                offset: Offset(2.0, 2.0),
+                                                offset: const Offset(2.0, 2.0),
                                                 blurRadius: 2.0,
                                               )
                                             ],
@@ -311,7 +313,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                               FlutterFlowTheme.of(context)
                                                   .primaryBackground,
                                           contentPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 19.0, 16.0, 19.0),
                                           hoverColor:
                                               FlutterFlowTheme.of(context)
@@ -364,7 +366,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 15.0)),
+                              ].divide(const SizedBox(width: 15.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -378,7 +380,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 5.0),
                                         child: RichText(
                                           textScaler:
@@ -405,7 +407,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                                         .getText(
                                                   'zq5dbt7y' /*  * */,
                                                 ),
-                                                style: TextStyle(),
+                                                style: const TextStyle(),
                                               )
                                             ],
                                             style: FlutterFlowTheme.of(context)
@@ -438,10 +440,10 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                         ),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 5.0, 0.0, 5.0),
                                             child: FlutterFlowChoiceChips(
                                               options: [
@@ -458,9 +460,9 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                                 ChipData(Month.Nov.name),
                                                 ChipData(Month.Dec.name)
                                               ],
-                                              onChanged: ((widget!.type ==
+                                              onChanged: ((widget.type ==
                                                           Flag.View) ||
-                                                      (widget!.type ==
+                                                      (widget.type ==
                                                           Flag.Delete))
                                                   ? null
                                                   : (val) => safeSetState(() =>
@@ -485,7 +487,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                                         .primaryBackground,
                                                 iconSize: 22.0,
                                                 labelPadding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(10.0, 2.0,
                                                             10.0, 2.0),
                                                 elevation: 1.0,
@@ -508,7 +510,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                                         .primaryText,
                                                 iconSize: 22.0,
                                                 labelPadding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(10.0, 2.0,
                                                             10.0, 2.0),
                                                 elevation: 1.0,
@@ -539,7 +541,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                       if (_model.chipchoice == false)
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   18.0, 10.0, 0.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -566,7 +568,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 15.0)),
+                              ].divide(const SizedBox(width: 15.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -578,7 +580,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 5.0),
                                         child: RichText(
                                           textScaler:
@@ -614,8 +616,8 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                             _model.descriptionTextController,
                                         focusNode: _model.descriptionFocusNode,
                                         autofocus: false,
-                                        readOnly: (widget!.type == Flag.View) ||
-                                            (widget!.type == Flag.Delete),
+                                        readOnly: (widget.type == Flag.View) ||
+                                            (widget.type == Flag.Delete),
                                         obscureText: false,
                                         decoration: InputDecoration(
                                           isDense: true,
@@ -638,7 +640,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .secondaryText,
-                                                offset: Offset(2.0, 2.0),
+                                                offset: const Offset(2.0, 2.0),
                                                 blurRadius: 2.0,
                                               )
                                             ],
@@ -688,9 +690,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                           fillColor:
                                               FlutterFlowTheme.of(context)
                                                   .primaryBackground,
-                                          contentPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  20.0, 18.0, 20.0, 18.0),
+                                          contentPadding: const EdgeInsets.all(16.0),
                                           hoverColor:
                                               FlutterFlowTheme.of(context)
                                                   .primaryBackground,
@@ -702,7 +702,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                               letterSpacing: 0.0,
                                             ),
                                         maxLines: 5,
-                                        maxLength: 250,
+                                        maxLength: 2000,
                                         maxLengthEnforcement:
                                             MaxLengthEnforcement.enforced,
                                         validator: _model
@@ -714,14 +714,14 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                 ),
                               ],
                             ),
-                          ].divide(SizedBox(height: 16.0)),
+                          ].divide(const SizedBox(height: 16.0)),
                         ),
                       ),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 150.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 150.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.end,
@@ -737,7 +737,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                             },
                           ),
                         ),
-                        if (widget!.type != Flag.View)
+                        if (widget.type != Flag.View)
                           Builder(
                             builder: (context) => wrapWithModel(
                               model: _model.primaryButtonModel,
@@ -748,8 +748,8 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                     .primaryBackground,
                                 fillcolor: FlutterFlowTheme.of(context).primary,
                                 btAction: () async {
-                                  var _shouldSetState = false;
-                                  if (widget!.type == Flag.Add) {
+                                  var shouldSetState = false;
+                                  if (widget.type == Flag.Add) {
                                     if (_model.choiceChipsValues != null &&
                                         (_model.choiceChipsValues)!
                                             .isNotEmpty) {
@@ -768,7 +768,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                               .validate()) {
                                         return;
                                       }
-                                      if (_shouldSetState) safeSetState(() {});
+                                      if (shouldSetState) safeSetState(() {});
                                       return;
                                     }
 
@@ -781,7 +781,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                           _model.choiceChipsValues!.toList()),
                                     );
 
-                                    _shouldSetState = true;
+                                    shouldSetState = true;
                                     if (!(_model.apiResultxsd?.succeeded ??
                                         true)) {
                                       await showDialog(
@@ -791,7 +791,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                             elevation: 0,
                                             insetPadding: EdgeInsets.zero,
                                             backgroundColor: Colors.transparent,
-                                            alignment: AlignmentDirectional(
+                                            alignment: const AlignmentDirectional(
                                                     0.0, 0.0)
                                                 .resolve(
                                                     Directionality.of(context)),
@@ -816,10 +816,10 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                         },
                                       );
 
-                                      if (_shouldSetState) safeSetState(() {});
+                                      if (shouldSetState) safeSetState(() {});
                                       return;
                                     }
-                                  } else if (widget!.type == Flag.Update) {
+                                  } else if (widget.type == Flag.Update) {
                                     if (_model.choiceChipsValues != null &&
                                         (_model.choiceChipsValues)!
                                             .isNotEmpty) {
@@ -838,7 +838,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                               .validate()) {
                                         return;
                                       }
-                                      if (_shouldSetState) safeSetState(() {});
+                                      if (shouldSetState) safeSetState(() {});
                                       return;
                                     }
 
@@ -849,10 +849,10 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                           _model.descriptionTextController.text,
                                       monthRange: functions.convertMonth(
                                           _model.choiceChipsValues!.toList()),
-                                      id: widget!.seasonId,
+                                      id: widget.seasonId,
                                     );
 
-                                    _shouldSetState = true;
+                                    shouldSetState = true;
                                     if (!(_model.apiResult68v?.succeeded ??
                                         true)) {
                                       await showDialog(
@@ -862,7 +862,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                             elevation: 0,
                                             insetPadding: EdgeInsets.zero,
                                             backgroundColor: Colors.transparent,
-                                            alignment: AlignmentDirectional(
+                                            alignment: const AlignmentDirectional(
                                                     0.0, 0.0)
                                                 .resolve(
                                                     Directionality.of(context)),
@@ -887,65 +887,65 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                         },
                                       );
 
-                                      if (_shouldSetState) safeSetState(() {});
+                                      if (shouldSetState) safeSetState(() {});
                                       return;
                                     }
-                                  } else if (widget!.type == Flag.Delete) {
+                                  } else if (widget.type == Flag.Delete) {
                                     _model.apiResultxsds =
                                         await SeasonGroup.deleteSeasonCall.call(
-                                      id: widget!.seasonId,
+                                      id: widget.seasonId,
                                     );
 
-                                    _shouldSetState = true;
+                                    shouldSetState = true;
                                     if (!(_model.apiResult68v?.succeeded ??
                                         true)) {
                                       await showDialog(
                                         context: context,
                                         builder: (alertDialogContext) {
                                           return AlertDialog(
-                                            title: Text('Message'),
-                                            content: Text('Creating Error!'),
+                                            title: const Text('Message'),
+                                            content: const Text('Creating Error!'),
                                             actions: [
                                               TextButton(
                                                 onPressed: () => Navigator.pop(
                                                     alertDialogContext),
-                                                child: Text('Ok'),
+                                                child: const Text('Ok'),
                                               ),
                                             ],
                                           );
                                         },
                                       );
-                                      if (_shouldSetState) safeSetState(() {});
+                                      if (shouldSetState) safeSetState(() {});
                                       return;
                                     }
                                   } else {
-                                    if (_shouldSetState) safeSetState(() {});
+                                    if (shouldSetState) safeSetState(() {});
                                     return;
                                   }
 
                                   context.pushNamed('pSeason');
 
-                                  if (_shouldSetState) safeSetState(() {});
+                                  if (shouldSetState) safeSetState(() {});
                                 },
                                 exception: () async {},
                               ),
                             ),
                           ),
-                      ].divide(SizedBox(width: 15.0)),
+                      ].divide(const SizedBox(width: 15.0)),
                     ),
                   ),
-                ].divide(SizedBox(height: 16.0)),
+                ].divide(const SizedBox(height: 16.0)),
               ),
             ),
           );
         } else {
           return Align(
-            alignment: AlignmentDirectional(0.0, 0.0),
+            alignment: const AlignmentDirectional(0.0, 0.0),
             child: Container(
               width: 100.0,
               height: 100.0,
-              decoration: BoxDecoration(),
-              child: Container(
+              decoration: const BoxDecoration(),
+              child: const SizedBox(
                 width: 20.0,
                 height: 20.0,
                 child: custom_widgets.LoadingIndicatorWidget(

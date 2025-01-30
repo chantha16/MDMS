@@ -2,8 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/modules/deviecs/components/device_view/device_view_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'search_device_model.dart';
 export 'search_device_model.dart';
 
@@ -45,7 +43,7 @@ class _SearchDeviceWidgetState extends State<SearchDeviceWidget> {
       height: double.infinity,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             blurRadius: 4.0,
             color: Color(0x33000000),
@@ -55,7 +53,7 @@ class _SearchDeviceWidgetState extends State<SearchDeviceWidget> {
             ),
           )
         ],
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
           topLeft: Radius.circular(20.0),
@@ -64,11 +62,11 @@ class _SearchDeviceWidgetState extends State<SearchDeviceWidget> {
       ),
       child: Container(
         width: 1000.0,
-        decoration: BoxDecoration(),
+        decoration: const BoxDecoration(),
         child: wrapWithModel(
           model: _model.deviceViewModel,
           updateCallback: () => safeSetState(() {}),
-          child: DeviceViewWidget(),
+          child: const DeviceViewWidget(),
         ),
       ),
     );

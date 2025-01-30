@@ -4,7 +4,6 @@ import 'dart:ui';
 import '/actions/actions.dart' as action_blocks;
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'account_profile_model.dart';
 export 'account_profile_model.dart';
@@ -52,12 +51,12 @@ class _AccountProfileWidgetState extends State<AccountProfileWidget> {
           sigmaY: 1.0,
         ),
         child: Padding(
-          padding: EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16.0),
           child: Container(
             width: 250.0,
             decoration: BoxDecoration(
               color: FlutterFlowTheme.of(context).secondaryBackground,
-              boxShadow: [
+              boxShadow: const [
                 BoxShadow(
                   blurRadius: 8.0,
                   color: Color(0x1917171C),
@@ -75,20 +74,20 @@ class _AccountProfileWidgetState extends State<AccountProfileWidget> {
               children: [
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(4.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(4.0, 0.0, 0.0, 0.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 8.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
@@ -110,9 +109,9 @@ class _AccountProfileWidgetState extends State<AccountProfileWidget> {
                       ),
                       Expanded(
                         child: Align(
-                          alignment: AlignmentDirectional(1.0, -1.0),
+                          alignment: const AlignmentDirectional(1.0, -1.0),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 8.0),
                             child: InkWell(
                               splashColor: Colors.transparent,
@@ -136,20 +135,20 @@ class _AccountProfileWidgetState extends State<AccountProfileWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 16.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 16.0, 0.0),
                   child: ListView(
                     padding: EdgeInsets.zero,
                     shrinkWrap: true,
                     scrollDirection: Axis.vertical,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 8.0, 16.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 8.0, 0.0),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(40.0),
@@ -163,7 +162,7 @@ class _AccountProfileWidgetState extends State<AccountProfileWidget> {
                             ),
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     4.0, 0.0, 0.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -171,7 +170,7 @@ class _AccountProfileWidgetState extends State<AccountProfileWidget> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 2.0),
                                       child: Text(
                                         valueOrDefault<String>(
@@ -211,7 +210,7 @@ class _AccountProfileWidgetState extends State<AccountProfileWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   20.0, 0.0, 0.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -233,25 +232,31 @@ class _AccountProfileWidgetState extends State<AccountProfileWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                   child: MouseRegion(
                     opaque: false,
                     cursor: MouseCursor.defer ?? MouseCursor.defer,
+                    onEnter: ((event) async {
+                      safeSetState(() => _model.mouseRegionHovered1 = true);
+                    }),
+                    onExit: ((event) async {
+                      safeSetState(() => _model.mouseRegionHovered1 = false);
+                    }),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 8.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 8.0),
                       child: AnimatedContainer(
-                        duration: Duration(milliseconds: 150),
+                        duration: const Duration(milliseconds: 150),
                         curve: Curves.easeInOut,
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color: _model.mouseRegionHovered1!
+                          color: _model.mouseRegionHovered1
                               ? FlutterFlowTheme.of(context).primaryBackground
                               : FlutterFlowTheme.of(context)
                                   .secondaryBackground,
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 12.0, 0.0, 8.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -264,7 +269,7 @@ class _AccountProfileWidgetState extends State<AccountProfileWidget> {
                               ),
                               Expanded(
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
@@ -286,12 +291,6 @@ class _AccountProfileWidgetState extends State<AccountProfileWidget> {
                         ),
                       ),
                     ),
-                    onEnter: ((event) async {
-                      safeSetState(() => _model.mouseRegionHovered1 = true);
-                    }),
-                    onExit: ((event) async {
-                      safeSetState(() => _model.mouseRegionHovered1 = false);
-                    }),
                   ),
                 ),
                 Divider(
@@ -301,19 +300,25 @@ class _AccountProfileWidgetState extends State<AccountProfileWidget> {
                 MouseRegion(
                   opaque: false,
                   cursor: MouseCursor.defer ?? MouseCursor.defer,
+                  onEnter: ((event) async {
+                    safeSetState(() => _model.mouseRegionHovered2 = true);
+                  }),
+                  onExit: ((event) async {
+                    safeSetState(() => _model.mouseRegionHovered2 = false);
+                  }),
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                     child: AnimatedContainer(
-                      duration: Duration(milliseconds: 150),
+                      duration: const Duration(milliseconds: 150),
                       curve: Curves.easeInOut,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                        color: _model.mouseRegionHovered2!
+                        color: _model.mouseRegionHovered2
                             ? FlutterFlowTheme.of(context).primaryBackground
                             : FlutterFlowTheme.of(context).secondaryBackground,
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 8.0, 16.0, 8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -325,7 +330,7 @@ class _AccountProfileWidgetState extends State<AccountProfileWidget> {
                             ),
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     12.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
@@ -347,30 +352,30 @@ class _AccountProfileWidgetState extends State<AccountProfileWidget> {
                       ),
                     ),
                   ),
-                  onEnter: ((event) async {
-                    safeSetState(() => _model.mouseRegionHovered2 = true);
-                  }),
-                  onExit: ((event) async {
-                    safeSetState(() => _model.mouseRegionHovered2 = false);
-                  }),
                 ),
                 MouseRegion(
                   opaque: false,
                   cursor: MouseCursor.defer ?? MouseCursor.defer,
+                  onEnter: ((event) async {
+                    safeSetState(() => _model.mouseRegionHovered3 = true);
+                  }),
+                  onExit: ((event) async {
+                    safeSetState(() => _model.mouseRegionHovered3 = false);
+                  }),
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                     child: AnimatedContainer(
-                      duration: Duration(milliseconds: 150),
+                      duration: const Duration(milliseconds: 150),
                       curve: Curves.easeInOut,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                        color: _model.mouseRegionHovered3!
+                        color: _model.mouseRegionHovered3
                             ? FlutterFlowTheme.of(context).primaryBackground
                             : FlutterFlowTheme.of(context).secondaryBackground,
                       ),
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 8.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -394,7 +399,7 @@ class _AccountProfileWidgetState extends State<AccountProfileWidget> {
                             ),
                             Expanded(
                               child: Align(
-                                alignment: AlignmentDirectional(1.0, 0.0),
+                                alignment: const AlignmentDirectional(1.0, 0.0),
                                 child: Icon(
                                   Icons.chevron_right_rounded,
                                   color: FlutterFlowTheme.of(context)
@@ -404,25 +409,25 @@ class _AccountProfileWidgetState extends State<AccountProfileWidget> {
                               ),
                             ),
                           ]
-                              .divide(SizedBox(width: 12.0))
-                              .addToStart(SizedBox(width: 16.0))
-                              .addToEnd(SizedBox(width: 16.0)),
+                              .divide(const SizedBox(width: 12.0))
+                              .addToStart(const SizedBox(width: 16.0))
+                              .addToEnd(const SizedBox(width: 16.0)),
                         ),
                       ),
                     ),
                   ),
-                  onEnter: ((event) async {
-                    safeSetState(() => _model.mouseRegionHovered3 = true);
-                  }),
-                  onExit: ((event) async {
-                    safeSetState(() => _model.mouseRegionHovered3 = false);
-                  }),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                   child: MouseRegion(
                     opaque: false,
                     cursor: SystemMouseCursors.click ?? MouseCursor.defer,
+                    onEnter: ((event) async {
+                      safeSetState(() => _model.mouseRegionHovered4 = true);
+                    }),
+                    onExit: ((event) async {
+                      safeSetState(() => _model.mouseRegionHovered4 = false);
+                    }),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -432,17 +437,17 @@ class _AccountProfileWidgetState extends State<AccountProfileWidget> {
                         setAppLanguage(context, 'en');
                       },
                       child: AnimatedContainer(
-                        duration: Duration(milliseconds: 150),
+                        duration: const Duration(milliseconds: 150),
                         curve: Curves.easeInOut,
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color: _model.mouseRegionHovered4!
+                          color: _model.mouseRegionHovered4
                               ? FlutterFlowTheme.of(context).primaryBackground
                               : FlutterFlowTheme.of(context)
                                   .secondaryBackground,
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 8.0, 16.0, 8.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -455,7 +460,7 @@ class _AccountProfileWidgetState extends State<AccountProfileWidget> {
                               ),
                               Expanded(
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
@@ -477,12 +482,6 @@ class _AccountProfileWidgetState extends State<AccountProfileWidget> {
                         ),
                       ),
                     ),
-                    onEnter: ((event) async {
-                      safeSetState(() => _model.mouseRegionHovered4 = true);
-                    }),
-                    onExit: ((event) async {
-                      safeSetState(() => _model.mouseRegionHovered4 = false);
-                    }),
                   ),
                 ),
                 Divider(
@@ -492,8 +491,14 @@ class _AccountProfileWidgetState extends State<AccountProfileWidget> {
                 MouseRegion(
                   opaque: false,
                   cursor: SystemMouseCursors.click ?? MouseCursor.defer,
+                  onEnter: ((event) async {
+                    safeSetState(() => _model.mouseRegionHovered5 = true);
+                  }),
+                  onExit: ((event) async {
+                    safeSetState(() => _model.mouseRegionHovered5 = false);
+                  }),
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -503,23 +508,23 @@ class _AccountProfileWidgetState extends State<AccountProfileWidget> {
                         await action_blocks.logoutBlock(context);
                       },
                       child: AnimatedContainer(
-                        duration: Duration(milliseconds: 150),
+                        duration: const Duration(milliseconds: 150),
                         curve: Curves.easeInOut,
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color: _model.mouseRegionHovered5!
+                          color: _model.mouseRegionHovered5
                               ? FlutterFlowTheme.of(context).primaryBackground
                               : FlutterFlowTheme.of(context)
                                   .secondaryBackground,
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 8.0, 0.0, 8.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     12.0, 0.0, 0.0, 0.0),
                                 child: Icon(
                                   Icons.logout_outlined,
@@ -530,7 +535,7 @@ class _AccountProfileWidgetState extends State<AccountProfileWidget> {
                               ),
                               Expanded(
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
@@ -553,14 +558,8 @@ class _AccountProfileWidgetState extends State<AccountProfileWidget> {
                       ),
                     ),
                   ),
-                  onEnter: ((event) async {
-                    safeSetState(() => _model.mouseRegionHovered5 = true);
-                  }),
-                  onExit: ((event) async {
-                    safeSetState(() => _model.mouseRegionHovered5 = false);
-                  }),
                 ),
-              ].addToEnd(SizedBox(height: 10.0)),
+              ].addToEnd(const SizedBox(height: 10.0)),
             ),
           ),
         ),

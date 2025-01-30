@@ -1,9 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'errorseason_model.dart';
 export 'errorseason_model.dart';
 
@@ -12,8 +9,8 @@ class ErrorseasonWidget extends StatefulWidget {
     super.key,
     String? title,
     String? content,
-  })  : this.title = title ?? 'title',
-        this.content = content ?? 'content';
+  })  : title = title ?? 'title',
+        content = content ?? 'content';
 
   final String title;
   final String content;
@@ -49,12 +46,12 @@ class _ErrorseasonWidgetState extends State<ErrorseasonWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 0.0),
+      alignment: const AlignmentDirectional(0.0, 0.0),
       child: Container(
         width: 305.0,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               blurRadius: 2.0,
               color: Color(0x33000000),
@@ -72,25 +69,25 @@ class _ErrorseasonWidgetState extends State<ErrorseasonWidget> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 5.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 5.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    widget!.title,
+                    widget.title,
                     style: FlutterFlowTheme.of(context).bodyLarge.override(
                           fontFamily: 'Inter',
                           color: FlutterFlowTheme.of(context).primaryText,
                           letterSpacing: 0.0,
                         ),
                   ),
-                ].divide(SizedBox(width: 10.0)),
+                ].divide(const SizedBox(width: 10.0)),
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 16.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 16.0, 0.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -98,18 +95,18 @@ class _ErrorseasonWidgetState extends State<ErrorseasonWidget> {
                 children: [
                   Expanded(
                     child: Text(
-                      widget!.content,
+                      widget.content,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Inter',
                             letterSpacing: 0.0,
                           ),
                     ),
                   ),
-                ].divide(SizedBox(width: 2.0)),
+                ].divide(const SizedBox(width: 2.0)),
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 25.0, 16.0, 16.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 25.0, 16.0, 16.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.end,

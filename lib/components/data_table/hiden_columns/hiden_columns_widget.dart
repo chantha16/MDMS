@@ -1,12 +1,9 @@
 import '/backend/schema/structs/index.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import '/custom_code/actions/index.dart' as actions;
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'hiden_columns_model.dart';
 export 'hiden_columns_model.dart';
 
@@ -42,7 +39,7 @@ class _HidenColumnsWidgetState extends State<HidenColumnsWidget> {
     // On component load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
       _model.columnsVisibleStatus =
-          widget!.columns!.toList().cast<ColumnModelStruct>();
+          widget.columns!.toList().cast<ColumnModelStruct>();
       safeSetState(() {});
     });
 
@@ -62,7 +59,7 @@ class _HidenColumnsWidgetState extends State<HidenColumnsWidget> {
       width: 266.0,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             blurRadius: 4.0,
             color: Color(0x33000000),
@@ -78,7 +75,7 @@ class _HidenColumnsWidgetState extends State<HidenColumnsWidget> {
         ),
       ),
       child: Padding(
-        padding: EdgeInsets.all(15.0),
+        padding: const EdgeInsets.all(15.0),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -93,7 +90,7 @@ class _HidenColumnsWidgetState extends State<HidenColumnsWidget> {
                   final columns = _model.columnsVisibleStatus.toList();
 
                   return ListView.separated(
-                    padding: EdgeInsets.fromLTRB(
+                    padding: const EdgeInsets.fromLTRB(
                       0,
                       16.0,
                       0,
@@ -102,7 +99,7 @@ class _HidenColumnsWidgetState extends State<HidenColumnsWidget> {
                     shrinkWrap: true,
                     scrollDirection: Axis.vertical,
                     itemCount: columns.length,
-                    separatorBuilder: (_, __) => SizedBox(height: 10.0),
+                    separatorBuilder: (_, __) => const SizedBox(height: 10.0),
                     itemBuilder: (context, columnsIndex) {
                       final columnsItem = columns[columnsIndex];
                       return Row(
@@ -135,7 +132,7 @@ class _HidenColumnsWidgetState extends State<HidenColumnsWidget> {
                                     _model.columnsVisibleStatus,
                                   );
                                   await actions.printLog(
-                                    'params: ${(widget!.columns?.elementAtOrNull(columnsIndex))?.isHidden?.toString()}',
+                                    'params: ${(widget.columns?.elementAtOrNull(columnsIndex))?.isHidden.toString()}',
                                   );
                                 } else {
                                   _model.updateColumnsVisibleStatusAtIndex(
@@ -147,7 +144,7 @@ class _HidenColumnsWidgetState extends State<HidenColumnsWidget> {
                                     _model.columnsVisibleStatus,
                                   );
                                   await actions.printLog(
-                                    'params: ${(widget!.columns?.elementAtOrNull(columnsIndex))?.isHidden?.toString()}',
+                                    'params: ${(widget.columns?.elementAtOrNull(columnsIndex))?.isHidden.toString()}',
                                   );
                                 }
                               },
@@ -168,7 +165,7 @@ class _HidenColumnsWidgetState extends State<HidenColumnsWidget> {
                                   letterSpacing: 0.0,
                                 ),
                           ),
-                        ].divide(SizedBox(width: 5.0)),
+                        ].divide(const SizedBox(width: 5.0)),
                       );
                     },
                   );

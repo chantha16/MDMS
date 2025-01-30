@@ -4,10 +4,8 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_language_selector.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'main_layout_v1_model.dart';
 export 'main_layout_v1_model.dart';
@@ -69,7 +67,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
             color: FlutterFlowTheme.of(context).primaryBackground,
           ),
           child: Padding(
-            padding: EdgeInsets.all(10.0),
+            padding: const EdgeInsets.all(10.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
@@ -100,7 +98,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                       wrapWithModel(
                         model: _model.logoComponentModel,
                         updateCallback: () => safeSetState(() {}),
-                        child: LogoComponentWidget(),
+                        child: const LogoComponentWidget(),
                       ),
                       Expanded(
                         child: Row(
@@ -130,7 +128,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                 context.pushNamed(
                                   'sandbox1',
                                   extra: <String, dynamic>{
-                                    kTransitionInfoKey: TransitionInfo(
+                                    kTransitionInfoKey: const TransitionInfo(
                                       hasTransition: true,
                                       transitionType: PageTransitionType.fade,
                                       duration: Duration(milliseconds: 0),
@@ -139,7 +137,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                 );
                               },
                             ),
-                          ].divide(SizedBox(width: 5.0)),
+                          ].divide(const SizedBox(width: 5.0)),
                         ),
                       ),
                     ],
@@ -223,7 +221,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                         width: 45.0,
                         height: 45.0,
                         clipBehavior: Clip.antiAlias,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           shape: BoxShape.circle,
                         ),
                         child: Image.network(
@@ -232,7 +230,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
                         child: FlutterFlowLanguageSelector(
                           width: 150.0,
@@ -323,7 +321,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                             context.pushNamed(
                               'DashboardPage',
                               extra: <String, dynamic>{
-                                kTransitionInfoKey: TransitionInfo(
+                                kTransitionInfoKey: const TransitionInfo(
                                   hasTransition: true,
                                   transitionType: PageTransitionType.fade,
                                   duration: Duration(milliseconds: 0),
@@ -333,12 +331,12 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                           },
                           child: Container(
                             decoration: BoxDecoration(
-                              color: widget!.activeMenu == MenuItems.Dashboard
+                              color: widget.activeMenu == MenuItems.Dashboard
                                   ? FlutterFlowTheme.of(context).primary
-                                  : Color(0x00000000),
+                                  : const Color(0x00000000),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 12.0, 0.0, 12.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -352,7 +350,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                   ),
                                   if (_model.isDrawer == true)
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           8.0, 0.0, 0.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
@@ -400,9 +398,9 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                   }
                                 },
                                 child: Container(
-                                  decoration: BoxDecoration(),
+                                  decoration: const BoxDecoration(),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 5.0, 0.0, 5.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -434,7 +432,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                               .primaryText,
                                           size: 24.0,
                                         ),
-                                      ].divide(SizedBox(width: 10.0)),
+                                      ].divide(const SizedBox(width: 10.0)),
                                     ),
                                   ),
                                 ),
@@ -454,7 +452,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                         context.pushNamed(
                                           'DevicesPage',
                                           extra: <String, dynamic>{
-                                            kTransitionInfoKey: TransitionInfo(
+                                            kTransitionInfoKey: const TransitionInfo(
                                               hasTransition: true,
                                               transitionType:
                                                   PageTransitionType.fade,
@@ -465,9 +463,9 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                         );
                                       },
                                       child: Container(
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                         child: Padding(
-                                          padding: EdgeInsets.all(8.0),
+                                          padding: const EdgeInsets.all(8.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             crossAxisAlignment:
@@ -500,7 +498,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                                             FontWeight.w500,
                                                       ),
                                                 ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                       ),
@@ -514,7 +512,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                         context.pushNamed(
                                           'DeviceDetailsPage',
                                           extra: <String, dynamic>{
-                                            kTransitionInfoKey: TransitionInfo(
+                                            kTransitionInfoKey: const TransitionInfo(
                                               hasTransition: true,
                                               transitionType:
                                                   PageTransitionType.fade,
@@ -525,9 +523,9 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                         );
                                       },
                                       child: Container(
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                         child: Padding(
-                                          padding: EdgeInsets.all(8.0),
+                                          padding: const EdgeInsets.all(8.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             crossAxisAlignment:
@@ -560,7 +558,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                                             FontWeight.w500,
                                                       ),
                                                 ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                       ),
@@ -578,16 +576,16 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                           ),
                           child: Container(
                             width: double.infinity,
-                            color: Color(0x00000000),
+                            color: const Color(0x00000000),
                             child: ExpandableNotifier(
                               controller:
                                   _model.expandableExpandableController1,
                               child: ExpandablePanel(
                                 header: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 15.0, 0.0, 15.0),
                                   child: Container(
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment:
@@ -602,7 +600,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                         if (_model.isDrawer == true)
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     8.0, 0.0, 0.0, 0.0),
                                             child: Text(
                                               FFLocalizations.of(context)
@@ -646,7 +644,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                         context.pushNamed(
                                           'TouPage',
                                           extra: <String, dynamic>{
-                                            kTransitionInfoKey: TransitionInfo(
+                                            kTransitionInfoKey: const TransitionInfo(
                                               hasTransition: true,
                                               transitionType:
                                                   PageTransitionType.fade,
@@ -657,9 +655,9 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                         );
                                       },
                                       child: Container(
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                         child: Padding(
-                                          padding: EdgeInsets.all(8.0),
+                                          padding: const EdgeInsets.all(8.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             crossAxisAlignment:
@@ -692,7 +690,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                                             FontWeight.w500,
                                                       ),
                                                 ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                       ),
@@ -706,7 +704,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                         context.pushNamed(
                                           'TimeBandPage',
                                           extra: <String, dynamic>{
-                                            kTransitionInfoKey: TransitionInfo(
+                                            kTransitionInfoKey: const TransitionInfo(
                                               hasTransition: true,
                                               transitionType:
                                                   PageTransitionType.fade,
@@ -717,9 +715,9 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                         );
                                       },
                                       child: Container(
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                         child: Padding(
-                                          padding: EdgeInsets.all(8.0),
+                                          padding: const EdgeInsets.all(8.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             crossAxisAlignment:
@@ -752,7 +750,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                                             FontWeight.w500,
                                                       ),
                                                 ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                       ),
@@ -766,7 +764,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                         context.pushNamed(
                                           'pSpecailDayList',
                                           extra: <String, dynamic>{
-                                            kTransitionInfoKey: TransitionInfo(
+                                            kTransitionInfoKey: const TransitionInfo(
                                               hasTransition: true,
                                               transitionType:
                                                   PageTransitionType.fade,
@@ -777,9 +775,9 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                         );
                                       },
                                       child: Container(
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                         child: Padding(
-                                          padding: EdgeInsets.all(8.0),
+                                          padding: const EdgeInsets.all(8.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             crossAxisAlignment:
@@ -812,7 +810,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                                             FontWeight.w500,
                                                       ),
                                                 ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                       ),
@@ -826,7 +824,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                         context.pushNamed(
                                           'pSeason',
                                           extra: <String, dynamic>{
-                                            kTransitionInfoKey: TransitionInfo(
+                                            kTransitionInfoKey: const TransitionInfo(
                                               hasTransition: true,
                                               transitionType:
                                                   PageTransitionType.fade,
@@ -837,9 +835,9 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                         );
                                       },
                                       child: Container(
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                         child: Padding(
-                                          padding: EdgeInsets.all(8.0),
+                                          padding: const EdgeInsets.all(8.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             crossAxisAlignment:
@@ -872,7 +870,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                                             FontWeight.w500,
                                                       ),
                                                 ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                       ),
@@ -904,16 +902,16 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                           ),
                           child: Container(
                             width: double.infinity,
-                            color: Color(0x00000000),
+                            color: const Color(0x00000000),
                             child: ExpandableNotifier(
                               controller:
                                   _model.expandableExpandableController2,
                               child: ExpandablePanel(
                                 header: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 15.0, 0.0, 15.0),
                                   child: Container(
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment:
@@ -928,7 +926,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                         if (_model.isDrawer == true)
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     8.0, 0.0, 0.0, 0.0),
                                             child: Text(
                                               FFLocalizations.of(context)
@@ -964,9 +962,9 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
                                     Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Padding(
-                                        padding: EdgeInsets.all(8.0),
+                                        padding: const EdgeInsets.all(8.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           crossAxisAlignment:
@@ -998,14 +996,14 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                                               FontWeight.w500,
                                                         ),
                                               ),
-                                          ].divide(SizedBox(width: 12.0)),
+                                          ].divide(const SizedBox(width: 12.0)),
                                         ),
                                       ),
                                     ),
                                     Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Padding(
-                                        padding: EdgeInsets.all(8.0),
+                                        padding: const EdgeInsets.all(8.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           crossAxisAlignment:
@@ -1037,7 +1035,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                                               FontWeight.w500,
                                                         ),
                                               ),
-                                          ].divide(SizedBox(width: 12.0)),
+                                          ].divide(const SizedBox(width: 12.0)),
                                         ),
                                       ),
                                     ),
@@ -1050,7 +1048,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                         context.pushNamed(
                                           'seasonmaintest',
                                           extra: <String, dynamic>{
-                                            kTransitionInfoKey: TransitionInfo(
+                                            kTransitionInfoKey: const TransitionInfo(
                                               hasTransition: true,
                                               transitionType:
                                                   PageTransitionType.fade,
@@ -1061,9 +1059,9 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                         );
                                       },
                                       child: Container(
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                         child: Padding(
-                                          padding: EdgeInsets.all(8.0),
+                                          padding: const EdgeInsets.all(8.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             crossAxisAlignment:
@@ -1096,7 +1094,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                                             FontWeight.w500,
                                                       ),
                                                 ),
-                                            ].divide(SizedBox(width: 12.0)),
+                                            ].divide(const SizedBox(width: 12.0)),
                                           ),
                                         ),
                                       ),
@@ -1128,16 +1126,16 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                           ),
                           child: Container(
                             width: double.infinity,
-                            color: Color(0x00000000),
+                            color: const Color(0x00000000),
                             child: ExpandableNotifier(
                               controller:
                                   _model.expandableExpandableController3,
                               child: ExpandablePanel(
                                 header: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 15.0, 0.0, 15.0),
                                   child: Container(
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment:
@@ -1152,7 +1150,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                         if (_model.isDrawer == true)
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     8.0, 0.0, 0.0, 0.0),
                                             child: Text(
                                               FFLocalizations.of(context)
@@ -1188,9 +1186,9 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
                                     Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Padding(
-                                        padding: EdgeInsets.all(8.0),
+                                        padding: const EdgeInsets.all(8.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           crossAxisAlignment:
@@ -1222,14 +1220,14 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                                               FontWeight.w500,
                                                         ),
                                               ),
-                                          ].divide(SizedBox(width: 12.0)),
+                                          ].divide(const SizedBox(width: 12.0)),
                                         ),
                                       ),
                                     ),
                                     Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Padding(
-                                        padding: EdgeInsets.all(8.0),
+                                        padding: const EdgeInsets.all(8.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           crossAxisAlignment:
@@ -1261,14 +1259,14 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                                               FontWeight.w500,
                                                         ),
                                               ),
-                                          ].divide(SizedBox(width: 12.0)),
+                                          ].divide(const SizedBox(width: 12.0)),
                                         ),
                                       ),
                                     ),
                                     Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Padding(
-                                        padding: EdgeInsets.all(8.0),
+                                        padding: const EdgeInsets.all(8.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           crossAxisAlignment:
@@ -1300,7 +1298,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                                               FontWeight.w500,
                                                         ),
                                               ),
-                                          ].divide(SizedBox(width: 12.0)),
+                                          ].divide(const SizedBox(width: 12.0)),
                                         ),
                                       ),
                                     ),
@@ -1334,7 +1332,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                   height: double.infinity,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).primaryBackground,
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(0.0),
                       bottomRight: Radius.circular(0.0),
                       topLeft: Radius.circular(20.0),

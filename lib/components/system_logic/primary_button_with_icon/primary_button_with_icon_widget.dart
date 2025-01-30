@@ -2,8 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'primary_button_with_icon_model.dart';
 export 'primary_button_with_icon_model.dart';
 
@@ -59,17 +57,17 @@ class _PrimaryButtonWithIconWidgetState
       onPressed: () async {
         await widget.btAction?.call();
       },
-      text: widget!.tbName!,
-      icon: widget!.btIcon,
+      text: widget.tbName!,
+      icon: widget.btIcon,
       options: FFButtonOptions(
         width: 120.0,
         height: 40.0,
-        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-        iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-        color: widget!.colorbottom,
+        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+        iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+        color: widget.colorbottom,
         textStyle: FlutterFlowTheme.of(context).titleSmall.override(
               fontFamily: 'Inter Tight',
-              color: widget!.textcolor,
+              color: widget.textcolor,
               fontSize: 14.0,
               letterSpacing: 0.0,
               fontWeight: FontWeight.w500,

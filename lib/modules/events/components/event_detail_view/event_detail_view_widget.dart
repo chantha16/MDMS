@@ -3,10 +3,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'event_detail_view_model.dart';
 export 'event_detail_view_model.dart';
 
@@ -62,7 +59,7 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
               color: FlutterFlowTheme.of(context).secondaryBackground,
             ),
             child: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -94,7 +91,7 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
                                   fontWeight: FontWeight.w600,
                                 ),
                       ),
-                    ].divide(SizedBox(width: 16.0)),
+                    ].divide(const SizedBox(width: 16.0)),
                   ),
                   FFButtonWidget(
                     onPressed: () {
@@ -103,7 +100,7 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
                     text: FFLocalizations.of(context).getText(
                       't82supkf' /* Send Notification */,
                     ),
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.send,
                       size: 24.0,
                     ),
@@ -111,9 +108,9 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
                       width: 163.0,
                       height: 50.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primary,
                       textStyle:
                           FlutterFlowTheme.of(context).bodyMedium.override(
@@ -127,7 +124,7 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
                       borderRadius: BorderRadius.circular(20.0),
                     ),
                   ),
-                ].divide(SizedBox(width: 5.0)),
+                ].divide(const SizedBox(width: 5.0)),
               ),
             ),
           ),
@@ -144,7 +141,7 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
                         borderRadius: BorderRadius.circular(0.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 24.0, 24.0, 24.0),
                         child: SingleChildScrollView(
                           child: Column(
@@ -189,7 +186,7 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                     ),
                                     Expanded(
@@ -226,10 +223,10 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                     ),
-                                  ].divide(SizedBox(width: 24.0)),
+                                  ].divide(const SizedBox(width: 24.0)),
                                 ),
                               ),
                               Expanded(
@@ -270,7 +267,7 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                     ),
                                     Expanded(
@@ -307,10 +304,10 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                     ),
-                                  ].divide(SizedBox(width: 24.0)),
+                                  ].divide(const SizedBox(width: 24.0)),
                                 ),
                               ),
                               Row(
@@ -350,7 +347,7 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
                                                 letterSpacing: 0.0,
                                               ),
                                         ),
-                                      ].divide(SizedBox(height: 8.0)),
+                                      ].divide(const SizedBox(height: 8.0)),
                                     ),
                                   ),
                                   Expanded(
@@ -379,12 +376,12 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
                                           child: Container(
                                             width: 300.0,
                                             decoration: BoxDecoration(
-                                              color: Color(0xFFFFF3E0),
+                                              color: const Color(0xFFFFF3E0),
                                               borderRadius:
                                                   BorderRadius.circular(20.0),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       4.0, 12.0, 4.0, 12.0),
                                               child: Text(
@@ -399,17 +396,17 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
                                                         .override(
                                                           fontFamily: 'Inter',
                                                           color:
-                                                              Color(0xFFFF6F00),
+                                                              const Color(0xFFFF6F00),
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),
                                             ),
                                           ),
                                         ),
-                                      ].divide(SizedBox(height: 8.0)),
+                                      ].divide(const SizedBox(height: 8.0)),
                                     ),
                                   ),
-                                ].divide(SizedBox(width: 24.0)),
+                                ].divide(const SizedBox(width: 24.0)),
                               ),
                               Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -447,7 +444,7 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
                                                   BorderRadius.circular(20.0),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       12.0, 12.0, 12.0, 12.0),
                                               child: Text(
@@ -470,7 +467,7 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
                                             ),
                                           ),
                                         ),
-                                      ].divide(SizedBox(height: 8.0)),
+                                      ].divide(const SizedBox(height: 8.0)),
                                     ),
                                   ),
                                   Expanded(
@@ -507,10 +504,10 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
                                                 letterSpacing: 0.0,
                                               ),
                                         ),
-                                      ].divide(SizedBox(height: 8.0)),
+                                      ].divide(const SizedBox(height: 8.0)),
                                     ),
                                   ),
-                                ].divide(SizedBox(width: 24.0)),
+                                ].divide(const SizedBox(width: 24.0)),
                               ),
                               Expanded(
                                 child: Column(
@@ -547,7 +544,7 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 16.0, 16.0, 16.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
@@ -563,7 +560,7 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                               ),
                               Expanded(
@@ -602,7 +599,7 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
                                             width: 1.0,
                                           ),
                                         ),
-                                        child: Container(
+                                        child: SizedBox(
                                           width: double.infinity,
                                           child: TextFormField(
                                             controller: _model.textController,
@@ -632,7 +629,7 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
                                                         letterSpacing: 0.0,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Color(0x00000000),
                                                   width: 1.0,
                                                 ),
@@ -640,7 +637,7 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
                                                     BorderRadius.circular(8.0),
                                               ),
                                               focusedBorder: OutlineInputBorder(
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Color(0x00000000),
                                                   width: 1.0,
                                                 ),
@@ -690,7 +687,7 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                               ),
                               Expanded(
@@ -700,7 +697,7 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
                                   children: [
                                     Expanded(
                                       child: Padding(
-                                        padding: EdgeInsets.all(16.0),
+                                        padding: const EdgeInsets.all(16.0),
                                         child: Container(
                                           height: 325.0,
                                           decoration: BoxDecoration(
@@ -714,7 +711,7 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
                                                 .googleMapsCenter = latLng,
                                             initialLocation: _model
                                                     .googleMapsCenter ??=
-                                                LatLng(13.106061, -59.613158),
+                                                const LatLng(13.106061, -59.613158),
                                             markerColor:
                                                 GoogleMarkerColor.violet,
                                             mapType: MapType.normal,
@@ -735,7 +732,7 @@ class _EventDetailViewWidgetState extends State<EventDetailViewWidget> {
                                   ],
                                 ),
                               ),
-                            ].divide(SizedBox(height: 16.0)),
+                            ].divide(const SizedBox(height: 16.0)),
                           ),
                         ),
                       ),

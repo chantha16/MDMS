@@ -1,9 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'daterange_model.dart';
 export 'daterange_model.dart';
 
@@ -63,7 +60,7 @@ class _DaterangeWidgetState extends State<DaterangeWidget> {
           ),
         ),
         child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(15.0, 10.0, 15.0, 10.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(15.0, 10.0, 15.0, 10.0),
           child: Column(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.center,
@@ -88,7 +85,7 @@ class _DaterangeWidgetState extends State<DaterangeWidget> {
                     color: FlutterFlowTheme.of(context).primary,
                     size: 20.0,
                   ),
-                ].divide(SizedBox(width: 8.0)),
+                ].divide(const SizedBox(width: 8.0)),
               ),
             ],
           ),

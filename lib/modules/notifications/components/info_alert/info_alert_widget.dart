@@ -1,9 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'info_alert_model.dart';
 export 'info_alert_model.dart';
 
@@ -13,8 +10,8 @@ class InfoAlertWidget extends StatefulWidget {
     String? tittle,
     String? desciption,
     required this.action,
-  })  : this.tittle = tittle ?? 'tittle',
-        this.desciption = desciption ?? 'desciption';
+  })  : tittle = tittle ?? 'tittle',
+        desciption = desciption ?? 'desciption';
 
   final String tittle;
   final String desciption;
@@ -54,8 +51,8 @@ class _InfoAlertWidgetState extends State<InfoAlertWidget> {
       width: double.infinity,
       height: MediaQuery.sizeOf(context).height * 0.1,
       decoration: BoxDecoration(
-        color: Color(0x4FF9CF58),
-        boxShadow: [
+        color: const Color(0x4FF9CF58),
+        boxShadow: const [
           BoxShadow(
             blurRadius: 4.0,
             color: Color(0x33000000),
@@ -71,7 +68,7 @@ class _InfoAlertWidgetState extends State<InfoAlertWidget> {
         ),
       ),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
         child: Row(
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -85,7 +82,7 @@ class _InfoAlertWidgetState extends State<InfoAlertWidget> {
                   Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.all(4.0),
                         child: Icon(
                           Icons.info_outline,
@@ -94,7 +91,7 @@ class _InfoAlertWidgetState extends State<InfoAlertWidget> {
                         ),
                       ),
                       Text(
-                        widget!.tittle,
+                        widget.tittle,
                         style: FlutterFlowTheme.of(context).titleSmall.override(
                               fontFamily: 'Figtree',
                               color: Colors.white,
@@ -103,22 +100,22 @@ class _InfoAlertWidgetState extends State<InfoAlertWidget> {
                               fontWeight: FontWeight.w500,
                             ),
                       ),
-                    ].divide(SizedBox(width: 8.0)),
+                    ].divide(const SizedBox(width: 8.0)),
                   ),
                   Text(
-                    widget!.desciption,
+                    widget.desciption,
                     style: FlutterFlowTheme.of(context).labelMedium.override(
                           fontFamily: 'Figtree',
-                          color: Color(0x9AFFFFFF),
+                          color: const Color(0x9AFFFFFF),
                           fontSize: 14.0,
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.w500,
                         ),
                   ),
-                ].divide(SizedBox(height: 4.0)),
+                ].divide(const SizedBox(height: 4.0)),
               ),
             ),
-          ].divide(SizedBox(width: 8.0)),
+          ].divide(const SizedBox(width: 8.0)),
         ),
       ),
     );

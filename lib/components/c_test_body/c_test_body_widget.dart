@@ -1,9 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'c_test_body_model.dart';
 export 'c_test_body_model.dart';
 
@@ -44,7 +41,7 @@ class _CTestBodyWidgetState extends State<CTestBodyWidget> {
       mainAxisSize: MainAxisSize.max,
       children: [
         Align(
-          alignment: AlignmentDirectional(0.0, 0.0),
+          alignment: const AlignmentDirectional(0.0, 0.0),
           child: Text(
             FFLocalizations.of(context).getText(
               '6hdndfht' /* Hello World */,

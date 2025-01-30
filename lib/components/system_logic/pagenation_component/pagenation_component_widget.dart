@@ -1,10 +1,7 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'pagenation_component_model.dart';
 export 'pagenation_component_model.dart';
 
@@ -47,9 +44,9 @@ class _PagenationComponentWidgetState extends State<PagenationComponentWidget> {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      decoration: BoxDecoration(),
+      decoration: const BoxDecoration(),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(16.0, 3.0, 16.0, 3.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(16.0, 3.0, 16.0, 3.0),
         child: Row(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.start,
@@ -58,7 +55,7 @@ class _PagenationComponentWidgetState extends State<PagenationComponentWidget> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Container(
+                SizedBox(
                   width: 60.0,
                   child: TextFormField(
                     controller: _model.textController,
@@ -78,7 +75,7 @@ class _PagenationComponentWidgetState extends State<PagenationComponentWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
@@ -131,7 +128,7 @@ class _PagenationComponentWidgetState extends State<PagenationComponentWidget> {
                         fontWeight: FontWeight.w600,
                       ),
                 ),
-              ].divide(SizedBox(width: 5.0)),
+              ].divide(const SizedBox(width: 5.0)),
             ),
             Expanded(
               child: Row(
@@ -161,7 +158,7 @@ class _PagenationComponentWidgetState extends State<PagenationComponentWidget> {
                     ),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
+                          const EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
                       child: Text(
                         FFLocalizations.of(context).getText(
                           'ktwsynom' /* 1 */,
@@ -190,10 +187,10 @@ class _PagenationComponentWidgetState extends State<PagenationComponentWidget> {
                       print('IconButton pressed ...');
                     },
                   ),
-                ].divide(SizedBox(width: 4.0)),
+                ].divide(const SizedBox(width: 4.0)),
               ),
             ),
-          ].divide(SizedBox(width: 12.0)),
+          ].divide(const SizedBox(width: 12.0)),
         ),
       ),
     );

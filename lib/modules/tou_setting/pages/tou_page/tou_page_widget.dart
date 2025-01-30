@@ -1,11 +1,8 @@
 import '/components/layout/main_layout_v1/main_layout_v1_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/modules/tou_setting/components/tou_view/tou_view_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'tou_page_model.dart';
 export 'tou_page_model.dart';
 
@@ -52,7 +49,7 @@ class _TouPageWidgetState extends State<TouPageWidget> {
             model: _model.mainLayoutV1Model,
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutV1Widget(
-              body: () => TouViewWidget(),
+              body: () => const TouViewWidget(),
             ),
           ),
         ),

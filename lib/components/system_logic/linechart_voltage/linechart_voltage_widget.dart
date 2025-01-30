@@ -1,9 +1,7 @@
 import '/flutter_flow/flutter_flow_charts.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'linechart_voltage_model.dart';
 export 'linechart_voltage_model.dart';
@@ -57,7 +55,7 @@ class _LinechartVoltageWidgetState extends State<LinechartVoltageWidget> {
               children: [
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(10.0, 15.0, 10.0, 15.0),
+                      const EdgeInsetsDirectional.fromSTEB(10.0, 15.0, 10.0, 15.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -80,10 +78,10 @@ class _LinechartVoltageWidgetState extends State<LinechartVoltageWidget> {
                 ),
                 Expanded(
                   child: Container(
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 50.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 50.0),
                       child: Stack(
                         children: [
                           FlutterFlowLineChart(
@@ -119,7 +117,7 @@ class _LinechartVoltageWidgetState extends State<LinechartVoltageWidget> {
                                 xData: FFAppState().chart,
                                 yData: FFAppState().chart,
                                 settings: LineChartBarData(
-                                  color: Color(0xFF2536A4),
+                                  color: const Color(0xFF2536A4),
                                   barWidth: 2.0,
                                   isCurved: true,
                                 ),
@@ -136,7 +134,7 @@ class _LinechartVoltageWidgetState extends State<LinechartVoltageWidget> {
                                   FlutterFlowTheme.of(context).secondaryText,
                               borderWidth: 1.0,
                             ),
-                            axisBounds: AxisBounds(),
+                            axisBounds: const AxisBounds(),
                             xAxisLabelInfo: AxisLabelInfo(
                               showLabels: true,
                               labelTextStyle: FlutterFlowTheme.of(context)
@@ -184,7 +182,7 @@ class _LinechartVoltageWidgetState extends State<LinechartVoltageWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 1.0),
+                            alignment: const AlignmentDirectional(0.0, 1.0),
                             child: FlutterFlowChartLegendWidget(
                               entries: [
                                 LegendEntry(
@@ -198,7 +196,7 @@ class _LinechartVoltageWidgetState extends State<LinechartVoltageWidget> {
                                       '8m9wmyig' /* Phase B */,
                                     )),
                                 LegendEntry(
-                                    Color(0xFF2536A4),
+                                    const Color(0xFF2536A4),
                                     FFLocalizations.of(context).getText(
                                       'xnyh3mv4' /* Phase C */,
                                     )),
@@ -210,9 +208,9 @@ class _LinechartVoltageWidgetState extends State<LinechartVoltageWidget> {
                                     fontFamily: 'Inter',
                                     letterSpacing: 0.0,
                                   ),
-                              textPadding: EdgeInsetsDirectional.fromSTEB(
+                              textPadding: const EdgeInsetsDirectional.fromSTEB(
                                   5.0, 0.0, 0.0, 0.0),
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   5.0, 0.0, 5.0, 0.0),
                               borderWidth: 1.0,
                               indicatorSize: 10.0,

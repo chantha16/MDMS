@@ -1,15 +1,11 @@
 import '/components/system_logic/com_map/com_map_widget.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/modules/deviecs/components/c_action_log/c_action_log_widget.dart';
 import '/modules/deviecs/components/c_cos_info/c_cos_info_widget.dart';
 import '/modules/deviecs/components/c_tou_info/c_tou_info_widget.dart';
 import '/modules/deviecs/components/cloadprofile/cloadprofile_widget.dart';
-import 'dart:ui';
 import 'c_sidebar_widget.dart' show CSidebarWidget;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class CSidebarModel extends FlutterFlowModel<CSidebarWidget> {
   ///  State fields for stateful widgets in this component.

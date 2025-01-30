@@ -1,10 +1,7 @@
 import '/backend/schema/enums/enums.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'menuoption_model.dart';
 export 'menuoption_model.dart';
 
@@ -47,10 +44,10 @@ class _MenuoptionWidgetState extends State<MenuoptionWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 150.0,
+      width: 140.0,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             blurRadius: 2.0,
             color: Color(0x33000000),
@@ -63,13 +60,19 @@ class _MenuoptionWidgetState extends State<MenuoptionWidget> {
         borderRadius: BorderRadius.circular(12.0),
       ),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 10.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 10.0),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             MouseRegion(
               opaque: false,
               cursor: MouseCursor.defer ?? MouseCursor.defer,
+              onEnter: ((event) async {
+                safeSetState(() => _model.mouseRegionHovered1 = true);
+              }),
+              onExit: ((event) async {
+                safeSetState(() => _model.mouseRegionHovered1 = false);
+              }),
               child: InkWell(
                 splashColor: Colors.transparent,
                 focusColor: Colors.transparent,
@@ -84,12 +87,12 @@ class _MenuoptionWidgetState extends State<MenuoptionWidget> {
                         ParamType.Enum,
                       ),
                       'seasonId': serializeParam(
-                        widget!.seasonId,
+                        widget.seasonId,
                         ParamType.int,
                       ),
                     }.withoutNulls,
                     extra: <String, dynamic>{
-                      kTransitionInfoKey: TransitionInfo(
+                      kTransitionInfoKey: const TransitionInfo(
                         hasTransition: true,
                         transitionType: PageTransitionType.fade,
                         duration: Duration(milliseconds: 0),
@@ -101,13 +104,13 @@ class _MenuoptionWidgetState extends State<MenuoptionWidget> {
                 },
                 child: Container(
                   decoration: BoxDecoration(
-                    color: _model.mouseRegionHovered1!
+                    color: _model.mouseRegionHovered1
                         ? FlutterFlowTheme.of(context).primaryBackground
-                        : Color(0x00000000),
+                        : const Color(0x00000000),
                   ),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -121,7 +124,7 @@ class _MenuoptionWidgetState extends State<MenuoptionWidget> {
                             borderRadius: BorderRadius.circular(12.0),
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Icon(
                               Icons.edit_rounded,
                               color: FlutterFlowTheme.of(context).primary,
@@ -148,21 +151,21 @@ class _MenuoptionWidgetState extends State<MenuoptionWidget> {
                             ],
                           ),
                         ),
-                      ].divide(SizedBox(width: 12.0)),
+                      ].divide(const SizedBox(width: 12.0)),
                     ),
                   ),
                 ),
               ),
-              onEnter: ((event) async {
-                safeSetState(() => _model.mouseRegionHovered1 = true);
-              }),
-              onExit: ((event) async {
-                safeSetState(() => _model.mouseRegionHovered1 = false);
-              }),
             ),
             MouseRegion(
               opaque: false,
               cursor: MouseCursor.defer ?? MouseCursor.defer,
+              onEnter: ((event) async {
+                safeSetState(() => _model.mouseRegionHovered2 = true);
+              }),
+              onExit: ((event) async {
+                safeSetState(() => _model.mouseRegionHovered2 = false);
+              }),
               child: InkWell(
                 splashColor: Colors.transparent,
                 focusColor: Colors.transparent,
@@ -177,12 +180,12 @@ class _MenuoptionWidgetState extends State<MenuoptionWidget> {
                         ParamType.Enum,
                       ),
                       'seasonId': serializeParam(
-                        widget!.seasonId,
+                        widget.seasonId,
                         ParamType.int,
                       ),
                     }.withoutNulls,
                     extra: <String, dynamic>{
-                      kTransitionInfoKey: TransitionInfo(
+                      kTransitionInfoKey: const TransitionInfo(
                         hasTransition: true,
                         transitionType: PageTransitionType.fade,
                         duration: Duration(milliseconds: 0),
@@ -194,13 +197,13 @@ class _MenuoptionWidgetState extends State<MenuoptionWidget> {
                 },
                 child: Container(
                   decoration: BoxDecoration(
-                    color: _model.mouseRegionHovered2!
+                    color: _model.mouseRegionHovered2
                         ? FlutterFlowTheme.of(context).primaryBackground
-                        : Color(0x00000000),
+                        : const Color(0x00000000),
                   ),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -214,7 +217,7 @@ class _MenuoptionWidgetState extends State<MenuoptionWidget> {
                             borderRadius: BorderRadius.circular(12.0),
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Icon(
                               Icons.delete_rounded,
                               color: FlutterFlowTheme.of(context).primary,
@@ -241,21 +244,21 @@ class _MenuoptionWidgetState extends State<MenuoptionWidget> {
                             ],
                           ),
                         ),
-                      ].divide(SizedBox(width: 12.0)),
+                      ].divide(const SizedBox(width: 12.0)),
                     ),
                   ),
                 ),
               ),
-              onEnter: ((event) async {
-                safeSetState(() => _model.mouseRegionHovered2 = true);
-              }),
-              onExit: ((event) async {
-                safeSetState(() => _model.mouseRegionHovered2 = false);
-              }),
             ),
             MouseRegion(
               opaque: false,
               cursor: MouseCursor.defer ?? MouseCursor.defer,
+              onEnter: ((event) async {
+                safeSetState(() => _model.mouseRegionHovered3 = true);
+              }),
+              onExit: ((event) async {
+                safeSetState(() => _model.mouseRegionHovered3 = false);
+              }),
               child: InkWell(
                 splashColor: Colors.transparent,
                 focusColor: Colors.transparent,
@@ -270,12 +273,12 @@ class _MenuoptionWidgetState extends State<MenuoptionWidget> {
                         ParamType.Enum,
                       ),
                       'seasonId': serializeParam(
-                        widget!.seasonId,
+                        widget.seasonId,
                         ParamType.int,
                       ),
                     }.withoutNulls,
                     extra: <String, dynamic>{
-                      kTransitionInfoKey: TransitionInfo(
+                      kTransitionInfoKey: const TransitionInfo(
                         hasTransition: true,
                         transitionType: PageTransitionType.fade,
                         duration: Duration(milliseconds: 0),
@@ -287,13 +290,13 @@ class _MenuoptionWidgetState extends State<MenuoptionWidget> {
                 },
                 child: Container(
                   decoration: BoxDecoration(
-                    color: _model.mouseRegionHovered3!
+                    color: _model.mouseRegionHovered3
                         ? FlutterFlowTheme.of(context).primaryBackground
-                        : Color(0x00000000),
+                        : const Color(0x00000000),
                   ),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -307,7 +310,7 @@ class _MenuoptionWidgetState extends State<MenuoptionWidget> {
                             borderRadius: BorderRadius.circular(12.0),
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Icon(
                               Icons.visibility_rounded,
                               color: FlutterFlowTheme.of(context).primary,
@@ -334,19 +337,13 @@ class _MenuoptionWidgetState extends State<MenuoptionWidget> {
                             ],
                           ),
                         ),
-                      ].divide(SizedBox(width: 12.0)),
+                      ].divide(const SizedBox(width: 12.0)),
                     ),
                   ),
                 ),
               ),
-              onEnter: ((event) async {
-                safeSetState(() => _model.mouseRegionHovered3 = true);
-              }),
-              onExit: ((event) async {
-                safeSetState(() => _model.mouseRegionHovered3 = false);
-              }),
             ),
-          ].divide(SizedBox(height: 16.0)),
+          ].divide(const SizedBox(height: 16.0)),
         ),
       ),
     );

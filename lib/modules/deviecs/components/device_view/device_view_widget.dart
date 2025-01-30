@@ -6,12 +6,9 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/modules/deviecs/components/c_action/c_action_widget.dart';
 import '/modules/deviecs/components/c_custom_columns/c_custom_columns_widget.dart';
 import '/modules/deviecs/components/c_sidebar/c_sidebar_widget.dart';
-import 'dart:ui';
 import 'package:aligned_dialog/aligned_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'device_view_model.dart';
 export 'device_view_model.dart';
 
@@ -51,7 +48,7 @@ class _DeviceViewWidgetState extends State<DeviceViewWidget> {
     return Container(
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
           topLeft: Radius.circular(20.0),
@@ -59,7 +56,7 @@ class _DeviceViewWidgetState extends State<DeviceViewWidget> {
         ),
       ),
       child: Padding(
-        padding: EdgeInsets.all(24.0),
+        padding: const EdgeInsets.all(24.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -77,11 +74,11 @@ class _DeviceViewWidgetState extends State<DeviceViewWidget> {
                     updateCallback: () => safeSetState(() {}),
                     child: BodyHeaderWidget(
                       tbName1: 'Export',
-                      btIcon1: Icon(
+                      btIcon1: const Icon(
                         Icons.ios_share,
                       ),
                       tbName2: 'Add',
-                      btIcon2: Icon(
+                      btIcon2: const Icon(
                         Icons.add_box,
                       ),
                       filterAction: () async {},
@@ -89,7 +86,7 @@ class _DeviceViewWidgetState extends State<DeviceViewWidget> {
                         context.pushNamed(
                           'AddDevicePage',
                           extra: <String, dynamic>{
-                            kTransitionInfoKey: TransitionInfo(
+                            kTransitionInfoKey: const TransitionInfo(
                               hasTransition: true,
                               transitionType: PageTransitionType.fade,
                               duration: Duration(milliseconds: 0),
@@ -103,7 +100,7 @@ class _DeviceViewWidgetState extends State<DeviceViewWidget> {
                   Container(
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).primaryBackground,
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(0.0),
                         bottomRight: Radius.circular(0.0),
                         topLeft: Radius.circular(16.0),
@@ -143,7 +140,7 @@ class _DeviceViewWidgetState extends State<DeviceViewWidget> {
                         Container(
                           width: 40.0,
                           height: 40.0,
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                           child: Builder(
                             builder: (context) => FlutterFlowIconButton(
                               borderColor: Colors.transparent,
@@ -161,13 +158,13 @@ class _DeviceViewWidgetState extends State<DeviceViewWidget> {
                                   context: context,
                                   isGlobal: false,
                                   avoidOverflow: false,
-                                  targetAnchor: AlignmentDirectional(0.0, 0.5)
+                                  targetAnchor: const AlignmentDirectional(0.0, 0.5)
                                       .resolve(Directionality.of(context)),
                                   followerAnchor:
-                                      AlignmentDirectional(-1.0, -1.0)
+                                      const AlignmentDirectional(-1.0, -1.0)
                                           .resolve(Directionality.of(context)),
                                   builder: (dialogContext) {
-                                    return Material(
+                                    return const Material(
                                       color: Colors.transparent,
                                       child: CCustomColumnsWidget(),
                                     );
@@ -306,7 +303,7 @@ class _DeviceViewWidgetState extends State<DeviceViewWidget> {
                                     ),
                           ),
                         ),
-                      ].divide(SizedBox(width: 14.0)),
+                      ].divide(const SizedBox(width: 14.0)),
                     ),
                   ),
                   ListView(
@@ -317,11 +314,18 @@ class _DeviceViewWidgetState extends State<DeviceViewWidget> {
                       MouseRegion(
                         opaque: false,
                         cursor: MouseCursor.defer ?? MouseCursor.defer,
+                        onEnter: ((event) async {
+                          safeSetState(() => _model.mouseRegionHovered1 = true);
+                        }),
+                        onExit: ((event) async {
+                          safeSetState(
+                              () => _model.mouseRegionHovered1 = false);
+                        }),
                         child: Container(
                           width: double.infinity,
                           height: 40.0,
                           decoration: BoxDecoration(
-                            color: _model.mouseRegionHovered1!
+                            color: _model.mouseRegionHovered1
                                 ? FlutterFlowTheme.of(context).accent4
                                 : FlutterFlowTheme.of(context)
                                     .secondaryBackground,
@@ -338,13 +342,13 @@ class _DeviceViewWidgetState extends State<DeviceViewWidget> {
                                   context: context,
                                   isGlobal: false,
                                   avoidOverflow: true,
-                                  targetAnchor: AlignmentDirectional(1.0, -1.0)
+                                  targetAnchor: const AlignmentDirectional(1.0, -1.0)
                                       .resolve(Directionality.of(context)),
                                   followerAnchor:
-                                      AlignmentDirectional(0.0, -1.0)
+                                      const AlignmentDirectional(0.0, -1.0)
                                           .resolve(Directionality.of(context)),
                                   builder: (dialogContext) {
-                                    return Material(
+                                    return const Material(
                                       color: Colors.transparent,
                                       child: CSidebarWidget(),
                                     );
@@ -404,16 +408,16 @@ class _DeviceViewWidgetState extends State<DeviceViewWidget> {
                                           context: context,
                                           isGlobal: false,
                                           avoidOverflow: false,
-                                          targetAnchor: AlignmentDirectional(
+                                          targetAnchor: const AlignmentDirectional(
                                                   0.0, 0.5)
                                               .resolve(
                                                   Directionality.of(context)),
-                                          followerAnchor: AlignmentDirectional(
+                                          followerAnchor: const AlignmentDirectional(
                                                   -1.0, -1.0)
                                               .resolve(
                                                   Directionality.of(context)),
                                           builder: (dialogContext) {
-                                            return Material(
+                                            return const Material(
                                               color: Colors.transparent,
                                               child: CActionWidget(),
                                             );
@@ -581,27 +585,27 @@ class _DeviceViewWidgetState extends State<DeviceViewWidget> {
                                           ),
                                     ),
                                   ),
-                                ].divide(SizedBox(width: 14.0)),
+                                ].divide(const SizedBox(width: 14.0)),
                               ),
                             ),
                           ),
                         ),
-                        onEnter: ((event) async {
-                          safeSetState(() => _model.mouseRegionHovered1 = true);
-                        }),
-                        onExit: ((event) async {
-                          safeSetState(
-                              () => _model.mouseRegionHovered1 = false);
-                        }),
                       ),
                       MouseRegion(
                         opaque: false,
                         cursor: MouseCursor.defer ?? MouseCursor.defer,
+                        onEnter: ((event) async {
+                          safeSetState(() => _model.mouseRegionHovered2 = true);
+                        }),
+                        onExit: ((event) async {
+                          safeSetState(
+                              () => _model.mouseRegionHovered2 = false);
+                        }),
                         child: Container(
                           width: double.infinity,
                           height: 40.0,
                           decoration: BoxDecoration(
-                            color: _model.mouseRegionHovered3!
+                            color: _model.mouseRegionHovered3
                                 ? FlutterFlowTheme.of(context).accent4
                                 : FlutterFlowTheme.of(context)
                                     .secondaryBackground,
@@ -618,13 +622,13 @@ class _DeviceViewWidgetState extends State<DeviceViewWidget> {
                                   context: context,
                                   isGlobal: false,
                                   avoidOverflow: true,
-                                  targetAnchor: AlignmentDirectional(1.0, -1.0)
+                                  targetAnchor: const AlignmentDirectional(1.0, -1.0)
                                       .resolve(Directionality.of(context)),
                                   followerAnchor:
-                                      AlignmentDirectional(0.0, -1.0)
+                                      const AlignmentDirectional(0.0, -1.0)
                                           .resolve(Directionality.of(context)),
                                   builder: (dialogContext) {
-                                    return Material(
+                                    return const Material(
                                       color: Colors.transparent,
                                       child: CSidebarWidget(),
                                     );
@@ -841,29 +845,29 @@ class _DeviceViewWidgetState extends State<DeviceViewWidget> {
                                           ),
                                     ),
                                   ),
-                                ].divide(SizedBox(width: 14.0)),
+                                ].divide(const SizedBox(width: 14.0)),
                               ),
                             ),
                           ),
                         ),
-                        onEnter: ((event) async {
-                          safeSetState(() => _model.mouseRegionHovered2 = true);
-                        }),
-                        onExit: ((event) async {
-                          safeSetState(
-                              () => _model.mouseRegionHovered2 = false);
-                        }),
                       ),
                       MouseRegion(
                         opaque: false,
                         cursor: MouseCursor.defer ?? MouseCursor.defer,
+                        onEnter: ((event) async {
+                          safeSetState(() => _model.mouseRegionHovered3 = true);
+                        }),
+                        onExit: ((event) async {
+                          safeSetState(
+                              () => _model.mouseRegionHovered3 = false);
+                        }),
                         child: Container(
                           width: double.infinity,
                           height: 40.0,
                           decoration: BoxDecoration(
-                            color: _model.mouseRegionHovered3!
+                            color: _model.mouseRegionHovered3
                                 ? FlutterFlowTheme.of(context).primaryBackground
-                                : Color(0x00000000),
+                                : const Color(0x00000000),
                           ),
                           child: Builder(
                             builder: (context) => InkWell(
@@ -877,13 +881,13 @@ class _DeviceViewWidgetState extends State<DeviceViewWidget> {
                                   context: context,
                                   isGlobal: false,
                                   avoidOverflow: true,
-                                  targetAnchor: AlignmentDirectional(1.0, -1.0)
+                                  targetAnchor: const AlignmentDirectional(1.0, -1.0)
                                       .resolve(Directionality.of(context)),
                                   followerAnchor:
-                                      AlignmentDirectional(0.0, -1.0)
+                                      const AlignmentDirectional(0.0, -1.0)
                                           .resolve(Directionality.of(context)),
                                   builder: (dialogContext) {
-                                    return Material(
+                                    return const Material(
                                       color: Colors.transparent,
                                       child: CSidebarWidget(),
                                     );
@@ -1100,27 +1104,27 @@ class _DeviceViewWidgetState extends State<DeviceViewWidget> {
                                           ),
                                     ),
                                   ),
-                                ].divide(SizedBox(width: 14.0)),
+                                ].divide(const SizedBox(width: 14.0)),
                               ),
                             ),
                           ),
                         ),
-                        onEnter: ((event) async {
-                          safeSetState(() => _model.mouseRegionHovered3 = true);
-                        }),
-                        onExit: ((event) async {
-                          safeSetState(
-                              () => _model.mouseRegionHovered3 = false);
-                        }),
                       ),
                       MouseRegion(
                         opaque: false,
                         cursor: MouseCursor.defer ?? MouseCursor.defer,
+                        onEnter: ((event) async {
+                          safeSetState(() => _model.mouseRegionHovered4 = true);
+                        }),
+                        onExit: ((event) async {
+                          safeSetState(
+                              () => _model.mouseRegionHovered4 = false);
+                        }),
                         child: Container(
                           decoration: BoxDecoration(
-                            color: _model.mouseRegionHovered4!
+                            color: _model.mouseRegionHovered4
                                 ? FlutterFlowTheme.of(context).primaryBackground
-                                : Color(0x00000000),
+                                : const Color(0x00000000),
                           ),
                           child: Builder(
                             builder: (context) => InkWell(
@@ -1134,13 +1138,13 @@ class _DeviceViewWidgetState extends State<DeviceViewWidget> {
                                   context: context,
                                   isGlobal: false,
                                   avoidOverflow: true,
-                                  targetAnchor: AlignmentDirectional(1.0, -1.0)
+                                  targetAnchor: const AlignmentDirectional(1.0, -1.0)
                                       .resolve(Directionality.of(context)),
                                   followerAnchor:
-                                      AlignmentDirectional(0.0, -1.0)
+                                      const AlignmentDirectional(0.0, -1.0)
                                           .resolve(Directionality.of(context)),
                                   builder: (dialogContext) {
-                                    return Material(
+                                    return const Material(
                                       color: Colors.transparent,
                                       child: CSidebarWidget(),
                                     );
@@ -1357,29 +1361,22 @@ class _DeviceViewWidgetState extends State<DeviceViewWidget> {
                                           ),
                                     ),
                                   ),
-                                ].divide(SizedBox(width: 14.0)),
+                                ].divide(const SizedBox(width: 14.0)),
                               ),
                             ),
                           ),
                         ),
-                        onEnter: ((event) async {
-                          safeSetState(() => _model.mouseRegionHovered4 = true);
-                        }),
-                        onExit: ((event) async {
-                          safeSetState(
-                              () => _model.mouseRegionHovered4 = false);
-                        }),
                       ),
-                    ].divide(SizedBox(height: 6.0)),
+                    ].divide(const SizedBox(height: 6.0)),
                   ),
-                ].divide(SizedBox(height: 16.0)),
+                ].divide(const SizedBox(height: 16.0)),
               ),
             wrapWithModel(
               model: _model.pagenationComponentModel,
               updateCallback: () => safeSetState(() {}),
-              child: PagenationComponentWidget(),
+              child: const PagenationComponentWidget(),
             ),
-          ].divide(SizedBox(height: 16.0)),
+          ].divide(const SizedBox(height: 16.0)),
         ),
       ),
     );

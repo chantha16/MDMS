@@ -1,5 +1,4 @@
 import 'package:provider/provider.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -7,8 +6,6 @@ import 'package:flutter_web_plugins/url_strategy.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import 'flutter_flow/flutter_flow_util.dart';
 import 'flutter_flow/internationalization.dart';
-import 'flutter_flow/nav/nav.dart';
-import 'index.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,7 +22,7 @@ void main() async {
 
   runApp(ChangeNotifierProvider(
     create: (context) => appState,
-    child: MyApp(),
+    child: const MyApp(),
   ));
 }
 
@@ -67,7 +64,7 @@ class _MyAppState extends State<MyApp> {
     _appStateNotifier = AppStateNotifier.instance;
     _router = createRouter(_appStateNotifier, widget.entryPage);
 
-    Future.delayed(Duration(milliseconds: 1000),
+    Future.delayed(const Duration(milliseconds: 1000),
         () => safeSetState(() => _appStateNotifier.stopShowingSplashImage()));
   }
 
@@ -84,7 +81,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: 'MDMS',
-      localizationsDelegates: [
+      localizationsDelegates: const [
         FFLocalizationsDelegate(),
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
@@ -102,16 +99,16 @@ class _MyAppState extends State<MyApp> {
         brightness: Brightness.light,
         scrollbarTheme: ScrollbarThemeData(
           interactive: true,
-          thickness: MaterialStateProperty.all(1.0),
-          radius: Radius.circular(20.0),
-          thumbColor: MaterialStateProperty.resolveWith((states) {
-            if (states.contains(MaterialState.dragged)) {
-              return Color(4288243353);
+          thickness: WidgetStateProperty.all(1.0),
+          radius: const Radius.circular(20.0),
+          thumbColor: WidgetStateProperty.resolveWith((states) {
+            if (states.contains(WidgetState.dragged)) {
+              return const Color(0xff996699);
             }
-            if (states.contains(MaterialState.hovered)) {
-              return Color(4288243353);
+            if (states.contains(WidgetState.hovered)) {
+              return const Color(0xff996699);
             }
-            return Color(4288243353);
+            return const Color(0xff996699);
           }),
         ),
         useMaterial3: false,
@@ -120,16 +117,16 @@ class _MyAppState extends State<MyApp> {
         brightness: Brightness.dark,
         scrollbarTheme: ScrollbarThemeData(
           interactive: true,
-          thickness: MaterialStateProperty.all(1.0),
-          radius: Radius.circular(20.0),
-          thumbColor: MaterialStateProperty.resolveWith((states) {
-            if (states.contains(MaterialState.dragged)) {
-              return Color(4288243353);
+          thickness: WidgetStateProperty.all(1.0),
+          radius: const Radius.circular(20.0),
+          thumbColor: WidgetStateProperty.resolveWith((states) {
+            if (states.contains(WidgetState.dragged)) {
+              return const Color(0xff996699);
             }
-            if (states.contains(MaterialState.hovered)) {
-              return Color(4288243353);
+            if (states.contains(WidgetState.hovered)) {
+              return const Color(0xff996699);
             }
-            return Color(4288243353);
+            return const Color(0xff996699);
           }),
         ),
         useMaterial3: false,
