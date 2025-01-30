@@ -1,0 +1,9 @@
+{
+  "baseUrl": "https://ids.oone.bz",
+"clientId": "onboarding",
+"clientSecret": "0LTm4RzMaEGTjjOmrVVSWy1z3S6AOo5D",
+"issuer": "https://ids.oone.bz/realms/EP-Staging-ids",
+"realm": "EP-Staging-ids",
+"scope": "openid profile email",
+"grantType": "authorization_code"
+}

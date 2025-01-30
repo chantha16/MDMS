@@ -1,0 +1,296 @@
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
+import 'dart:ui';
+import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
+import 'exportoption_model.dart';
+export 'exportoption_model.dart';
+
+class ExportoptionWidget extends StatefulWidget {
+  const ExportoptionWidget({
+    super.key,
+    String? title,
+    this.text1,
+    this.text2,
+    this.text3,
+    this.action1,
+    this.action2,
+    this.action3,
+  }) : this.title = title ?? 'title';
+
+  final String title;
+  final String? text1;
+  final String? text2;
+  final String? text3;
+  final Future Function()? action1;
+  final Future Function()? action2;
+  final Future Function()? action3;
+
+  @override
+  State<ExportoptionWidget> createState() => _ExportoptionWidgetState();
+}
+
+class _ExportoptionWidgetState extends State<ExportoptionWidget> {
+  late ExportoptionModel _model;
+
+  @override
+  void setState(VoidCallback callback) {
+    super.setState(callback);
+    _model.onUpdate();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _model = createModel(context, () => ExportoptionModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
+  }
+
+  @override
+  void dispose() {
+    _model.maybeDispose();
+
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsetsDirectional.fromSTEB(24.0, 15.0, 24.0, 24.0),
+      child: Container(
+        width: 200.0,
+        height: 210.0,
+        decoration: BoxDecoration(
+          color: FlutterFlowTheme.of(context).secondaryBackground,
+          boxShadow: [
+            BoxShadow(
+              blurRadius: 4.0,
+              color: Color(0x33000000),
+              offset: Offset(
+                0.0,
+                2.0,
+              ),
+            )
+          ],
+          borderRadius: BorderRadius.circular(12.0),
+        ),
+        child: Padding(
+          padding: EdgeInsetsDirectional.fromSTEB(10.0, 16.0, 10.0, 10.0),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      FFLocalizations.of(context).getText(
+                        'vi4dl7go' /* Export */,
+                      ),
+                      style:
+                          FlutterFlowTheme.of(context).headlineSmall.override(
+                                fontFamily: 'Inter Tight',
+                                color: FlutterFlowTheme.of(context).primaryText,
+                                fontSize: 16.0,
+                                letterSpacing: 0.0,
+                                fontWeight: FontWeight.w500,
+                              ),
+                    ),
+                  ],
+                ),
+              ),
+              Column(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Divider(
+                    thickness: 2.0,
+                    color: FlutterFlowTheme.of(context).alternate,
+                  ),
+                ],
+              ),
+              MouseRegion(
+                opaque: false,
+                cursor: MouseCursor.defer ?? MouseCursor.defer,
+                child: InkWell(
+                  splashColor: Colors.transparent,
+                  focusColor: Colors.transparent,
+                  hoverColor: Colors.transparent,
+                  highlightColor: Colors.transparent,
+                  onTap: () async {
+                    await widget.action1?.call();
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: _model.mouseRegionHovered1!
+                          ? FlutterFlowTheme.of(context).primaryBackground
+                          : Color(0x00000000),
+                      borderRadius: BorderRadius.circular(16.0),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.all(7.0),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              FaIcon(
+                                FontAwesomeIcons.fileCsv,
+                                color: FlutterFlowTheme.of(context).primary,
+                                size: 24.0,
+                              ),
+                              Text(
+                                FFLocalizations.of(context).getText(
+                                  'zkd9x3xh' /* CSV File */,
+                                ),
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyLarge
+                                    .override(
+                                      fontFamily: 'Inter',
+                                      fontSize: 14.0,
+                                      letterSpacing: 0.0,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                              ),
+                            ].divide(SizedBox(width: 8.0)),
+                          ),
+                        ].divide(SizedBox(height: 12.0)),
+                      ),
+                    ),
+                  ),
+                ),
+                onEnter: ((event) async {
+                  safeSetState(() => _model.mouseRegionHovered1 = true);
+                }),
+                onExit: ((event) async {
+                  safeSetState(() => _model.mouseRegionHovered1 = false);
+                }),
+              ),
+              MouseRegion(
+                opaque: false,
+                cursor: MouseCursor.defer ?? MouseCursor.defer,
+                child: InkWell(
+                  splashColor: Colors.transparent,
+                  focusColor: Colors.transparent,
+                  hoverColor: Colors.transparent,
+                  highlightColor: Colors.transparent,
+                  onTap: () async {
+                    await widget.action2?.call();
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: _model.mouseRegionHovered2!
+                          ? FlutterFlowTheme.of(context).primaryBackground
+                          : Color(0x00000000),
+                      borderRadius: BorderRadius.circular(16.0),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.all(7.0),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              FaIcon(
+                                FontAwesomeIcons.filePdf,
+                                color: FlutterFlowTheme.of(context).error,
+                                size: 24.0,
+                              ),
+                              Text(
+                                FFLocalizations.of(context).getText(
+                                  'ww4zf0mr' /* PDF File */,
+                                ),
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyLarge
+                                    .override(
+                                      fontFamily: 'Inter',
+                                      fontSize: 14.0,
+                                      letterSpacing: 0.0,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                              ),
+                            ].divide(SizedBox(width: 8.0)),
+                          ),
+                        ].divide(SizedBox(height: 12.0)),
+                      ),
+                    ),
+                  ),
+                ),
+                onEnter: ((event) async {
+                  safeSetState(() => _model.mouseRegionHovered2 = true);
+                }),
+                onExit: ((event) async {
+                  safeSetState(() => _model.mouseRegionHovered2 = false);
+                }),
+              ),
+              MouseRegion(
+                opaque: false,
+                cursor: MouseCursor.defer ?? MouseCursor.defer,
+                child: InkWell(
+                  splashColor: Colors.transparent,
+                  focusColor: Colors.transparent,
+                  hoverColor: Colors.transparent,
+                  highlightColor: Colors.transparent,
+                  onTap: () async {
+                    await widget.action3?.call();
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: _model.mouseRegionHovered3!
+                          ? FlutterFlowTheme.of(context).primaryBackground
+                          : Color(0x00000000),
+                      borderRadius: BorderRadius.circular(16.0),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.all(7.0),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              FaIcon(
+                                FontAwesomeIcons.fileExcel,
+                                color: Color(0xFF055C52),
+                                size: 24.0,
+                              ),
+                              Text(
+                                FFLocalizations.of(context).getText(
+                                  'v1tfqflg' /* Excel File */,
+                                ),
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyLarge
+                                    .override(
+                                      fontFamily: 'Inter',
+                                      fontSize: 14.0,
+                                      letterSpacing: 0.0,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                              ),
+                            ].divide(SizedBox(width: 8.0)),
+                          ),
+                        ].divide(SizedBox(height: 12.0)),
+                      ),
+                    ),
+                  ),
+                ),
+                onEnter: ((event) async {
+                  safeSetState(() => _model.mouseRegionHovered3 = true);
+                }),
+                onExit: ((event) async {
+                  safeSetState(() => _model.mouseRegionHovered3 = false);
+                }),
+              ),
+            ].divide(SizedBox(height: 5.0)),
+          ),
+        ),
+      ),
+    );
+  }
+}
