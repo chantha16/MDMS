@@ -136,6 +136,15 @@ dependency_overrides:
   uuid: ^4.0.0
   win32: 5.5.1
 
+dev_dependencies:
+  flutter_launcher_icons: ^0.14.3
+  flutter_lints: ^5.0.0
+  image: ^4.5.2
+  integration_test: 
+    sdk: flutter
+  lints: ^5.1.1
+  flutter_test:
+    sdk: flutter
 
 
 flutter_launcher_icons:
@@ -197,4 +206,3 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
-
