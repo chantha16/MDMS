@@ -124,6 +124,34 @@ void main() async {
       await tester.tap(find.text('Add'));
     });
   });
+
+  group('Somrith', () {
+    testWidgets('Configuration', (WidgetTester tester) async {
+      _overrideOnError();
+
+      await tester.pumpWidget(ChangeNotifierProvider(
+        create: (context) => FFAppState(),
+        child: MyApp(
+          entryPage: DevicesPageWidget(),
+        ),
+      ));
+
+      await tester.tap(find.byKey(ValueKey('MainLayoutV2_n2l0')));
+    });
+  });
+
+  testWidgets('Mengkrim', (WidgetTester tester) async {
+    _overrideOnError();
+
+    await tester.pumpWidget(ChangeNotifierProvider(
+      create: (context) => FFAppState(),
+      child: MyApp(
+        entryPage: AddDevicePageWidget(),
+      ),
+    ));
+
+    await tester.enterText(find.text('Phase'), 'Iphone12 pro');
+  });
 }
 
 // There are certain types of errors that can happen during tests but
