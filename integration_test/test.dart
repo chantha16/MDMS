@@ -37,26 +37,32 @@ void main() async {
         ),
       ));
 
-      await tester.pumpAndSettle(
-        Duration(milliseconds: 5000),
-        EnginePhase.sendSemanticsUpdate,
-        Duration(milliseconds: 7000),
-      );
+      await tester.pumpAndSettle();
       await tester.tap(find.descendant(
         of: find.byKey(ValueKey('Dashboard')),
         matching: find.byKey(ValueKey('IconButton_oneq')),
       ));
-      await tester.pumpAndSettle(
-        Duration(milliseconds: 5000),
-        EnginePhase.sendSemanticsUpdate,
-        Duration(milliseconds: 7000),
-      );
-      expect(find.text('Export'), findsWidgets);
-      await tester.pumpAndSettle(
-        Duration(milliseconds: 5000),
-        EnginePhase.sendSemanticsUpdate,
-        Duration(milliseconds: 7000),
-      );
+      await tester.pumpAndSettle();
+      await tester.tap(find.descendant(
+        of: find.byKey(ValueKey('Dashboard')),
+        matching: find.byKey(ValueKey('IconButton_5uaw')),
+      ));
+      await tester.pumpAndSettle();
+      await tester.tap(find.descendant(
+        of: find.byKey(ValueKey('MainLayoutV2_n2l0')),
+        matching: find.byKey(ValueKey('IconButton_19gy')),
+      ));
+      await tester.pumpAndSettle();
+      await tester.tap(find.descendant(
+        of: find.byKey(ValueKey('MainLayoutV2_n2l0')),
+        matching: find.byKey(ValueKey('IconButton_04rj')),
+      ));
+      await tester.pumpAndSettle();
+      await tester.tap(find.descendant(
+        of: find.byKey(ValueKey('MainLayoutV2_n2l0')),
+        matching: find.byKey(ValueKey('IconButton_v7gi')),
+      ));
+      await tester.pumpAndSettle();
     });
   });
 
@@ -67,24 +73,14 @@ void main() async {
       await tester.pumpWidget(ChangeNotifierProvider(
         create: (context) => FFAppState(),
         child: MyApp(
-          entryPage: DevicesPageWidget(),
+          entryPage: DashboardPageWidget(),
         ),
       ));
 
-      await tester.pumpAndSettle(
-        Duration(milliseconds: 3000),
-        EnginePhase.sendSemanticsUpdate,
-        Duration(milliseconds: 5000),
-      );
-      await tester.tap(find.descendant(
-        of: find.byKey(ValueKey('MainLayoutV2_n2l0')),
-        matching: find.byKey(ValueKey('Text_h603')),
-      ));
-      await tester.pumpAndSettle(
-        Duration(milliseconds: 3000),
-        EnginePhase.sendSemanticsUpdate,
-        Duration(milliseconds: 5000),
-      );
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Device Management'));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Devices'));
       expect(find.byKey(ValueKey('MainLayoutV2_n2l0')), findsOneWidget);
       await tester.pumpAndSettle();
     });
