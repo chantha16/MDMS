@@ -40,9 +40,10 @@ void main() async {
       await tester.pumpAndSettle();
       await tester.tap(find.descendant(
         of: find.byKey(ValueKey('MainLayoutV1_yv6v')),
-        matching: find.byKey(ValueKey('Expandable_zo7v')),
+        matching: find.byKey(ValueKey('Container_lz89')),
       ));
-      expect(find.text('Time Bands'), findsOneWidget);
+      await tester.pumpAndSettle();
+      expect(find.text('Code'), findsOneWidget);
     });
   });
 
@@ -131,17 +132,20 @@ void main() async {
   });
 
   group('Somrith', () {
-    testWidgets('Configuration', (WidgetTester tester) async {
+    testWidgets('Add Site', (WidgetTester tester) async {
       _overrideOnError();
 
       await tester.pumpWidget(ChangeNotifierProvider(
         create: (context) => FFAppState(),
         child: MyApp(
-          entryPage: DevicesPageWidget(),
+          entryPage: DashboardPageWidget(
+            code: '',
+          ),
         ),
       ));
 
-      await tester.tap(find.byKey(ValueKey('MainLayoutV2_n2l0')));
+      await tester.tap(find.byKey(ValueKey('Dashboard')));
+      await tester.tap(find.byKey(ValueKey('MainLayoutV2_dkre')));
     });
   });
 
