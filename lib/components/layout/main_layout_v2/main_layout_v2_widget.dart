@@ -2213,6 +2213,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               FlutterFlowIconButton(
+                                key: const ValueKey('IconButton_oneq'),
                                 borderRadius: 20.0,
                                 buttonSize: 40.0,
                                 icon: Icon(
@@ -2256,6 +2257,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                 },
                               ),
                               Text(
+                                key: const ValueKey('Text_h603'),
                                 FFLocalizations.of(context).getText(
                                   'dy4zkf6s' /* Device Management */,
                                 ),

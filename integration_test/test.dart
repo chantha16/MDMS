@@ -27,18 +27,36 @@ void main() async {
   });
 
   group('Chantha', () {
-    testWidgets('TOUPage', (WidgetTester tester) async {
+    testWidgets('DashboardPage', (WidgetTester tester) async {
       _overrideOnError();
 
       await tester.pumpWidget(ChangeNotifierProvider(
         create: (context) => FFAppState(),
         child: MyApp(
-          entryPage: TouPageWidget(),
+          entryPage: DashboardPageWidget(),
         ),
       ));
 
-      await tester.pumpAndSettle();
-      expect(find.text('Code'), findsOneWidget);
+      await tester.pumpAndSettle(
+        Duration(milliseconds: 5000),
+        EnginePhase.sendSemanticsUpdate,
+        Duration(milliseconds: 7000),
+      );
+      await tester.tap(find.descendant(
+        of: find.byKey(ValueKey('Dashboard')),
+        matching: find.byKey(ValueKey('IconButton_oneq')),
+      ));
+      await tester.pumpAndSettle(
+        Duration(milliseconds: 5000),
+        EnginePhase.sendSemanticsUpdate,
+        Duration(milliseconds: 7000),
+      );
+      expect(find.text('Export'), findsWidgets);
+      await tester.pumpAndSettle(
+        Duration(milliseconds: 5000),
+        EnginePhase.sendSemanticsUpdate,
+        Duration(milliseconds: 7000),
+      );
     });
   });
 
@@ -53,27 +71,22 @@ void main() async {
         ),
       ));
 
-      await tester.tap(find.byKey(ValueKey('Empty')));
       await tester.pumpAndSettle(
         Duration(milliseconds: 3000),
         EnginePhase.sendSemanticsUpdate,
         Duration(milliseconds: 5000),
       );
-      expect(find.byKey(ValueKey('Empty')), findsOneWidget);
-      await tester.tap(find.byKey(ValueKey('Null')));
+      await tester.tap(find.descendant(
+        of: find.byKey(ValueKey('MainLayoutV2_n2l0')),
+        matching: find.byKey(ValueKey('Text_h603')),
+      ));
       await tester.pumpAndSettle(
         Duration(milliseconds: 3000),
         EnginePhase.sendSemanticsUpdate,
         Duration(milliseconds: 5000),
       );
-      expect(find.byKey(ValueKey('Null')), findsOneWidget);
-      await tester.tap(find.byKey(ValueKey('3')));
-      await tester.pumpAndSettle(
-        Duration(milliseconds: 3000),
-        EnginePhase.sendSemanticsUpdate,
-        Duration(milliseconds: 5000),
-      );
-      expect(find.byKey(ValueKey('3')), findsOneWidget);
+      expect(find.byKey(ValueKey('MainLayoutV2_n2l0')), findsOneWidget);
+      await tester.pumpAndSettle();
     });
   });
 
