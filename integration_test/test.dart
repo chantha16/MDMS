@@ -132,7 +132,7 @@ void main() async {
   });
 
   group('Somrith', () {
-    testWidgets('Add Site', (WidgetTester tester) async {
+    testWidgets('Dashboard', (WidgetTester tester) async {
       _overrideOnError();
 
       await tester.pumpWidget(ChangeNotifierProvider(
@@ -144,8 +144,13 @@ void main() async {
         ),
       ));
 
+      await tester.pumpAndSettle(
+        Duration(milliseconds: 5),
+        EnginePhase.sendSemanticsUpdate,
+        Duration(milliseconds: 10),
+      );
       await tester.tap(find.byKey(ValueKey('Dashboard')));
-      await tester.tap(find.byKey(ValueKey('MainLayoutV2_dkre')));
+      await tester.tap(find.byKey(ValueKey('DevicesPage_evbv')));
     });
   });
 
