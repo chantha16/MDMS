@@ -463,6 +463,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                         );
                                       },
                                       child: Container(
+                                        key: const ValueKey('Container_lz89'),
                                         decoration: const BoxDecoration(),
                                         child: Padding(
                                           padding: const EdgeInsets.all(8.0),
@@ -578,6 +579,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                             width: double.infinity,
                             color: const Color(0x00000000),
                             child: ExpandableNotifier(
+                              key: const ValueKey('Expandable_zo7v'),
                               controller:
                                   _model.expandableExpandableController1,
                               child: ExpandablePanel(
@@ -603,6 +605,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                                 const EdgeInsetsDirectional.fromSTEB(
                                                     8.0, 0.0, 0.0, 0.0),
                                             child: Text(
+                                              key: const ValueKey('Text_k59j'),
                                               FFLocalizations.of(context)
                                                   .getText(
                                                 'xgi1apex' /* TOU Setting */,

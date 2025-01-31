@@ -417,7 +417,6 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                   size: 24.0,
                                                 ),
                                                 Text(
-                                                  key: const ValueKey('Text_i0l8'),
                                                   FFLocalizations.of(context)
                                                       .getText(
                                                     'vlpxep5q' /* Dashboard */,

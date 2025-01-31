@@ -55,7 +55,7 @@ class _DashboardPageWidgetState extends State<DashboardPageWidget> {
             model: _model.mainLayoutV2Model,
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutV2Widget(
-              key: const ValueKey('MainLayoutV2_3bpk'),
+              key: const ValueKey('Dashboard'),
               menu: MenuItems.Dashboard,
               child: () => const DashboardViewWidget(),
             ),

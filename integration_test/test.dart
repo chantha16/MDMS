@@ -27,23 +27,33 @@ void main() async {
   });
 
   group('Chantha', () {
-    testWidgets('DashboardPage', (WidgetTester tester) async {
+    testWidgets('DeviceSettingPage', (WidgetTester tester) async {
       _overrideOnError();
 
       await tester.pumpWidget(ChangeNotifierProvider(
         create: (context) => FFAppState(),
         child: MyApp(
-          entryPage: DashboardPageWidget(),
+          entryPage: DeviceSettingPageWidget(),
         ),
       ));
 
       await tester.pumpAndSettle();
+      await tester.tap(find.descendant(
+        of: find.byKey(ValueKey('MainLayoutV1_mxfy')),
+        matching: find.byKey(ValueKey('Container_lz89')),
+      ));
+      await tester.pumpAndSettle();
+      await tester.tap(find.descendant(
+        of: find.byKey(ValueKey('MainLayoutV1_mxfy')),
+        matching: find.byKey(ValueKey('Expandable_zo7v')),
+      ));
+      await tester.pumpAndSettle();
       expect(
         find.descendant(
-          of: find.byKey(ValueKey('MainLayoutV2_3bpk')),
-          matching: find.byKey(ValueKey('Text_i0l8')),
+          of: find.byKey(ValueKey('MainLayoutV1_mxfy')),
+          matching: find.byKey(ValueKey('Text_k59j')),
         ),
-        findsOneWidget,
+        findsNothing,
       );
     });
   });
@@ -111,17 +121,24 @@ void main() async {
   });
 
   group('Thean', () {
-    testWidgets('SpecialDay', (WidgetTester tester) async {
+    testWidgets('Dashboard', (WidgetTester tester) async {
       _overrideOnError();
 
       await tester.pumpWidget(ChangeNotifierProvider(
         create: (context) => FFAppState(),
         child: MyApp(
-          entryPage: PSpecialDayAddWidget(),
+          entryPage: DashboardPageWidget(),
         ),
       ));
 
-      await tester.tap(find.text('Add'));
+      await tester.pumpAndSettle(Duration(milliseconds: 0));
+      await tester.tap(find.byKey(ValueKey('Dashboard')));
+      await tester.pumpAndSettle();
+      expect(find.text('3'), findsOneWidget);
+      await tester.pumpAndSettle();
+      expect(find.text('2'), findsOneWidget);
+      await tester.pumpAndSettle();
+      expect(find.text('1'), findsOneWidget);
     });
   });
 
@@ -140,17 +157,21 @@ void main() async {
     });
   });
 
-  testWidgets('Mengkrim', (WidgetTester tester) async {
-    _overrideOnError();
+  group('Mengkrim', () {
+    testWidgets('DevicePage', (WidgetTester tester) async {
+      _overrideOnError();
 
-    await tester.pumpWidget(ChangeNotifierProvider(
-      create: (context) => FFAppState(),
-      child: MyApp(
-        entryPage: AddDevicePageWidget(),
-      ),
-    ));
+      await tester.pumpWidget(ChangeNotifierProvider(
+        create: (context) => FFAppState(),
+        child: MyApp(
+          entryPage: DevicesPageWidget(),
+        ),
+      ));
 
-    await tester.enterText(find.text('Phase'), 'Iphone12 pro');
+      await tester.tap(find.text('Device'));
+      await tester.pumpAndSettle(Duration(milliseconds: 1));
+      await tester.tap(find.text('[UNSET]'));
+    });
   });
 }
 

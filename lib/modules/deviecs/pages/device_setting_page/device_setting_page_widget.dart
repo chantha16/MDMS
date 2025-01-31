@@ -50,6 +50,7 @@ class _DeviceSettingPageWidgetState extends State<DeviceSettingPageWidget> {
             model: _model.mainLayoutV1Model,
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutV1Widget(
+              key: const ValueKey('MainLayoutV1_mxfy'),
               body: () => const CDeviceSettingWidget(),
             ),
           ),

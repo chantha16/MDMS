@@ -1,5 +1,5 @@
 // Export pages
-export '/modules/deviecs/pages/devices_page/devices_page_widget.dart'
+export '/modules/deviecs/devices_page/devices_page_widget.dart'
     show DevicesPageWidget;
 export '/modules/resources/pages/resources_page/resources_page_widget.dart'
     show ResourcesPageWidget;
@@ -26,7 +26,7 @@ export '/modules/events/pages/event_detail_page/event_detail_page_widget.dart'
     show EventDetailPageWidget;
 export '/modules/resources/pages/video_play_page/video_play_page_widget.dart'
     show VideoPlayPageWidget;
-export '/modules/deviecs/pages/device_details_page/device_details_page_widget.dart'
+export '/modules/deviecs/device_details_page/device_details_page_widget.dart'
     show DeviceDetailsPageWidget;
 export '/components/sandbox1/sandbox1_widget.dart' show Sandbox1Widget;
 export '/components/sandbox3/sandbox3_widget.dart' show Sandbox3Widget;

@@ -1,5 +1,5 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import '/modules/deviecs/components/device_view/device_view_widget.dart';
+import '/modules/deviecs/device_view/device_view_widget.dart';
 import 'search_device_widget.dart' show SearchDeviceWidget;
 import 'package:flutter/material.dart';
 
