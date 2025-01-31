@@ -27,24 +27,22 @@ void main() async {
   });
 
   group('Chantha', () {
-    testWidgets('DashboardPage', (WidgetTester tester) async {
+    testWidgets('TOUPage', (WidgetTester tester) async {
       _overrideOnError();
 
       await tester.pumpWidget(ChangeNotifierProvider(
         create: (context) => FFAppState(),
         child: MyApp(
-          entryPage: DashboardPageWidget(),
+          entryPage: TouPageWidget(),
         ),
       ));
 
       await tester.pumpAndSettle();
-      expect(
-        find.descendant(
-          of: find.byKey(ValueKey('MainLayoutV2_3bpk')),
-          matching: find.byKey(ValueKey('Text_i0l8')),
-        ),
-        findsOneWidget,
-      );
+      await tester.tap(find.descendant(
+        of: find.byKey(ValueKey('MainLayoutV1_yv6v')),
+        matching: find.byKey(ValueKey('Expandable_zo7v')),
+      ));
+      expect(find.text('Time Bands'), findsOneWidget);
     });
   });
 
@@ -111,17 +109,63 @@ void main() async {
   });
 
   group('Thean', () {
-    testWidgets('SpecialDay', (WidgetTester tester) async {
+    testWidgets('Dashboard', (WidgetTester tester) async {
       _overrideOnError();
 
       await tester.pumpWidget(ChangeNotifierProvider(
         create: (context) => FFAppState(),
         child: MyApp(
-          entryPage: PSpecialDayAddWidget(),
+          entryPage: DashboardPageWidget(),
         ),
       ));
 
-      await tester.tap(find.text('Add'));
+      await tester.pumpAndSettle(Duration(milliseconds: 0));
+      await tester.tap(find.byKey(ValueKey('Dashboard')));
+      await tester.pumpAndSettle();
+      expect(find.byKey(ValueKey('Total Device')), findsNWidgets(3));
+      await tester.pumpAndSettle();
+      expect(find.byKey(ValueKey('Active Device')), findsNWidgets(2));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(ValueKey('Recent Devices')));
+    });
+  });
+
+  group('Somrith', () {
+    testWidgets('Configuration', (WidgetTester tester) async {
+      _overrideOnError();
+
+      await tester.pumpWidget(ChangeNotifierProvider(
+        create: (context) => FFAppState(),
+        child: MyApp(
+          entryPage: DevicesPageWidget(),
+        ),
+      ));
+
+      await tester.tap(find.byKey(ValueKey('MainLayoutV2_n2l0')));
+    });
+  });
+
+  group('Mengkrim', () {
+    testWidgets('DevicePage', (WidgetTester tester) async {
+      _overrideOnError();
+
+      await tester.pumpWidget(ChangeNotifierProvider(
+        create: (context) => FFAppState(),
+        child: MyApp(
+          entryPage: AddDevicePageWidget(),
+        ),
+      ));
+
+      await tester.tap(find.text('Device Type'));
+      await tester.pumpAndSettle(
+        Duration(milliseconds: 1000),
+        EnginePhase.sendSemanticsUpdate,
+        Duration(milliseconds: 1000),
+      );
+      await tester.enterText(find.text('Phase'), 'IPhone 12 Pro');
+      await tester.tap(find.text('Communication Type'));
+      await tester.pump(kDoubleTapMinTime);
+      await tester.tap(find.text('Communication Type'));
     });
   });
 }

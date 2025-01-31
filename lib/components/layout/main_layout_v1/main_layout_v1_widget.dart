@@ -578,6 +578,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                             width: double.infinity,
                             color: const Color(0x00000000),
                             child: ExpandableNotifier(
+                              key: const ValueKey('Expandable_zo7v'),
                               controller:
                                   _model.expandableExpandableController1,
                               child: ExpandablePanel(

@@ -1,3 +1,4 @@
+import '/backend/schema/enums/enums.dart';
 import '/components/layout/main_layout_v1/main_layout_v1_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -49,6 +50,7 @@ class _AddDevicePageWidgetState extends State<AddDevicePageWidget> {
             model: _model.mainLayoutV1Model,
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutV1Widget(
+              activeMenu: MenuItems.Devices,
               body: () => const CAddDeviceWidget(),
             ),
           ),

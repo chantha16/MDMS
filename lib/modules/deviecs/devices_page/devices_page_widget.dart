@@ -2,7 +2,7 @@ import '/backend/schema/enums/enums.dart';
 import '/components/layout/main_layout_v2/main_layout_v2_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/modules/deviecs/components/device_view/device_view_widget.dart';
+import '/modules/deviecs/device_view/device_view_widget.dart';
 import 'package:flutter/material.dart';
 import 'devices_page_model.dart';
 export 'devices_page_model.dart';
