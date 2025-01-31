@@ -38,11 +38,6 @@ void main() async {
       ));
 
       await tester.pumpAndSettle();
-      await tester.tap(find.descendant(
-        of: find.byKey(ValueKey('MainLayoutV1_yv6v')),
-        matching: find.byKey(ValueKey('Container_lz89')),
-      ));
-      await tester.pumpAndSettle();
       expect(find.text('Code'), findsOneWidget);
     });
   });
@@ -175,10 +170,12 @@ void main() async {
       await tester.tap(find.text('Communication Type'));
       await tester.pump(kDoubleTapMinTime);
       await tester.tap(find.text('Communication Type'));
+      await tester.tap(find.text('Basic Current'));
+      await tester.pump(kDoubleTapMinTime);
+      await tester.tap(find.text('Basic Current'));
+      await tester.enterText(find.text('Device Name'), 'Samsung S23 Ultra');
     });
   });
-
-
 }
 
 // There are certain types of errors that can happen during tests but

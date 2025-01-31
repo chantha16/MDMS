@@ -463,7 +463,6 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
                                         );
                                       },
                                       child: Container(
-                                        key: const ValueKey('Container_lz89'),
                                         decoration: const BoxDecoration(),
                                         child: Padding(
                                           padding: const EdgeInsets.all(8.0),
