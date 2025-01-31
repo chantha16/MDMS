@@ -287,6 +287,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                         ),
                                               ),
                                               AutoSizeText(
+                                                key: const ValueKey('Total Device'),
                                                 FFLocalizations.of(context)
                                                     .getText(
                                                   'zacb8sje' /* 3 */,
@@ -401,6 +402,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                       ),
                                             ),
                                             AutoSizeText(
+                                              key: const ValueKey('Active Device'),
                                               FFLocalizations.of(context)
                                                   .getText(
                                                 'se6x56ge' /* 2 */,
@@ -512,6 +514,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                       ),
                                             ),
                                             AutoSizeText(
+                                              key: const ValueKey('Alert'),
                                               FFLocalizations.of(context)
                                                   .getText(
                                                 'z3qjgi3x' /* 1 */,
@@ -2174,6 +2177,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                               ),
                             ),
                             child: FlutterFlowDropDown<String>(
+                              key: const ValueKey('Recent Devices'),
                               controller: _model.dropDownValueController3 ??=
                                   FormFieldController<String>(null),
                               options: List<String>.from(
