@@ -62,6 +62,7 @@ class _MainLayoutV1WidgetState extends State<MainLayoutV1Widget> {
       mainAxisSize: MainAxisSize.max,
       children: [
         Container(
+          key: const ValueKey('HeaderWidget_7ehr'),
           height: 80.0,
           decoration: BoxDecoration(
             color: FlutterFlowTheme.of(context).primaryBackground,
