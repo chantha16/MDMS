@@ -51,7 +51,6 @@ class _ProductSettingPageWidgetState extends State<ProductSettingPageWidget> {
             model: _model.mainLayoutV2Model,
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutV2Widget(
-              key: const ValueKey('MainLayoutV2_dkre'),
               menu: MenuItems.ProductSettings,
               child: () => const ProductSettingViewWidget(),
             ),
