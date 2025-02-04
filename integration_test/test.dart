@@ -49,6 +49,23 @@ void main() async {
       await tester.tap(find.text('Settings'));
       await tester.pumpAndSettle(Duration(milliseconds: 10000));
     });
+
+    testWidgets('Even', (WidgetTester tester) async {
+      _overrideOnError();
+
+      await tester.pumpWidget(ChangeNotifierProvider(
+        create: (context) => FFAppState(),
+        child: MyApp(
+          entryPage: DashboardPageWidget(),
+        ),
+      ));
+
+      await tester.pumpAndSettle(Duration(milliseconds: 3000));
+      await tester.tap(find.text('Events'));
+      await tester.pumpAndSettle(Duration(milliseconds: 3000));
+      await tester.tap(find.text('Export'));
+      await tester.pumpAndSettle(Duration(milliseconds: 3000));
+    });
   });
 
   group('Nary', () {
