@@ -50,6 +50,7 @@ class _EventPageWidgetState extends State<EventPageWidget> {
             model: _model.mainLayoutV2Model,
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutV2Widget(
+              key: const ValueKey('MainLayoutV2_fr60'),
               menu: MenuItems.Events,
               child: () => const EventViewWidget(),
             ),

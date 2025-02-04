@@ -63,7 +63,11 @@ void main() async {
       await tester.pumpAndSettle(Duration(milliseconds: 3000));
       await tester.tap(find.text('Events'));
       await tester.pumpAndSettle(Duration(milliseconds: 3000));
+      await tester.enterText(find.text('Search'), 'DEV');
+      await tester.pumpAndSettle(Duration(milliseconds: 3000));
       await tester.tap(find.text('Export'));
+      await tester.pumpAndSettle(Duration(milliseconds: 3000));
+      await tester.tap(find.byKey(ValueKey('MainLayoutV2_fr60')));
       await tester.pumpAndSettle(Duration(milliseconds: 3000));
     });
   });
@@ -117,13 +121,29 @@ void main() async {
       await tester.tap(find.text('Add'));
       expect(find.byKey(ValueKey('MainLayoutV2_n2l0')), findsOneWidget);
       await tester.tap(find.text('Mapping data'));
-      await tester.pumpAndSettle();
+      await tester.pumpAndSettle(
+        Duration(milliseconds: 3000),
+        EnginePhase.sendSemanticsUpdate,
+        Duration(milliseconds: 5000),
+      );
       await tester.tap(find.text('Map from Billing'));
-      await tester.pumpAndSettle();
+      await tester.pumpAndSettle(
+        Duration(milliseconds: 3000),
+        EnginePhase.sendSemanticsUpdate,
+        Duration(milliseconds: 5000),
+      );
       await tester.tap(find.text('Mapping from headend'));
-      await tester.pumpAndSettle();
+      await tester.pumpAndSettle(
+        Duration(milliseconds: 3000),
+        EnginePhase.sendSemanticsUpdate,
+        Duration(milliseconds: 5000),
+      );
       await tester.tap(find.text('Network Configuration'));
-      await tester.pumpAndSettle();
+      await tester.pumpAndSettle(
+        Duration(milliseconds: 3000),
+        EnginePhase.sendSemanticsUpdate,
+        Duration(milliseconds: 5000),
+      );
       expect(
         find.descendant(
           of: find.byKey(ValueKey('MainLayoutV1_ld8o')),
