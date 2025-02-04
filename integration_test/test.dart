@@ -37,41 +37,17 @@ void main() async {
         ),
       ));
 
-      await tester.pumpAndSettle(
-        Duration(milliseconds: 10000),
-        EnginePhase.sendSemanticsUpdate,
-        Duration(milliseconds: 15000),
-      );
+      await tester.pumpAndSettle(Duration(milliseconds: 10000));
       await tester.tap(find.text('Dashboard'));
-      await tester.pumpAndSettle(
-        Duration(milliseconds: 10000),
-        EnginePhase.sendSemanticsUpdate,
-        Duration(milliseconds: 15000),
-      );
+      await tester.pumpAndSettle(Duration(milliseconds: 10000));
       await tester.tap(find.text('Device Management'));
-      await tester.pumpAndSettle(
-        Duration(milliseconds: 10000),
-        EnginePhase.sendSemanticsUpdate,
-        Duration(milliseconds: 15000),
-      );
+      await tester.pumpAndSettle(Duration(milliseconds: 10000));
       await tester.tap(find.text('TOU Management'));
-      await tester.pumpAndSettle(
-        Duration(milliseconds: 10000),
-        EnginePhase.sendSemanticsUpdate,
-        Duration(milliseconds: 15000),
-      );
+      await tester.pumpAndSettle(Duration(milliseconds: 10000));
       await tester.tap(find.text('Events'));
-      await tester.pumpAndSettle(
-        Duration(milliseconds: 10000),
-        EnginePhase.sendSemanticsUpdate,
-        Duration(milliseconds: 15000),
-      );
+      await tester.pumpAndSettle(Duration(milliseconds: 10000));
       await tester.tap(find.text('Settings'));
-      await tester.pumpAndSettle(
-        Duration(milliseconds: 10000),
-        EnginePhase.sendSemanticsUpdate,
-        Duration(milliseconds: 15000),
-      );
+      await tester.pumpAndSettle(Duration(milliseconds: 10000));
     });
   });
 

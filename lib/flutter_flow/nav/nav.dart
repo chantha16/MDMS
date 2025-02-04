@@ -254,6 +254,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) =>
           name: 'ProductSettingPage',
           path: '/productSettingPage',
           builder: (context, params) => const ProductSettingPageWidget(),
+        ),
+        FFRoute(
+          name: 'fffff',
+          path: '/fffff',
+          builder: (context, params) => const FffffWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

@@ -44,3 +44,4 @@ export '/modules/specialday/pages/p_special_day_view/p_special_day_view_widget.d
     show PSpecialDayViewWidget;
 export '/modules/product_setting/pages/product_setting_page/product_setting_page_widget.dart'
     show ProductSettingPageWidget;
+export '/fffff/fffff_widget.dart' show FffffWidget;
