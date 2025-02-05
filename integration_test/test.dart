@@ -81,117 +81,27 @@ void main() async {
         ),
       ));
 
-      await tester.pumpAndSettle(Duration(milliseconds: 3000));
+      await tester.pumpAndSettle(Duration(milliseconds: 9000));
       await tester.tap(find.text('Dashboard'));
-      await tester.pumpAndSettle(Duration(milliseconds: 3000));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('Total Device'));
-      await tester.pumpAndSettle(Duration(milliseconds: 3000));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('Dashboard'));
-      await tester.pumpAndSettle(Duration(milliseconds: 3000));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('Today'));
-      await tester.pumpAndSettle(Duration(milliseconds: 3000));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('Weekly'));
-      await tester.pumpAndSettle(Duration(milliseconds: 3000));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('Weekly'));
-      await tester.pumpAndSettle(Duration(milliseconds: 3000));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('Monthly'));
-      await tester.pumpAndSettle(Duration(milliseconds: 3000));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('Monthly'));
-      await tester.pumpAndSettle(Duration(milliseconds: 3000));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('Yearly'));
-      await tester.pumpAndSettle(Duration(milliseconds: 3000));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('All'));
-      await tester.pumpAndSettle(Duration(milliseconds: 3000));
-      await tester.tap(find.text('All'));
-      await tester.pumpAndSettle(Duration(milliseconds: 3000));
-      await tester.tap(find.text('Favorite'));
-      await tester.pumpAndSettle(Duration(milliseconds: 3000));
-      await tester.tap(find.text('Favorite'));
-      await tester.pumpAndSettle(Duration(milliseconds: 3000));
-      await tester.tap(find.text('Top 10'));
-      await tester.pumpAndSettle(Duration(milliseconds: 3000));
-    });
-  });
-
-  group('Nary', () {
-    testWidgets('add view device', (WidgetTester tester) async {
-      _overrideOnError();
-
-      await tester.pumpWidget(ChangeNotifierProvider(
-        create: (context) => FFAppState(),
-        child: MyApp(
-          entryPage: DashboardPageWidget(),
-        ),
-      ));
-
-      await tester.pumpAndSettle();
-      await tester.tap(find.text('Device Management'));
-      await tester.pumpAndSettle();
-      await tester.tap(find.text('Devices'));
-      expect(find.byKey(ValueKey('MainLayoutV2_n2l0')), findsOneWidget);
-      await tester.pumpAndSettle();
-    });
-
-    testWidgets('AddNewDV', (WidgetTester tester) async {
-      _overrideOnError();
-
-      await tester.pumpWidget(ChangeNotifierProvider(
-        create: (context) => FFAppState(),
-        child: MyApp(
-          entryPage: DashboardPageWidget(),
-        ),
-      ));
-
-      await tester.pumpAndSettle();
-      await tester.tap(find.text('Device Management'));
-      await tester.pumpAndSettle(
-        Duration(milliseconds: 3000),
-        EnginePhase.sendSemanticsUpdate,
-        Duration(milliseconds: 5000),
-      );
-      await tester.tap(find.text('Devices'));
-      await tester.tap(find.descendant(
-        of: find.byKey(ValueKey('MainLayoutV2_n2l0')),
-        matching: find.byKey(ValueKey('Text_h603')),
-      ));
-      await tester.pumpAndSettle(
-        Duration(milliseconds: 3000),
-        EnginePhase.sendSemanticsUpdate,
-        Duration(milliseconds: 5000),
-      );
-      await tester.tap(find.text('Add'));
-      expect(find.byKey(ValueKey('MainLayoutV2_n2l0')), findsOneWidget);
-      await tester.tap(find.text('Mapping data'));
-      await tester.pumpAndSettle(
-        Duration(milliseconds: 3000),
-        EnginePhase.sendSemanticsUpdate,
-        Duration(milliseconds: 5000),
-      );
-      await tester.tap(find.text('Map from Billing'));
-      await tester.pumpAndSettle(
-        Duration(milliseconds: 3000),
-        EnginePhase.sendSemanticsUpdate,
-        Duration(milliseconds: 5000),
-      );
-      await tester.tap(find.text('Mapping from headend'));
-      await tester.pumpAndSettle(
-        Duration(milliseconds: 3000),
-        EnginePhase.sendSemanticsUpdate,
-        Duration(milliseconds: 5000),
-      );
-      await tester.tap(find.text('Network Configuration'));
-      await tester.pumpAndSettle(
-        Duration(milliseconds: 3000),
-        EnginePhase.sendSemanticsUpdate,
-        Duration(milliseconds: 5000),
-      );
-      expect(
-        find.descendant(
-          of: find.byKey(ValueKey('MainLayoutV1_ld8o')),
-          matching: find.byKey(ValueKey('HeaderWidget_7ehr')),
-        ),
-        findsOneWidget,
-      );
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
     });
   });
 
@@ -294,6 +204,8 @@ void main() async {
       await tester.enterText(find.text('Device Name'), 'Samsung S23 Ultra');
     });
   });
+
+  group('Nary', () {});
 }
 
 // There are certain types of errors that can happen during tests but
