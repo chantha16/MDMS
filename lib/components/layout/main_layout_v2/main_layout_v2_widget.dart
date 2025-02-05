@@ -2240,6 +2240,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                             ],
                           ),
                           Column(
+                            key: const ValueKey('Column_sz6b'),
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               FlutterFlowIconButton(
@@ -2367,6 +2368,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
               ),
               Expanded(
                 child: Container(
+                  key: const ValueKey('Child_gjup'),
                   width: 100.0,
                   height: double.infinity,
                   decoration: BoxDecoration(

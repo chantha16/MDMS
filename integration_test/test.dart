@@ -103,6 +103,37 @@ void main() async {
       await tester.tap(find.text('All'));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
     });
+
+    testWidgets('Device Management', (WidgetTester tester) async {
+      _overrideOnError();
+
+      await tester.pumpWidget(ChangeNotifierProvider(
+        create: (context) => FFAppState(),
+        child: MyApp(
+          entryPage: DashboardPageWidget(),
+        ),
+      ));
+
+      await tester.pumpAndSettle(Duration(milliseconds: 10000));
+      await tester.tap(find.text('Device Management'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('800046773'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('Customer Info'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('Load Profile'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('Action Log'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('TOU Info'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('800046774'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('800046775'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('800046776'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+    });
   });
 
   group('bunhai', () {
@@ -205,7 +236,71 @@ void main() async {
     });
   });
 
-  group('Nary', () {});
+  group('Nary', () {
+    testWidgets('Addviewdevice', (WidgetTester tester) async {
+      _overrideOnError();
+
+      await tester.pumpWidget(ChangeNotifierProvider(
+        create: (context) => FFAppState(),
+        child: MyApp(
+          entryPage: DashboardPageWidget(),
+        ),
+      ));
+
+      await tester.tap(find.byKey(ValueKey('DashboardPage_birf')));
+      await tester.pumpAndSettle(Duration(milliseconds: 300));
+      await tester.tap(find.descendant(
+        of: find.byKey(ValueKey('Dashboard')),
+        matching: find.byKey(ValueKey('Column_sz6b')),
+      ));
+      await tester.pumpAndSettle(Duration(milliseconds: 300));
+      await tester.tap(find.byKey(ValueKey('MainLayoutV2_n2l0')));
+      await tester.pumpAndSettle(Duration(milliseconds: 300));
+      expect(
+        find.descendant(
+          of: find.byKey(ValueKey('MainLayoutV2_n2l0')),
+          matching: find.byKey(ValueKey('Child_gjup')),
+        ),
+        findsOneWidget,
+      );
+    });
+
+    testWidgets('AddnewDV', (WidgetTester tester) async {
+      _overrideOnError();
+
+      await tester.pumpWidget(ChangeNotifierProvider(
+        create: (context) => FFAppState(),
+        child: MyApp(
+          entryPage: DevicesPageWidget(),
+        ),
+      ));
+
+      await tester.tap(find.text('Add'));
+      await tester.pump(kDoubleTapMinTime);
+      await tester.tap(find.text('Add'));
+      await tester.pumpAndSettle(Duration(milliseconds: 300));
+      await tester.tap(find.byKey(ValueKey('MainLayoutV1_ld8o')));
+      await tester.pumpAndSettle(Duration(milliseconds: 300));
+      expect(find.byKey(ValueKey('MainLayoutV1_ld8o')), findsOneWidget);
+    });
+
+    testWidgets('Add TOU info pacail', (WidgetTester tester) async {
+      _overrideOnError();
+
+      await tester.pumpWidget(ChangeNotifierProvider(
+        create: (context) => FFAppState(),
+        child: MyApp(
+          entryPage: DevicesPageWidget(),
+        ),
+      ));
+
+      await tester.tap(find.text('Created On'));
+      await tester.pump(kDoubleTapMinTime);
+      await tester.tap(find.text('Created On'));
+      await tester.pumpAndSettle(Duration(milliseconds: 300));
+      expect(find.byKey(ValueKey('MainLayoutV1_mcov')), findsOneWidget);
+    });
+  });
 }
 
 // There are certain types of errors that can happen during tests but

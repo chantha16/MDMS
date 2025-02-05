@@ -50,6 +50,7 @@ class _AddDevicePageWidgetState extends State<AddDevicePageWidget> {
             model: _model.mainLayoutV1Model,
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutV1Widget(
+              key: const ValueKey('MainLayoutV1_ld8o'),
               activeMenu: MenuItems.Devices,
               body: () => const CAddDeviceWidget(),
             ),
