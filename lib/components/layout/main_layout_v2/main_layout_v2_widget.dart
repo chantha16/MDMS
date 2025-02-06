@@ -2274,6 +2274,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               FlutterFlowIconButton(
+                                key: const ValueKey('IconButton_19gy'),
                                 borderRadius: 20.0,
                                 buttonSize: 40.0,
                                 icon: Icon(

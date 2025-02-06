@@ -3684,7 +3684,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '',
     },
     'mvvoro7a': {
-      'en': '',
+      'en': 'txtSeasonName',
       'km': '',
       'zh_Hant': '',
     },
