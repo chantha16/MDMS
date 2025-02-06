@@ -144,6 +144,11 @@ void main() async {
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('Add'));
       expect(find.text('Name'), findsOneWidget);
+      expect(find.text('Month Range'), findsOneWidget);
+      expect(find.text('Description'), findsOneWidget);
+      expect(find.text('Save'), findsOneWidget);
+      expect(find.text('Cancel'), findsOneWidget);
+      await tester.pumpAndSettle(Duration(milliseconds: 3000));
     });
   });
 
