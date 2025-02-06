@@ -143,7 +143,7 @@ void main() async {
       await tester.tap(find.text('Seasons'));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('Add'));
-      await tester.tap(find.byKey(ValueKey('txtSeasonName')));
+      expect(find.text('Name'), findsOneWidget);
     });
   });
 
