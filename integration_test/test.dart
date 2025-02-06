@@ -140,7 +140,7 @@ void main() async {
       await tester.pumpAndSettle(Duration(milliseconds: 10000));
       await tester.tap(find.text('TOU Management'));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
-      await tester.tap(find.text('Season'));
+      await tester.tap(find.text('Seasons'));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('Add'));
       await tester.tap(find.byKey(ValueKey('txtSeasonName')));

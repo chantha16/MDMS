@@ -87,11 +87,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
     _model.descriptionTextController ??= TextEditingController();
     _model.descriptionFocusNode ??= FocusNode();
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {
-          _model.nameTextController?.text = FFLocalizations.of(context).getText(
-            'mvvoro7a' /* txtSeasonName */,
-          );
-        }));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -230,6 +226,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                         ),
                                       ),
                                       TextFormField(
+                                        key: const ValueKey('txtSeasonName'),
                                         controller: _model.nameTextController,
                                         focusNode: _model.nameFocusNode,
                                         autofocus: false,

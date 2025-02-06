@@ -3683,11 +3683,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'km': '',
       'zh_Hant': '',
     },
-    'mvvoro7a': {
-      'en': 'txtSeasonName',
-      'km': '',
-      'zh_Hant': '',
-    },
     '807xbsbw': {
       'en': 'Month Range',
       'km': '',
