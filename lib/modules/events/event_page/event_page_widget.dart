@@ -2,7 +2,7 @@ import '/backend/schema/enums/enums.dart';
 import '/components/layout/main_layout_v2/main_layout_v2_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/modules/events/components/event_view/event_view_widget.dart';
+import '/modules/events/event_view/event_view_widget.dart';
 import 'package:flutter/material.dart';
 import 'event_page_model.dart';
 export 'event_page_model.dart';
@@ -50,7 +50,6 @@ class _EventPageWidgetState extends State<EventPageWidget> {
             model: _model.mainLayoutV2Model,
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutV2Widget(
-              key: const ValueKey('MainLayoutV2_fr60'),
               menu: MenuItems.Events,
               child: () => const EventViewWidget(),
             ),

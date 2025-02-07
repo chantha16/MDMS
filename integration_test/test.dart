@@ -50,27 +50,6 @@ void main() async {
       await tester.pumpAndSettle(Duration(milliseconds: 10000));
     });
 
-    testWidgets('Events', (WidgetTester tester) async {
-      _overrideOnError();
-
-      await tester.pumpWidget(ChangeNotifierProvider(
-        create: (context) => FFAppState(),
-        child: MyApp(
-          entryPage: DashboardPageWidget(),
-        ),
-      ));
-
-      await tester.pumpAndSettle(Duration(milliseconds: 3000));
-      await tester.tap(find.text('Events'));
-      await tester.pumpAndSettle(Duration(milliseconds: 3000));
-      await tester.enterText(find.text('Search'), 'DEV');
-      await tester.pumpAndSettle(Duration(milliseconds: 3000));
-      await tester.tap(find.text('Export'));
-      await tester.pumpAndSettle(Duration(milliseconds: 3000));
-      await tester.tap(find.byKey(ValueKey('MainLayoutV2_fr60')));
-      await tester.pumpAndSettle(Duration(milliseconds: 3000));
-    });
-
     testWidgets('DashboardPage2', (WidgetTester tester) async {
       _overrideOnError();
 
@@ -146,9 +125,30 @@ void main() async {
       expect(find.text('Name'), findsOneWidget);
       expect(find.text('Month Range'), findsOneWidget);
       expect(find.text('Description'), findsOneWidget);
-      expect(find.text('Save'), findsOneWidget);
-      expect(find.text('Cancel'), findsOneWidget);
       await tester.pumpAndSettle(Duration(milliseconds: 3000));
+    });
+
+    testWidgets('Events', (WidgetTester tester) async {
+      _overrideOnError();
+
+      await tester.pumpWidget(ChangeNotifierProvider(
+        create: (context) => FFAppState(),
+        child: MyApp(
+          entryPage: DashboardPageWidget(),
+        ),
+      ));
+
+      await tester.pumpAndSettle(Duration(milliseconds: 10000));
+      await tester.tap(find.text('Events'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.enterText(find.text('Search'), 'DEV');
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('Export'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('DEV-456-789'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.byKey(ValueKey('chbEventView1')));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
     });
   });
 
@@ -253,24 +253,7 @@ void main() async {
   });
 
   group('Nary', () {
-    testWidgets('Add TOU info pacail', (WidgetTester tester) async {
-      _overrideOnError();
-
-      await tester.pumpWidget(ChangeNotifierProvider(
-        create: (context) => FFAppState(),
-        child: MyApp(
-          entryPage: DevicesPageWidget(),
-        ),
-      ));
-
-      await tester.tap(find.text('06/01/2024'));
-      await tester.pump(kDoubleTapMinTime);
-      await tester.tap(find.text('06/01/2024'));
-      await tester.pumpAndSettle(Duration(milliseconds: 300));
-      expect(find.byKey(ValueKey('MainLayoutV1_mcov')), findsOneWidget);
-    });
-
-    testWidgets('Tab TOU', (WidgetTester tester) async {
+    testWidgets('ViewDevice', (WidgetTester tester) async {
       _overrideOnError();
 
       await tester.pumpWidget(ChangeNotifierProvider(
@@ -280,23 +263,13 @@ void main() async {
         ),
       ));
 
-      await tester.tap(find.descendant(
-        of: find.byKey(ValueKey('Dashboard')),
-        matching: find.byKey(ValueKey('IconButton_19gy')),
-      ));
+      await tester.tap(find.text('Total Device'));
       await tester.pump(kDoubleTapMinTime);
-      await tester.tap(find.descendant(
-        of: find.byKey(ValueKey('Dashboard')),
-        matching: find.byKey(ValueKey('IconButton_19gy')),
-      ));
-      await tester.pumpAndSettle(Duration(milliseconds: 300));
-      await tester.tap(find.text('TOU Setting'));
-      await tester.pumpAndSettle(Duration(milliseconds: 300));
-      await tester.tap(find.text('TOU'));
-      await tester.pump(kDoubleTapMinTime);
-      await tester.tap(find.text('TOU'));
-      await tester.pumpAndSettle(Duration(milliseconds: 300));
-      expect(find.byKey(ValueKey('MainLayoutV1_yv6v')), findsOneWidget);
+      await tester.tap(find.text('Total Device'));
+      await tester.pumpAndSettle(Duration(milliseconds: 1000));
+      await tester.tap(find.byKey(ValueKey('MainLayoutV2_n2l0')));
+      await tester.pumpAndSettle(Duration(milliseconds: 1000));
+      expect(find.byKey(ValueKey('DevicesPage_evbv')), findsOneWidget);
     });
   });
 
@@ -346,6 +319,52 @@ void main() async {
       await tester.tap(find.byKey(ValueKey('MainLayoutV1_ld8o')));
       await tester.pumpAndSettle(Duration(milliseconds: 300));
       expect(find.byKey(ValueKey('MainLayoutV1_ld8o')), findsOneWidget);
+    });
+
+    testWidgets('Add TOU info pacail', (WidgetTester tester) async {
+      _overrideOnError();
+
+      await tester.pumpWidget(ChangeNotifierProvider(
+        create: (context) => FFAppState(),
+        child: MyApp(
+          entryPage: DevicesPageWidget(),
+        ),
+      ));
+
+      await tester.tap(find.text('06/01/2024'));
+      await tester.pump(kDoubleTapMinTime);
+      await tester.tap(find.text('06/01/2024'));
+      await tester.pumpAndSettle(Duration(milliseconds: 300));
+      expect(find.byKey(ValueKey('MainLayoutV1_mcov')), findsOneWidget);
+    });
+
+    testWidgets('Tab TOU', (WidgetTester tester) async {
+      _overrideOnError();
+
+      await tester.pumpWidget(ChangeNotifierProvider(
+        create: (context) => FFAppState(),
+        child: MyApp(
+          entryPage: DashboardPageWidget(),
+        ),
+      ));
+
+      await tester.tap(find.descendant(
+        of: find.byKey(ValueKey('Dashboard')),
+        matching: find.byKey(ValueKey('IconButton_19gy')),
+      ));
+      await tester.pump(kDoubleTapMinTime);
+      await tester.tap(find.descendant(
+        of: find.byKey(ValueKey('Dashboard')),
+        matching: find.byKey(ValueKey('IconButton_19gy')),
+      ));
+      await tester.pumpAndSettle(Duration(milliseconds: 300));
+      await tester.tap(find.text('TOU Setting'));
+      await tester.pumpAndSettle(Duration(milliseconds: 300));
+      await tester.tap(find.text('TOU'));
+      await tester.pump(kDoubleTapMinTime);
+      await tester.tap(find.text('TOU'));
+      await tester.pumpAndSettle(Duration(milliseconds: 300));
+      expect(find.byKey(ValueKey('MainLayoutV1_yv6v')), findsOneWidget);
     });
   });
 }

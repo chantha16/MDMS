@@ -781,6 +781,8 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                                         .alternate,
                                                               ),
                                                               child: Checkbox(
+                                                                key: const ValueKey(
+                                                                    'chbEventView1'),
                                                                 value: _model
                                                                         .checkboxValue2 ??=
                                                                     false,
