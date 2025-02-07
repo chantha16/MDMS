@@ -157,6 +157,22 @@ void main() async {
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('Send Notification'));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('Archive'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.byKey(ValueKey('chbDevice2')));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.byKey(ValueKey('btnDevice2')));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('View Details'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.byKey(ValueKey('btnDevice2')));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('Archive'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.byKey(ValueKey('btnDevice2')));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('Send Notification'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
     });
   });
 

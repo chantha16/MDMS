@@ -1526,6 +1526,8 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                                         .alternate,
                                                               ),
                                                               child: Checkbox(
+                                                                key: const ValueKey(
+                                                                    'chbDevice2'),
                                                                 value: _model
                                                                         .checkboxValue4 ??=
                                                                     false,
@@ -1807,6 +1809,8 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                             Builder(
                                                               builder: (context) =>
                                                                   FlutterFlowIconButton(
+                                                                key: const ValueKey(
+                                                                    'btnDevice2'),
                                                                 borderColor: Colors
                                                                     .transparent,
                                                                 borderRadius:
