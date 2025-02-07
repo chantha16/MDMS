@@ -27,30 +27,7 @@ void main() async {
   });
 
   group('Chantha', () {
-    testWidgets('DashboardPage1', (WidgetTester tester) async {
-      _overrideOnError();
-
-      await tester.pumpWidget(ChangeNotifierProvider(
-        create: (context) => FFAppState(),
-        child: MyApp(
-          entryPage: DashboardPageWidget(),
-        ),
-      ));
-
-      await tester.pumpAndSettle(Duration(milliseconds: 10000));
-      await tester.tap(find.text('Dashboard'));
-      await tester.pumpAndSettle(Duration(milliseconds: 10000));
-      await tester.tap(find.text('Device Management'));
-      await tester.pumpAndSettle(Duration(milliseconds: 10000));
-      await tester.tap(find.text('TOU Management'));
-      await tester.pumpAndSettle(Duration(milliseconds: 10000));
-      await tester.tap(find.text('Events'));
-      await tester.pumpAndSettle(Duration(milliseconds: 10000));
-      await tester.tap(find.text('Settings'));
-      await tester.pumpAndSettle(Duration(milliseconds: 10000));
-    });
-
-    testWidgets('DashboardPage2', (WidgetTester tester) async {
+    testWidgets('DashboardPage', (WidgetTester tester) async {
       _overrideOnError();
 
       await tester.pumpWidget(ChangeNotifierProvider(
@@ -79,7 +56,7 @@ void main() async {
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('Yearly'));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
-      await tester.tap(find.text('All'));
+      await tester.tap(find.byKey(ValueKey('Recent Devices')));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
     });
 
