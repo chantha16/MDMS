@@ -157,7 +157,9 @@ void main() async {
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('Send Notification'));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
-      await tester.tap(find.text('Archive'));
+      await tester.tap(find.text('Events'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('Archive (2)'));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.byKey(ValueKey('chbDevice2')));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
