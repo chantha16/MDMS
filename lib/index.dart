@@ -20,7 +20,7 @@ export '/modules/time_bands/pages/time_band_details/time_band_details_widget.dar
 export '/modules/time_bands/pages/time_band_page/time_band_page_widget.dart'
     show TimeBandPageWidget;
 export '/seasonmaintest/seasonmaintest_widget.dart' show SeasonmaintestWidget;
-export '/modules/events/event_page/event_page_widget.dart' show EventPageWidget;
+export '/modules/event_page/event_page_widget.dart' show EventPageWidget;
 export '/modules/events/pages/event_detail_page/event_detail_page_widget.dart'
     show EventDetailPageWidget;
 export '/modules/resources/pages/video_play_page/video_play_page_widget.dart'

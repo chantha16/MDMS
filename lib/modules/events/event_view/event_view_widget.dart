@@ -1069,6 +1069,8 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                             Builder(
                                                               builder: (context) =>
                                                                   FlutterFlowIconButton(
+                                                                key: const ValueKey(
+                                                                    'btnDevice1'),
                                                                 borderColor: Colors
                                                                     .transparent,
                                                                 borderRadius:
