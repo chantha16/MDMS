@@ -176,6 +176,28 @@ void main() async {
       await tester.tap(find.text('Send Notification'));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
     });
+
+    testWidgets('Settings', (WidgetTester tester) async {
+      _overrideOnError();
+
+      await tester.pumpWidget(ChangeNotifierProvider(
+        create: (context) => FFAppState(),
+        child: MyApp(
+          entryPage: DashboardPageWidget(),
+        ),
+      ));
+
+      await tester.pumpAndSettle(Duration(milliseconds: 10000));
+      await tester.tap(find.text('Settings'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('Product Settings'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      expect(find.text('Options'), findsOneWidget);
+      await tester.pumpAndSettle(Duration(milliseconds: 3000));
+      expect(find.text('Add'), findsOneWidget);
+      await tester.enterText(find.text('Search'), '0');
+      await tester.pumpAndSettle(Duration(milliseconds: 10000));
+    });
   });
 
   group('bunhai', () {
