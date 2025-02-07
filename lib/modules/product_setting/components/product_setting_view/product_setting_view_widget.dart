@@ -95,6 +95,7 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
                   SizedBox(
                     width: 200.0,
                     child: TextFormField(
+                      key: const ValueKey('txtPSVSearch'),
                       controller: _model.textController,
                       focusNode: _model.textFieldFocusNode,
                       onChanged: (_) => EasyDebounce.debounce(

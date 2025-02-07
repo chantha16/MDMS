@@ -41,6 +41,6 @@ export '/modules/specialday/pages/p_special_day_add/p_special_day_add_widget.dar
     show PSpecialDayAddWidget;
 export '/modules/specialday/pages/p_special_day_view/p_special_day_view_widget.dart'
     show PSpecialDayViewWidget;
-export '/modules/product_setting/pages/product_setting_page/product_setting_page_widget.dart'
+export '/modules/product_setting/product_setting_page/product_setting_page_widget.dart'
     show ProductSettingPageWidget;
 export '/fffff/fffff_widget.dart' show FffffWidget;

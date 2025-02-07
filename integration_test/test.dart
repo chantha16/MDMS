@@ -195,7 +195,8 @@ void main() async {
       expect(find.text('Options'), findsOneWidget);
       await tester.pumpAndSettle(Duration(milliseconds: 3000));
       expect(find.text('Add'), findsOneWidget);
-      await tester.enterText(find.text('Search'), '0');
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.byKey(ValueKey('txtPSVSearch')));
       await tester.pumpAndSettle(Duration(milliseconds: 10000));
     });
   });
