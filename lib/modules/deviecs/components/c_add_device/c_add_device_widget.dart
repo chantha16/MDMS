@@ -135,6 +135,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                   ),
                             ),
                             FlutterFlowDropDown<String>(
+                              key: const ValueKey('cAddDeviceDT'),
                               controller: _model.dropDownValueController1 ??=
                                   FormFieldController<String>(null),
                               options: [
@@ -181,6 +182,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 TextFormField(
+                                  key: const ValueKey('txtcAddDevice1'),
                                   controller: _model.textController1,
                                   focusNode: _model.textFieldFocusNode1,
                                   autofocus: false,
