@@ -116,6 +116,7 @@ class _CSidebarWidgetState extends State<CSidebarWidget>
                       Navigator.pop(context);
                     },
                     child: Icon(
+                      key: const ValueKey('cSidebarClose'),
                       Icons.close_sharp,
                       color: FlutterFlowTheme.of(context).error,
                       size: 24.0,
