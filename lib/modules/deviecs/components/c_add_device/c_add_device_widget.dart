@@ -135,7 +135,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                   ),
                             ),
                             FlutterFlowDropDown<String>(
-                              key: const ValueKey('cAddDeviceDT'),
+                              key: const ValueKey('ddDeviceType'),
                               controller: _model.dropDownValueController1 ??=
                                   FormFieldController<String>(null),
                               options: [
@@ -283,7 +283,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                           ),
                                     ),
                                     TextFormField(
-                                      key: const ValueKey('txtPhase'),
+                                      key: const ValueKey('txtPhase2'),
                                       controller: _model.textController2,
                                       focusNode: _model.textFieldFocusNode2,
                                       autofocus: false,

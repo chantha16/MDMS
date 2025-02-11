@@ -61,14 +61,14 @@ void main() async {
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('Export'));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
-      await tester.tap(find.byKey(ValueKey('cAddDeviceDT')));
+      await tester.tap(find.byKey(ValueKey('ddDeviceType')));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('\"Sensor\\\\Meter\\\\Gateway\"'));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.enterText(
           find.byKey(ValueKey('txtSerialNumber')), 'Serial123456789');
       await tester.pumpAndSettle(Duration(milliseconds: 3000));
-      await tester.enterText(find.byKey(ValueKey('txtPhase')), 'Phase123');
+      await tester.enterText(find.byKey(ValueKey('txtPhase2')), 'Phase123');
       await tester.pumpAndSettle(Duration(milliseconds: 3000));
       await tester.enterText(
           find.byKey(ValueKey('txtDeviceName')), 'DeviceName123');
