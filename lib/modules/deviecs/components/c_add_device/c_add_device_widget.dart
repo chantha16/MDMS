@@ -182,7 +182,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 TextFormField(
-                                  key: const ValueKey('txtcAddDevice1'),
+                                  key: const ValueKey('txtSerialNumber'),
                                   controller: _model.textController1,
                                   focusNode: _model.textFieldFocusNode1,
                                   autofocus: false,
@@ -271,6 +271,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
+                                      key: const ValueKey('txtPhase'),
                                       FFLocalizations.of(context).getText(
                                         'h4m9e9n2' /* Map from Billing */,
                                       ),
@@ -872,6 +873,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                           ),
                                     ),
                                     TextFormField(
+                                      key: const ValueKey('txtDeviceName'),
                                       controller: _model.textController7,
                                       focusNode: _model.textFieldFocusNode7,
                                       autofocus: false,
