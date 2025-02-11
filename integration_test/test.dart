@@ -27,6 +27,39 @@ void main() async {
   });
 
   group('Chantha', () {
+    testWidgets('DashboardPage', (WidgetTester tester) async {
+      _overrideOnError();
+
+      await tester.pumpWidget(ChangeNotifierProvider(
+        create: (context) => FFAppState(),
+        child: MyApp(
+          entryPage: DashboardPageWidget(),
+        ),
+      ));
+
+      await tester.pumpAndSettle(Duration(milliseconds: 9000));
+      await tester.tap(find.text('Dashboard'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('Total Device'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('Dashboard'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('Today'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('Weekly'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('Weekly'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('Monthly'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('Monthly'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('Yearly'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.byKey(ValueKey('Recent Devices')));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+    });
+
     testWidgets('Device Management', (WidgetTester tester) async {
       _overrideOnError();
 
@@ -60,6 +93,13 @@ void main() async {
       await tester.tap(find.byKey(ValueKey('chbDV4')));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('Export'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('Device Type'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('Sensor'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.enterText(find.text('Serial Number'), 'Serial');
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
     });
 
     testWidgets('TOU Management', (WidgetTester tester) async {
@@ -154,39 +194,6 @@ void main() async {
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.enterText(find.byKey(ValueKey('txtPSVSearch')), '0');
       await tester.pumpAndSettle(Duration(milliseconds: 10000));
-    });
-
-    testWidgets('DashboardPage', (WidgetTester tester) async {
-      _overrideOnError();
-
-      await tester.pumpWidget(ChangeNotifierProvider(
-        create: (context) => FFAppState(),
-        child: MyApp(
-          entryPage: DashboardPageWidget(),
-        ),
-      ));
-
-      await tester.pumpAndSettle(Duration(milliseconds: 9000));
-      await tester.tap(find.text('Dashboard'));
-      await tester.pumpAndSettle(Duration(milliseconds: 5000));
-      await tester.tap(find.text('Total Device'));
-      await tester.pumpAndSettle(Duration(milliseconds: 5000));
-      await tester.tap(find.text('Dashboard'));
-      await tester.pumpAndSettle(Duration(milliseconds: 5000));
-      await tester.tap(find.text('Today'));
-      await tester.pumpAndSettle(Duration(milliseconds: 5000));
-      await tester.tap(find.text('Weekly'));
-      await tester.pumpAndSettle(Duration(milliseconds: 5000));
-      await tester.tap(find.text('Weekly'));
-      await tester.pumpAndSettle(Duration(milliseconds: 5000));
-      await tester.tap(find.text('Monthly'));
-      await tester.pumpAndSettle(Duration(milliseconds: 5000));
-      await tester.tap(find.text('Monthly'));
-      await tester.pumpAndSettle(Duration(milliseconds: 5000));
-      await tester.tap(find.text('Yearly'));
-      await tester.pumpAndSettle(Duration(milliseconds: 5000));
-      await tester.tap(find.byKey(ValueKey('Recent Devices')));
-      await tester.pumpAndSettle(Duration(milliseconds: 5000));
     });
   });
 
