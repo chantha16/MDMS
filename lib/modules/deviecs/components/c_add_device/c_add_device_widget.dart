@@ -283,6 +283,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                           ),
                                     ),
                                     TextFormField(
+                                      key: const ValueKey('txtPhase'),
                                       controller: _model.textController2,
                                       focusNode: _model.textFieldFocusNode2,
                                       autofocus: false,
