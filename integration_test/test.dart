@@ -42,14 +42,24 @@ void main() async {
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('800046773'));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.byKey(ValueKey('cSidebarClose')));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('800046774'));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('800046775'));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('800046776'));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
-      await tester.tap(find.byKey(ValueKey('cSidebarClose')));
+      await tester.tap(find.byKey(ValueKey('chbDV1')));
+      await tester.pumpAndSettle(Duration(milliseconds: 3000));
+      await tester.tap(find.byKey(ValueKey('chbDV2')));
+      await tester.pumpAndSettle(Duration(milliseconds: 3000));
+      await tester.tap(find.byKey(ValueKey('chbDV3')));
+      await tester.pumpAndSettle(Duration(milliseconds: 3000));
+      await tester.tap(find.byKey(ValueKey('chbDV4')));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('Export'));
     });
 
     testWidgets('TOU Management', (WidgetTester tester) async {

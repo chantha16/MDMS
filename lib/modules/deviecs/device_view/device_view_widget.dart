@@ -374,6 +374,7 @@ class _DeviceViewWidgetState extends State<DeviceViewWidget> {
                                               .alternate,
                                     ),
                                     child: Checkbox(
+                                      key: const ValueKey('chbDV1'),
                                       value: _model.checkboxValue2 ??= false,
                                       onChanged: (newValue) async {
                                         safeSetState(() =>
@@ -654,6 +655,7 @@ class _DeviceViewWidgetState extends State<DeviceViewWidget> {
                                               .alternate,
                                     ),
                                     child: Checkbox(
+                                      key: const ValueKey('chbDV2'),
                                       value: _model.checkboxValue3 ??= false,
                                       onChanged: (newValue) async {
                                         safeSetState(() =>
@@ -913,6 +915,7 @@ class _DeviceViewWidgetState extends State<DeviceViewWidget> {
                                               .alternate,
                                     ),
                                     child: Checkbox(
+                                      key: const ValueKey('chbDV3'),
                                       value: _model.checkboxValue4 ??= false,
                                       onChanged: (newValue) async {
                                         safeSetState(() =>
@@ -1170,6 +1173,7 @@ class _DeviceViewWidgetState extends State<DeviceViewWidget> {
                                               .alternate,
                                     ),
                                     child: Checkbox(
+                                      key: const ValueKey('chbDV4'),
                                       value: _model.checkboxValue5 ??= false,
                                       onChanged: (newValue) async {
                                         safeSetState(() =>
