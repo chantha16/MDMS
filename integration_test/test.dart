@@ -75,6 +75,8 @@ void main() async {
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('Cancel'));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.enterText(find.byKey(ValueKey('btnSearch')), 'Hello World');
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.byKey(ValueKey('btnOption')));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('Update'));
@@ -87,12 +89,13 @@ void main() async {
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('Save'));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.enterText(find.byKey(ValueKey('btnSearch')), 'Hello World');
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.byKey(ValueKey('btnOption')));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('Delete'));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('Save'));
-      await tester.pumpAndSettle(Duration(milliseconds: 5000));
     });
 
     testWidgets('Device Management', (WidgetTester tester) async {
