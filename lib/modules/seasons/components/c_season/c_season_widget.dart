@@ -143,6 +143,7 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
                         child: Container(
                           width: double.infinity,
                           child: TextFormField(
+                            key: ValueKey('btnSearch'),
                             controller: _model.textController1,
                             focusNode: _model.textFieldFocusNode,
                             onChanged: (_) => EasyDebounce.debounce(
@@ -517,6 +518,7 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
                                                 Builder(
                                                   builder: (context) =>
                                                       FlutterFlowIconButton(
+                                                    key: ValueKey('btnOption'),
                                                     borderColor:
                                                         Colors.transparent,
                                                     borderRadius: 8.0,
