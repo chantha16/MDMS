@@ -87,7 +87,7 @@ void main() async {
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('Save'));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
-      await tester.tap(find.text('btnOption'));
+      await tester.tap(find.byKey(ValueKey('btnOption')));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.text('Delete'));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
