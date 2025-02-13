@@ -10,8 +10,8 @@ class SuccessAlertWidget extends StatefulWidget {
     String? tittle,
     String? description,
     required this.action,
-  })  : tittle = tittle ?? 'tittle',
-        description = description ?? 'description';
+  })  : this.tittle = tittle ?? 'tittle',
+        this.description = description ?? 'description';
 
   final String tittle;
   final String description;
@@ -51,8 +51,8 @@ class _SuccessAlertWidgetState extends State<SuccessAlertWidget> {
       width: double.infinity,
       height: MediaQuery.sizeOf(context).height * 0.1,
       decoration: BoxDecoration(
-        color: const Color(0x7F048178),
-        boxShadow: const [
+        color: Color(0x7F048178),
+        boxShadow: [
           BoxShadow(
             blurRadius: 4.0,
             color: Color(0x33000000),
@@ -68,7 +68,7 @@ class _SuccessAlertWidgetState extends State<SuccessAlertWidget> {
         ),
       ),
       child: Padding(
-        padding: const EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
+        padding: EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
         child: Row(
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -82,7 +82,7 @@ class _SuccessAlertWidgetState extends State<SuccessAlertWidget> {
                   Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      const Padding(
+                      Padding(
                         padding: EdgeInsets.all(4.0),
                         child: Icon(
                           Icons.add_task_rounded,
@@ -100,22 +100,22 @@ class _SuccessAlertWidgetState extends State<SuccessAlertWidget> {
                               fontWeight: FontWeight.w500,
                             ),
                       ),
-                    ].divide(const SizedBox(width: 8.0)),
+                    ].divide(SizedBox(width: 8.0)),
                   ),
                   Text(
                     widget.description,
                     style: FlutterFlowTheme.of(context).labelMedium.override(
                           fontFamily: 'Figtree',
-                          color: const Color(0x9AFFFFFF),
+                          color: Color(0x9AFFFFFF),
                           fontSize: 14.0,
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.w500,
                         ),
                   ),
-                ].divide(const SizedBox(height: 4.0)),
+                ].divide(SizedBox(height: 4.0)),
               ),
             ),
-          ].divide(const SizedBox(width: 8.0)),
+          ].divide(SizedBox(width: 8.0)),
         ),
       ),
     );

@@ -80,7 +80,7 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
     return Container(
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        borderRadius: const BorderRadius.only(
+        borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
           topLeft: Radius.circular(16.0),
@@ -88,7 +88,7 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
         ),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(24.0),
+        padding: EdgeInsets.all(24.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
@@ -135,7 +135,7 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                             ),
                           ),
                           child: Padding(
-                            padding: const EdgeInsets.all(24.0),
+                            padding: EdgeInsets.all(24.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
@@ -173,7 +173,7 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                                   CrossAxisAlignment.start,
                                               children: [
                                                 Padding(
-                                                  padding: const EdgeInsetsDirectional
+                                                  padding: EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 5.0),
                                                   child: RichText(
@@ -332,7 +332,7 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                                                 context)
                                                             .primaryBackground,
                                                     contentPadding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 16.0,
                                                                 19.0,
@@ -359,7 +359,7 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                               ],
                                             ),
                                           ),
-                                        ].divide(const SizedBox(width: 16.0)),
+                                        ].divide(SizedBox(width: 16.0)),
                                       ),
                                       Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -371,7 +371,7 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                                   CrossAxisAlignment.start,
                                               children: [
                                                 Padding(
-                                                  padding: const EdgeInsetsDirectional
+                                                  padding: EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 5.0),
                                                   child: RichText(
@@ -478,7 +478,7 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                                                   .of(context)
                                                               .secondaryText,
                                                           offset:
-                                                              const Offset(2.0, 2.0),
+                                                              Offset(2.0, 2.0),
                                                           blurRadius: 2.0,
                                                         )
                                                       ],
@@ -541,7 +541,7 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                                                 context)
                                                             .primaryBackground,
                                                     contentPadding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 16.0,
                                                                 19.0,
@@ -569,12 +569,12 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                               ],
                                             ),
                                           ),
-                                        ].divide(const SizedBox(width: 16.0)),
+                                        ].divide(SizedBox(width: 16.0)),
                                       ),
-                                    ].divide(const SizedBox(height: 16.0)),
+                                    ].divide(SizedBox(height: 16.0)),
                                   ),
                                 ),
-                              ].divide(const SizedBox(height: 16.0)),
+                              ].divide(SizedBox(height: 16.0)),
                             ),
                           ),
                         ),
@@ -599,13 +599,13 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                               ),
                             ),
                             child: Padding(
-                              padding: const EdgeInsets.all(24.0),
+                              padding: EdgeInsets.all(24.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.min,
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
                                   Align(
-                                    alignment: const AlignmentDirectional(-1.0, 0.0),
+                                    alignment: AlignmentDirectional(-1.0, 0.0),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
                                         'iz9nw9cp' /* Special Day Details */,
@@ -646,8 +646,8 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                               ),
                                             ),
                                             child: Padding(
-                                              padding: const EdgeInsets.all(5.0),
-                                              child: SizedBox(
+                                              padding: EdgeInsets.all(5.0),
+                                              child: Container(
                                                 width: double.infinity,
                                                 child: TextFormField(
                                                   controller:
@@ -657,7 +657,7 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                                   onChanged: (_) =>
                                                       EasyDebounce.debounce(
                                                     '_model.textController3',
-                                                    const Duration(
+                                                    Duration(
                                                         milliseconds: 6000),
                                                     () => safeSetState(() {}),
                                                   ),
@@ -687,7 +687,7 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                                         ),
                                                     enabledBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: const BorderSide(
+                                                      borderSide: BorderSide(
                                                         color:
                                                             Colors.transparent,
                                                         width: 1.0,
@@ -698,7 +698,7 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                                     ),
                                                     focusedBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: const BorderSide(
+                                                      borderSide: BorderSide(
                                                         color:
                                                             Colors.transparent,
                                                         width: 1.0,
@@ -832,14 +832,14 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                             borderWidth: 0.0,
                                             borderRadius: 20.0,
                                             margin:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     12.0, 0.0, 12.0, 0.0),
                                             hidesUnderline: true,
                                             isOverButton: false,
                                             isSearchable: false,
                                             isMultiSelect: false,
                                           ),
-                                        ].divide(const SizedBox(width: 16.0)),
+                                        ].divide(SizedBox(width: 16.0)),
                                       ),
                                       Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -851,7 +851,7 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                                 safeSetState(() {}),
                                             child: PrimaryButtonWithIconWidget(
                                               tbName: 'Add',
-                                              btIcon: const Icon(
+                                              btIcon: Icon(
                                                 Icons.add,
                                               ),
                                               btAction: () async {
@@ -874,7 +874,7 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                                   }.withoutNulls,
                                                   extra: <String, dynamic>{
                                                     kTransitionInfoKey:
-                                                        const TransitionInfo(
+                                                        TransitionInfo(
                                                       hasTransition: true,
                                                       transitionType:
                                                           PageTransitionType
@@ -903,7 +903,7 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
                                                 .primaryBackground,
-                                            borderRadius: const BorderRadius.only(
+                                            borderRadius: BorderRadius.only(
                                               bottomLeft: Radius.circular(0.0),
                                               bottomRight: Radius.circular(0.0),
                                               topLeft: Radius.circular(10.0),
@@ -1006,7 +1006,7 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                                       ),
                                                 ),
                                               ),
-                                            ].divide(const SizedBox(width: 16.0)),
+                                            ].divide(SizedBox(width: 16.0)),
                                           ),
                                         ),
                                         Expanded(
@@ -1070,7 +1070,7 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                                                   specialDayDetialsIndex];
                                                           return Container(
                                                             decoration:
-                                                                const BoxDecoration(),
+                                                                BoxDecoration(),
                                                             child: Row(
                                                               mainAxisSize:
                                                                   MainAxisSize
@@ -1114,9 +1114,9 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                                                         avoidOverflow:
                                                                             true,
                                                                         targetAnchor:
-                                                                            const AlignmentDirectional(1.0, 1.0).resolve(Directionality.of(context)),
+                                                                            AlignmentDirectional(1.0, 1.0).resolve(Directionality.of(context)),
                                                                         followerAnchor:
-                                                                            const AlignmentDirectional(-1.0, -1.0).resolve(Directionality.of(context)),
+                                                                            AlignmentDirectional(-1.0, -1.0).resolve(Directionality.of(context)),
                                                                         builder:
                                                                             (dialogContext) {
                                                                           return Material(
@@ -1142,7 +1142,7 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                                                                     ),
                                                                                   }.withoutNulls,
                                                                                   extra: <String, dynamic>{
-                                                                                    kTransitionInfoKey: const TransitionInfo(
+                                                                                    kTransitionInfoKey: TransitionInfo(
                                                                                       hasTransition: true,
                                                                                       transitionType: PageTransitionType.fade,
                                                                                       duration: Duration(milliseconds: 0),
@@ -1164,7 +1164,7 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                                                                     ),
                                                                                   }.withoutNulls,
                                                                                   extra: <String, dynamic>{
-                                                                                    kTransitionInfoKey: const TransitionInfo(
+                                                                                    kTransitionInfoKey: TransitionInfo(
                                                                                       hasTransition: true,
                                                                                       transitionType: PageTransitionType.fade,
                                                                                       duration: Duration(milliseconds: 0),
@@ -1190,7 +1190,7 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                                                                     ),
                                                                                   }.withoutNulls,
                                                                                   extra: <String, dynamic>{
-                                                                                    kTransitionInfoKey: const TransitionInfo(
+                                                                                    kTransitionInfoKey: TransitionInfo(
                                                                                       hasTransition: true,
                                                                                       transitionType: PageTransitionType.fade,
                                                                                       duration: Duration(milliseconds: 0),
@@ -1271,7 +1271,7 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                                                         ),
                                                                   ),
                                                                 ),
-                                                              ].divide(const SizedBox(
+                                                              ].divide(SizedBox(
                                                                   width: 16.0)),
                                                             ),
                                                           );
@@ -1284,10 +1284,10 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                             ],
                                           ),
                                         ),
-                                      ].divide(const SizedBox(height: 12.0)),
+                                      ].divide(SizedBox(height: 12.0)),
                                     ),
                                   ),
-                                ].divide(const SizedBox(height: 16.0)),
+                                ].divide(SizedBox(height: 16.0)),
                               ),
                             ),
                           ),
@@ -1295,7 +1295,7 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                       ],
                     ),
                   ),
-                ].divide(const SizedBox(width: 24.0)),
+                ].divide(SizedBox(width: 24.0)),
               ),
             ),
             Builder(
@@ -1341,13 +1341,13 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                               if ((_model.apiResultqcm?.succeeded ?? true)) {
                                 ScaffoldMessenger.of(context).showSnackBar(
                                   SnackBar(
-                                    content: const Text(
+                                    content: Text(
                                       'Add Sucessfull',
                                       style: TextStyle(
                                         color: Colors.white,
                                       ),
                                     ),
-                                    duration: const Duration(milliseconds: 4000),
+                                    duration: Duration(milliseconds: 4000),
                                     backgroundColor:
                                         FlutterFlowTheme.of(context).primary,
                                   ),
@@ -1358,13 +1358,13 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                   context: context,
                                   builder: (alertDialogContext) {
                                     return AlertDialog(
-                                      title: const Text('Message'),
-                                      content: const Text('System Error'),
+                                      title: Text('Message'),
+                                      content: Text('System Error'),
                                       actions: [
                                         TextButton(
                                           onPressed: () =>
                                               Navigator.pop(alertDialogContext),
-                                          child: const Text('Ok'),
+                                          child: Text('Ok'),
                                         ),
                                       ],
                                     );
@@ -1381,13 +1381,13 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                               if ((_model.apiResultgvd?.succeeded ?? true)) {
                                 ScaffoldMessenger.of(context).showSnackBar(
                                   SnackBar(
-                                    content: const Text(
+                                    content: Text(
                                       'Deleted Succesful',
                                       style: TextStyle(
                                         color: Colors.white,
                                       ),
                                     ),
-                                    duration: const Duration(milliseconds: 4000),
+                                    duration: Duration(milliseconds: 4000),
                                     backgroundColor:
                                         FlutterFlowTheme.of(context).primary,
                                   ),
@@ -1397,13 +1397,13 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                   context: context,
                                   builder: (alertDialogContext) {
                                     return AlertDialog(
-                                      title: const Text('Message'),
-                                      content: const Text('System Error'),
+                                      title: Text('Message'),
+                                      content: Text('System Error'),
                                       actions: [
                                         TextButton(
                                           onPressed: () =>
                                               Navigator.pop(alertDialogContext),
-                                          child: const Text('Ok'),
+                                          child: Text('Ok'),
                                         ),
                                       ],
                                     );
@@ -1425,13 +1425,13 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                               if ((_model.apiResultmm6?.succeeded ?? true)) {
                                 ScaffoldMessenger.of(context).showSnackBar(
                                   SnackBar(
-                                    content: const Text(
+                                    content: Text(
                                       'Update Sucessfull',
                                       style: TextStyle(
                                         color: Colors.white,
                                       ),
                                     ),
-                                    duration: const Duration(milliseconds: 4000),
+                                    duration: Duration(milliseconds: 4000),
                                     backgroundColor:
                                         FlutterFlowTheme.of(context).primary,
                                   ),
@@ -1442,13 +1442,13 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                                   context: context,
                                   builder: (alertDialogContext) {
                                     return AlertDialog(
-                                      title: const Text('Message'),
-                                      content: const Text('Update Error'),
+                                      title: Text('Message'),
+                                      content: Text('Update Error'),
                                       actions: [
                                         TextButton(
                                           onPressed: () =>
                                               Navigator.pop(alertDialogContext),
-                                          child: const Text('Ok'),
+                                          child: Text('Ok'),
                                         ),
                                       ],
                                     );
@@ -1464,7 +1464,7 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                           exception: () async {},
                         ),
                       ),
-                    ].divide(const SizedBox(width: 16.0)),
+                    ].divide(SizedBox(width: 16.0)),
                   );
                 } else {
                   return Row(
@@ -1481,12 +1481,12 @@ class _CSpecialDayViewWidgetState extends State<CSpecialDayViewWidget> {
                           },
                         ),
                       ),
-                    ].divide(const SizedBox(width: 16.0)),
+                    ].divide(SizedBox(width: 16.0)),
                   );
                 }
               },
             ),
-          ].divide(const SizedBox(height: 16.0)),
+          ].divide(SizedBox(height: 16.0)),
         ),
       ),
     );

@@ -90,9 +90,9 @@ class _ItemSpecialDayDetialsWidgetState
     context.watch<FFAppState>();
 
     return Container(
-      decoration: const BoxDecoration(),
+      decoration: BoxDecoration(),
       child: Padding(
-        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
         child: Row(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.start,
@@ -108,14 +108,14 @@ class _ItemSpecialDayDetialsWidgetState
                     width: 1.0,
                   ),
                 ),
-                child: SizedBox(
+                child: Container(
                   width: double.infinity,
                   child: TextFormField(
                     controller: _model.nameTextController,
                     focusNode: _model.nameFocusNode,
                     onChanged: (_) => EasyDebounce.debounce(
                       '_model.nameTextController',
-                      const Duration(milliseconds: 2000),
+                      Duration(milliseconds: 2000),
                       () async {
                         FFAppState().updateItemSpecialDayDetialsAtIndex(
                           widget.itemIndex!,
@@ -142,14 +142,14 @@ class _ItemSpecialDayDetialsWidgetState
                                 letterSpacing: 0.0,
                               ),
                       enabledBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
+                        borderSide: BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
+                        borderSide: BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
@@ -198,19 +198,19 @@ class _ItemSpecialDayDetialsWidgetState
                   ),
                 ),
                 child: Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 6.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 6.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Expanded(
-                        child: SizedBox(
+                        child: Container(
                           width: double.infinity,
                           child: TextFormField(
                             controller: _model.addateTextController1,
                             focusNode: _model.addateFocusNode1,
                             onChanged: (_) => EasyDebounce.debounce(
                               '_model.addateTextController1',
-                              const Duration(milliseconds: 2000),
+                              Duration(milliseconds: 2000),
                               () async {
                                 FFAppState().updateItemSpecialDayDetialsAtIndex(
                                   widget.itemIndex!,
@@ -242,14 +242,14 @@ class _ItemSpecialDayDetialsWidgetState
                                     letterSpacing: 0.0,
                                   ),
                               enabledBorder: OutlineInputBorder(
-                                borderSide: const BorderSide(
+                                borderSide: BorderSide(
                                   color: Colors.transparent,
                                   width: 1.0,
                                 ),
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                               focusedBorder: OutlineInputBorder(
-                                borderSide: const BorderSide(
+                                borderSide: BorderSide(
                                   color: Colors.transparent,
                                   width: 1.0,
                                 ),
@@ -293,7 +293,7 @@ class _ItemSpecialDayDetialsWidgetState
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          final datePicked1Date = await showDatePicker(
+                          final _datePicked1Date = await showDatePicker(
                             context: context,
                             initialDate: getCurrentTimestamp,
                             firstDate: DateTime(1900),
@@ -330,13 +330,17 @@ class _ItemSpecialDayDetialsWidgetState
                             },
                           );
 
-                          if (datePicked1Date != null) {
+                          if (_datePicked1Date != null) {
                             safeSetState(() {
                               _model.datePicked1 = DateTime(
-                                datePicked1Date.year,
-                                datePicked1Date.month,
-                                datePicked1Date.day,
+                                _datePicked1Date.year,
+                                _datePicked1Date.month,
+                                _datePicked1Date.day,
                               );
+                            });
+                          } else if (_model.datePicked1 != null) {
+                            safeSetState(() {
+                              _model.datePicked1 = getCurrentTimestamp;
                             });
                           }
                           safeSetState(() {
@@ -382,19 +386,19 @@ class _ItemSpecialDayDetialsWidgetState
                   ),
                 ),
                 child: Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 6.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 6.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Expanded(
-                        child: SizedBox(
+                        child: Container(
                           width: double.infinity,
                           child: TextFormField(
                             controller: _model.addateTextController2,
                             focusNode: _model.addateFocusNode2,
                             onChanged: (_) => EasyDebounce.debounce(
                               '_model.addateTextController2',
-                              const Duration(milliseconds: 2000),
+                              Duration(milliseconds: 2000),
                               () async {
                                 FFAppState().updateItemSpecialDayDetialsAtIndex(
                                   widget.itemIndex!,
@@ -424,14 +428,14 @@ class _ItemSpecialDayDetialsWidgetState
                                     letterSpacing: 0.0,
                                   ),
                               enabledBorder: OutlineInputBorder(
-                                borderSide: const BorderSide(
+                                borderSide: BorderSide(
                                   color: Colors.transparent,
                                   width: 1.0,
                                 ),
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                               focusedBorder: OutlineInputBorder(
-                                borderSide: const BorderSide(
+                                borderSide: BorderSide(
                                   color: Colors.transparent,
                                   width: 1.0,
                                 ),
@@ -475,7 +479,7 @@ class _ItemSpecialDayDetialsWidgetState
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          final datePicked2Date = await showDatePicker(
+                          final _datePicked2Date = await showDatePicker(
                             context: context,
                             initialDate: getCurrentTimestamp,
                             firstDate: DateTime(1900),
@@ -512,13 +516,17 @@ class _ItemSpecialDayDetialsWidgetState
                             },
                           );
 
-                          if (datePicked2Date != null) {
+                          if (_datePicked2Date != null) {
                             safeSetState(() {
                               _model.datePicked2 = DateTime(
-                                datePicked2Date.year,
-                                datePicked2Date.month,
-                                datePicked2Date.day,
+                                _datePicked2Date.year,
+                                _datePicked2Date.month,
+                                _datePicked2Date.day,
                               );
+                            });
+                          } else if (_model.datePicked2 != null) {
+                            safeSetState(() {
+                              _model.datePicked2 = getCurrentTimestamp;
                             });
                           }
                           safeSetState(() {
@@ -562,14 +570,14 @@ class _ItemSpecialDayDetialsWidgetState
                     width: 1.0,
                   ),
                 ),
-                child: SizedBox(
+                child: Container(
                   width: double.infinity,
                   child: TextFormField(
                     controller: _model.descriptionTextController,
                     focusNode: _model.descriptionFocusNode,
                     onChanged: (_) => EasyDebounce.debounce(
                       '_model.descriptionTextController',
-                      const Duration(milliseconds: 100),
+                      Duration(milliseconds: 100),
                       () async {
                         FFAppState().updateItemSpecialDayDetialsAtIndex(
                           widget.itemIndex!,
@@ -598,14 +606,14 @@ class _ItemSpecialDayDetialsWidgetState
                                 letterSpacing: 0.0,
                               ),
                       enabledBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
+                        borderSide: BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
+                        borderSide: BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
@@ -657,7 +665,7 @@ class _ItemSpecialDayDetialsWidgetState
                 size: 24.0,
               ),
             ),
-          ].divide(const SizedBox(width: 16.0)),
+          ].divide(SizedBox(width: 16.0)),
         ),
       ),
     );

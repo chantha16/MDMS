@@ -51,7 +51,7 @@ class _VideoPlayPageWidgetState extends State<VideoPlayPageWidget> {
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutV1Widget(
               activeMenu: MenuItems.Dashboard,
-              body: () => const DashboardViewWidget(),
+              body: () => DashboardViewWidget(),
             ),
           ),
         ),

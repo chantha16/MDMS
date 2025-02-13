@@ -48,7 +48,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Column(
+              Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [],
               ),
@@ -58,13 +58,13 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                   children: [
                     Expanded(
                       child: Container(
-                        decoration: const BoxDecoration(),
+                        decoration: BoxDecoration(),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   24.0, 20.0, 24.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -75,7 +75,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                     decoration: BoxDecoration(
                                       color:
                                           FlutterFlowTheme.of(context).primary,
-                                      borderRadius: const BorderRadius.only(
+                                      borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(0.0),
                                         bottomRight: Radius.circular(20.0),
                                         topLeft: Radius.circular(0.0),
@@ -121,17 +121,17 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                 fontWeight: FontWeight.w500,
                                               ),
                                         ),
-                                      ].divide(const SizedBox(height: 5.0)),
+                                      ].divide(SizedBox(height: 5.0)),
                                     ),
                                   ),
-                                ].divide(const SizedBox(width: 10.0)),
+                                ].divide(SizedBox(width: 10.0)),
                               ),
                             ),
                             Expanded(
                               child: Container(
-                                decoration: const BoxDecoration(),
+                                decoration: BoxDecoration(),
                                 child: Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       24.0, 24.0, 24.0, 24.0),
                                   child: SingleChildScrollView(
                                     child: Column(
@@ -148,7 +148,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                           ),
                                           child: Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     20.0, 20.0, 20.0, 20.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -170,7 +170,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                       ),
                                                       child: Align(
                                                         alignment:
-                                                            const AlignmentDirectional(
+                                                            AlignmentDirectional(
                                                                 0.0, 0.0),
                                                         child: Icon(
                                                           Icons
@@ -203,7 +203,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      const SizedBox(width: 15.0)),
+                                                      SizedBox(width: 15.0)),
                                                 ),
                                                 ListView(
                                                   padding: EdgeInsets.zero,
@@ -214,7 +214,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                   children: [
                                                     Padding(
                                                       padding:
-                                                          const EdgeInsetsDirectional
+                                                          EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   12.0,
                                                                   12.0,
@@ -233,7 +233,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              const EdgeInsets.all(
+                                                              EdgeInsets.all(
                                                                   12.0),
                                                           child: Row(
                                                             mainAxisSize:
@@ -292,7 +292,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                                       ),
                                                                     ],
                                                                   ),
-                                                                ].divide(const SizedBox(
+                                                                ].divide(SizedBox(
                                                                     width:
                                                                         12.0)),
                                                               ),
@@ -303,7 +303,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                                     8.0,
                                                                 buttonSize:
                                                                     40.0,
-                                                                fillColor: const Color(
+                                                                fillColor: Color(
                                                                     0xFFE3F2FD),
                                                                 icon: Icon(
                                                                   Icons
@@ -318,7 +318,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                                       'IconButton pressed ...');
                                                                 },
                                                               ),
-                                                            ].divide(const SizedBox(
+                                                            ].divide(SizedBox(
                                                                 width: 16.0)),
                                                           ),
                                                         ),
@@ -326,7 +326,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          const EdgeInsetsDirectional
+                                                          EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   12.0,
                                                                   12.0,
@@ -345,7 +345,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              const EdgeInsets.all(
+                                                              EdgeInsets.all(
                                                                   12.0),
                                                           child: Row(
                                                             mainAxisSize:
@@ -404,7 +404,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                                       ),
                                                                     ],
                                                                   ),
-                                                                ].divide(const SizedBox(
+                                                                ].divide(SizedBox(
                                                                     width:
                                                                         12.0)),
                                                               ),
@@ -415,7 +415,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                                     8.0,
                                                                 buttonSize:
                                                                     40.0,
-                                                                fillColor: const Color(
+                                                                fillColor: Color(
                                                                     0xFFE3F2FD),
                                                                 icon: Icon(
                                                                   Icons
@@ -430,7 +430,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                                       'IconButton pressed ...');
                                                                 },
                                                               ),
-                                                            ].divide(const SizedBox(
+                                                            ].divide(SizedBox(
                                                                 width: 16.0)),
                                                           ),
                                                         ),
@@ -438,7 +438,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                     ),
                                                   ],
                                                 ),
-                                              ].divide(const SizedBox(height: 16.0)),
+                                              ].divide(SizedBox(height: 16.0)),
                                             ),
                                           ),
                                         ),
@@ -451,7 +451,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                           ),
                                           child: Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     20.0, 20.0, 20.0, 20.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -473,7 +473,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                       ),
                                                       child: Align(
                                                         alignment:
-                                                            const AlignmentDirectional(
+                                                            AlignmentDirectional(
                                                                 0.0, 0.0),
                                                         child: Icon(
                                                           Icons.folder,
@@ -505,7 +505,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      const SizedBox(width: 15.0)),
+                                                      SizedBox(width: 15.0)),
                                                 ),
                                                 ListView(
                                                   padding: EdgeInsets.zero,
@@ -516,7 +516,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                   children: [
                                                     Padding(
                                                       padding:
-                                                          const EdgeInsetsDirectional
+                                                          EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   12.0,
                                                                   12.0,
@@ -535,7 +535,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              const EdgeInsets.all(
+                                                              EdgeInsets.all(
                                                                   12.0),
                                                           child: Row(
                                                             mainAxisSize:
@@ -594,7 +594,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                                       ),
                                                                     ],
                                                                   ),
-                                                                ].divide(const SizedBox(
+                                                                ].divide(SizedBox(
                                                                     width:
                                                                         12.0)),
                                                               ),
@@ -605,7 +605,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                                     8.0,
                                                                 buttonSize:
                                                                     40.0,
-                                                                fillColor: const Color(
+                                                                fillColor: Color(
                                                                     0xFFE3F2FD),
                                                                 icon: Icon(
                                                                   Icons
@@ -620,7 +620,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                                       'IconButton pressed ...');
                                                                 },
                                                               ),
-                                                            ].divide(const SizedBox(
+                                                            ].divide(SizedBox(
                                                                 width: 16.0)),
                                                           ),
                                                         ),
@@ -628,7 +628,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          const EdgeInsetsDirectional
+                                                          EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   12.0,
                                                                   12.0,
@@ -647,7 +647,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              const EdgeInsets.all(
+                                                              EdgeInsets.all(
                                                                   12.0),
                                                           child: Row(
                                                             mainAxisSize:
@@ -706,7 +706,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                                       ),
                                                                     ],
                                                                   ),
-                                                                ].divide(const SizedBox(
+                                                                ].divide(SizedBox(
                                                                     width:
                                                                         12.0)),
                                                               ),
@@ -717,7 +717,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                                     8.0,
                                                                 buttonSize:
                                                                     40.0,
-                                                                fillColor: const Color(
+                                                                fillColor: Color(
                                                                     0xFFE3F2FD),
                                                                 icon: Icon(
                                                                   Icons
@@ -732,7 +732,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                                       'IconButton pressed ...');
                                                                 },
                                                               ),
-                                                            ].divide(const SizedBox(
+                                                            ].divide(SizedBox(
                                                                 width: 16.0)),
                                                           ),
                                                         ),
@@ -740,7 +740,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          const EdgeInsetsDirectional
+                                                          EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   12.0,
                                                                   12.0,
@@ -759,7 +759,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              const EdgeInsets.all(
+                                                              EdgeInsets.all(
                                                                   12.0),
                                                           child: Row(
                                                             mainAxisSize:
@@ -818,7 +818,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                                       ),
                                                                     ],
                                                                   ),
-                                                                ].divide(const SizedBox(
+                                                                ].divide(SizedBox(
                                                                     width:
                                                                         12.0)),
                                                               ),
@@ -829,7 +829,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                                     8.0,
                                                                 buttonSize:
                                                                     40.0,
-                                                                fillColor: const Color(
+                                                                fillColor: Color(
                                                                     0xFFE3F2FD),
                                                                 icon: Icon(
                                                                   Icons
@@ -844,7 +844,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                                       'IconButton pressed ...');
                                                                 },
                                                               ),
-                                                            ].divide(const SizedBox(
+                                                            ].divide(SizedBox(
                                                                 width: 16.0)),
                                                           ),
                                                         ),
@@ -852,7 +852,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                     ),
                                                   ],
                                                 ),
-                                              ].divide(const SizedBox(height: 16.0)),
+                                              ].divide(SizedBox(height: 16.0)),
                                             ),
                                           ),
                                         ),
@@ -865,13 +865,13 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                           ),
                                           child: Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     20.0, 20.0, 20.0, 20.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Padding(
-                                                  padding: const EdgeInsetsDirectional
+                                                  padding: EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   child: Row(
@@ -893,7 +893,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                         ),
                                                         child: Align(
                                                           alignment:
-                                                              const AlignmentDirectional(
+                                                              AlignmentDirectional(
                                                                   0.0, 0.0),
                                                           child: Icon(
                                                             Icons.update,
@@ -930,11 +930,11 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                                 ),
                                                       ),
                                                     ].divide(
-                                                        const SizedBox(width: 15.0)),
+                                                        SizedBox(width: 15.0)),
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: const EdgeInsetsDirectional
+                                                  padding: EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   child: Container(
@@ -948,7 +948,7 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                     ),
                                                     child: Padding(
                                                       padding:
-                                                          const EdgeInsets.all(16.0),
+                                                          EdgeInsets.all(16.0),
                                                       child: Column(
                                                         mainAxisSize:
                                                             MainAxisSize.max,
@@ -996,17 +996,17 @@ class _ResourcesPageWidgetState extends State<ResourcesPageWidget> {
                                                                       0.0,
                                                                 ),
                                                           ),
-                                                        ].divide(const SizedBox(
+                                                        ].divide(SizedBox(
                                                             height: 8.0)),
                                                       ),
                                                     ),
                                                   ),
                                                 ),
-                                              ].divide(const SizedBox(height: 16.0)),
+                                              ].divide(SizedBox(height: 16.0)),
                                             ),
                                           ),
                                         ),
-                                      ].divide(const SizedBox(height: 24.0)),
+                                      ].divide(SizedBox(height: 24.0)),
                                     ),
                                   ),
                                 ),

@@ -13,7 +13,7 @@ class RowItemsWidget extends StatefulWidget {
     required this.rowValue,
     bool? isCheck,
     required this.columnHeader,
-  }) : isCheck = isCheck ?? false;
+  }) : this.isCheck = isCheck ?? false;
 
   final int? numberItems;
   final dynamic rowValue;
@@ -56,12 +56,6 @@ class _RowItemsWidgetState extends State<RowItemsWidget> {
         MouseRegion(
           opaque: false,
           cursor: SystemMouseCursors.click ?? MouseCursor.defer,
-          onEnter: ((event) async {
-            safeSetState(() => _model.mouseRegionHovered = true);
-          }),
-          onExit: ((event) async {
-            safeSetState(() => _model.mouseRegionHovered = false);
-          }),
           child: Container(
             decoration: BoxDecoration(
               color: valueOrDefault<Color>(
@@ -119,7 +113,7 @@ class _RowItemsWidgetState extends State<RowItemsWidget> {
                 ),
                 Container(
                   width: 20.0,
-                  decoration: const BoxDecoration(),
+                  decoration: BoxDecoration(),
                   child: Text(
                     valueOrDefault<String>(
                       widget.numberItems?.toString(),
@@ -135,7 +129,7 @@ class _RowItemsWidgetState extends State<RowItemsWidget> {
                 Expanded(
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
                     child: Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
@@ -147,7 +141,7 @@ class _RowItemsWidgetState extends State<RowItemsWidget> {
                           FlutterFlowTheme.of(context).secondaryBackground,
                         ),
                       ),
-                      child: SizedBox(
+                      child: Container(
                         width: double.infinity,
                         height: 40.0,
                         child: custom_widgets.DynamicRowValue(
@@ -161,9 +155,15 @@ class _RowItemsWidgetState extends State<RowItemsWidget> {
                     ),
                   ),
                 ),
-              ].divide(const SizedBox(width: 10.0)),
+              ].divide(SizedBox(width: 10.0)),
             ),
           ),
+          onEnter: ((event) async {
+            safeSetState(() => _model.mouseRegionHovered = true);
+          }),
+          onExit: ((event) async {
+            safeSetState(() => _model.mouseRegionHovered = false);
+          }),
         ),
       ],
     );

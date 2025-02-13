@@ -50,7 +50,7 @@ class _DeviceSettingPageWidgetState extends State<DeviceSettingPageWidget> {
             model: _model.mainLayoutV1Model,
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutV1Widget(
-              body: () => const CDeviceSettingWidget(),
+              body: () => CDeviceSettingWidget(),
             ),
           ),
         ),

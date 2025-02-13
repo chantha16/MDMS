@@ -49,7 +49,7 @@ class _SubRowPageHeaderWidgetState extends State<SubRowPageHeaderWidget> {
           child: Row(
             mainAxisSize: MainAxisSize.max,
             children: [
-              SizedBox(
+              Container(
                 width: 200.0,
                 child: TextFormField(
                   controller: _model.textController,
@@ -74,7 +74,7 @@ class _SubRowPageHeaderWidgetState extends State<SubRowPageHeaderWidget> {
                       borderRadius: BorderRadius.circular(12.0),
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(
+                      borderSide: BorderSide(
                         color: Color(0x00000000),
                         width: 1.0,
                       ),
@@ -96,7 +96,7 @@ class _SubRowPageHeaderWidgetState extends State<SubRowPageHeaderWidget> {
                     ),
                     filled: true,
                     fillColor: FlutterFlowTheme.of(context).secondaryBackground,
-                    prefixIcon: const Icon(
+                    prefixIcon: Icon(
                       Icons.search,
                     ),
                   ),
@@ -126,9 +126,9 @@ class _SubRowPageHeaderWidgetState extends State<SubRowPageHeaderWidget> {
                 ),
                 options: FFButtonOptions(
                   height: 40.0,
-                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   iconPadding:
-                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).primary,
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Inter Tight',
@@ -148,9 +148,9 @@ class _SubRowPageHeaderWidgetState extends State<SubRowPageHeaderWidget> {
                 ),
                 options: FFButtonOptions(
                   height: 40.0,
-                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   iconPadding:
-                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).primary,
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Inter Tight',
@@ -161,10 +161,10 @@ class _SubRowPageHeaderWidgetState extends State<SubRowPageHeaderWidget> {
                   borderRadius: BorderRadius.circular(8.0),
                 ),
               ),
-            ].divide(const SizedBox(width: 12.0)),
+            ].divide(SizedBox(width: 12.0)),
           ),
         ),
-      ].divide(const SizedBox(width: 12.0)),
+      ].divide(SizedBox(width: 12.0)),
     );
   }
 }

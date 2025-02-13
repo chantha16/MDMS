@@ -49,7 +49,7 @@ class _ResourcePageWidgetState extends State<ResourcePageWidget> {
             model: _model.mainLayoutV1Model,
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutV1Widget(
-              body: () => const CResourceWidget(),
+              body: () => CResourceWidget(),
             ),
           ),
         ),

@@ -237,9 +237,9 @@ class _SampleDataTableWidgetState extends State<SampleDataTableWidget> {
           addVerticalDivider: false,
           checkboxUnselectedFillColor: Colors.transparent,
           checkboxSelectedFillColor: Colors.transparent,
-          checkboxCheckColor: const Color(0x8A000000),
-          checkboxUnselectedBorderColor: const Color(0x8A000000),
-          checkboxSelectedBorderColor: const Color(0x8A000000),
+          checkboxCheckColor: Color(0x8A000000),
+          checkboxUnselectedBorderColor: Color(0x8A000000),
+          checkboxSelectedBorderColor: Color(0x8A000000),
         );
       },
     );

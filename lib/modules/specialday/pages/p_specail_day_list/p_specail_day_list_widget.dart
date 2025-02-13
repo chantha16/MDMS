@@ -59,7 +59,7 @@ class _PSpecailDayListWidgetState extends State<PSpecailDayListWidget> {
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutV1Widget(
               activeMenu: MenuItems.TimeBands,
-              body: () => const CSpecialDayListWidget(),
+              body: () => CSpecialDayListWidget(),
             ),
           ),
         ),

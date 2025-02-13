@@ -49,7 +49,7 @@ class _TouDetailsWidgetState extends State<TouDetailsWidget> {
             model: _model.mainLayoutV1Model,
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutV1Widget(
-              body: () => const TouDetailsViewWidget(),
+              body: () => TouDetailsViewWidget(),
             ),
           ),
         ),

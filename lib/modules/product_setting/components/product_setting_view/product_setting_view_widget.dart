@@ -59,7 +59,7 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
                 color: FlutterFlowTheme.of(context).primaryText,
               ),
             ),
-            duration: const Duration(milliseconds: 4000),
+            duration: Duration(milliseconds: 4000),
             backgroundColor: FlutterFlowTheme.of(context).cerise,
           ),
         );
@@ -92,15 +92,15 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 children: [
-                  SizedBox(
+                  Container(
                     width: 200.0,
                     child: TextFormField(
-                      key: const ValueKey('txtPSVSearch'),
+                      key: ValueKey('txtPSVSearch'),
                       controller: _model.textController,
                       focusNode: _model.textFieldFocusNode,
                       onChanged: (_) => EasyDebounce.debounce(
                         '_model.textController',
-                        const Duration(milliseconds: 300),
+                        Duration(milliseconds: 300),
                         () async {
                           await Future.delayed(
                               const Duration(milliseconds: 400));
@@ -135,7 +135,7 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
                                         .primaryText,
                                   ),
                                 ),
-                                duration: const Duration(milliseconds: 4000),
+                                duration: Duration(milliseconds: 4000),
                                 backgroundColor:
                                     FlutterFlowTheme.of(context).cerise,
                               ),
@@ -165,7 +165,7 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
                           borderRadius: BorderRadius.circular(12.0),
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(
+                          borderSide: BorderSide(
                             color: Color(0x00000000),
                             width: 1.0,
                           ),
@@ -188,7 +188,7 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
                         filled: true,
                         fillColor:
                             FlutterFlowTheme.of(context).secondaryBackground,
-                        prefixIcon: const Icon(
+                        prefixIcon: Icon(
                           Icons.search,
                         ),
                         suffixIcon: _model.textController!.text.isNotEmpty
@@ -233,7 +233,7 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
                                                 .primaryText,
                                           ),
                                         ),
-                                        duration: const Duration(milliseconds: 4000),
+                                        duration: Duration(milliseconds: 4000),
                                         backgroundColor:
                                             FlutterFlowTheme.of(context).cerise,
                                       ),
@@ -279,9 +279,9 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
                     options: FFButtonOptions(
                       height: 40.0,
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       iconPadding:
-                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primary,
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
@@ -303,9 +303,9 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
                     options: FFButtonOptions(
                       height: 40.0,
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       iconPadding:
-                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primary,
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
@@ -317,13 +317,13 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                   ),
-                ].divide(const SizedBox(width: 12.0)),
+                ].divide(SizedBox(width: 12.0)),
               ),
             ),
-          ].divide(const SizedBox(width: 12.0)),
+          ].divide(SizedBox(width: 12.0)),
         ),
         Padding(
-          padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+          padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
           child: Row(
             mainAxisSize: MainAxisSize.max,
             children: [
@@ -392,7 +392,7 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
                       ),
                 ),
               ),
-            ].divide(const SizedBox(width: 12.0)),
+            ].divide(SizedBox(width: 12.0)),
           ),
         ),
         Expanded(
@@ -409,7 +409,7 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
               }
 
               return ListView.separated(
-                padding: const EdgeInsets.fromLTRB(
+                padding: EdgeInsets.fromLTRB(
                   0,
                   12.0,
                   0,
@@ -418,16 +418,16 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
                 shrinkWrap: true,
                 scrollDirection: Axis.vertical,
                 itemCount: specialDays.length,
-                separatorBuilder: (_, __) => const SizedBox(height: 12.0),
+                separatorBuilder: (_, __) => SizedBox(height: 12.0),
                 itemBuilder: (context, specialDaysIndex) {
                   final specialDaysItem = specialDays[specialDaysIndex];
                   return Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                     child: Container(
-                      decoration: const BoxDecoration(),
+                      decoration: BoxDecoration(),
                       child: Padding(
-                        padding: const EdgeInsets.all(12.0),
+                        padding: EdgeInsets.all(12.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -506,7 +506,7 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
                                     ),
                               ),
                             ),
-                          ].divide(const SizedBox(width: 12.0)),
+                          ].divide(SizedBox(width: 12.0)),
                         ),
                       ),
                     ),
@@ -516,7 +516,7 @@ class _ProductSettingViewWidgetState extends State<ProductSettingViewWidget> {
             },
           ),
         ),
-      ].divide(const SizedBox(height: 12.0)),
+      ].divide(SizedBox(height: 12.0)),
     );
   }
 }

@@ -41,7 +41,7 @@ class _CTestBodyWidgetState extends State<CTestBodyWidget> {
       mainAxisSize: MainAxisSize.max,
       children: [
         Align(
-          alignment: const AlignmentDirectional(0.0, 0.0),
+          alignment: AlignmentDirectional(0.0, 0.0),
           child: Text(
             FFLocalizations.of(context).getText(
               '6hdndfht' /* Hello World */,

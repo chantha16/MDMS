@@ -82,7 +82,7 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
     return Container(
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        borderRadius: const BorderRadius.only(
+        borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
           topLeft: Radius.circular(16.0),
@@ -90,7 +90,7 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
         ),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(24.0),
+        padding: EdgeInsets.all(24.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
@@ -137,7 +137,7 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
                             ),
                           ),
                           child: Padding(
-                            padding: const EdgeInsets.all(24.0),
+                            padding: EdgeInsets.all(24.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
@@ -175,7 +175,7 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
                                                   CrossAxisAlignment.start,
                                               children: [
                                                 Padding(
-                                                  padding: const EdgeInsetsDirectional
+                                                  padding: EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 5.0),
                                                   child: RichText(
@@ -312,7 +312,7 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
                                                                 context)
                                                             .primaryBackground,
                                                     contentPadding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 16.0,
                                                                 19.0,
@@ -339,7 +339,7 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
                                               ],
                                             ),
                                           ),
-                                        ].divide(const SizedBox(width: 16.0)),
+                                        ].divide(SizedBox(width: 16.0)),
                                       ),
                                       Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -351,7 +351,7 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
                                                   CrossAxisAlignment.start,
                                               children: [
                                                 Padding(
-                                                  padding: const EdgeInsetsDirectional
+                                                  padding: EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 5.0),
                                                   child: RichText(
@@ -436,7 +436,7 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
                                                                   .of(context)
                                                               .secondaryText,
                                                           offset:
-                                                              const Offset(2.0, 2.0),
+                                                              Offset(2.0, 2.0),
                                                           blurRadius: 2.0,
                                                         )
                                                       ],
@@ -499,7 +499,7 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
                                                                 context)
                                                             .primaryBackground,
                                                     contentPadding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 16.0,
                                                                 19.0,
@@ -527,12 +527,12 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
                                               ],
                                             ),
                                           ),
-                                        ].divide(const SizedBox(width: 16.0)),
+                                        ].divide(SizedBox(width: 16.0)),
                                       ),
-                                    ].divide(const SizedBox(height: 16.0)),
+                                    ].divide(SizedBox(height: 16.0)),
                                   ),
                                 ),
-                              ].divide(const SizedBox(height: 16.0)),
+                              ].divide(SizedBox(height: 16.0)),
                             ),
                           ),
                         ),
@@ -557,7 +557,7 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
                               ),
                             ),
                             child: Padding(
-                              padding: const EdgeInsets.all(24.0),
+                              padding: EdgeInsets.all(24.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.min,
                                 mainAxisAlignment: MainAxisAlignment.start,
@@ -607,7 +607,7 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
                                                         .alternate,
                                               ),
                                             ),
-                                            child: SizedBox(
+                                            child: Container(
                                               width: double.infinity,
                                               child: TextFormField(
                                                 controller:
@@ -641,7 +641,7 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
                                                           ),
                                                   enabledBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: const BorderSide(
+                                                    borderSide: BorderSide(
                                                       color: Colors.transparent,
                                                       width: 1.0,
                                                     ),
@@ -651,7 +651,7 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
                                                   ),
                                                   focusedBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: const BorderSide(
+                                                    borderSide: BorderSide(
                                                       color: Colors.transparent,
                                                       width: 1.0,
                                                     ),
@@ -712,11 +712,11 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
                                               ),
                                             ),
                                           ),
-                                        ].divide(const SizedBox(width: 16.0)),
+                                        ].divide(SizedBox(width: 16.0)),
                                       ),
                                       Align(
                                         alignment:
-                                            const AlignmentDirectional(-1.0, 0.0),
+                                            AlignmentDirectional(-1.0, 0.0),
                                         child: FFButtonWidget(
                                           onPressed: () async {
                                             FFAppState()
@@ -731,7 +731,7 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
                                               .getText(
                                             'vziiikr9' /* Add */,
                                           ),
-                                          icon: const Icon(
+                                          icon: Icon(
                                             Icons.add,
                                             size: 15.0,
                                           ),
@@ -739,10 +739,10 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
                                             width: 120.0,
                                             height: 40.0,
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             iconPadding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 0.0),
                                             color: FlutterFlowTheme.of(context)
                                                 .primary,
@@ -773,7 +773,7 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
                                                 .primaryBackground,
-                                            borderRadius: const BorderRadius.only(
+                                            borderRadius: BorderRadius.only(
                                               bottomLeft: Radius.circular(0.0),
                                               bottomRight: Radius.circular(0.0),
                                               topLeft: Radius.circular(10.0),
@@ -782,7 +782,7 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
                                           ),
                                           child: Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     12.0, 0.0, 12.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -857,11 +857,11 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
                                                 Container(
                                                   width: 64.0,
                                                   height: 36.0,
-                                                  decoration: const BoxDecoration(
+                                                  decoration: BoxDecoration(
                                                     color: Colors.transparent,
                                                   ),
                                                 ),
-                                              ].divide(const SizedBox(width: 16.0)),
+                                              ].divide(SizedBox(width: 16.0)),
                                             ),
                                           ),
                                         ),
@@ -889,7 +889,7 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
                                                           itemSpecialDetails
                                                               .length,
                                                       separatorBuilder:
-                                                          (_, __) => const SizedBox(
+                                                          (_, __) => SizedBox(
                                                               height: 10.0),
                                                       itemBuilder: (context,
                                                           itemSpecialDetailsIndex) {
@@ -914,10 +914,10 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
                                             ),
                                           ),
                                         ),
-                                      ].divide(const SizedBox(height: 12.0)),
+                                      ].divide(SizedBox(height: 12.0)),
                                     ),
                                   ),
-                                ].divide(const SizedBox(height: 16.0)),
+                                ].divide(SizedBox(height: 16.0)),
                               ),
                             ),
                           ),
@@ -925,7 +925,7 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
                       ],
                     ),
                   ),
-                ].divide(const SizedBox(width: 24.0)),
+                ].divide(SizedBox(width: 24.0)),
               ),
             ),
             Row(
@@ -975,7 +975,7 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
                           context: context,
                           builder: (alertDialogContext) {
                             return AlertDialog(
-                              title: const Text('Message'),
+                              title: Text('Message'),
                               content: Text(getJsonField(
                                 (_model.apiResultCreateMain?.jsonBody ?? ''),
                                 r'''$.error''',
@@ -984,7 +984,7 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
                                 TextButton(
                                   onPressed: () =>
                                       Navigator.pop(alertDialogContext),
-                                  child: const Text('Ok'),
+                                  child: Text('Ok'),
                                 ),
                               ],
                             );
@@ -997,9 +997,9 @@ class _CSpecialDayAddWidgetState extends State<CSpecialDayAddWidget> {
                     exception: () async {},
                   ),
                 ),
-              ].divide(const SizedBox(width: 16.0)),
+              ].divide(SizedBox(width: 16.0)),
             ),
-          ].divide(const SizedBox(height: 16.0)),
+          ].divide(SizedBox(height: 16.0)),
         ),
       ),
     );

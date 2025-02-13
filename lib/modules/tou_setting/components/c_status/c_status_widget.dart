@@ -55,9 +55,9 @@ class _CStatusWidgetState extends State<CStatusWidget> {
       options: FFButtonOptions(
         width: 131.0,
         height: 32.0,
-        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
         iconAlignment: IconAlignment.start,
-        iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+        iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
         color: widget.bgStatus,
         textStyle: FlutterFlowTheme.of(context).titleSmall.override(
               fontFamily: 'Inter Tight',

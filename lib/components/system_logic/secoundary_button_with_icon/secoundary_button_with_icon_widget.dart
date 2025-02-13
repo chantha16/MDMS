@@ -58,9 +58,9 @@ class _SecoundaryButtonWithIconWidgetState
       options: FFButtonOptions(
         width: 120.0,
         height: 40.0,
-        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
         iconAlignment: IconAlignment.start,
-        iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+        iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
         color: FlutterFlowTheme.of(context).secondaryBackground,
         textStyle: FlutterFlowTheme.of(context).titleSmall.override(
               fontFamily: 'Inter Tight',

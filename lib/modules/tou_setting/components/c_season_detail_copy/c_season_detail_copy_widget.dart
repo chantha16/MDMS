@@ -68,7 +68,7 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
     return Container(
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        borderRadius: const BorderRadius.only(
+        borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
           topLeft: Radius.circular(16.0),
@@ -76,7 +76,7 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
         ),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(24.0),
+        padding: EdgeInsets.all(24.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
@@ -104,9 +104,9 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                             fontWeight: FontWeight.w600,
                           ),
                     ),
-                  ].divide(const SizedBox(height: 3.0)),
+                  ].divide(SizedBox(height: 3.0)),
                 ),
-              ].divide(const SizedBox(width: 16.0)),
+              ].divide(SizedBox(width: 16.0)),
             ),
             Expanded(
               child: FutureBuilder<ApiCallResponse>(
@@ -128,7 +128,7 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                     key: _model.formKey,
                     autovalidateMode: AutovalidateMode.disabled,
                     child: Padding(
-                      padding: const EdgeInsetsDirectional.fromSTEB(
+                      padding: EdgeInsetsDirectional.fromSTEB(
                           150.0, 0.0, 150.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
@@ -142,7 +142,7 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 5.0),
                                       child: RichText(
                                         textScaler:
@@ -243,7 +243,7 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryText,
-                                              offset: const Offset(2.0, 2.0),
+                                              offset: Offset(2.0, 2.0),
                                               blurRadius: 2.0,
                                             )
                                           ],
@@ -288,7 +288,7 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                                         fillColor: FlutterFlowTheme.of(context)
                                             .primaryBackground,
                                         contentPadding:
-                                            const EdgeInsetsDirectional.fromSTEB(
+                                            EdgeInsetsDirectional.fromSTEB(
                                                 16.0, 19.0, 16.0, 19.0),
                                         hoverColor: FlutterFlowTheme.of(context)
                                             .primaryBackground,
@@ -307,7 +307,7 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                                   ],
                                 ),
                               ),
-                            ].divide(const SizedBox(width: 15.0)),
+                            ].divide(SizedBox(width: 15.0)),
                           ),
                           Row(
                             mainAxisSize: MainAxisSize.max,
@@ -320,7 +320,7 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 5.0),
                                       child: RichText(
                                         textScaler:
@@ -345,7 +345,7 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                                                   .getText(
                                                 'zktv24ri' /*  * */,
                                               ),
-                                              style: const TextStyle(),
+                                              style: TextStyle(),
                                             )
                                           ],
                                           style: FlutterFlowTheme.of(context)
@@ -366,14 +366,6 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                                       opaque: false,
                                       cursor: MouseCursor.defer ??
                                           MouseCursor.defer,
-                                      onEnter: ((event) async {
-                                        safeSetState(() =>
-                                            _model.mouseRegionHovered1 = true);
-                                      }),
-                                      onExit: ((event) async {
-                                        safeSetState(() =>
-                                            _model.mouseRegionHovered1 = false);
-                                      }),
                                       child: Container(
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
@@ -460,7 +452,7 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                                           borderWidth: 0.0,
                                           borderRadius: 10.0,
                                           margin:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   12.0, 0.0, 12.0, 0.0),
                                           hidesUnderline: true,
                                           disabled: () {
@@ -481,10 +473,18 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                                           isMultiSelect: false,
                                         ),
                                       ),
+                                      onEnter: ((event) async {
+                                        safeSetState(() =>
+                                            _model.mouseRegionHovered1 = true);
+                                      }),
+                                      onExit: ((event) async {
+                                        safeSetState(() =>
+                                            _model.mouseRegionHovered1 = false);
+                                      }),
                                     ),
                                     if (FFAppState().ValidateDropdown != false)
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             15.0, 10.0, 0.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -518,7 +518,7 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 5.0),
                                       child: RichText(
                                         textScaler:
@@ -543,7 +543,7 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                                                   .getText(
                                                 'f17fnhke' /*  * */,
                                               ),
-                                              style: const TextStyle(),
+                                              style: TextStyle(),
                                             )
                                           ],
                                           style: FlutterFlowTheme.of(context)
@@ -564,14 +564,6 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                                       opaque: false,
                                       cursor: MouseCursor.defer ??
                                           MouseCursor.defer,
-                                      onEnter: ((event) async {
-                                        safeSetState(() =>
-                                            _model.mouseRegionHovered2 = true);
-                                      }),
-                                      onExit: ((event) async {
-                                        safeSetState(() =>
-                                            _model.mouseRegionHovered2 = false);
-                                      }),
                                       child: Container(
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
@@ -658,7 +650,7 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                                           borderWidth: 0.0,
                                           borderRadius: 10.0,
                                           margin:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   12.0, 0.0, 12.0, 0.0),
                                           hidesUnderline: true,
                                           disabled: () {
@@ -679,13 +671,21 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                                           isMultiSelect: false,
                                         ),
                                       ),
+                                      onEnter: ((event) async {
+                                        safeSetState(() =>
+                                            _model.mouseRegionHovered2 = true);
+                                      }),
+                                      onExit: ((event) async {
+                                        safeSetState(() =>
+                                            _model.mouseRegionHovered2 = false);
+                                      }),
                                     ),
                                     if (valueOrDefault<bool>(
                                       FFAppState().Selectedrequired != '',
                                       true,
                                     ))
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             15.0, 10.0, 0.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -713,7 +713,7 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                                   ],
                                 ),
                               ),
-                            ].divide(const SizedBox(width: 15.0)),
+                            ].divide(SizedBox(width: 15.0)),
                           ),
                           Row(
                             mainAxisSize: MainAxisSize.max,
@@ -724,7 +724,7 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 5.0),
                                       child: RichText(
                                         textScaler:
@@ -809,7 +809,7 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryText,
-                                              offset: const Offset(2.0, 2.0),
+                                              offset: Offset(2.0, 2.0),
                                               blurRadius: 2.0,
                                             )
                                           ],
@@ -854,7 +854,7 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                                         fillColor: FlutterFlowTheme.of(context)
                                             .primaryBackground,
                                         contentPadding:
-                                            const EdgeInsetsDirectional.fromSTEB(
+                                            EdgeInsetsDirectional.fromSTEB(
                                                 20.0, 18.0, 20.0, 18.0),
                                         hoverColor: FlutterFlowTheme.of(context)
                                             .primaryBackground,
@@ -877,7 +877,7 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                               ),
                             ],
                           ),
-                        ].divide(const SizedBox(height: 16.0)),
+                        ].divide(SizedBox(height: 16.0)),
                       ),
                     ),
                   );
@@ -885,7 +885,7 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
               ),
             ),
             Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 150.0, 0.0),
+              padding: EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 150.0, 0.0),
               child: Builder(
                 builder: (context) {
                   if (widget.type == Flag.Add) {
@@ -942,7 +942,7 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                                       ),
                                       textAlign: TextAlign.center,
                                     ),
-                                    duration: const Duration(milliseconds: 4000),
+                                    duration: Duration(milliseconds: 4000),
                                     backgroundColor:
                                         FlutterFlowTheme.of(context)
                                             .primaryBackground,
@@ -956,7 +956,7 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                             exception: () async {},
                           ),
                         ),
-                      ].divide(const SizedBox(width: 15.0)),
+                      ].divide(SizedBox(width: 15.0)),
                     );
                   } else if (widget.type == Flag.Update) {
                     return Row(
@@ -1013,7 +1013,7 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                                       ),
                                       textAlign: TextAlign.center,
                                     ),
-                                    duration: const Duration(milliseconds: 4000),
+                                    duration: Duration(milliseconds: 4000),
                                     backgroundColor:
                                         FlutterFlowTheme.of(context)
                                             .primaryBackground,
@@ -1031,7 +1031,7 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                                       ),
                                       textAlign: TextAlign.center,
                                     ),
-                                    duration: const Duration(milliseconds: 4000),
+                                    duration: Duration(milliseconds: 4000),
                                     backgroundColor:
                                         FlutterFlowTheme.of(context)
                                             .primaryBackground,
@@ -1044,11 +1044,11 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                             exception: () async {},
                           ),
                         ),
-                      ].divide(const SizedBox(width: 15.0)),
+                      ].divide(SizedBox(width: 15.0)),
                     );
                   } else {
                     return Padding(
-                      padding: const EdgeInsetsDirectional.fromSTEB(
+                      padding: EdgeInsetsDirectional.fromSTEB(
                           10.0, 15.0, 10.0, 15.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
@@ -1069,14 +1069,14 @@ class _CSeasonDetailCopyWidgetState extends State<CSeasonDetailCopyWidget> {
                               exception: () async {},
                             ),
                           ),
-                        ].divide(const SizedBox(width: 15.0)),
+                        ].divide(SizedBox(width: 15.0)),
                       ),
                     );
                   }
                 },
               ),
             ),
-          ].divide(const SizedBox(height: 16.0)),
+          ].divide(SizedBox(height: 16.0)),
         ),
       ),
     );

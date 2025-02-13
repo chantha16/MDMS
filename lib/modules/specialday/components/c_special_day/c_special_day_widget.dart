@@ -65,7 +65,7 @@ class _CSpecialDayWidgetState extends State<CSpecialDayWidget> {
     return Container(
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        borderRadius: const BorderRadius.only(
+        borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
           topLeft: Radius.circular(16.0),
@@ -73,7 +73,7 @@ class _CSpecialDayWidgetState extends State<CSpecialDayWidget> {
         ),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(24.0),
+        padding: EdgeInsets.all(24.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
@@ -107,7 +107,7 @@ class _CSpecialDayWidgetState extends State<CSpecialDayWidget> {
                 autovalidateMode: AutovalidateMode.disabled,
                 child: Padding(
                   padding:
-                      const EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 150.0, 0.0),
+                      EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 150.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -120,7 +120,7 @@ class _CSpecialDayWidgetState extends State<CSpecialDayWidget> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 5.0),
                                   child: RichText(
                                     textScaler:
@@ -198,7 +198,7 @@ class _CSpecialDayWidgetState extends State<CSpecialDayWidget> {
                                         Shadow(
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryText,
-                                          offset: const Offset(2.0, 2.0),
+                                          offset: Offset(2.0, 2.0),
                                           blurRadius: 2.0,
                                         )
                                       ],
@@ -239,7 +239,7 @@ class _CSpecialDayWidgetState extends State<CSpecialDayWidget> {
                                     fillColor: FlutterFlowTheme.of(context)
                                         .primaryBackground,
                                     contentPadding:
-                                        const EdgeInsetsDirectional.fromSTEB(
+                                        EdgeInsetsDirectional.fromSTEB(
                                             16.0, 19.0, 16.0, 19.0),
                                     hoverColor: FlutterFlowTheme.of(context)
                                         .primaryBackground,
@@ -257,7 +257,7 @@ class _CSpecialDayWidgetState extends State<CSpecialDayWidget> {
                               ],
                             ),
                           ),
-                        ].divide(const SizedBox(width: 16.0)),
+                        ].divide(SizedBox(width: 16.0)),
                       ),
                       Row(
                         mainAxisSize: MainAxisSize.max,
@@ -268,7 +268,7 @@ class _CSpecialDayWidgetState extends State<CSpecialDayWidget> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 5.0),
                                   child: RichText(
                                     textScaler:
@@ -331,7 +331,7 @@ class _CSpecialDayWidgetState extends State<CSpecialDayWidget> {
                                         Shadow(
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryText,
-                                          offset: const Offset(2.0, 2.0),
+                                          offset: Offset(2.0, 2.0),
                                           blurRadius: 2.0,
                                         )
                                       ],
@@ -372,7 +372,7 @@ class _CSpecialDayWidgetState extends State<CSpecialDayWidget> {
                                     fillColor: FlutterFlowTheme.of(context)
                                         .primaryBackground,
                                     contentPadding:
-                                        const EdgeInsetsDirectional.fromSTEB(
+                                        EdgeInsetsDirectional.fromSTEB(
                                             20.0, 18.0, 20.0, 18.0),
                                     hoverColor: FlutterFlowTheme.of(context)
                                         .primaryBackground,
@@ -394,14 +394,14 @@ class _CSpecialDayWidgetState extends State<CSpecialDayWidget> {
                           ),
                         ],
                       ),
-                      const Spacer(),
-                    ].divide(const SizedBox(height: 16.0)),
+                      Spacer(),
+                    ].divide(SizedBox(height: 16.0)),
                   ),
                 ),
               ),
             ),
             Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 150.0, 0.0),
+              padding: EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 150.0, 0.0),
               child: Builder(
                 builder: (context) {
                   if ((widget.type == Flag.Add) ||
@@ -448,13 +448,13 @@ class _CSpecialDayWidgetState extends State<CSpecialDayWidget> {
                                 if ((_model.apiResultqcm?.succeeded ?? true)) {
                                   ScaffoldMessenger.of(context).showSnackBar(
                                     SnackBar(
-                                      content: const Text(
+                                      content: Text(
                                         'Add Sucessfull',
                                         style: TextStyle(
                                           color: Colors.white,
                                         ),
                                       ),
-                                      duration: const Duration(milliseconds: 4000),
+                                      duration: Duration(milliseconds: 4000),
                                       backgroundColor:
                                           FlutterFlowTheme.of(context).primary,
                                     ),
@@ -465,13 +465,13 @@ class _CSpecialDayWidgetState extends State<CSpecialDayWidget> {
                                     context: context,
                                     builder: (alertDialogContext) {
                                       return AlertDialog(
-                                        title: const Text('Message'),
-                                        content: const Text('System Error'),
+                                        title: Text('Message'),
+                                        content: Text('System Error'),
                                         actions: [
                                           TextButton(
                                             onPressed: () => Navigator.pop(
                                                 alertDialogContext),
-                                            child: const Text('Ok'),
+                                            child: Text('Ok'),
                                           ),
                                         ],
                                       );
@@ -488,13 +488,13 @@ class _CSpecialDayWidgetState extends State<CSpecialDayWidget> {
                                 if ((_model.apiResultgvd?.succeeded ?? true)) {
                                   ScaffoldMessenger.of(context).showSnackBar(
                                     SnackBar(
-                                      content: const Text(
+                                      content: Text(
                                         'Deleted Succesful',
                                         style: TextStyle(
                                           color: Colors.white,
                                         ),
                                       ),
-                                      duration: const Duration(milliseconds: 4000),
+                                      duration: Duration(milliseconds: 4000),
                                       backgroundColor:
                                           FlutterFlowTheme.of(context).primary,
                                     ),
@@ -504,13 +504,13 @@ class _CSpecialDayWidgetState extends State<CSpecialDayWidget> {
                                     context: context,
                                     builder: (alertDialogContext) {
                                       return AlertDialog(
-                                        title: const Text('Message'),
-                                        content: const Text('System Error'),
+                                        title: Text('Message'),
+                                        content: Text('System Error'),
                                         actions: [
                                           TextButton(
                                             onPressed: () => Navigator.pop(
                                                 alertDialogContext),
-                                            child: const Text('Ok'),
+                                            child: Text('Ok'),
                                           ),
                                         ],
                                       );
@@ -531,13 +531,13 @@ class _CSpecialDayWidgetState extends State<CSpecialDayWidget> {
                                 if ((_model.apiResultmm6?.succeeded ?? true)) {
                                   ScaffoldMessenger.of(context).showSnackBar(
                                     SnackBar(
-                                      content: const Text(
+                                      content: Text(
                                         'Update Sucessfull',
                                         style: TextStyle(
                                           color: Colors.white,
                                         ),
                                       ),
-                                      duration: const Duration(milliseconds: 4000),
+                                      duration: Duration(milliseconds: 4000),
                                       backgroundColor:
                                           FlutterFlowTheme.of(context).primary,
                                     ),
@@ -548,13 +548,13 @@ class _CSpecialDayWidgetState extends State<CSpecialDayWidget> {
                                     context: context,
                                     builder: (alertDialogContext) {
                                       return AlertDialog(
-                                        title: const Text('Message'),
-                                        content: const Text('Update Error'),
+                                        title: Text('Message'),
+                                        content: Text('Update Error'),
                                         actions: [
                                           TextButton(
                                             onPressed: () => Navigator.pop(
                                                 alertDialogContext),
-                                            child: const Text('Ok'),
+                                            child: Text('Ok'),
                                           ),
                                         ],
                                       );
@@ -570,7 +570,7 @@ class _CSpecialDayWidgetState extends State<CSpecialDayWidget> {
                             exception: () async {},
                           ),
                         ),
-                      ].divide(const SizedBox(width: 16.0)),
+                      ].divide(SizedBox(width: 16.0)),
                     );
                   } else {
                     return Row(
@@ -587,13 +587,13 @@ class _CSpecialDayWidgetState extends State<CSpecialDayWidget> {
                             },
                           ),
                         ),
-                      ].divide(const SizedBox(width: 16.0)),
+                      ].divide(SizedBox(width: 16.0)),
                     );
                   }
                 },
               ),
             ),
-          ].divide(const SizedBox(height: 16.0)),
+          ].divide(SizedBox(height: 16.0)),
         ),
       ),
     );

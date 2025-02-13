@@ -62,7 +62,7 @@ class _CActionLogWidgetState extends State<CActionLogWidget> {
                 children: [
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+                        EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -108,7 +108,7 @@ class _CActionLogWidgetState extends State<CActionLogWidget> {
                           borderColor: FlutterFlowTheme.of(context).alternate,
                           borderWidth: 0.0,
                           borderRadius: 12.0,
-                          margin: const EdgeInsetsDirectional.fromSTEB(
+                          margin: EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 12.0, 0.0),
                           hidesUnderline: true,
                           isOverButton: false,
@@ -122,7 +122,7 @@ class _CActionLogWidgetState extends State<CActionLogWidget> {
                             action: () async {},
                           ),
                         ),
-                      ].divide(const SizedBox(width: 8.0)),
+                      ].divide(SizedBox(width: 8.0)),
                     ),
                   ),
                 ],
@@ -132,7 +132,7 @@ class _CActionLogWidgetState extends State<CActionLogWidget> {
           Expanded(
             child: Container(
               height: MediaQuery.sizeOf(context).height * 0.75,
-              decoration: const BoxDecoration(),
+              decoration: BoxDecoration(),
               child: SingleChildScrollView(
                 primary: false,
                 child: Column(
@@ -144,7 +144,7 @@ class _CActionLogWidgetState extends State<CActionLogWidget> {
                         color: FlutterFlowTheme.of(context).secondaryBackground,
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.all(10.0),
+                        padding: EdgeInsets.all(10.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -175,7 +175,7 @@ class _CActionLogWidgetState extends State<CActionLogWidget> {
                                 borderRadius: BorderRadius.circular(12.0),
                               ),
                               child: Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     16.0, 16.0, 16.0, 16.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -239,7 +239,7 @@ class _CActionLogWidgetState extends State<CActionLogWidget> {
                                                 ),
                                               ],
                                             ),
-                                          ].divide(const SizedBox(width: 12.0)),
+                                          ].divide(SizedBox(width: 12.0)),
                                         ),
                                         Text(
                                           FFLocalizations.of(context).getText(
@@ -263,7 +263,7 @@ class _CActionLogWidgetState extends State<CActionLogWidget> {
                                             letterSpacing: 0.0,
                                           ),
                                     ),
-                                  ].divide(const SizedBox(height: 16.0)),
+                                  ].divide(SizedBox(height: 16.0)),
                                 ),
                               ),
                             ),
@@ -275,7 +275,7 @@ class _CActionLogWidgetState extends State<CActionLogWidget> {
                                 borderRadius: BorderRadius.circular(12.0),
                               ),
                               child: Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     16.0, 16.0, 16.0, 16.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -341,7 +341,7 @@ class _CActionLogWidgetState extends State<CActionLogWidget> {
                                                 ),
                                               ],
                                             ),
-                                          ].divide(const SizedBox(width: 12.0)),
+                                          ].divide(SizedBox(width: 12.0)),
                                         ),
                                         Text(
                                           FFLocalizations.of(context).getText(
@@ -365,7 +365,7 @@ class _CActionLogWidgetState extends State<CActionLogWidget> {
                                             letterSpacing: 0.0,
                                           ),
                                     ),
-                                  ].divide(const SizedBox(height: 16.0)),
+                                  ].divide(SizedBox(height: 16.0)),
                                 ),
                               ),
                             ),
@@ -377,7 +377,7 @@ class _CActionLogWidgetState extends State<CActionLogWidget> {
                                 borderRadius: BorderRadius.circular(12.0),
                               ),
                               child: Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     16.0, 16.0, 16.0, 16.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -443,7 +443,7 @@ class _CActionLogWidgetState extends State<CActionLogWidget> {
                                                 ),
                                               ],
                                             ),
-                                          ].divide(const SizedBox(width: 12.0)),
+                                          ].divide(SizedBox(width: 12.0)),
                                         ),
                                         Text(
                                           FFLocalizations.of(context).getText(
@@ -467,16 +467,16 @@ class _CActionLogWidgetState extends State<CActionLogWidget> {
                                             letterSpacing: 0.0,
                                           ),
                                     ),
-                                  ].divide(const SizedBox(height: 16.0)),
+                                  ].divide(SizedBox(height: 16.0)),
                                 ),
                               ),
                             ),
-                          ].divide(const SizedBox(height: 16.0)),
+                          ].divide(SizedBox(height: 16.0)),
                         ),
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(10.0),
+                      padding: EdgeInsets.all(10.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -501,7 +501,7 @@ class _CActionLogWidgetState extends State<CActionLogWidget> {
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             child: Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   16.0, 16.0, 16.0, 16.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -567,7 +567,7 @@ class _CActionLogWidgetState extends State<CActionLogWidget> {
                                               ),
                                             ],
                                           ),
-                                        ].divide(const SizedBox(width: 12.0)),
+                                        ].divide(SizedBox(width: 12.0)),
                                       ),
                                       Text(
                                         FFLocalizations.of(context).getText(
@@ -591,7 +591,7 @@ class _CActionLogWidgetState extends State<CActionLogWidget> {
                                           letterSpacing: 0.0,
                                         ),
                                   ),
-                                ].divide(const SizedBox(height: 16.0)),
+                                ].divide(SizedBox(height: 16.0)),
                               ),
                             ),
                           ),
@@ -603,7 +603,7 @@ class _CActionLogWidgetState extends State<CActionLogWidget> {
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             child: Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   16.0, 16.0, 16.0, 16.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -667,7 +667,7 @@ class _CActionLogWidgetState extends State<CActionLogWidget> {
                                               ),
                                             ],
                                           ),
-                                        ].divide(const SizedBox(width: 12.0)),
+                                        ].divide(SizedBox(width: 12.0)),
                                       ),
                                       Text(
                                         FFLocalizations.of(context).getText(
@@ -691,11 +691,11 @@ class _CActionLogWidgetState extends State<CActionLogWidget> {
                                           letterSpacing: 0.0,
                                         ),
                                   ),
-                                ].divide(const SizedBox(height: 16.0)),
+                                ].divide(SizedBox(height: 16.0)),
                               ),
                             ),
                           ),
-                        ].divide(const SizedBox(height: 16.0)),
+                        ].divide(SizedBox(height: 16.0)),
                       ),
                     ),
                   ],

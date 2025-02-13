@@ -63,7 +63,7 @@ class _CActivityLogSubWidgetState extends State<CActivityLogSubWidget> {
         ),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(24.0),
+        padding: EdgeInsets.all(24.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.start,
@@ -87,7 +87,7 @@ class _CActivityLogSubWidgetState extends State<CActivityLogSubWidget> {
                             fontWeight: FontWeight.bold,
                           ),
                     ),
-                  ].divide(const SizedBox(height: 3.0)),
+                  ].divide(SizedBox(height: 3.0)),
                 ),
                 FlutterFlowIconButton(
                   borderRadius: 20.0,
@@ -102,7 +102,7 @@ class _CActivityLogSubWidgetState extends State<CActivityLogSubWidget> {
                     context.safePop();
                   },
                 ),
-              ].divide(const SizedBox(width: 12.0)),
+              ].divide(SizedBox(width: 12.0)),
             ),
             Row(
               mainAxisSize: MainAxisSize.max,
@@ -122,7 +122,7 @@ class _CActivityLogSubWidgetState extends State<CActivityLogSubWidget> {
                           color: FlutterFlowTheme.of(context).alternate,
                         ),
                       ),
-                      child: SizedBox(
+                      child: Container(
                         width: double.infinity,
                         child: TextFormField(
                           controller: _model.textController,
@@ -147,14 +147,14 @@ class _CActivityLogSubWidgetState extends State<CActivityLogSubWidget> {
                                   letterSpacing: 0.0,
                                 ),
                             enabledBorder: OutlineInputBorder(
-                              borderSide: const BorderSide(
+                              borderSide: BorderSide(
                                 color: Colors.transparent,
                                 width: 1.0,
                               ),
                               borderRadius: BorderRadius.circular(8.0),
                             ),
                             focusedBorder: OutlineInputBorder(
-                              borderSide: const BorderSide(
+                              borderSide: BorderSide(
                                 color: Colors.transparent,
                                 width: 1.0,
                               ),
@@ -243,13 +243,13 @@ class _CActivityLogSubWidgetState extends State<CActivityLogSubWidget> {
                       borderWidth: 0.0,
                       borderRadius: 20.0,
                       margin:
-                          const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                       hidesUnderline: true,
                       isOverButton: false,
                       isSearchable: false,
                       isMultiSelect: false,
                     ),
-                  ].divide(const SizedBox(width: 16.0)),
+                  ].divide(SizedBox(width: 16.0)),
                 ),
                 Row(
                   mainAxisSize: MainAxisSize.max,
@@ -265,7 +265,7 @@ class _CActivityLogSubWidgetState extends State<CActivityLogSubWidget> {
                     ),
                   ],
                 ),
-              ].divide(const SizedBox(width: 15.0)),
+              ].divide(SizedBox(width: 15.0)),
             ),
             Expanded(
               child: SingleChildScrollView(
@@ -276,7 +276,7 @@ class _CActivityLogSubWidgetState extends State<CActivityLogSubWidget> {
                     Container(
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        borderRadius: const BorderRadius.only(
+                        borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(0.0),
                           bottomRight: Radius.circular(0.0),
                           topLeft: Radius.circular(10.0),
@@ -289,7 +289,7 @@ class _CActivityLogSubWidgetState extends State<CActivityLogSubWidget> {
                           Container(
                             width: 1.0,
                             height: 46.0,
-                            decoration: const BoxDecoration(),
+                            decoration: BoxDecoration(),
                           ),
                           Expanded(
                             child: Text(
@@ -356,7 +356,7 @@ class _CActivityLogSubWidgetState extends State<CActivityLogSubWidget> {
                                   ),
                             ),
                           ),
-                        ].divide(const SizedBox(width: 10.0)),
+                        ].divide(SizedBox(width: 10.0)),
                       ),
                     ),
                     SingleChildScrollView(
@@ -370,9 +370,9 @@ class _CActivityLogSubWidgetState extends State<CActivityLogSubWidget> {
                             scrollDirection: Axis.vertical,
                             children: [
                               Container(
-                                decoration: const BoxDecoration(),
+                                decoration: BoxDecoration(),
                                 child: Align(
-                                  alignment: const AlignmentDirectional(0.0, 0.0),
+                                  alignment: AlignmentDirectional(0.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment: MainAxisAlignment.start,
@@ -450,7 +450,7 @@ class _CActivityLogSubWidgetState extends State<CActivityLogSubWidget> {
                                               ),
                                         ),
                                       ),
-                                    ].divide(const SizedBox(width: 10.0)),
+                                    ].divide(SizedBox(width: 10.0)),
                                   ),
                                 ),
                               ),
@@ -463,7 +463,7 @@ class _CActivityLogSubWidgetState extends State<CActivityLogSubWidget> {
                 ),
               ),
             ),
-          ].divide(const SizedBox(height: 16.0)),
+          ].divide(SizedBox(height: 16.0)),
         ),
       ),
     );

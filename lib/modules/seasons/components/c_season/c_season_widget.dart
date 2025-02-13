@@ -107,7 +107,7 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
     return Container(
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        borderRadius: const BorderRadius.only(
+        borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
           topLeft: Radius.circular(20.0),
@@ -120,7 +120,7 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: EdgeInsets.all(16.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -139,15 +139,15 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
                         ),
                       ),
                       child: Align(
-                        alignment: const AlignmentDirectional(0.0, 0.0),
-                        child: SizedBox(
+                        alignment: AlignmentDirectional(0.0, 0.0),
+                        child: Container(
                           width: double.infinity,
                           child: TextFormField(
                             controller: _model.textController1,
                             focusNode: _model.textFieldFocusNode,
                             onChanged: (_) => EasyDebounce.debounce(
                               '_model.textController1',
-                              const Duration(milliseconds: 300),
+                              Duration(milliseconds: 300),
                               () async {
                                 FFAppState().loading = false;
                                 safeSetState(() {});
@@ -204,14 +204,14 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
                                     letterSpacing: 0.0,
                                   ),
                               enabledBorder: OutlineInputBorder(
-                                borderSide: const BorderSide(
+                                borderSide: BorderSide(
                                   color: Colors.transparent,
                                   width: 1.0,
                                 ),
                                 borderRadius: BorderRadius.circular(20.0),
                               ),
                               focusedBorder: OutlineInputBorder(
-                                borderSide: const BorderSide(
+                                borderSide: BorderSide(
                                   color: Colors.transparent,
                                   width: 1.0,
                                 ),
@@ -306,7 +306,7 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
                         ),
                       ),
                     ),
-                  ].divide(const SizedBox(width: 16.0)),
+                  ].divide(SizedBox(width: 16.0)),
                 ),
                 Row(
                   mainAxisSize: MainAxisSize.max,
@@ -334,7 +334,7 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
                               ),
                             }.withoutNulls,
                             extra: <String, dynamic>{
-                              kTransitionInfoKey: const TransitionInfo(
+                              kTransitionInfoKey: TransitionInfo(
                                 hasTransition: true,
                                 transitionType: PageTransitionType.fade,
                                 duration: Duration(milliseconds: 0),
@@ -359,17 +359,17 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
                         btAction: () async {},
                       ),
                     ),
-                  ].divide(const SizedBox(width: 16.0)),
+                  ].divide(SizedBox(width: 16.0)),
                 ),
               ],
             ),
           ),
           Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+            padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
             child: Container(
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).primaryBackground,
-                borderRadius: const BorderRadius.only(
+                borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(0.0),
                   bottomRight: Radius.circular(0.0),
                   topLeft: Radius.circular(10.0),
@@ -382,7 +382,7 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
                   Container(
                     width: 46.0,
                     height: 46.0,
-                    decoration: const BoxDecoration(),
+                    decoration: BoxDecoration(),
                     child: Builder(
                       builder: (context) => FlutterFlowIconButton(
                         borderColor: Colors.transparent,
@@ -399,12 +399,12 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
                             context: context,
                             isGlobal: false,
                             avoidOverflow: false,
-                            targetAnchor: const AlignmentDirectional(-1.0, 1.0)
+                            targetAnchor: AlignmentDirectional(-1.0, 1.0)
                                 .resolve(Directionality.of(context)),
-                            followerAnchor: const AlignmentDirectional(0.0, -1.0)
+                            followerAnchor: AlignmentDirectional(0.0, -1.0)
                                 .resolve(Directionality.of(context)),
                             builder: (dialogContext) {
-                              return const Material(
+                              return Material(
                                 color: Colors.transparent,
                                 child: CCustomColumnsWidget(),
                               );
@@ -463,13 +463,13 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
                           ),
                     ),
                   ),
-                ].divide(const SizedBox(width: 16.0)),
+                ].divide(SizedBox(width: 16.0)),
               ),
             ),
           ),
           Expanded(
             child: Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+              padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
@@ -486,7 +486,7 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
                               builder: (context) {
                                 final model = _model.seasonModel.toList();
                                 if (model.isEmpty) {
-                                  return const SearchNotFoundWidget();
+                                  return SearchNotFoundWidget();
                                 }
 
                                 return ListView.separated(
@@ -496,7 +496,7 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
                                   scrollDirection: Axis.vertical,
                                   itemCount: model.length,
                                   separatorBuilder: (_, __) =>
-                                      const SizedBox(height: 6.0),
+                                      SizedBox(height: 6.0),
                                   itemBuilder: (context, modelIndex) {
                                     final modelItem = model[modelIndex];
                                     return SingleChildScrollView(
@@ -545,13 +545,13 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
                                                         isGlobal: false,
                                                         avoidOverflow: true,
                                                         targetAnchor:
-                                                            const AlignmentDirectional(
+                                                            AlignmentDirectional(
                                                                     1.0, 1.0)
                                                                 .resolve(
                                                                     Directionality.of(
                                                                         context)),
                                                         followerAnchor:
-                                                            const AlignmentDirectional(
+                                                            AlignmentDirectional(
                                                                     0.0, -1.0)
                                                                 .resolve(
                                                                     Directionality.of(
@@ -632,7 +632,7 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
                                                                       0.0,
                                                                 ),
                                                           );
-                                                        }).divide(const SizedBox(
+                                                        }).divide(SizedBox(
                                                             width: 5.0)),
                                                       );
                                                     },
@@ -651,7 +651,7 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
                                                         ),
                                                   ),
                                                 ),
-                                              ].divide(const SizedBox(width: 16.0)),
+                                              ].divide(SizedBox(width: 16.0)),
                                             ),
                                           ),
                                         ],
@@ -665,8 +665,8 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
                             return Container(
                               width: 50.0,
                               height: 50.0,
-                              decoration: const BoxDecoration(),
-                              child: const SizedBox(
+                              decoration: BoxDecoration(),
+                              child: Container(
                                 width: 20.0,
                                 height: 20.0,
                                 child: custom_widgets.LoadingIndicatorWidget(
@@ -698,7 +698,7 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
               borderRadius: BorderRadius.circular(10.0),
             ),
             child: Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 3.0, 16.0, 3.0),
+              padding: EdgeInsetsDirectional.fromSTEB(16.0, 3.0, 16.0, 3.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -798,7 +798,7 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
                         borderColor: Colors.transparent,
                         borderWidth: 0.0,
                         borderRadius: 8.0,
-                        margin: const EdgeInsetsDirectional.fromSTEB(
+                        margin: EdgeInsetsDirectional.fromSTEB(
                             12.0, 0.0, 12.0, 0.0),
                         hidesUnderline: true,
                         isOverButton: false,
@@ -818,7 +818,7 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
                         buttonSize: 36.0,
                         fillColor:
                             FlutterFlowTheme.of(context).secondaryBackground,
-                        disabledIconColor: const Color(0xFFC0C0C0),
+                        disabledIconColor: Color(0xFFC0C0C0),
                         icon: Icon(
                           Icons.chevron_left,
                           color: FlutterFlowTheme.of(context).primaryText,
@@ -870,14 +870,14 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
                                 safeSetState(() {});
                               },
                       ),
-                      SizedBox(
+                      Container(
                         width: 50.0,
                         child: TextFormField(
                           controller: _model.currentPageTextController,
                           focusNode: _model.currentPageFocusNode,
                           onChanged: (_) => EasyDebounce.debounce(
                             '_model.currentPageTextController',
-                            const Duration(milliseconds: 2000),
+                            Duration(milliseconds: 2000),
                             () async {
                               FFAppState().loading = false;
                               safeSetState(() {});
@@ -942,7 +942,7 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
                               borderRadius: BorderRadius.circular(8.0),
                             ),
                             focusedBorder: OutlineInputBorder(
-                              borderSide: const BorderSide(
+                              borderSide: BorderSide(
                                 color: Color(0x00000000),
                                 width: 1.0,
                               ),
@@ -998,7 +998,7 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
                               fontWeight: FontWeight.normal,
                             ),
                       ),
-                    ].divide(const SizedBox(width: 5.0)),
+                    ].divide(SizedBox(width: 5.0)),
                   ),
                   Row(
                     mainAxisSize: MainAxisSize.max,
@@ -1011,7 +1011,7 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
                         buttonSize: 36.0,
                         fillColor:
                             FlutterFlowTheme.of(context).secondaryBackground,
-                        disabledIconColor: const Color(0xFFC0C0C0),
+                        disabledIconColor: Color(0xFFC0C0C0),
                         icon: Icon(
                           Icons.chevron_right,
                           color: FlutterFlowTheme.of(context).primaryText,
@@ -1066,9 +1066,9 @@ class _CSeasonWidgetState extends State<CSeasonWidget> {
                                 safeSetState(() {});
                               },
                       ),
-                    ].divide(const SizedBox(width: 4.0)),
+                    ].divide(SizedBox(width: 4.0)),
                   ),
-                ].divide(const SizedBox(width: 12.0)),
+                ].divide(SizedBox(width: 12.0)),
               ),
             ),
           ),

@@ -49,7 +49,7 @@ class _TouPageWidgetState extends State<TouPageWidget> {
             model: _model.mainLayoutV1Model,
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutV1Widget(
-              body: () => const TouViewWidget(),
+              body: () => TouViewWidget(),
             ),
           ),
         ),

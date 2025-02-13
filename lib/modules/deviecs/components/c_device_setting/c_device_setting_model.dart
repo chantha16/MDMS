@@ -32,7 +32,7 @@ class CDeviceSettingModel extends FlutterFlowModel<CDeviceSettingWidget> {
   String? dropDownValue3;
   FormFieldController<String>? dropDownValueController3;
   // State field(s) for PlacePicker widget.
-  FFPlace placePickerValue = const FFPlace();
+  FFPlace placePickerValue = FFPlace();
   // State field(s) for TextField widget.
   FocusNode? textFieldFocusNode5;
   TextEditingController? textController5;

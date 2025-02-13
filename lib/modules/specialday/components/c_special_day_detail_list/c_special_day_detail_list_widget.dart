@@ -62,7 +62,7 @@ class _CSpecialDayDetailListWidgetState
     context.watch<FFAppState>();
 
     return Padding(
-      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 77.0, 0.0, 0.0),
+      padding: EdgeInsetsDirectional.fromSTEB(0.0, 77.0, 0.0, 0.0),
       child: Container(
         width: 550.0,
         height: double.infinity,
@@ -75,7 +75,7 @@ class _CSpecialDayDetailListWidgetState
           ),
         ),
         child: Padding(
-          padding: const EdgeInsets.all(24.0),
+          padding: EdgeInsets.all(24.0),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.start,
@@ -117,7 +117,7 @@ class _CSpecialDayDetailListWidgetState
                               color: FlutterFlowTheme.of(context).alternate,
                             ),
                           ),
-                          child: SizedBox(
+                          child: Container(
                             width: double.infinity,
                             child: TextFormField(
                               controller: _model.textController,
@@ -142,14 +142,14 @@ class _CSpecialDayDetailListWidgetState
                                       letterSpacing: 0.0,
                                     ),
                                 enabledBorder: OutlineInputBorder(
-                                  borderSide: const BorderSide(
+                                  borderSide: BorderSide(
                                     color: Colors.transparent,
                                     width: 1.0,
                                   ),
                                   borderRadius: BorderRadius.circular(20.0),
                                 ),
                                 focusedBorder: OutlineInputBorder(
-                                  borderSide: const BorderSide(
+                                  borderSide: BorderSide(
                                     color: Colors.transparent,
                                     width: 1.0,
                                   ),
@@ -193,7 +193,7 @@ class _CSpecialDayDetailListWidgetState
                           ),
                         ),
                       ),
-                    ].divide(const SizedBox(width: 16.0)),
+                    ].divide(SizedBox(width: 16.0)),
                   ),
                   Row(
                     mainAxisSize: MainAxisSize.max,
@@ -203,7 +203,7 @@ class _CSpecialDayDetailListWidgetState
                         updateCallback: () => safeSetState(() {}),
                         child: PrimaryButtonWithIconWidget(
                           tbName: 'Add',
-                          btIcon: const Icon(
+                          btIcon: Icon(
                             Icons.add,
                           ),
                           btAction: () async {
@@ -220,7 +220,7 @@ class _CSpecialDayDetailListWidgetState
                                 ),
                               }.withoutNulls,
                               extra: <String, dynamic>{
-                                kTransitionInfoKey: const TransitionInfo(
+                                kTransitionInfoKey: TransitionInfo(
                                   hasTransition: true,
                                   transitionType: PageTransitionType.fade,
                                   duration: Duration(milliseconds: 0),
@@ -242,7 +242,7 @@ class _CSpecialDayDetailListWidgetState
                     Container(
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        borderRadius: const BorderRadius.only(
+                        borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(0.0),
                           bottomRight: Radius.circular(0.0),
                           topLeft: Radius.circular(10.0),
@@ -328,7 +328,7 @@ class _CSpecialDayDetailListWidgetState
                                   ),
                             ),
                           ),
-                        ].divide(const SizedBox(width: 16.0)),
+                        ].divide(SizedBox(width: 16.0)),
                       ),
                     ),
                     Expanded(
@@ -386,7 +386,7 @@ class _CSpecialDayDetailListWidgetState
                                             specialDayDetials[
                                                 specialDayDetialsIndex];
                                         return Container(
-                                          decoration: const BoxDecoration(),
+                                          decoration: BoxDecoration(),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
@@ -416,13 +416,13 @@ class _CSpecialDayDetailListWidgetState
                                                       isGlobal: false,
                                                       avoidOverflow: true,
                                                       targetAnchor:
-                                                          const AlignmentDirectional(
+                                                          AlignmentDirectional(
                                                                   0.0, 0.0)
                                                               .resolve(
                                                                   Directionality.of(
                                                                       context)),
                                                       followerAnchor:
-                                                          const AlignmentDirectional(
+                                                          AlignmentDirectional(
                                                                   -1.0, -1.0)
                                                               .resolve(
                                                                   Directionality.of(
@@ -465,7 +465,7 @@ class _CSpecialDayDetailListWidgetState
                                                                 extra: <String,
                                                                     dynamic>{
                                                                   kTransitionInfoKey:
-                                                                      const TransitionInfo(
+                                                                      TransitionInfo(
                                                                     hasTransition:
                                                                         true,
                                                                     transitionType:
@@ -503,7 +503,7 @@ class _CSpecialDayDetailListWidgetState
                                                                 extra: <String,
                                                                     dynamic>{
                                                                   kTransitionInfoKey:
-                                                                      const TransitionInfo(
+                                                                      TransitionInfo(
                                                                     hasTransition:
                                                                         true,
                                                                     transitionType:
@@ -548,7 +548,7 @@ class _CSpecialDayDetailListWidgetState
                                                                 extra: <String,
                                                                     dynamic>{
                                                                   kTransitionInfoKey:
-                                                                      const TransitionInfo(
+                                                                      TransitionInfo(
                                                                     hasTransition:
                                                                         true,
                                                                     transitionType:
@@ -624,7 +624,7 @@ class _CSpecialDayDetailListWidgetState
                                                       ),
                                                 ),
                                               ),
-                                            ].divide(const SizedBox(width: 16.0)),
+                                            ].divide(SizedBox(width: 16.0)),
                                           ),
                                         );
                                       },
@@ -647,7 +647,7 @@ class _CSpecialDayDetailListWidgetState
                   actionstruc: () async {},
                 ),
               ),
-            ].divide(const SizedBox(height: 16.0)),
+            ].divide(SizedBox(height: 16.0)),
           ),
         ),
       ),

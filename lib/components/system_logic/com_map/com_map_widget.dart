@@ -55,7 +55,7 @@ class _ComMapWidgetState extends State<ComMapWidget> {
               controller: _model.googleMapsController,
               onCameraIdle: (latLng) => _model.googleMapsCenter = latLng,
               initialLocation: _model.googleMapsCenter ??=
-                  const LatLng(13.106061, -59.613158),
+                  LatLng(13.106061, -59.613158),
               markerColor: GoogleMarkerColor.violet,
               mapType: MapType.normal,
               style: GoogleMapStyle.standard,
@@ -71,7 +71,7 @@ class _ComMapWidgetState extends State<ComMapWidget> {
             ),
           ),
           Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -125,12 +125,12 @@ class _ComMapWidgetState extends State<ComMapWidget> {
                         context: context,
                         isGlobal: false,
                         avoidOverflow: false,
-                        targetAnchor: const AlignmentDirectional(-1.0, 0.0)
+                        targetAnchor: AlignmentDirectional(-1.0, 0.0)
                             .resolve(Directionality.of(context)),
-                        followerAnchor: const AlignmentDirectional(1.0, 1.0)
+                        followerAnchor: AlignmentDirectional(1.0, 1.0)
                             .resolve(Directionality.of(context)),
                         builder: (dialogContext) {
-                          return const Material(
+                          return Material(
                             color: Colors.transparent,
                             child: ComFeatureMapWidget(),
                           );
@@ -144,11 +144,11 @@ class _ComMapWidgetState extends State<ComMapWidget> {
                     ),
                   ),
                 ),
-              ].divide(const SizedBox(width: 24.0)),
+              ].divide(SizedBox(width: 24.0)),
             ),
           ),
           Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -179,10 +179,10 @@ class _ComMapWidgetState extends State<ComMapWidget> {
                     ],
                   ),
                 ),
-              ].divide(const SizedBox(width: 24.0)),
+              ].divide(SizedBox(width: 24.0)),
             ),
           ),
-        ].divide(const SizedBox(height: 16.0)),
+        ].divide(SizedBox(height: 16.0)),
       ),
     );
   }

@@ -43,7 +43,7 @@ class _SearchDeviceWidgetState extends State<SearchDeviceWidget> {
       height: double.infinity,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        boxShadow: const [
+        boxShadow: [
           BoxShadow(
             blurRadius: 4.0,
             color: Color(0x33000000),
@@ -53,7 +53,7 @@ class _SearchDeviceWidgetState extends State<SearchDeviceWidget> {
             ),
           )
         ],
-        borderRadius: const BorderRadius.only(
+        borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
           topLeft: Radius.circular(20.0),
@@ -62,11 +62,11 @@ class _SearchDeviceWidgetState extends State<SearchDeviceWidget> {
       ),
       child: Container(
         width: 1000.0,
-        decoration: const BoxDecoration(),
+        decoration: BoxDecoration(),
         child: wrapWithModel(
           model: _model.deviceViewModel,
           updateCallback: () => safeSetState(() {}),
-          child: const DeviceViewWidget(),
+          child: DeviceViewWidget(),
         ),
       ),
     );

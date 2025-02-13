@@ -95,7 +95,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
     return Container(
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        borderRadius: const BorderRadius.only(
+        borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
           topLeft: Radius.circular(16.0),
@@ -103,7 +103,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
         ),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(24.0),
+        padding: EdgeInsets.all(24.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
@@ -131,9 +131,9 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                             fontWeight: FontWeight.w600,
                           ),
                     ),
-                  ].divide(const SizedBox(height: 3.0)),
+                  ].divide(SizedBox(height: 3.0)),
                 ),
-              ].divide(const SizedBox(width: 16.0)),
+              ].divide(SizedBox(width: 16.0)),
             ),
             Flexible(
               child: Form(
@@ -141,7 +141,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                 autovalidateMode: AutovalidateMode.disabled,
                 child: Padding(
                   padding:
-                      const EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 150.0, 0.0),
+                      EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 150.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -154,7 +154,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 5.0),
                                   child: RichText(
                                     textScaler:
@@ -232,7 +232,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                         Shadow(
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryText,
-                                          offset: const Offset(2.0, 2.0),
+                                          offset: Offset(2.0, 2.0),
                                           blurRadius: 2.0,
                                         )
                                       ],
@@ -273,7 +273,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                     fillColor: FlutterFlowTheme.of(context)
                                         .primaryBackground,
                                     contentPadding:
-                                        const EdgeInsetsDirectional.fromSTEB(
+                                        EdgeInsetsDirectional.fromSTEB(
                                             16.0, 19.0, 16.0, 19.0),
                                     hoverColor: FlutterFlowTheme.of(context)
                                         .primaryBackground,
@@ -299,7 +299,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                               ],
                             ),
                           ),
-                        ].divide(const SizedBox(width: 16.0)),
+                        ].divide(SizedBox(width: 16.0)),
                       ),
                       Column(
                         mainAxisSize: MainAxisSize.max,
@@ -313,7 +313,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 5.0),
                                       child: RichText(
                                         textScaler:
@@ -369,7 +369,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                       onTap: () async {
                                         if ((widget.type == Flag.Update) ||
                                             (widget.type == Flag.Add)) {
-                                          final datePicked1Date =
+                                          final _datePicked1Date =
                                               await showDatePicker(
                                             context: context,
                                             initialDate: getCurrentTimestamp,
@@ -416,13 +416,19 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                             },
                                           );
 
-                                          if (datePicked1Date != null) {
+                                          if (_datePicked1Date != null) {
                                             safeSetState(() {
                                               _model.datePicked1 = DateTime(
-                                                datePicked1Date.year,
-                                                datePicked1Date.month,
-                                                datePicked1Date.day,
+                                                _datePicked1Date.year,
+                                                _datePicked1Date.month,
+                                                _datePicked1Date.day,
                                               );
+                                            });
+                                          } else if (_model.datePicked1 !=
+                                              null) {
+                                            safeSetState(() {
+                                              _model.datePicked1 =
+                                                  getCurrentTimestamp;
                                             });
                                           }
                                           safeSetState(() {
@@ -458,7 +464,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                         ),
                                         child: Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   12.0, 0.0, 12.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -466,7 +472,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                                 MainAxisAlignment.spaceBetween,
                                             children: [
                                               Expanded(
-                                                child: SizedBox(
+                                                child: Container(
                                                   width: 200.0,
                                                   child: TextFormField(
                                                     controller: _model
@@ -502,7 +508,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                                               ),
                                                       enabledBorder:
                                                           OutlineInputBorder(
-                                                        borderSide: const BorderSide(
+                                                        borderSide: BorderSide(
                                                           color:
                                                               Color(0x00000000),
                                                           width: 1.0,
@@ -513,7 +519,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                                       ),
                                                       focusedBorder:
                                                           OutlineInputBorder(
-                                                        borderSide: const BorderSide(
+                                                        borderSide: BorderSide(
                                                           color:
                                                               Color(0x00000000),
                                                           width: 1.0,
@@ -547,7 +553,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                                                 .circular(8.0),
                                                       ),
                                                       contentPadding:
-                                                          const EdgeInsetsDirectional
+                                                          EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   16.0,
                                                                   19.0,
@@ -586,7 +592,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                     ),
                                     if (_model.isPickStartDate == true)
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 10.0, 0.0, 0.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
@@ -613,7 +619,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 5.0),
                                       child: RichText(
                                         textScaler:
@@ -669,7 +675,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                       onTap: () async {
                                         if ((widget.type == Flag.Update) ||
                                             (widget.type == Flag.Add)) {
-                                          final datePicked2Date =
+                                          final _datePicked2Date =
                                               await showDatePicker(
                                             context: context,
                                             initialDate: getCurrentTimestamp,
@@ -716,13 +722,19 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                             },
                                           );
 
-                                          if (datePicked2Date != null) {
+                                          if (_datePicked2Date != null) {
                                             safeSetState(() {
                                               _model.datePicked2 = DateTime(
-                                                datePicked2Date.year,
-                                                datePicked2Date.month,
-                                                datePicked2Date.day,
+                                                _datePicked2Date.year,
+                                                _datePicked2Date.month,
+                                                _datePicked2Date.day,
                                               );
+                                            });
+                                          } else if (_model.datePicked2 !=
+                                              null) {
+                                            safeSetState(() {
+                                              _model.datePicked2 =
+                                                  getCurrentTimestamp;
                                             });
                                           }
                                           safeSetState(() {
@@ -757,7 +769,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                         ),
                                         child: Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   12.0, 0.0, 12.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -765,7 +777,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                                 MainAxisAlignment.spaceBetween,
                                             children: [
                                               Expanded(
-                                                child: SizedBox(
+                                                child: Container(
                                                   width: 200.0,
                                                   child: TextFormField(
                                                     controller: _model
@@ -799,7 +811,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                                               ),
                                                       enabledBorder:
                                                           OutlineInputBorder(
-                                                        borderSide: const BorderSide(
+                                                        borderSide: BorderSide(
                                                           color:
                                                               Color(0x00000000),
                                                           width: 1.0,
@@ -810,7 +822,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                                       ),
                                                       focusedBorder:
                                                           OutlineInputBorder(
-                                                        borderSide: const BorderSide(
+                                                        borderSide: BorderSide(
                                                           color:
                                                               Color(0x00000000),
                                                           width: 1.0,
@@ -875,7 +887,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                     ),
                                     if (_model.isPickEndDate == true)
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 10.0, 0.0, 0.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
@@ -896,9 +908,9 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                   ],
                                 ),
                               ),
-                            ].divide(const SizedBox(width: 16.0)),
+                            ].divide(SizedBox(width: 16.0)),
                           ),
-                        ].divide(const SizedBox(height: 2.0)),
+                        ].divide(SizedBox(height: 2.0)),
                       ),
                       Row(
                         mainAxisSize: MainAxisSize.max,
@@ -909,7 +921,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 5.0),
                                   child: RichText(
                                     textScaler:
@@ -972,7 +984,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                         Shadow(
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryText,
-                                          offset: const Offset(2.0, 2.0),
+                                          offset: Offset(2.0, 2.0),
                                           blurRadius: 2.0,
                                         )
                                       ],
@@ -1013,7 +1025,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                     fillColor: FlutterFlowTheme.of(context)
                                         .primaryBackground,
                                     contentPadding:
-                                        const EdgeInsetsDirectional.fromSTEB(
+                                        EdgeInsetsDirectional.fromSTEB(
                                             20.0, 18.0, 20.0, 18.0),
                                     hoverColor: FlutterFlowTheme.of(context)
                                         .primaryBackground,
@@ -1044,13 +1056,13 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                           ),
                         ],
                       ),
-                    ].divide(const SizedBox(height: 16.0)),
+                    ].divide(SizedBox(height: 16.0)),
                   ),
                 ),
               ),
             ),
             Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 150.0, 0.0),
+              padding: EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 150.0, 0.0),
               child: Builder(
                 builder: (context) {
                   if ((widget.type == Flag.Add) ||
@@ -1079,7 +1091,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                               '798khadn' /* Save */,
                             ),
                             btAction: () async {
-                              var shouldSetState = false;
+                              var _shouldSetState = false;
                               if (widget.type == Flag.Update) {
                                 if ((_model.startdateTextController.text ==
                                             '') &&
@@ -1092,7 +1104,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                     _model.isPickStartDate = true;
                                     _model.isPickEndDate = true;
                                     safeSetState(() {});
-                                    if (shouldSetState) safeSetState(() {});
+                                    if (_shouldSetState) safeSetState(() {});
                                     return;
                                   } else {
                                     _model.isPickStartDate = false;
@@ -1126,7 +1138,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                             .validate()) {
                                       return;
                                     }
-                                    if (shouldSetState) safeSetState(() {});
+                                    if (_shouldSetState) safeSetState(() {});
                                     return;
                                   } else if (_model.startdateTextController.text ==
                                           '') {
@@ -1144,7 +1156,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                             .validate()) {
                                       return;
                                     }
-                                    if (shouldSetState) safeSetState(() {});
+                                    if (_shouldSetState) safeSetState(() {});
                                     return;
                                   } else {
                                     _model.isPickStartDate = false;
@@ -1183,7 +1195,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                   endDate: _model.endateTextController.text,
                                 );
 
-                                shouldSetState = true;
+                                _shouldSetState = true;
                                 if ((_model.apiResult68v?.succeeded ?? true)) {
                                   context.safePop();
                                 } else {
@@ -1191,13 +1203,13 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                     context: context,
                                     builder: (alertDialogContext) {
                                       return AlertDialog(
-                                        title: const Text('Message'),
-                                        content: const Text('Update Error'),
+                                        title: Text('Message'),
+                                        content: Text('Update Error'),
                                         actions: [
                                           TextButton(
                                             onPressed: () => Navigator.pop(
                                                 alertDialogContext),
-                                            child: const Text('Ok'),
+                                            child: Text('Ok'),
                                           ),
                                         ],
                                       );
@@ -1216,7 +1228,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                   id: widget.details?.id,
                                 );
 
-                                shouldSetState = true;
+                                _shouldSetState = true;
                                 if ((_model.apiResult7ag?.succeeded ?? true)) {
                                   context.safePop();
                                 } else {
@@ -1224,13 +1236,13 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                     context: context,
                                     builder: (alertDialogContext) {
                                       return AlertDialog(
-                                        title: const Text('Message'),
-                                        content: const Text('Add Error'),
+                                        title: Text('Message'),
+                                        content: Text('Add Error'),
                                         actions: [
                                           TextButton(
                                             onPressed: () => Navigator.pop(
                                                 alertDialogContext),
-                                            child: const Text('Ok'),
+                                            child: Text('Ok'),
                                           ),
                                         ],
                                       );
@@ -1249,7 +1261,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                     _model.isPickStartDate = true;
                                     _model.isPickEndDate = true;
                                     safeSetState(() {});
-                                    if (shouldSetState) safeSetState(() {});
+                                    if (_shouldSetState) safeSetState(() {});
                                     return;
                                   } else {
                                     _model.isPickStartDate = false;
@@ -1283,7 +1295,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                             .validate()) {
                                       return;
                                     }
-                                    if (shouldSetState) safeSetState(() {});
+                                    if (_shouldSetState) safeSetState(() {});
                                     return;
                                   } else if (_model.startdateTextController.text ==
                                           '') {
@@ -1301,7 +1313,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                             .validate()) {
                                       return;
                                     }
-                                    if (shouldSetState) safeSetState(() {});
+                                    if (_shouldSetState) safeSetState(() {});
                                     return;
                                   } else {
                                     _model.isPickStartDate = false;
@@ -1359,7 +1371,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                       );
                                 }
 
-                                shouldSetState = true;
+                                _shouldSetState = true;
                                 if ((_model.apiResultCreate?.succeeded ??
                                     true)) {
                                   context.safePop();
@@ -1368,7 +1380,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                     context: context,
                                     builder: (alertDialogContext) {
                                       return AlertDialog(
-                                        title: const Text('Message'),
+                                        title: Text('Message'),
                                         content: Text(getJsonField(
                                           (_model.apiResultCreate?.jsonBody ??
                                               ''),
@@ -1378,7 +1390,7 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                                           TextButton(
                                             onPressed: () => Navigator.pop(
                                                 alertDialogContext),
-                                            child: const Text('Ok'),
+                                            child: Text('Ok'),
                                           ),
                                         ],
                                       );
@@ -1388,16 +1400,16 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                               }
 
                               FFAppState().update(() {});
-                              if (shouldSetState) safeSetState(() {});
+                              if (_shouldSetState) safeSetState(() {});
                             },
                             exception: () async {},
                           ),
                         ),
-                      ].divide(const SizedBox(width: 16.0)),
+                      ].divide(SizedBox(width: 16.0)),
                     );
                   } else {
                     return Padding(
-                      padding: const EdgeInsetsDirectional.fromSTEB(
+                      padding: EdgeInsetsDirectional.fromSTEB(
                           10.0, 15.0, 10.0, 15.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
@@ -1415,14 +1427,14 @@ class _CSpecialDayDetailWidgetState extends State<CSpecialDayDetailWidget> {
                               exception: () async {},
                             ),
                           ),
-                        ].divide(const SizedBox(width: 16.0)),
+                        ].divide(SizedBox(width: 16.0)),
                       ),
                     );
                   }
                 },
               ),
             ),
-          ].divide(const SizedBox(height: 16.0)),
+          ].divide(SizedBox(height: 16.0)),
         ),
       ),
     );

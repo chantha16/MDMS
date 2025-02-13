@@ -44,9 +44,9 @@ class _PagenationComponentWidgetState extends State<PagenationComponentWidget> {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      decoration: const BoxDecoration(),
+      decoration: BoxDecoration(),
       child: Padding(
-        padding: const EdgeInsetsDirectional.fromSTEB(16.0, 3.0, 16.0, 3.0),
+        padding: EdgeInsetsDirectional.fromSTEB(16.0, 3.0, 16.0, 3.0),
         child: Row(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.start,
@@ -55,7 +55,7 @@ class _PagenationComponentWidgetState extends State<PagenationComponentWidget> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SizedBox(
+                Container(
                   width: 60.0,
                   child: TextFormField(
                     controller: _model.textController,
@@ -75,7 +75,7 @@ class _PagenationComponentWidgetState extends State<PagenationComponentWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
+                        borderSide: BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
@@ -128,7 +128,7 @@ class _PagenationComponentWidgetState extends State<PagenationComponentWidget> {
                         fontWeight: FontWeight.w600,
                       ),
                 ),
-              ].divide(const SizedBox(width: 5.0)),
+              ].divide(SizedBox(width: 5.0)),
             ),
             Expanded(
               child: Row(
@@ -158,7 +158,7 @@ class _PagenationComponentWidgetState extends State<PagenationComponentWidget> {
                     ),
                     child: Padding(
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
+                          EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
                       child: Text(
                         FFLocalizations.of(context).getText(
                           'ktwsynom' /* 1 */,
@@ -187,10 +187,10 @@ class _PagenationComponentWidgetState extends State<PagenationComponentWidget> {
                       print('IconButton pressed ...');
                     },
                   ),
-                ].divide(const SizedBox(width: 4.0)),
+                ].divide(SizedBox(width: 4.0)),
               ),
             ),
-          ].divide(const SizedBox(width: 12.0)),
+          ].divide(SizedBox(width: 12.0)),
         ),
       ),
     );

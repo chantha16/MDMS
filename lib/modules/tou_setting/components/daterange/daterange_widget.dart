@@ -60,7 +60,7 @@ class _DaterangeWidgetState extends State<DaterangeWidget> {
           ),
         ),
         child: Padding(
-          padding: const EdgeInsetsDirectional.fromSTEB(15.0, 10.0, 15.0, 10.0),
+          padding: EdgeInsetsDirectional.fromSTEB(15.0, 10.0, 15.0, 10.0),
           child: Column(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.center,
@@ -85,7 +85,7 @@ class _DaterangeWidgetState extends State<DaterangeWidget> {
                     color: FlutterFlowTheme.of(context).primary,
                     size: 20.0,
                   ),
-                ].divide(const SizedBox(width: 8.0)),
+                ].divide(SizedBox(width: 8.0)),
               ),
             ],
           ),

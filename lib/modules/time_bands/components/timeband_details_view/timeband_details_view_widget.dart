@@ -55,7 +55,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
     return Container(
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        borderRadius: const BorderRadius.only(
+        borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
           topLeft: Radius.circular(16.0),
@@ -66,7 +66,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
         mainAxisSize: MainAxisSize.max,
         children: [
           Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 15.0, 0.0),
+            padding: EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 15.0, 0.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               children: [
@@ -85,9 +85,9 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                             fontWeight: FontWeight.w600,
                           ),
                     ),
-                  ].divide(const SizedBox(height: 3.0)),
+                  ].divide(SizedBox(height: 3.0)),
                 ),
-              ].divide(const SizedBox(width: 16.0)),
+              ].divide(SizedBox(width: 16.0)),
             ),
           ),
           Expanded(
@@ -95,16 +95,16 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
               key: _model.formKey,
               autovalidateMode: AutovalidateMode.disabled,
               child: Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 15.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 15.0, 0.0),
                 child: Container(
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                     borderRadius: BorderRadius.circular(14.0),
                   ),
-                  alignment: const AlignmentDirectional(0.0, 0.0),
+                  alignment: AlignmentDirectional(0.0, 0.0),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 15.0),
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 15.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -117,7 +117,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 5.0),
                                     child: RichText(
                                       textScaler:
@@ -189,7 +189,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                           Shadow(
                                             color: FlutterFlowTheme.of(context)
                                                 .secondaryText,
-                                            offset: const Offset(2.0, 2.0),
+                                            offset: Offset(2.0, 2.0),
                                             blurRadius: 2.0,
                                           )
                                         ],
@@ -234,7 +234,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                       fillColor: FlutterFlowTheme.of(context)
                                           .primaryBackground,
                                       contentPadding:
-                                          const EdgeInsetsDirectional.fromSTEB(
+                                          EdgeInsetsDirectional.fromSTEB(
                                               18.0, 18.0, 18.0, 18.0),
                                       hoverColor: FlutterFlowTheme.of(context)
                                           .primaryBackground,
@@ -248,7 +248,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                         Shadow(
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryText,
-                                          offset: const Offset(2.0, 2.0),
+                                          offset: Offset(2.0, 2.0),
                                           blurRadius: 2.0,
                                         )
                                       ],
@@ -267,7 +267,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 5.0),
                                     child: RichText(
                                       textScaler:
@@ -336,7 +336,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                           Shadow(
                                             color: FlutterFlowTheme.of(context)
                                                 .secondaryText,
-                                            offset: const Offset(2.0, 2.0),
+                                            offset: Offset(2.0, 2.0),
                                             blurRadius: 2.0,
                                           )
                                         ],
@@ -381,7 +381,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                       fillColor: FlutterFlowTheme.of(context)
                                           .primaryBackground,
                                       contentPadding:
-                                          const EdgeInsetsDirectional.fromSTEB(
+                                          EdgeInsetsDirectional.fromSTEB(
                                               16.0, 18.0, 16.0, 18.0),
                                       hoverColor: FlutterFlowTheme.of(context)
                                           .primaryBackground,
@@ -400,10 +400,10 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                 ],
                               ),
                             ),
-                          ].divide(const SizedBox(width: 15.0)),
+                          ].divide(SizedBox(width: 15.0)),
                         ),
                         Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 15.0, 0.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -414,7 +414,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 5.0),
                                       child: RichText(
                                         textScaler:
@@ -439,7 +439,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                                   .getText(
                                                 '915hxx3l' /*  * */,
                                               ),
-                                              style: const TextStyle(
+                                              style: TextStyle(
                                                 fontWeight: FontWeight.normal,
                                               ),
                                             )
@@ -462,14 +462,6 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                       opaque: false,
                                       cursor: MouseCursor.defer ??
                                           MouseCursor.defer,
-                                      onEnter: ((event) async {
-                                        safeSetState(() =>
-                                            _model.mouseRegionHovered1 = true);
-                                      }),
-                                      onExit: ((event) async {
-                                        safeSetState(() =>
-                                            _model.mouseRegionHovered1 = false);
-                                      }),
                                       child: Container(
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
@@ -483,13 +475,13 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                         ),
                                         child: Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 2.0, 0.0, 2.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Padding(
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         8.0, 0.0, 8.0, 0.0),
                                                 child: InkWell(
@@ -502,7 +494,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                                   highlightColor:
                                                       Colors.transparent,
                                                   onTap: () async {
-                                                    final datePicked1Time =
+                                                    final _datePicked1Time =
                                                         await showTimePicker(
                                                       context: context,
                                                       initialTime: TimeOfDay
@@ -560,7 +552,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                                         );
                                                       },
                                                     );
-                                                    if (datePicked1Time !=
+                                                    if (_datePicked1Time !=
                                                         null) {
                                                       safeSetState(() {
                                                         _model.datePicked1 =
@@ -571,10 +563,17 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                                               .month,
                                                           getCurrentTimestamp
                                                               .day,
-                                                          datePicked1Time.hour,
-                                                          datePicked1Time
+                                                          _datePicked1Time.hour,
+                                                          _datePicked1Time
                                                               .minute,
                                                         );
+                                                      });
+                                                    } else if (_model
+                                                            .datePicked1 !=
+                                                        null) {
+                                                      safeSetState(() {
+                                                        _model.datePicked1 =
+                                                            getCurrentTimestamp;
                                                       });
                                                     }
                                                   },
@@ -589,7 +588,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                                     ),
                                                     child: Padding(
                                                       padding:
-                                                          const EdgeInsets.all(12.0),
+                                                          EdgeInsets.all(12.0),
                                                       child: Row(
                                                         mainAxisSize:
                                                             MainAxisSize.max,
@@ -620,7 +619,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                                                       0.0,
                                                                 ),
                                                           ),
-                                                        ].divide(const SizedBox(
+                                                        ].divide(SizedBox(
                                                             width: 8.0)),
                                                       ),
                                                     ),
@@ -641,7 +640,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                                         ),
                                               ),
                                               Padding(
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         8.0, 0.0, 8.0, 0.0),
                                                 child: InkWell(
@@ -654,7 +653,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                                   highlightColor:
                                                       Colors.transparent,
                                                   onTap: () async {
-                                                    final datePicked2Time =
+                                                    final _datePicked2Time =
                                                         await showTimePicker(
                                                       context: context,
                                                       initialTime: TimeOfDay
@@ -712,7 +711,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                                         );
                                                       },
                                                     );
-                                                    if (datePicked2Time !=
+                                                    if (_datePicked2Time !=
                                                         null) {
                                                       safeSetState(() {
                                                         _model.datePicked2 =
@@ -723,10 +722,17 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                                               .month,
                                                           getCurrentTimestamp
                                                               .day,
-                                                          datePicked2Time.hour,
-                                                          datePicked2Time
+                                                          _datePicked2Time.hour,
+                                                          _datePicked2Time
                                                               .minute,
                                                         );
+                                                      });
+                                                    } else if (_model
+                                                            .datePicked2 !=
+                                                        null) {
+                                                      safeSetState(() {
+                                                        _model.datePicked2 =
+                                                            getCurrentTimestamp;
                                                       });
                                                     }
                                                   },
@@ -741,7 +747,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                                     ),
                                                     child: Padding(
                                                       padding:
-                                                          const EdgeInsets.all(12.0),
+                                                          EdgeInsets.all(12.0),
                                                       child: Row(
                                                         mainAxisSize:
                                                             MainAxisSize.max,
@@ -772,7 +778,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                                                       0.0,
                                                                 ),
                                                           ),
-                                                        ].divide(const SizedBox(
+                                                        ].divide(SizedBox(
                                                             width: 8.0)),
                                                       ),
                                                     ),
@@ -783,6 +789,14 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                           ),
                                         ),
                                       ),
+                                      onEnter: ((event) async {
+                                        safeSetState(() =>
+                                            _model.mouseRegionHovered1 = true);
+                                      }),
+                                      onExit: ((event) async {
+                                        safeSetState(() =>
+                                            _model.mouseRegionHovered1 = false);
+                                      }),
                                     ),
                                   ],
                                 ),
@@ -793,7 +807,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 5.0),
                                       child: RichText(
                                         textScaler:
@@ -840,7 +854,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             10.0, 10.0, 10.0, 10.0),
                                         child: FlutterFlowChoiceChips(
                                           options: [
@@ -944,11 +958,11 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                   ],
                                 ),
                               ),
-                            ].divide(const SizedBox(width: 15.0)),
+                            ].divide(SizedBox(width: 15.0)),
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 15.0, 0.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -959,7 +973,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 5.0),
                                       child: RichText(
                                         textScaler:
@@ -984,7 +998,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                                   .getText(
                                                 'm24c5j95' /*  * */,
                                               ),
-                                              style: const TextStyle(),
+                                              style: TextStyle(),
                                             )
                                           ],
                                           style: FlutterFlowTheme.of(context)
@@ -1046,7 +1060,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                         borderColor: Colors.transparent,
                                         borderWidth: 0.0,
                                         borderRadius: 8.0,
-                                        margin: const EdgeInsetsDirectional.fromSTEB(
+                                        margin: EdgeInsetsDirectional.fromSTEB(
                                             12.0, 0.0, 12.0, 0.0),
                                         hidesUnderline: true,
                                         isOverButton: false,
@@ -1063,7 +1077,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 5.0),
                                       child: RichText(
                                         textScaler:
@@ -1102,14 +1116,6 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                       opaque: false,
                                       cursor: MouseCursor.defer ??
                                           MouseCursor.defer,
-                                      onEnter: ((event) async {
-                                        safeSetState(() =>
-                                            _model.mouseRegionHovered2 = true);
-                                      }),
-                                      onExit: ((event) async {
-                                        safeSetState(() =>
-                                            _model.mouseRegionHovered2 = false);
-                                      }),
                                       child: Container(
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
@@ -1123,7 +1129,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                         ),
                                         child: Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   15.0, 8.0, 0.0, 8.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -1135,7 +1141,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                                   children: [
                                                     Align(
                                                       alignment:
-                                                          const AlignmentDirectional(
+                                                          AlignmentDirectional(
                                                               -1.0, 0.0),
                                                       child: Theme(
                                                         data: ThemeData(
@@ -1202,22 +1208,30 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                                           ),
                                                     ),
                                                   ].divide(
-                                                      const SizedBox(width: 15.0)),
+                                                      SizedBox(width: 15.0)),
                                                 ),
                                               ),
                                             ],
                                           ),
                                         ),
                                       ),
+                                      onEnter: ((event) async {
+                                        safeSetState(() =>
+                                            _model.mouseRegionHovered2 = true);
+                                      }),
+                                      onExit: ((event) async {
+                                        safeSetState(() =>
+                                            _model.mouseRegionHovered2 = false);
+                                      }),
                                     ),
                                   ],
                                 ),
                               ),
-                            ].divide(const SizedBox(width: 15.0)),
+                            ].divide(SizedBox(width: 15.0)),
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 15.0, 0.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -1228,7 +1242,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 5.0),
                                       child: RichText(
                                         textScaler:
@@ -1314,7 +1328,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                         borderColor: Colors.transparent,
                                         borderWidth: 0.0,
                                         borderRadius: 8.0,
-                                        margin: const EdgeInsetsDirectional.fromSTEB(
+                                        margin: EdgeInsetsDirectional.fromSTEB(
                                             12.0, 0.0, 12.0, 0.0),
                                         hidesUnderline: true,
                                         isOverButton: false,
@@ -1325,7 +1339,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                   ],
                                 ),
                               ),
-                            ].divide(const SizedBox(width: 15.0)),
+                            ].divide(SizedBox(width: 15.0)),
                           ),
                         ),
                         Row(
@@ -1333,14 +1347,14 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                           children: [
                             Expanded(
                               child: Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 15.0, 0.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 5.0),
                                       child: RichText(
                                         textScaler:
@@ -1394,7 +1408,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryText,
-                                              offset: const Offset(2.0, 2.0),
+                                              offset: Offset(2.0, 2.0),
                                               blurRadius: 2.0,
                                             )
                                           ],
@@ -1439,7 +1453,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                                         fillColor: FlutterFlowTheme.of(context)
                                             .primaryBackground,
                                         contentPadding:
-                                            const EdgeInsetsDirectional.fromSTEB(
+                                            EdgeInsetsDirectional.fromSTEB(
                                                 20.0, 18.0, 20.0, 18.0),
                                         hoverColor: FlutterFlowTheme.of(context)
                                             .primaryBackground,
@@ -1471,7 +1485,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
             ),
           ),
           Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(10.0, 15.0, 10.0, 15.0),
+            padding: EdgeInsetsDirectional.fromSTEB(10.0, 15.0, 10.0, 15.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.end,
@@ -1501,7 +1515,7 @@ class _TimebandDetailsViewWidgetState extends State<TimebandDetailsViewWidget> {
                     exception: () async {},
                   ),
                 ),
-              ].divide(const SizedBox(width: 15.0)),
+              ].divide(SizedBox(width: 15.0)),
             ),
           ),
         ],

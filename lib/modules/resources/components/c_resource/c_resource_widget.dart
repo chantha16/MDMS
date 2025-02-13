@@ -41,7 +41,7 @@ class _CResourceWidgetState extends State<CResourceWidget> {
     return Container(
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        borderRadius: const BorderRadius.only(
+        borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
           topLeft: Radius.circular(22.0),
@@ -53,7 +53,7 @@ class _CResourceWidgetState extends State<CResourceWidget> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(24.0, 20.0, 24.0, 0.0),
+            padding: EdgeInsetsDirectional.fromSTEB(24.0, 20.0, 24.0, 0.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               children: [
@@ -62,7 +62,7 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                   height: 50.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).primary,
-                    borderRadius: const BorderRadius.only(
+                    borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(0.0),
                       bottomRight: Radius.circular(20.0),
                       topLeft: Radius.circular(0.0),
@@ -99,17 +99,17 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                               fontWeight: FontWeight.w500,
                             ),
                       ),
-                    ].divide(const SizedBox(height: 5.0)),
+                    ].divide(SizedBox(height: 5.0)),
                   ),
                 ),
-              ].divide(const SizedBox(width: 10.0)),
+              ].divide(SizedBox(width: 10.0)),
             ),
           ),
           Expanded(
             child: Container(
-              decoration: const BoxDecoration(),
+              decoration: BoxDecoration(),
               child: Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 24.0),
+                padding: EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 24.0),
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -121,7 +121,7 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                           borderRadius: BorderRadius.circular(16.0),
                         ),
                         child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               20.0, 20.0, 20.0, 20.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
@@ -138,7 +138,7 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                       borderRadius: BorderRadius.circular(16.0),
                                     ),
                                     child: Align(
-                                      alignment: const AlignmentDirectional(0.0, 0.0),
+                                      alignment: AlignmentDirectional(0.0, 0.0),
                                       child: Icon(
                                         Icons.play_circle_outline,
                                         color: FlutterFlowTheme.of(context)
@@ -162,7 +162,7 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                           fontWeight: FontWeight.w600,
                                         ),
                                   ),
-                                ].divide(const SizedBox(width: 15.0)),
+                                ].divide(SizedBox(width: 15.0)),
                               ),
                               ListView(
                                 padding: EdgeInsets.zero,
@@ -171,7 +171,7 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                 scrollDirection: Axis.vertical,
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         12.0, 12.0, 12.0, 12.0),
                                     child: Container(
                                       decoration: BoxDecoration(
@@ -181,7 +181,7 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                             BorderRadius.circular(8.0),
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsets.all(12.0),
+                                        padding: EdgeInsets.all(12.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
@@ -238,13 +238,13 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                                     ),
                                                   ],
                                                 ),
-                                              ].divide(const SizedBox(width: 12.0)),
+                                              ].divide(SizedBox(width: 12.0)),
                                             ),
                                             FlutterFlowIconButton(
                                               borderColor: Colors.transparent,
                                               borderRadius: 8.0,
                                               buttonSize: 40.0,
-                                              fillColor: const Color(0xFFE3F2FD),
+                                              fillColor: Color(0xFFE3F2FD),
                                               icon: Icon(
                                                 Icons.chevron_right,
                                                 color:
@@ -256,13 +256,13 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                                 print('IconButton pressed ...');
                                               },
                                             ),
-                                          ].divide(const SizedBox(width: 16.0)),
+                                          ].divide(SizedBox(width: 16.0)),
                                         ),
                                       ),
                                     ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         12.0, 12.0, 12.0, 12.0),
                                     child: Container(
                                       decoration: BoxDecoration(
@@ -272,7 +272,7 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                             BorderRadius.circular(8.0),
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsets.all(12.0),
+                                        padding: EdgeInsets.all(12.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
@@ -329,13 +329,13 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                                     ),
                                                   ],
                                                 ),
-                                              ].divide(const SizedBox(width: 12.0)),
+                                              ].divide(SizedBox(width: 12.0)),
                                             ),
                                             FlutterFlowIconButton(
                                               borderColor: Colors.transparent,
                                               borderRadius: 8.0,
                                               buttonSize: 40.0,
-                                              fillColor: const Color(0xFFE3F2FD),
+                                              fillColor: Color(0xFFE3F2FD),
                                               icon: Icon(
                                                 Icons.chevron_right,
                                                 color:
@@ -347,14 +347,14 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                                 print('IconButton pressed ...');
                                               },
                                             ),
-                                          ].divide(const SizedBox(width: 16.0)),
+                                          ].divide(SizedBox(width: 16.0)),
                                         ),
                                       ),
                                     ),
                                   ),
                                 ],
                               ),
-                            ].divide(const SizedBox(height: 16.0)),
+                            ].divide(SizedBox(height: 16.0)),
                           ),
                         ),
                       ),
@@ -364,7 +364,7 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                           borderRadius: BorderRadius.circular(16.0),
                         ),
                         child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               20.0, 20.0, 20.0, 20.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
@@ -381,7 +381,7 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                       borderRadius: BorderRadius.circular(16.0),
                                     ),
                                     child: Align(
-                                      alignment: const AlignmentDirectional(0.0, 0.0),
+                                      alignment: AlignmentDirectional(0.0, 0.0),
                                       child: Icon(
                                         Icons.folder,
                                         color: FlutterFlowTheme.of(context)
@@ -405,7 +405,7 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                           fontWeight: FontWeight.w600,
                                         ),
                                   ),
-                                ].divide(const SizedBox(width: 15.0)),
+                                ].divide(SizedBox(width: 15.0)),
                               ),
                               ListView(
                                 padding: EdgeInsets.zero,
@@ -414,7 +414,7 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                 scrollDirection: Axis.vertical,
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         12.0, 12.0, 12.0, 12.0),
                                     child: Container(
                                       decoration: BoxDecoration(
@@ -424,7 +424,7 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                             BorderRadius.circular(8.0),
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsets.all(12.0),
+                                        padding: EdgeInsets.all(12.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
@@ -481,13 +481,13 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                                     ),
                                                   ],
                                                 ),
-                                              ].divide(const SizedBox(width: 12.0)),
+                                              ].divide(SizedBox(width: 12.0)),
                                             ),
                                             FlutterFlowIconButton(
                                               borderColor: Colors.transparent,
                                               borderRadius: 8.0,
                                               buttonSize: 40.0,
-                                              fillColor: const Color(0xFFE3F2FD),
+                                              fillColor: Color(0xFFE3F2FD),
                                               icon: Icon(
                                                 Icons.download,
                                                 color:
@@ -499,13 +499,13 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                                 print('IconButton pressed ...');
                                               },
                                             ),
-                                          ].divide(const SizedBox(width: 16.0)),
+                                          ].divide(SizedBox(width: 16.0)),
                                         ),
                                       ),
                                     ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         12.0, 12.0, 12.0, 12.0),
                                     child: Container(
                                       decoration: BoxDecoration(
@@ -515,7 +515,7 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                             BorderRadius.circular(8.0),
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsets.all(12.0),
+                                        padding: EdgeInsets.all(12.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
@@ -572,13 +572,13 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                                     ),
                                                   ],
                                                 ),
-                                              ].divide(const SizedBox(width: 12.0)),
+                                              ].divide(SizedBox(width: 12.0)),
                                             ),
                                             FlutterFlowIconButton(
                                               borderColor: Colors.transparent,
                                               borderRadius: 8.0,
                                               buttonSize: 40.0,
-                                              fillColor: const Color(0xFFE3F2FD),
+                                              fillColor: Color(0xFFE3F2FD),
                                               icon: Icon(
                                                 Icons.download,
                                                 color:
@@ -590,13 +590,13 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                                 print('IconButton pressed ...');
                                               },
                                             ),
-                                          ].divide(const SizedBox(width: 16.0)),
+                                          ].divide(SizedBox(width: 16.0)),
                                         ),
                                       ),
                                     ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         12.0, 12.0, 12.0, 12.0),
                                     child: Container(
                                       decoration: BoxDecoration(
@@ -606,7 +606,7 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                             BorderRadius.circular(8.0),
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsets.all(12.0),
+                                        padding: EdgeInsets.all(12.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
@@ -663,13 +663,13 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                                     ),
                                                   ],
                                                 ),
-                                              ].divide(const SizedBox(width: 12.0)),
+                                              ].divide(SizedBox(width: 12.0)),
                                             ),
                                             FlutterFlowIconButton(
                                               borderColor: Colors.transparent,
                                               borderRadius: 8.0,
                                               buttonSize: 40.0,
-                                              fillColor: const Color(0xFFE3F2FD),
+                                              fillColor: Color(0xFFE3F2FD),
                                               icon: Icon(
                                                 Icons.download,
                                                 color:
@@ -681,14 +681,14 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                                 print('IconButton pressed ...');
                                               },
                                             ),
-                                          ].divide(const SizedBox(width: 16.0)),
+                                          ].divide(SizedBox(width: 16.0)),
                                         ),
                                       ),
                                     ),
                                   ),
                                 ],
                               ),
-                            ].divide(const SizedBox(height: 16.0)),
+                            ].divide(SizedBox(height: 16.0)),
                           ),
                         ),
                       ),
@@ -698,13 +698,13 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                           borderRadius: BorderRadius.circular(16.0),
                         ),
                         child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               20.0, 20.0, 20.0, 20.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     12.0, 0.0, 12.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -720,7 +720,7 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                       ),
                                       child: Align(
                                         alignment:
-                                            const AlignmentDirectional(0.0, 0.0),
+                                            AlignmentDirectional(0.0, 0.0),
                                         child: Icon(
                                           Icons.update,
                                           color: FlutterFlowTheme.of(context)
@@ -744,11 +744,11 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                             fontWeight: FontWeight.w600,
                                           ),
                                     ),
-                                  ].divide(const SizedBox(width: 15.0)),
+                                  ].divide(SizedBox(width: 15.0)),
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     12.0, 0.0, 12.0, 0.0),
                                 child: Container(
                                   decoration: BoxDecoration(
@@ -757,7 +757,7 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                     borderRadius: BorderRadius.circular(8.0),
                                   ),
                                   child: Padding(
-                                    padding: const EdgeInsets.all(16.0),
+                                    padding: EdgeInsets.all(16.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       crossAxisAlignment:
@@ -791,16 +791,16 @@ class _CResourceWidgetState extends State<CResourceWidget> {
                                                 letterSpacing: 0.0,
                                               ),
                                         ),
-                                      ].divide(const SizedBox(height: 8.0)),
+                                      ].divide(SizedBox(height: 8.0)),
                                     ),
                                   ),
                                 ),
                               ),
-                            ].divide(const SizedBox(height: 16.0)),
+                            ].divide(SizedBox(height: 16.0)),
                           ),
                         ),
                       ),
-                    ].divide(const SizedBox(height: 24.0)),
+                    ].divide(SizedBox(height: 24.0)),
                   ),
                 ),
               ),

@@ -1,5 +1,5 @@
 import '/backend/schema/enums/enums.dart';
-import '/components/layout/main_layout_v2/main_layout_v2_widget.dart';
+import '/components/main_layout_v2/main_layout_v2_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/modules/deviecs/components/c_add_device/c_add_device_widget.dart';
@@ -51,7 +51,7 @@ class _FffffWidgetState extends State<FffffWidget> {
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutV2Widget(
               menu: MenuItems.Devices,
-              child: () => const CAddDeviceWidget(),
+              child: () => CAddDeviceWidget(),
             ),
           ),
         ),

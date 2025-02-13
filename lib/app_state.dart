@@ -22,7 +22,7 @@ class FFAppState extends ChangeNotifier {
   }
 
   Future initializePersistedState() async {
-    secureStorage = const FlutterSecureStorage();
+    secureStorage = FlutterSecureStorage();
     await _safeInitAsync(() async {
       _toggle = await secureStorage.getBool('ff_toggle') ?? _toggle;
     });
@@ -148,7 +148,7 @@ class FFAppState extends ChangeNotifier {
 
   late FlutterSecureStorage secureStorage;
 
-  Color _bgColor = const Color(0xff9b7693);
+  Color _bgColor = Color(4288378515);
   Color get bgColor => _bgColor;
   set bgColor(Color value) {
     _bgColor = value;
@@ -671,7 +671,7 @@ class FFAppState extends ChangeNotifier {
     selectedChip.insert(index, value);
   }
 
-  Color _selectedcolor = const Color(0xff996699);
+  Color _selectedcolor = Color(4288243353);
   Color get selectedcolor => _selectedcolor;
   set selectedcolor(Color value) {
     _selectedcolor = value;
@@ -706,7 +706,7 @@ class FFAppState extends ChangeNotifier {
     itemResponseState.insert(index, value);
   }
 
-  Color _unselectedcolor = const Color(0x00000000);
+  Color _unselectedcolor = Color(0);
   Color get unselectedcolor => _unselectedcolor;
   set unselectedcolor(Color value) {
     _unselectedcolor = value;
@@ -1241,12 +1241,12 @@ extension FlutterSecureStorageExtensions on FlutterSecureStorage {
         if (result == null || result.isEmpty) {
           return null;
         }
-        return const CsvToListConverter()
+        return CsvToListConverter()
             .convert(result)
             .first
             .map((e) => e.toString())
             .toList();
       });
   Future<void> setStringList(String key, List<String> value) async =>
-      await writeSync(key: key, value: const ListToCsvConverter().convert([value]));
+      await writeSync(key: key, value: ListToCsvConverter().convert([value]));
 }

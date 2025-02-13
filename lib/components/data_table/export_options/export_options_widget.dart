@@ -49,7 +49,7 @@ class _ExportOptionsWidgetState extends State<ExportOptionsWidget> {
       width: 200.0,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        boxShadow: const [
+        boxShadow: [
           BoxShadow(
             blurRadius: 4.0,
             color: Color(0x33000000),
@@ -62,12 +62,12 @@ class _ExportOptionsWidgetState extends State<ExportOptionsWidget> {
         borderRadius: BorderRadius.circular(12.0),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(15.0),
+        padding: EdgeInsets.all(15.0),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             Align(
-              alignment: const AlignmentDirectional(-1.0, 0.0),
+              alignment: AlignmentDirectional(-1.0, 0.0),
               child: Text(
                 FFLocalizations.of(context).getText(
                   'uqqzzq6p' /* Export Options */,
@@ -87,7 +87,7 @@ class _ExportOptionsWidgetState extends State<ExportOptionsWidget> {
               color: FlutterFlowTheme.of(context).alternate,
             ),
             Align(
-              alignment: const AlignmentDirectional(-1.0, -1.0),
+              alignment: AlignmentDirectional(-1.0, -1.0),
               child: FlutterFlowRadioButton(
                 options: [
                   FFLocalizations.of(context).getText(
@@ -124,7 +124,7 @@ class _ExportOptionsWidgetState extends State<ExportOptionsWidget> {
               ),
             ),
             Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+              padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
               child: FFButtonWidget(
                 onPressed: () async {
                   await widget.action?.call(
@@ -148,9 +148,9 @@ class _ExportOptionsWidgetState extends State<ExportOptionsWidget> {
                 options: FFButtonOptions(
                   width: double.infinity,
                   height: 40.0,
-                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   iconPadding:
-                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).primary,
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Inter Tight',
@@ -162,7 +162,7 @@ class _ExportOptionsWidgetState extends State<ExportOptionsWidget> {
                 ),
               ),
             ),
-          ].divide(const SizedBox(height: 5.0)),
+          ].divide(SizedBox(height: 5.0)),
         ),
       ),
     );

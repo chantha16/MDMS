@@ -15,7 +15,7 @@ class ExportoptionWidget extends StatefulWidget {
     this.action1,
     this.action2,
     this.action3,
-  }) : title = title ?? 'title';
+  }) : this.title = title ?? 'title';
 
   final String title;
   final String? text1;
@@ -56,13 +56,13 @@ class _ExportoptionWidgetState extends State<ExportoptionWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsetsDirectional.fromSTEB(24.0, 15.0, 24.0, 24.0),
+      padding: EdgeInsetsDirectional.fromSTEB(24.0, 15.0, 24.0, 24.0),
       child: Container(
         width: 200.0,
         height: 210.0,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          boxShadow: const [
+          boxShadow: [
             BoxShadow(
               blurRadius: 4.0,
               color: Color(0x33000000),
@@ -75,12 +75,12 @@ class _ExportoptionWidgetState extends State<ExportoptionWidget> {
           borderRadius: BorderRadius.circular(12.0),
         ),
         child: Padding(
-          padding: const EdgeInsetsDirectional.fromSTEB(10.0, 16.0, 10.0, 10.0),
+          padding: EdgeInsetsDirectional.fromSTEB(10.0, 16.0, 10.0, 10.0),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -113,12 +113,6 @@ class _ExportoptionWidgetState extends State<ExportoptionWidget> {
               MouseRegion(
                 opaque: false,
                 cursor: MouseCursor.defer ?? MouseCursor.defer,
-                onEnter: ((event) async {
-                  safeSetState(() => _model.mouseRegionHovered1 = true);
-                }),
-                onExit: ((event) async {
-                  safeSetState(() => _model.mouseRegionHovered1 = false);
-                }),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -131,11 +125,11 @@ class _ExportoptionWidgetState extends State<ExportoptionWidget> {
                     decoration: BoxDecoration(
                       color: _model.mouseRegionHovered1
                           ? FlutterFlowTheme.of(context).primaryBackground
-                          : const Color(0x00000000),
+                          : Color(0x00000000),
                       borderRadius: BorderRadius.circular(16.0),
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.all(7.0),
+                      padding: EdgeInsets.all(7.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -160,23 +154,23 @@ class _ExportoptionWidgetState extends State<ExportoptionWidget> {
                                       fontWeight: FontWeight.w500,
                                     ),
                               ),
-                            ].divide(const SizedBox(width: 8.0)),
+                            ].divide(SizedBox(width: 8.0)),
                           ),
-                        ].divide(const SizedBox(height: 12.0)),
+                        ].divide(SizedBox(height: 12.0)),
                       ),
                     ),
                   ),
                 ),
+                onEnter: ((event) async {
+                  safeSetState(() => _model.mouseRegionHovered1 = true);
+                }),
+                onExit: ((event) async {
+                  safeSetState(() => _model.mouseRegionHovered1 = false);
+                }),
               ),
               MouseRegion(
                 opaque: false,
                 cursor: MouseCursor.defer ?? MouseCursor.defer,
-                onEnter: ((event) async {
-                  safeSetState(() => _model.mouseRegionHovered2 = true);
-                }),
-                onExit: ((event) async {
-                  safeSetState(() => _model.mouseRegionHovered2 = false);
-                }),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -189,11 +183,11 @@ class _ExportoptionWidgetState extends State<ExportoptionWidget> {
                     decoration: BoxDecoration(
                       color: _model.mouseRegionHovered2
                           ? FlutterFlowTheme.of(context).primaryBackground
-                          : const Color(0x00000000),
+                          : Color(0x00000000),
                       borderRadius: BorderRadius.circular(16.0),
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.all(7.0),
+                      padding: EdgeInsets.all(7.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -218,23 +212,23 @@ class _ExportoptionWidgetState extends State<ExportoptionWidget> {
                                       fontWeight: FontWeight.w500,
                                     ),
                               ),
-                            ].divide(const SizedBox(width: 8.0)),
+                            ].divide(SizedBox(width: 8.0)),
                           ),
-                        ].divide(const SizedBox(height: 12.0)),
+                        ].divide(SizedBox(height: 12.0)),
                       ),
                     ),
                   ),
                 ),
+                onEnter: ((event) async {
+                  safeSetState(() => _model.mouseRegionHovered2 = true);
+                }),
+                onExit: ((event) async {
+                  safeSetState(() => _model.mouseRegionHovered2 = false);
+                }),
               ),
               MouseRegion(
                 opaque: false,
                 cursor: MouseCursor.defer ?? MouseCursor.defer,
-                onEnter: ((event) async {
-                  safeSetState(() => _model.mouseRegionHovered3 = true);
-                }),
-                onExit: ((event) async {
-                  safeSetState(() => _model.mouseRegionHovered3 = false);
-                }),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -247,18 +241,18 @@ class _ExportoptionWidgetState extends State<ExportoptionWidget> {
                     decoration: BoxDecoration(
                       color: _model.mouseRegionHovered3
                           ? FlutterFlowTheme.of(context).primaryBackground
-                          : const Color(0x00000000),
+                          : Color(0x00000000),
                       borderRadius: BorderRadius.circular(16.0),
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.all(7.0),
+                      padding: EdgeInsets.all(7.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              const FaIcon(
+                              FaIcon(
                                 FontAwesomeIcons.fileExcel,
                                 color: Color(0xFF055C52),
                                 size: 24.0,
@@ -276,15 +270,21 @@ class _ExportoptionWidgetState extends State<ExportoptionWidget> {
                                       fontWeight: FontWeight.w500,
                                     ),
                               ),
-                            ].divide(const SizedBox(width: 8.0)),
+                            ].divide(SizedBox(width: 8.0)),
                           ),
-                        ].divide(const SizedBox(height: 12.0)),
+                        ].divide(SizedBox(height: 12.0)),
                       ),
                     ),
                   ),
                 ),
+                onEnter: ((event) async {
+                  safeSetState(() => _model.mouseRegionHovered3 = true);
+                }),
+                onExit: ((event) async {
+                  safeSetState(() => _model.mouseRegionHovered3 = false);
+                }),
               ),
-            ].divide(const SizedBox(height: 5.0)),
+            ].divide(SizedBox(height: 5.0)),
           ),
         ),
       ),

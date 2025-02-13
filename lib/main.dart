@@ -22,7 +22,7 @@ void main() async {
 
   runApp(ChangeNotifierProvider(
     create: (context) => appState,
-    child: const MyApp(),
+    child: MyApp(),
   ));
 }
 
@@ -64,7 +64,7 @@ class _MyAppState extends State<MyApp> {
     _appStateNotifier = AppStateNotifier.instance;
     _router = createRouter(_appStateNotifier, widget.entryPage);
 
-    Future.delayed(const Duration(milliseconds: 1000),
+    Future.delayed(Duration(milliseconds: 1000),
         () => safeSetState(() => _appStateNotifier.stopShowingSplashImage()));
   }
 
@@ -81,7 +81,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: 'MDMS',
-      localizationsDelegates: const [
+      localizationsDelegates: [
         FFLocalizationsDelegate(),
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
@@ -100,15 +100,15 @@ class _MyAppState extends State<MyApp> {
         scrollbarTheme: ScrollbarThemeData(
           interactive: true,
           thickness: WidgetStateProperty.all(1.0),
-          radius: const Radius.circular(20.0),
+          radius: Radius.circular(20.0),
           thumbColor: WidgetStateProperty.resolveWith((states) {
             if (states.contains(WidgetState.dragged)) {
-              return const Color(0xff996699);
+              return Color(4288243353);
             }
             if (states.contains(WidgetState.hovered)) {
-              return const Color(0xff996699);
+              return Color(4288243353);
             }
-            return const Color(0xff996699);
+            return Color(4288243353);
           }),
         ),
         useMaterial3: false,
@@ -118,15 +118,15 @@ class _MyAppState extends State<MyApp> {
         scrollbarTheme: ScrollbarThemeData(
           interactive: true,
           thickness: WidgetStateProperty.all(1.0),
-          radius: const Radius.circular(20.0),
+          radius: Radius.circular(20.0),
           thumbColor: WidgetStateProperty.resolveWith((states) {
             if (states.contains(WidgetState.dragged)) {
-              return const Color(0xff996699);
+              return Color(4288243353);
             }
             if (states.contains(WidgetState.hovered)) {
-              return const Color(0xff996699);
+              return Color(4288243353);
             }
-            return const Color(0xff996699);
+            return Color(4288243353);
           }),
         ),
         useMaterial3: false,

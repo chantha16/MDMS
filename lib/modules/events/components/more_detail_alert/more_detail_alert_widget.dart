@@ -42,7 +42,7 @@ class _MoreDetailAlertWidgetState extends State<MoreDetailAlertWidget> {
       height: 235.0,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        boxShadow: const [
+        boxShadow: [
           BoxShadow(
             color: Color(0x33000000),
           )
@@ -50,7 +50,7 @@ class _MoreDetailAlertWidgetState extends State<MoreDetailAlertWidget> {
         borderRadius: BorderRadius.circular(12.0),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: EdgeInsets.all(16.0),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.start,
@@ -90,7 +90,7 @@ class _MoreDetailAlertWidgetState extends State<MoreDetailAlertWidget> {
                           letterSpacing: 0.0,
                         ),
                   ),
-                ].divide(const SizedBox(width: 12.0)),
+                ].divide(SizedBox(width: 12.0)),
               ),
             ),
             Row(
@@ -119,7 +119,7 @@ class _MoreDetailAlertWidgetState extends State<MoreDetailAlertWidget> {
                         letterSpacing: 0.0,
                       ),
                 ),
-              ].divide(const SizedBox(width: 12.0)),
+              ].divide(SizedBox(width: 12.0)),
             ),
             InkWell(
               splashColor: Colors.transparent,
@@ -155,7 +155,7 @@ class _MoreDetailAlertWidgetState extends State<MoreDetailAlertWidget> {
                           letterSpacing: 0.0,
                         ),
                   ),
-                ].divide(const SizedBox(width: 12.0)),
+                ].divide(SizedBox(width: 12.0)),
               ),
             ),
             InkWell(
@@ -192,7 +192,7 @@ class _MoreDetailAlertWidgetState extends State<MoreDetailAlertWidget> {
                           letterSpacing: 0.0,
                         ),
                   ),
-                ].divide(const SizedBox(width: 12.0)),
+                ].divide(SizedBox(width: 12.0)),
               ),
             ),
             Container(
@@ -201,7 +201,7 @@ class _MoreDetailAlertWidgetState extends State<MoreDetailAlertWidget> {
                 color: FlutterFlowTheme.of(context).alternate,
               ),
             ),
-          ].divide(const SizedBox(height: 15.0)),
+          ].divide(SizedBox(height: 15.0)),
         ),
       ),
     );

@@ -46,7 +46,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) =>
                 ),
               ),
             )
-          : entryPage ?? const DashboardPageWidget(),
+          : entryPage ?? DashboardPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
@@ -61,27 +61,27 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) =>
                     ),
                   ),
                 )
-              : entryPage ?? const DashboardPageWidget(),
+              : entryPage ?? DashboardPageWidget(),
         ),
         FFRoute(
           name: 'DevicesPage',
           path: '/devices',
-          builder: (context, params) => const DevicesPageWidget(),
+          builder: (context, params) => DevicesPageWidget(),
         ),
         FFRoute(
           name: 'ResourcesPage',
           path: '/resourcesPage',
-          builder: (context, params) => const ResourcesPageWidget(),
+          builder: (context, params) => ResourcesPageWidget(),
         ),
         FFRoute(
           name: 'AddDevicePage',
           path: '/pAddDevice',
-          builder: (context, params) => const AddDevicePageWidget(),
+          builder: (context, params) => AddDevicePageWidget(),
         ),
         FFRoute(
           name: 'DeviceSettingPage',
           path: '/pDeviceSetting',
-          builder: (context, params) => const DeviceSettingPageWidget(),
+          builder: (context, params) => DeviceSettingPageWidget(),
         ),
         FFRoute(
           name: 'DashboardPage',
@@ -96,67 +96,67 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) =>
         FFRoute(
           name: 'ResourcePage',
           path: '/resourcePage',
-          builder: (context, params) => const ResourcePageWidget(),
+          builder: (context, params) => ResourcePageWidget(),
         ),
         FFRoute(
           name: 'TouDetails',
           path: '/tou-details',
-          builder: (context, params) => const TouDetailsWidget(),
+          builder: (context, params) => TouDetailsWidget(),
         ),
         FFRoute(
           name: 'TouPage',
           path: '/tou',
-          builder: (context, params) => const TouPageWidget(),
+          builder: (context, params) => TouPageWidget(),
         ),
         FFRoute(
           name: 'TimeBandDetails',
           path: '/pAddTimeBand',
-          builder: (context, params) => const TimeBandDetailsWidget(),
+          builder: (context, params) => TimeBandDetailsWidget(),
         ),
         FFRoute(
           name: 'TimeBandPage',
           path: '/time-bands',
-          builder: (context, params) => const TimeBandPageWidget(),
+          builder: (context, params) => TimeBandPageWidget(),
         ),
         FFRoute(
           name: 'seasonmaintest',
           path: '/seasonmaintest',
-          builder: (context, params) => const SeasonmaintestWidget(),
+          builder: (context, params) => SeasonmaintestWidget(),
         ),
         FFRoute(
           name: 'EventPage',
           path: '/events',
-          builder: (context, params) => const EventPageWidget(),
+          builder: (context, params) => EventPageWidget(),
         ),
         FFRoute(
           name: 'EventDetailPage',
           path: '/event-deatails',
-          builder: (context, params) => const EventDetailPageWidget(),
+          builder: (context, params) => EventDetailPageWidget(),
         ),
         FFRoute(
           name: 'VideoPlayPage',
           path: '/videoPlayPage',
-          builder: (context, params) => const VideoPlayPageWidget(),
+          builder: (context, params) => VideoPlayPageWidget(),
         ),
         FFRoute(
           name: 'DeviceDetailsPage',
           path: '/deviceDetailsPage',
-          builder: (context, params) => const DeviceDetailsPageWidget(),
+          builder: (context, params) => DeviceDetailsPageWidget(),
         ),
         FFRoute(
           name: 'sandbox1',
           path: '/sandbox1',
-          builder: (context, params) => const Sandbox1Widget(),
+          builder: (context, params) => Sandbox1Widget(),
         ),
         FFRoute(
           name: 'sandbox3',
           path: '/sandbox3',
-          builder: (context, params) => const Sandbox3Widget(),
+          builder: (context, params) => Sandbox3Widget(),
         ),
         FFRoute(
           name: 'pSeason',
           path: '/Season',
-          builder: (context, params) => const PSeasonWidget(),
+          builder: (context, params) => PSeasonWidget(),
         ),
         FFRoute(
           name: 'pSeasonDetail',
@@ -253,12 +253,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) =>
         FFRoute(
           name: 'ProductSettingPage',
           path: '/productSettingPage',
-          builder: (context, params) => const ProductSettingPageWidget(),
+          builder: (context, params) => ProductSettingPageWidget(),
         ),
         FFRoute(
           name: 'fffff',
           path: '/fffff',
-          builder: (context, params) => const FffffWidget(),
+          builder: (context, params) => FffffWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -424,7 +424,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {

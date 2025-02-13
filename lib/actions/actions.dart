@@ -47,7 +47,7 @@ Future validateAuth(BuildContext context) async {
           context.goNamed(
             'ResourcesPage',
             extra: <String, dynamic>{
-              kTransitionInfoKey: const TransitionInfo(
+              kTransitionInfoKey: TransitionInfo(
                 hasTransition: true,
                 transitionType: PageTransitionType.fade,
                 duration: Duration(milliseconds: 0),
@@ -88,7 +88,7 @@ Future checkSessionTokenBlock(BuildContext context) async {
         context.pushNamed(
           'ResourcesPage',
           extra: <String, dynamic>{
-            kTransitionInfoKey: const TransitionInfo(
+            kTransitionInfoKey: TransitionInfo(
               hasTransition: true,
               transitionType: PageTransitionType.fade,
               duration: Duration(milliseconds: 0),
@@ -143,7 +143,7 @@ Future logoutBlock(BuildContext context) async {
             color: FlutterFlowTheme.of(context).info,
           ),
         ),
-        duration: const Duration(milliseconds: 4000),
+        duration: Duration(milliseconds: 4000),
         backgroundColor: FlutterFlowTheme.of(context).error,
       ),
     );

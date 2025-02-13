@@ -43,7 +43,7 @@ class _CustomColumnsAlertWidgetState extends State<CustomColumnsAlertWidget> {
       height: 400.0,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        boxShadow: const [
+        boxShadow: [
           BoxShadow(
             blurRadius: 4.0,
             color: Color(0x1A000000),
@@ -57,7 +57,7 @@ class _CustomColumnsAlertWidgetState extends State<CustomColumnsAlertWidget> {
         borderRadius: BorderRadius.circular(12.0),
       ),
       child: Padding(
-        padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+        padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
@@ -84,7 +84,7 @@ class _CustomColumnsAlertWidgetState extends State<CustomColumnsAlertWidget> {
                 ),
                 child: Padding(
                   padding:
-                      const EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
+                      EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 12.0, 12.0),
                   child: SingleChildScrollView(
                     primary: false,
                     child: Column(
@@ -99,7 +99,7 @@ class _CustomColumnsAlertWidgetState extends State<CustomColumnsAlertWidget> {
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(4.0),
                               ),
-                              alignment: const AlignmentDirectional(0.0, 0.0),
+                              alignment: AlignmentDirectional(0.0, 0.0),
                               child: Theme(
                                 data: ThemeData(
                                   checkboxTheme: CheckboxThemeData(
@@ -141,7 +141,7 @@ class _CustomColumnsAlertWidgetState extends State<CustomColumnsAlertWidget> {
                                     letterSpacing: 0.0,
                                   ),
                             ),
-                          ].divide(const SizedBox(width: 8.0)),
+                          ].divide(SizedBox(width: 8.0)),
                         ),
                         Row(
                           mainAxisSize: MainAxisSize.max,
@@ -152,7 +152,7 @@ class _CustomColumnsAlertWidgetState extends State<CustomColumnsAlertWidget> {
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(4.0),
                               ),
-                              alignment: const AlignmentDirectional(0.0, 0.0),
+                              alignment: AlignmentDirectional(0.0, 0.0),
                               child: Theme(
                                 data: ThemeData(
                                   checkboxTheme: CheckboxThemeData(
@@ -194,7 +194,7 @@ class _CustomColumnsAlertWidgetState extends State<CustomColumnsAlertWidget> {
                                     letterSpacing: 0.0,
                                   ),
                             ),
-                          ].divide(const SizedBox(width: 8.0)),
+                          ].divide(SizedBox(width: 8.0)),
                         ),
                         Row(
                           mainAxisSize: MainAxisSize.max,
@@ -205,7 +205,7 @@ class _CustomColumnsAlertWidgetState extends State<CustomColumnsAlertWidget> {
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(4.0),
                               ),
-                              alignment: const AlignmentDirectional(0.0, 0.0),
+                              alignment: AlignmentDirectional(0.0, 0.0),
                               child: Theme(
                                 data: ThemeData(
                                   checkboxTheme: CheckboxThemeData(
@@ -247,7 +247,7 @@ class _CustomColumnsAlertWidgetState extends State<CustomColumnsAlertWidget> {
                                     letterSpacing: 0.0,
                                   ),
                             ),
-                          ].divide(const SizedBox(width: 8.0)),
+                          ].divide(SizedBox(width: 8.0)),
                         ),
                         Row(
                           mainAxisSize: MainAxisSize.max,
@@ -258,7 +258,7 @@ class _CustomColumnsAlertWidgetState extends State<CustomColumnsAlertWidget> {
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(4.0),
                               ),
-                              alignment: const AlignmentDirectional(0.0, 0.0),
+                              alignment: AlignmentDirectional(0.0, 0.0),
                               child: Theme(
                                 data: ThemeData(
                                   checkboxTheme: CheckboxThemeData(
@@ -300,7 +300,7 @@ class _CustomColumnsAlertWidgetState extends State<CustomColumnsAlertWidget> {
                                     letterSpacing: 0.0,
                                   ),
                             ),
-                          ].divide(const SizedBox(width: 8.0)),
+                          ].divide(SizedBox(width: 8.0)),
                         ),
                         Row(
                           mainAxisSize: MainAxisSize.max,
@@ -311,7 +311,7 @@ class _CustomColumnsAlertWidgetState extends State<CustomColumnsAlertWidget> {
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(4.0),
                               ),
-                              alignment: const AlignmentDirectional(0.0, 0.0),
+                              alignment: AlignmentDirectional(0.0, 0.0),
                               child: Theme(
                                 data: ThemeData(
                                   checkboxTheme: CheckboxThemeData(
@@ -353,7 +353,7 @@ class _CustomColumnsAlertWidgetState extends State<CustomColumnsAlertWidget> {
                                     letterSpacing: 0.0,
                                   ),
                             ),
-                          ].divide(const SizedBox(width: 8.0)),
+                          ].divide(SizedBox(width: 8.0)),
                         ),
                         Row(
                           mainAxisSize: MainAxisSize.max,
@@ -364,7 +364,7 @@ class _CustomColumnsAlertWidgetState extends State<CustomColumnsAlertWidget> {
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(4.0),
                               ),
-                              alignment: const AlignmentDirectional(0.0, 0.0),
+                              alignment: AlignmentDirectional(0.0, 0.0),
                               child: Theme(
                                 data: ThemeData(
                                   checkboxTheme: CheckboxThemeData(
@@ -406,7 +406,7 @@ class _CustomColumnsAlertWidgetState extends State<CustomColumnsAlertWidget> {
                                     letterSpacing: 0.0,
                                   ),
                             ),
-                          ].divide(const SizedBox(width: 8.0)),
+                          ].divide(SizedBox(width: 8.0)),
                         ),
                         Row(
                           mainAxisSize: MainAxisSize.max,
@@ -417,7 +417,7 @@ class _CustomColumnsAlertWidgetState extends State<CustomColumnsAlertWidget> {
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(4.0),
                               ),
-                              alignment: const AlignmentDirectional(0.0, 0.0),
+                              alignment: AlignmentDirectional(0.0, 0.0),
                               child: Theme(
                                 data: ThemeData(
                                   checkboxTheme: CheckboxThemeData(
@@ -459,7 +459,7 @@ class _CustomColumnsAlertWidgetState extends State<CustomColumnsAlertWidget> {
                                     letterSpacing: 0.0,
                                   ),
                             ),
-                          ].divide(const SizedBox(width: 8.0)),
+                          ].divide(SizedBox(width: 8.0)),
                         ),
                         Row(
                           mainAxisSize: MainAxisSize.max,
@@ -470,7 +470,7 @@ class _CustomColumnsAlertWidgetState extends State<CustomColumnsAlertWidget> {
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(4.0),
                               ),
-                              alignment: const AlignmentDirectional(0.0, 0.0),
+                              alignment: AlignmentDirectional(0.0, 0.0),
                               child: Theme(
                                 data: ThemeData(
                                   checkboxTheme: CheckboxThemeData(
@@ -512,7 +512,7 @@ class _CustomColumnsAlertWidgetState extends State<CustomColumnsAlertWidget> {
                                     letterSpacing: 0.0,
                                   ),
                             ),
-                          ].divide(const SizedBox(width: 8.0)),
+                          ].divide(SizedBox(width: 8.0)),
                         ),
                         Row(
                           mainAxisSize: MainAxisSize.max,
@@ -523,7 +523,7 @@ class _CustomColumnsAlertWidgetState extends State<CustomColumnsAlertWidget> {
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(4.0),
                               ),
-                              alignment: const AlignmentDirectional(0.0, 0.0),
+                              alignment: AlignmentDirectional(0.0, 0.0),
                               child: Theme(
                                 data: ThemeData(
                                   checkboxTheme: CheckboxThemeData(
@@ -565,7 +565,7 @@ class _CustomColumnsAlertWidgetState extends State<CustomColumnsAlertWidget> {
                                     letterSpacing: 0.0,
                                   ),
                             ),
-                          ].divide(const SizedBox(width: 8.0)),
+                          ].divide(SizedBox(width: 8.0)),
                         ),
                         Row(
                           mainAxisSize: MainAxisSize.max,
@@ -576,7 +576,7 @@ class _CustomColumnsAlertWidgetState extends State<CustomColumnsAlertWidget> {
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(4.0),
                               ),
-                              alignment: const AlignmentDirectional(0.0, 0.0),
+                              alignment: AlignmentDirectional(0.0, 0.0),
                               child: Theme(
                                 data: ThemeData(
                                   checkboxTheme: CheckboxThemeData(
@@ -618,15 +618,15 @@ class _CustomColumnsAlertWidgetState extends State<CustomColumnsAlertWidget> {
                                     letterSpacing: 0.0,
                                   ),
                             ),
-                          ].divide(const SizedBox(width: 8.0)),
+                          ].divide(SizedBox(width: 8.0)),
                         ),
-                      ].divide(const SizedBox(height: 12.0)),
+                      ].divide(SizedBox(height: 12.0)),
                     ),
                   ),
                 ),
               ),
             ),
-          ].divide(const SizedBox(height: 16.0)),
+          ].divide(SizedBox(height: 16.0)),
         ),
       ),
     );

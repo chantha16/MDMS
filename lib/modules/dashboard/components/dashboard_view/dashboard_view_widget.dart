@@ -116,10 +116,10 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                         options: FFButtonOptions(
                           width: 150.0,
                           height: 40.0,
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           iconAlignment: IconAlignment.start,
-                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
@@ -158,10 +158,10 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                         options: FFButtonOptions(
                           width: 150.0,
                           height: 40.0,
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           iconAlignment: IconAlignment.start,
-                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).primary,
                           textStyle:
@@ -179,7 +179,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                           borderRadius: BorderRadius.circular(12.0),
                         ),
                       ),
-                    ].divide(const SizedBox(width: 12.0)),
+                    ].divide(SizedBox(width: 12.0)),
                   ),
                   Row(
                     mainAxisSize: MainAxisSize.max,
@@ -188,14 +188,6 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                         child: MouseRegion(
                           opaque: false,
                           cursor: MouseCursor.defer ?? MouseCursor.defer,
-                          onEnter: ((event) async {
-                            safeSetState(
-                                () => _model.mouseRegionHovered1 = true);
-                          }),
-                          onExit: ((event) async {
-                            safeSetState(
-                                () => _model.mouseRegionHovered1 = false);
-                          }),
                           child: Container(
                             width: double.infinity,
                             decoration: BoxDecoration(
@@ -218,7 +210,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                 context.goNamed(
                                   'DevicesPage',
                                   extra: <String, dynamic>{
-                                    kTransitionInfoKey: const TransitionInfo(
+                                    kTransitionInfoKey: TransitionInfo(
                                       hasTransition: true,
                                       transitionType: PageTransitionType.fade,
                                       duration: Duration(milliseconds: 0),
@@ -231,7 +223,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         12.0, 12.0, 0.0, 12.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -251,7 +243,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                             ),
                                           ),
                                           alignment:
-                                              const AlignmentDirectional(0.0, 0.0),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Icon(
                                             Icons.devices_rounded,
                                             color: FlutterFlowTheme.of(context)
@@ -261,7 +253,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   12.0, 0.0, 0.0, 0.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -287,7 +279,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                         ),
                                               ),
                                               AutoSizeText(
-                                                key: const ValueKey('Total Device'),
+                                                key: ValueKey('Total Device'),
                                                 FFLocalizations.of(context)
                                                     .getText(
                                                   'zacb8sje' /* 3 */,
@@ -306,7 +298,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                               FontWeight.w600,
                                                         ),
                                               ),
-                                            ].divide(const SizedBox(height: 10.0)),
+                                            ].divide(SizedBox(height: 10.0)),
                                           ),
                                         ),
                                       ],
@@ -316,20 +308,20 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                               ),
                             ),
                           ),
+                          onEnter: ((event) async {
+                            safeSetState(
+                                () => _model.mouseRegionHovered1 = true);
+                          }),
+                          onExit: ((event) async {
+                            safeSetState(
+                                () => _model.mouseRegionHovered1 = false);
+                          }),
                         ),
                       ),
                       Expanded(
                         child: MouseRegion(
                           opaque: false,
                           cursor: MouseCursor.defer ?? MouseCursor.defer,
-                          onEnter: ((event) async {
-                            safeSetState(
-                                () => _model.mouseRegionHovered2 = true);
-                          }),
-                          onExit: ((event) async {
-                            safeSetState(
-                                () => _model.mouseRegionHovered2 = false);
-                          }),
                           child: Container(
                             width: double.infinity,
                             decoration: BoxDecoration(
@@ -348,7 +340,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       12.0, 12.0, 0.0, 12.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -367,7 +359,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                           ),
                                         ),
                                         alignment:
-                                            const AlignmentDirectional(0.0, 0.0),
+                                            AlignmentDirectional(0.0, 0.0),
                                         child: Icon(
                                           Icons.check_circle_outline,
                                           color:
@@ -376,7 +368,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             12.0, 0.0, 0.0, 0.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -402,7 +394,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                       ),
                                             ),
                                             AutoSizeText(
-                                              key: const ValueKey('Active Device'),
+                                              key: ValueKey('Active Device'),
                                               FFLocalizations.of(context)
                                                   .getText(
                                                 'se6x56ge' /* 2 */,
@@ -420,7 +412,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                     fontWeight: FontWeight.w600,
                                                   ),
                                             ),
-                                          ].divide(const SizedBox(height: 10.0)),
+                                          ].divide(SizedBox(height: 10.0)),
                                         ),
                                       ),
                                     ],
@@ -429,20 +421,20 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                               ],
                             ),
                           ),
+                          onEnter: ((event) async {
+                            safeSetState(
+                                () => _model.mouseRegionHovered2 = true);
+                          }),
+                          onExit: ((event) async {
+                            safeSetState(
+                                () => _model.mouseRegionHovered2 = false);
+                          }),
                         ),
                       ),
                       Expanded(
                         child: MouseRegion(
                           opaque: false,
                           cursor: MouseCursor.defer ?? MouseCursor.defer,
-                          onEnter: ((event) async {
-                            safeSetState(
-                                () => _model.mouseRegionHovered3 = true);
-                          }),
-                          onExit: ((event) async {
-                            safeSetState(
-                                () => _model.mouseRegionHovered3 = false);
-                          }),
                           child: Container(
                             width: double.infinity,
                             decoration: BoxDecoration(
@@ -461,7 +453,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: const EdgeInsets.all(12.0),
+                                  padding: EdgeInsets.all(12.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
@@ -479,7 +471,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                           ),
                                         ),
                                         alignment:
-                                            const AlignmentDirectional(0.0, 0.0),
+                                            AlignmentDirectional(0.0, 0.0),
                                         child: Icon(
                                           Icons.warning_amber_sharp,
                                           color: FlutterFlowTheme.of(context)
@@ -488,7 +480,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             12.0, 0.0, 0.0, 0.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -514,7 +506,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                       ),
                                             ),
                                             AutoSizeText(
-                                              key: const ValueKey('Alert'),
+                                              key: ValueKey('Alert'),
                                               FFLocalizations.of(context)
                                                   .getText(
                                                 'z3qjgi3x' /* 1 */,
@@ -532,7 +524,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                     fontWeight: FontWeight.w600,
                                                   ),
                                             ),
-                                          ].divide(const SizedBox(height: 10.0)),
+                                          ].divide(SizedBox(height: 10.0)),
                                         ),
                                       ),
                                     ],
@@ -541,16 +533,24 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                               ],
                             ),
                           ),
+                          onEnter: ((event) async {
+                            safeSetState(
+                                () => _model.mouseRegionHovered3 = true);
+                          }),
+                          onExit: ((event) async {
+                            safeSetState(
+                                () => _model.mouseRegionHovered3 = false);
+                          }),
                         ),
                       ),
-                    ].divide(const SizedBox(width: 12.0)),
+                    ].divide(SizedBox(width: 12.0)),
                   ),
                   Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Expanded(
                         child: Container(
-                          constraints: const BoxConstraints(
+                          constraints: BoxConstraints(
                             minWidth: 200.0,
                             minHeight: 100.0,
                             maxWidth: 260.0,
@@ -565,7 +565,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                             ),
                           ),
                           child: Padding(
-                            padding: const EdgeInsets.all(12.0),
+                            padding: EdgeInsets.all(12.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.min,
                               children: [
@@ -597,7 +597,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                     Column(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
-                                        SizedBox(
+                                        Container(
                                           width: 120.0,
                                           height: 120.0,
                                           child: FlutterFlowPieChart(
@@ -656,7 +656,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
-                                          ].divide(const SizedBox(width: 6.0)),
+                                          ].divide(SizedBox(width: 6.0)),
                                         ),
                                         Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -685,20 +685,20 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
-                                          ].divide(const SizedBox(width: 6.0)),
+                                          ].divide(SizedBox(width: 6.0)),
                                         ),
-                                      ].divide(const SizedBox(height: 24.0)),
+                                      ].divide(SizedBox(height: 24.0)),
                                     ),
                                   ],
                                 ),
-                              ].divide(const SizedBox(height: 8.0)),
+                              ].divide(SizedBox(height: 8.0)),
                             ),
                           ),
                         ),
                       ),
                       Expanded(
                         child: Container(
-                          constraints: const BoxConstraints(
+                          constraints: BoxConstraints(
                             minWidth: 200.0,
                             minHeight: 100.0,
                             maxWidth: 260.0,
@@ -713,7 +713,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                             ),
                           ),
                           child: Padding(
-                            padding: const EdgeInsets.all(12.0),
+                            padding: EdgeInsets.all(12.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.min,
                               children: [
@@ -738,13 +738,13 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                   ],
                                 ),
                                 Align(
-                                  alignment: const AlignmentDirectional(-1.0, 0.0),
+                                  alignment: AlignmentDirectional(-1.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
                                     children: [
-                                      SizedBox(
+                                      Container(
                                         width: 120.0,
                                         height: 120.0,
                                         child: FlutterFlowPieChart(
@@ -801,7 +801,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),
-                                            ].divide(const SizedBox(width: 6.0)),
+                                            ].divide(SizedBox(width: 6.0)),
                                           ),
                                           Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -831,21 +831,21 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),
-                                            ].divide(const SizedBox(width: 6.0)),
+                                            ].divide(SizedBox(width: 6.0)),
                                           ),
-                                        ].divide(const SizedBox(height: 24.0)),
+                                        ].divide(SizedBox(height: 24.0)),
                                       ),
                                     ],
                                   ),
                                 ),
-                              ].divide(const SizedBox(height: 8.0)),
+                              ].divide(SizedBox(height: 8.0)),
                             ),
                           ),
                         ),
                       ),
                       Expanded(
                         child: Container(
-                          constraints: const BoxConstraints(
+                          constraints: BoxConstraints(
                             minWidth: 200.0,
                             minHeight: 100.0,
                             maxWidth: 260.0,
@@ -860,7 +860,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                             ),
                           ),
                           child: Padding(
-                            padding: const EdgeInsets.all(12.0),
+                            padding: EdgeInsets.all(12.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.min,
                               children: [
@@ -889,7 +889,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    SizedBox(
+                                    Container(
                                       width: 120.0,
                                       height: 120.0,
                                       child: FlutterFlowPieChart(
@@ -945,7 +945,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
-                                          ].divide(const SizedBox(width: 6.0)),
+                                          ].divide(SizedBox(width: 6.0)),
                                         ),
                                         Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -974,18 +974,18 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
-                                          ].divide(const SizedBox(width: 6.0)),
+                                          ].divide(SizedBox(width: 6.0)),
                                         ),
-                                      ].divide(const SizedBox(height: 24.0)),
+                                      ].divide(SizedBox(height: 24.0)),
                                     ),
                                   ],
                                 ),
-                              ].divide(const SizedBox(height: 8.0)),
+                              ].divide(SizedBox(height: 8.0)),
                             ),
                           ),
                         ),
                       ),
-                    ].divide(const SizedBox(width: 12.0)),
+                    ].divide(SizedBox(width: 12.0)),
                   ),
                   Container(
                     decoration: BoxDecoration(
@@ -995,7 +995,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                       ),
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.all(12.0),
+                      padding: EdgeInsets.all(12.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -1066,7 +1066,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                         FlutterFlowTheme.of(context).alternate,
                                     borderWidth: 1.0,
                                     borderRadius: 14.0,
-                                    margin: const EdgeInsetsDirectional.fromSTEB(
+                                    margin: EdgeInsetsDirectional.fromSTEB(
                                         12.0, 0.0, 12.0, 0.0),
                                     hidesUnderline: true,
                                     isOverButton: false,
@@ -1079,7 +1079,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                         .secondaryText,
                                     size: 24.0,
                                   ),
-                                ].divide(const SizedBox(width: 12.0)),
+                                ].divide(SizedBox(width: 12.0)),
                               ),
                             ],
                           ),
@@ -1094,7 +1094,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                               ),
                             ),
                             child: Padding(
-                              padding: const EdgeInsets.all(12.0),
+                              padding: EdgeInsets.all(12.0),
                               child: FlutterFlowLineChart(
                                 data: [
                                   FFLineChartData(
@@ -1105,7 +1105,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                           FlutterFlowTheme.of(context).primary,
                                       barWidth: 2.0,
                                       isCurved: true,
-                                      dotData: const FlDotData(show: false),
+                                      dotData: FlDotData(show: false),
                                     ),
                                   ),
                                   FFLineChartData(
@@ -1115,19 +1115,19 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                       color: FlutterFlowTheme.of(context).error,
                                       barWidth: 2.0,
                                       isCurved: true,
-                                      dotData: const FlDotData(show: false),
+                                      dotData: FlDotData(show: false),
                                     ),
                                   )
                                 ],
-                                chartStylingInfo: const ChartStylingInfo(
+                                chartStylingInfo: ChartStylingInfo(
                                   backgroundColor: Color(0x00FFFFFF),
                                   showBorder: false,
                                 ),
-                                axisBounds: const AxisBounds(),
-                                xAxisLabelInfo: const AxisLabelInfo(
+                                axisBounds: AxisBounds(),
+                                xAxisLabelInfo: AxisLabelInfo(
                                   reservedSize: 32.0,
                                 ),
-                                yAxisLabelInfo: const AxisLabelInfo(
+                                yAxisLabelInfo: AxisLabelInfo(
                                   reservedSize: 40.0,
                                 ),
                               ),
@@ -1162,7 +1162,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                           letterSpacing: 0.0,
                                         ),
                                   ),
-                                ].divide(const SizedBox(width: 6.0)),
+                                ].divide(SizedBox(width: 6.0)),
                               ),
                               Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -1188,11 +1188,11 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                           letterSpacing: 0.0,
                                         ),
                                   ),
-                                ].divide(const SizedBox(width: 6.0)),
+                                ].divide(SizedBox(width: 6.0)),
                               ),
-                            ].divide(const SizedBox(width: 8.0)),
+                            ].divide(SizedBox(width: 8.0)),
                           ),
-                        ].divide(const SizedBox(height: 12.0)),
+                        ].divide(SizedBox(height: 12.0)),
                       ),
                     ),
                   ),
@@ -1212,12 +1212,12 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                         ),
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.all(12.0),
+                        padding: EdgeInsets.all(12.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 5.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -1241,7 +1241,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 10.0, 0.0, 10.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -1302,7 +1302,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                         borderColor: Colors.transparent,
                                         borderWidth: 0.0,
                                         borderRadius: 12.0,
-                                        margin: const EdgeInsetsDirectional.fromSTEB(
+                                        margin: EdgeInsetsDirectional.fromSTEB(
                                             12.0, 0.0, 12.0, 0.0),
                                         hidesUnderline: true,
                                         isOverButton: false,
@@ -1318,7 +1318,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       10.0, 10.0, 0.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -1344,7 +1344,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                   scrollDirection: Axis.vertical,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsets.all(12.0),
+                                      padding: EdgeInsets.all(12.0),
                                       child: SingleChildScrollView(
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -1375,7 +1375,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                         ),
                                                         child: Align(
                                                           alignment:
-                                                              const AlignmentDirectional(
+                                                              AlignmentDirectional(
                                                                   0.0, 0.0),
                                                           child: Icon(
                                                             Icons.wifi,
@@ -1430,11 +1430,11 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                                       0.0,
                                                                 ),
                                                           ),
-                                                        ].divide(const SizedBox(
+                                                        ].divide(SizedBox(
                                                             height: 2.0)),
                                                       ),
                                                     ].divide(
-                                                        const SizedBox(width: 12.0)),
+                                                        SizedBox(width: 12.0)),
                                                   ),
                                                 ),
                                                 RatingBar.builder(
@@ -1491,7 +1491,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                         ),
                                                         child: Align(
                                                           alignment:
-                                                              const AlignmentDirectional(
+                                                              AlignmentDirectional(
                                                                   0.0, 0.0),
                                                           child: Icon(
                                                             Icons.phone_iphone,
@@ -1546,11 +1546,11 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                                       0.0,
                                                                 ),
                                                           ),
-                                                        ].divide(const SizedBox(
+                                                        ].divide(SizedBox(
                                                             height: 2.0)),
                                                       ),
                                                     ].divide(
-                                                        const SizedBox(width: 12.0)),
+                                                        SizedBox(width: 12.0)),
                                                   ),
                                                 ),
                                                 RatingBar.builder(
@@ -1607,7 +1607,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                         ),
                                                         child: Align(
                                                           alignment:
-                                                              const AlignmentDirectional(
+                                                              AlignmentDirectional(
                                                                   0.0, 0.0),
                                                           child: FaIcon(
                                                             FontAwesomeIcons
@@ -1663,11 +1663,11 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                                       0.0,
                                                                 ),
                                                           ),
-                                                        ].divide(const SizedBox(
+                                                        ].divide(SizedBox(
                                                             height: 2.0)),
                                                       ),
                                                     ].divide(
-                                                        const SizedBox(width: 12.0)),
+                                                        SizedBox(width: 12.0)),
                                                   ),
                                                 ),
                                                 RatingBar.builder(
@@ -1676,7 +1676,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                               .ratingBarValue3 =
                                                           newValue),
                                                   itemBuilder:
-                                                      (context, index) => const Icon(
+                                                      (context, index) => Icon(
                                                     Icons.star_rounded,
                                                     color: Color(0x264B39EF),
                                                   ),
@@ -1689,11 +1689,11 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                           .accent1,
                                                   itemCount: 1,
                                                   itemSize: 24.0,
-                                                  glowColor: const Color(0x264B39EF),
+                                                  glowColor: Color(0x264B39EF),
                                                 ),
                                               ],
                                             ),
-                                          ].divide(const SizedBox(height: 12.0)),
+                                          ].divide(SizedBox(height: 12.0)),
                                         ),
                                       ),
                                     ),
@@ -1710,7 +1710,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                   ],
                                 ),
                                 Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       10.0, 10.0, 0.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -1736,7 +1736,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                   scrollDirection: Axis.vertical,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsets.all(12.0),
+                                      padding: EdgeInsets.all(12.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.min,
                                         children: [
@@ -1764,7 +1764,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                       ),
                                                       child: Align(
                                                         alignment:
-                                                            const AlignmentDirectional(
+                                                            AlignmentDirectional(
                                                                 0.0, 0.0),
                                                         child: Icon(
                                                           Icons.wifi,
@@ -1818,11 +1818,11 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                                     0.0,
                                                               ),
                                                         ),
-                                                      ].divide(const SizedBox(
+                                                      ].divide(SizedBox(
                                                           height: 2.0)),
                                                     ),
                                                   ].divide(
-                                                      const SizedBox(width: 12.0)),
+                                                      SizedBox(width: 12.0)),
                                                 ),
                                               ),
                                             ],
@@ -1857,7 +1857,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                const AlignmentDirectional(
+                                                                AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Icon(
                                                               Icons.wifi,
@@ -1912,10 +1912,10 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                                         0.0,
                                                                   ),
                                                             ),
-                                                          ].divide(const SizedBox(
+                                                          ].divide(SizedBox(
                                                               height: 2.0)),
                                                         ),
-                                                      ].divide(const SizedBox(
+                                                      ].divide(SizedBox(
                                                           width: 12.0)),
                                                     ),
                                                   ),
@@ -1948,7 +1948,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                         ),
                                                         child: Align(
                                                           alignment:
-                                                              const AlignmentDirectional(
+                                                              AlignmentDirectional(
                                                                   0.0, 0.0),
                                                           child: Icon(
                                                             Icons.wifi,
@@ -2003,11 +2003,11 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                                       0.0,
                                                                 ),
                                                           ),
-                                                        ].divide(const SizedBox(
+                                                        ].divide(SizedBox(
                                                             height: 2.0)),
                                                       ),
                                                     ].divide(
-                                                        const SizedBox(width: 12.0)),
+                                                        SizedBox(width: 12.0)),
                                                   ),
                                                 ),
                                               ],
@@ -2037,7 +2037,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                       ),
                                                       child: Align(
                                                         alignment:
-                                                            const AlignmentDirectional(
+                                                            AlignmentDirectional(
                                                                 0.0, 0.0),
                                                         child: Icon(
                                                           Icons.wifi,
@@ -2091,16 +2091,16 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                                     0.0,
                                                               ),
                                                         ),
-                                                      ].divide(const SizedBox(
+                                                      ].divide(SizedBox(
                                                           height: 2.0)),
                                                     ),
                                                   ].divide(
-                                                      const SizedBox(width: 12.0)),
+                                                      SizedBox(width: 12.0)),
                                                 ),
                                               ),
                                             ],
                                           ),
-                                        ].divide(const SizedBox(height: 12.0)),
+                                        ].divide(SizedBox(height: 12.0)),
                                       ),
                                     ),
                                   ],
@@ -2111,7 +2111,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                         ),
                       ),
                     ),
-                ].divide(const SizedBox(height: 12.0)),
+                ].divide(SizedBox(height: 12.0)),
               ),
             ],
           ),
@@ -2124,7 +2124,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
           Container(
             width: 350.0,
             height: 700.0,
-            constraints: const BoxConstraints(
+            constraints: BoxConstraints(
               maxHeight: 1100.0,
             ),
             decoration: BoxDecoration(
@@ -2135,12 +2135,12 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
               ),
             ),
             child: Padding(
-              padding: const EdgeInsets.all(12.0),
+              padding: EdgeInsets.all(12.0),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Padding(
-                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 5.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 5.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -2163,7 +2163,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 10.0),
+                        EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 10.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -2177,7 +2177,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                               ),
                             ),
                             child: FlutterFlowDropDown<String>(
-                              key: const ValueKey('Recent Devices'),
+                              key: ValueKey('Recent Devices'),
                               controller: _model.dropDownValueController3 ??=
                                   FormFieldController<String>(null),
                               options: List<String>.from(
@@ -2216,7 +2216,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                               borderColor: Colors.transparent,
                               borderWidth: 0.0,
                               borderRadius: 12.0,
-                              margin: const EdgeInsetsDirectional.fromSTEB(
+                              margin: EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 12.0, 0.0),
                               hidesUnderline: true,
                               isOverButton: false,
@@ -2232,7 +2232,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
+                        padding: EdgeInsetsDirectional.fromSTEB(
                             10.0, 10.0, 0.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -2259,7 +2259,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                         scrollDirection: Axis.vertical,
                         children: [
                           Padding(
-                            padding: const EdgeInsets.all(12.0),
+                            padding: EdgeInsets.all(12.0),
                             child: SingleChildScrollView(
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -2284,7 +2284,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                     BorderRadius.circular(24.0),
                                               ),
                                               child: Align(
-                                                alignment: const AlignmentDirectional(
+                                                alignment: AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Icon(
                                                   Icons.wifi,
@@ -2331,9 +2331,9 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                         letterSpacing: 0.0,
                                                       ),
                                                 ),
-                                              ].divide(const SizedBox(height: 2.0)),
+                                              ].divide(SizedBox(height: 2.0)),
                                             ),
-                                          ].divide(const SizedBox(width: 12.0)),
+                                          ].divide(SizedBox(width: 12.0)),
                                         ),
                                       ),
                                       RatingBar.builder(
@@ -2378,7 +2378,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                     BorderRadius.circular(24.0),
                                               ),
                                               child: Align(
-                                                alignment: const AlignmentDirectional(
+                                                alignment: AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Icon(
                                                   Icons.phone_iphone,
@@ -2425,9 +2425,9 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                         letterSpacing: 0.0,
                                                       ),
                                                 ),
-                                              ].divide(const SizedBox(height: 2.0)),
+                                              ].divide(SizedBox(height: 2.0)),
                                             ),
-                                          ].divide(const SizedBox(width: 12.0)),
+                                          ].divide(SizedBox(width: 12.0)),
                                         ),
                                       ),
                                       RatingBar.builder(
@@ -2472,7 +2472,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                     BorderRadius.circular(24.0),
                                               ),
                                               child: Align(
-                                                alignment: const AlignmentDirectional(
+                                                alignment: AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: FaIcon(
                                                   FontAwesomeIcons
@@ -2520,16 +2520,16 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                         letterSpacing: 0.0,
                                                       ),
                                                 ),
-                                              ].divide(const SizedBox(height: 2.0)),
+                                              ].divide(SizedBox(height: 2.0)),
                                             ),
-                                          ].divide(const SizedBox(width: 12.0)),
+                                          ].divide(SizedBox(width: 12.0)),
                                         ),
                                       ),
                                       RatingBar.builder(
                                         onRatingUpdate: (newValue) =>
                                             safeSetState(() => _model
                                                 .ratingBarValue6 = newValue),
-                                        itemBuilder: (context, index) => const Icon(
+                                        itemBuilder: (context, index) => Icon(
                                           Icons.star_rounded,
                                           color: Color(0x264B39EF),
                                         ),
@@ -2541,11 +2541,11 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                 .accent1,
                                         itemCount: 1,
                                         itemSize: 24.0,
-                                        glowColor: const Color(0x264B39EF),
+                                        glowColor: Color(0x264B39EF),
                                       ),
                                     ],
                                   ),
-                                ].divide(const SizedBox(height: 12.0)),
+                                ].divide(SizedBox(height: 12.0)),
                               ),
                             ),
                           ),
@@ -2561,7 +2561,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                         ],
                       ),
                       Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
+                        padding: EdgeInsetsDirectional.fromSTEB(
                             10.0, 10.0, 0.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -2587,7 +2587,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                         scrollDirection: Axis.vertical,
                         children: [
                           Padding(
-                            padding: const EdgeInsets.all(12.0),
+                            padding: EdgeInsets.all(12.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.min,
                               children: [
@@ -2611,7 +2611,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                   BorderRadius.circular(24.0),
                                             ),
                                             child: Align(
-                                              alignment: const AlignmentDirectional(
+                                              alignment: AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Icon(
                                                 Icons.wifi,
@@ -2657,9 +2657,9 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),
-                                            ].divide(const SizedBox(height: 2.0)),
+                                            ].divide(SizedBox(height: 2.0)),
                                           ),
-                                        ].divide(const SizedBox(width: 12.0)),
+                                        ].divide(SizedBox(width: 12.0)),
                                       ),
                                     ),
                                   ],
@@ -2690,7 +2690,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      const AlignmentDirectional(
+                                                      AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Icon(
                                                     Icons.wifi,
@@ -2736,9 +2736,9 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                           letterSpacing: 0.0,
                                                         ),
                                                   ),
-                                                ].divide(const SizedBox(height: 2.0)),
+                                                ].divide(SizedBox(height: 2.0)),
                                               ),
-                                            ].divide(const SizedBox(width: 12.0)),
+                                            ].divide(SizedBox(width: 12.0)),
                                           ),
                                         ),
                                       ],
@@ -2764,7 +2764,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                     BorderRadius.circular(24.0),
                                               ),
                                               child: Align(
-                                                alignment: const AlignmentDirectional(
+                                                alignment: AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Icon(
                                                   Icons.wifi,
@@ -2811,9 +2811,9 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                         letterSpacing: 0.0,
                                                       ),
                                                 ),
-                                              ].divide(const SizedBox(height: 2.0)),
+                                              ].divide(SizedBox(height: 2.0)),
                                             ),
-                                          ].divide(const SizedBox(width: 12.0)),
+                                          ].divide(SizedBox(width: 12.0)),
                                         ),
                                       ),
                                     ],
@@ -2839,7 +2839,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                   BorderRadius.circular(24.0),
                                             ),
                                             child: Align(
-                                              alignment: const AlignmentDirectional(
+                                              alignment: AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Icon(
                                                 Icons.wifi,
@@ -2885,14 +2885,14 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),
-                                            ].divide(const SizedBox(height: 2.0)),
+                                            ].divide(SizedBox(height: 2.0)),
                                           ),
-                                        ].divide(const SizedBox(width: 12.0)),
+                                        ].divide(SizedBox(width: 12.0)),
                                       ),
                                     ),
                                   ],
                                 ),
-                              ].divide(const SizedBox(height: 12.0)),
+                              ].divide(SizedBox(height: 12.0)),
                             ),
                           ),
                         ],
@@ -2903,7 +2903,7 @@ class _DashboardViewWidgetState extends State<DashboardViewWidget> {
               ),
             ),
           ),
-      ].divide(const SizedBox(width: 12.0)),
+      ].divide(SizedBox(width: 12.0)),
     );
   }
 }

@@ -1,5 +1,5 @@
 import '/backend/schema/enums/enums.dart';
-import '/components/layout/main_layout_v2/main_layout_v2_widget.dart';
+import '/components/main_layout_v2/main_layout_v2_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/modules/product_setting/components/product_setting_view/product_setting_view_widget.dart';
@@ -52,7 +52,7 @@ class _ProductSettingPageWidgetState extends State<ProductSettingPageWidget> {
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutV2Widget(
               menu: MenuItems.ProductSettings,
-              child: () => const ProductSettingViewWidget(),
+              child: () => ProductSettingViewWidget(),
             ),
           ),
         ),

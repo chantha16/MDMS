@@ -51,7 +51,7 @@ class _BarchatComsumptionWidgetState extends State<BarchatComsumptionWidget> {
         mainAxisSize: MainAxisSize.max,
         children: [
           Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 10.0),
+            padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 10.0),
             child: Row(
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.start,
@@ -78,12 +78,12 @@ class _BarchatComsumptionWidgetState extends State<BarchatComsumptionWidget> {
                 Expanded(
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
                     child: Container(
-                      decoration: const BoxDecoration(),
+                      decoration: BoxDecoration(),
                       child: Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                         child: FlutterFlowBarChart(
                           barData: [
                             FFBarChartData(
@@ -109,8 +109,8 @@ class _BarchatComsumptionWidgetState extends State<BarchatComsumptionWidget> {
                                 FlutterFlowTheme.of(context).secondaryText,
                             borderWidth: 1.0,
                           ),
-                          axisBounds: const AxisBounds(),
-                          xAxisLabelInfo: const AxisLabelInfo(
+                          axisBounds: AxisBounds(),
+                          xAxisLabelInfo: AxisLabelInfo(
                             reservedSize: 28.0,
                           ),
                           yAxisLabelInfo: AxisLabelInfo(

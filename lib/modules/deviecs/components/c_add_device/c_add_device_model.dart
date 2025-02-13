@@ -60,7 +60,7 @@ class CAddDeviceModel extends FlutterFlowModel<CAddDeviceWidget> {
   String? dropDownValue6;
   FormFieldController<String>? dropDownValueController6;
   // State field(s) for PlacePicker widget.
-  FFPlace placePickerValue = const FFPlace();
+  FFPlace placePickerValue = FFPlace();
   // State field(s) for TextField widget.
   FocusNode? textFieldFocusNode7;
   TextEditingController? textController7;

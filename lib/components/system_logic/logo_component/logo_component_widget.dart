@@ -49,7 +49,7 @@ class _LogoComponentWidgetState extends State<LogoComponentWidget> {
           : 'assets/images/Oone.png',
       height: 45.0,
       fit: BoxFit.contain,
-      alignment: const Alignment(-1.0, 0.0),
+      alignment: Alignment(-1.0, 0.0),
     );
   }
 }

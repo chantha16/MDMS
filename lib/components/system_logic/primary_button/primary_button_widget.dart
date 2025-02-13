@@ -59,8 +59,8 @@ class _PrimaryButtonWidgetState extends State<PrimaryButtonWidget> {
       options: FFButtonOptions(
         width: 120.0,
         height: 40.0,
-        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-        iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+        iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
         color: widget.fillcolor,
         textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
               fontFamily: 'Inter',

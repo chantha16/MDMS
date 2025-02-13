@@ -53,12 +53,12 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
     context.watch<FFAppState>();
 
     return Padding(
-      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 80.0, 0.0, 0.0),
+      padding: EdgeInsetsDirectional.fromSTEB(0.0, 80.0, 0.0, 0.0),
       child: Container(
         width: 400.0,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          boxShadow: const [
+          boxShadow: [
             BoxShadow(
               blurRadius: 4.0,
               color: Color(0x33000000),
@@ -68,7 +68,7 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
               ),
             )
           ],
-          borderRadius: const BorderRadius.only(
+          borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(0.0),
             bottomRight: Radius.circular(0.0),
             topLeft: Radius.circular(20.0),
@@ -79,7 +79,7 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
           ),
         ),
         child: Padding(
-          padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+          padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
           child: Column(
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -89,7 +89,7 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Align(
-                    alignment: const AlignmentDirectional(0.0, 0.0),
+                    alignment: AlignmentDirectional(0.0, 0.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -128,7 +128,7 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                         borderRadius: BorderRadius.circular(14.0),
                       ),
                       child: Align(
-                        alignment: const AlignmentDirectional(0.0, 0.0),
+                        alignment: AlignmentDirectional(0.0, 0.0),
                         child: InkWell(
                           splashColor: Colors.transparent,
                           focusColor: Colors.transparent,
@@ -146,7 +146,7 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                       ),
                     ),
                   ),
-                ].divide(const SizedBox(width: 20.0)),
+                ].divide(SizedBox(width: 20.0)),
               ),
               Expanded(
                 child: Column(
@@ -156,7 +156,7 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                       child: Column(
                         children: [
                           Align(
-                            alignment: const Alignment(0.0, 0),
+                            alignment: Alignment(0.0, 0),
                             child: TabBar(
                               labelColor:
                                   FlutterFlowTheme.of(context).primaryText,
@@ -199,7 +199,7 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                               controller: _model.tabBarController,
                               children: [
                                 Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 16.0, 0.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -281,7 +281,7 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                                       Expanded(
                                         child: Container(
                                           width: double.infinity,
-                                          color: const Color(0x00000000),
+                                          color: Color(0x00000000),
                                           child: ExpandableNotifier(
                                             controller: _model
                                                 .expandableExpandableController,
@@ -309,7 +309,7 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                                               collapsed: Container(
                                                 width: 100.0,
                                                 height: 1.0,
-                                                decoration: const BoxDecoration(),
+                                                decoration: BoxDecoration(),
                                               ),
                                               expanded: ListView(
                                                 padding: EdgeInsets.zero,
@@ -317,10 +317,10 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                                                 scrollDirection: Axis.vertical,
                                                 children: [
                                                   Container(
-                                                    decoration: const BoxDecoration(),
+                                                    decoration: BoxDecoration(),
                                                     child: Padding(
                                                       padding:
-                                                          const EdgeInsetsDirectional
+                                                          EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   6.0,
                                                                   6.0,
@@ -389,10 +389,10 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                                                     ),
                                                   ),
                                                   Container(
-                                                    decoration: const BoxDecoration(),
+                                                    decoration: BoxDecoration(),
                                                     child: Padding(
                                                       padding:
-                                                          const EdgeInsetsDirectional
+                                                          EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   6.0,
                                                                   6.0,
@@ -461,9 +461,9 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                                                     ),
                                                   ),
                                                 ].divide(
-                                                    const SizedBox(height: 12.0)),
+                                                    SizedBox(height: 12.0)),
                                               ),
-                                              theme: const ExpandableThemeData(
+                                              theme: ExpandableThemeData(
                                                 tapHeaderToExpand: true,
                                                 tapBodyToExpand: false,
                                                 tapBodyToCollapse: false,
@@ -476,11 +476,11 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                                           ),
                                         ),
                                       ),
-                                    ].divide(const SizedBox(height: 16.0)),
+                                    ].divide(SizedBox(height: 16.0)),
                                   ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 15.0, 0.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -497,8 +497,8 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                                           ),
                                         ),
                                         child: Padding(
-                                          padding: const EdgeInsets.all(5.0),
-                                          child: SizedBox(
+                                          padding: EdgeInsets.all(5.0),
+                                          child: Container(
                                             width: double.infinity,
                                             child: TextFormField(
                                               controller: _model.textController,
@@ -529,7 +529,7 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: const BorderSide(
+                                                  borderSide: BorderSide(
                                                     color: Color(0x00000000),
                                                     width: 1.0,
                                                   ),
@@ -539,7 +539,7 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                                                 ),
                                                 focusedBorder:
                                                     OutlineInputBorder(
-                                                  borderSide: const BorderSide(
+                                                  borderSide: BorderSide(
                                                     color: Color(0x00000000),
                                                     width: 1.0,
                                                   ),
@@ -601,7 +601,7 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                                         ),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 15.0, 0.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -623,7 +623,7 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                                         ),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 15.0, 0.0, 15.0),
                                         child: Container(
                                           decoration: BoxDecoration(
@@ -634,7 +634,7 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                                           ),
                                           child: Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     10.0, 10.0, 20.0, 10.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -658,7 +658,7 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                                                   ),
                                                   child: Align(
                                                     alignment:
-                                                        const AlignmentDirectional(
+                                                        AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Icon(
                                                       Icons.devices_rounded,
@@ -684,7 +684,7 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                                                         letterSpacing: 0.0,
                                                       ),
                                                 ),
-                                              ].divide(const SizedBox(width: 15.0)),
+                                              ].divide(SizedBox(width: 15.0)),
                                             ),
                                           ),
                                         ),
@@ -704,7 +704,7 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                                         children: [
                                           Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 10.0, 0.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -728,16 +728,16 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                                         ],
                                       ),
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             10.0, 15.0, 10.0, 0.0),
                                         child: SingleChildScrollView(
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Container(
-                                                decoration: const BoxDecoration(),
+                                                decoration: BoxDecoration(),
                                                 child: Padding(
-                                                  padding: const EdgeInsetsDirectional
+                                                  padding: EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 10.0, 0.0, 0.0),
                                                   child: Row(
@@ -784,7 +784,7 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                                                         ),
                                                       ),
                                                     ].divide(
-                                                        const SizedBox(width: 15.0)),
+                                                        SizedBox(width: 15.0)),
                                                   ),
                                                 ),
                                               ),
@@ -807,7 +807,7 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                                             scrollDirection: Axis.vertical,
                                             children: [
                                               Padding(
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         10.0, 15.0, 10.0, 0.0),
                                                 child: SingleChildScrollView(
@@ -817,10 +817,10 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                                                     children: [
                                                       Container(
                                                         decoration:
-                                                            const BoxDecoration(),
+                                                            BoxDecoration(),
                                                         child: Padding(
                                                           padding:
-                                                              const EdgeInsetsDirectional
+                                                              EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       10.0,
@@ -871,17 +871,17 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                                                                       ),
                                                                 ),
                                                               ),
-                                                            ].divide(const SizedBox(
+                                                            ].divide(SizedBox(
                                                                 width: 15.0)),
                                                           ),
                                                         ),
                                                       ),
                                                       Container(
                                                         decoration:
-                                                            const BoxDecoration(),
+                                                            BoxDecoration(),
                                                         child: Padding(
                                                           padding:
-                                                              const EdgeInsetsDirectional
+                                                              EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       10.0,
@@ -932,17 +932,17 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                                                                       ),
                                                                 ),
                                                               ),
-                                                            ].divide(const SizedBox(
+                                                            ].divide(SizedBox(
                                                                 width: 15.0)),
                                                           ),
                                                         ),
                                                       ),
                                                       Container(
                                                         decoration:
-                                                            const BoxDecoration(),
+                                                            BoxDecoration(),
                                                         child: Padding(
                                                           padding:
-                                                              const EdgeInsetsDirectional
+                                                              EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       10.0,
@@ -993,7 +993,7 @@ class _TOUSidebarWidgetState extends State<TOUSidebarWidget>
                                                                       ),
                                                                 ),
                                                               ),
-                                                            ].divide(const SizedBox(
+                                                            ].divide(SizedBox(
                                                                 width: 15.0)),
                                                           ),
                                                         ),

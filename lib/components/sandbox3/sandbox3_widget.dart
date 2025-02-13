@@ -63,7 +63,7 @@ class _Sandbox3WidgetState extends State<Sandbox3Widget> {
         body: SafeArea(
           top: true,
           child: Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: EdgeInsets.all(20.0),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               children: [

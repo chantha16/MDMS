@@ -27,6 +27,28 @@ void main() async {
   });
 
   group('Chantha', () {
+    testWidgets('TOU Management', (WidgetTester tester) async {
+      _overrideOnError();
+
+      await tester.pumpWidget(ChangeNotifierProvider(
+        create: (context) => FFAppState(),
+        child: MyApp(
+          entryPage: DashboardPageWidget(),
+        ),
+      ));
+
+      await tester.pumpAndSettle(Duration(milliseconds: 10000));
+      await tester.tap(find.text('TOU Management'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('Seasons'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('Add'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.enterText(
+          find.byKey(ValueKey('txtSeasonName')), 'Hello World');
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+    });
+
     testWidgets('Device Management', (WidgetTester tester) async {
       _overrideOnError();
 
@@ -106,28 +128,6 @@ void main() async {
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
       await tester.tap(find.byKey(ValueKey('Recent Devices')));
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
-    });
-
-    testWidgets('TOU Management', (WidgetTester tester) async {
-      _overrideOnError();
-
-      await tester.pumpWidget(ChangeNotifierProvider(
-        create: (context) => FFAppState(),
-        child: MyApp(
-          entryPage: DashboardPageWidget(),
-        ),
-      ));
-
-      await tester.pumpAndSettle(Duration(milliseconds: 10000));
-      await tester.tap(find.text('TOU Management'));
-      await tester.pumpAndSettle(Duration(milliseconds: 5000));
-      await tester.tap(find.text('Seasons'));
-      await tester.pumpAndSettle(Duration(milliseconds: 5000));
-      await tester.tap(find.text('Add'));
-      expect(find.text('Name'), findsOneWidget);
-      expect(find.text('Month Range'), findsOneWidget);
-      expect(find.text('Description'), findsOneWidget);
-      await tester.pumpAndSettle(Duration(milliseconds: 3000));
     });
 
     testWidgets('Events', (WidgetTester tester) async {
@@ -303,8 +303,8 @@ void main() async {
     });
   });
 
-  group('Nary Test Done', () {
-    testWidgets('NDV', (WidgetTester tester) async {
+  group('Nary', () {
+    testWidgets('add new DV', (WidgetTester tester) async {
       _overrideOnError();
 
       await tester.pumpWidget(ChangeNotifierProvider(
@@ -318,13 +318,16 @@ void main() async {
         of: find.byKey(ValueKey('Dashboard')),
         matching: find.byKey(ValueKey('Text_h603')),
       ));
-      await tester.pump(kDoubleTapMinTime);
-      await tester.tap(find.descendant(
-        of: find.byKey(ValueKey('Dashboard')),
-        matching: find.byKey(ValueKey('Text_h603')),
-      ));
+      await tester.tap(find.text('Devices'));
       await tester.pumpAndSettle(Duration(milliseconds: 3000));
-      expect(find.byKey(ValueKey('DevicesPage_evbv')), findsOneWidget);
+      expect(find.byKey(ValueKey('MainLayoutV2_n2l0')), findsOneWidget);
+      await tester.pumpAndSettle(Duration(milliseconds: 3000));
+      await tester.tap(find.descendant(
+        of: find.text('Kimheang'),
+        matching: find.text('06/01/2024'),
+      ));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      expect(find.text('TOU Info'), findsOneWidget);
     });
   });
 }

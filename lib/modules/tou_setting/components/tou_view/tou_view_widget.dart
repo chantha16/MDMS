@@ -49,7 +49,7 @@ class _TouViewWidgetState extends State<TouViewWidget> {
     return Container(
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        borderRadius: const BorderRadius.only(
+        borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
           topLeft: Radius.circular(20.0),
@@ -66,11 +66,11 @@ class _TouViewWidgetState extends State<TouViewWidget> {
             updateOnChange: true,
             child: BodyHeaderWidget(
               tbName1: 'Export',
-              btIcon1: const Icon(
+              btIcon1: Icon(
                 Icons.ios_share_sharp,
               ),
               tbName2: 'Add',
-              btIcon2: const Icon(
+              btIcon2: Icon(
                 Icons.add_box_sharp,
               ),
               filterAction: () async {},
@@ -79,7 +79,7 @@ class _TouViewWidgetState extends State<TouViewWidget> {
                 context.pushNamed(
                   'TouDetails',
                   extra: <String, dynamic>{
-                    kTransitionInfoKey: const TransitionInfo(
+                    kTransitionInfoKey: TransitionInfo(
                       hasTransition: true,
                       transitionType: PageTransitionType.fade,
                       duration: Duration(milliseconds: 0),
@@ -90,11 +90,11 @@ class _TouViewWidgetState extends State<TouViewWidget> {
             ),
           ),
           Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+            padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
             child: Container(
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).primaryBackground,
-                borderRadius: const BorderRadius.only(
+                borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(0.0),
                   bottomRight: Radius.circular(0.0),
                   topLeft: Radius.circular(10.0),
@@ -102,7 +102,7 @@ class _TouViewWidgetState extends State<TouViewWidget> {
                 ),
               ),
               child: Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -131,7 +131,7 @@ class _TouViewWidgetState extends State<TouViewWidget> {
                     Container(
                       width: 46.0,
                       height: 46.0,
-                      decoration: const BoxDecoration(),
+                      decoration: BoxDecoration(),
                       child: Builder(
                         builder: (context) => FlutterFlowIconButton(
                           borderColor: Colors.transparent,
@@ -245,20 +245,20 @@ class _TouViewWidgetState extends State<TouViewWidget> {
                             ),
                       ),
                     ),
-                  ].divide(const SizedBox(width: 16.0)),
+                  ].divide(SizedBox(width: 16.0)),
                 ),
               ),
             ),
           ),
           Expanded(
             child: Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+              padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Expanded(
                     child: Container(
-                      decoration: const BoxDecoration(),
+                      decoration: BoxDecoration(),
                       child: ListView(
                         padding: EdgeInsets.zero,
                         primary: false,
@@ -273,14 +273,6 @@ class _TouViewWidgetState extends State<TouViewWidget> {
                                   opaque: false,
                                   cursor:
                                       MouseCursor.defer ?? MouseCursor.defer,
-                                  onEnter: ((event) async {
-                                    safeSetState(() =>
-                                        _model.mouseRegionHovered1 = true);
-                                  }),
-                                  onExit: ((event) async {
-                                    safeSetState(() =>
-                                        _model.mouseRegionHovered1 = false);
-                                  }),
                                   child: Builder(
                                     builder: (context) => InkWell(
                                       splashColor: Colors.transparent,
@@ -293,16 +285,16 @@ class _TouViewWidgetState extends State<TouViewWidget> {
                                           context: context,
                                           isGlobal: false,
                                           avoidOverflow: true,
-                                          targetAnchor: const AlignmentDirectional(
+                                          targetAnchor: AlignmentDirectional(
                                                   1.0, 0.0)
                                               .resolve(
                                                   Directionality.of(context)),
-                                          followerAnchor: const AlignmentDirectional(
+                                          followerAnchor: AlignmentDirectional(
                                                   0.0, 0.0)
                                               .resolve(
                                                   Directionality.of(context)),
                                           builder: (dialogContext) {
-                                            return const Material(
+                                            return Material(
                                               color: Colors.transparent,
                                               child: TOUSidebarWidget(),
                                             );
@@ -314,11 +306,11 @@ class _TouViewWidgetState extends State<TouViewWidget> {
                                           color: _model.mouseRegionHovered1
                                               ? FlutterFlowTheme.of(context)
                                                   .cultured
-                                              : const Color(0x00000000),
+                                              : Color(0x00000000),
                                         ),
                                         child: Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -384,7 +376,7 @@ class _TouViewWidgetState extends State<TouViewWidget> {
                                               ),
                                               Expanded(
                                                 child: Padding(
-                                                  padding: const EdgeInsetsDirectional
+                                                  padding: EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           5.0, 0.0, 0.0, 0.0),
                                                   child: Text(
@@ -479,7 +471,7 @@ class _TouViewWidgetState extends State<TouViewWidget> {
                                                   highlightColor:
                                                       Colors.transparent,
                                                   onTap: () async {
-                                                    final datePickedDate =
+                                                    final _datePickedDate =
                                                         await showDatePicker(
                                                       context: context,
                                                       initialDate:
@@ -540,15 +532,22 @@ class _TouViewWidgetState extends State<TouViewWidget> {
                                                       },
                                                     );
 
-                                                    if (datePickedDate !=
+                                                    if (_datePickedDate !=
                                                         null) {
                                                       safeSetState(() {
                                                         _model.datePicked =
                                                             DateTime(
-                                                          datePickedDate.year,
-                                                          datePickedDate.month,
-                                                          datePickedDate.day,
+                                                          _datePickedDate.year,
+                                                          _datePickedDate.month,
+                                                          _datePickedDate.day,
                                                         );
+                                                      });
+                                                    } else if (_model
+                                                            .datePicked !=
+                                                        null) {
+                                                      safeSetState(() {
+                                                        _model.datePicked =
+                                                            getCurrentTimestamp;
                                                       });
                                                     }
                                                   },
@@ -601,34 +600,34 @@ class _TouViewWidgetState extends State<TouViewWidget> {
                                                   ),
                                                 ),
                                               ),
-                                            ].divide(const SizedBox(width: 16.0)),
+                                            ].divide(SizedBox(width: 16.0)),
                                           ),
                                         ),
                                       ),
                                     ),
                                   ),
+                                  onEnter: ((event) async {
+                                    safeSetState(() =>
+                                        _model.mouseRegionHovered1 = true);
+                                  }),
+                                  onExit: ((event) async {
+                                    safeSetState(() =>
+                                        _model.mouseRegionHovered1 = false);
+                                  }),
                                 ),
                                 MouseRegion(
                                   opaque: false,
                                   cursor:
                                       MouseCursor.defer ?? MouseCursor.defer,
-                                  onEnter: ((event) async {
-                                    safeSetState(() =>
-                                        _model.mouseRegionHovered2 = true);
-                                  }),
-                                  onExit: ((event) async {
-                                    safeSetState(() =>
-                                        _model.mouseRegionHovered2 = false);
-                                  }),
                                   child: Container(
                                     decoration: BoxDecoration(
                                       color: _model.mouseRegionHovered2
                                           ? FlutterFlowTheme.of(context)
                                               .cultured
-                                          : const Color(0x00000000),
+                                          : Color(0x00000000),
                                     ),
                                     child: Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -694,7 +693,7 @@ class _TouViewWidgetState extends State<TouViewWidget> {
                                           ),
                                           Expanded(
                                             child: Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(5.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 FFLocalizations.of(context)
@@ -823,32 +822,32 @@ class _TouViewWidgetState extends State<TouViewWidget> {
                                               ),
                                             ),
                                           ),
-                                        ].divide(const SizedBox(width: 16.0)),
+                                        ].divide(SizedBox(width: 16.0)),
                                       ),
                                     ),
                                   ),
+                                  onEnter: ((event) async {
+                                    safeSetState(() =>
+                                        _model.mouseRegionHovered2 = true);
+                                  }),
+                                  onExit: ((event) async {
+                                    safeSetState(() =>
+                                        _model.mouseRegionHovered2 = false);
+                                  }),
                                 ),
                                 MouseRegion(
                                   opaque: false,
                                   cursor:
                                       MouseCursor.defer ?? MouseCursor.defer,
-                                  onEnter: ((event) async {
-                                    safeSetState(() =>
-                                        _model.mouseRegionHovered3 = true);
-                                  }),
-                                  onExit: ((event) async {
-                                    safeSetState(() =>
-                                        _model.mouseRegionHovered3 = false);
-                                  }),
                                   child: Container(
                                     decoration: BoxDecoration(
                                       color: _model.mouseRegionHovered3
                                           ? FlutterFlowTheme.of(context)
                                               .cultured
-                                          : const Color(0x00000000),
+                                          : Color(0x00000000),
                                     ),
                                     child: Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -908,7 +907,7 @@ class _TouViewWidgetState extends State<TouViewWidget> {
                                           ),
                                           Expanded(
                                             child: Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(5.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 FFLocalizations.of(context)
@@ -1037,15 +1036,23 @@ class _TouViewWidgetState extends State<TouViewWidget> {
                                               ),
                                             ),
                                           ),
-                                        ].divide(const SizedBox(width: 16.0)),
+                                        ].divide(SizedBox(width: 16.0)),
                                       ),
                                     ),
                                   ),
+                                  onEnter: ((event) async {
+                                    safeSetState(() =>
+                                        _model.mouseRegionHovered3 = true);
+                                  }),
+                                  onExit: ((event) async {
+                                    safeSetState(() =>
+                                        _model.mouseRegionHovered3 = false);
+                                  }),
                                 ),
                               ],
                             ),
                           ),
-                        ].divide(const SizedBox(height: 6.0)),
+                        ].divide(SizedBox(height: 6.0)),
                       ),
                     ),
                   ),
@@ -1055,7 +1062,7 @@ class _TouViewWidgetState extends State<TouViewWidget> {
                     ),
                     child: Padding(
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(0.0, 3.0, 0.0, 3.0),
+                          EdgeInsetsDirectional.fromSTEB(0.0, 3.0, 0.0, 3.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -1064,7 +1071,7 @@ class _TouViewWidgetState extends State<TouViewWidget> {
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              SizedBox(
+                              Container(
                                 width: 60.0,
                                 child: TextFormField(
                                   controller: _model.textController,
@@ -1086,7 +1093,7 @@ class _TouViewWidgetState extends State<TouViewWidget> {
                                       borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
-                                      borderSide: const BorderSide(
+                                      borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
@@ -1150,7 +1157,7 @@ class _TouViewWidgetState extends State<TouViewWidget> {
                                       fontWeight: FontWeight.w600,
                                     ),
                               ),
-                            ].divide(const SizedBox(width: 5.0)),
+                            ].divide(SizedBox(width: 5.0)),
                           ),
                           Expanded(
                             child: Row(
@@ -1182,7 +1189,7 @@ class _TouViewWidgetState extends State<TouViewWidget> {
                                     borderRadius: BorderRadius.circular(8.0),
                                   ),
                                   child: Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         8.0, 8.0, 8.0, 8.0),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
@@ -1218,10 +1225,10 @@ class _TouViewWidgetState extends State<TouViewWidget> {
                                     print('IconButton pressed ...');
                                   },
                                 ),
-                              ].divide(const SizedBox(width: 4.0)),
+                              ].divide(SizedBox(width: 4.0)),
                             ),
                           ),
-                        ].divide(const SizedBox(width: 15.0)),
+                        ].divide(SizedBox(width: 15.0)),
                       ),
                     ),
                   ),

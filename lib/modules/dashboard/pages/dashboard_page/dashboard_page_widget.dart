@@ -1,5 +1,5 @@
 import '/backend/schema/enums/enums.dart';
-import '/components/layout/main_layout_v2/main_layout_v2_widget.dart';
+import '/components/main_layout_v2/main_layout_v2_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/modules/dashboard/components/dashboard_view/dashboard_view_widget.dart';
@@ -55,9 +55,9 @@ class _DashboardPageWidgetState extends State<DashboardPageWidget> {
             model: _model.mainLayoutV2Model,
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutV2Widget(
-              key: const ValueKey('Dashboard'),
+              key: ValueKey('Dashboard'),
               menu: MenuItems.Dashboard,
-              child: () => const DashboardViewWidget(),
+              child: () => DashboardViewWidget(),
             ),
           ),
         ),

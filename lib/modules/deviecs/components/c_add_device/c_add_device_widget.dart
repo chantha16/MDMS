@@ -101,7 +101,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
             height: double.infinity,
             decoration: BoxDecoration(
               color: FlutterFlowTheme.of(context).secondaryBackground,
-              borderRadius: const BorderRadius.only(
+              borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(0.0),
                 bottomRight: Radius.circular(0.0),
                 topLeft: Radius.circular(20.0),
@@ -112,7 +112,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -135,7 +135,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                   ),
                             ),
                             FlutterFlowDropDown<String>(
-                              key: const ValueKey('ddDeviceType'),
+                              key: ValueKey('ddDeviceType'),
                               controller: _model.dropDownValueController1 ??=
                                   FormFieldController<String>(null),
                               options: [
@@ -161,13 +161,13 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                   FlutterFlowTheme.of(context).alternate,
                               borderWidth: 0.0,
                               borderRadius: 8.0,
-                              margin: const EdgeInsetsDirectional.fromSTEB(
+                              margin: EdgeInsetsDirectional.fromSTEB(
                                   10.0, 0.0, 0.0, 0.0),
                               hidesUnderline: true,
                               isSearchable: false,
                               isMultiSelect: false,
                             ),
-                          ].divide(const SizedBox(height: 8.0)),
+                          ].divide(SizedBox(height: 8.0)),
                         ),
                       ),
                       Expanded(
@@ -175,14 +175,14 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                           key: _model.formKey,
                           autovalidateMode: AutovalidateMode.disabled,
                           child: Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 0.0, 29.0, 0.0, 0.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 TextFormField(
-                                  key: const ValueKey('txtSerialNumber'),
+                                  key: ValueKey('txtSerialNumber'),
                                   controller: _model.textController1,
                                   focusNode: _model.textFieldFocusNode1,
                                   autofocus: false,
@@ -207,21 +207,21 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                       borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
-                                      borderSide: const BorderSide(
+                                      borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
-                                      borderSide: const BorderSide(
+                                      borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
-                                      borderSide: const BorderSide(
+                                      borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
@@ -241,24 +241,24 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                   validator: _model.textController1Validator
                                       .asValidator(context),
                                 ),
-                              ].divide(const SizedBox(height: 8.0)),
+                              ].divide(SizedBox(height: 8.0)),
                             ),
                           ),
                         ),
                       ),
-                    ].divide(const SizedBox(width: 16.0)),
+                    ].divide(SizedBox(width: 16.0)),
                   ),
                 ),
                 Container(
                   width: double.infinity,
-                  decoration: const BoxDecoration(),
+                  decoration: BoxDecoration(),
                   child: SingleChildScrollView(
                     primary: false,
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               24.0, 0.0, 24.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -271,7 +271,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      key: const ValueKey('txtPhase'),
+                                      key: ValueKey('txtPhase'),
                                       FFLocalizations.of(context).getText(
                                         'h4m9e9n2' /* Map from Billing */,
                                       ),
@@ -283,7 +283,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                           ),
                                     ),
                                     TextFormField(
-                                      key: const ValueKey('txtPhase2'),
+                                      key: ValueKey('txtPhase2'),
                                       controller: _model.textController2,
                                       focusNode: _model.textFieldFocusNode2,
                                       autofocus: false,
@@ -309,7 +309,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -317,7 +317,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         errorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -325,7 +325,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -374,7 +374,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                           .alternate,
                                       borderWidth: 0.0,
                                       borderRadius: 8.0,
-                                      margin: const EdgeInsetsDirectional.fromSTEB(
+                                      margin: EdgeInsetsDirectional.fromSTEB(
                                           10.0, 0.0, 0.0, 0.0),
                                       hidesUnderline: true,
                                       isSearchable: false,
@@ -408,7 +408,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                           .alternate,
                                       borderWidth: 0.0,
                                       borderRadius: 8.0,
-                                      margin: const EdgeInsetsDirectional.fromSTEB(
+                                      margin: EdgeInsetsDirectional.fromSTEB(
                                           10.0, 0.0, 0.0, 0.0),
                                       hidesUnderline: true,
                                       isSearchable: false,
@@ -442,7 +442,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                           .alternate,
                                       borderWidth: 0.0,
                                       borderRadius: 8.0,
-                                      margin: const EdgeInsetsDirectional.fromSTEB(
+                                      margin: EdgeInsetsDirectional.fromSTEB(
                                           10.0, 0.0, 0.0, 0.0),
                                       hidesUnderline: true,
                                       isSearchable: false,
@@ -479,7 +479,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                           .alternate,
                                       borderWidth: 0.0,
                                       borderRadius: 8.0,
-                                      margin: const EdgeInsetsDirectional.fromSTEB(
+                                      margin: EdgeInsetsDirectional.fromSTEB(
                                           10.0, 0.0, 0.0, 0.0),
                                       hidesUnderline: true,
                                       isSearchable: false,
@@ -519,7 +519,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                                     BorderRadius.circular(8.0),
                                               ),
                                               focusedBorder: OutlineInputBorder(
-                                                borderSide: const BorderSide(
+                                                borderSide: BorderSide(
                                                   color: Color(0x00000000),
                                                   width: 1.0,
                                                 ),
@@ -527,7 +527,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                                     BorderRadius.circular(8.0),
                                               ),
                                               errorBorder: OutlineInputBorder(
-                                                borderSide: const BorderSide(
+                                                borderSide: BorderSide(
                                                   color: Color(0x00000000),
                                                   width: 1.0,
                                                 ),
@@ -536,7 +536,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               ),
                                               focusedErrorBorder:
                                                   OutlineInputBorder(
-                                                borderSide: const BorderSide(
+                                                borderSide: BorderSide(
                                                   color: Color(0x00000000),
                                                   width: 1.0,
                                                 ),
@@ -591,7 +591,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                                     BorderRadius.circular(8.0),
                                               ),
                                               focusedBorder: OutlineInputBorder(
-                                                borderSide: const BorderSide(
+                                                borderSide: BorderSide(
                                                   color: Color(0x00000000),
                                                   width: 1.0,
                                                 ),
@@ -599,7 +599,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                                     BorderRadius.circular(8.0),
                                               ),
                                               errorBorder: OutlineInputBorder(
-                                                borderSide: const BorderSide(
+                                                borderSide: BorderSide(
                                                   color: Color(0x00000000),
                                                   width: 1.0,
                                                 ),
@@ -608,7 +608,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               ),
                                               focusedErrorBorder:
                                                   OutlineInputBorder(
-                                                borderSide: const BorderSide(
+                                                borderSide: BorderSide(
                                                   color: Color(0x00000000),
                                                   width: 1.0,
                                                 ),
@@ -663,7 +663,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                                     BorderRadius.circular(8.0),
                                               ),
                                               focusedBorder: OutlineInputBorder(
-                                                borderSide: const BorderSide(
+                                                borderSide: BorderSide(
                                                   color: Color(0x00000000),
                                                   width: 1.0,
                                                 ),
@@ -671,7 +671,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                                     BorderRadius.circular(8.0),
                                               ),
                                               errorBorder: OutlineInputBorder(
-                                                borderSide: const BorderSide(
+                                                borderSide: BorderSide(
                                                   color: Color(0x00000000),
                                                   width: 1.0,
                                                 ),
@@ -680,7 +680,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               ),
                                               focusedErrorBorder:
                                                   OutlineInputBorder(
-                                                borderSide: const BorderSide(
+                                                borderSide: BorderSide(
                                                   color: Color(0x00000000),
                                                   width: 1.0,
                                                 ),
@@ -704,7 +704,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                                 .asValidator(context),
                                           ),
                                         ),
-                                      ].divide(const SizedBox(width: 10.0)),
+                                      ].divide(SizedBox(width: 10.0)),
                                     ),
                                     TextFormField(
                                       controller: _model.textController6,
@@ -732,7 +732,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -740,7 +740,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         errorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -748,7 +748,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -806,7 +806,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                           .alternate,
                                       borderWidth: 0.0,
                                       borderRadius: 8.0,
-                                      margin: const EdgeInsetsDirectional.fromSTEB(
+                                      margin: EdgeInsetsDirectional.fromSTEB(
                                           10.0, 0.0, 0.0, 0.0),
                                       hidesUnderline: true,
                                       isSearchable: false,
@@ -854,7 +854,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                             BorderRadius.circular(8.0),
                                       ),
                                     ),
-                                  ].divide(const SizedBox(height: 8.0)),
+                                  ].divide(SizedBox(height: 8.0)),
                                 ),
                               ),
                               Expanded(
@@ -874,7 +874,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                           ),
                                     ),
                                     TextFormField(
-                                      key: const ValueKey('txtDeviceName'),
+                                      key: ValueKey('txtDeviceName'),
                                       controller: _model.textController7,
                                       focusNode: _model.textFieldFocusNode7,
                                       autofocus: false,
@@ -900,7 +900,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -908,7 +908,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         errorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -916,7 +916,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -963,7 +963,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -971,7 +971,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         errorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -979,7 +979,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1026,7 +1026,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1034,7 +1034,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         errorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1042,7 +1042,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1089,7 +1089,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1097,7 +1097,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         errorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1105,7 +1105,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1153,7 +1153,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1161,7 +1161,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         errorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1169,7 +1169,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1217,7 +1217,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1225,7 +1225,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         errorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1233,7 +1233,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1281,7 +1281,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1289,7 +1289,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         errorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1297,7 +1297,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1345,7 +1345,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1353,7 +1353,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         errorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1361,7 +1361,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1383,14 +1383,14 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                           .textController14Validator
                                           .asValidator(context),
                                     ),
-                                  ].divide(const SizedBox(height: 8.0)),
+                                  ].divide(SizedBox(height: 8.0)),
                                 ),
                               ),
-                            ].divide(const SizedBox(width: 16.0)),
+                            ].divide(SizedBox(width: 16.0)),
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               24.0, 0.0, 24.0, 0.0),
                           child: Container(
                             decoration: BoxDecoration(
@@ -1402,7 +1402,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                               ),
                             ),
                             child: Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 10.0, 0.0, 10.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -1415,7 +1415,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                     size: 25.0,
                                   ),
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         10.0, 0.0, 0.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -1457,7 +1457,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               24.0, 0.0, 24.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -1505,7 +1505,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1513,7 +1513,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         errorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1521,7 +1521,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1569,7 +1569,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1577,7 +1577,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         errorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1585,7 +1585,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1633,7 +1633,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1641,7 +1641,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         errorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1649,7 +1649,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
+                                          borderSide: BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -1671,10 +1671,10 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                           .textController17Validator
                                           .asValidator(context),
                                     ),
-                                  ].divide(const SizedBox(height: 8.0)),
+                                  ].divide(SizedBox(height: 8.0)),
                                 ),
                               ),
-                            ].divide(const SizedBox(width: 16.0)),
+                            ].divide(SizedBox(width: 16.0)),
                           ),
                         ),
                         if (responsiveVisibility(
@@ -1685,7 +1685,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                           desktop: false,
                         ))
                           Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 24.0, 0.0, 24.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1738,7 +1738,7 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                                 .alternate,
                                         borderWidth: 0.0,
                                         borderRadius: 8.0,
-                                        margin: const EdgeInsetsDirectional.fromSTEB(
+                                        margin: EdgeInsetsDirectional.fromSTEB(
                                             10.0, 0.0, 0.0, 0.0),
                                         hidesUnderline: true,
                                         isSearchable: false,
@@ -1773,21 +1773,21 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                                 .alternate,
                                         borderWidth: 0.0,
                                         borderRadius: 8.0,
-                                        margin: const EdgeInsetsDirectional.fromSTEB(
+                                        margin: EdgeInsetsDirectional.fromSTEB(
                                             10.0, 0.0, 0.0, 0.0),
                                         hidesUnderline: true,
                                         isOverButton: true,
                                         isSearchable: false,
                                         isMultiSelect: false,
                                       ),
-                                    ].divide(const SizedBox(height: 8.0)),
+                                    ].divide(SizedBox(height: 8.0)),
                                   ),
                                 ),
-                              ].divide(const SizedBox(width: 16.0)),
+                              ].divide(SizedBox(width: 16.0)),
                             ),
                           ),
                         Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               24.0, 0.0, 24.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -1803,9 +1803,9 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                 options: FFButtonOptions(
                                   width: 120.0,
                                   height: 40.0,
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
@@ -1836,9 +1836,9 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                 options: FFButtonOptions(
                                   width: 120.0,
                                   height: 40.0,
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
                                   color: FlutterFlowTheme.of(context).primary,
                                   textStyle: FlutterFlowTheme.of(context)
@@ -1853,14 +1853,14 @@ class _CAddDeviceWidgetState extends State<CAddDeviceWidget> {
                                   borderRadius: BorderRadius.circular(20.0),
                                 ),
                               ),
-                            ].divide(const SizedBox(width: 16.0)),
+                            ].divide(SizedBox(width: 16.0)),
                           ),
                         ),
-                      ].divide(const SizedBox(height: 10.0)),
+                      ].divide(SizedBox(height: 10.0)),
                     ),
                   ),
                 ),
-              ].divide(const SizedBox(height: 10.0)).around(const SizedBox(height: 10.0)),
+              ].divide(SizedBox(height: 10.0)).around(SizedBox(height: 10.0)),
             ),
           ),
         ),

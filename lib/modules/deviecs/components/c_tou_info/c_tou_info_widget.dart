@@ -38,7 +38,7 @@ class _CTouInfoWidgetState extends State<CTouInfoWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
       child: Container(
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
@@ -47,12 +47,12 @@ class _CTouInfoWidgetState extends State<CTouInfoWidget> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+              padding: EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
               child: Container(
                 width: double.infinity,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).alternate,
-                  borderRadius: const BorderRadius.only(
+                  borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(0.0),
                     bottomRight: Radius.circular(0.0),
                     topLeft: Radius.circular(14.0),
@@ -64,7 +64,7 @@ class _CTouInfoWidgetState extends State<CTouInfoWidget> {
                   ),
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.all(12.0),
+                  padding: EdgeInsets.all(12.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -113,7 +113,7 @@ class _CTouInfoWidgetState extends State<CTouInfoWidget> {
               ),
             ),
             Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+              padding: EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
               child: ListView(
                 padding: EdgeInsets.zero,
                 primary: false,
@@ -128,7 +128,7 @@ class _CTouInfoWidgetState extends State<CTouInfoWidget> {
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          borderRadius: const BorderRadius.only(
+                          borderRadius: BorderRadius.only(
                             bottomLeft: Radius.circular(0.0),
                             bottomRight: Radius.circular(0.0),
                             topLeft: Radius.circular(0.0),
@@ -139,7 +139,7 @@ class _CTouInfoWidgetState extends State<CTouInfoWidget> {
                           ),
                         ),
                         child: Padding(
-                          padding: const EdgeInsets.all(12.0),
+                          padding: EdgeInsets.all(12.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -193,7 +193,7 @@ class _CTouInfoWidgetState extends State<CTouInfoWidget> {
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          borderRadius: const BorderRadius.only(
+                          borderRadius: BorderRadius.only(
                             bottomLeft: Radius.circular(0.0),
                             bottomRight: Radius.circular(0.0),
                             topLeft: Radius.circular(0.0),
@@ -204,7 +204,7 @@ class _CTouInfoWidgetState extends State<CTouInfoWidget> {
                           ),
                         ),
                         child: Padding(
-                          padding: const EdgeInsets.all(12.0),
+                          padding: EdgeInsets.all(12.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,

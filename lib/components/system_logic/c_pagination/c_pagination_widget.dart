@@ -57,7 +57,7 @@ class _CPaginationWidgetState extends State<CPaginationWidget> {
         borderRadius: BorderRadius.circular(10.0),
       ),
       child: Padding(
-        padding: const EdgeInsetsDirectional.fromSTEB(16.0, 3.0, 16.0, 3.0),
+        padding: EdgeInsetsDirectional.fromSTEB(16.0, 3.0, 16.0, 3.0),
         child: Row(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.start,
@@ -115,7 +115,7 @@ class _CPaginationWidgetState extends State<CPaginationWidget> {
                   borderColor: Colors.transparent,
                   borderWidth: 0.0,
                   borderRadius: 8.0,
-                  margin: const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                  margin: EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                   hidesUnderline: true,
                   isOverButton: false,
                   isSearchable: false,
@@ -127,7 +127,7 @@ class _CPaginationWidgetState extends State<CPaginationWidget> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SizedBox(
+                Container(
                   width: 60.0,
                   child: TextFormField(
                     controller: _model.textController,
@@ -147,7 +147,7 @@ class _CPaginationWidgetState extends State<CPaginationWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
+                        borderSide: BorderSide(
                           color: Color(0x00000000),
                           width: 1.0,
                         ),
@@ -200,7 +200,7 @@ class _CPaginationWidgetState extends State<CPaginationWidget> {
                         fontWeight: FontWeight.normal,
                       ),
                 ),
-              ].divide(const SizedBox(width: 5.0)),
+              ].divide(SizedBox(width: 5.0)),
             ),
             Row(
               mainAxisSize: MainAxisSize.max,
@@ -236,9 +236,9 @@ class _CPaginationWidgetState extends State<CPaginationWidget> {
                     print('IconButton pressed ...');
                   },
                 ),
-              ].divide(const SizedBox(width: 4.0)),
+              ].divide(SizedBox(width: 4.0)),
             ),
-          ].divide(const SizedBox(width: 12.0)),
+          ].divide(SizedBox(width: 12.0)),
         ),
       ),
     );

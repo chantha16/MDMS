@@ -29,11 +29,11 @@ class TableWidget extends StatefulWidget {
     bool? isNumeric,
     this.onHiddenColumnChanged,
     this.onRowCheckedItem,
-  })  : currentPage = currentPage ?? 0,
-        totalPage = totalPage ?? 0,
-        isCheckbox = isCheckbox ?? true,
-        isMoreOption = isMoreOption ?? true,
-        isNumeric = isNumeric ?? true;
+  })  : this.currentPage = currentPage ?? 0,
+        this.totalPage = totalPage ?? 0,
+        this.isCheckbox = isCheckbox ?? true,
+        this.isMoreOption = isMoreOption ?? true,
+        this.isNumeric = isNumeric ?? true;
 
   final List<ColumnModelStruct>? columns;
   final List<RowModelStruct>? rows;
@@ -92,7 +92,7 @@ class _TableWidgetState extends State<TableWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(16.0),
+      padding: EdgeInsets.all(16.0),
       child: Container(
         width: double.infinity,
         height: double.infinity,
@@ -106,7 +106,7 @@ class _TableWidgetState extends State<TableWidget> {
               height: 50.0,
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).primaryBackground,
-                borderRadius: const BorderRadius.only(
+                borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(0.0),
                   bottomRight: Radius.circular(0.0),
                   topLeft: Radius.circular(10.0),
@@ -207,10 +207,10 @@ class _TableWidgetState extends State<TableWidget> {
                                   context: context,
                                   isGlobal: false,
                                   avoidOverflow: false,
-                                  targetAnchor: const AlignmentDirectional(-1.0, 1.0)
+                                  targetAnchor: AlignmentDirectional(-1.0, 1.0)
                                       .resolve(Directionality.of(context)),
                                   followerAnchor:
-                                      const AlignmentDirectional(-1.0, -1.0)
+                                      AlignmentDirectional(-1.0, -1.0)
                                           .resolve(Directionality.of(context)),
                                   builder: (dialogContext) {
                                     return Material(
@@ -261,10 +261,10 @@ class _TableWidgetState extends State<TableWidget> {
                         return Container(
                           width: 75.0,
                           height: 50.0,
-                          decoration: const BoxDecoration(),
-                          alignment: const AlignmentDirectional(0.0, 0.0),
+                          decoration: BoxDecoration(),
+                          alignment: AlignmentDirectional(0.0, 0.0),
                           child: Align(
-                            alignment: const AlignmentDirectional(0.0, 0.0),
+                            alignment: AlignmentDirectional(0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
                                 'um76ahy2' /* No. */,
@@ -282,7 +282,7 @@ class _TableWidgetState extends State<TableWidget> {
                         );
                       } else {
                         return Container(
-                          decoration: const BoxDecoration(),
+                          decoration: BoxDecoration(),
                         );
                       }
                     },
@@ -305,11 +305,11 @@ class _TableWidgetState extends State<TableWidget> {
                               child: Container(
                                 width: 500.0,
                                 height: 50.0,
-                                decoration: const BoxDecoration(),
+                                decoration: BoxDecoration(),
                                 child: Align(
-                                  alignment: const AlignmentDirectional(-1.0, 0.0),
+                                  alignment: AlignmentDirectional(-1.0, 0.0),
                                   child: Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         10.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       headerItmsItem.name,
@@ -364,7 +364,7 @@ class _TableWidgetState extends State<TableWidget> {
                                     return Container(
                                       width: 50.0,
                                       height: 50.0,
-                                      decoration: const BoxDecoration(),
+                                      decoration: BoxDecoration(),
                                       child: Builder(
                                         builder: (context) {
                                           if (rowItemsItem.selected == true) {
@@ -431,7 +431,7 @@ class _TableWidgetState extends State<TableWidget> {
                                     return Container(
                                       width: 50.0,
                                       height: 50.0,
-                                      decoration: const BoxDecoration(),
+                                      decoration: BoxDecoration(),
                                       child: FlutterFlowIconButton(
                                         borderRadius: 8.0,
                                         buttonSize: 40.0,
@@ -462,10 +462,10 @@ class _TableWidgetState extends State<TableWidget> {
                                     return Container(
                                       width: 75.0,
                                       height: 50.0,
-                                      decoration: const BoxDecoration(),
+                                      decoration: BoxDecoration(),
                                       child: Align(
                                         alignment:
-                                            const AlignmentDirectional(0.0, 0.0),
+                                            AlignmentDirectional(0.0, 0.0),
                                         child: Text(
                                           functions
                                               .paginationNumIncrement(
@@ -483,7 +483,7 @@ class _TableWidgetState extends State<TableWidget> {
                                     );
                                   } else {
                                     return Container(
-                                      decoration: const BoxDecoration(),
+                                      decoration: BoxDecoration(),
                                     );
                                   }
                                 },
@@ -505,12 +505,12 @@ class _TableWidgetState extends State<TableWidget> {
                                           child: Container(
                                             width: 100.0,
                                             height: 100.0,
-                                            decoration: const BoxDecoration(),
+                                            decoration: BoxDecoration(),
                                             child: Align(
-                                              alignment: const AlignmentDirectional(
+                                              alignment: AlignmentDirectional(
                                                   -1.0, 0.0),
                                               child: Padding(
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         10.0, 0.0, 0.0, 0.0),
                                                 child: Text(
@@ -560,7 +560,7 @@ class _TableWidgetState extends State<TableWidget> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                     child: FlutterFlowDropDown<String>(
                       controller: _model.dropDownValueController ??=
                           FormFieldController<String>(null),
@@ -602,7 +602,7 @@ class _TableWidgetState extends State<TableWidget> {
                       borderWidth: 0.0,
                       borderRadius: 12.0,
                       margin:
-                          const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                       hidesUnderline: true,
                       isOverButton: false,
                       isSearchable: false,

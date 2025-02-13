@@ -46,12 +46,12 @@ class _CCustomColumnsWidgetState extends State<CCustomColumnsWidget> {
   Widget build(BuildContext context) {
     return Container(
       width: 266.0,
-      constraints: const BoxConstraints(
+      constraints: BoxConstraints(
         maxHeight: 619.0,
       ),
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        boxShadow: const [
+        boxShadow: [
           BoxShadow(
             blurRadius: 4.0,
             color: Color(0x33000000),
@@ -67,7 +67,7 @@ class _CCustomColumnsWidgetState extends State<CCustomColumnsWidget> {
         ),
       ),
       child: Padding(
-        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+        padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
         child: SingleChildScrollView(
           child: Column(
             mainAxisSize: MainAxisSize.max,
@@ -81,7 +81,7 @@ class _CCustomColumnsWidgetState extends State<CCustomColumnsWidget> {
                 child: DragTarget<String>(
                   builder: (context, _, __) {
                     return Padding(
-                      padding: const EdgeInsets.all(16.0),
+                      padding: EdgeInsets.all(16.0),
                       child: Builder(
                         builder: (context) {
                           final columnItems =
@@ -93,7 +93,7 @@ class _CCustomColumnsWidgetState extends State<CCustomColumnsWidget> {
                             shrinkWrap: true,
                             scrollDirection: Axis.vertical,
                             itemCount: columnItems.length,
-                            separatorBuilder: (_, __) => const SizedBox(height: 10.0),
+                            separatorBuilder: (_, __) => SizedBox(height: 10.0),
                             itemBuilder: (context, columnItemsIndex) {
                               final columnItemsItem =
                                   columnItems[columnItemsIndex];
@@ -105,7 +105,7 @@ class _CCustomColumnsWidgetState extends State<CCustomColumnsWidget> {
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     children: [
-                                      const Icon(
+                                      Icon(
                                         Icons.drag_indicator_outlined,
                                         color: Color(0xFF7C8791),
                                         size: 24.0,
@@ -156,14 +156,14 @@ class _CCustomColumnsWidgetState extends State<CCustomColumnsWidget> {
                                               letterSpacing: 0.0,
                                             ),
                                       ),
-                                    ].divide(const SizedBox(width: 5.0)),
+                                    ].divide(SizedBox(width: 5.0)),
                                   ),
                                 ),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   children: [
-                                    const Icon(
+                                    Icon(
                                       Icons.drag_indicator_outlined,
                                       color: Color(0xFF7C8791),
                                       size: 24.0,
@@ -212,7 +212,7 @@ class _CCustomColumnsWidgetState extends State<CCustomColumnsWidget> {
                                             letterSpacing: 0.0,
                                           ),
                                     ),
-                                  ].divide(const SizedBox(width: 5.0)),
+                                  ].divide(SizedBox(width: 5.0)),
                                 ),
                               );
                             },
@@ -224,7 +224,7 @@ class _CCustomColumnsWidgetState extends State<CCustomColumnsWidget> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(10.0),
+                padding: EdgeInsets.all(10.0),
                 child: FFButtonWidget(
                   onPressed: () {
                     print('Button pressed ...');
@@ -235,9 +235,9 @@ class _CCustomColumnsWidgetState extends State<CCustomColumnsWidget> {
                   options: FFButtonOptions(
                     width: 120.0,
                     height: 40.0,
-                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     iconPadding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).primary,
                     textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Inter',

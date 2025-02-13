@@ -67,19 +67,13 @@ class _CSpecialDayActionWidgetState extends State<CSpecialDayActionWidget> {
         ),
       ),
       child: Padding(
-        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 12.0),
+        padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 12.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
             MouseRegion(
               opaque: false,
               cursor: MouseCursor.defer ?? MouseCursor.defer,
-              onEnter: ((event) async {
-                safeSetState(() => _model.mouseRegionHovered1 = true);
-              }),
-              onExit: ((event) async {
-                safeSetState(() => _model.mouseRegionHovered1 = false);
-              }),
               child: InkWell(
                 splashColor: Colors.transparent,
                 focusColor: Colors.transparent,
@@ -94,19 +88,19 @@ class _CSpecialDayActionWidgetState extends State<CSpecialDayActionWidget> {
                   decoration: BoxDecoration(
                     color: _model.mouseRegionHovered1
                         ? FlutterFlowTheme.of(context).cultured
-                        : const Color(0x00000000),
+                        : Color(0x00000000),
                   ),
                   child: Align(
-                    alignment: const AlignmentDirectional(0.0, 0.0),
+                    alignment: AlignmentDirectional(0.0, 0.0),
                     child: Padding(
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Align(
-                            alignment: const AlignmentDirectional(-1.0, 0.0),
+                            alignment: AlignmentDirectional(-1.0, 0.0),
                             child: Container(
                               width: 32.0,
                               height: 32.0,
@@ -133,22 +127,22 @@ class _CSpecialDayActionWidgetState extends State<CSpecialDayActionWidget> {
                                   letterSpacing: 0.0,
                                 ),
                           ),
-                        ].divide(const SizedBox(width: 12.0)),
+                        ].divide(SizedBox(width: 12.0)),
                       ),
                     ),
                   ),
                 ),
               ),
+              onEnter: ((event) async {
+                safeSetState(() => _model.mouseRegionHovered1 = true);
+              }),
+              onExit: ((event) async {
+                safeSetState(() => _model.mouseRegionHovered1 = false);
+              }),
             ),
             MouseRegion(
               opaque: false,
               cursor: MouseCursor.defer ?? MouseCursor.defer,
-              onEnter: ((event) async {
-                safeSetState(() => _model.mouseRegionHovered2 = true);
-              }),
-              onExit: ((event) async {
-                safeSetState(() => _model.mouseRegionHovered2 = false);
-              }),
               child: InkWell(
                 splashColor: Colors.transparent,
                 focusColor: Colors.transparent,
@@ -163,17 +157,17 @@ class _CSpecialDayActionWidgetState extends State<CSpecialDayActionWidget> {
                   decoration: BoxDecoration(
                     color: _model.mouseRegionHovered2
                         ? FlutterFlowTheme.of(context).cultured
-                        : const Color(0x00000000),
+                        : Color(0x00000000),
                   ),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Align(
-                          alignment: const AlignmentDirectional(-1.0, 0.0),
+                          alignment: AlignmentDirectional(-1.0, 0.0),
                           child: Container(
                             width: 32.0,
                             height: 32.0,
@@ -183,7 +177,7 @@ class _CSpecialDayActionWidgetState extends State<CSpecialDayActionWidget> {
                               borderRadius: BorderRadius.circular(6.0),
                             ),
                             child: Align(
-                              alignment: const AlignmentDirectional(0.0, 0.0),
+                              alignment: AlignmentDirectional(0.0, 0.0),
                               child: Icon(
                                 Icons.delete_outline,
                                 color: FlutterFlowTheme.of(context).error,
@@ -202,21 +196,21 @@ class _CSpecialDayActionWidgetState extends State<CSpecialDayActionWidget> {
                                     letterSpacing: 0.0,
                                   ),
                         ),
-                      ].divide(const SizedBox(width: 12.0)),
+                      ].divide(SizedBox(width: 12.0)),
                     ),
                   ),
                 ),
               ),
+              onEnter: ((event) async {
+                safeSetState(() => _model.mouseRegionHovered2 = true);
+              }),
+              onExit: ((event) async {
+                safeSetState(() => _model.mouseRegionHovered2 = false);
+              }),
             ),
             MouseRegion(
               opaque: false,
               cursor: MouseCursor.defer ?? MouseCursor.defer,
-              onEnter: ((event) async {
-                safeSetState(() => _model.mouseRegionHovered3 = true);
-              }),
-              onExit: ((event) async {
-                safeSetState(() => _model.mouseRegionHovered3 = false);
-              }),
               child: InkWell(
                 splashColor: Colors.transparent,
                 focusColor: Colors.transparent,
@@ -231,17 +225,17 @@ class _CSpecialDayActionWidgetState extends State<CSpecialDayActionWidget> {
                   decoration: BoxDecoration(
                     color: _model.mouseRegionHovered3
                         ? FlutterFlowTheme.of(context).cultured
-                        : const Color(0x00000000),
+                        : Color(0x00000000),
                   ),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Align(
-                          alignment: const AlignmentDirectional(-1.0, 0.0),
+                          alignment: AlignmentDirectional(-1.0, 0.0),
                           child: Container(
                             width: 32.0,
                             height: 32.0,
@@ -267,11 +261,17 @@ class _CSpecialDayActionWidgetState extends State<CSpecialDayActionWidget> {
                                     letterSpacing: 0.0,
                                   ),
                         ),
-                      ].divide(const SizedBox(width: 12.0)),
+                      ].divide(SizedBox(width: 12.0)),
                     ),
                   ),
                 ),
               ),
+              onEnter: ((event) async {
+                safeSetState(() => _model.mouseRegionHovered3 = true);
+              }),
+              onExit: ((event) async {
+                safeSetState(() => _model.mouseRegionHovered3 = false);
+              }),
             ),
           ],
         ),

@@ -55,7 +55,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
     return Container(
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        borderRadius: const BorderRadius.only(
+        borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
           topLeft: Radius.circular(16.0),
@@ -66,7 +66,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
         mainAxisSize: MainAxisSize.max,
         children: [
           Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 15.0, 0.0),
+            padding: EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 15.0, 0.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               children: [
@@ -85,23 +85,23 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                             fontWeight: FontWeight.w600,
                           ),
                     ),
-                  ].divide(const SizedBox(height: 3.0)),
+                  ].divide(SizedBox(height: 3.0)),
                 ),
-              ].divide(const SizedBox(width: 16.0)),
+              ].divide(SizedBox(width: 16.0)),
             ),
           ),
           Form(
             key: _model.formKey2,
             autovalidateMode: AutovalidateMode.disabled,
             child: Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 15.0, 0.0),
+              padding: EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 15.0, 0.0),
               child: Container(
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                   borderRadius: BorderRadius.circular(14.0),
                 ),
                 child: Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -114,7 +114,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 5.0),
                                   child: RichText(
                                     textScaler:
@@ -161,7 +161,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                     ),
                                   ),
                                 ),
-                                SizedBox(
+                                Container(
                                   width:
                                       MediaQuery.sizeOf(context).width * 0.54,
                                   child: TextFormField(
@@ -191,7 +191,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                           Shadow(
                                             color: FlutterFlowTheme.of(context)
                                                 .secondaryText,
-                                            offset: const Offset(2.0, 2.0),
+                                            offset: Offset(2.0, 2.0),
                                             blurRadius: 2.0,
                                           )
                                         ],
@@ -236,7 +236,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                       fillColor: FlutterFlowTheme.of(context)
                                           .primaryBackground,
                                       contentPadding:
-                                          const EdgeInsetsDirectional.fromSTEB(
+                                          EdgeInsetsDirectional.fromSTEB(
                                               16.0, 18.0, 16.0, 18.0),
                                       hoverColor: FlutterFlowTheme.of(context)
                                           .primaryBackground,
@@ -264,7 +264,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 5.0),
                                   child: RichText(
                                     textScaler:
@@ -311,7 +311,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                     ),
                                   ),
                                 ),
-                                SizedBox(
+                                Container(
                                   width:
                                       MediaQuery.sizeOf(context).width * 0.54,
                                   child: TextFormField(
@@ -341,7 +341,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                           Shadow(
                                             color: FlutterFlowTheme.of(context)
                                                 .secondaryText,
-                                            offset: const Offset(2.0, 2.0),
+                                            offset: Offset(2.0, 2.0),
                                             blurRadius: 2.0,
                                           )
                                         ],
@@ -386,7 +386,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                       fillColor: FlutterFlowTheme.of(context)
                                           .primaryBackground,
                                       contentPadding:
-                                          const EdgeInsetsDirectional.fromSTEB(
+                                          EdgeInsetsDirectional.fromSTEB(
                                               16.0, 18.0, 16.0, 18.0),
                                       hoverColor: FlutterFlowTheme.of(context)
                                           .primaryBackground,
@@ -408,11 +408,11 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                               ],
                             ),
                           ),
-                        ].divide(const SizedBox(width: 15.0)),
+                        ].divide(SizedBox(width: 15.0)),
                       ),
                       Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+                            EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.end,
@@ -423,7 +423,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 5.0),
                                     child: RichText(
                                       textScaler:
@@ -479,7 +479,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 5.0),
                                     child: RichText(
                                       textScaler:
@@ -529,12 +529,12 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                 ],
                               ),
                             ),
-                          ].divide(const SizedBox(width: 15.0)),
+                          ].divide(SizedBox(width: 15.0)),
                         ),
                       ),
                       Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+                            EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -544,7 +544,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 5.0),
                                     child: RichText(
                                       textScaler:
@@ -638,7 +638,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                       fillColor: FlutterFlowTheme.of(context)
                                           .primaryBackground,
                                       contentPadding:
-                                          const EdgeInsetsDirectional.fromSTEB(
+                                          EdgeInsetsDirectional.fromSTEB(
                                               20.0, 19.0, 20.0, 19.0),
                                       hoverColor: FlutterFlowTheme.of(context)
                                           .primaryBackground,
@@ -660,7 +660,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                 ],
                               ),
                             ),
-                          ].divide(const SizedBox(width: 15.0)),
+                          ].divide(SizedBox(width: 15.0)),
                         ),
                       ),
                     ],
@@ -671,20 +671,20 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
           ),
           Expanded(
             child: Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 15.0, 0.0),
+              padding: EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 15.0, 0.0),
               child: Container(
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                   borderRadius: BorderRadius.circular(14.0),
                 ),
                 child: Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 15.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 15.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                            EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.start,
@@ -730,19 +730,19 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                     ),
                               ),
                             ),
-                          ].divide(const SizedBox(width: 10.0)),
+                          ].divide(SizedBox(width: 10.0)),
                         ),
                       ),
                       Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                            EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                         child: Container(
                           width: double.infinity,
                           height: 50.0,
                           decoration: BoxDecoration(
                             color:
                                 FlutterFlowTheme.of(context).primaryBackground,
-                            borderRadius: const BorderRadius.only(
+                            borderRadius: BorderRadius.only(
                               bottomLeft: Radius.circular(0.0),
                               bottomRight: Radius.circular(0.0),
                               topLeft: Radius.circular(12.0),
@@ -754,7 +754,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                             ),
                           ),
                           child: Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 18.0, 0.0, 16.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -762,7 +762,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                 Expanded(
                                   flex: 2,
                                   child: Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         10.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
@@ -820,20 +820,20 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                 Container(
                                   width: 40.0,
                                   height: 40.0,
-                                  decoration: const BoxDecoration(),
+                                  decoration: BoxDecoration(),
                                 ),
-                              ].divide(const SizedBox(width: 16.0)),
+                              ].divide(SizedBox(width: 16.0)),
                             ),
                           ),
                         ),
                       ),
                       Expanded(
                         child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 15.0),
                           child: Container(
                             decoration: BoxDecoration(
-                              borderRadius: const BorderRadius.only(
+                              borderRadius: BorderRadius.only(
                                 bottomLeft: Radius.circular(16.0),
                                 bottomRight: Radius.circular(16.0),
                                 topLeft: Radius.circular(2.0),
@@ -864,20 +864,10 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                                 opaque: false,
                                                 cursor: MouseCursor.defer ??
                                                     MouseCursor.defer,
-                                                onEnter: ((event) async {
-                                                  safeSetState(() => _model
-                                                          .mouseRegionHovered3 =
-                                                      true);
-                                                }),
-                                                onExit: ((event) async {
-                                                  safeSetState(() => _model
-                                                          .mouseRegionHovered3 =
-                                                      false);
-                                                }),
                                                 child: Container(
                                                   decoration: BoxDecoration(
                                                     borderRadius:
-                                                        const BorderRadius.only(
+                                                        BorderRadius.only(
                                                       bottomLeft:
                                                           Radius.circular(0.0),
                                                       bottomRight:
@@ -895,7 +885,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 2.0,
                                                                 16.0, 2.0),
                                                     child: Row(
@@ -921,7 +911,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                                                 ),
                                                                 child: Padding(
                                                                   padding:
-                                                                      const EdgeInsets
+                                                                      EdgeInsets
                                                                           .all(
                                                                               10.0),
                                                                   child: Row(
@@ -956,7 +946,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                                                             shadows: [
                                                                               Shadow(
                                                                                 color: FlutterFlowTheme.of(context).secondaryText,
-                                                                                offset: const Offset(2.0, 2.0),
+                                                                                offset: Offset(2.0, 2.0),
                                                                                 blurRadius: 2.0,
                                                                               )
                                                                             ],
@@ -999,7 +989,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                                                               0.0,
                                                                           borderRadius:
                                                                               8.0,
-                                                                          margin: const EdgeInsetsDirectional.fromSTEB(
+                                                                          margin: EdgeInsetsDirectional.fromSTEB(
                                                                               12.0,
                                                                               0.0,
                                                                               12.0,
@@ -1099,7 +1089,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                                                         .primary,
                                                                   ),
                                                                 ),
-                                                                duration: const Duration(
+                                                                duration: Duration(
                                                                     milliseconds:
                                                                         2500),
                                                                 backgroundColor:
@@ -1110,30 +1100,30 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                                             );
                                                           },
                                                         ),
-                                                      ].divide(const SizedBox(
+                                                      ].divide(SizedBox(
                                                           width: 16.0)),
                                                     ),
                                                   ),
                                                 ),
+                                                onEnter: ((event) async {
+                                                  safeSetState(() => _model
+                                                          .mouseRegionHovered3 =
+                                                      true);
+                                                }),
+                                                onExit: ((event) async {
+                                                  safeSetState(() => _model
+                                                          .mouseRegionHovered3 =
+                                                      false);
+                                                }),
                                               ),
                                               MouseRegion(
                                                 opaque: false,
                                                 cursor: MouseCursor.defer ??
                                                     MouseCursor.defer,
-                                                onEnter: ((event) async {
-                                                  safeSetState(() => _model
-                                                          .mouseRegionHovered4 =
-                                                      true);
-                                                }),
-                                                onExit: ((event) async {
-                                                  safeSetState(() => _model
-                                                          .mouseRegionHovered4 =
-                                                      false);
-                                                }),
                                                 child: Container(
                                                   decoration: BoxDecoration(
                                                     borderRadius:
-                                                        const BorderRadius.only(
+                                                        BorderRadius.only(
                                                       bottomLeft:
                                                           Radius.circular(0.0),
                                                       bottomRight:
@@ -1151,7 +1141,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 2.0,
                                                                 16.0, 2.0),
                                                     child: Row(
@@ -1177,7 +1167,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                                                 ),
                                                                 child: Padding(
                                                                   padding:
-                                                                      const EdgeInsets
+                                                                      EdgeInsets
                                                                           .all(
                                                                               10.0),
                                                                   child: Row(
@@ -1244,7 +1234,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                                                               0.0,
                                                                           borderRadius:
                                                                               8.0,
-                                                                          margin: const EdgeInsetsDirectional.fromSTEB(
+                                                                          margin: EdgeInsetsDirectional.fromSTEB(
                                                                               12.0,
                                                                               0.0,
                                                                               12.0,
@@ -1350,7 +1340,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                                                               .w500,
                                                                     ),
                                                                   ),
-                                                                  duration: const Duration(
+                                                                  duration: Duration(
                                                                       milliseconds:
                                                                           2500),
                                                                   backgroundColor:
@@ -1362,11 +1352,21 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                                                             },
                                                           ),
                                                         ),
-                                                      ].divide(const SizedBox(
+                                                      ].divide(SizedBox(
                                                           width: 16.0)),
                                                     ),
                                                   ),
                                                 ),
+                                                onEnter: ((event) async {
+                                                  safeSetState(() => _model
+                                                          .mouseRegionHovered4 =
+                                                      true);
+                                                }),
+                                                onExit: ((event) async {
+                                                  safeSetState(() => _model
+                                                          .mouseRegionHovered4 =
+                                                      false);
+                                                }),
                                               ),
                                             ],
                                           ),
@@ -1381,7 +1381,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
+                        padding: EdgeInsetsDirectional.fromSTEB(
                             10.0, 0.0, 10.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -1391,7 +1391,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                               updateCallback: () => safeSetState(() {}),
                               child: PrimaryButtonWithIconWidget(
                                 tbName: 'Add More',
-                                btIcon: const Icon(
+                                btIcon: Icon(
                                   Icons.add_sharp,
                                 ),
                                 btAction: () async {},
@@ -1407,7 +1407,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
             ),
           ),
           Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(10.0, 15.0, 10.0, 15.0),
+            padding: EdgeInsetsDirectional.fromSTEB(10.0, 15.0, 10.0, 15.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.end,
@@ -1437,7 +1437,7 @@ class _TouDetailsViewWidgetState extends State<TouDetailsViewWidget> {
                     exception: () async {},
                   ),
                 ),
-              ].divide(const SizedBox(width: 15.0)),
+              ].divide(SizedBox(width: 15.0)),
             ),
           ),
         ],

@@ -55,7 +55,7 @@ class _MobileNavWidgetState extends State<MobileNavWidget> {
       height: 60.0,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        boxShadow: const [
+        boxShadow: [
           BoxShadow(
             blurRadius: 3.0,
             color: Color(0x33000000),
@@ -77,7 +77,7 @@ class _MobileNavWidgetState extends State<MobileNavWidget> {
               children: [
                 widget.iconOne!,
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       'fbzwfr5f' /* Home */,
@@ -99,7 +99,7 @@ class _MobileNavWidgetState extends State<MobileNavWidget> {
               children: [
                 widget.iconTwo!,
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       'ktet0neg' /* Documents */,
@@ -121,7 +121,7 @@ class _MobileNavWidgetState extends State<MobileNavWidget> {
               children: [
                 widget.iconThree!,
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       '5b8oknaf' /* Flow */,
@@ -143,7 +143,7 @@ class _MobileNavWidgetState extends State<MobileNavWidget> {
               children: [
                 widget.iconFour!,
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       '4z1tanpx' /* Reports */,
@@ -165,7 +165,7 @@ class _MobileNavWidgetState extends State<MobileNavWidget> {
               children: [
                 widget.iconFive!,
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       'd11wkhh8' /* Setting */,

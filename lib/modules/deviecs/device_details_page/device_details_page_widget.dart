@@ -50,7 +50,7 @@ class _DeviceDetailsPageWidgetState extends State<DeviceDetailsPageWidget> {
             model: _model.mainLayoutV1Model,
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutV1Widget(
-              body: () => const CDevicedDetailWidget(),
+              body: () => CDevicedDetailWidget(),
             ),
           ),
         ),

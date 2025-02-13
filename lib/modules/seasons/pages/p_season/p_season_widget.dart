@@ -1,5 +1,5 @@
 import '/backend/schema/enums/enums.dart';
-import '/components/layout/main_layout_v2/main_layout_v2_widget.dart';
+import '/components/main_layout_v2/main_layout_v2_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/modules/seasons/components/c_season/c_season_widget.dart';
@@ -50,9 +50,9 @@ class _PSeasonWidgetState extends State<PSeasonWidget> {
             model: _model.mainLayoutV2Model,
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutV2Widget(
-              key: const ValueKey('MainLayoutV2_nmyv'),
+              key: ValueKey('MainLayoutV2_nmyv'),
               menu: MenuItems.Seasons,
-              child: () => const CSeasonWidget(),
+              child: () => CSeasonWidget(),
             ),
           ),
         ),

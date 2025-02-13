@@ -44,8 +44,8 @@ class _AdvancedSearchWidgetState extends State<AdvancedSearchWidget>
             curve: Curves.easeInOut,
             delay: 200.0.ms,
             duration: 400.0.ms,
-            begin: const Offset(0.0, 100.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 100.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -86,18 +86,18 @@ class _AdvancedSearchWidgetState extends State<AdvancedSearchWidget>
             Container(
               width: 100.0,
               height: 100.0,
-              decoration: const BoxDecoration(),
+              decoration: BoxDecoration(),
             ),
           Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+            padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
             child: Container(
               width: double.infinity,
-              constraints: const BoxConstraints(
+              constraints: BoxConstraints(
                 maxWidth: 530.0,
               ),
-              decoration: const BoxDecoration(),
+              decoration: BoxDecoration(),
               child: Padding(
-                padding: const EdgeInsets.all(12.0),
+                padding: EdgeInsets.all(12.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -123,15 +123,15 @@ class _AdvancedSearchWidgetState extends State<AdvancedSearchWidget>
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(12.0),
+            padding: EdgeInsets.all(12.0),
             child: Container(
               width: double.infinity,
-              constraints: const BoxConstraints(
+              constraints: BoxConstraints(
                 maxWidth: 530.0,
               ),
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).secondaryBackground,
-                boxShadow: const [
+                boxShadow: [
                   BoxShadow(
                     blurRadius: 12.0,
                     color: Color(0x1E000000),
@@ -151,13 +151,13 @@ class _AdvancedSearchWidgetState extends State<AdvancedSearchWidget>
                   children: [
                     Padding(
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 4.0),
+                          EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 4.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 16.0, 8.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -180,48 +180,48 @@ class _AdvancedSearchWidgetState extends State<AdvancedSearchWidget>
                                             fontFamily: 'Inter',
                                             letterSpacing: 0.0,
                                           ),
-                                      enabledBorder: const UnderlineInputBorder(
+                                      enabledBorder: UnderlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
-                                        borderRadius: BorderRadius.only(
+                                        borderRadius: const BorderRadius.only(
                                           topLeft: Radius.circular(4.0),
                                           topRight: Radius.circular(4.0),
                                         ),
                                       ),
-                                      focusedBorder: const UnderlineInputBorder(
+                                      focusedBorder: UnderlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
-                                        borderRadius: BorderRadius.only(
+                                        borderRadius: const BorderRadius.only(
                                           topLeft: Radius.circular(4.0),
                                           topRight: Radius.circular(4.0),
                                         ),
                                       ),
-                                      errorBorder: const UnderlineInputBorder(
+                                      errorBorder: UnderlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
-                                        borderRadius: BorderRadius.only(
+                                        borderRadius: const BorderRadius.only(
                                           topLeft: Radius.circular(4.0),
                                           topRight: Radius.circular(4.0),
                                         ),
                                       ),
-                                      focusedErrorBorder: const UnderlineInputBorder(
+                                      focusedErrorBorder: UnderlineInputBorder(
                                         borderSide: BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
-                                        borderRadius: BorderRadius.only(
+                                        borderRadius: const BorderRadius.only(
                                           topLeft: Radius.circular(4.0),
                                           topRight: Radius.circular(4.0),
                                         ),
                                       ),
                                       contentPadding:
-                                          const EdgeInsetsDirectional.fromSTEB(
+                                          EdgeInsetsDirectional.fromSTEB(
                                               24.0, 24.0, 0.0, 24.0),
                                     ),
                                     style: FlutterFlowTheme.of(context)
@@ -243,9 +243,9 @@ class _AdvancedSearchWidgetState extends State<AdvancedSearchWidget>
                                   ),
                                   options: FFButtonOptions(
                                     height: 44.0,
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         24.0, 0.0, 24.0, 0.0),
-                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
                                     color: FlutterFlowTheme.of(context).primary,
                                     textStyle: FlutterFlowTheme.of(context)
@@ -257,7 +257,7 @@ class _AdvancedSearchWidgetState extends State<AdvancedSearchWidget>
                                           letterSpacing: 0.0,
                                         ),
                                     elevation: 3.0,
-                                    borderSide: const BorderSide(
+                                    borderSide: BorderSide(
                                       color: Colors.transparent,
                                       width: 1.0,
                                     ),
@@ -285,7 +285,7 @@ class _AdvancedSearchWidgetState extends State<AdvancedSearchWidget>
                             color: FlutterFlowTheme.of(context).alternate,
                           ),
                           Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 24.0, 12.0, 0.0, 12.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
@@ -302,7 +302,7 @@ class _AdvancedSearchWidgetState extends State<AdvancedSearchWidget>
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 1.0),
                             child: Container(
                               width: double.infinity,
@@ -314,7 +314,7 @@ class _AdvancedSearchWidgetState extends State<AdvancedSearchWidget>
                                     blurRadius: 0.0,
                                     color:
                                         FlutterFlowTheme.of(context).alternate,
-                                    offset: const Offset(
+                                    offset: Offset(
                                       0.0,
                                       1.0,
                                     ),
@@ -324,7 +324,7 @@ class _AdvancedSearchWidgetState extends State<AdvancedSearchWidget>
                                 shape: BoxShape.rectangle,
                               ),
                               child: Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     24.0, 12.0, 16.0, 12.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -337,7 +337,7 @@ class _AdvancedSearchWidgetState extends State<AdvancedSearchWidget>
                                     ),
                                     Expanded(
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             12.0, 0.0, 0.0, 0.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
@@ -369,7 +369,7 @@ class _AdvancedSearchWidgetState extends State<AdvancedSearchWidget>
                             scrollDirection: Axis.vertical,
                             children: [
                               Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 1.0),
                                 child: Container(
                                   width: double.infinity,
@@ -381,7 +381,7 @@ class _AdvancedSearchWidgetState extends State<AdvancedSearchWidget>
                                         blurRadius: 0.0,
                                         color: FlutterFlowTheme.of(context)
                                             .alternate,
-                                        offset: const Offset(
+                                        offset: Offset(
                                           0.0,
                                           1.0,
                                         ),
@@ -391,7 +391,7 @@ class _AdvancedSearchWidgetState extends State<AdvancedSearchWidget>
                                     shape: BoxShape.rectangle,
                                   ),
                                   child: Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         24.0, 12.0, 16.0, 12.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -405,7 +405,7 @@ class _AdvancedSearchWidgetState extends State<AdvancedSearchWidget>
                                         Expanded(
                                           child: Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     12.0, 0.0, 0.0, 0.0),
                                             child: Text(
                                               FFLocalizations.of(context)
@@ -434,7 +434,7 @@ class _AdvancedSearchWidgetState extends State<AdvancedSearchWidget>
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 1.0),
                                 child: Container(
                                   width: double.infinity,
@@ -446,7 +446,7 @@ class _AdvancedSearchWidgetState extends State<AdvancedSearchWidget>
                                         blurRadius: 0.0,
                                         color: FlutterFlowTheme.of(context)
                                             .alternate,
-                                        offset: const Offset(
+                                        offset: Offset(
                                           0.0,
                                           1.0,
                                         ),
@@ -456,7 +456,7 @@ class _AdvancedSearchWidgetState extends State<AdvancedSearchWidget>
                                     shape: BoxShape.rectangle,
                                   ),
                                   child: Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         24.0, 12.0, 16.0, 12.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -470,7 +470,7 @@ class _AdvancedSearchWidgetState extends State<AdvancedSearchWidget>
                                         Expanded(
                                           child: Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     12.0, 0.0, 0.0, 0.0),
                                             child: Text(
                                               FFLocalizations.of(context)
@@ -499,7 +499,7 @@ class _AdvancedSearchWidgetState extends State<AdvancedSearchWidget>
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 1.0),
                                 child: Container(
                                   width: double.infinity,
@@ -508,7 +508,7 @@ class _AdvancedSearchWidgetState extends State<AdvancedSearchWidget>
                                     shape: BoxShape.rectangle,
                                   ),
                                   child: Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         24.0, 12.0, 16.0, 12.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -522,7 +522,7 @@ class _AdvancedSearchWidgetState extends State<AdvancedSearchWidget>
                                         Expanded(
                                           child: Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     12.0, 0.0, 0.0, 0.0),
                                             child: Text(
                                               FFLocalizations.of(context)

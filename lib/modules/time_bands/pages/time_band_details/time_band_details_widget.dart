@@ -1,5 +1,5 @@
 import '/backend/schema/enums/enums.dart';
-import '/components/layout/main_layout_v2/main_layout_v2_widget.dart';
+import '/components/main_layout_v2/main_layout_v2_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/modules/time_bands/components/timeband_details_view/timeband_details_view_widget.dart';
@@ -51,7 +51,7 @@ class _TimeBandDetailsWidgetState extends State<TimeBandDetailsWidget> {
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutV2Widget(
               menu: MenuItems.TimeBands,
-              child: () => const TimebandDetailsViewWidget(),
+              child: () => TimebandDetailsViewWidget(),
             ),
           ),
         ),

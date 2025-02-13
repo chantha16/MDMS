@@ -47,7 +47,7 @@ class _CTextFieldWidgetState extends State<CTextFieldWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
       width: double.infinity,
       child: TextFormField(
         controller: _model.textController,
@@ -63,7 +63,7 @@ class _CTextFieldWidgetState extends State<CTextFieldWidget> {
                 letterSpacing: 0.0,
               ),
           enabledBorder: OutlineInputBorder(
-            borderSide: const BorderSide(
+            borderSide: BorderSide(
               color: Color(0x00000000),
               width: 1.0,
             ),

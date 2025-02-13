@@ -65,7 +65,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
               ),
             ),
             child: Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: EdgeInsets.all(16.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 children: [
@@ -151,7 +151,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                   Expanded(
                     child: Padding(
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(60.0, 0.0, 0.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(60.0, 0.0, 0.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.end,
@@ -199,9 +199,9 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                             .primary,
                                         size: 20.0,
                                       ),
-                                    ].divide(const SizedBox(width: 10.0)),
+                                    ].divide(SizedBox(width: 10.0)),
                                   ),
-                                ].divide(const SizedBox(height: 4.0)),
+                                ].divide(SizedBox(height: 4.0)),
                               ),
                             ),
                           Builder(
@@ -277,7 +277,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                   width: 45.0,
                                   height: 45.0,
                                   clipBehavior: Clip.antiAlias,
-                                  decoration: const BoxDecoration(
+                                  decoration: BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.network(
@@ -290,7 +290,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                   width: 45.0,
                                   height: 45.0,
                                   clipBehavior: Clip.antiAlias,
-                                  decoration: const BoxDecoration(
+                                  decoration: BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.network(
@@ -301,11 +301,11 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                               }
                             },
                           ),
-                        ].divide(const SizedBox(width: 12.0)),
+                        ].divide(SizedBox(width: 12.0)),
                       ),
                     ),
                   ),
-                ].divide(const SizedBox(width: 12.0)),
+                ].divide(SizedBox(width: 12.0)),
               ),
             ),
           ),
@@ -325,11 +325,11 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                       ),
                       child: Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 1.0, 0.0),
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 1.0, 0.0),
                         child: Container(
                           width: 250.0,
                           height: double.infinity,
-                          constraints: const BoxConstraints(
+                          constraints: BoxConstraints(
                             maxWidth: 300.0,
                           ),
                           decoration: BoxDecoration(
@@ -342,7 +342,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                             ),
                           ),
                           child: Padding(
-                            padding: const EdgeInsets.all(12.0),
+                            padding: EdgeInsets.all(12.0),
                             child: SingleChildScrollView(
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -350,7 +350,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Stack(
-                                    alignment: const AlignmentDirectional(1.0, 0.0),
+                                    alignment: AlignmentDirectional(1.0, 0.0),
                                     children: [
                                       InkWell(
                                         splashColor: Colors.transparent,
@@ -362,7 +362,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                             'DashboardPage',
                                             extra: <String, dynamic>{
                                               kTransitionInfoKey:
-                                                  const TransitionInfo(
+                                                  TransitionInfo(
                                                 hasTransition: true,
                                                 transitionType:
                                                     PageTransitionType.fade,
@@ -385,16 +385,16 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                             color: valueOrDefault<Color>(
                                               widget.menu ==
                                                       MenuItems.Dashboard
-                                                  ? const Color(0x414B39EF)
+                                                  ? Color(0x414B39EF)
                                                   : FlutterFlowTheme.of(context)
                                                       .secondaryBackground,
-                                              const Color(0x414B39EF),
+                                              Color(0x414B39EF),
                                             ),
                                             borderRadius:
                                                 BorderRadius.circular(8.0),
                                           ),
                                           child: Padding(
-                                            padding: const EdgeInsets.all(8.0),
+                                            padding: EdgeInsets.all(8.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               crossAxisAlignment:
@@ -450,7 +450,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                 FontWeight.w500,
                                                           ),
                                                 ),
-                                              ].divide(const SizedBox(width: 12.0)),
+                                              ].divide(SizedBox(width: 12.0)),
                                             ),
                                           ),
                                         ),
@@ -461,12 +461,12 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                         decoration: BoxDecoration(
                                           color: valueOrDefault<Color>(
                                             widget.menu == MenuItems.Dashboard
-                                                ? const Color(0xB2996699)
+                                                ? Color(0xB2996699)
                                                 : FlutterFlowTheme.of(context)
                                                     .secondaryBackground,
-                                            const Color(0xB2996699),
+                                            Color(0xB2996699),
                                           ),
-                                          borderRadius: const BorderRadius.only(
+                                          borderRadius: BorderRadius.only(
                                             bottomLeft: Radius.circular(0.0),
                                             bottomRight: Radius.circular(8.0),
                                             topLeft: Radius.circular(0.0),
@@ -491,7 +491,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                       borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     child: Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 10.0, 10.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -518,7 +518,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                   'DevicesPage',
                                                   extra: <String, dynamic>{
                                                     kTransitionInfoKey:
-                                                        const TransitionInfo(
+                                                        TransitionInfo(
                                                       hasTransition: true,
                                                       transitionType:
                                                           PageTransitionType
@@ -546,7 +546,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                     BorderRadius.circular(8.0),
                                               ),
                                               child: Padding(
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         8.0, 8.0, 0.0, 0.0),
                                                 child: Row(
@@ -579,7 +579,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          const EdgeInsetsDirectional
+                                                          EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   12.0,
                                                                   0.0,
@@ -626,7 +626,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                     Expanded(
                                                       child: Align(
                                                         alignment:
-                                                            const AlignmentDirectional(
+                                                            AlignmentDirectional(
                                                                 1.0, 0.0),
                                                         child: Builder(
                                                           builder: (context) {
@@ -680,7 +680,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                   .deviceManagementMenu ==
                                               true)
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       24.0, 0.0, 0.0, 0.0),
                                               child: Column(
@@ -688,7 +688,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                 children: [
                                                   Stack(
                                                     alignment:
-                                                        const AlignmentDirectional(
+                                                        AlignmentDirectional(
                                                             1.0, 0.0),
                                                     children: [
                                                       InkWell(
@@ -706,7 +706,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                             extra: <String,
                                                                 dynamic>{
                                                               kTransitionInfoKey:
-                                                                  const TransitionInfo(
+                                                                  TransitionInfo(
                                                                 hasTransition:
                                                                     true,
                                                                 transitionType:
@@ -730,7 +730,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                               widget.menu ==
                                                                       MenuItems
                                                                           .Devices
-                                                                  ? const Color(
+                                                                  ? Color(
                                                                       0x414B39EF)
                                                                   : FlutterFlowTheme.of(
                                                                           context)
@@ -746,7 +746,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                           ),
                                                           child: Padding(
                                                             padding:
-                                                                const EdgeInsets.all(
+                                                                EdgeInsets.all(
                                                                     8.0),
                                                             child: Row(
                                                               mainAxisSize:
@@ -803,7 +803,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                             FontWeight.w500,
                                                                       ),
                                                                 ),
-                                                              ].divide(const SizedBox(
+                                                              ].divide(SizedBox(
                                                                   width: 12.0)),
                                                             ),
                                                           ),
@@ -819,7 +819,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                             widget.menu ==
                                                                     MenuItems
                                                                         .Devices
-                                                                ? const Color(
+                                                                ? Color(
                                                                     0xB2996699)
                                                                 : FlutterFlowTheme.of(
                                                                         context)
@@ -829,7 +829,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                 .primaryBackground,
                                                           ),
                                                           borderRadius:
-                                                              const BorderRadius.only(
+                                                              BorderRadius.only(
                                                             bottomLeft:
                                                                 Radius.circular(
                                                                     0.0),
@@ -849,7 +849,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                   ),
                                                   Stack(
                                                     alignment:
-                                                        const AlignmentDirectional(
+                                                        AlignmentDirectional(
                                                             1.0, 0.0),
                                                     children: [
                                                       Container(
@@ -861,7 +861,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                             widget.menu ==
                                                                     MenuItems
                                                                         .Configuration
-                                                                ? const Color(
+                                                                ? Color(
                                                                     0x414B39EF)
                                                                 : FlutterFlowTheme.of(
                                                                         context)
@@ -877,7 +877,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              const EdgeInsets.all(
+                                                              EdgeInsets.all(
                                                                   8.0),
                                                           child: InkWell(
                                                             splashColor: Colors
@@ -903,7 +903,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                           .primaryText,
                                                                     ),
                                                                   ),
-                                                                  duration: const Duration(
+                                                                  duration: Duration(
                                                                       milliseconds:
                                                                           4000),
                                                                   backgroundColor:
@@ -951,7 +951,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                             FontWeight.w500,
                                                                       ),
                                                                 ),
-                                                              ].divide(const SizedBox(
+                                                              ].divide(SizedBox(
                                                                   width: 12.0)),
                                                             ),
                                                           ),
@@ -967,7 +967,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                             widget.menu ==
                                                                     MenuItems
                                                                         .Configuration
-                                                                ? const Color(
+                                                                ? Color(
                                                                     0xB2996699)
                                                                 : FlutterFlowTheme.of(
                                                                         context)
@@ -977,7 +977,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                 .primaryBackground,
                                                           ),
                                                           borderRadius:
-                                                              const BorderRadius.only(
+                                                              BorderRadius.only(
                                                             bottomLeft:
                                                                 Radius.circular(
                                                                     0.0),
@@ -997,9 +997,9 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                   ),
                                                 ]
                                                     .divide(
-                                                        const SizedBox(height: 10.0))
+                                                        SizedBox(height: 10.0))
                                                     .addToStart(
-                                                        const SizedBox(height: 10.0)),
+                                                        SizedBox(height: 10.0)),
                                               ),
                                             ),
                                         ],
@@ -1017,7 +1017,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                       borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     child: Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 10.0, 10.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -1046,7 +1046,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                     BorderRadius.circular(8.0),
                                               ),
                                               child: Padding(
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         8.0, 8.0, 0.0, 0.0),
                                                 child: Row(
@@ -1087,7 +1087,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                     Expanded(
                                                       child: Align(
                                                         alignment:
-                                                            const AlignmentDirectional(
+                                                            AlignmentDirectional(
                                                                 1.0, 0.0),
                                                         child: Builder(
                                                           builder: (context) {
@@ -1117,7 +1117,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      const SizedBox(width: 12.0)),
+                                                      SizedBox(width: 12.0)),
                                                 ),
                                               ),
                                             ),
@@ -1125,7 +1125,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                           if (FFAppState().touManagementMenu ==
                                               true)
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       24.0, 0.0, 0.0, 0.0),
                                               child: Column(
@@ -1133,7 +1133,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                 children: [
                                                   Stack(
                                                     alignment:
-                                                        const AlignmentDirectional(
+                                                        AlignmentDirectional(
                                                             1.0, 0.0),
                                                     children: [
                                                       Container(
@@ -1145,7 +1145,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                             widget.menu ==
                                                                     MenuItems
                                                                         .TOU
-                                                                ? const Color(
+                                                                ? Color(
                                                                     0x414B39EF)
                                                                 : FlutterFlowTheme.of(
                                                                         context)
@@ -1161,7 +1161,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              const EdgeInsets.all(
+                                                              EdgeInsets.all(
                                                                   8.0),
                                                           child: Row(
                                                             mainAxisSize:
@@ -1191,7 +1191,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                     .override(
                                                                       fontFamily:
                                                                           'Plus Jakarta Sans',
-                                                                      color: const Color(
+                                                                      color: Color(
                                                                           0xFF606A85),
                                                                       fontSize:
                                                                           14.0,
@@ -1202,7 +1202,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                               .w500,
                                                                     ),
                                                               ),
-                                                            ].divide(const SizedBox(
+                                                            ].divide(SizedBox(
                                                                 width: 12.0)),
                                                           ),
                                                         ),
@@ -1217,7 +1217,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                             widget.menu ==
                                                                     MenuItems
                                                                         .TOU
-                                                                ? const Color(
+                                                                ? Color(
                                                                     0xB2996699)
                                                                 : FlutterFlowTheme.of(
                                                                         context)
@@ -1227,7 +1227,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                 .primaryBackground,
                                                           ),
                                                           borderRadius:
-                                                              const BorderRadius.only(
+                                                              BorderRadius.only(
                                                             bottomLeft:
                                                                 Radius.circular(
                                                                     0.0),
@@ -1247,7 +1247,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                   ),
                                                   Stack(
                                                     alignment:
-                                                        const AlignmentDirectional(
+                                                        AlignmentDirectional(
                                                             1.0, 0.0),
                                                     children: [
                                                       Container(
@@ -1259,7 +1259,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                             widget.menu ==
                                                                     MenuItems
                                                                         .TimeBands
-                                                                ? const Color(
+                                                                ? Color(
                                                                     0x414B39EF)
                                                                 : FlutterFlowTheme.of(
                                                                         context)
@@ -1275,7 +1275,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              const EdgeInsets.all(
+                                                              EdgeInsets.all(
                                                                   8.0),
                                                           child: Row(
                                                             mainAxisSize:
@@ -1305,7 +1305,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                     .override(
                                                                       fontFamily:
                                                                           'Plus Jakarta Sans',
-                                                                      color: const Color(
+                                                                      color: Color(
                                                                           0xFF606A85),
                                                                       fontSize:
                                                                           14.0,
@@ -1316,7 +1316,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                               .w500,
                                                                     ),
                                                               ),
-                                                            ].divide(const SizedBox(
+                                                            ].divide(SizedBox(
                                                                 width: 12.0)),
                                                           ),
                                                         ),
@@ -1331,7 +1331,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                             widget.menu ==
                                                                     MenuItems
                                                                         .TimeBands
-                                                                ? const Color(
+                                                                ? Color(
                                                                     0xB2996699)
                                                                 : FlutterFlowTheme.of(
                                                                         context)
@@ -1341,7 +1341,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                 .primaryBackground,
                                                           ),
                                                           borderRadius:
-                                                              const BorderRadius.only(
+                                                              BorderRadius.only(
                                                             bottomLeft:
                                                                 Radius.circular(
                                                                     0.0),
@@ -1361,7 +1361,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                   ),
                                                   Stack(
                                                     alignment:
-                                                        const AlignmentDirectional(
+                                                        AlignmentDirectional(
                                                             1.0, 0.0),
                                                     children: [
                                                       InkWell(
@@ -1379,7 +1379,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                             extra: <String,
                                                                 dynamic>{
                                                               kTransitionInfoKey:
-                                                                  const TransitionInfo(
+                                                                  TransitionInfo(
                                                                 hasTransition:
                                                                     true,
                                                                 transitionType:
@@ -1403,7 +1403,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                               widget.menu ==
                                                                       MenuItems
                                                                           .SpecialDays
-                                                                  ? const Color(
+                                                                  ? Color(
                                                                       0x414B39EF)
                                                                   : FlutterFlowTheme.of(
                                                                           context)
@@ -1419,7 +1419,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                           ),
                                                           child: Padding(
                                                             padding:
-                                                                const EdgeInsets.all(
+                                                                EdgeInsets.all(
                                                                     8.0),
                                                             child: Row(
                                                               mainAxisSize:
@@ -1449,7 +1449,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                       .override(
                                                                         fontFamily:
                                                                             'Plus Jakarta Sans',
-                                                                        color: const Color(
+                                                                        color: Color(
                                                                             0xFF606A85),
                                                                         fontSize:
                                                                             14.0,
@@ -1459,7 +1459,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                             FontWeight.w500,
                                                                       ),
                                                                 ),
-                                                              ].divide(const SizedBox(
+                                                              ].divide(SizedBox(
                                                                   width: 12.0)),
                                                             ),
                                                           ),
@@ -1475,7 +1475,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                             widget.menu ==
                                                                     MenuItems
                                                                         .SpecialDays
-                                                                ? const Color(
+                                                                ? Color(
                                                                     0xB2996699)
                                                                 : FlutterFlowTheme.of(
                                                                         context)
@@ -1485,7 +1485,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                 .primaryBackground,
                                                           ),
                                                           borderRadius:
-                                                              const BorderRadius.only(
+                                                              BorderRadius.only(
                                                             bottomLeft:
                                                                 Radius.circular(
                                                                     0.0),
@@ -1505,7 +1505,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                   ),
                                                   Stack(
                                                     alignment:
-                                                        const AlignmentDirectional(
+                                                        AlignmentDirectional(
                                                             1.0, 0.0),
                                                     children: [
                                                       InkWell(
@@ -1523,7 +1523,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                             extra: <String,
                                                                 dynamic>{
                                                               kTransitionInfoKey:
-                                                                  const TransitionInfo(
+                                                                  TransitionInfo(
                                                                 hasTransition:
                                                                     true,
                                                                 transitionType:
@@ -1537,7 +1537,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                           );
                                                         },
                                                         child: Container(
-                                                          key: const ValueKey(
+                                                          key: ValueKey(
                                                               'Container_wz25'),
                                                           width:
                                                               double.infinity,
@@ -1549,7 +1549,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                               widget.menu ==
                                                                       MenuItems
                                                                           .Seasons
-                                                                  ? const Color(
+                                                                  ? Color(
                                                                       0x414B39EF)
                                                                   : FlutterFlowTheme.of(
                                                                           context)
@@ -1565,7 +1565,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                           ),
                                                           child: Padding(
                                                             padding:
-                                                                const EdgeInsets.all(
+                                                                EdgeInsets.all(
                                                                     8.0),
                                                             child: Row(
                                                               mainAxisSize:
@@ -1595,7 +1595,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                       .override(
                                                                         fontFamily:
                                                                             'Plus Jakarta Sans',
-                                                                        color: const Color(
+                                                                        color: Color(
                                                                             0xFF606A85),
                                                                         fontSize:
                                                                             14.0,
@@ -1605,7 +1605,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                             FontWeight.w500,
                                                                       ),
                                                                 ),
-                                                              ].divide(const SizedBox(
+                                                              ].divide(SizedBox(
                                                                   width: 12.0)),
                                                             ),
                                                           ),
@@ -1621,7 +1621,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                             widget.menu ==
                                                                     MenuItems
                                                                         .Seasons
-                                                                ? const Color(
+                                                                ? Color(
                                                                     0xB2996699)
                                                                 : FlutterFlowTheme.of(
                                                                         context)
@@ -1631,7 +1631,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                 .primaryBackground,
                                                           ),
                                                           borderRadius:
-                                                              const BorderRadius.only(
+                                                              BorderRadius.only(
                                                             bottomLeft:
                                                                 Radius.circular(
                                                                     0.0),
@@ -1651,9 +1651,9 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                   ),
                                                 ]
                                                     .divide(
-                                                        const SizedBox(height: 10.0))
+                                                        SizedBox(height: 10.0))
                                                     .addToStart(
-                                                        const SizedBox(height: 10.0)),
+                                                        SizedBox(height: 10.0)),
                                               ),
                                             ),
                                         ],
@@ -1661,7 +1661,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                     ),
                                   ),
                                   Stack(
-                                    alignment: const AlignmentDirectional(1.0, 0.0),
+                                    alignment: AlignmentDirectional(1.0, 0.0),
                                     children: [
                                       InkWell(
                                         splashColor: Colors.transparent,
@@ -1673,7 +1673,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                             'EventPage',
                                             extra: <String, dynamic>{
                                               kTransitionInfoKey:
-                                                  const TransitionInfo(
+                                                  TransitionInfo(
                                                 hasTransition: true,
                                                 transitionType:
                                                     PageTransitionType.fade,
@@ -1695,7 +1695,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                           decoration: BoxDecoration(
                                             color: valueOrDefault<Color>(
                                               widget.menu == MenuItems.Events
-                                                  ? const Color(0x414B39EF)
+                                                  ? Color(0x414B39EF)
                                                   : FlutterFlowTheme.of(context)
                                                       .secondaryBackground,
                                               FlutterFlowTheme.of(context)
@@ -1705,7 +1705,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                 BorderRadius.circular(8.0),
                                           ),
                                           child: Padding(
-                                            padding: const EdgeInsets.all(8.0),
+                                            padding: EdgeInsets.all(8.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               crossAxisAlignment:
@@ -1761,7 +1761,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                 FontWeight.w500,
                                                           ),
                                                 ),
-                                              ].divide(const SizedBox(width: 12.0)),
+                                              ].divide(SizedBox(width: 12.0)),
                                             ),
                                           ),
                                         ),
@@ -1772,13 +1772,13 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                         decoration: BoxDecoration(
                                           color: valueOrDefault<Color>(
                                             widget.menu == MenuItems.Events
-                                                ? const Color(0xB2996699)
+                                                ? Color(0xB2996699)
                                                 : FlutterFlowTheme.of(context)
                                                     .secondaryBackground,
                                             FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
                                           ),
-                                          borderRadius: const BorderRadius.only(
+                                          borderRadius: BorderRadius.only(
                                             bottomLeft: Radius.circular(0.0),
                                             bottomRight: Radius.circular(8.0),
                                             topLeft: Radius.circular(0.0),
@@ -1798,7 +1798,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                       borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     child: Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 10.0, 10.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -1835,7 +1835,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                     BorderRadius.circular(8.0),
                                               ),
                                               child: Padding(
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         8.0, 8.0, 0.0, 0.0),
                                                 child: Row(
@@ -1877,7 +1877,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                     Expanded(
                                                       child: Align(
                                                         alignment:
-                                                            const AlignmentDirectional(
+                                                            AlignmentDirectional(
                                                                 1.0, 0.0),
                                                         child: Builder(
                                                           builder: (context) {
@@ -1907,14 +1907,14 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      const SizedBox(width: 12.0)),
+                                                      SizedBox(width: 12.0)),
                                                 ),
                                               ),
                                             ),
                                           ),
                                           if (FFAppState().settingsMenu == true)
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       20.0, 0.0, 0.0, 0.0),
                                               child: Column(
@@ -1922,7 +1922,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                 children: [
                                                   Stack(
                                                     alignment:
-                                                        const AlignmentDirectional(
+                                                        AlignmentDirectional(
                                                             1.0, 0.0),
                                                     children: [
                                                       InkWell(
@@ -1940,7 +1940,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                             extra: <String,
                                                                 dynamic>{
                                                               kTransitionInfoKey:
-                                                                  const TransitionInfo(
+                                                                  TransitionInfo(
                                                                 hasTransition:
                                                                     true,
                                                                 transitionType:
@@ -1964,7 +1964,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                               widget.menu ==
                                                                       MenuItems
                                                                           .ProductSettings
-                                                                  ? const Color(
+                                                                  ? Color(
                                                                       0x414B39EF)
                                                                   : FlutterFlowTheme.of(
                                                                           context)
@@ -1980,7 +1980,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                           ),
                                                           child: Padding(
                                                             padding:
-                                                                const EdgeInsets.all(
+                                                                EdgeInsets.all(
                                                                     8.0),
                                                             child: Row(
                                                               mainAxisSize:
@@ -1990,7 +1990,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                   CrossAxisAlignment
                                                                       .center,
                                                               children: [
-                                                                const Icon(
+                                                                Icon(
                                                                   Icons
                                                                       .perm_data_setting_outlined,
                                                                   color: Color(
@@ -2009,7 +2009,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                       .override(
                                                                         fontFamily:
                                                                             'Plus Jakarta Sans',
-                                                                        color: const Color(
+                                                                        color: Color(
                                                                             0xFF606A85),
                                                                         fontSize:
                                                                             14.0,
@@ -2019,7 +2019,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                             FontWeight.w500,
                                                                       ),
                                                                 ),
-                                                              ].divide(const SizedBox(
+                                                              ].divide(SizedBox(
                                                                   width: 12.0)),
                                                             ),
                                                           ),
@@ -2035,7 +2035,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                             widget.menu ==
                                                                     MenuItems
                                                                         .ProductSettings
-                                                                ? const Color(
+                                                                ? Color(
                                                                     0xB2996699)
                                                                 : FlutterFlowTheme.of(
                                                                         context)
@@ -2045,7 +2045,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                 .primaryBackground,
                                                           ),
                                                           borderRadius:
-                                                              const BorderRadius.only(
+                                                              BorderRadius.only(
                                                             bottomLeft:
                                                                 Radius.circular(
                                                                     0.0),
@@ -2065,7 +2065,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                   ),
                                                   Stack(
                                                     alignment:
-                                                        const AlignmentDirectional(
+                                                        AlignmentDirectional(
                                                             1.0, 0.0),
                                                     children: [
                                                       Container(
@@ -2077,7 +2077,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                             widget.menu ==
                                                                     MenuItems
                                                                         .Security
-                                                                ? const Color(
+                                                                ? Color(
                                                                     0x414B39EF)
                                                                 : FlutterFlowTheme.of(
                                                                         context)
@@ -2093,7 +2093,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              const EdgeInsets.all(
+                                                              EdgeInsets.all(
                                                                   8.0),
                                                           child: Row(
                                                             mainAxisSize:
@@ -2103,7 +2103,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                 CrossAxisAlignment
                                                                     .center,
                                                             children: [
-                                                              const Icon(
+                                                              Icon(
                                                                 Icons
                                                                     .security_sharp,
                                                                 color: Color(
@@ -2122,7 +2122,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                     .override(
                                                                       fontFamily:
                                                                           'Plus Jakarta Sans',
-                                                                      color: const Color(
+                                                                      color: Color(
                                                                           0xFF606A85),
                                                                       fontSize:
                                                                           14.0,
@@ -2133,7 +2133,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                               .w500,
                                                                     ),
                                                               ),
-                                                            ].divide(const SizedBox(
+                                                            ].divide(SizedBox(
                                                                 width: 12.0)),
                                                           ),
                                                         ),
@@ -2148,7 +2148,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                             widget.menu ==
                                                                     MenuItems
                                                                         .Security
-                                                                ? const Color(
+                                                                ? Color(
                                                                     0xB2996699)
                                                                 : FlutterFlowTheme.of(
                                                                         context)
@@ -2158,7 +2158,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                                 .primaryBackground,
                                                           ),
                                                           borderRadius:
-                                                              const BorderRadius.only(
+                                                              BorderRadius.only(
                                                             bottomLeft:
                                                                 Radius.circular(
                                                                     0.0),
@@ -2178,16 +2178,16 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                                   ),
                                                 ]
                                                     .divide(
-                                                        const SizedBox(height: 10.0))
+                                                        SizedBox(height: 10.0))
                                                     .addToStart(
-                                                        const SizedBox(height: 10.0)),
+                                                        SizedBox(height: 10.0)),
                                               ),
                                             ),
                                         ],
                                       ),
                                     ),
                                   ),
-                                ].divide(const SizedBox(height: 10.0)),
+                                ].divide(SizedBox(height: 10.0)),
                               ),
                             ),
                           ),
@@ -2256,7 +2256,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                                 },
                               ),
                               Text(
-                                key: const ValueKey('Text_h603'),
+                                key: ValueKey('Text_h603'),
                                 FFLocalizations.of(context).getText(
                                   'dy4zkf6s' /* Device Management */,
                                 ),
@@ -2359,8 +2359,8 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                             ],
                           ),
                         ]
-                            .divide(const SizedBox(height: 12.0))
-                            .addToStart(const SizedBox(height: 12.0)),
+                            .divide(SizedBox(height: 12.0))
+                            .addToStart(SizedBox(height: 12.0)),
                       ),
                     );
                   }
@@ -2374,7 +2374,7 @@ class _MainLayoutV2WidgetState extends State<MainLayoutV2Widget> {
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                   ),
                   child: Padding(
-                    padding: const EdgeInsets.all(12.0),
+                    padding: EdgeInsets.all(12.0),
                     child: Builder(builder: (_) {
                       return widget.child!();
                     }),

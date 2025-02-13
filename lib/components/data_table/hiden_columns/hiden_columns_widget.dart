@@ -59,7 +59,7 @@ class _HidenColumnsWidgetState extends State<HidenColumnsWidget> {
       width: 266.0,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        boxShadow: const [
+        boxShadow: [
           BoxShadow(
             blurRadius: 4.0,
             color: Color(0x33000000),
@@ -75,7 +75,7 @@ class _HidenColumnsWidgetState extends State<HidenColumnsWidget> {
         ),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(15.0),
+        padding: EdgeInsets.all(15.0),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -90,7 +90,7 @@ class _HidenColumnsWidgetState extends State<HidenColumnsWidget> {
                   final columns = _model.columnsVisibleStatus.toList();
 
                   return ListView.separated(
-                    padding: const EdgeInsets.fromLTRB(
+                    padding: EdgeInsets.fromLTRB(
                       0,
                       16.0,
                       0,
@@ -99,7 +99,7 @@ class _HidenColumnsWidgetState extends State<HidenColumnsWidget> {
                     shrinkWrap: true,
                     scrollDirection: Axis.vertical,
                     itemCount: columns.length,
-                    separatorBuilder: (_, __) => const SizedBox(height: 10.0),
+                    separatorBuilder: (_, __) => SizedBox(height: 10.0),
                     itemBuilder: (context, columnsIndex) {
                       final columnsItem = columns[columnsIndex];
                       return Row(
@@ -165,7 +165,7 @@ class _HidenColumnsWidgetState extends State<HidenColumnsWidget> {
                                   letterSpacing: 0.0,
                                 ),
                           ),
-                        ].divide(const SizedBox(width: 5.0)),
+                        ].divide(SizedBox(width: 5.0)),
                       );
                     },
                   );

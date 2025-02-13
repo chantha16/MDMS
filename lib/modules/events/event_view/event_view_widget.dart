@@ -70,7 +70,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
             children: [
               Expanded(
                 child: Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                   child: Container(
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).primaryBackground,
@@ -82,9 +82,9 @@ class _EventViewWidgetState extends State<EventViewWidget>
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Align(
-                          alignment: const AlignmentDirectional(0.0, 0.0),
+                          alignment: AlignmentDirectional(0.0, 0.0),
                           child: Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 10.0, 0.0, 0.0, 0.0),
                             child: Icon(
                               Icons.search,
@@ -126,7 +126,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                 .asValidator(context),
                           ),
                         ),
-                      ].divide(const SizedBox(width: 12.0)),
+                      ].divide(SizedBox(width: 12.0)),
                     ),
                   ),
                 ),
@@ -138,9 +138,9 @@ class _EventViewWidgetState extends State<EventViewWidget>
                       context: context,
                       isGlobal: false,
                       avoidOverflow: false,
-                      targetAnchor: const AlignmentDirectional(-1.0, 1.0)
+                      targetAnchor: AlignmentDirectional(-1.0, 1.0)
                           .resolve(Directionality.of(context)),
-                      followerAnchor: const AlignmentDirectional(0.0, -1.0)
+                      followerAnchor: AlignmentDirectional(0.0, -1.0)
                           .resolve(Directionality.of(context)),
                       builder: (dialogContext) {
                         return Material(
@@ -165,9 +165,9 @@ class _EventViewWidgetState extends State<EventViewWidget>
                   options: FFButtonOptions(
                     width: 120.0,
                     height: 40.0,
-                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     iconPadding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).primary,
                     textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Inter',
@@ -180,7 +180,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                 ),
               ),
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(8.0, 12.0, 8.0, 12.0),
+                padding: EdgeInsetsDirectional.fromSTEB(8.0, 12.0, 8.0, 12.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -200,12 +200,12 @@ class _EventViewWidgetState extends State<EventViewWidget>
                             context: context,
                             isGlobal: false,
                             avoidOverflow: false,
-                            targetAnchor: const AlignmentDirectional(-1.0, 1.0)
+                            targetAnchor: AlignmentDirectional(-1.0, 1.0)
                                 .resolve(Directionality.of(context)),
-                            followerAnchor: const AlignmentDirectional(0.0, -1.0)
+                            followerAnchor: AlignmentDirectional(0.0, -1.0)
                                 .resolve(Directionality.of(context)),
                             builder: (dialogContext) {
-                              return const Material(
+                              return Material(
                                 color: Colors.transparent,
                                 child: CustomColumnsAlertWidget(),
                               );
@@ -214,7 +214,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                         },
                       ),
                     ),
-                  ].divide(const SizedBox(width: 8.0)),
+                  ].divide(SizedBox(width: 8.0)),
                 ),
               ),
               Builder(
@@ -228,12 +228,12 @@ class _EventViewWidgetState extends State<EventViewWidget>
                       context: context,
                       isGlobal: false,
                       avoidOverflow: false,
-                      targetAnchor: const AlignmentDirectional(0.0, -1.0)
+                      targetAnchor: AlignmentDirectional(0.0, -1.0)
                           .resolve(Directionality.of(context)),
-                      followerAnchor: const AlignmentDirectional(0.0, -1.12)
+                      followerAnchor: AlignmentDirectional(0.0, -1.12)
                           .resolve(Directionality.of(context)),
                       builder: (dialogContext) {
-                        return const Material(
+                        return Material(
                           color: Colors.transparent,
                           child: CCustomColumnsWidget(),
                         );
@@ -244,7 +244,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
+                        padding: EdgeInsetsDirectional.fromSTEB(
                             8.0, 12.0, 8.0, 12.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -265,13 +265,13 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                     context: context,
                                     isGlobal: false,
                                     avoidOverflow: false,
-                                    targetAnchor: const AlignmentDirectional(0.0, 0.0)
+                                    targetAnchor: AlignmentDirectional(0.0, 0.0)
                                         .resolve(Directionality.of(context)),
-                                    followerAnchor: const AlignmentDirectional(
+                                    followerAnchor: AlignmentDirectional(
                                             0.0, -1.0)
                                         .resolve(Directionality.of(context)),
                                     builder: (dialogContext) {
-                                      return const Material(
+                                      return Material(
                                         color: Colors.transparent,
                                         child: CustomColumnsAlertWidget(),
                                       );
@@ -280,14 +280,14 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                 },
                               ),
                             ),
-                          ].divide(const SizedBox(width: 8.0)),
+                          ].divide(SizedBox(width: 8.0)),
                         ),
                       ),
-                    ].divide(const SizedBox(width: 8.0)),
+                    ].divide(SizedBox(width: 8.0)),
                   ),
                 ),
               ),
-            ].divide(const SizedBox(width: 10.0)).around(const SizedBox(width: 10.0)),
+            ].divide(SizedBox(width: 10.0)).around(SizedBox(width: 10.0)),
           ),
           Expanded(
             child: Container(
@@ -304,7 +304,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                     child: Column(
                       children: [
                         Align(
-                          alignment: const Alignment(-1.0, 0),
+                          alignment: Alignment(-1.0, 0),
                           child: TabBar(
                             isScrollable: true,
                             labelColor:
@@ -332,7 +332,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.all(8.0),
+                                    padding: EdgeInsets.all(8.0),
                                     child: Icon(
                                       Icons.crisis_alert_sharp,
                                       color: FlutterFlowTheme.of(context)
@@ -351,7 +351,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.all(8.0),
+                                    padding: EdgeInsets.all(8.0),
                                     child: Icon(
                                       Icons.archive_outlined,
                                       color: FlutterFlowTheme.of(context)
@@ -387,7 +387,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
-                                        boxShadow: const [
+                                        boxShadow: [
                                           BoxShadow(
                                             blurRadius: 3.0,
                                             color: Color(0x33000000),
@@ -410,7 +410,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                   BorderRadius.circular(8.0),
                                             ),
                                             child: Padding(
-                                              padding: const EdgeInsets.all(12.0),
+                                              padding: EdgeInsets.all(12.0),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
@@ -511,7 +511,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                   ))
                                                     Align(
                                                       alignment:
-                                                          const AlignmentDirectional(
+                                                          AlignmentDirectional(
                                                               -1.0, 0.0),
                                                       child: Text(
                                                         FFLocalizations.of(
@@ -546,7 +546,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                     Expanded(
                                                       child: Padding(
                                                         padding:
-                                                            const EdgeInsetsDirectional
+                                                            EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     30.0,
                                                                     0.0,
@@ -586,11 +586,11 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                     Expanded(
                                                       child: Align(
                                                         alignment:
-                                                            const AlignmentDirectional(
+                                                            AlignmentDirectional(
                                                                 1.0, 0.0),
                                                         child: Padding(
                                                           padding:
-                                                              const EdgeInsetsDirectional
+                                                              EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
@@ -633,7 +633,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                     Expanded(
                                                       child: Align(
                                                         alignment:
-                                                            const AlignmentDirectional(
+                                                            AlignmentDirectional(
                                                                 0.0, -1.0),
                                                         child: Text(
                                                           FFLocalizations.of(
@@ -665,11 +665,11 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                   Expanded(
                                                     child: Align(
                                                       alignment:
-                                                          const AlignmentDirectional(
+                                                          AlignmentDirectional(
                                                               -1.0, 0.0),
                                                       child: Padding(
                                                         padding:
-                                                            const EdgeInsetsDirectional
+                                                            EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     15.0,
                                                                     0.0,
@@ -723,7 +723,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                               FontWeight.w600,
                                                         ),
                                                   ),
-                                                ].divide(const SizedBox(width: 12.0)),
+                                                ].divide(SizedBox(width: 12.0)),
                                               ),
                                             ),
                                           ),
@@ -734,7 +734,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                           ),
                                           Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     8.0, 0.0, 8.0, 0.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -747,10 +747,10 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                   children: [
                                                     Container(
                                                       decoration:
-                                                          const BoxDecoration(),
+                                                          BoxDecoration(),
                                                       child: Padding(
                                                         padding:
-                                                            const EdgeInsets.all(2.0),
+                                                            EdgeInsets.all(2.0),
                                                         child: Row(
                                                           mainAxisSize:
                                                               MainAxisSize.max,
@@ -781,7 +781,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                                         .alternate,
                                                               ),
                                                               child: Checkbox(
-                                                                key: const ValueKey(
+                                                                key: ValueKey(
                                                                     'chbEventView1'),
                                                                 value: _model
                                                                         .checkboxValue2 ??=
@@ -828,7 +828,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                             Expanded(
                                                               child: Padding(
                                                                 padding:
-                                                                    const EdgeInsetsDirectional
+                                                                    EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             10.0,
                                                                             0.0,
@@ -912,7 +912,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                                       extra: <String,
                                                                           dynamic>{
                                                                         kTransitionInfoKey:
-                                                                            const TransitionInfo(
+                                                                            TransitionInfo(
                                                                           hasTransition:
                                                                               true,
                                                                           transitionType:
@@ -975,7 +975,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                                   ),
                                                                   child: Align(
                                                                     alignment:
-                                                                        const AlignmentDirectional(
+                                                                        AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                     child: Text(
@@ -1012,7 +1012,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                             ))
                                                               Align(
                                                                 alignment:
-                                                                    const AlignmentDirectional(
+                                                                    AlignmentDirectional(
                                                                         -1.0,
                                                                         0.0),
                                                                 child: Text(
@@ -1069,7 +1069,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                             Builder(
                                                               builder: (context) =>
                                                                   FlutterFlowIconButton(
-                                                                key: const ValueKey(
+                                                                key: ValueKey(
                                                                     'btnDevice1'),
                                                                 borderColor: Colors
                                                                     .transparent,
@@ -1094,19 +1094,19 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                                         false,
                                                                     avoidOverflow:
                                                                         false,
-                                                                    targetAnchor: const AlignmentDirectional(
+                                                                    targetAnchor: AlignmentDirectional(
                                                                             0.0,
                                                                             0.0)
                                                                         .resolve(
                                                                             Directionality.of(context)),
-                                                                    followerAnchor: const AlignmentDirectional(
+                                                                    followerAnchor: AlignmentDirectional(
                                                                             1.0,
                                                                             -1.0)
                                                                         .resolve(
                                                                             Directionality.of(context)),
                                                                     builder:
                                                                         (dialogContext) {
-                                                                      return const Material(
+                                                                      return Material(
                                                                         color: Colors
                                                                             .transparent,
                                                                         child:
@@ -1117,14 +1117,14 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                                 },
                                                               ),
                                                             ),
-                                                          ].divide(const SizedBox(
+                                                          ].divide(SizedBox(
                                                               width: 12.0)),
                                                         ),
                                                       ),
                                                     ),
                                                   ],
                                                 ),
-                                              ].divide(const SizedBox(height: 8.0)),
+                                              ].divide(SizedBox(height: 8.0)),
                                             ),
                                           ),
                                         ],
@@ -1142,7 +1142,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
-                                        boxShadow: const [
+                                        boxShadow: [
                                           BoxShadow(
                                             blurRadius: 3.0,
                                             color: Color(0x33000000),
@@ -1165,7 +1165,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                   BorderRadius.circular(8.0),
                                             ),
                                             child: Padding(
-                                              padding: const EdgeInsets.all(12.0),
+                                              padding: EdgeInsets.all(12.0),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
@@ -1262,7 +1262,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        const AlignmentDirectional(
+                                                        AlignmentDirectional(
                                                             -1.0, 0.0),
                                                     child: Text(
                                                       FFLocalizations.of(
@@ -1292,7 +1292,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                     Expanded(
                                                       child: Padding(
                                                         padding:
-                                                            const EdgeInsetsDirectional
+                                                            EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     30.0,
                                                                     0.0,
@@ -1332,11 +1332,11 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                     Expanded(
                                                       child: Align(
                                                         alignment:
-                                                            const AlignmentDirectional(
+                                                            AlignmentDirectional(
                                                                 1.0, 0.0),
                                                         child: Padding(
                                                           padding:
-                                                              const EdgeInsetsDirectional
+                                                              EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
@@ -1378,7 +1378,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                     Expanded(
                                                       child: Align(
                                                         alignment:
-                                                            const AlignmentDirectional(
+                                                            AlignmentDirectional(
                                                                 0.0, -1.0),
                                                         child: Text(
                                                           FFLocalizations.of(
@@ -1410,11 +1410,11 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                   Expanded(
                                                     child: Align(
                                                       alignment:
-                                                          const AlignmentDirectional(
+                                                          AlignmentDirectional(
                                                               -1.0, 0.0),
                                                       child: Padding(
                                                         padding:
-                                                            const EdgeInsetsDirectional
+                                                            EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     15.0,
                                                                     0.0,
@@ -1468,7 +1468,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                               FontWeight.w600,
                                                         ),
                                                   ),
-                                                ].divide(const SizedBox(width: 12.0)),
+                                                ].divide(SizedBox(width: 12.0)),
                                               ),
                                             ),
                                           ),
@@ -1479,7 +1479,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                           ),
                                           Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     8.0, 0.0, 8.0, 0.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -1492,10 +1492,10 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                   children: [
                                                     Container(
                                                       decoration:
-                                                          const BoxDecoration(),
+                                                          BoxDecoration(),
                                                       child: Padding(
                                                         padding:
-                                                            const EdgeInsets.all(2.0),
+                                                            EdgeInsets.all(2.0),
                                                         child: Row(
                                                           mainAxisSize:
                                                               MainAxisSize.max,
@@ -1526,7 +1526,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                                         .alternate,
                                                               ),
                                                               child: Checkbox(
-                                                                key: const ValueKey(
+                                                                key: ValueKey(
                                                                     'chbDevice2'),
                                                                 value: _model
                                                                         .checkboxValue4 ??=
@@ -1573,7 +1573,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                             Expanded(
                                                               child: Padding(
                                                                 padding:
-                                                                    const EdgeInsetsDirectional
+                                                                    EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             10.0,
                                                                             0.0,
@@ -1655,7 +1655,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                                       extra: <String,
                                                                           dynamic>{
                                                                         kTransitionInfoKey:
-                                                                            const TransitionInfo(
+                                                                            TransitionInfo(
                                                                           hasTransition:
                                                                               true,
                                                                           transitionType:
@@ -1719,7 +1719,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                                   ),
                                                                   child: Align(
                                                                     alignment:
-                                                                        const AlignmentDirectional(
+                                                                        AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                     child: Text(
@@ -1755,7 +1755,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                             ))
                                                               Align(
                                                                 alignment:
-                                                                    const AlignmentDirectional(
+                                                                    AlignmentDirectional(
                                                                         -1.0,
                                                                         0.0),
                                                                 child: Text(
@@ -1809,7 +1809,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                             Builder(
                                                               builder: (context) =>
                                                                   FlutterFlowIconButton(
-                                                                key: const ValueKey(
+                                                                key: ValueKey(
                                                                     'btnDevice2'),
                                                                 borderColor: Colors
                                                                     .transparent,
@@ -1834,19 +1834,19 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                                         false,
                                                                     avoidOverflow:
                                                                         false,
-                                                                    targetAnchor: const AlignmentDirectional(
+                                                                    targetAnchor: AlignmentDirectional(
                                                                             0.0,
                                                                             0.0)
                                                                         .resolve(
                                                                             Directionality.of(context)),
-                                                                    followerAnchor: const AlignmentDirectional(
+                                                                    followerAnchor: AlignmentDirectional(
                                                                             1.0,
                                                                             -1.0)
                                                                         .resolve(
                                                                             Directionality.of(context)),
                                                                     builder:
                                                                         (dialogContext) {
-                                                                      return const Material(
+                                                                      return Material(
                                                                         color: Colors
                                                                             .transparent,
                                                                         child:
@@ -1857,14 +1857,14 @@ class _EventViewWidgetState extends State<EventViewWidget>
                                                                 },
                                                               ),
                                                             ),
-                                                          ].divide(const SizedBox(
+                                                          ].divide(SizedBox(
                                                               width: 12.0)),
                                                         ),
                                                       ),
                                                     ),
                                                   ],
                                                 ),
-                                              ].divide(const SizedBox(height: 8.0)),
+                                              ].divide(SizedBox(height: 8.0)),
                                             ),
                                           ),
                                         ],
@@ -1879,7 +1879,7 @@ class _EventViewWidgetState extends State<EventViewWidget>
                       ],
                     ),
                   ),
-                ].divide(const SizedBox(height: 16.0)),
+                ].divide(SizedBox(height: 16.0)),
               ),
             ),
           ),

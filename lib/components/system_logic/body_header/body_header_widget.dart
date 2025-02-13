@@ -64,7 +64,7 @@ class _BodyHeaderWidgetState extends State<BodyHeaderWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: const AlignmentDirectional(0.0, 0.0),
+      alignment: AlignmentDirectional(0.0, 0.0),
       child: Row(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -84,14 +84,14 @@ class _BodyHeaderWidgetState extends State<BodyHeaderWidget> {
                     color: FlutterFlowTheme.of(context).alternate,
                   ),
                 ),
-                child: SizedBox(
+                child: Container(
                   width: double.infinity,
                   child: TextFormField(
                     controller: _model.textController1,
                     focusNode: _model.textFieldFocusNode1,
                     onChanged: (_) => EasyDebounce.debounce(
                       '_model.textController1',
-                      const Duration(milliseconds: 6000),
+                      Duration(milliseconds: 6000),
                       () => safeSetState(() {}),
                     ),
                     autofocus: false,
@@ -107,14 +107,14 @@ class _BodyHeaderWidgetState extends State<BodyHeaderWidget> {
                                 letterSpacing: 0.0,
                               ),
                       enabledBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
+                        borderSide: BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),
                         borderRadius: BorderRadius.circular(20.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
+                        borderSide: BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),
@@ -177,8 +177,8 @@ class _BodyHeaderWidgetState extends State<BodyHeaderWidget> {
                   ),
                 ),
                 child: Align(
-                  alignment: const AlignmentDirectional(0.0, 0.0),
-                  child: SizedBox(
+                  alignment: AlignmentDirectional(0.0, 0.0),
+                  child: Container(
                     width: double.infinity,
                     child: TextFormField(
                       controller: _model.textController2,
@@ -202,7 +202,7 @@ class _BodyHeaderWidgetState extends State<BodyHeaderWidget> {
                                   fontWeight: FontWeight.w500,
                                 ),
                         enabledBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(
+                          borderSide: BorderSide(
                             color: Colors.transparent,
                             width: 1.0,
                           ),
@@ -253,7 +253,7 @@ class _BodyHeaderWidgetState extends State<BodyHeaderWidget> {
                   ),
                 ),
               ),
-            ].divide(const SizedBox(width: 16.0)),
+            ].divide(SizedBox(width: 16.0)),
           ),
           Row(
             mainAxisSize: MainAxisSize.max,
@@ -268,9 +268,9 @@ class _BodyHeaderWidgetState extends State<BodyHeaderWidget> {
                 options: FFButtonOptions(
                   width: 120.0,
                   height: 40.0,
-                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   iconPadding:
-                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).primary,
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Inter Tight',
@@ -292,9 +292,9 @@ class _BodyHeaderWidgetState extends State<BodyHeaderWidget> {
                 options: FFButtonOptions(
                   width: 120.0,
                   height: 40.0,
-                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   iconPadding:
-                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Inter Tight',
@@ -310,7 +310,7 @@ class _BodyHeaderWidgetState extends State<BodyHeaderWidget> {
                   borderRadius: BorderRadius.circular(20.0),
                 ),
               ),
-            ].divide(const SizedBox(width: 16.0)),
+            ].divide(SizedBox(width: 16.0)),
           ),
         ],
       ),

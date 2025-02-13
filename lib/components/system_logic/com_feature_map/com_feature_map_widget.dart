@@ -39,7 +39,7 @@ class _ComFeatureMapWidgetState extends State<ComFeatureMapWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 16.0),
+      padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 16.0),
       child: Container(
         width: 300.0,
         height: 300.0,
@@ -51,7 +51,7 @@ class _ComFeatureMapWidgetState extends State<ComFeatureMapWidget> {
           ),
         ),
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: EdgeInsets.all(16.0),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -223,7 +223,7 @@ class _ComFeatureMapWidgetState extends State<ComFeatureMapWidget> {
                   ),
                 ],
               ),
-            ].divide(const SizedBox(height: 16.0)),
+            ].divide(SizedBox(height: 16.0)),
           ),
         ),
       ),

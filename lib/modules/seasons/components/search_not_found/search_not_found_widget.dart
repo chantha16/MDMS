@@ -38,14 +38,14 @@ class _SearchNotFoundWidgetState extends State<SearchNotFoundWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+      padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
       child: Container(
         width: double.infinity,
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
           color: Colors.transparent,
         ),
         child: Padding(
-          padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+          padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.center,
@@ -77,7 +77,7 @@ class _SearchNotFoundWidgetState extends State<SearchNotFoundWidget> {
                       letterSpacing: 0.0,
                     ),
               ),
-            ].divide(const SizedBox(height: 12.0)),
+            ].divide(SizedBox(height: 12.0)),
           ),
         ),
       ),

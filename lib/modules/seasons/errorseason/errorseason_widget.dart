@@ -9,8 +9,8 @@ class ErrorseasonWidget extends StatefulWidget {
     super.key,
     String? title,
     String? content,
-  })  : title = title ?? 'title',
-        content = content ?? 'content';
+  })  : this.title = title ?? 'title',
+        this.content = content ?? 'content';
 
   final String title;
   final String content;
@@ -46,12 +46,12 @@ class _ErrorseasonWidgetState extends State<ErrorseasonWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: const AlignmentDirectional(0.0, 0.0),
+      alignment: AlignmentDirectional(0.0, 0.0),
       child: Container(
         width: 305.0,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          boxShadow: const [
+          boxShadow: [
             BoxShadow(
               blurRadius: 2.0,
               color: Color(0x33000000),
@@ -69,7 +69,7 @@ class _ErrorseasonWidgetState extends State<ErrorseasonWidget> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 5.0),
+              padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 5.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -83,11 +83,11 @@ class _ErrorseasonWidgetState extends State<ErrorseasonWidget> {
                           letterSpacing: 0.0,
                         ),
                   ),
-                ].divide(const SizedBox(width: 10.0)),
+                ].divide(SizedBox(width: 10.0)),
               ),
             ),
             Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 16.0, 0.0),
+              padding: EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 16.0, 0.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -102,11 +102,11 @@ class _ErrorseasonWidgetState extends State<ErrorseasonWidget> {
                           ),
                     ),
                   ),
-                ].divide(const SizedBox(width: 2.0)),
+                ].divide(SizedBox(width: 2.0)),
               ),
             ),
             Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 25.0, 16.0, 16.0),
+              padding: EdgeInsetsDirectional.fromSTEB(16.0, 25.0, 16.0, 16.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.end,
