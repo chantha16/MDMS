@@ -47,6 +47,15 @@ void main() async {
       await tester.enterText(
           find.byKey(ValueKey('txtSeasonName')), 'Hello World');
       await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('Jan'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.text('Feb'));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.enterText(
+          find.byKey(ValueKey('txtDescription')), 'Hello World');
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
+      await tester.tap(find.byKey(ValueKey('btnSave')));
+      await tester.pumpAndSettle(Duration(milliseconds: 5000));
     });
 
     testWidgets('Device Management', (WidgetTester tester) async {

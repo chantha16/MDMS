@@ -613,6 +613,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                                         ),
                                       ),
                                       TextFormField(
+                                        key: ValueKey('txtDescription'),
                                         controller:
                                             _model.descriptionTextController,
                                         focusNode: _model.descriptionFocusNode,
@@ -744,6 +745,7 @@ class _CSeasonDetailsWidgetState extends State<CSeasonDetailsWidget> {
                               model: _model.primaryButtonModel,
                               updateCallback: () => safeSetState(() {}),
                               child: PrimaryButtonWidget(
+                                key: ValueKey('btnSave'),
                                 tbName: 'Save',
                                 font: FlutterFlowTheme.of(context)
                                     .primaryBackground,
