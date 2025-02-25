@@ -12,15 +12,15 @@ import 'package:flutter/material.dart';
 // Begin custom action code
 // DO NOT REMOVE OR MODIFY THE CODE ABOVE!
 
-import 'package:mdms_ui/auth/custom_auth/custom_auth_manager.dart';
+// import 'package:mdms_ui/auth/custom_auth/custom_auth_manager.dart';
 
 Future verifyLoginState() async {
-  final code = await handleRedirect('code');
-  if (code?.isNotEmpty ?? false) {
-    // code does not existed.
-  } else {
-    if (!loggedIn) {
-      await openWebLogin();
-    }
-  }
+  // final code = await handleRedirect('code');
+  // if (code?.isNotEmpty ?? false) {
+  //   // code does not existed.
+  // } else {
+  //   if (!loggedIn) {
+  //     await openWebLogin();
+  //   }
+  // }
 }
