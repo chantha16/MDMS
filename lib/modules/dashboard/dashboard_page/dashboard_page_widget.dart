@@ -97,7 +97,6 @@ class _DashboardPageWidgetState extends State<DashboardPageWidget> {
             model: _model.mainLayoutModel,
             updateCallback: () => safeSetState(() {}),
             child: MainLayoutWidget(
-              key: ValueKey('MainLayout_3bpk'),
               menu: MenuItems.Dashboard,
               child: () => DashboardViewWidget(),
             ),

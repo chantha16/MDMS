@@ -56,10 +56,7 @@ void main() async {
       ));
 
       await tester.pumpAndSettle(Duration(milliseconds: 10000));
-      await tester.tap(find.descendant(
-        of: find.byKey(ValueKey('MainLayout_3bpk')),
-        matching: find.byKey(ValueKey('Icon_425e')),
-      ));
+      await tester.tap(find.text('Device Management'));
       await tester.pumpAndSettle(Duration(milliseconds: 10));
     });
   });

@@ -723,8 +723,6 @@ class _MainLayoutWidgetState extends State<MainLayoutWidget> {
                                                                     .deviceManagementMenu ==
                                                                 false) {
                                                               return Icon(
-                                                                key: ValueKey(
-                                                                    'Icon_425e'),
                                                                 Icons
                                                                     .keyboard_arrow_down,
                                                                 color:
