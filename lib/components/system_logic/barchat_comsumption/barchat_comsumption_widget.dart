@@ -1,6 +1,8 @@
 import '/flutter_flow/flutter_flow_charts.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import 'package:epower_library_llyhdh/app_state.dart'
+    as epower_library_llyhdh_app_state;
+import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'barchat_comsumption_model.dart';
@@ -41,6 +43,7 @@ class _BarchatComsumptionWidgetState extends State<BarchatComsumptionWidget> {
   @override
   Widget build(BuildContext context) {
     context.watch<FFAppState>();
+    context.watch<epower_library_llyhdh_app_state.FFAppState>();
 
     return Container(
       decoration: BoxDecoration(

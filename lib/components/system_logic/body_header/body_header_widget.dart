@@ -1,8 +1,7 @@
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:easy_debounce/easy_debounce.dart';
+import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'body_header_model.dart';
 export 'body_header_model.dart';
@@ -17,6 +16,7 @@ class BodyHeaderWidget extends StatefulWidget {
     required this.tbName2,
     this.btIcon2,
     this.btAction2,
+    this.searchAction,
   });
 
   final Future Function()? filterAction;
@@ -26,6 +26,7 @@ class BodyHeaderWidget extends StatefulWidget {
   final String? tbName2;
   final Widget? btIcon2;
   final Future Function()? btAction2;
+  final Future Function()? searchAction;
 
   @override
   State<BodyHeaderWidget> createState() => _BodyHeaderWidgetState();
@@ -45,11 +46,8 @@ class _BodyHeaderWidgetState extends State<BodyHeaderWidget> {
     super.initState();
     _model = createModel(context, () => BodyHeaderModel());
 
-    _model.textController1 ??= TextEditingController();
-    _model.textFieldFocusNode1 ??= FocusNode();
-
-    _model.textController2 ??= TextEditingController();
-    _model.textFieldFocusNode2 ??= FocusNode();
+    _model.textController ??= TextEditingController();
+    _model.textFieldFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
@@ -67,139 +65,53 @@ class _BodyHeaderWidgetState extends State<BodyHeaderWidget> {
       alignment: AlignmentDirectional(0.0, 0.0),
       child: Row(
         mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.end,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Row(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Container(
-                width: 300.0,
-                height: 40.0,
-                decoration: BoxDecoration(
-                  color: FlutterFlowTheme.of(context).secondaryBackground,
-                  borderRadius: BorderRadius.circular(20.0),
-                  border: Border.all(
-                    color: FlutterFlowTheme.of(context).alternate,
-                  ),
-                ),
-                child: Container(
-                  width: double.infinity,
-                  child: TextFormField(
-                    controller: _model.textController1,
-                    focusNode: _model.textFieldFocusNode1,
-                    onChanged: (_) => EasyDebounce.debounce(
-                      '_model.textController1',
-                      Duration(milliseconds: 6000),
-                      () => safeSetState(() {}),
+              if (responsiveVisibility(
+                context: context,
+                phone: false,
+                tablet: false,
+                tabletLandscape: false,
+                desktop: false,
+              ))
+                Container(
+                  width: 300.0,
+                  height: 40.0,
+                  decoration: BoxDecoration(
+                    color: FlutterFlowTheme.of(context).secondaryBackground,
+                    borderRadius: BorderRadius.circular(20.0),
+                    border: Border.all(
+                      color: FlutterFlowTheme.of(context).alternate,
                     ),
-                    autofocus: false,
-                    obscureText: false,
-                    decoration: InputDecoration(
-                      isDense: true,
-                      hintText: FFLocalizations.of(context).getText(
-                        'u5rv48s7' /* Search */,
-                      ),
-                      hintStyle:
-                          FlutterFlowTheme.of(context).labelMedium.override(
-                                fontFamily: 'Inter',
-                                letterSpacing: 0.0,
-                              ),
-                      enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Colors.transparent,
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(20.0),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Colors.transparent,
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(20.0),
-                      ),
-                      errorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: FlutterFlowTheme.of(context).error,
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(20.0),
-                      ),
-                      focusedErrorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: FlutterFlowTheme.of(context).error,
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(20.0),
-                      ),
-                      filled: true,
-                      fillColor: Colors.transparent,
-                      prefixIcon: Icon(
-                        Icons.search,
-                        color: FlutterFlowTheme.of(context).primaryText,
-                      ),
-                    ),
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Inter',
-                          letterSpacing: 0.0,
-                          fontWeight: FontWeight.w500,
-                        ),
-                    maxLines: null,
-                    cursorColor: FlutterFlowTheme.of(context).primaryBackground,
-                    validator:
-                        _model.textController1Validator.asValidator(context),
                   ),
-                ),
-              ),
-              FlutterFlowIconButton(
-                borderRadius: 8.0,
-                buttonSize: 40.0,
-                fillColor: FlutterFlowTheme.of(context).alternate,
-                icon: Icon(
-                  Icons.filter_list_alt,
-                  color: FlutterFlowTheme.of(context).primary,
-                  size: 24.0,
-                ),
-                onPressed: () async {
-                  await widget.filterAction?.call();
-                },
-              ),
-              Container(
-                width: 350.0,
-                height: 50.0,
-                decoration: BoxDecoration(
-                  color: FlutterFlowTheme.of(context).secondaryBackground,
-                  borderRadius: BorderRadius.circular(20.0),
-                  border: Border.all(
-                    color: FlutterFlowTheme.of(context).alternate,
-                  ),
-                ),
-                child: Align(
-                  alignment: AlignmentDirectional(0.0, 0.0),
                   child: Container(
                     width: double.infinity,
                     child: TextFormField(
-                      controller: _model.textController2,
-                      focusNode: _model.textFieldFocusNode2,
+                      controller: _model.textController,
+                      focusNode: _model.textFieldFocusNode,
+                      onChanged: (_) => EasyDebounce.debounce(
+                        '_model.textController',
+                        Duration(milliseconds: 300),
+                        () async {
+                          await widget.searchAction?.call();
+                        },
+                      ),
                       autofocus: false,
                       obscureText: false,
                       decoration: InputDecoration(
                         isDense: true,
-                        labelStyle:
+                        hintText: FFLocalizations.of(context).getText(
+                          'u5rv48s7' /* Search */,
+                        ),
+                        hintStyle:
                             FlutterFlowTheme.of(context).labelMedium.override(
                                   fontFamily: 'Inter',
                                   letterSpacing: 0.0,
-                                ),
-                        hintText: FFLocalizations.of(context).getText(
-                          'ek9jkj4f' /* Search */,
-                        ),
-                        hintStyle:
-                            FlutterFlowTheme.of(context).bodyMedium.override(
-                                  fontFamily: 'Inter',
-                                  letterSpacing: 0.0,
-                                  fontWeight: FontWeight.w500,
                                 ),
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(
@@ -210,8 +122,7 @@ class _BodyHeaderWidgetState extends State<BodyHeaderWidget> {
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(
-                            color:
-                                FlutterFlowTheme.of(context).primaryBackground,
+                            color: Colors.transparent,
                             width: 1.0,
                           ),
                           borderRadius: BorderRadius.circular(20.0),
@@ -232,11 +143,9 @@ class _BodyHeaderWidgetState extends State<BodyHeaderWidget> {
                         ),
                         filled: true,
                         fillColor: Colors.transparent,
-                        hoverColor: Colors.transparent,
                         prefixIcon: Icon(
                           Icons.search,
                           color: FlutterFlowTheme.of(context).primaryText,
-                          size: 24.0,
                         ),
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -245,14 +154,12 @@ class _BodyHeaderWidgetState extends State<BodyHeaderWidget> {
                             fontWeight: FontWeight.w500,
                           ),
                       maxLines: null,
-                      cursorColor:
-                          FlutterFlowTheme.of(context).primaryBackground,
+                      cursorColor: FlutterFlowTheme.of(context).primaryText,
                       validator:
-                          _model.textController2Validator.asValidator(context),
+                          _model.textControllerValidator.asValidator(context),
                     ),
                   ),
                 ),
-              ),
             ].divide(SizedBox(width: 16.0)),
           ),
           Row(

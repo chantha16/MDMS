@@ -1,11 +1,19 @@
+import '/custom_code/actions/index.dart' as actions;
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
+
+import 'auth/custom_auth/auth_util.dart';
+import 'auth/custom_auth/custom_auth_user_provider.dart';
+
+import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'flutter_flow/flutter_flow_util.dart';
 import 'flutter_flow/internationalization.dart';
+
+import 'package:epower_library_llyhdh/app_state.dart'
+    as epower_library_llyhdh_app_state;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -17,11 +25,28 @@ void main() async {
 
   await FlutterFlowTheme.initialize();
 
+  await authManager.initialize();
+
   final appState = FFAppState(); // Initialize FFAppState
   await appState.initializePersistedState();
 
-  runApp(ChangeNotifierProvider(
-    create: (context) => appState,
+  final epower_library_llyhdhAppState =
+      epower_library_llyhdh_app_state.FFAppState();
+  await epower_library_llyhdhAppState.initializePersistedState();
+
+  // Start final custom actions code
+  await actions.getVersionNumber();
+  // End final custom actions code
+
+  runApp(MultiProvider(
+    providers: [
+      ChangeNotifierProvider(
+        create: (context) => appState,
+      ),
+      ChangeNotifierProvider(
+        create: (context) => epower_library_llyhdhAppState,
+      ),
+    ],
     child: MyApp(),
   ));
 }
@@ -55,7 +80,12 @@ class _MyAppState extends State<MyApp> {
     return matchList.uri.toString();
   }
 
-  bool displaySplashImage = true;
+  List<String> getRouteStack() =>
+      _router.routerDelegate.currentConfiguration.matches
+          .map((e) => getRoute(e))
+          .toList();
+
+  late Stream<MDMSUIAutomateTestAuthUser> userStream;
 
   @override
   void initState() {
@@ -63,9 +93,15 @@ class _MyAppState extends State<MyApp> {
 
     _appStateNotifier = AppStateNotifier.instance;
     _router = createRouter(_appStateNotifier, widget.entryPage);
+    userStream = mDMSUIAutomateTestAuthUserStream()
+      ..listen((user) {
+        _appStateNotifier.update(user);
+      });
 
-    Future.delayed(Duration(milliseconds: 1000),
-        () => safeSetState(() => _appStateNotifier.stopShowingSplashImage()));
+    Future.delayed(
+      Duration(milliseconds: 1000),
+      () => _appStateNotifier.stopShowingSplashImage(),
+    );
   }
 
   void setLocale(String language) {

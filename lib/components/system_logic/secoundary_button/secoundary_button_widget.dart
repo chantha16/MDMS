@@ -1,6 +1,6 @@
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'secoundary_button_model.dart';
 export 'secoundary_button_model.dart';
@@ -56,7 +56,7 @@ class _SecoundaryButtonWidgetState extends State<SecoundaryButtonWidget> {
         padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
         iconAlignment: IconAlignment.start,
         iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-        color: FlutterFlowTheme.of(context).secondaryBackground,
+        color: FlutterFlowTheme.of(context).primaryBackground,
         textStyle: FlutterFlowTheme.of(context).titleSmall.override(
               fontFamily: 'Inter Tight',
               color: FlutterFlowTheme.of(context).primary,
@@ -66,10 +66,15 @@ class _SecoundaryButtonWidgetState extends State<SecoundaryButtonWidget> {
             ),
         elevation: 0.0,
         borderSide: BorderSide(
-          color: FlutterFlowTheme.of(context).alternate,
+          color: Colors.transparent,
           width: 1.0,
         ),
         borderRadius: BorderRadius.circular(20.0),
+        hoverColor: FlutterFlowTheme.of(context).alternate,
+        hoverBorderSide: BorderSide(
+          color: Colors.transparent,
+          width: 1.0,
+        ),
       ),
     );
   }

@@ -145,125 +145,6 @@ bool _isSupportedLocale(Locale locale) {
 }
 
 final kTranslationsMap = <Map<String, Map<String, String>>>[
-  // DevicesPage
-  {
-    'ac1l4cvh': {
-      'en': 'Home',
-      'km': 'ផ្ទះ',
-      'zh_Hant': '家',
-    },
-  },
-  // ResourcesPage
-  {
-    'bx1g3j1o': {
-      'en': 'MDMS Resources',
-      'km': 'ធនធាន MDMS',
-      'zh_Hant': 'MDMS 資源',
-    },
-    'zihbt1w4': {
-      'en': 'Access training materials and documentation',
-      'km': 'ចូលប្រើឯកសារបណ្តុះបណ្តាល និងឯកសារ',
-      'zh_Hant': '存取培訓材料和文檔',
-    },
-    '687tm539': {
-      'en': 'Training Videos',
-      'km': 'វីដេអូបណ្តុះបណ្តាល',
-      'zh_Hant': '培訓影片',
-    },
-    'wypbj23y': {
-      'en': 'MDMS System Overview',
-      'km': 'ទិដ្ឋភាពទូទៅនៃប្រព័ន្ធ MDMS',
-      'zh_Hant': 'MDMS系統概述',
-    },
-    'xgul6ylo': {
-      'en': 'Duration: 15:30',
-      'km': 'Duration: 15:30',
-      'zh_Hant': '持續時間：15:30',
-    },
-    'oawgkzvo': {
-      'en': 'Data Collection & Analysis',
-      'km': 'ការប្រមូលទិន្នន័យ និងការវិភាគ',
-      'zh_Hant': '資料收集與分析',
-    },
-    'lmmbu3g8': {
-      'en': 'Duration: 12:45',
-      'km': 'Duration: 12:45',
-      'zh_Hant': '持續時間：12:45',
-    },
-    'ghoxzzua': {
-      'en': 'Documentation',
-      'km': 'ឯកសារ',
-      'zh_Hant': '文件',
-    },
-    '7y646293': {
-      'en': 'User Manual v2.1',
-      'km': 'សៀវភៅណែនាំអ្នកប្រើប្រាស់ v2.1',
-      'zh_Hant': '使用者手冊 v2.1',
-    },
-    '7hqfz8mn': {
-      'en': 'PDF • 2.5 MB',
-      'km': 'PDF • 2.5 MB',
-      'zh_Hant': 'PDF • 2.5 MB',
-    },
-    'd31y37ga': {
-      'en': 'Technical Specifications',
-      'km': 'លក្ខណៈបច្ចេកទេស',
-      'zh_Hant': '技術規格',
-    },
-    'cryja52s': {
-      'en': 'PDF • 1.8 MB',
-      'km': 'PDF • 1.8 MB',
-      'zh_Hant': 'PDF • 1.8 MB',
-    },
-    'fdqvsu4z': {
-      'en': 'Installation Guide',
-      'km': 'ការណែនាំអំពីការដំឡើង',
-      'zh_Hant': '安裝指南',
-    },
-    'svlnwj8x': {
-      'en': 'PDF • 3.2 MB',
-      'km': 'PDF • 3.2 MB',
-      'zh_Hant': 'PDF • 3.2 MB',
-    },
-    'weux9ucm': {
-      'en': 'Recent Updates',
-      'km': 'បច្ចុប្បន្នភាពថ្មីៗ',
-      'zh_Hant': '最近更新',
-    },
-    'cyuvr3ya': {
-      'en': 'Version 2.1.0 Release Notes',
-      'km': 'កំណែ 2.1.0 កំណត់ចំណាំការចេញផ្សាយ',
-      'zh_Hant': '版本 2.1.0 發行說明',
-    },
-    '26nthzf8': {
-      'en':
-          '• Improved data visualization\n• Enhanced reporting capabilities\n• Bug fixes and performance improvements',
-      'km':
-          '• ការមើលឃើញទិន្នន័យប្រសើរឡើង\n• បង្កើនសមត្ថភាពរាយការណ៍\n• ការកែកំហុស និងការកែលម្អការអនុវត្ត',
-      'zh_Hant': '• 改進的數據視覺化\n• 增強的報告功能\n• 錯誤修復和效能改進',
-    },
-    '7isamkb3': {
-      'en': 'Home',
-      'km': 'ផ្ទះ',
-      'zh_Hant': '家',
-    },
-  },
-  // AddDevicePage
-  {
-    'ugjxn4vo': {
-      'en': 'Home',
-      'km': 'ផ្ទះ',
-      'zh_Hant': '家',
-    },
-  },
-  // DeviceSettingPage
-  {
-    'c5pymrcd': {
-      'en': 'Home',
-      'km': 'ផ្ទះ',
-      'zh_Hant': '家',
-    },
-  },
   // DashboardPage
   {
     's18ieapq': {
@@ -276,7 +157,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     'ik5pxi6l': {
       'en': 'Home',
-      'km': 'ទំព័រដើម',
+      'km': 'ផ្ទះ',
       'zh_Hant': '家',
     },
   },
@@ -288,33 +169,9 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '家',
     },
   },
-  // TouPage
-  {
-    '04sbl95w': {
-      'en': 'Home',
-      'km': 'ផ្ទះ',
-      'zh_Hant': '家',
-    },
-  },
-  // TimeBandDetails
-  {
-    'm5i6pa2n': {
-      'en': 'Home',
-      'km': 'ផ្ទះ',
-      'zh_Hant': '家',
-    },
-  },
   // TimeBandPage
   {
-    'pu4oed8x': {
-      'en': 'Home',
-      'km': 'ផ្ទះ',
-      'zh_Hant': '家',
-    },
-  },
-  // seasonmaintest
-  {
-    'xxnn3sue': {
+    '9pbyp26t': {
       'en': 'Home',
       'km': '',
       'zh_Hant': '',
@@ -324,95 +181,55 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     'lt4bpvpn': {
       'en': 'Home',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ផ្ទះ',
+      'zh_Hant': '家',
     },
   },
   // EventDetailPage
   {
     '0glapjid': {
       'en': 'Home',
-      'km': '',
-      'zh_Hant': '',
-    },
-  },
-  // VideoPlayPage
-  {
-    'ku9ujikp': {
-      'en': 'Home',
-      'km': '',
-      'zh_Hant': '',
-    },
-  },
-  // DeviceDetailsPage
-  {
-    'mka820n2': {
-      'en': 'Home',
-      'km': '',
-      'zh_Hant': '',
-    },
-  },
-  // sandbox1
-  {
-    'jgc14b5x': {
-      'en': 'Home',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ផ្ទះ',
+      'zh_Hant': '家',
     },
   },
   // sandbox3
   {
     'cuyrzrot': {
       'en': 'Home',
-      'km': '',
-      'zh_Hant': '',
-    },
-  },
-  // pSeason
-  {
-    'hl75qtsf': {
-      'en': 'Home',
-      'km': '',
-      'zh_Hant': '',
-    },
-  },
-  // pSeasonDetail
-  {
-    'o8xl55um': {
-      'en': 'Home',
-      'km': '',
-      'zh_Hant': '',
-    },
-  },
-  // pSpecailDayList
-  {
-    '4qix4upb': {
-      'en': 'Home',
-      'km': '',
-      'zh_Hant': '',
-    },
-  },
-  // pSpecialDayDetail
-  {
-    '14dilt5e': {
-      'en': 'Home',
-      'km': '',
-      'zh_Hant': '',
-    },
-  },
-  // pSpecialDayAdd
-  {
-    'visnyqf4': {
-      'en': 'Home',
-      'km': 'ទំព័រដើម',
+      'km': 'ផ្ទះ',
       'zh_Hant': '家',
     },
   },
-  // pSpecialDayView
+  // SpecailDayList
+  {
+    'xxnn3sue': {
+      'en': 'Home',
+      'km': 'ផ្ទះ',
+      'zh_Hant': '家',
+    },
+  },
+  // SpecialDayDetailPage
+  {
+    '14dilt5e': {
+      'en': 'Home',
+      'km': 'ផ្ទះ',
+      'zh_Hant': '家',
+    },
+  },
+  // SpecialDayAdd
+  {
+    'visnyqf4': {
+      'en': 'Home',
+      'km': 'ផ្ទះ',
+      'zh_Hant': '家',
+    },
+  },
+  // SpecialDayPage
   {
     'vys5ya6o': {
       'en': 'Home',
-      'km': 'ទំព័រដើម',
+      'km': 'ផ្ទះ',
       'zh_Hant': '家',
     },
   },
@@ -420,138 +237,128 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     '6wii0sbr': {
       'en': 'Home',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ផ្ទះ',
+      'zh_Hant': '家',
     },
   },
-  // fffff
+  // MainSitePage
   {
-    'a2gmm9km': {
+    'i6mdyawv': {
       'en': 'Home',
       'km': '',
       'zh_Hant': '',
     },
   },
-  // MenuWeb
+  // MainSiteDetailPage
   {
-    'paozobi4': {
-      'en': 'Dashboard',
-      'km': 'ផ្ទាំងគ្រប់គ្រង',
-      'zh_Hant': '儀表板',
-    },
-    'aaukvbx2': {
-      'en': 'Devices',
-      'km': 'ឧបករណ៍',
-      'zh_Hant': '裝置',
-    },
-    'ia8u7myb': {
-      'en': 'Alert & Notification',
-      'km': 'ការជូនដំណឹង និងការជូនដំណឹង',
-      'zh_Hant': '警報和通知',
-    },
-    '8dvo06lr': {
-      'en': '1',
-      'km': '១',
-      'zh_Hant': '1',
-    },
-    '273klvvk': {
-      'en': 'Alert & Notification',
-      'km': 'ការជូនដំណឹង និងការជូនដំណឹង',
-      'zh_Hant': '警報和通知',
-    },
-    '4s0xexzw': {
-      'en': 'Reports',
-      'km': 'របាយការណ៍',
-      'zh_Hant': '報告',
-    },
-    'xb9nkziv': {
-      'en': 'Resources',
-      'km': 'ធនធាន',
-      'zh_Hant': '資源',
-    },
-    '56gbkgm9': {
-      'en': 'Settings',
-      'km': 'ការកំណត់',
-      'zh_Hant': '設定',
-    },
-    'agpyp1ct': {
-      'en': 'Log Out',
-      'km': 'ចេញ',
-      'zh_Hant': '退出',
+    'yancvxaz': {
+      'en': 'Home',
+      'km': '',
+      'zh_Hant': '',
     },
   },
-  // MobileNav
+  // SubsiteDetailPage
   {
-    'fbzwfr5f': {
+    'jy1xh4z4': {
       'en': 'Home',
       'km': 'ផ្ទះ',
       'zh_Hant': '家',
     },
-    'ktet0neg': {
-      'en': 'Documents',
-      'km': 'ឯកសារ',
-      'zh_Hant': '文件',
-    },
-    '5b8oknaf': {
-      'en': 'Flow',
-      'km': 'លំហូរ',
-      'zh_Hant': '流動',
-    },
-    '4z1tanpx': {
-      'en': 'Reports',
-      'km': 'របាយការណ៍',
-      'zh_Hant': '報告',
-    },
-    'd11wkhh8': {
-      'en': 'Setting',
-      'km': 'ការកំណត់',
-      'zh_Hant': '環境',
+  },
+  // TimeBandDetailPage
+  {
+    'ieu82omg': {
+      'en': 'Home',
+      'km': 'ផ្ទះ',
+      'zh_Hant': '家',
     },
   },
-  // cCustomColumns
+  // SeasonPage
   {
-    'eoit8wwx': {
-      'en': 'Reset',
-      'km': 'កំណត់ឡើងវិញ',
-      'zh_Hant': '重置',
+    '4qix4upb': {
+      'en': 'Home',
+      'km': 'ផ្ទះ',
+      'zh_Hant': '家',
+    },
+  },
+  // SeasonDetailPage
+  {
+    '17ltt7xr': {
+      'en': 'Home',
+      'km': 'ផ្ទះ',
+      'zh_Hant': '家',
+    },
+  },
+  // TouList
+  {
+    'ykj9l139': {
+      'en': 'Home',
+      'km': 'ផ្ទះ',
+      'zh_Hant': '家',
+    },
+  },
+  // DeviceLists
+  {
+    'zvtr0i6d': {
+      'en': 'Home',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // pDeviceDetails
+  {
+    '10m93fv5': {
+      'en': 'Home',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // AuthenticationPage
+  {
+    'sizi7xdw': {
+      'en': 'Home',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // DeviceGroupPage
+  {
+    've9fqfjm': {
+      'en': 'Home',
+      'km': 'ផ្ទះ',
+      'zh_Hant': '家',
+    },
+  },
+  // DeviceGroupDetailPage
+  {
+    '9du3tgfw': {
+      'en': 'Home',
+      'km': 'ផ្ទះ',
+      'zh_Hant': '家',
+    },
+  },
+  // ScheduleList
+  {
+    '8zgzi352': {
+      'en': 'Home',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // ScheduleView
+  {
+    '3q5ceci7': {
+      'en': 'Home',
+      'km': '',
+      'zh_Hant': '',
     },
   },
   // filterdatecomponent
   {
-    'y83zfqkj': {
-      'en': 'Filter Date Range',
-      'km': 'ជួរកាលបរិច្ឆេទតម្រង',
-      'zh_Hant': '過濾日期範圍',
-    },
-    'yq048mqq': {
-      'en': 'MM/DD/YYYY',
-      'km': 'MM/DD/YYYY',
-      'zh_Hant': '月/日/年',
-    },
     'anvg1wq2': {
       'en': '-',
       'km': '-',
       'zh_Hant': '-',
-    },
-    '6y0jt9mp': {
-      'en': 'MM/DD/YYYY',
-      'km': 'MM/DD/YYYY',
-      'zh_Hant': '月/日/年',
-    },
-    'y8gusvd1': {
-      'en': 'MM/DD/YYYY',
-      'km': 'MM/DD/YYYY',
-      'zh_Hant': '月/日/年',
-    },
-    'qhvpjtp8': {
-      'en': '-',
-      'km': '-',
-      'zh_Hant': '-',
-    },
-    'n4f1thgd': {
-      'en': 'MM/DD/YYYY',
-      'km': 'MM/DD/YYYY',
-      'zh_Hant': '月/日/年',
     },
     '772wfwqp': {
       'en': 'Today',
@@ -664,14 +471,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '-',
     },
   },
-  // daterange
-  {
-    '84llqgv6': {
-      'en': 'dd/MM/YYYY - dd/MM/YYYY',
-      'km': 'dd/MM/YYYY - dd/MM/YYYY',
-      'zh_Hant': '日/月/年 - 日/月/年',
-    },
-  },
   // exportoption
   {
     'vi4dl7go': {
@@ -718,105 +517,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '發送通知',
     },
   },
-  // MainLayoutV1
-  {
-    '53ij6uie': {
-      'en': 'Testing Components',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '2uxut9b2': {
-      'en': 'Dashboard',
-      'km': 'ផ្ទាំងគ្រប់គ្រង',
-      'zh_Hant': '儀表板',
-    },
-    '27b4rkuo': {
-      'en': 'Device Mangement',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'jqqmx9y9': {
-      'en': 'Devices',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'pdyhrhlf': {
-      'en': 'Configuration',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'xgi1apex': {
-      'en': 'TOU Setting',
-      'km': 'ការកំណត់ TOU',
-      'zh_Hant': '分時設定',
-    },
-    'hddov8ve': {
-      'en': 'TOU',
-      'km': 'ទូ',
-      'zh_Hant': '時令',
-    },
-    'zpklv06u': {
-      'en': 'Time Bands',
-      'km': 'ក្រុមតន្រ្តីពេលវេលា',
-      'zh_Hant': '時間帶',
-    },
-    'cea1dm1k': {
-      'en': 'Special Day',
-      'km': 'ថ្ងៃពិសេស',
-      'zh_Hant': '特別的日子',
-    },
-    'd2k5m9an': {
-      'en': 'Season',
-      'km': 'រដូវ',
-      'zh_Hant': '季節',
-    },
-    '2kk4sb1v': {
-      'en': 'Alerts & Events',
-      'km': 'ការជូនដំណឹង និងព្រឹត្តិការណ៍',
-      'zh_Hant': '警報和事件',
-    },
-    '658h8ft6': {
-      'en': 'Notifications',
-      'km': 'ការជូនដំណឹង',
-      'zh_Hant': '通知',
-    },
-    '8v5xhxc7': {
-      'en': 'Alarms',
-      'km': 'សំឡេងរោទិ៍',
-      'zh_Hant': '警報',
-    },
-    'gt2w86a2': {
-      'en': 'Event Logs',
-      'km': 'កំណត់ហេតុព្រឹត្តិការណ៍',
-      'zh_Hant': '事件日誌',
-    },
-    '07z3dg2i': {
-      'en': 'Settings',
-      'km': 'ការកំណត់',
-      'zh_Hant': '設定',
-    },
-    'r25bfssh': {
-      'en': 'System Configuration',
-      'km': 'ការកំណត់រចនាសម្ព័ន្ធ',
-      'zh_Hant': '系統配置',
-    },
-    'axkd09t5': {
-      'en': 'API Integrations',
-      'km': 'ការរួមបញ្ចូល API',
-      'zh_Hant': 'API集成',
-    },
-    '54ll69yi': {
-      'en': 'Security',
-      'km': 'សន្តិសុខ',
-      'zh_Hant': '安全',
-    },
-  },
   // DashboardView
   {
     'dg50imui': {
       'en': 'Overview',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ទិដ្ឋភាពទូទៅ',
+      'zh_Hant': '概述',
     },
     'utc53egw': {
       'en': 'Welcome!',
@@ -940,13 +646,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'xils3tt8': {
       'en': 'Energy Usage',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ការប្រើប្រាស់ថាមពល',
+      'zh_Hant': '能源使用',
     },
     '20wwukvk': {
       'en': 'Total Consumsion',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ការប្រើប្រាស់សរុប',
+      'zh_Hant': '總消費',
     },
     'dyuujhgp': {
       'en': 'Active Power',
@@ -1020,7 +726,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'unvuwbu8': {
       'en': 'Access Point-12',
-      'km': 'ចំណុចចូលដំណើរការ-12',
+      'km': 'ចំណុចចូលដំណើរការ-១២',
       'zh_Hant': '接入點 12',
     },
     'uzyj5sdi': {
@@ -1035,7 +741,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'cujgywov': {
       'en': 'Access Point-12',
-      'km': 'ចំណុចចូលដំណើរការ-12',
+      'km': 'ចំណុចចូលដំណើរការ-១២',
       'zh_Hant': '接入點 12',
     },
     'rvybaorn': {
@@ -1115,7 +821,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '622nk4nx': {
       'en': 'Access Point-12',
-      'km': 'ចំណុចចូលដំណើរការ-12',
+      'km': 'ចំណុចចូលដំណើរការ-១២',
       'zh_Hant': '接入點 12',
     },
     'y9l2ut33': {
@@ -1169,190 +875,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '192.168.1.3',
     },
   },
-  // cDeviceSetting
-  {
-    '8s676b69': {
-      'en': 'Device Information',
-      'km': 'ព័ត៌មានឧបករណ៍',
-      'zh_Hant': '設備資訊',
-    },
-    '1l4ysi7c': {
-      'en': 'Device Name',
-      'km': 'ឈ្មោះឧបករណ៍',
-      'zh_Hant': '設備名稱',
-    },
-    'unk4mkcl': {
-      'en': 'Device Type',
-      'km': 'ប្រភេទឧបករណ៍',
-      'zh_Hant': '設備類型',
-    },
-    'ms2txsb4': {
-      'en': '\"Sensor\\\\Meter\\\\Gateway\"',
-      'km': '\"ឧបករណ៍ចាប់សញ្ញា \\\\ ម៉ែត្រ \\\\ ច្រកចេញចូល\"',
-      'zh_Hant': '“感測器\\儀表\\網關”',
-    },
-    'xp5fl6ah': {
-      'en': 'Model Number',
-      'km': 'លេខម៉ូដែល',
-      'zh_Hant': '型號',
-    },
-    '2772c60l': {
-      'en': 'Serial Number',
-      'km': 'លេខស៊េរី',
-      'zh_Hant': '序號',
-    },
-    'gr00m8y0': {
-      'en': 'Commission Date',
-      'km': 'កាលបរិច្ឆេទគណៈកម្មាការ',
-      'zh_Hant': '佣金日期',
-    },
-    '5nzxxvix': {
-      'en': 'Protocol/Interface',
-      'km': 'ពិធីការ/ចំណុចប្រទាក់',
-      'zh_Hant': '協定/介面',
-    },
-    'ma962i7q': {
-      'en': 'IEC 62056',
-      'km': 'IEC 62056',
-      'zh_Hant': 'IEC 62056',
-    },
-    'jgm8n8sn': {
-      'en': 'IEC 62057',
-      'km': 'IEC 62057',
-      'zh_Hant': 'IEC 62057',
-    },
-    '70868yf5': {
-      'en': 'Meter Group',
-      'km': 'ក្រុមម៉ែត្រ',
-      'zh_Hant': '儀表組',
-    },
-    'yftyrxo3': {
-      'en': 'Meter1',
-      'km': 'ម៉ែត្រ 1',
-      'zh_Hant': '儀表1',
-    },
-    'l9bqy279': {
-      'en': 'Meter2',
-      'km': 'ម៉ែត្រ 2',
-      'zh_Hant': '米2',
-    },
-    '9yrauvy8': {
-      'en': 'Installation Location',
-      'km': 'ទីតាំងដំឡើង',
-      'zh_Hant': '安裝位置',
-    },
-    'rpspi5go': {
-      'en': 'MAPS',
-      'km': 'ផែនទី',
-      'zh_Hant': '地圖',
-    },
-    'adcryhvd': {
-      'en': 'GPS ',
-      'km': 'ជីភីអេស',
-      'zh_Hant': '全球定位系統',
-    },
-    'qq5pwcoc': {
-      'en': 'Installation Date',
-      'km': 'កាលបរិច្ឆេទដំឡើង',
-      'zh_Hant': '安裝日期',
-    },
-    'jb5mnbne': {
-      'en': 'Communication Technology',
-      'km': 'បច្ចេកវិទ្យាទំនាក់ទំនង',
-      'zh_Hant': '通訊技術',
-    },
-    'gs3piufj': {
-      'en': 'Firmware Version',
-      'km': 'កំណែកម្មវិធីបង្កប់',
-      'zh_Hant': '韌體版本',
-    },
-    '10trfdz9': {
-      'en': 'Upload Image',
-      'km': 'បង្ហោះរូបភាព',
-      'zh_Hant': '上傳圖片',
-    },
-    '5xzh06j7': {
-      'en': 'Tap to select or drag image here',
-      'km': 'ប៉ះដើម្បីជ្រើសរើស ឬអូសរូបភាពនៅទីនេះ',
-      'zh_Hant': '點擊此處選擇或拖曳圖像',
-    },
-    '18nbruwv': {
-      'en': 'Network Configuration',
-      'km': 'ការកំណត់រចនាសម្ព័ន្ធបណ្តាញ',
-      'zh_Hant': '網路設定',
-    },
-    '45p6vwcq': {
-      'en': 'IP Address',
-      'km': 'អាសយដ្ឋាន IP',
-      'zh_Hant': 'IP位址',
-    },
-    'wzqqhodw': {
-      'en': 'APN',
-      'km': 'APN',
-      'zh_Hant': '存取點網路',
-    },
-    'dpvpf19w': {
-      'en': 'Gateway Info',
-      'km': 'ព័ត៌មានច្រកផ្លូវ',
-      'zh_Hant': '網關資訊',
-    },
-    '41ihe0nl': {
-      'en': 'Network Configuration',
-      'km': 'ការកំណត់រចនាសម្ព័ន្ធបណ្តាញ',
-      'zh_Hant': '網路設定',
-    },
-    '4ny89lis': {
-      'en': 'MAC Address',
-      'km': 'អាសយដ្ឋាន MAC',
-      'zh_Hant': 'MAC位址',
-    },
-    'rhhroc8f': {
-      'en': 'IP Address',
-      'km': 'អាសយដ្ឋាន IP',
-      'zh_Hant': 'IP位址',
-    },
-    'shppascc': {
-      'en': 'Gateway Info',
-      'km': 'ព័ត៌មានច្រកផ្លូវ',
-      'zh_Hant': '網關資訊',
-    },
-    'z0tj7idt': {
-      'en': 'Channel Configuration',
-      'km': 'ការកំណត់រចនាសម្ព័ន្ធឆានែល',
-      'zh_Hant': '通道配置',
-    },
-    'yl9dhh94': {
-      'en': 'Flow Direction',
-      'km': 'ទិសដៅលំហូរ',
-      'zh_Hant': '流動方向',
-    },
-    'lme1br78': {
-      'en': '\"Forward\\\\Reverse\\\\Bidirectional\"',
-      'km': '\"ទៅមុខ \\\\ បញ្ច្រាស \\\\ ទ្វេទិស\"',
-      'zh_Hant': '“正向\\反向\\雙向”',
-    },
-    '8p1w31pd': {
-      'en': 'Apportion Policy',
-      'km': 'គោលការណ៍បែងចែក',
-      'zh_Hant': '分配政策',
-    },
-    '3w9i7p98': {
-      'en': '\"Equal\\\\Weighted\\\\Custom\"',
-      'km': '\"ស្មើ \\\\ ទម្ងន់ \\\\ ផ្ទាល់ខ្លួន\"',
-      'zh_Hant': '“等\\加權\\自訂”',
-    },
-    '9tx6whvp': {
-      'en': 'Cancel',
-      'km': 'បោះបង់',
-      'zh_Hant': '取消',
-    },
-    'bb2wrkxz': {
-      'en': 'Save',
-      'km': 'រក្សាទុក',
-      'zh_Hant': '節省',
-    },
-  },
-  // cResource
+  // ResourceView
   {
     'cmsxmgu2': {
       'en': 'Resources',
@@ -1431,7 +954,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'g4srqpid': {
       'en': 'Version 2.1.0 Release Notes',
-      'km': 'កំណែ 2.1.0 កំណត់ចំណាំការចេញផ្សាយ',
+      'km': 'កំណែ 2.1.0 កំណត់ចំណាំចេញផ្សាយ',
       'zh_Hant': '版本 2.1.0 發行說明',
     },
     '2zpzytb7': {
@@ -1440,254 +963,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'km':
           '• ការមើលឃើញទិន្នន័យប្រសើរឡើង\n• បង្កើនសមត្ថភាពរាយការណ៍\n• ការកែកំហុស និងការកែលម្អការអនុវត្ត',
       'zh_Hant': '• 改進的數據視覺化\n• 增強的報告功能\n• 錯誤修復和效能改進',
-    },
-  },
-  // cAddDevice
-  {
-    '35k18icf': {
-      'en': 'Mapping data',
-      'km': 'ទិន្នន័យផែនទី',
-      'zh_Hant': '測繪數據',
-    },
-    'y5hkxn25': {
-      'en': 'Device Type',
-      'km': 'ប្រភេទឧបករណ៍',
-      'zh_Hant': '設備類型',
-    },
-    '1sqc8vci': {
-      'en': '\"Sensor\\\\Meter\\\\Gateway\"',
-      'km': '\"ឧបករណ៍ចាប់សញ្ញា \\\\ ម៉ែត្រ \\\\ ច្រកចេញចូល\"',
-      'zh_Hant': '“感測器\\儀表\\網關”',
-    },
-    'fl6gogfu': {
-      'en': 'Serial Number',
-      'km': 'លេខស៊េរី',
-      'zh_Hant': '序號',
-    },
-    'vva17kzk': {
-      'en': 'Serial Number is required',
-      'km': 'លេខស៊េរីត្រូវបានទាមទារ',
-      'zh_Hant': '序號為必填項',
-    },
-    'iyb0nf33': {
-      'en': 'Please choose an option from the dropdown',
-      'km': 'សូមជ្រើសរើសជម្រើសមួយពីបញ្ជីទម្លាក់ចុះ',
-      'zh_Hant': '請從下拉清單中選擇一個選項',
-    },
-    'h4m9e9n2': {
-      'en': 'Map from Billing',
-      'km': 'ផែនទីពីវិក្កយបត្រ',
-      'zh_Hant': '比林地圖',
-    },
-    'mqgcrlio': {
-      'en': 'Phase',
-      'km': 'ដំណាក់កាល',
-      'zh_Hant': '階段',
-    },
-    'jxrk6aks': {
-      'en': 'Communication Type',
-      'km': 'ប្រភេទទំនាក់ទំនង',
-      'zh_Hant': '通訊類型',
-    },
-    'bd9g1lic': {
-      'en': 'EDMI-RF',
-      'km': 'EDMI-RF',
-      'zh_Hant': 'EDMI射頻',
-    },
-    '9cmqs8ug': {
-      'en': 'Basic Current',
-      'km': 'ចរន្តមូលដ្ឋាន',
-      'zh_Hant': '基本電流',
-    },
-    'b8ubf1i4': {
-      'en': '90 A',
-      'km': '90 ក',
-      'zh_Hant': '90A',
-    },
-    'k88za00m': {
-      'en': 'Maximum Current',
-      'km': 'ចរន្តអតិបរមា',
-      'zh_Hant': '最大電流',
-    },
-    'wdxoe4z0': {
-      'en': '100 A',
-      'km': '100 អេ',
-      'zh_Hant': '100A',
-    },
-    'i5rxa4ht': {
-      'en': 'Protocol/Interface',
-      'km': 'ពិធីការ/ចំណុចប្រទាក់',
-      'zh_Hant': '協定/介面',
-    },
-    '843v7nfz': {
-      'en': 'IEC 62056',
-      'km': 'IEC 62056',
-      'zh_Hant': 'IEC 62056',
-    },
-    '7jpxolwn': {
-      'en': 'IEC 62057',
-      'km': 'IEC 62057',
-      'zh_Hant': 'IEC 62057',
-    },
-    'ehi28p9a': {
-      'en': 'Multiplier',
-      'km': 'មេគុណ',
-      'zh_Hant': '乘數',
-    },
-    'zhgh7xw5': {
-      'en': 'Reading Digit',
-      'km': 'ការអានលេខ',
-      'zh_Hant': '讀取數字',
-    },
-    'euz3og33': {
-      'en': 'Decimal Digit',
-      'km': 'ខ្ទង់ទសភាគ',
-      'zh_Hant': '小數位',
-    },
-    'gtvm7pud': {
-      'en': 'Seal By',
-      'km': 'ត្រាដោយ',
-      'zh_Hant': '密封方式',
-    },
-    '6m9a6d7j': {
-      'en': 'Status',
-      'km': 'ស្ថានភាព',
-      'zh_Hant': '地位',
-    },
-    'q2b38tso': {
-      'en': 'Available',
-      'km': 'មាន',
-      'zh_Hant': '可用的',
-    },
-    'vf81k1pb': {
-      'en': 'Unavailable',
-      'km': 'មិនអាចប្រើបាន',
-      'zh_Hant': '不可用',
-    },
-    'dnhjqc6m': {
-      'en': 'Empty',
-      'km': 'ទទេ',
-      'zh_Hant': '空的',
-    },
-    'x33l8w43': {
-      'en': 'Broken',
-      'km': 'ខូច',
-      'zh_Hant': '破碎的',
-    },
-    '3xk24inj': {
-      'en': 'Installation Location',
-      'km': 'ទីតាំងដំឡើង',
-      'zh_Hant': '安裝位置',
-    },
-    '3egwdtkt': {
-      'en': 'Mapping from headend',
-      'km': 'ការធ្វើផែនទីពីក្បាល',
-      'zh_Hant': '從頭端映射',
-    },
-    'z7azjcbh': {
-      'en': 'Device Name',
-      'km': 'ឈ្មោះឧបករណ៍',
-      'zh_Hant': '設備名稱',
-    },
-    'jh6h9f7a': {
-      'en': 'Commission Date',
-      'km': 'កាលបរិច្ឆេទគណៈកម្មាការ',
-      'zh_Hant': '佣金日期',
-    },
-    'fusi65ho': {
-      'en': 'Installation Date',
-      'km': 'កាលបរិច្ឆេទដំឡើង',
-      'zh_Hant': '安裝日期',
-    },
-    'wv7een0p': {
-      'en': 'Communication Technology',
-      'km': 'បច្ចេកវិទ្យាទំនាក់ទំនង',
-      'zh_Hant': '通訊技術',
-    },
-    'h04bx2sl': {
-      'en': 'Firmware Version',
-      'km': 'កំណែកម្មវិធីបង្កប់',
-      'zh_Hant': '韌體版本',
-    },
-    '5jx0ve41': {
-      'en': 'MAPS',
-      'km': 'ផែនទី',
-      'zh_Hant': '地圖',
-    },
-    'l6n0q3yo': {
-      'en': 'GPS ',
-      'km': 'ជីភីអេស',
-      'zh_Hant': '全球定位系統',
-    },
-    '9apn96c7': {
-      'en': '\tOrganization',
-      'km': 'អង្គការ',
-      'zh_Hant': '組織',
-    },
-    '3i1nzhy6': {
-      'en': 'Upload Device Image',
-      'km': 'បង្ហោះរូបភាពឧបករណ៍',
-      'zh_Hant': '上傳設備圖片',
-    },
-    'eoriydtj': {
-      'en': 'Tap to select or drag image here',
-      'km': 'ប៉ះដើម្បីជ្រើសរើស ឬអូសរូបភាពនៅទីនេះ',
-      'zh_Hant': '點擊此處選擇或拖曳圖像',
-    },
-    '4gondmt9': {
-      'en': 'Network Configuration',
-      'km': 'ការកំណត់រចនាសម្ព័ន្ធបណ្តាញ',
-      'zh_Hant': '網路設定',
-    },
-    'm66zrcen': {
-      'en': 'IP Address',
-      'km': 'អាសយដ្ឋាន IP',
-      'zh_Hant': 'IP位址',
-    },
-    '82spplk4': {
-      'en': 'APN',
-      'km': 'APN',
-      'zh_Hant': '存取點網路',
-    },
-    'wkg4513b': {
-      'en': 'Gateway Info',
-      'km': 'ព័ត៌មានច្រកផ្លូវ',
-      'zh_Hant': '網關資訊',
-    },
-    'u0beye2k': {
-      'en': 'Channel Configuration',
-      'km': 'ការកំណត់រចនាសម្ព័ន្ធឆានែល',
-      'zh_Hant': '通道配置',
-    },
-    '3yto5v5i': {
-      'en': 'Flow Direction',
-      'km': 'ទិសដៅលំហូរ',
-      'zh_Hant': '流動方向',
-    },
-    'tm4y7fq6': {
-      'en': '\"Forward\\\\Reverse\\\\Bidirectional\"',
-      'km': '\"ទៅមុខ \\\\ បញ្ច្រាស \\\\ ទ្វេទិស\"',
-      'zh_Hant': '“正向\\反向\\雙向”',
-    },
-    '40q0zihx': {
-      'en': 'Apportion Policy',
-      'km': 'គោលការណ៍បែងចែក',
-      'zh_Hant': '分配政策',
-    },
-    'etbhkglh': {
-      'en': '\"Equal\\\\Weighted\\\\Custom\"',
-      'km': '\"ស្មើ \\\\ ទម្ងន់ \\\\ ផ្ទាល់ខ្លួន\"',
-      'zh_Hant': '“等\\加權\\自訂”',
-    },
-    '2tic5vfl': {
-      'en': 'Cancel',
-      'km': 'បោះបង់',
-      'zh_Hant': '取消',
-    },
-    'mwo1277y': {
-      'en': 'Save',
-      'km': 'រក្សាទុក',
-      'zh_Hant': '節省',
     },
   },
   // ComFeatureMap
@@ -1779,1500 +1054,230 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': 'C期',
     },
   },
-  // ComMap
-  {
-    'a0xlsp4b': {
-      'en': 'Address',
-      'km': 'អាស័យដ្ឋាន',
-      'zh_Hant': '地址',
-    },
-    '8dot4d8w': {
-      'en': 'PHNOM PENH',
-      'km': 'ភ្នំពេញ',
-      'zh_Hant': '金邊',
-    },
-    'ftcvfi3y': {
-      'en': 'Coordinates',
-      'km': 'កូអរដោនេ',
-      'zh_Hant': '座標',
-    },
-    'ehro00eq': {
-      'en': '40.7128° N, 74.0060° W',
-      'km': '40.7128° N, 74.0060° W',
-      'zh_Hant': '北緯 40.7128°，西經 74.0060°',
-    },
-  },
   // TouDetailsView
   {
-    'bj3ik086': {
-      'en': 'TOU Setup',
-      'km': 'ការដំឡើង TOU',
-      'zh_Hant': '使用條款設定',
-    },
-    '103v4fyv': {
+    'gok72848': {
       'en': 'Code',
       'km': 'កូដ',
       'zh_Hant': '程式碼',
     },
-    'w1zv5a0q': {
+    'v1h1nltt': {
       'en': ' *',
       'km': '*',
       'zh_Hant': '*',
     },
-    's7jjlcbj': {
+    'mljxu560': {
       'en': '',
       'km': '',
       'zh_Hant': '',
     },
-    'isfupb64': {
+    '293piuxb': {
       'en': '',
       'km': '',
       'zh_Hant': '',
     },
-    'l2rrwr5f': {
+    'pd919aij': {
       'en': '',
       'km': '',
       'zh_Hant': '',
     },
-    'poqwu6in': {
+    'z0ro78pv': {
       'en': 'Name',
-      'km': 'ឈ្មោះ',
-      'zh_Hant': '姓名',
+      'km': 'កូដ',
+      'zh_Hant': '程式碼',
     },
-    'i222x3tc': {
+    'ljlqyghm': {
       'en': ' *',
       'km': '*',
       'zh_Hant': '*',
     },
-    'ws15kmgc': {
+    '2cfvd23w': {
       'en': '',
       'km': '',
       'zh_Hant': '',
     },
-    'u6y9us4q': {
+    'vsjpf4c1': {
       'en': '',
       'km': '',
       'zh_Hant': '',
     },
-    'siyu5nhd': {
+    'vrjrwj94': {
       'en': '',
       'km': '',
       'zh_Hant': '',
     },
-    'lqf7lxho': {
-      'en': 'Effective Date',
-      'km': 'កាលបរិច្ឆេទមានប្រសិទ្ធភាព',
-      'zh_Hant': '生效日期',
+    '2fyy095c': {
+      'en': 'Description',
+      'km': 'កូដ',
+      'zh_Hant': '程式碼',
     },
-    '62od3i6r': {
-      'en': 'End Date',
-      'km': 'កាលបរិច្ឆេទបញ្ចប់',
-      'zh_Hant': '結束日期',
-    },
-    '2osu0kpb': {
-      'en': 'Note',
-      'km': 'ចំណាំ',
-      'zh_Hant': '筆記',
-    },
-    'wq1e65p0': {
+    'wsbw9f9k': {
       'en': '',
       'km': '',
       'zh_Hant': '',
     },
-    'v4d7werj': {
+    'amkeq3ji': {
       'en': '',
       'km': '',
       'zh_Hant': '',
     },
-    'gtov2jaw': {
+    'brlwan9q': {
       'en': '',
       'km': '',
       'zh_Hant': '',
     },
-    '8arw5ue0': {
-      'en': 'Input code is required!',
-      'km': 'តម្រូវឱ្យបញ្ចូលលេខកូដ!',
-      'zh_Hant': '需要輸入驗證碼！',
-    },
-    '9yrq2915': {
-      'en': 'Please choose an option from the dropdown',
-      'km': 'សូមជ្រើសរើសជម្រើសមួយពីបញ្ជីទម្លាក់ចុះ',
-      'zh_Hant': '請從下拉清單中選擇一個選項',
-    },
-    'gtsaoxw0': {
-      'en': 'Input name is required',
-      'km': 'ឈ្មោះបញ្ចូលត្រូវបានទាមទារ',
-      'zh_Hant': '需要輸入姓名',
-    },
-    '2otyzb60': {
-      'en': 'Please choose an option from the dropdown',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'c7verfsc': {
+    'xdxzrr7u': {
       'en': 'Field is required',
-      'km': 'វាលត្រូវបានទាមទារ',
-      'zh_Hant': '欄位為必填項',
+      'km': '',
+      'zh_Hant': '',
     },
-    '4v98r4bz': {
+    '5u0hxo7a': {
       'en': 'Please choose an option from the dropdown',
       'km': 'សូមជ្រើសរើសជម្រើសមួយពីបញ្ជីទម្លាក់ចុះ',
       'zh_Hant': '請從下拉清單中選擇一個選項',
     },
-    'nfh2ay4e': {
-      'en': 'Time Band',
-      'km': 'ក្រុមតន្ត្រីពេលវេលា',
-      'zh_Hant': '時間帶',
-    },
-    '2li8ew7c': {
-      'en': ' *',
-      'km': '*',
-      'zh_Hant': '*',
-    },
-    'lbem8tbr': {
-      'en': 'Name',
-      'km': 'ឈ្មោះ',
-      'zh_Hant': '姓名',
-    },
-    'owjpqkli': {
-      'en': 'Time',
-      'km': 'ពេលវេលា',
-      'zh_Hant': '時間',
-    },
-    'kqxdrgt1': {
-      'en': 'Channel',
-      'km': 'ឆានែល',
-      'zh_Hant': '頻道',
-    },
-    'af7i6qgt': {
-      'en': 'Day',
-      'km': 'ថ្ងៃ',
-      'zh_Hant': '天',
-    },
-    'vlqnasln': {
-      'en': 'TB01 DayTOU',
-      'km': 'TB01 DayTOU',
-      'zh_Hant': 'TB01 日透',
-    },
-    'oek2p265': {
-      'en': '',
+    'um9qbdjj': {
+      'en': 'Field is required',
       'km': '',
       'zh_Hant': '',
-    },
-    'b5ggepwe': {
-      'en': 'TB01 DayTOU',
-      'km': 'TB01 DayTOU',
-      'zh_Hant': 'TB01 日透',
-    },
-    'x1nr8wki': {
-      'en': 'TB02 NightTOU',
-      'km': 'TB02 NightTOU',
-      'zh_Hant': 'TB02 夜TOU',
-    },
-    'jnr179ih': {
-      'en': 'Import',
-      'km': 'នាំចូល',
-      'zh_Hant': '進口',
-    },
-    'l281r5fg': {
-      'en': 'Full',
-      'km': 'ពេញ',
-      'zh_Hant': '滿的',
-    },
-    '7oddamie': {
-      'en': 'TB02 NightTOU',
-      'km': 'TB02 NightTOU',
-      'zh_Hant': 'TB02 夜TOU',
-    },
-    'dgf2mnus': {
-      'en': '',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'en92joa8': {
-      'en': 'TB01 DayTOU',
-      'km': 'TB01 DayTOU',
-      'zh_Hant': 'TB01 日透',
-    },
-    'y2eegtlc': {
-      'en': 'TB02 NightTOU',
-      'km': 'TB02 NightTOU',
-      'zh_Hant': 'TB02 夜TOU',
-    },
-    'no2ifvlq': {
-      'en': 'Import',
-      'km': 'នាំចូល',
-      'zh_Hant': '進口',
-    },
-    'ohasoaxh': {
-      'en': 'Full',
-      'km': 'ពេញ',
-      'zh_Hant': '滿的',
-    },
-  },
-  // TouView
-  {
-    '44dkgwev': {
-      'en': 'No',
-      'km': 'ទេ',
-      'zh_Hant': '不',
-    },
-    '6u8s2coe': {
-      'en': 'Code',
-      'km': 'កូដ',
-      'zh_Hant': '程式碼',
-    },
-    'l3hlp12x': {
-      'en': 'Name',
-      'km': 'ឈ្មោះ',
-      'zh_Hant': '姓名',
-    },
-    '73tap9zq': {
-      'en': 'Effective Date',
-      'km': 'កាលបរិច្ឆេទមានប្រសិទ្ធភាព',
-      'zh_Hant': '生效日期',
-    },
-    'k7n1jodl': {
-      'en': 'End Date',
-      'km': 'កាលបរិច្ឆេទបញ្ចប់',
-      'zh_Hant': '結束日期',
-    },
-    't9l1gz7y': {
-      'en': 'Created Date',
-      'km': 'កាលបរិច្ឆេទបង្កើត',
-      'zh_Hant': '建立日期',
-    },
-    'hkxulk7u': {
-      'en': 'Created By',
-      'km': 'បង្កើតដោយ',
-      'zh_Hant': '創建者',
-    },
-    'll2e23ue': {
-      'en': 'Status',
-      'km': 'ស្ថានភាព',
-      'zh_Hant': '地位',
-    },
-    'kzm4hvxy': {
-      'en': '1',
-      'km': '១',
-      'zh_Hant': '1',
-    },
-    'vlraf5rx': {
-      'en': 'TOU01',
-      'km': 'ទូ ០១',
-      'zh_Hant': '時01',
-    },
-    '3t3vg1eq': {
-      'en': 'Commercial TOU',
-      'km': 'TOU ពាណិជ្ជកម្ម',
-      'zh_Hant': '商業分時電價',
-    },
-    'gzwpmh1e': {
-      'en': '03/01/2025',
-      'km': '០៣/០១/២០២៥',
-      'zh_Hant': '2025年3月1日',
-    },
-    '58mff5dy': {
-      'en': '03/02/2025',
-      'km': '០៣/០២/២០២៥',
-      'zh_Hant': '2025年3月2日',
-    },
-    'iynvvikw': {
-      'en': '01/01/2025',
-      'km': '០១/០១/២០២៥',
-      'zh_Hant': '01/01/2025',
-    },
-    '4wyrc88h': {
-      'en': 'kimthak',
-      'km': 'គីមថាក់',
-      'zh_Hant': '金塔克',
-    },
-    'lwlv73p0': {
-      'en': '2',
-      'km': '២',
-      'zh_Hant': '2',
-    },
-    'o8odaxju': {
-      'en': 'TOU02',
-      'km': 'ទូ ០២',
-      'zh_Hant': '途02',
-    },
-    '1ekl8gv7': {
-      'en': 'Industrial TOU',
-      'km': 'TOU ឧស្សាហកម្ម',
-      'zh_Hant': '工業分時電價',
-    },
-    'y28kerou': {
-      'en': '04/01/2025',
-      'km': '០៤/០១/២០២៥',
-      'zh_Hant': '2025年4月1日',
-    },
-    'bh1siuiv': {
-      'en': '04/02/2025',
-      'km': '០៤/០២/២០២៥',
-      'zh_Hant': '2025年4月2日',
-    },
-    'cq0yt6fk': {
-      'en': '01/01/2025',
-      'km': '០១/០១/២០២៥',
-      'zh_Hant': '01/01/2025',
-    },
-    '3ltox30b': {
-      'en': 'kimthak',
-      'km': 'គីមថាក់',
-      'zh_Hant': '金塔克',
-    },
-    'yi19adxn': {
-      'en': '3',
-      'km': '៣',
-      'zh_Hant': '3',
-    },
-    'imv8aej6': {
-      'en': 'TOU03',
-      'km': 'ទូ ០៣',
-      'zh_Hant': 'TOU03',
-    },
-    'ekdd8xkp': {
-      'en': 'Agricultural TOU',
-      'km': 'TOU កសិកម្ម',
-      'zh_Hant': '農業分時電價',
-    },
-    '3f3mbtrs': {
-      'en': '02/12/2024',
-      'km': '០២/១២/២០២៤',
-      'zh_Hant': '2024年2月12日',
-    },
-    'xnrj8hz0': {
-      'en': '02/01/2025',
-      'km': '០២/០១/២០២៥',
-      'zh_Hant': '2025年2月1日',
-    },
-    'fwj7pehe': {
-      'en': '01/12/2024',
-      'km': '០១/១២/២០២៤',
-      'zh_Hant': '2024年1月12日',
-    },
-    'w995emm1': {
-      'en': 'kimthak',
-      'km': 'គីមថាក់',
-      'zh_Hant': '金塔克',
-    },
-    '7ca7e5ku': {
-      'en': '1-20',
-      'km': '១-២០',
-      'zh_Hant': '1-20',
-    },
-    'fcbovw8v': {
-      'en': 'of',
-      'km': 'នៃ',
-      'zh_Hant': '的',
-    },
-    '8awdgi4j': {
-      'en': '145',
-      'km': '១៤៥',
-      'zh_Hant': '145',
-    },
-    '6ik5tehg': {
-      'en': '1',
-      'km': '១',
-      'zh_Hant': '1',
-    },
-  },
-  // cCosInfo
-  {
-    'w531k784': {
-      'en': 'Name',
-      'km': 'ឈ្មោះ',
-      'zh_Hant': '姓名',
-    },
-    '9lrtdqej': {
-      'en': 'Value',
-      'km': 'តម្លៃ',
-      'zh_Hant': '價值',
-    },
-    '13qbcq0d': {
-      'en': 'Meter Group',
-      'km': 'ក្រុមម៉ែត្រ',
-      'zh_Hant': '儀表組',
-    },
-    's056wstw': {
-      'en': 'K10A/5A',
-      'km': 'K10A/5A',
-      'zh_Hant': 'K10A/5A',
-    },
-    'i829z5ds': {
-      'en': 'Consumer Name',
-      'km': 'ឈ្មោះអ្នកប្រើប្រាស់',
-      'zh_Hant': '消費者姓名',
-    },
-    'ueangi2f': {
-      'en': 'HENG KIMHEANG',
-      'km': 'ហេង គឹមហៀង',
-      'zh_Hant': '興金興',
-    },
-    'wpredlc3': {
-      'en': 'Consumer Code',
-      'km': 'លេខកូដអ្នកប្រើប្រាស់',
-      'zh_Hant': '消費者守則',
-    },
-    '4r24l8x7': {
-      'en': '3857810',
-      'km': '៣៨៥៧៨១០',
-      'zh_Hant': '3857810',
-    },
-    'ity47o2m': {
-      'en': 'Consumer Type',
-      'km': 'ប្រភេទអ្នកប្រើប្រាស់',
-      'zh_Hant': '消費者類型',
-    },
-    'sb9dugjj': {
-      'en': 'R00 RIEL - DOMESTIC',
-      'km': 'R00 រៀល - ក្នុងស្រុក',
-      'zh_Hant': 'R00 瑞爾 - 國內',
-    },
-    'k8zpdlt7': {
-      'en': 'Billing Cycie',
-      'km': 'Billing Cycie',
-      'zh_Hant': '比林西西',
-    },
-    'n5286pz9': {
-      'en': 'CABIN 003A # 3',
-      'km': 'CABIN 003A # 3',
-      'zh_Hant': '003A#3 號小屋',
-    },
-    '9drna6bn': {
-      'en': 'Start Date',
-      'km': 'កាលបរិច្ឆេទចាប់ផ្តើម',
-      'zh_Hant': '開始日期',
-    },
-    '1tlrbi0l': {
-      'en': '01/01/2025',
-      'km': '០១/០១/២០២៥',
-      'zh_Hant': '01/01/2025',
-    },
-    'v8novkxc': {
-      'en': 'End Date',
-      'km': 'កាលបរិច្ឆេទបញ្ចប់',
-      'zh_Hant': '結束日期',
-    },
-    '3a0f2k9m': {
-      'en': '31/01/2025',
-      'km': '៣១/០១/២០២៥',
-      'zh_Hant': '31/01/2025',
-    },
-    'yfbagphy': {
-      'en': ' Address',
-      'km': 'អាស័យដ្ឋាន',
-      'zh_Hant': '地址',
-    },
-    '09flgp4y': {
-      'en': 'A 03 - RUSSY DANGKOR PHNOM PENH',
-      'km': 'A 03 - រុស្សី ខណ្ឌដង្កោ រាជធានីភ្នំពេញ',
-      'zh_Hant': 'A 03 - 俄羅斯 DANGKOR 金邊',
-    },
-    'hrydfs1b': {
-      'en': 'Meter Code',
-      'km': 'លេខកូដម៉ែត្រ',
-      'zh_Hant': '儀表程式碼',
-    },
-    '1dnsq1lz': {
-      'en': 'Tariff',
-      'km': 'ពន្ធ',
-      'zh_Hant': '關稅',
-    },
-    'ypl3hvxu': {
-      'en': 'Last Bill Leading',
-      'km': 'Bill Leading ចុងក្រោយ',
-      'zh_Hant': '最後法案領先',
-    },
-    'vr21dm45': {
-      'en': '800501200:1',
-      'km': '800501200:1',
-      'zh_Hant': '800501200:1',
-    },
-    'djjh3t25': {
-      'en': 'UDI',
-      'km': 'UDI',
-      'zh_Hant': 'UDI',
-    },
-    '7d6pfbys': {
-      'en': '800',
-      'km': '៨០០',
-      'zh_Hant': '800',
-    },
-    'h3vy1uzk': {
-      'en': '800501200:1',
-      'km': '800501200:1',
-      'zh_Hant': '800501200:1',
-    },
-    '48uyq5ff': {
-      'en': 'UNI',
-      'km': 'UNI',
-      'zh_Hant': '大學',
-    },
-    'y02i2h6m': {
-      'en': '800',
-      'km': '៨០០',
-      'zh_Hant': '800',
-    },
-    'rqzjqeb6': {
-      'en': '800501200:1',
-      'km': '800501200:1',
-      'zh_Hant': '800501200:1',
-    },
-    't0b9a5cc': {
-      'en': 'UDI',
-      'km': 'UDI',
-      'zh_Hant': 'UDI',
-    },
-    '7l2he0eu': {
-      'en': '800',
-      'km': '៨០០',
-      'zh_Hant': '800',
-    },
-  },
-  // cSidebar
-  {
-    'gsgt9hf9': {
-      'en': 'TOU Info',
-      'km': 'ព័ត៌មាន TOU',
-      'zh_Hant': '分時訊息',
-    },
-    'tgxfdhds': {
-      'en': 'Customer Info',
-      'km': 'ព័ត៌មានអតិថិជន',
-      'zh_Hant': '客戶資訊',
-    },
-    'egfp469f': {
-      'en': 'Load Profile',
-      'km': 'ផ្ទុកប្រវត្តិរូប',
-      'zh_Hant': '負載曲線',
-    },
-    'hme1dsou': {
-      'en': 'Action Log',
-      'km': 'កំណត់ហេតុសកម្មភាព',
-      'zh_Hant': '行動日誌',
-    },
-  },
-  // cTouInfo
-  {
-    'w8110f5r': {
-      'en': 'Name',
-      'km': 'ឈ្មោះ',
-      'zh_Hant': '姓名',
-    },
-    '8flwryw6': {
-      'en': 'Last Reading',
-      'km': 'ការអានចុងក្រោយ',
-      'zh_Hant': '最後閱讀',
-    },
-    'co03wloa': {
-      'en': 'Last Reading Date',
-      'km': 'កាលបរិច្ឆេទអានចុងក្រោយ',
-      'zh_Hant': '最後閱讀日期',
-    },
-    '6642mp5u': {
-      'en': 'DayTOU',
-      'km': 'DayTOU',
-      'zh_Hant': '日投',
-    },
-    'obxl8lte': {
-      'en': '360 kWh',
-      'km': '360 kWh',
-      'zh_Hant': '360度',
-    },
-    'fxjmi48f': {
-      'en': '01/01/2025  07:15',
-      'km': '01/01/2025 07:15',
-      'zh_Hant': '2025年1月1日 07:15',
-    },
-    'adqjdcks': {
-      'en': 'NightTOU',
-      'km': 'រាត្រី',
-      'zh_Hant': '夜TOU',
-    },
-    'jpqh18bi': {
-      'en': '400 kWh',
-      'km': '400 kWh',
-      'zh_Hant': '400度',
-    },
-    '6u9ipiza': {
-      'en': '01/01/2025  21:15 ',
-      'km': '០១/០១/២០២៥ ២១:១៥',
-      'zh_Hant': '2025年1月1日 21:15',
-    },
-  },
-  // cloadprofile
-  {
-    'sk5v5fxo': {
-      'en': 'Name',
-      'km': 'ឈ្មោះ',
-      'zh_Hant': '姓名',
-    },
-    'qh6tvv4e': {
-      'en': 'Value',
-      'km': 'តម្លៃ',
-      'zh_Hant': '價值',
-    },
-    'es5rahqd': {
-      'en': 'Date Time ',
-      'km': 'កាលបរិច្ឆេទ ពេលវេលា',
-      'zh_Hant': '日期時間',
-    },
-    'poo9jv0t': {
-      'en': '2024-12-30 14:45:00',
-      'km': '2024-12-30T07:45:00Z',
-      'zh_Hant': '2024-12-30T07:45:00Z',
-    },
-    '3mn6y1jq': {
-      'en': 'Device Name ',
-      'km': 'ឈ្មោះឧបករណ៍',
-      'zh_Hant': '設備名稱',
-    },
-    'h0bhv32g': {
-      'en': 'Smart Meter A',
-      'km': 'ឧបករណ៍វាស់ស្ទង់ឆ្លាតវៃ A',
-      'zh_Hant': '智慧電錶A',
-    },
-    'nm7ooman': {
-      'en': 'Device ID',
-      'km': 'លេខសម្គាល់ឧបករណ៍',
-      'zh_Hant': '設備ID',
-    },
-    'dhxzxp6i': {
-      'en': 'DEV-12345',
-      'km': 'DEV-12345',
-      'zh_Hant': 'DEV-12345',
-    },
-    'w0b24o4d': {
-      'en': 'Import kWh Total',
-      'km': 'នាំចូល kWh សរុប',
-      'zh_Hant': '輸入千瓦時總計',
-    },
-    '6pv41sij': {
-      'en': '500.25 kWh',
-      'km': '500.25 kWh',
-      'zh_Hant': '500.25千瓦時',
-    },
-    'gnyyl9ym': {
-      'en': 'Import kVar Total',
-      'km': 'នាំចូល kVar សរុប',
-      'zh_Hant': '輸入無功電壓總計',
-    },
-    'p6f6szpn': {
-      'en': '102,475 kVar',
-      'km': '102,475 kVar',
-      'zh_Hant': '102,475 千伏爾',
-    },
-    'c9qcad49': {
-      'en': 'Voltage Ph-A  Avg',
-      'km': 'វ៉ុល Ph-A មធ្យម',
-      'zh_Hant': '電壓 Ph-A 平均值',
-    },
-    'xlgch4j7': {
-      'en': '231.2 V',
-      'km': '231.2 វ',
-      'zh_Hant': '231.2V',
-    },
-    '727imnk2': {
-      'en': 'Voltage Ph-B  Avg',
-      'km': 'វ៉ុល Ph-B ជាមធ្យម',
-      'zh_Hant': '電壓 Ph-B 平均值',
-    },
-    '4nxhmd5u': {
-      'en': '229.8 V',
-      'km': '229.8 វ',
-      'zh_Hant': '229.8V',
-    },
-    'rlz2a696': {
-      'en': 'Voltage Ph-C  Avg',
-      'km': 'វ៉ុល Ph-C ជាមធ្យម',
-      'zh_Hant': '電壓 Ph-C 平均值',
-    },
-    'v12naaa5': {
-      'en': ' 12.5 A',
-      'km': '12.5 ក',
-      'zh_Hant': '12.5安',
-    },
-    'yukgmahp': {
-      'en': 'Current Ph-A  Avg',
-      'km': 'មធ្យមភាគ Ph-A បច្ចុប្បន្ន',
-      'zh_Hant': '目前 Ph-A 平均值',
-    },
-    'qgiczije': {
-      'en': ' 12.8 A',
-      'km': '12.8 ក',
-      'zh_Hant': '12.8安',
-    },
-    'gk9s8i3l': {
-      'en': 'Status',
-      'km': 'ស្ថានភាព',
-      'zh_Hant': '地位',
-    },
-    '0dk05tg8': {
-      'en': 'Active',
-      'km': 'សកម្ម',
-      'zh_Hant': '積極的',
-    },
-  },
-  // TimebandDetailsView
-  {
-    '3zvo84rw': {
-      'en': 'Time Band Setup',
-      'km': 'ការកំណត់ក្រុមពេលវេលា',
-      'zh_Hant': '時段設定',
-    },
-    'du8yny2o': {
-      'en': 'Code',
-      'km': 'កូដ',
-      'zh_Hant': '程式碼',
-    },
-    'cbgoeyqf': {
-      'en': ' *',
-      'km': '*',
-      'zh_Hant': '*',
-    },
-    '9isptyjx': {
-      'en': '',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '1290yvkx': {
-      'en': '',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'waxwmt9v': {
-      'en': '',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '48junuid': {
-      'en': 'Name',
-      'km': 'ឈ្មោះ',
-      'zh_Hant': '姓名',
-    },
-    'ug73r3hw': {
-      'en': ' *',
-      'km': '*',
-      'zh_Hant': '*',
-    },
-    'mtnoma6i': {
-      'en': '',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'nkrxxjfe': {
-      'en': '',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '3j8vaec0': {
-      'en': '',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '0duxdyj0': {
-      'en': 'Time',
-      'km': 'ពេលវេលា',
-      'zh_Hant': '時間',
-    },
-    '915hxx3l': {
-      'en': ' *',
-      'km': '*',
-      'zh_Hant': '*',
-    },
-    '0d4wrbt1': {
-      'en': '-',
-      'km': '-',
-      'zh_Hant': '-',
-    },
-    '6swmtbhh': {
-      'en': 'Day',
-      'km': 'ថ្ងៃ',
-      'zh_Hant': '天',
-    },
-    'qn4q1mk6': {
-      'en': 'Full',
-      'km': 'ពេញ',
-      'zh_Hant': '滿的',
-    },
-    'vns2q183': {
-      'en': 'M',
-      'km': 'ម',
-      'zh_Hant': '中號',
-    },
-    '4lj2ryms': {
-      'en': 'T',
-      'km': 'ធ',
-      'zh_Hant': '時間',
-    },
-    'n7hq4lqm': {
-      'en': 'W',
-      'km': 'វ',
-      'zh_Hant': '瓦',
-    },
-    'hz26zgec': {
-      'en': 'T',
-      'km': 'ធ',
-      'zh_Hant': '時間',
-    },
-    'cnw56hju': {
-      'en': 'F',
-      'km': 'ច',
-      'zh_Hant': 'F',
-    },
-    'h91m356w': {
-      'en': 'S',
-      'km': 'ស',
-      'zh_Hant': 'S',
-    },
-    'kxgwmfo9': {
-      'en': 'S',
-      'km': 'ស',
-      'zh_Hant': 'S',
-    },
-    '4krpjk57': {
-      'en': 'Channel',
-      'km': 'ឆានែល',
-      'zh_Hant': '頻道',
-    },
-    'm24c5j95': {
-      'en': ' *',
-      'km': '*',
-      'zh_Hant': '*',
-    },
-    'ekml6czw': {
-      'en': 'Select Channel',
-      'km': 'ជ្រើសរើសឆានែល',
-      'zh_Hant': '選擇頻道',
-    },
-    'zdwx0wbb': {
-      'en': 'Search...',
-      'km': 'ស្វែងរក...',
-      'zh_Hant': '搜尋...',
-    },
-    'quy429o8': {
-      'en': 'Import',
-      'km': 'នាំចូល',
-      'zh_Hant': '進口',
-    },
-    'alqv0rah': {
-      'en': 'Export',
-      'km': 'នាំចេញ',
-      'zh_Hant': '出口',
-    },
-    'vzp2y5tw': {
-      'en': 'Special Day',
-      'km': 'ថ្ងៃពិសេស',
-      'zh_Hant': '特別的日子',
-    },
-    'eia9257z': {
-      'en': 'Include Special Day',
-      'km': 'រួមបញ្ចូលថ្ងៃពិសេស',
-      'zh_Hant': '包括特別的日子',
-    },
-    'emhern7k': {
-      'en': 'Season',
-      'km': 'រដូវ',
-      'zh_Hant': '季節',
-    },
-    'q1av4u5w': {
-      'en': 'Select Season',
-      'km': 'ជ្រើសរើសរដូវកាល',
-      'zh_Hant': '選擇季節',
-    },
-    '2aydd8rd': {
-      'en': 'Search...',
-      'km': 'ស្វែងរក...',
-      'zh_Hant': '搜尋...',
-    },
-    '8tvc5m49': {
-      'en': 'Spring',
-      'km': 'និទាឃរដូវ',
-      'zh_Hant': '春天',
-    },
-    'lpvvs1ii': {
-      'en': 'Summer',
-      'km': 'រដូវក្តៅ',
-      'zh_Hant': '夏天',
-    },
-    'eivbxgqo': {
-      'en': 'Autumn ',
-      'km': 'សរទរដូវ',
-      'zh_Hant': '秋天',
-    },
-    'e04qcikd': {
-      'en': 'Winter',
-      'km': 'រដូវរងា',
-      'zh_Hant': '冬天',
-    },
-    '4mugyaso': {
-      'en': 'Note',
-      'km': 'ចំណាំ',
-      'zh_Hant': '筆記',
-    },
-    '9akm5s2x': {
-      'en': '',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'ir04ecuo': {
-      'en': '',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '3w5sig97': {
-      'en': 'Input code is required!',
-      'km': 'តម្រូវឱ្យបញ្ចូលលេខកូដ!',
-      'zh_Hant': '需要輸入驗證碼！',
-    },
-    'ra5k1jtq': {
-      'en': 'Please choose an option from the dropdown',
-      'km': 'សូមជ្រើសរើសជម្រើសមួយពីបញ្ជីទម្លាក់ចុះ',
-      'zh_Hant': '請從下拉清單中選擇一個選項',
-    },
-    'p6lh1mtv': {
-      'en': 'Input name is required!',
-      'km': 'តម្រូវឱ្យបញ្ចូលឈ្មោះ!',
-      'zh_Hant': '需要輸入姓名！',
     },
     'ksfy21ga': {
       'en': 'Please choose an option from the dropdown',
-      'km': 'សូមជ្រើសរើសជម្រើសមួយពីបញ្ជីទម្លាក់ចុះ',
-      'zh_Hant': '請從下拉清單中選擇一個選項',
+      'km': '',
+      'zh_Hant': '',
     },
     '1hx9n3hp': {
       'en': 'Field is required',
-      'km': 'វាលត្រូវបានទាមទារ',
-      'zh_Hant': '欄位為必填項',
+      'km': '',
+      'zh_Hant': '',
     },
     '5akpl7u1': {
       'en': 'Please choose an option from the dropdown',
-      'km': 'សូមជ្រើសរើសជម្រើសមួយពីបញ្ជីទម្លាក់ចុះ',
-      'zh_Hant': '請從下拉清單中選擇一個選項',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'i3iee1qq': {
+      'en': 'Select TimeBand',
+      'km': 'កូដ',
+      'zh_Hant': '程式碼',
+    },
+    'pyfw407y': {
+      'en': ' *',
+      'km': '*',
+      'zh_Hant': '*',
+    },
+    'zotzmnvp': {
+      'en': 'TimeBand',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    '6vrhb4ty': {
+      'en': 'Channel',
+      'km': 'កាលបរិច្ឆេទចាប់ផ្តើម',
+      'zh_Hant': '開始日期',
+    },
+    'mjh8m9ni': {
+      'en': 'Register',
+      'km': 'កាលបរិច្ឆេទបញ្ចប់',
+      'zh_Hant': '結束日期',
+    },
+    'arlnporw': {
+      'en': 'Time of use validate',
+      'km': '',
+      'zh_Hant': '',
     },
   },
   // TimeBandView
   {
-    'k1nqmbfk': {
+    'vpkicd0v': {
+      'en': 'Search',
+      'km': 'ស្វែងរក',
+      'zh_Hant': '搜尋',
+    },
+    'yv1itc2e': {
       'en': 'No',
       'km': 'ទេ',
       'zh_Hant': '不',
     },
     '6deqmaf3': {
-      'en': 'Code',
-      'km': 'កូដ',
-      'zh_Hant': '程式碼',
-    },
-    '6a29s0eo': {
       'en': 'Name',
       'km': 'ឈ្មោះ',
       'zh_Hant': '姓名',
     },
+    '6a29s0eo': {
+      'en': 'Start Time',
+      'km': 'ពេលវេលាចាប់ផ្តើម',
+      'zh_Hant': '開始時間',
+    },
     'ngs35na7': {
-      'en': 'Time',
-      'km': 'ពេលវេលា',
-      'zh_Hant': '時間',
+      'en': 'End Time',
+      'km': 'ពេលវេលាបញ្ចប់',
+      'zh_Hant': '結束時間',
     },
     '7r7plp9y': {
-      'en': 'Channel',
-      'km': 'ឆានែល',
-      'zh_Hant': '頻道',
-    },
-    'cmi1q0mr': {
-      'en': 'Created Date',
-      'km': 'កាលបរិច្ឆេទបង្កើត',
-      'zh_Hant': '建立日期',
-    },
-    '4tlnh7of': {
-      'en': 'Created By',
-      'km': 'បង្កើតដោយ',
-      'zh_Hant': '創建者',
-    },
-    '6g3plbi0': {
-      'en': 'Day',
-      'km': 'ថ្ងៃ',
-      'zh_Hant': '天',
+      'en': 'Period',
+      'km': 'ថ្ងៃនៃសប្តាហ៍',
+      'zh_Hant': '星期幾',
     },
     'l7aitu38': {
-      'en': 'Note',
-      'km': 'ចំណាំ',
-      'zh_Hant': '筆記',
-    },
-    'odpvq4vv': {
-      'en': '1   ',
-      'km': '១',
-      'zh_Hant': '1',
-    },
-    '6p8t3c3a': {
-      'en': 'TB01',
-      'km': 'TB01',
-      'zh_Hant': 'TB01',
-    },
-    '6d77qx25': {
-      'en': 'DayTOU',
-      'km': 'DayTOU',
-      'zh_Hant': '日投',
-    },
-    'm5tk9yv4': {
-      'en': '07:00 - 21:00',
-      'km': '07:00 - 21:00',
-      'zh_Hant': '07:00 - 21:00',
-    },
-    'yv3hgh7n': {
-      'en': 'Import',
-      'km': 'នាំចូល',
-      'zh_Hant': '進口',
-    },
-    'x9b4lkrd': {
-      'en': '01/01/2025',
-      'km': '០១/០១/២០២៥',
-      'zh_Hant': '01/01/2025',
-    },
-    'croi5hxf': {
-      'en': 'kimthak',
-      'km': 'គីមថាក់',
-      'zh_Hant': '金塔克',
-    },
-    '2g8jiv8u': {
-      'en': 'Full',
-      'km': 'ពេញ',
-      'zh_Hant': '滿的',
-    },
-    'ubtvru29': {
-      'en': 'Time band for day',
-      'km': 'ក្រុមពេលវេលាសម្រាប់ថ្ងៃ',
-      'zh_Hant': '一天的時間段',
-    },
-    'ilf3ylpc': {
-      'en': '2  ',
-      'km': '២',
-      'zh_Hant': '2',
-    },
-    '5g3uzn6p': {
-      'en': 'TB02',
-      'km': 'TB02',
-      'zh_Hant': 'TB02',
-    },
-    '0ym6mxyj': {
-      'en': 'NightTOU',
-      'km': 'រាត្រី',
-      'zh_Hant': '夜TOU',
-    },
-    'dg66khz5': {
-      'en': '21:00 - 07:00',
-      'km': '21:00 - 07:00',
-      'zh_Hant': '21:00 - 07:00',
-    },
-    'rvgyq1q2': {
-      'en': 'Import',
-      'km': 'នាំចូល',
-      'zh_Hant': '進口',
-    },
-    'i8b4x1ln': {
-      'en': '01/01/2025',
-      'km': '០១/០១/២០២៥',
-      'zh_Hant': '01/01/2025',
-    },
-    'vtvxjs8h': {
-      'en': 'kimthak',
-      'km': 'គីមថាក់',
-      'zh_Hant': '金塔克',
-    },
-    'ptbdv256': {
-      'en': 'Full',
-      'km': 'ពេញ',
-      'zh_Hant': '滿的',
-    },
-    '4766o5a0': {
-      'en': 'Time band for night',
-      'km': 'ក្រុមតន្ត្រីពេលវេលាសម្រាប់ពេលយប់',
-      'zh_Hant': '夜間時間帶',
-    },
-  },
-  // cActionLog
-  {
-    'pvty1vre': {
-      'en': 'All Actions',
-      'km': 'សកម្មភាពទាំងអស់។',
-      'zh_Hant': '所有動作',
-    },
-    '0loovj5g': {
-      'en': 'All Action',
-      'km': 'សកម្មភាពទាំងអស់។',
-      'zh_Hant': '所有行動',
-    },
-    'mb4yrr5i': {
-      'en': 'All Action',
-      'km': 'សកម្មភាពទាំងអស់។',
-      'zh_Hant': '所有行動',
-    },
-    'njm9m84l': {
-      'en': 'Data Push',
-      'km': 'ការជំរុញទិន្នន័យ',
-      'zh_Hant': '數據推播',
-    },
-    'plhv2e9y': {
-      'en': 'Data Pull',
-      'km': 'ទាញទិន្នន័យ',
-      'zh_Hant': '資料拉取',
-    },
-    '69zsx5so': {
-      'en': 'Today',
-      'km': 'ថ្ងៃនេះ',
-      'zh_Hant': '今天',
-    },
-    'aciwm66d': {
-      'en': 'Data Push',
-      'km': 'ការជំរុញទិន្នន័យ',
-      'zh_Hant': '數據推播',
-    },
-    'xnfen7oy': {
-      'en': 'By Admin',
-      'km': 'ដោយ Admin',
-      'zh_Hant': '由管理員',
-    },
-    '202idx4e': {
-      'en': 'Now',
-      'km': 'ឥឡូវនេះ',
-      'zh_Hant': '現在',
-    },
-    'td06lfhi': {
-      'en': 'Data Pull',
-      'km': 'ទាញទិន្នន័យ',
-      'zh_Hant': '資料拉取',
-    },
-    'kd1ktrar': {
-      'en': 'By Kim Kim',
-      'km': 'ដោយ គឹម គីម',
-      'zh_Hant': '作者：金金',
-    },
-    '3pjdr0or': {
-      'en': '10 mn ago',
-      'km': '10 នាទីមុន។',
-      'zh_Hant': '1000 萬前',
-    },
-    'djscpqja': {
-      'en': 'Data Push',
-      'km': 'ការជំរុញទិន្នន័យ',
-      'zh_Hant': '數據推播',
-    },
-    'rlji6e29': {
-      'en': 'By Sok',
-      'km': 'ដោយ សុខ',
-      'zh_Hant': '透過索克',
-    },
-    'wzmvv7fy': {
-      'en': '1 h ago',
-      'km': '1 ម៉ោងមុន។',
-      'zh_Hant': '1 小時前',
-    },
-    'vopiji8p': {
-      'en': 'Yesterday',
-      'km': 'ម្សិលមិញ',
-      'zh_Hant': '昨天',
-    },
-    'izac4qg2': {
-      'en': 'Data Pull',
-      'km': 'ទាញទិន្នន័យ',
-      'zh_Hant': '資料拉取',
-    },
-    'b0w4t921': {
-      'en': 'By Kimheang',
-      'km': 'ដោយ គឹមហៀង',
-      'zh_Hant': '作者：金興',
-    },
-    '681p4evq': {
-      'en': '1 Day',
-      'km': '1 ថ្ងៃ។',
-      'zh_Hant': '1 天',
-    },
-    '99dzwbuj': {
-      'en': 'Data Push',
-      'km': 'ការជំរុញទិន្នន័យ',
-      'zh_Hant': '數據推播',
-    },
-    'oe8psswr': {
-      'en': 'By Kimheang',
-      'km': 'ដោយ គឹមហៀង',
-      'zh_Hant': '作者：金興',
-    },
-    'bodp4hob': {
-      'en': '1 Day',
-      'km': '1 ថ្ងៃ។',
-      'zh_Hant': '1 天',
-    },
-  },
-  // DeviceView
-  {
-    'g0v9nrgn': {
-      'en': 'No',
-      'km': 'ទេ',
-      'zh_Hant': '不',
-    },
-    'l13fspgl': {
-      'en': 'Serial',
-      'km': 'សៀរៀល',
-      'zh_Hant': '序列',
-    },
-    'rak5vwi8': {
-      'en': 'Device Type',
-      'km': 'ប្រភេទឧបករណ៍',
-      'zh_Hant': '設備類型',
-    },
-    '5rvuguvi': {
-      'en': 'Device Group',
-      'km': 'ក្រុមឧបករណ៍',
-      'zh_Hant': '設備組',
-    },
-    'mrwil5q0': {
-      'en': 'TOU',
-      'km': 'ទូ',
-      'zh_Hant': '時令',
-    },
-    'cy6lgt68': {
-      'en': 'Application',
-      'km': 'ការដាក់ពាក្យ',
-      'zh_Hant': '應用',
-    },
-    'swy9ishl': {
-      'en': 'Status',
-      'km': 'ស្ថានភាព',
-      'zh_Hant': '地位',
-    },
-    '6yg9ke0m': {
-      'en': 'Created By',
-      'km': 'បង្កើតដោយ',
-      'zh_Hant': '創建者',
-    },
-    '1kfuc0m3': {
-      'en': 'Created On',
-      'km': 'បានបង្កើតនៅលើ',
-      'zh_Hant': '創建於',
-    },
-    'nbls07h8': {
-      'en': 'Installation Date',
-      'km': 'កាលបរិច្ឆេទដំឡើង',
-      'zh_Hant': '安裝日期',
-    },
-    'eb2rg1jz': {
-      'en': '1',
-      'km': '១',
-      'zh_Hant': '1',
-    },
-    'nko0t8lo': {
-      'en': '800046773',
-      'km': '800046773',
-      'zh_Hant': '800046773',
-    },
-    '2vro52g8': {
-      'en': 'K10A/5A',
-      'km': 'K10A/5A',
-      'zh_Hant': 'K10A/5A',
-    },
-    'tc05xxt5': {
-      'en': 'COMMERCIAL',
-      'km': 'ពាណិជ្ជកម្ម',
-      'zh_Hant': '商業的',
-    },
-    'f1tnmeqp': {
-      'en': 'TOU01',
-      'km': 'ទូ ០១',
-      'zh_Hant': '時01',
-    },
-    'jdo74r29': {
-      'en': 'HES',
-      'km': 'ហ.ស',
-      'zh_Hant': 'HES',
-    },
-    '8vec6cjx': {
-      'en': 'Active',
-      'km': 'សកម្ម',
-      'zh_Hant': '積極的',
-    },
-    'vzcfeiea': {
-      'en': 'Kim Heang',
-      'km': 'គីមហ៊ាង',
-      'zh_Hant': '金香',
-    },
-    '5ob35xra': {
-      'en': '06/01/2024',
-      'km': '០៦/០១/២០២៤',
-      'zh_Hant': '2024年6月1日',
-    },
-    'wg7wl4hw': {
-      'en': '06/01/2024',
-      'km': '០៦/០១/២០២៤',
-      'zh_Hant': '2024年6月1日',
-    },
-    'gb3x9cob': {
-      'en': '2',
-      'km': '២',
-      'zh_Hant': '2',
-    },
-    'wyhah5hk': {
-      'en': '800046774',
-      'km': '800046774',
-      'zh_Hant': '800046774',
-    },
-    '0ee4fmbz': {
-      'en': 'K10A/5A',
-      'km': 'K10A/5A',
-      'zh_Hant': 'K10A/5A',
-    },
-    'aujywwqb': {
-      'en': 'COMMERCIAL',
-      'km': 'ពាណិជ្ជកម្ម',
-      'zh_Hant': '商業的',
-    },
-    '107al05b': {
-      'en': 'TOU01',
-      'km': 'ទូ ០១',
-      'zh_Hant': '時01',
-    },
-    'z1tcfxr2': {
-      'en': 'HES',
-      'km': 'ហ.ស',
-      'zh_Hant': 'HES',
-    },
-    'edj5mpr8': {
-      'en': 'Active',
-      'km': 'សកម្ម',
-      'zh_Hant': '積極的',
-    },
-    'lg33idt3': {
-      'en': 'Ti Fong',
-      'km': 'ទីហ្វុង',
-      'zh_Hant': '蒂芳',
-    },
-    '4wf3aozf': {
-      'en': '06/01/2024',
-      'km': '០៦/០១/២០២៤',
-      'zh_Hant': '2024年6月1日',
-    },
-    'v3mxim0p': {
-      'en': '06/01/2024',
-      'km': '០៦/០១/២០២៤',
-      'zh_Hant': '2024年6月1日',
-    },
-    'n1tuh9ex': {
-      'en': '3',
-      'km': '៣',
-      'zh_Hant': '3',
-    },
-    'nqc55480': {
-      'en': '800046775',
-      'km': '800046775',
-      'zh_Hant': '800046775',
-    },
-    'o1wcq7uw': {
-      'en': 'K10A/5A',
-      'km': 'K10A/5A',
-      'zh_Hant': 'K10A/5A',
-    },
-    'xfit4nk9': {
-      'en': 'INDUSTRIAL',
-      'km': 'ឧស្សាហកម្ម',
-      'zh_Hant': '工業的',
-    },
-    'wr91ybvy': {
-      'en': 'TOU02',
-      'km': 'ទូ ០២',
-      'zh_Hant': '途02',
-    },
-    'trbhmfqc': {
-      'en': 'HES',
-      'km': 'ហ.ស',
-      'zh_Hant': 'HES',
-    },
-    '3bz4zrc6': {
-      'en': 'Active',
-      'km': 'សកម្ម',
-      'zh_Hant': '積極的',
-    },
-    'twbgrqpt': {
-      'en': 'Kim Heang',
-      'km': 'គីមហ៊ាង',
-      'zh_Hant': '金香',
-    },
-    'r88xeyt1': {
-      'en': '06/01/2024',
-      'km': '០៦/០១/២០២៤',
-      'zh_Hant': '2024年6月1日',
-    },
-    'e9assla1': {
-      'en': '06/01/2024',
-      'km': '០៦/០១/២០២៤',
-      'zh_Hant': '2024年6月1日',
-    },
-    'lkv1i5xm': {
-      'en': '4',
-      'km': '៤',
-      'zh_Hant': '4',
-    },
-    'eatspgsb': {
-      'en': '800046776',
-      'km': '800046776',
-      'zh_Hant': '800046776',
-    },
-    '4vqrbaz3': {
-      'en': 'K10A/5A',
-      'km': 'K10A/5A',
-      'zh_Hant': 'K10A/5A',
-    },
-    'urco0mdh': {
-      'en': 'INDUSTRIAL',
-      'km': 'ឧស្សាហកម្ម',
-      'zh_Hant': '工業的',
-    },
-    '04apfo91': {
-      'en': 'TOU02',
-      'km': 'ទូ ០២',
-      'zh_Hant': '途02',
-    },
-    'mll54e0v': {
-      'en': 'HES',
-      'km': 'ហ.ស',
-      'zh_Hant': 'HES',
-    },
-    'voitge35': {
-      'en': 'Inactive',
-      'km': 'អសកម្ម',
-      'zh_Hant': '不活躍',
-    },
-    'a351yvhi': {
-      'en': 'Ti Fong',
-      'km': 'ទីហ្វុង',
-      'zh_Hant': '蒂芳',
-    },
-    '9emvzl29': {
-      'en': '06/01/2024',
-      'km': '០៦/០១/២០២៤',
-      'zh_Hant': '2024年6月1日',
-    },
-    'rf1rt9cx': {
-      'en': '06/01/2024',
-      'km': '០៦/០១/២០២៤',
-      'zh_Hant': '2024年6月1日',
-    },
-  },
-  // cAction
-  {
-    'mpak4f5k': {
-      'en': 'View Details',
-      'km': 'មើលព័ត៌មានលម្អិត',
-      'zh_Hant': '看詳情',
-    },
-    'geazzh82': {
-      'en': 'Edit',
-      'km': 'កែសម្រួល',
-      'zh_Hant': '編輯',
-    },
-    'qi6qs8sg': {
-      'en': 'Delete',
-      'km': 'លុប',
-      'zh_Hant': '刪除',
+      'en': 'Description',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '描述',
+    },
+    'hj992rjh': {
+      'en': 'Rows per page',
+      'km': 'ជួរដេកក្នុងមួយទំព័រ',
+      'zh_Hant': '每頁行數',
+    },
+    'z1u5esgf': {
+      'en': '25',
+      'km': '២៥',
+      'zh_Hant': '25',
+    },
+    'ekv4b6dz': {
+      'en': 'Search...',
+      'km': 'ស្វែងរក...',
+      'zh_Hant': '搜尋...',
+    },
+    'skks96k5': {
+      'en': '25',
+      'km': '២៥',
+      'zh_Hant': '25',
+    },
+    '4zg2drpy': {
+      'en': '50',
+      'km': '៥០',
+      'zh_Hant': '50',
+    },
+    '878njejj': {
+      'en': '100',
+      'km': '១០០',
+      'zh_Hant': '100',
+    },
+    '8u6p3r00': {
+      'en': 'of',
+      'km': 'នៃ',
+      'zh_Hant': '的',
+    },
+    'mszgf7j8': {
+      'en': '(D) Day of Week',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '2h8pqh60': {
+      'en': '(M) Month of Year',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'h08a6dgl': {
+      'en': '(S) Season',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'y3c34hp9': {
+      'en': '(P) Special Day',
+      'km': '',
+      'zh_Hant': '',
     },
   },
   // BodyHeader
@@ -3282,18 +1287,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'km': 'ស្វែងរក',
       'zh_Hant': '搜尋',
     },
-    'ek9jkj4f': {
-      'en': 'Search',
-      'km': '',
-      'zh_Hant': '',
-    },
   },
   // PagenationComponent
   {
     '1j22han3': {
       'en': '1-25',
-      'km': '',
-      'zh_Hant': '',
+      'km': '១-២៥',
+      'zh_Hant': '1-25',
     },
     '6hi7wee9': {
       'en': 'of',
@@ -3302,8 +1302,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '7faa9qvc': {
       'en': '100',
-      'km': '',
-      'zh_Hant': '',
+      'km': '១០០',
+      'zh_Hant': '100',
     },
     'ktwsynom': {
       'en': '1',
@@ -3311,1404 +1311,905 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '1',
     },
   },
-  // TOUSidebar
+  // SeasonView
   {
-    'k1eqw6wu': {
-      'en': 'TOU Info',
-      'km': 'ព័ត៌មាន TOU',
-      'zh_Hant': '分時訊息',
-    },
-    'rb0fvlyv': {
-      'en': 'Code',
-      'km': 'កូដ',
-      'zh_Hant': '程式碼',
-    },
-    '4w07xtej': {
-      'en': 'TOU01',
-      'km': 'ទូ ០១',
-      'zh_Hant': '時01',
-    },
-    'gjrchcev': {
-      'en': 'Name',
-      'km': 'ឈ្មោះ',
-      'zh_Hant': '姓名',
-    },
-    'o0sx7lyj': {
-      'en': 'Commercial TOU',
-      'km': 'TOU ពាណិជ្ជកម្ម',
-      'zh_Hant': '商業分時電價',
-    },
-    'u3quin1o': {
-      'en': 'Time Band',
-      'km': 'ក្រុមតន្រ្តីពេលវេលា',
-      'zh_Hant': '時間帶',
-    },
-    'm2vory6v': {
-      'en': '01',
-      'km': '០១',
-      'zh_Hant': '01',
-    },
-    'n5gu64hj': {
-      'en': 'T01',
-      'km': 'T01',
-      'zh_Hant': 'T01',
-    },
-    '5nqqamb8': {
-      'en': 'Day',
-      'km': 'ថ្ងៃ',
-      'zh_Hant': '天',
-    },
-    'teeayu1j': {
-      'en': '02',
-      'km': '០២',
-      'zh_Hant': '02',
-    },
-    'fdrufq3l': {
-      'en': 'T02',
-      'km': 'T02',
-      'zh_Hant': 'T02',
-    },
-    '4cqxjduw': {
-      'en': 'Night',
-      'km': 'យប់',
-      'zh_Hant': '夜晚',
-    },
-    'zx8229pe': {
-      'en': 'Device List',
-      'km': 'បញ្ជីឧបករណ៍',
-      'zh_Hant': '設備列表',
-    },
-    'd56cruze': {
+    'dm4auawe': {
       'en': 'Search',
       'km': 'ស្វែងរក',
       'zh_Hant': '搜尋',
     },
-    'mx9ma7q7': {
-      'en': 'Total Device',
-      'km': 'ឧបករណ៍សរុប',
-      'zh_Hant': '設備總數',
-    },
-    '7iyikv42': {
-      'en': '3',
-      'km': '៣',
-      'zh_Hant': '3',
-    },
-    '2qa4vi5g': {
-      'en': 'Serial Number',
-      'km': 'លេខស៊េរី',
-      'zh_Hant': '序號',
-    },
-    'qt058wc1': {
+    'trat5o7u': {
       'en': 'No',
       'km': 'ទេ',
       'zh_Hant': '不',
     },
-    '451rii5i': {
-      'en': 'Serial',
-      'km': 'សៀរៀល',
-      'zh_Hant': '序列',
-    },
-    'pvkl31ju': {
-      'en': '1.',
-      'km': '១.',
-      'zh_Hant': '1.',
-    },
-    '14pgogus': {
-      'en': '800046773',
-      'km': '800046773',
-      'zh_Hant': '800046773',
-    },
-    '1kpmdkis': {
-      'en': '2.',
-      'km': '២.',
-      'zh_Hant': '2.',
-    },
-    '1duebqu8': {
-      'en': '800046773',
-      'km': '800046773',
-      'zh_Hant': '800046773',
-    },
-    '778gk7r2': {
-      'en': '3.',
-      'km': '៣.',
-      'zh_Hant': '3.',
-    },
-    'dwwb2aip': {
-      'en': '800046773',
-      'km': '800046773',
-      'zh_Hant': '800046773',
-    },
-  },
-  // cDevicedDetail
-  {
-    'nse4zk6j': {
-      'en': 'Devcice Detail',
-      'km': 'ព័ត៌មានលម្អិតឧបករណ៍',
-      'zh_Hant': '設備詳情',
-    },
-    'xhjom1ag': {
-      'en': 'View device detail information',
-      'km': 'មើលព័ត៌មានលំអិតអំពីឧបករណ៍',
-      'zh_Hant': '查看設備詳細信息',
-    },
-    'ry3rlw0u': {
-      'en': 'Customer Info',
-      'km': 'ព័ត៌មានអតិថិជន',
-      'zh_Hant': '客戶資訊',
-    },
-    'sdd9spcb': {
-      'en': 'TOU Info',
-      'km': 'ព័ត៌មាន TOU',
-      'zh_Hant': '分時訊息',
-    },
-    'wb4rlzf7': {
-      'en': 'Load Profile Data',
-      'km': 'ផ្ទុកទិន្នន័យកម្រងព័ត៌មាន',
-      'zh_Hant': '載入設定檔數據',
-    },
-    'ymafyb0y': {
-      'en': 'Location',
-      'km': 'ទីតាំង',
-      'zh_Hant': '地點',
-    },
-  },
-  // cSeasonDetailCopy
-  {
-    'z0tyq1i6': {
+    '913x43w4': {
       'en': 'Name',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
     },
-    'i5p5mg9t': {
-      'en': ' *',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'm6m5f2bd': {
-      'en': '',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'a35jn8ew': {
-      'en': '',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '6o7ezh30': {
-      'en': 'Start Month',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'zktv24ri': {
-      'en': ' *',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'wbfkwovt': {
-      'en': 'Search...',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'el5n4t3q': {
-      'en': 'Please choose start month!',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'm2bb4q5b': {
-      'en': 'End Month',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'f17fnhke': {
-      'en': ' *',
-      'km': '',
-      'zh_Hant': '',
-    },
-    's4y5enfw': {
-      'en': 'Search...',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'b2k2348a': {
-      'en': 'Please choose end month!',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'r255wnww': {
-      'en': 'Description',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'rdu2lpnt': {
-      'en': '',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'tlnlxa9b': {
-      'en': '',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'jzj13bka': {
-      'en': 'Please input name!',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '89aepeez': {
-      'en': 'Please choose an option from the dropdown',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'm0o2rong': {
-      'en': 'Field is required',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'x09x84vi': {
-      'en': 'Please choose an option from the dropdown',
-      'km': '',
-      'zh_Hant': '',
-    },
-  },
-  // cSeasonCopy
-  {
-    'pt8bsbj5': {
-      'en': 'Search',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '04ewlwz1': {
-      'en': 'No',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'b8dfft9h': {
-      'en': 'Name',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'brqsp3th': {
+    'tc38mlb1': {
       'en': 'Month Range',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ជួរខែ',
+      'zh_Hant': '月份範圍',
     },
-    'hukcj3y8': {
+    'sizmk51m': {
       'en': 'Description',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '描述',
     },
-    'qntnuthg': {
+    'lg4whlof': {
       'en': 'Rows per page',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ជួរដេកក្នុងមួយទំព័រ',
+      'zh_Hant': '每頁行數',
     },
-    'zymhkkqs': {
-      'en': '50',
-      'km': '',
-      'zh_Hant': '',
+    'yxxb6954': {
+      'en': '25',
+      'km': '២៥',
+      'zh_Hant': '25',
     },
-    'n3v1b3gq': {
+    'lywsyrwv': {
       'en': 'Search...',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ស្វែងរក...',
+      'zh_Hant': '搜尋...',
     },
-    '1el68e5m': {
+    '53qyipyr': {
       'en': '25',
-      'km': '',
-      'zh_Hant': '',
+      'km': '២៥',
+      'zh_Hant': '25',
     },
-    '8r1kihu1': {
+    'jk78vzpb': {
       'en': '50',
-      'km': '',
-      'zh_Hant': '',
+      'km': '៥០',
+      'zh_Hant': '50',
     },
-    'tjwivz2q': {
+    '6xjyowie': {
       'en': '100',
-      'km': '',
-      'zh_Hant': '',
+      'km': '១០០',
+      'zh_Hant': '100',
     },
-    'f34y2u2t': {
+    'a6j80l8y': {
       'en': 'of',
-      'km': '',
-      'zh_Hant': '',
-    },
-  },
-  // cSeasonCopy2Team1
-  {
-    'tmi0axnc': {
-      'en': 'Search',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'gz16fy31': {
-      'en': 'No',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'i9dvdj2n': {
-      'en': 'Name',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'j0doup3s': {
-      'en': 'Month Range',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '0ubnqch8': {
-      'en': 'Description',
-      'km': '',
-      'zh_Hant': '',
-    },
-  },
-  // cSeasonDetails
-  {
-    'vvkrz06b': {
-      'en': 'Name',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '7fklze5a': {
-      'en': ' *',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'ztspmlyw': {
-      'en': '',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '5qu1sy8e': {
-      'en': '',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '807xbsbw': {
-      'en': 'Month Range',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'zq5dbt7y': {
-      'en': ' *',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'g6mog8nr': {
-      'en': 'Jan',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'mcdc86x8': {
-      'en': 'Please choose month range!',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'fc21k4uq': {
-      'en': 'Description',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '2rjrl1at': {
-      'en': '',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'fzo830fr': {
-      'en': '',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '0vl2nbpm': {
-      'en': 'Please input name!',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'kr91h275': {
-      'en': 'Cannot exceed 200 characters.',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'a6inuc1j': {
-      'en': 'Please choose an option from the dropdown',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'lxq5buo9': {
-      'en': 'Field is required',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'ts6vmyjq': {
-      'en': 'Please choose an option from the dropdown',
-      'km': '',
-      'zh_Hant': '',
-    },
-  },
-  // cSeason
-  {
-    'r27xnf4p': {
-      'en': 'Search',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'mcse1ubg': {
-      'en': 'No',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'b1k9nlw6': {
-      'en': 'Name',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '7tsswfcw': {
-      'en': 'Month Range',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '358p7w3t': {
-      'en': 'Description',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'ydmt64cj': {
-      'en': 'Rows per page',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'yw4hbrcb': {
-      'en': '25',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'sxbvyt0l': {
-      'en': 'Search...',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '7ye2aku7': {
-      'en': '25',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '0cz8vcsk': {
-      'en': '50',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '9rvjq1zq': {
-      'en': '100',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'qsg2ljn0': {
-      'en': 'of',
-      'km': '',
-      'zh_Hant': '',
-    },
-  },
-  // errorseason
-  {
-    'oi6fqooa': {
-      'en': 'Close',
-      'km': '',
-      'zh_Hant': '',
-    },
-  },
-  // errorpopup
-  {
-    'dklfpql5': {
-      'en': 'Error',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'p9dlj1iz': {
-      'en': 'Are you sure, you want to close?',
-      'km': '',
-      'zh_Hant': '',
-    },
-  },
-  // SearchNotFound
-  {
-    'vdkuhbm2': {
-      'en': 'No Results Found',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'rv3dbeep': {
-      'en':
-          'We couldn\'t find what you\'re looking for. Please try a different search term.',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'នៃ',
+      'zh_Hant': '的',
     },
   },
   // Logout
   {
     '41c5xttc': {
       'en': 'Are you sure you want to log out?',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'តើ​អ្នក​ប្រាកដ​ជា​ចង់​ចេញ?',
+      'zh_Hant': '您確定要退出嗎？',
     },
     'nlnqkse8': {
       'en':
           'You\'ll need to log back in to access your account and preferences.',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'អ្នកនឹងត្រូវចូលគណនីវិញ ដើម្បីចូលប្រើគណនី និងចំណូលចិត្តរបស់អ្នក។',
+      'zh_Hant': '您需要重新登入才能存取您的帳戶和首選項。',
     },
     'u07ht4b7': {
       'en': 'Cancel',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'បោះបង់',
+      'zh_Hant': '取消',
     },
     'ozrbsjk8': {
       'en': 'Log Out',
-      'km': '',
-      'zh_Hant': '',
-    },
-  },
-  // AccountProfile
-  {
-    '9qtry7xl': {
-      'en': 'Switch Accounts',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'ab9fdj0u': {
-      'en': 'New account',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'mxswg1d8': {
-      'en': 'My profile',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'oait81vv': {
-      'en': 'Languages',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'mf6ih3zc': {
-      'en': 'Settings',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '8e1vhdfo': {
-      'en': 'Sign out',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ចេញ',
+      'zh_Hant': '退出',
     },
   },
   // CustomColumnsAlert
   {
     'rkm4vs9a': {
       'en': 'Custom Columns',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ជួរឈរផ្ទាល់ខ្លួន',
+      'zh_Hant': '自訂列',
     },
     'emkbbze1': {
       'en': 'Device Name',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ឈ្មោះឧបករណ៍',
+      'zh_Hant': '設備名稱',
     },
     'i0narknp': {
       'en': 'Device Model',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ម៉ូដែលឧបករណ៍',
+      'zh_Hant': '設備型號',
     },
     '0ycmg49e': {
       'en': 'Device Location',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ទីតាំងឧបករណ៍',
+      'zh_Hant': '設備位置',
     },
     'hjcyuzd8': {
       'en': 'Alert ID',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'លេខសម្គាល់ការជូនដំណឹង',
+      'zh_Hant': '警報ID',
     },
     'tbv87d68': {
       'en': 'Device ID',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'លេខសម្គាល់ឧបករណ៍',
+      'zh_Hant': '設備ID',
     },
     's0ziammp': {
       'en': 'Severity',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ភាពធ្ងន់ធ្ងរ',
+      'zh_Hant': '嚴重性',
     },
     'dpdapehw': {
       'en': 'Type',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ប្រភេទ',
+      'zh_Hant': '類型',
     },
     'amsafhe5': {
       'en': 'Alert Date',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'កាលបរិច្ឆេទជូនដំណឹង',
+      'zh_Hant': '警報日期',
     },
     'eh3egqg1': {
       'en': 'Descritption',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '描述',
     },
     'd84v9uw5': {
       'en': 'Device Type',
-      'km': '',
-      'zh_Hant': '',
-    },
-  },
-  // AdvancedSearch
-  {
-    '7sir5aic': {
-      'en': 'Search platform...',
-      'km': '',
-      'zh_Hant': '',
-    },
-    're85hrrz': {
-      'en': 'Search',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'zgt4hn1y': {
-      'en': 'Quick Links',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'cit8n8tc': {
-      'en': 'Add Quiz',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'cep8w7qu': {
-      'en': 'Find Customer',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'upv0r1b0': {
-      'en': 'New Project',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'abhw9nx4': {
-      'en': 'New Customer',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ប្រភេទឧបករណ៍',
+      'zh_Hant': '設備類型',
     },
   },
   // EventView
   {
     '6y0z211c': {
       'en': 'Search',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ស្វែងរក',
+      'zh_Hant': '搜尋',
     },
     'df97bi5h': {
       'en': 'Export',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'នាំចេញ',
+      'zh_Hant': '出口',
     },
     'uw9dhxjr': {
       'en': 'All (9)',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ទាំងអស់ (9)',
+      'zh_Hant': '全部 (9)',
     },
     'myzwij3b': {
       'en': 'No',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ទេ',
+      'zh_Hant': '不',
     },
     'qe34384c': {
       'en': 'Device ID',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'លេខសម្គាល់ឧបករណ៍',
+      'zh_Hant': '設備ID',
     },
     'rbkmokzb': {
       'en': 'Device Name',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ឈ្មោះឧបករណ៍',
+      'zh_Hant': '設備名稱',
     },
     'cw2b9xmg': {
       'en': 'Alarm Date',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'កាលបរិច្ឆេទរោទិ៍',
+      'zh_Hant': '報警日期',
     },
     '3941e8h8': {
       'en': 'Severity',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ភាពធ្ងន់ធ្ងរ',
+      'zh_Hant': '嚴重性',
     },
     'j8kk51u9': {
       'en': 'Type',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ប្រភេទ',
+      'zh_Hant': '類型',
     },
     'tgr7ixvy': {
       'en': 'Description',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '描述',
     },
     'p423fz90': {
       'en': 'Actions',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'សកម្មភាព',
+      'zh_Hant': '行動',
     },
     'da1g83id': {
       'en': '1',
-      'km': '',
-      'zh_Hant': '',
+      'km': '១',
+      'zh_Hant': '1',
     },
     'q1nkcdkl': {
       'en': 'DEV-456-789',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'DEV-456-789',
+      'zh_Hant': 'DEV-456-789',
     },
     'o9ii7u20': {
       'en': 'Smart Meter #456',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'Smart Meter #456',
+      'zh_Hant': '智慧電錶#456',
     },
     '0psmjgof': {
       'en': '30-11-2024 \n13:15 PM',
-      'km': '',
-      'zh_Hant': '',
+      'km': '៣០-១១-២០២៤ \nម៉ោង ១៣:១៥ រសៀល',
+      'zh_Hant': '2024年11月30日 \n下午 13:15',
     },
     'heokzgx1': {
       'en': 'Low',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ទាប',
+      'zh_Hant': '低的',
     },
     'lv8mudyp': {
       'en': 'Physical Tampering ',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ការរំខានរាងកាយ',
+      'zh_Hant': '物理篡改',
     },
     '663fetca': {
       'en': 'No Power',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'គ្មានថាមពល',
+      'zh_Hant': '沒有電源',
     },
     '4eclcump': {
       'en': 'Archive (2)',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'បណ្ណសារ (2)',
+      'zh_Hant': '檔案 (2)',
     },
     'om243w92': {
       'en': 'No',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ទេ',
+      'zh_Hant': '不',
     },
     'bcd6oobm': {
       'en': 'Device ID',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'លេខសម្គាល់ឧបករណ៍',
+      'zh_Hant': '設備ID',
     },
     'iqbt46lw': {
       'en': 'Device Name',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ឈ្មោះឧបករណ៍',
+      'zh_Hant': '設備名稱',
     },
     'j7jibgr2': {
       'en': 'Alarm Date',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'កាលបរិច្ឆេទរោទិ៍',
+      'zh_Hant': '報警日期',
     },
     'em1glny1': {
       'en': 'Severity',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ភាពធ្ងន់ធ្ងរ',
+      'zh_Hant': '嚴重性',
     },
     'w563ckwu': {
       'en': 'Type',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ប្រភេទ',
+      'zh_Hant': '類型',
     },
     '6m2x7toy': {
       'en': 'Description',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '描述',
     },
     'vo3f7ngw': {
       'en': 'Actions',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'សកម្មភាព',
+      'zh_Hant': '行動',
     },
     'lmgj29g2': {
       'en': '1',
-      'km': '',
-      'zh_Hant': '',
+      'km': '១',
+      'zh_Hant': '1',
     },
     '4dedqark': {
       'en': 'DEV-456-789',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'DEV-456-789',
+      'zh_Hant': 'DEV-456-789',
     },
     'on5k34lo': {
       'en': 'Smart Meter #456',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'Smart Meter #456',
+      'zh_Hant': '智慧電錶#456',
     },
     '8zb2y4c1': {
       'en': '30-11-2024 \n13:15 PM',
-      'km': '',
-      'zh_Hant': '',
+      'km': '៣០-១១-២០២៤ \nម៉ោង ១៣:១៥ រសៀល',
+      'zh_Hant': '2024年11月30日 \n下午 13:15',
     },
     'apu8uxvc': {
       'en': 'Critical',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'រិះគន់',
+      'zh_Hant': '批判的',
     },
     'r4c74xjn': {
       'en': 'Physical Tampering ',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ការរំខានរាងកាយ',
+      'zh_Hant': '物理篡改',
     },
     'v3zkutvl': {
       'en': 'Power grid crash',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'គាំងបណ្តាញអគ្គិសនី',
+      'zh_Hant': '電網崩潰',
     },
   },
   // EventDetailView
   {
     'ynh7u35o': {
       'en': 'Alert Details',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ព័ត៌មានលម្អិតអំពីការជូនដំណឹង',
+      'zh_Hant': '警報詳情',
     },
     't82supkf': {
       'en': 'Send Notification',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ផ្ញើការជូនដំណឹង',
+      'zh_Hant': '發送通知',
     },
     'x17jjcdm': {
       'en': 'Alert ID',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'លេខសម្គាល់ការជូនដំណឹង',
+      'zh_Hant': '警報ID',
     },
     'o6j5535n': {
       'en': 'Device Name',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ឈ្មោះឧបករណ៍',
+      'zh_Hant': '設備名稱',
     },
     '8wzbu8nb': {
       'en': 'Smart Meter #456',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'Smart Meter #456',
+      'zh_Hant': '智慧電錶#456',
     },
     'hmgxcci9': {
       'en': 'Device ID',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'លេខសម្គាល់ឧបករណ៍',
+      'zh_Hant': '設備ID',
     },
     'uogi8q03': {
       'en': 'DEV-456-789',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'DEV-456-789',
+      'zh_Hant': 'DEV-456-789',
     },
     '8agt68j0': {
       'en': 'Device Model',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ម៉ូដែលឧបករណ៍',
+      'zh_Hant': '設備型號',
     },
     'txl3rf6q': {
       'en': 'SM-2000X',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'SM-2000X',
+      'zh_Hant': 'SM-2000X',
     },
     '9adbtyzf': {
       'en': 'Timestamp',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ត្រាពេលវេលា',
+      'zh_Hant': '時間戳',
     },
     'y8aa4jff': {
       'en': '23-01-2024 14:30:45​​ ​PM',
-      'km': '',
-      'zh_Hant': '',
+      'km': '23-01-2024 14:30:45 ល្ងាច',
+      'zh_Hant': '2024 年 1 月 23 日 14:30:45 下午',
     },
     'h39ksrme': {
       'en': 'Alert Type',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ប្រភេទការជូនដំណឹង',
+      'zh_Hant': '警報類型',
     },
     'xl39cfpz': {
       'en': 'Physical Tampering Detection',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ការរកឃើញការរំខានរាងកាយ',
+      'zh_Hant': '物理篡改檢測',
     },
     'tvdnhxwx': {
       'en': 'Severity Level',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'កម្រិតនៃភាពធ្ងន់ធ្ងរ',
+      'zh_Hant': '嚴重程度',
     },
     'ea2uk1lb': {
       'en': 'Critical',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'រិះគន់',
+      'zh_Hant': '批判的',
     },
     'c4z988yb': {
       'en': 'Source',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ប្រភព',
+      'zh_Hant': '來源',
     },
     '08xdpo8l': {
       'en': 'Smart Meter System',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ប្រព័ន្ធ Smart Meter',
+      'zh_Hant': '智慧電錶系統',
     },
     '5vuoarcu': {
       'en': 'Description',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '描述',
     },
     'o8u0y95d': {
       'en': 'Power grid crash',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'គាំងបណ្តាញអគ្គិសនី',
+      'zh_Hant': '電網崩潰',
     },
     'no8d31ya': {
       'en': 'Comment',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'មតិយោបល់',
+      'zh_Hant': '評論',
     },
     '033r7jg5': {
       'en': 'Input your comment...',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'បញ្ចូលមតិរបស់អ្នក...',
+      'zh_Hant': '輸入您的評論...',
     },
   },
   // AlertdeviceTest
   {
     'te1iwklb': {
       'en': 'Alert Center',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'មជ្ឈមណ្ឌលជូនដំណឹង',
+      'zh_Hant': '警報中心',
     },
     'd033nkbv': {
       'en': 'Active Alerts & Notifications',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ការជូនដំណឹង និងការជូនដំណឹងសកម្ម',
+      'zh_Hant': '活動警報和通知',
     },
     '9hshxc2p': {
       'en': 'Meter Tampering Detected',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'បានរកឃើញការរំខានម៉ែត្រ',
+      'zh_Hant': '檢測到電錶篡改',
     },
     'cwr9b6en': {
       'en': 'Meter ID: ',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'លេខសម្គាល់ម៉ែត្រ៖',
+      'zh_Hant': '儀表 ID：',
     },
     '3s5cuuct': {
       'en': 'MT-2024-089',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'MT-2024-089',
+      'zh_Hant': 'MT-2024-089',
     },
     'nkzax25b': {
       'en': 'Date & Time :',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'កាលបរិច្ឆេទ និងពេលវេលា៖',
+      'zh_Hant': '日期和時間：',
     },
     'y9151lsf': {
       'en': '20-12-2024 10:30:00 AM',
-      'km': '',
-      'zh_Hant': '',
+      'km': '20-12-2024 10:30:00 ព្រឹក',
+      'zh_Hant': '2024年12月20日 10:30:00 上午',
     },
     'b302oy5z': {
       'en': 'Description :',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ការពិពណ៌នា៖',
+      'zh_Hant': '描述 ：',
     },
     've0i5t4l': {
       'en': 'EFA H-Modem Failure Condition became Inactive and Latched=>30C6',
-      'km': '',
-      'zh_Hant': '',
+      'km':
+          'លក្ខខណ្ឌបរាជ័យរបស់ EFA H-Modem បានក្លាយជាអសកម្ម និង Laatched=>30C6',
+      'zh_Hant': 'EFA H-數據機故障條件變為非活動狀態並鎖定=>30C6',
     },
     'gvzr8xss': {
       'en': 'Maintenance ',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ការថែទាំ',
+      'zh_Hant': '維護',
     },
     'tix1kgcn': {
       'en': '5 meters require routine inspection',
-      'km': '',
-      'zh_Hant': '',
+      'km': '5 ម៉ែត្រតម្រូវឱ្យមានការត្រួតពិនិត្យជាប្រចាំ',
+      'zh_Hant': '5米需要例行檢查',
     },
     '4mzsdcq9': {
       'en': 'Due by: March 15, 2024',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ផុតកំណត់ត្រឹមថ្ងៃទី ១៥ ខែមីនា ឆ្នាំ ២០២៤',
+      'zh_Hant': '截止日期：2024 年 3 月 15 日',
     },
     'js9ffaxo': {
       'en': 'Low Battery Warning',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ការព្រមានអំពីថ្មទាប',
+      'zh_Hant': '低電量警告',
     },
     't5o8jl7e': {
       'en': 'Meter ID: ',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'លេខសម្គាល់ម៉ែត្រ៖',
+      'zh_Hant': '儀表 ID：',
     },
     '38s4ogf1': {
       'en': 'MT-2024-156',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'MT-2024-156',
+      'zh_Hant': 'MT-2024-156',
     },
     'zn2ggkca': {
       'en': 'Date & Time : ',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'កាលបរិច្ឆេទ និងពេលវេលា៖',
+      'zh_Hant': '日期和時間：',
     },
     'fgh2aquz': {
       'en': '20-12-2024 09:30:00 AM',
-      'km': '',
-      'zh_Hant': '',
+      'km': '20-12-2024 09:30:00 ព្រឹក',
+      'zh_Hant': '2024年12月20日 09:30:00 上午',
     },
     'p58klr4h': {
       'en': 'Description :',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ការពិពណ៌នា៖',
+      'zh_Hant': '描述 ：',
     },
     'vgoe7p7a': {
       'en': 'Maintenance required within 48 hours',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ត្រូវការការថែទាំក្នុងរយៈពេល 48 ម៉ោង។',
+      'zh_Hant': '48小時內需要維修',
     },
     'mz98ag6x': {
       'en': 'View All Alerts',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'មើលការជូនដំណឹងទាំងអស់។',
+      'zh_Hant': '查看所有警報',
     },
   },
   // DataTable
   {
     'cu05nf6n': {
       'en': 'No',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ទេ',
+      'zh_Hant': '不',
     },
     'wb9g2yho': {
       'en': 'Row per page: ',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ជួរដេកក្នុងមួយទំព័រ៖',
+      'zh_Hant': '每頁行數：',
     },
     '7x32y8xt': {
       'en': '25',
-      'km': '',
-      'zh_Hant': '',
+      'km': '២៥',
+      'zh_Hant': '25',
     },
     'azz7dtpn': {
       'en': 'Search...',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ស្វែងរក...',
+      'zh_Hant': '搜尋...',
     },
     'nclvu6vc': {
       'en': '25',
-      'km': '',
-      'zh_Hant': '',
+      'km': '២៥',
+      'zh_Hant': '25',
     },
     '52i37ctl': {
       'en': '50',
-      'km': '',
-      'zh_Hant': '',
+      'km': '៥០',
+      'zh_Hant': '50',
     },
     'bwc7kylj': {
       'en': '75',
-      'km': '',
-      'zh_Hant': '',
+      'km': '៧៥',
+      'zh_Hant': '75',
     },
     'cs2vrncu': {
       'en': '100',
-      'km': '',
-      'zh_Hant': '',
+      'km': '១០០',
+      'zh_Hant': '100',
     },
   },
   // SampleDataTable
   {
     'tgkddd6t': {
       'en': 'Edit Header 2',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'កែសម្រួល​បឋមកថា ២',
+      'zh_Hant': '編輯標題2',
     },
     'owhacu13': {
       'en': 'Edit Header 3',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'blghwo0x': {
-      'en': 'Edit Column 2',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'wrweudak': {
-      'en': 'Edit Column 3',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'កែសម្រួលបឋមកថា 3',
+      'zh_Hant': '編輯標題 3',
     },
     '5ryd6wqs': {
       'en': 'Edit Header 4',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'be8d16q9': {
-      'en': 'Edit Column 4',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'កែសម្រួលបឋមកថា 4',
+      'zh_Hant': '編輯標題 4',
     },
     'cbs9j2j5': {
       'en': 'Edit Header 5',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'obxfkyup': {
-      'en': 'Edit Column 5',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'កែសម្រួលបឋមកថា 5',
+      'zh_Hant': '編輯標題 5',
     },
     'oikq9nyu': {
       'en': 'Edit Header 6',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '5qaa78vo': {
-      'en': 'Edit Column 6',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'កែសម្រួលបឋមកថា ៦',
+      'zh_Hant': '編輯標題 6',
     },
     '1yag5if4': {
       'en': 'Edit Header 7',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'កែសម្រួលបឋមកថា 7',
+      'zh_Hant': '編輯標題 7',
+    },
+    'blghwo0x': {
+      'en': 'Edit Column 2',
+      'km': 'កែសម្រួលជួរឈរ 2',
+      'zh_Hant': '編輯第 2 欄',
+    },
+    'wrweudak': {
+      'en': 'Edit Column 3',
+      'km': 'កែសម្រួលជួរឈរ 3',
+      'zh_Hant': '編輯第3欄',
+    },
+    'be8d16q9': {
+      'en': 'Edit Column 4',
+      'km': 'កែសម្រួលជួរឈរ 4',
+      'zh_Hant': '編輯第 4 欄',
+    },
+    'obxfkyup': {
+      'en': 'Edit Column 5',
+      'km': 'កែសម្រួលជួរឈរ 5',
+      'zh_Hant': '編輯第5欄',
+    },
+    '5qaa78vo': {
+      'en': 'Edit Column 6',
+      'km': 'កែសម្រួលជួរឈរ 6',
+      'zh_Hant': '編輯第6欄',
     },
     'sfdfht65': {
       'en': 'Edit Column 7',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'កែសម្រួលជួរឈរ 7',
+      'zh_Hant': '編輯第7欄',
     },
   },
   // ExportOptions
   {
     'uqqzzq6p': {
       'en': 'Export Options',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ជម្រើសនាំចេញ',
+      'zh_Hant': '匯出選項',
     },
     'ft8xj8dl': {
       'en': '📄 CSV',
-      'km': '',
-      'zh_Hant': '',
+      'km': '📄 CSV',
+      'zh_Hant': '📄 CSV',
     },
     'mbai51nz': {
       'en': '📊 Excel',
-      'km': '',
-      'zh_Hant': '',
+      'km': '📊 Excel',
+      'zh_Hant': '📊 Excel',
     },
     '4marcwvx': {
       'en': '{ }  JSON',
-      'km': '',
-      'zh_Hant': '',
+      'km': '{ } JSON',
+      'zh_Hant': '{ } JSON',
     },
     'm3r8xum7': {
       'en': 'Confirm',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'បញ្ជាក់',
+      'zh_Hant': '確認',
     },
   },
   // Table
   {
     'um76ahy2': {
       'en': 'No.',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ទេ',
+      'zh_Hant': '不。',
     },
     '8mz6lqh6': {
       'en': 'Row per page: ',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ជួរដេកក្នុងមួយទំព័រ៖',
+      'zh_Hant': '每頁行數：',
     },
     '7zsvjbvc': {
       'en': '25',
-      'km': '',
-      'zh_Hant': '',
+      'km': '២៥',
+      'zh_Hant': '25',
     },
     'njakc36m': {
       'en': 'Search...',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ស្វែងរក...',
+      'zh_Hant': '搜尋...',
     },
     '363sfl05': {
       'en': '25',
-      'km': '',
-      'zh_Hant': '',
+      'km': '២៥',
+      'zh_Hant': '25',
     },
     'utpdehr2': {
       'en': '50',
-      'km': '',
-      'zh_Hant': '',
+      'km': '៥០',
+      'zh_Hant': '50',
     },
     'vf80df98': {
       'en': '75',
-      'km': '',
-      'zh_Hant': '',
+      'km': '៧៥',
+      'zh_Hant': '75',
     },
     '9j94iwxq': {
       'en': '100',
-      'km': '',
-      'zh_Hant': '',
+      'km': '១០០',
+      'zh_Hant': '100',
     },
   },
-  // MainLayoutV2
+  // MainLayout
   {
     'avomg3vq': {
       'en': 'Hi, Mr. Pov lyhoung',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'សួស្តីលោក ពៅ លីហួង',
+      'zh_Hant': '你好，Pov lyhoung 先生',
     },
     'xpnrs9fp': {
       'en': 'Houng-Coltd.com.ckh',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'Houng-Coltd.com.ckh',
+      'zh_Hant': 'Houng-Coltd.com.ckh',
     },
     'vlpxep5q': {
       'en': 'Dashboard',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ផ្ទាំងគ្រប់គ្រង',
+      'zh_Hant': '儀表板',
     },
     'huf89ifs': {
       'en': 'Device Management',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ការគ្រប់គ្រងឧបករណ៍',
+      'zh_Hant': '設備管理',
     },
     '5gq74zkb': {
       'en': 'Devices',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ឧបករណ៍',
+      'zh_Hant': '裝置',
     },
     '3tzguwy7': {
       'en': 'Configuration',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ការកំណត់រចនាសម្ព័ន្ធ',
+      'zh_Hant': '配置',
+    },
+    'w9f54f82': {
+      'en': 'Devices Group',
+      'km': 'ឧបករណ៍',
+      'zh_Hant': '裝置',
+    },
+    '50b7ap55': {
+      'en': 'Schedule',
+      'km': 'ឧបករណ៍',
+      'zh_Hant': '裝置',
     },
     'z12xpthg': {
       'en': 'TOU Management',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ការគ្រប់គ្រង TOU',
+      'zh_Hant': '分時使用管理',
     },
     '4hjx8ww1': {
       'en': 'TOU',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ទូ',
+      'zh_Hant': '時令',
     },
     'ltwgn5zj': {
       'en': 'Time Bands',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ក្រុមតន្រ្តីពេលវេលា',
+      'zh_Hant': '時間帶',
     },
     'ddl7jym0': {
       'en': 'Special Days',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ថ្ងៃពិសេស',
+      'zh_Hant': '特別的日子',
     },
     'r2qu5hyr': {
       'en': 'Seasons',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'រដូវ',
+      'zh_Hant': '季節',
     },
     '0vdxi3as': {
       'en': 'Events',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ព្រឹត្តិការណ៍',
+      'zh_Hant': '活動',
     },
     '870h5fm9': {
       'en': 'Settings',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ការកំណត់',
+      'zh_Hant': '設定',
     },
-    '2djauuoj': {
-      'en': 'Product Settings',
-      'km': '',
-      'zh_Hant': '',
+    'agf32v6c': {
+      'en': 'SIte',
+      'km': 'គេហទំព័រ',
+      'zh_Hant': '地點',
     },
     'nh0e3dsw': {
       'en': 'Security',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'សន្តិសុខ',
+      'zh_Hant': '安全',
+    },
+    '2djauuoj': {
+      'en': 'Product Settings',
+      'km': 'ការកំណត់ផលិតផល',
+      'zh_Hant': '產品設定',
     },
     '64ah83v9': {
       'en': 'Dashboard',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ផ្ទាំងគ្រប់គ្រង',
+      'zh_Hant': '儀表板',
     },
     'dy4zkf6s': {
       'en': 'Device Management',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ការគ្រប់គ្រងឧបករណ៍',
+      'zh_Hant': '設備管理',
     },
     '18mo360o': {
       'en': 'TOU Management',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ការគ្រប់គ្រង TOU',
+      'zh_Hant': '分時使用管理',
     },
     'agdfym9l': {
       'en': 'Events',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ព្រឹត្តិការណ៍',
+      'zh_Hant': '活動',
     },
     '3ffgvpj1': {
       'en': 'Settings',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ការកំណត់',
+      'zh_Hant': '設定',
     },
   },
-  // menuoption
+  // SpecialDayListView
   {
-    'bfuq3m06': {
-      'en': 'Update',
-      'km': '',
-      'zh_Hant': '',
+    'l1gyxin7': {
+      'en': 'Search',
+      'km': 'ស្វែងរក',
+      'zh_Hant': '搜尋',
     },
-    '6olq4p3k': {
-      'en': 'Delete',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '814zedle': {
-      'en': 'View',
-      'km': '',
-      'zh_Hant': '',
-    },
-  },
-  // cTestBody
-  {
-    '6hdndfht': {
-      'en': 'Hello World',
-      'km': 'សួស្តីពិភពលោក',
-      'zh_Hant': '你好世界',
-    },
-  },
-  // cSpecialDayList
-  {
     '337ckkqj': {
       'en': 'No',
-      'km': 'ល.រ',
-      'zh_Hant': '',
+      'km': 'ទេ',
+      'zh_Hant': '不',
     },
     '0hv4r6p3': {
-      'en': 'Code',
-      'km': 'លេខកូដ',
-      'zh_Hant': '',
+      'en': 'Name',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
     },
     '5inxppyl': {
       'en': 'Description',
       'km': 'ការពិពណ៌នា',
       'zh_Hant': '描述',
     },
+    'e7dzqhuf': {
+      'en': 'Rows per page',
+      'km': 'ជួរដេកក្នុងមួយទំព័រ',
+      'zh_Hant': '每頁行數',
+    },
+    'i9rta7xw': {
+      'en': '25',
+      'km': '២៥',
+      'zh_Hant': '25',
+    },
+    'mpu728kb': {
+      'en': 'Search...',
+      'km': 'ស្វែងរក...',
+      'zh_Hant': '搜尋...',
+    },
+    'ervw23mi': {
+      'en': '25',
+      'km': '២៥',
+      'zh_Hant': '25',
+    },
+    'prb98rh0': {
+      'en': '50',
+      'km': '៥០',
+      'zh_Hant': '50',
+    },
+    'xzimepbq': {
+      'en': '100',
+      'km': '១០០',
+      'zh_Hant': '100',
+    },
+    'hcwyc40t': {
+      'en': '1',
+      'km': '១',
+      'zh_Hant': '1',
+    },
+    'wisbl6r7': {
+      'en': '1',
+      'km': '១',
+      'zh_Hant': '1',
+    },
+    'hdjrqzx2': {
+      'en': 'of',
+      'km': 'នៃ',
+      'zh_Hant': '的',
+    },
   },
-  // cSpecialDayAction
+  // SpecialDayAction
   {
     'xemtb2c5': {
-      'en': 'Edit',
-      'km': 'កែប្រែ',
-      'zh_Hant': '編輯',
+      'en': 'Update',
+      'km': 'ធ្វើបច្ចុប្បន្នភាព',
+      'zh_Hant': '更新',
     },
     '8p60l77f': {
       'en': 'Delete',
@@ -4721,35 +2222,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '看法',
     },
   },
-  // cSpecialDayDetailList
-  {
-    'k2p95g9s': {
-      'en': 'Sepcial Holiday',
-      'km': 'វិស្សមកាល',
-      'zh_Hant': '特別假期',
-    },
-    'ekv347dm': {
-      'en': 'Search',
-      'km': 'ស្វែងរក',
-      'zh_Hant': '搜尋',
-    },
-    'hefklpmi': {
-      'en': 'Name',
-      'km': 'ឈ្មោះ',
-      'zh_Hant': '姓名',
-    },
-    'haod8vdk': {
-      'en': 'Start Date',
-      'km': 'កាលបរិច្ឆេទចាប់ផ្តើម',
-      'zh_Hant': '開始日期',
-    },
-    'ns4wem2c': {
-      'en': 'End Date',
-      'km': 'កាលបរិច្ឆេទបញ្ចប់',
-      'zh_Hant': '結束日期',
-    },
-  },
-  // cSpecialDayDetail
+  // SpecialDayView
   {
     '9rv0rfru': {
       'en': 'Name',
@@ -4771,6 +2244,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'km': '',
       'zh_Hant': '',
     },
+    'az6fwdry': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
     'g6fsy18n': {
       'en': 'Start Date',
       'km': 'កាលបរិច្ឆេទចាប់ផ្តើម',
@@ -4787,9 +2265,9 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '',
     },
     '6yw2ewr0': {
-      'en': 'Please input valid date',
-      'km': 'សូមបញ្ចូលកាលបរិច្ឆេទត្រឹមត្រូវ',
-      'zh_Hant': '請輸入有效日期',
+      'en': 'Please input Start date',
+      'km': 'សូមបញ្ចូលកាលបរិច្ឆេទចាប់ផ្តើម',
+      'zh_Hant': '請輸入開始日期',
     },
     'g4mepcro': {
       'en': 'End Date',
@@ -4807,9 +2285,9 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '',
     },
     'hx3pyeke': {
-      'en': 'Please input valid date',
-      'km': 'សូមបញ្ចូលកាលបរិច្ឆេទត្រឹមត្រូវ',
-      'zh_Hant': '請輸入有效日期',
+      'en': 'Please input End date',
+      'km': 'សូមបញ្ចូលកាលបរិច្ឆេទបញ្ចប់',
+      'zh_Hant': '請輸入結束日期',
     },
     '0sxrpj1d': {
       'en': 'Description',
@@ -4826,14 +2304,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'km': '',
       'zh_Hant': '',
     },
-    'mi01pikw': {
-      'en': ' \nThis field is required.',
-      'km': 'វាលនេះត្រូវបានទាមទារ',
-      'zh_Hant': '此欄位是必需的。',
+    '778t2g6k': {
+      'en': 'Please input Name',
+      'km': 'សូមបញ្ចូលឈ្មោះ',
+      'zh_Hant': '請輸入姓名',
     },
     'z1b0wxfu': {
       'en': 'Input exceeds the maximum allowed characters {nameMaxLength}.',
-      'km': 'ការបញ្ចូលលើសពីតួអក្សរដែលអនុញ្ញាតអតិបរមា',
+      'km': 'ការបញ្ចូលលើសពីតួអក្សរដែលអនុញ្ញាតអតិបរមា {nameMaxLength}។',
       'zh_Hant': '輸入超出允許的最大字元數 {nameMaxLength}。',
     },
     'crtypemf': {
@@ -4843,23 +2321,23 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '68bf07i0': {
       'en': 'Please enter validation date.',
-      'km': 'សូមបញ្ចូលកាលបរិច្ឆេទសុពលភាព',
+      'km': 'សូមបញ្ចូលកាលបរិច្ឆេទសុពលភាព។',
       'zh_Hant': '請輸入驗證日期。',
     },
-    '5u0hxo7a': {
+    'whqlzd5y': {
       'en': 'Please choose an option from the dropdown',
       'km': '',
       'zh_Hant': '',
     },
     '925tgrip': {
       'en': 'Please enter validation date.',
-      'km': 'សូមបញ្ចូលកាលបរិច្ឆេទសុពលភាព',
+      'km': 'សូមបញ្ចូលកាលបរិច្ឆេទសុពលភាព។',
       'zh_Hant': '請輸入驗證日期。',
     },
     'zq6fr3wc': {
       'en': 'Please choose an option from the dropdown',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'សូមជ្រើសរើសជម្រើសមួយពីបញ្ជីទម្លាក់ចុះ',
+      'zh_Hant': '請從下拉清單中選擇一個選項',
     },
     'v6zhjo1m': {
       'en': 'Field is required',
@@ -4874,294 +2352,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     '798khadn': {
       'en': 'Save',
       'km': 'រក្សាទុក',
-      'zh_Hant': '',
+      'zh_Hant': '節省',
     },
   },
-  // cActivityLogSpecialDay
-  {
-    'c7o0sy1f': {
-      'en': 'Holiday Activity Log',
-      'km': 'កំណត់ហេតុសកម្មភាពថ្ងៃឈប់សម្រាក',
-      'zh_Hant': '假期活動日誌',
-    },
-    '6tgiipu3': {
-      'en': 'Search',
-      'km': 'ស្វែងរក',
-      'zh_Hant': '搜尋',
-    },
-    '9ebqdy3q': {
-      'en': 'Filter Date',
-      'km': 'កាលបរិច្ឆេទតម្រង',
-      'zh_Hant': '過濾日期',
-    },
-    'msamzpph': {
-      'en': 'Search...',
-      'km': 'ស្វែងរក...',
-      'zh_Hant': '搜尋...',
-    },
-    '888o48xe': {
-      'en': 'Today',
-      'km': 'ថ្ងៃនេះ',
-      'zh_Hant': '今天',
-    },
-    '5pvofpno': {
-      'en': 'Yesterday',
-      'km': 'ម្សិលមិញ',
-      'zh_Hant': '昨天',
-    },
-    'y5j6zks2': {
-      'en': 'This Week',
-      'km': 'សប្តាហ៍នេះ។',
-      'zh_Hant': '本星期',
-    },
-    'fawe40jn': {
-      'en': 'This Month',
-      'km': 'ខែនេះ។',
-      'zh_Hant': '本月',
-    },
-    'vko7h29k': {
-      'en': 'This Year',
-      'km': 'ឆ្នាំនេះ',
-      'zh_Hant': '今年',
-    },
-    '6hizwgd0': {
-      'en': 'Custom Date',
-      'km': 'កាលបរិច្ឆេទផ្ទាល់ខ្លួន',
-      'zh_Hant': '客製化日期',
-    },
-    'tnrziv9r': {
-      'en': 'No.',
-      'km': 'ទេ',
-      'zh_Hant': '不。',
-    },
-    'wbj8lv5p': {
-      'en': 'Created By',
-      'km': 'បង្កើតដោយ',
-      'zh_Hant': '創建者',
-    },
-    'y1ayybry': {
-      'en': 'Action',
-      'km': 'សកម្មភាព',
-      'zh_Hant': '行動',
-    },
-    'dmnvnvv0': {
-      'en': 'Action Date',
-      'km': 'កាលបរិច្ឆេទសកម្មភាព',
-      'zh_Hant': '行動日期',
-    },
-    '6wfr32gm': {
-      'en': 'Log Data',
-      'km': 'ទិន្នន័យកំណត់ហេតុ',
-      'zh_Hant': '記錄數據',
-    },
-    'jz41oerv': {
-      'en': 'admin',
-      'km': 'អ្នកគ្រប់គ្រង',
-      'zh_Hant': '行政',
-    },
-    'buz51opp': {
-      'en': 'admin',
-      'km': 'អ្នកគ្រប់គ្រង',
-      'zh_Hant': '行政',
-    },
-    'j6zebu9o': {
-      'en': 'dffd',
-      'km': 'dffd',
-      'zh_Hant': 'dffd',
-    },
-    'nhqfeufn': {
-      'en': 'dffd',
-      'km': 'dffd',
-      'zh_Hant': 'dffd',
-    },
-    '7qcs6fsm': {
-      'en': 'dfdf',
-      'km': 'dfdf',
-      'zh_Hant': 'dfdf',
-    },
-  },
-  // cSpecialDay
-  {
-    's1c04b68': {
-      'en': 'Name',
-      'km': 'ឈ្មោះ',
-      'zh_Hant': '姓名',
-    },
-    '0s6x9087': {
-      'en': ' *',
-      'km': '*',
-      'zh_Hant': '*',
-    },
-    'hvpisl3l': {
-      'en': '',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '0xll3yik': {
-      'en': '',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '3fubf6tt': {
-      'en': 'Description',
-      'km': 'ការពិពណ៌នា',
-      'zh_Hant': '描述',
-    },
-    'tgkb2o69': {
-      'en': '',
-      'km': '',
-      'zh_Hant': '',
-    },
-    'i97u0bn8': {
-      'en': '',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '2dr5cvqs': {
-      'en': 'Please input code!',
-      'km': 'សូមបញ្ចូលលេខកូដ!',
-      'zh_Hant': '請輸入驗證碼！',
-    },
-    'odzi45ov': {
-      'en': 'Please choose an option from the dropdown',
-      'km': 'សូមជ្រើសរើសជម្រើសមួយពីបញ្ជីទម្លាក់ចុះ',
-      'zh_Hant': '請從下拉清單中選擇一個選項',
-    },
-    'ybq807tb': {
-      'en': 'Please input name!',
-      'km': 'សូមបញ្ចូលឈ្មោះ!',
-      'zh_Hant': '請輸入姓名！',
-    },
-    'uzk0orjd': {
-      'en': 'Please choose an option from the dropdown',
-      'km': 'សូមជ្រើសរើសជម្រើសមួយពីបញ្ជីទម្លាក់ចុះ',
-      'zh_Hant': '請從下拉清單中選擇一個選項',
-    },
-    'vrcxiufx': {
-      'en': 'Field is required',
-      'km': 'វាលត្រូវបានទាមទារ',
-      'zh_Hant': '欄位為必填項',
-    },
-    '91766l1y': {
-      'en': 'Please choose an option from the dropdown',
-      'km': 'សូមជ្រើសរើសជម្រើសមួយពីបញ្ជីទម្លាក់ចុះ',
-      'zh_Hant': '請從下拉清單中選擇一個選項',
-    },
-    'vtwo30p8': {
-      'en': 'Cancel',
-      'km': 'បោះបង់',
-      'zh_Hant': '',
-    },
-    'h0vxtpv1': {
-      'en': 'Save',
-      'km': 'រក្សាទុក',
-      'zh_Hant': '',
-    },
-  },
-  // cActivityLogSub
-  {
-    '1o11j62y': {
-      'en': 'Special Day Activity Log',
-      'km': 'កំណត់ហេតុសកម្មភាពថ្ងៃពិសេស',
-      'zh_Hant': '特別日活動日誌',
-    },
-    '97vvnndc': {
-      'en': 'Search',
-      'km': 'ស្វែងរក',
-      'zh_Hant': '搜尋',
-    },
-    'q9hh2t6w': {
-      'en': 'Filter Date',
-      'km': 'កាលបរិច្ឆេទតម្រង',
-      'zh_Hant': '過濾日期',
-    },
-    '762lgya8': {
-      'en': 'Search...',
-      'km': 'ស្វែងរក...',
-      'zh_Hant': '搜尋...',
-    },
-    'hjbnnlq7': {
-      'en': 'Today',
-      'km': 'ថ្ងៃនេះ',
-      'zh_Hant': '今天',
-    },
-    'qwp0p28d': {
-      'en': 'Yesterday',
-      'km': 'ម្សិលមិញ',
-      'zh_Hant': '昨天',
-    },
-    'tmlku72g': {
-      'en': 'This Week',
-      'km': 'សប្តាហ៍នេះ។',
-      'zh_Hant': '本星期',
-    },
-    'm32wurie': {
-      'en': 'This Month',
-      'km': 'ខែនេះ។',
-      'zh_Hant': '本月',
-    },
-    'esgxu2dq': {
-      'en': 'This Year',
-      'km': 'ឆ្នាំនេះ',
-      'zh_Hant': '今年',
-    },
-    '2nfq9ttg': {
-      'en': 'Custom Date',
-      'km': 'កាលបរិច្ឆេទផ្ទាល់ខ្លួន',
-      'zh_Hant': '客製化日期',
-    },
-    '0ofzcxxi': {
-      'en': 'No.',
-      'km': 'ទេ',
-      'zh_Hant': '不。',
-    },
-    'yc9bcc8n': {
-      'en': 'Created By',
-      'km': 'បង្កើតដោយ',
-      'zh_Hant': '創建者',
-    },
-    'c0v4vn11': {
-      'en': 'Action',
-      'km': 'សកម្មភាព',
-      'zh_Hant': '行動',
-    },
-    'ty4ftq20': {
-      'en': 'Action Date',
-      'km': 'កាលបរិច្ឆេទសកម្មភាព',
-      'zh_Hant': '行動日期',
-    },
-    'n39pvlp2': {
-      'en': 'Log Data',
-      'km': 'ទិន្នន័យកំណត់ហេតុ',
-      'zh_Hant': '記錄數據',
-    },
-    'xuu2imdn': {
-      'en': 'admin',
-      'km': 'អ្នកគ្រប់គ្រង',
-      'zh_Hant': '行政',
-    },
-    'velgxjpj': {
-      'en': 'admin',
-      'km': 'អ្នកគ្រប់គ្រង',
-      'zh_Hant': '行政',
-    },
-    'jpit7ykc': {
-      'en': 'df',
-      'km': 'df',
-      'zh_Hant': 'df',
-    },
-    '5jx8ubt0': {
-      'en': 'df',
-      'km': 'df',
-      'zh_Hant': 'df',
-    },
-    'oak2mhnl': {
-      'en': 'fd',
-      'km': 'fd',
-      'zh_Hant': 'FD',
-    },
-  },
-  // itemSpecialDayDetials
+  // ItemSpecialDayDetials
   {
     '2meco7mg': {
       'en': 'Name',
@@ -5170,13 +2364,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '3i8h9mot': {
       'en': 'Input date',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'កាលបរិច្ឆេទបញ្ចូល',
+      'zh_Hant': '輸入日期',
     },
     'j5aobh86': {
       'en': 'Input date',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'កាលបរិច្ឆេទបញ្ចូល',
+      'zh_Hant': '輸入日期',
     },
     'rj76pz5i': {
       'en': 'Victory Day',
@@ -5193,56 +2387,48 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'km': 'ការពិពណ៌នា',
       'zh_Hant': '描述',
     },
-  },
-  // cPagination
-  {
-    'n3v96m3p': {
-      'en': 'Rows per page',
-      'km': 'ទិន្នន័យបង្ហាញ',
-      'zh_Hant': '每頁行數',
+    '33bv5u8d': {
+      'en': 'Name is required',
+      'km': 'ទាមទារឈ្មោះ',
+      'zh_Hant': '姓名為必填項',
     },
-    'px5xq9ln': {
-      'en': '50',
-      'km': '៥០',
-      'zh_Hant': '50',
+    'sndjn3ia': {
+      'en': 'Please choose an option from the dropdown',
+      'km': 'សូមជ្រើសរើសជម្រើសមួយពីបញ្ជីទម្លាក់ចុះ',
+      'zh_Hant': '請從下拉清單中選擇一個選項',
     },
-    'zcea7b6d': {
-      'en': 'Search...',
-      'km': 'ស្វែងរក...',
-      'zh_Hant': '搜尋...',
+    'eh21va4y': {
+      'en': 'StartDate is required',
+      'km': 'កាលបរិច្ឆេទចាប់ផ្តើមត្រូវបានទាមទារ',
+      'zh_Hant': '開始日期為必填項',
     },
-    'd6u56ccc': {
-      'en': '25',
-      'km': '២៥',
-      'zh_Hant': '25',
+    'armoybde': {
+      'en': 'Please choose an option from the dropdown',
+      'km': 'សូមជ្រើសរើសជម្រើសមួយពីបញ្ជីទម្លាក់ចុះ',
+      'zh_Hant': '請從下拉清單中選擇一個選項',
     },
-    'vgl0xkki': {
-      'en': '50',
-      'km': '៥០',
-      'zh_Hant': '50',
+    'qae6u1p6': {
+      'en': 'EndDate is required',
+      'km': 'កាលបរិច្ឆេទបញ្ចប់ត្រូវបានទាមទារ',
+      'zh_Hant': '結束日期為必填項',
     },
-    '65y9r01d': {
-      'en': '100',
-      'km': '១០០',
-      'zh_Hant': '100',
+    'q3lxqrvt': {
+      'en': 'Please choose an option from the dropdown',
+      'km': 'សូមជ្រើសរើសជម្រើសមួយពីបញ្ជីទម្លាក់ចុះ',
+      'zh_Hant': '請從下拉清單中選擇一個選項',
     },
-    '1a98mna7': {
-      'en': '1',
-      'km': '១',
-      'zh_Hant': '1',
+    '0md8rln5': {
+      'en': 'Description is required',
+      'km': 'ការពិពណ៌នាត្រូវបានទាមទារ',
+      'zh_Hant': '描述為必填項',
     },
-    'o42asflt': {
-      'en': 'of',
-      'km': 'នៃ',
-      'zh_Hant': '的',
-    },
-    'smk39npm': {
-      'en': '1',
-      'km': '១',
-      'zh_Hant': '1',
+    'ixp76bv9': {
+      'en': 'Please choose an option from the dropdown',
+      'km': 'សូមជ្រើសរើសជម្រើសមួយពីបញ្ជីទម្លាក់ចុះ',
+      'zh_Hant': '請從下拉清單中選擇一個選項',
     },
   },
-  // cSpecialDayAdd
+  // SpecialDayAddView
   {
     '4pjifeq0': {
       'en': 'Special Day',
@@ -5320,14 +2506,9 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '請從下拉清單中選擇一個選項',
     },
     'yjxpo9pm': {
-      'en': 'Special Day Details',
-      'km': '',
-      'zh_Hant': '',
-    },
-    '48tors7n': {
-      'en': 'Search',
-      'km': 'ស្វែងរក',
-      'zh_Hant': '搜尋',
+      'en': 'Calendars',
+      'km': 'ព័ត៌មានលម្អិតថ្ងៃពិសេស',
+      'zh_Hant': '特別日子詳情',
     },
     'vziiikr9': {
       'en': 'Add',
@@ -5341,12 +2522,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '04qycqw8': {
       'en': 'Start Date',
-      'km': 'ថ្ងៃចាប់ផ្ដើម',
+      'km': 'កាលបរិច្ឆេទចាប់ផ្តើម',
       'zh_Hant': '開始日期',
     },
     'tjpd96td': {
       'en': 'End Date',
-      'km': 'ថ្ងៃបញ្ចប់',
+      'km': 'កាលបរិច្ឆេទបញ្ចប់',
       'zh_Hant': '結束日期',
     },
     'kv1cghv5': {
@@ -5357,15 +2538,15 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'yyjlatjj': {
       'en': 'Cancel',
       'km': 'បោះបង់',
-      'zh_Hant': '',
+      'zh_Hant': '取消',
     },
     'unljzidu': {
       'en': 'Save',
       'km': 'រក្សាទុក',
-      'zh_Hant': '',
+      'zh_Hant': '節省',
     },
   },
-  // cSpecialDayView
+  // SpecialDayDetailView
   {
     '4bns1wnl': {
       'en': 'Special Day',
@@ -5413,7 +2594,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '',
     },
     'l75gjby1': {
-      'en': 'Field is required',
+      'en': 'Field is required.',
       'km': 'វាលត្រូវបានទាមទារ',
       'zh_Hant': '欄位為必填項',
     },
@@ -5433,7 +2614,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '請從下拉清單中選擇一個選項',
     },
     'iz9nw9cp': {
-      'en': 'Special Day Details',
+      'en': 'Calendars',
       'km': 'ព័ត៌មានលម្អិតថ្ងៃពិសេស',
       'zh_Hant': '特別日子詳情',
     },
@@ -5441,46 +2622,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Search',
       'km': 'ស្វែងរក',
       'zh_Hant': '搜尋',
-    },
-    'esojr108': {
-      'en': 'Filter Date',
-      'km': 'កាលបរិច្ឆេទតម្រង',
-      'zh_Hant': '過濾日期',
-    },
-    'kjz07mwz': {
-      'en': 'Search...',
-      'km': 'ស្វែងរក...',
-      'zh_Hant': '搜尋...',
-    },
-    '4x30rh4y': {
-      'en': 'Today',
-      'km': 'ថ្ងៃនេះ',
-      'zh_Hant': '今天',
-    },
-    'mhb7crw0': {
-      'en': 'Yesterday',
-      'km': 'ម្សិលមិញ',
-      'zh_Hant': '昨天',
-    },
-    '1dbip887': {
-      'en': 'This Week',
-      'km': 'សប្តាហ៍នេះ។',
-      'zh_Hant': '本星期',
-    },
-    '9c57szog': {
-      'en': 'This Month',
-      'km': 'ខែនេះ។',
-      'zh_Hant': '本月',
-    },
-    '4y1rkpxy': {
-      'en': 'This Year',
-      'km': 'ឆ្នាំនេះ',
-      'zh_Hant': '今年',
-    },
-    '9svrxkoj': {
-      'en': 'Custom Date',
-      'km': 'កាលបរិច្ឆេទផ្ទាល់ខ្លួន',
-      'zh_Hant': '客製化日期',
     },
     '6xessnot': {
       'en': 'Name',
@@ -5500,58 +2641,123 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // ProductSettingView
   {
+    '5ubf06ta': {
+      'en': 'Sample API Call',
+      'km': 'ការហៅ API គំរូ',
+      'zh_Hant': 'API 呼叫範例',
+    },
     'lfxqeq6h': {
       'en': 'Search ....',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ស្វែងរក....',
+      'zh_Hant': '搜尋 ....',
     },
     'uuqwfarv': {
       'en': 'Options',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ជម្រើស',
+      'zh_Hant': '選項',
     },
     '48cu76nm': {
       'en': 'Add',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'បន្ថែម',
+      'zh_Hant': '添加',
     },
     'd6ejze12': {
       'en': 'No',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ទេ',
+      'zh_Hant': '不',
     },
     'detvzfph': {
       'en': 'Name',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
     },
     'nu6y838r': {
       'en': 'Descriptions',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '說明',
     },
     'thjk8lwh': {
       'en': 'Start Date',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'កាលបរិច្ឆេទចាប់ផ្តើម',
+      'zh_Hant': '開始日期',
     },
     'l5do3v85': {
       'en': 'End Date',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'កាលបរិច្ឆេទបញ្ចប់',
+      'zh_Hant': '結束日期',
     },
     'hi8kayjq': {
       'en': 'Start Date',
-      'km': '',
-      'zh_Hant': '',
+      'km': 'កាលបរិច្ឆេទចាប់ផ្តើម',
+      'zh_Hant': '開始日期',
     },
     'zr1fam28': {
       'en': 'End Date',
+      'km': 'កាលបរិច្ឆេទបញ្ចប់',
+      'zh_Hant': '結束日期',
+    },
+    '4fhwcvbv': {
+      'en': 'Sample API Call V2',
+      'km': 'ការហៅ API គំរូ V2',
+      'zh_Hant': 'API 呼叫範例 V2',
+    },
+    'wy97rnok': {
+      'en': 'Search ....',
+      'km': 'ស្វែងរក....',
+      'zh_Hant': '搜尋 ....',
+    },
+    'xvuca1i0': {
+      'en': 'Row per page',
+      'km': 'ជួរដេកក្នុងមួយទំព័រ',
+      'zh_Hant': '每頁行數',
+    },
+    'dbchldks': {
+      'en': '5',
+      'km': '៥',
+      'zh_Hant': '5',
+    },
+    '09slqjkl': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'ksoxenmu': {
+      'en': 'Search...',
+      'km': 'ស្វែងរក...',
+      'zh_Hant': '搜尋...',
+    },
+    'vggvvr4j': {
+      'en': '5',
+      'km': '៥',
+      'zh_Hant': '5',
+    },
+    '7nfkm578': {
+      'en': '10',
+      'km': '១០',
+      'zh_Hant': '10',
+    },
+    'orufeewg': {
+      'en': '25',
+      'km': '២៥',
+      'zh_Hant': '25',
+    },
+    '4ng7b629': {
+      'en': '50',
+      'km': '៥០',
+      'zh_Hant': '50',
+    },
+    'qxxmhkq0': {
+      'en': '100',
+      'km': '១០០',
+      'zh_Hant': '100',
+    },
+    '4ir9c54y': {
+      'en': '1',
       'km': '',
       'zh_Hant': '',
     },
   },
-  // SubRowPageHeader
+  // ActionHeader
   {
     '9seznxcg': {
       'en': 'Search ....',
@@ -5565,6 +2771,3063 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '4d87oysv': {
       'en': 'Add',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // SiteListView
+  {
+    'x2lumm5n': {
+      'en': 'Search',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'y4edeqdr': {
+      'en': 'No',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'd79s7v47': {
+      'en': 'Name',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'g8c0zcqw': {
+      'en': 'Description',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'q5dd749w': {
+      'en': 'Rows per page',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '9ps4yjnp': {
+      'en': '25',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '9le23u0n': {
+      'en': 'Search...',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'qmc3ubgi': {
+      'en': '25',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'ydrxdz1q': {
+      'en': '50',
+      'km': '៥០',
+      'zh_Hant': '50',
+    },
+    'a841zfmo': {
+      'en': '100',
+      'km': '១០០',
+      'zh_Hant': '100',
+    },
+    '8vecf9ax': {
+      'en': '1',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'b79tv1vm': {
+      'en': 'of',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // siteActions
+  {
+    'bewmrcdb': {
+      'en': 'Update',
+      'km': 'កែប្រែ',
+      'zh_Hant': '編輯',
+    },
+    'xg6dc4xi': {
+      'en': 'Delete',
+      'km': 'លុប',
+      'zh_Hant': '刪除',
+    },
+    'n7ulcg34': {
+      'en': 'View',
+      'km': 'មើល',
+      'zh_Hant': '看法',
+    },
+  },
+  // MainSiteDetialView
+  {
+    't5z0zxo7': {
+      'en': 'Main Site',
+      'km': 'ថ្ងៃពិសេស',
+      'zh_Hant': '特別的日子',
+    },
+    'meflyv6z': {
+      'en': 'Name',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    '8ywnzohi': {
+      'en': ' *',
+      'km': '*',
+      'zh_Hant': '*',
+    },
+    '9g8q2nv5': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '9rh5p2yk': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'b5c969xm': {
+      'en': 'Description',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '描述',
+    },
+    'x8xmonku': {
+      'en': ' ',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'zxf5ybvn': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'ch8yy6m1': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'djqquj4m': {
+      'en': 'Field is required',
+      'km': 'វាលត្រូវបានទាមទារ',
+      'zh_Hant': '欄位為必填項',
+    },
+    'evvzda4p': {
+      'en': 'Please choose an option from the dropdown',
+      'km': 'សូមជ្រើសរើសជម្រើសមួយពីបញ្ជីទម្លាក់ចុះ',
+      'zh_Hant': '請從下拉清單中選擇一個選項',
+    },
+    'loob21nw': {
+      'en': 'Field is required',
+      'km': 'វាលត្រូវបានទាមទារ',
+      'zh_Hant': '欄位為必填項',
+    },
+    '0of8akb5': {
+      'en': 'Please choose an option from the dropdown',
+      'km': 'សូមជ្រើសរើសជម្រើសមួយពីបញ្ជីទម្លាក់ចុះ',
+      'zh_Hant': '請從下拉清單中選擇一個選項',
+    },
+    'rcvmk3ku': {
+      'en': 'Sub-Site',
+      'km': 'ព័ត៌មានលម្អិតថ្ងៃពិសេស',
+      'zh_Hant': '特別日子詳情',
+    },
+    '9qzab83m': {
+      'en': 'Search',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'x6ksy5c9': {
+      'en': 'No',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'fgznugqo': {
+      'en': 'Name',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    'iuzq7nzy': {
+      'en': 'Description',
+      'km': 'កាលបរិច្ឆេទបញ្ចប់',
+      'zh_Hant': '結束日期',
+    },
+  },
+  // SubSiteDetailView
+  {
+    'xhbv5vcc': {
+      'en': 'Name',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    'jhcr6axb': {
+      'en': ' *',
+      'km': '*',
+      'zh_Hant': '*',
+    },
+    '62jfhv4l': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '3txt165i': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'i6lyjjph': {
+      'en': 'Choose Main',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'mmamjy4j': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'bpsxgy5i': {
+      'en': 'Search...',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'ftmg3n8u': {
+      'en': 'Description',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '描述',
+    },
+    'v4mywfue': {
+      'en': ' ',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'atykpckv': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '0oekajqi': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'cyvsm3s7': {
+      'en': 'Field is required',
+      'km': 'វាលត្រូវបានទាមទារ',
+      'zh_Hant': '欄位為必填項',
+    },
+    'n03if8ic': {
+      'en': 'Please choose an option from the dropdown',
+      'km': 'សូមជ្រើសរើសជម្រើសមួយពីបញ្ជីទម្លាក់ចុះ',
+      'zh_Hant': '請從下拉清單中選擇一個選項',
+    },
+    'ddr2m4r5': {
+      'en': 'Field is required',
+      'km': 'វាលត្រូវបានទាមទារ',
+      'zh_Hant': '欄位為必填項',
+    },
+    'uigb454x': {
+      'en': 'Please choose an option from the dropdown',
+      'km': 'សូមជ្រើសរើសជម្រើសមួយពីបញ្ជីទម្លាក់ចុះ',
+      'zh_Hant': '請從下拉清單中選擇一個選項',
+    },
+  },
+  // CutomizeDataTable
+  {
+    '9ccg81x9': {
+      'en': 'Search ....',
+      'km': '',
+      'zh_Hant': '',
+    },
+    't2e1kgae': {
+      'en': 'Options',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'k6gagfwi': {
+      'en': 'Add',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'nwzg97ch': {
+      'en': 'No',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // MoreOptions
+  {
+    'mbefuwhe': {
+      'en': 'Edit',
+      'km': 'កែប្រែ',
+      'zh_Hant': '編輯',
+    },
+    'utkn5qxk': {
+      'en': 'Delete',
+      'km': 'លុប',
+      'zh_Hant': '刪除',
+    },
+    'rynvtkil': {
+      'en': 'View',
+      'km': 'មើល',
+      'zh_Hant': '看法',
+    },
+    '4yhtrzh3': {
+      'en': 'Switch Parent',
+      'km': 'មើល',
+      'zh_Hant': '看法',
+    },
+  },
+  // RowHeaderWidget
+  {
+    '4f87vdih': {
+      'en': 'Name',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'dd975duo': {
+      'en': 'Descriptions',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'ft1yi546': {
+      'en': 'Active',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'y63izy48': {
+      'en': 'Id',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // RowHeader
+  {
+    'zs84t4zm': {
+      'en': 'No',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // HideShowColumn
+  {
+    '21yt57w3': {
+      'en': 'Column 1',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // SpecialDaySideBar
+  {
+    '7ik0x8cn': {
+      'en': 'Calendars',
+      'km': 'ព័ត៌មានលម្អិតថ្ងៃពិសេស',
+      'zh_Hant': '特別日子詳情',
+    },
+    '9gyi0lym': {
+      'en': 'Search',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '9hi900q8': {
+      'en': 'Name',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    '80r0uu60': {
+      'en': 'Start Date',
+      'km': 'កាលបរិច្ឆេទចាប់ផ្តើម',
+      'zh_Hant': '開始日期',
+    },
+    '2jpx8y77': {
+      'en': 'End Date',
+      'km': 'កាលបរិច្ឆេទបញ្ចប់',
+      'zh_Hant': '結束日期',
+    },
+  },
+  // HandelMessage
+  {
+    'qd2t3w18': {
+      'en': 'Close',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // DataEmtpy
+  {
+    'a45q5fyy': {
+      'en': 'No Results Found',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'gf3hou5u': {
+      'en':
+          'We couldn\'t find what you\'re looking for. Please try a different search term.',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // NoData
+  {
+    '8kw0aw5e': {
+      'en': 'No Data Available',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'b3nyimnz': {
+      'en':
+          'There is no data to display at this time. Please check back later or try a different selection.',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // TimeBandDetailView
+  {
+    '11awrpe8': {
+      'en': 'Name',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'idn4cniy': {
+      'en': ' *',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'mmksim2a': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'j03192em': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '233y07kx': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'f5xn4wgy': {
+      'en': 'Hello World',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'lsfefaj6': {
+      'en': 'Start Time',
+      'km': 'កាលបរិច្ឆេទចាប់ផ្តើម',
+      'zh_Hant': '開始日期',
+    },
+    '5ydx4m3k': {
+      'en': ' *',
+      'km': '*',
+      'zh_Hant': '*',
+    },
+    '0wo379la': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '5vv5nvqi': {
+      'en': 'Please pick start time.',
+      'km': 'សូមបញ្ចូលកាលបរិច្ឆេទត្រឹមត្រូវ',
+      'zh_Hant': '請輸入有效日期',
+    },
+    's613delp': {
+      'en': 'End Time',
+      'km': 'កាលបរិច្ឆេទបញ្ចប់',
+      'zh_Hant': '結束日期',
+    },
+    'pc9ovwcd': {
+      'en': ' *',
+      'km': '*',
+      'zh_Hant': '*',
+    },
+    '9pgj8nfc': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'sd4tzc83': {
+      'en': 'Please pick end time.',
+      'km': 'សូមបញ្ចូលកាលបរិច្ឆេទត្រឹមត្រូវ',
+      'zh_Hant': '請輸入有效日期',
+    },
+    'noqcqesd': {
+      'en': 'Day of Week',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'm3oxqw8e': {
+      'en': 'Jan',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '9yrdtzbl': {
+      'en': 'Month of Year',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'opgnib83': {
+      'en': 'Jan',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '1oiuddpu': {
+      'en': 'Season',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'cj77ou7f': {
+      'en': 'Special Day',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'l9vpbnnz': {
+      'en': 'Description',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'ia4oi2u2': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'v19rj06w': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'kxfd3zz6': {
+      'en': 'Please input name!',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '1hv2s834': {
+      'en': 'Cannot exceed 200 characters.',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'lzn3h0rm': {
+      'en': 'Please choose an option from the dropdown',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'ucw10g6e': {
+      'en': 'Field is required',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '2otyzb60': {
+      'en': 'Please choose an option from the dropdown',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'j0cvl92b': {
+      'en': 'Field is required',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'ra5k1jtq': {
+      'en': 'Please choose an option from the dropdown',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '4ol9bjlc': {
+      'en': 'Field is required',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '9yrq2915': {
+      'en': 'Please choose an option from the dropdown',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // SeasonDetailView
+  {
+    'gsr9ru5h': {
+      'en': 'Name',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '9hx1y2o7': {
+      'en': ' *',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'igur5j0j': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'jg9v9ben': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'y33e9xrd': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'yx0opaa4': {
+      'en': 'Month Range',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '3vzcbl1j': {
+      'en': ' *',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '5hjt48jo': {
+      'en': 'Jan',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'zgd68vgy': {
+      'en': 'Please choose month range.',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'nz8z7oqe': {
+      'en': 'Description',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'anul3nto': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'ewho5ruv': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '3zalvfgk': {
+      'en': 'Field is required.',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'frqtgqsk': {
+      'en': 'Cannot exceed 200 characters.',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'vjm94d1e': {
+      'en': 'Please choose an option from the dropdown',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'aq0tua7w': {
+      'en': 'Field is required',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '2ijtylrb': {
+      'en': 'Please choose an option from the dropdown',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // Channel
+  {
+    'njr1nedm': {
+      'en': 'Channel',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '6y54yrxt': {
+      'en': 'Search',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'yna2r814': {
+      'en': 'No.',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'iuzrtmfd': {
+      'en': 'Code',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '60d2q7ya': {
+      'en': 'Name',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // TouDetailLists
+  {
+    'u31p9751': {
+      'en': 'Search',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'fw805qpy': {
+      'en': 'No',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'euhy7mtn': {
+      'en': 'Code',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'ulyvnwhz': {
+      'en': 'Name',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'se0itetu': {
+      'en': 'Description',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '2ajbst1z': {
+      'en': 'Rows per page',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'x5wc552b': {
+      'en': '25',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'py8nxtdn': {
+      'en': 'Search...',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'kqp62tzp': {
+      'en': '25',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '0zrohftp': {
+      'en': '50',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'hk10918p': {
+      'en': '100',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '5b1z492n': {
+      'en': '1',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '7n7augk6': {
+      'en': 'of',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // actionTOU
+  {
+    '8g38y2rh': {
+      'en': 'Update',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '54devvx7': {
+      'en': 'Delete',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'r0aler84': {
+      'en': 'View',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // ProfileWidget
+  {
+    '9fdm6ytj': {
+      'en': 'Profile',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '2564cc8m': {
+      'en': 'Languages',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'oqioizfe': {
+      'en': 'Appearance',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '3fipwrhm': {
+      'en': 'Sign out',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // cDeviceList
+  {
+    '3npifaol': {
+      'en': 'Search',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'vznth2h8': {
+      'en': 'No',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '0l5qtnz2': {
+      'en': 'Serial Number',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '9x7jflck': {
+      'en': 'DeviceType',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '77jkcon4': {
+      'en': 'Model',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '4wfherxw': {
+      'en': 'Manufacturer',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'q9k5o5n9': {
+      'en': 'Status',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '67ph7ufe': {
+      'en': 'Link Status',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'dcx8fbv4': {
+      'en': 'Rows per page',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'n7mpgjuj': {
+      'en': '25',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'ib4gcnwt': {
+      'en': 'Search...',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'zyt9svov': {
+      'en': '25',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '0jfliwpf': {
+      'en': '50',
+      'km': '៥០',
+      'zh_Hant': '50',
+    },
+    'dmd4fqa4': {
+      'en': '100',
+      'km': '១០០',
+      'zh_Hant': '100',
+    },
+    'md0z6dsb': {
+      'en': '1',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '6geojjgw': {
+      'en': 'of',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '67y9wd9s': {
+      'en': 'Search',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'rsqabpyn': {
+      'en': 'Device List',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'i34zpf88': {
+      'en': '25',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'hyh9jxlr': {
+      'en': 'Search...',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'huze6x2w': {
+      'en': '25',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'z165l34f': {
+      'en': '50',
+      'km': '៥០',
+      'zh_Hant': '50',
+    },
+    'nwzttfeq': {
+      'en': '100',
+      'km': '១០០',
+      'zh_Hant': '100',
+    },
+    'vfynp80l': {
+      'en': '1',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'h4uaapnd': {
+      'en': 'of',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // caddList
+  {
+    'n5n1gepc': {
+      'en': 'Name',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+  },
+  // cAddList
+  {
+    'ryoh77pq': {
+      'en': 'Name',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    'ccvea7bl': {
+      'en': 'Input date',
+      'km': 'កាលបរិច្ឆេទបញ្ចូល',
+      'zh_Hant': '輸入日期',
+    },
+    'l2kiitbh': {
+      'en': 'Input date',
+      'km': 'កាលបរិច្ឆេទបញ្ចូល',
+      'zh_Hant': '輸入日期',
+    },
+    'sq0at4sb': {
+      'en': 'Victory Day',
+      'km': 'ទិវាជ័យជំនះ',
+      'zh_Hant': '勝利日',
+    },
+    'eob6runt': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'mshgiu6s': {
+      'en': 'Description',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '描述',
+    },
+    'a88r2mvv': {
+      'en': 'Name is required',
+      'km': 'ទាមទារឈ្មោះ',
+      'zh_Hant': '姓名為必填項',
+    },
+    'lu9cws3r': {
+      'en': 'Please choose an option from the dropdown',
+      'km': 'សូមជ្រើសរើសជម្រើសមួយពីបញ្ជីទម្លាក់ចុះ',
+      'zh_Hant': '請從下拉清單中選擇一個選項',
+    },
+    '8jxoutpg': {
+      'en': 'StartDate is required',
+      'km': 'កាលបរិច្ឆេទចាប់ផ្តើមត្រូវបានទាមទារ',
+      'zh_Hant': '開始日期為必填項',
+    },
+    'wffx6cj8': {
+      'en': 'Please choose an option from the dropdown',
+      'km': 'សូមជ្រើសរើសជម្រើសមួយពីបញ្ជីទម្លាក់ចុះ',
+      'zh_Hant': '請從下拉清單中選擇一個選項',
+    },
+    'tdmqx1ce': {
+      'en': 'EndDate is required',
+      'km': 'កាលបរិច្ឆេទបញ្ចប់ត្រូវបានទាមទារ',
+      'zh_Hant': '結束日期為必填項',
+    },
+    'qbih4bhs': {
+      'en': 'Please choose an option from the dropdown',
+      'km': 'សូមជ្រើសរើសជម្រើសមួយពីបញ្ជីទម្លាក់ចុះ',
+      'zh_Hant': '請從下拉清單中選擇一個選項',
+    },
+    'rx43t6y9': {
+      'en': 'Description is required',
+      'km': 'ការពិពណ៌នាត្រូវបានទាមទារ',
+      'zh_Hant': '描述為必填項',
+    },
+    'vrfv9bn7': {
+      'en': 'Please choose an option from the dropdown',
+      'km': 'សូមជ្រើសរើសជម្រើសមួយពីបញ្ជីទម្លាក់ចុះ',
+      'zh_Hant': '請從下拉清單中選擇一個選項',
+    },
+  },
+  // cActionV1
+  {
+    'kiafdl00': {
+      'en': 'Update',
+      'km': 'កែប្រែ',
+      'zh_Hant': '編輯',
+    },
+    '59fh84n1': {
+      'en': 'Delete',
+      'km': 'លុប',
+      'zh_Hant': '刪除',
+    },
+    'd00bvd7a': {
+      'en': 'View',
+      'km': 'មើល',
+      'zh_Hant': '看法',
+    },
+  },
+  // cAddIntegration
+  {
+    '4yicmh15': {
+      'en': 'Add  items ...',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // cSelectorMenuItems
+  {
+    'k8yqr9t3': {
+      'en': 'Search....',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // cActionV2
+  {
+    'wrogqnkr': {
+      'en': 'Commissioning',
+      'km': 'កែប្រែ',
+      'zh_Hant': '編輯',
+    },
+    'hzgdlumb': {
+      'en': 'Decommissioning',
+      'km': 'លុប',
+      'zh_Hant': '刪除',
+    },
+    '2qcgsbid': {
+      'en': 'Ping',
+      'km': 'មើល',
+      'zh_Hant': '看法',
+    },
+    'sqqtwjps': {
+      'en': 'Link HES',
+      'km': 'មើល',
+      'zh_Hant': '看法',
+    },
+  },
+  // cFilterV1
+  {
+    'bl4yfly2': {
+      'en': 'Phase',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'e7uszrz7': {
+      'en': 'Search',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'kctgzec3': {
+      'en': 'Units',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'wmcrmpgv': {
+      'en': 'Search',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'yuocxwxn': {
+      'en': 'FlowDirection',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '43oecpie': {
+      'en': 'Search',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'a4pjdezm': {
+      'en': 'ApportionPolicy',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'p9vbmgez': {
+      'en': 'Search',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // checkFilter
+  {
+    'bg5tb3o0': {
+      'en': 'Select All',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // SelectTimeOfUse
+  {
+    'l024wlxu': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'c8j4mkfa': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'kfiy10zg': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // cValidationTOUDynamic
+  {
+    'cibid23o': {
+      'en': 'TOU Validation',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'jcxp4169': {
+      'en': 'Hour',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '2j0eifqz': {
+      'en': 'Sun',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'uhp70d08': {
+      'en': 'Mon',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '3vb6ji73': {
+      'en': 'Tue',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '7aoqgpma': {
+      'en': 'Wed',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'sl1p8fgg': {
+      'en': 'Thu',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '77be91nw': {
+      'en': 'Fri',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'bmggjw86': {
+      'en': 'Sat',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // DynamicTable
+  {
+    'ndyy9o96': {
+      'en': 'Hour',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'k71n8l50': {
+      'en': 'Sun',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'of4wcjw9': {
+      'en': 'Sun',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // TimeBand
+  {
+    'tyj6v1yz': {
+      'en': 'Search',
+      'km': 'ស្វែងរក',
+      'zh_Hant': '搜尋',
+    },
+    '8c4sll3j': {
+      'en': 'No',
+      'km': 'ទេ',
+      'zh_Hant': '不',
+    },
+    'q1wt0x07': {
+      'en': 'Name',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    'mdc5l0ca': {
+      'en': 'Start Time',
+      'km': 'ពេលវេលាចាប់ផ្តើម',
+      'zh_Hant': '開始時間',
+    },
+    '235eh6zv': {
+      'en': 'End Time',
+      'km': 'ពេលវេលាបញ្ចប់',
+      'zh_Hant': '結束時間',
+    },
+    'oynmq76n': {
+      'en': 'Description',
+      'km': 'ថ្ងៃនៃសប្តាហ៍',
+      'zh_Hant': '星期幾',
+    },
+  },
+  // TimeBandSeasonDropDown
+  {
+    'r2w382jt': {
+      'en': 'Search....',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // TimeBandSpecialDayDetail
+  {
+    'tw0lw5nk': {
+      'en': 'Special Day',
+      'km': 'ថ្ងៃពិសេស',
+      'zh_Hant': '特別的日子',
+    },
+    '48m2gjk3': {
+      'en': 'Name',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '描述',
+    },
+    '9ueay98x': {
+      'en': ' ',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'dzoejxvl': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'hhvts02e': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'g40v72b8': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'hfy8xy4u': {
+      'en': 'Description',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '描述',
+    },
+    'yy8p5rwv': {
+      'en': ' ',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'deykzc55': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'f2xiityh': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'xing1hrj': {
+      'en': 'Calendar',
+      'km': 'ព័ត៌មានលម្អិតថ្ងៃពិសេស',
+      'zh_Hant': '特別日子詳情',
+    },
+    '28a4qi8y': {
+      'en': 'Name',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    'sf2ezig8': {
+      'en': 'Start Date',
+      'km': 'កាលបរិច្ឆេទចាប់ផ្តើម',
+      'zh_Hant': '開始日期',
+    },
+    't1f0edv7': {
+      'en': 'End Date',
+      'km': 'កាលបរិច្ឆេទបញ្ចប់',
+      'zh_Hant': '結束日期',
+    },
+  },
+  // TimeBandSeasonDetail
+  {
+    '2smr7ded': {
+      'en': 'Season',
+      'km': 'ថ្ងៃពិសេស',
+      'zh_Hant': '特別的日子',
+    },
+    '7enpqgol': {
+      'en': 'Name',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '描述',
+    },
+    'nt3hrg7d': {
+      'en': ' ',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '49wynbt1': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'uuqu0xs2': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'daf7xozc': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'jmhaubzo': {
+      'en': 'Month Range',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '描述',
+    },
+    'vtv0alju': {
+      'en': ' ',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'v3uzlo5v': {
+      'en': 'Jan',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '8a4tbpet': {
+      'en': 'Description',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '描述',
+    },
+    'mub76t8a': {
+      'en': ' ',
+      'km': '',
+      'zh_Hant': '',
+    },
+    't73oxaz5': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'onpmnpbp': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // TimeBandSpecialDayDropDown
+  {
+    '3ykte2gv': {
+      'en': 'Search....',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // TimeBandTimePicker
+  {
+    'gns85tx9': {
+      'en': 'Select Time',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'e171kuwa': {
+      'en': 'Hour',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '6iwcxako': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'yhb4wc9n': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'd6lzjuhz': {
+      'en': 'Minute',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '5v4d9xpf': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '5yl5joqn': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '33o7c7u9': {
+      'en': '15 mn',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'scgqzalk': {
+      'en': '30 mn',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '4j1rxuhm': {
+      'en': '45 mn',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'z16g17ld': {
+      'en': 'Cancel',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '6x8kroxz': {
+      'en': 'OK',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // DeviceGroupView
+  {
+    'lmezrv0s': {
+      'en': 'Search',
+      'km': 'ស្វែងរក',
+      'zh_Hant': '搜尋',
+    },
+    '6uamde37': {
+      'en': 'No',
+      'km': 'ទេ',
+      'zh_Hant': '不',
+    },
+    'c7zt2wl1': {
+      'en': 'Name',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    '3w76s1c7': {
+      'en': 'Total Device',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    'cwsr0tsf': {
+      'en': 'Description',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '描述',
+    },
+    'r8bf2pcd': {
+      'en': 'Rows per page',
+      'km': 'ជួរដេកក្នុងមួយទំព័រ',
+      'zh_Hant': '每頁行數',
+    },
+    '4pux1qlv': {
+      'en': '25',
+      'km': '២៥',
+      'zh_Hant': '25',
+    },
+    'acd76xsd': {
+      'en': 'Search...',
+      'km': 'ស្វែងរក...',
+      'zh_Hant': '搜尋...',
+    },
+    'x3uj1ub8': {
+      'en': '25',
+      'km': '២៥',
+      'zh_Hant': '25',
+    },
+    '847r3cc1': {
+      'en': '50',
+      'km': '៥០',
+      'zh_Hant': '50',
+    },
+    '35lt9jgm': {
+      'en': '100',
+      'km': '១០០',
+      'zh_Hant': '100',
+    },
+    'v2z49293': {
+      'en': 'of',
+      'km': 'នៃ',
+      'zh_Hant': '的',
+    },
+  },
+  // SeasonAction
+  {
+    'tckv3odd': {
+      'en': 'Update',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'x8f5e8w1': {
+      'en': 'Delete',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'td172q60': {
+      'en': 'View',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // TimeBandsAction
+  {
+    '26bs26ix': {
+      'en': 'Update',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '523e1j2u': {
+      'en': 'Delete',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'c0x0i0rm': {
+      'en': 'View',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // cScheduleList
+  {
+    'km2xo6ae': {
+      'en': 'Search',
+      'km': 'ស្វែងរក',
+      'zh_Hant': '搜尋',
+    },
+    'qjdyfazd': {
+      'en': 'Add',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'vg29sked': {
+      'en': 'No',
+      'km': 'ទេ',
+      'zh_Hant': '不',
+    },
+    'gz4rx2rp': {
+      'en': 'Start Date\t',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '描述',
+    },
+    '5hpqjjqs': {
+      'en': 'End Date\t',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '描述',
+    },
+    'q9yb5abr': {
+      'en': 'Schedule Type',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '描述',
+    },
+    'mkygjnvw': {
+      'en': 'Interval',
+      'km': 'ជួរខែ',
+      'zh_Hant': '月份範圍',
+    },
+    '2afnesm4': {
+      'en': 'Last Execute Time',
+      'km': 'ជួរខែ',
+      'zh_Hant': '月份範圍',
+    },
+    'y4bjbgsf': {
+      'en': 'Next Execute Time',
+      'km': 'ជួរខែ',
+      'zh_Hant': '月份範圍',
+    },
+    'usxl8bpx': {
+      'en': 'Status',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '描述',
+    },
+    '3r4k6ky0': {
+      'en': 'Rows per page',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'yqypo4tl': {
+      'en': '25',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'xbfyu0mf': {
+      'en': 'Search...',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'jqvdqu8v': {
+      'en': '25',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'y7ebz54f': {
+      'en': '50',
+      'km': '៥០',
+      'zh_Hant': '50',
+    },
+    'gd1nfv5w': {
+      'en': '100',
+      'km': '១០០',
+      'zh_Hant': '100',
+    },
+    'byl75b16': {
+      'en': '1',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'iq90hj51': {
+      'en': 'of',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // DeviceListForGroup
+  {
+    'f4hknbof': {
+      'en': 'Device',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '0y2wghtl': {
+      'en': 'Search',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '834neh7o': {
+      'en': 'No',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '20twao5o': {
+      'en': 'Serial Number',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'dgavhfhj': {
+      'en': 'DeviceType',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '5eovhw18': {
+      'en': 'Model',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'jik6z8l0': {
+      'en': 'Manufacturer',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'uvb549a3': {
+      'en': 'Status',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'sgeg4ni9': {
+      'en': 'Link Status',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'sxtuddl1': {
+      'en': 'Serial Number',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'lqvj6x89': {
+      'en': 'Rows per page',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'mous6rba': {
+      'en': '25',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'put3mjpn': {
+      'en': 'Search...',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'jbn5f7w7': {
+      'en': '25',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '2534qjps': {
+      'en': '50',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'vui6w67z': {
+      'en': '100',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '49on34he': {
+      'en': '1',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '3px2fgmo': {
+      'en': 'of',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // cOptionAddSchedule
+  {
+    'vzy2rcjh': {
+      'en': 'Device Schedule',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '3m4l63xx': {
+      'en': 'Device Group Schedule',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // cScheduleView
+  {
+    '0xojnzg9': {
+      'en': 'Schedule',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'ncy1evsc': {
+      'en': 'Schedule Type',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    '68nk92of': {
+      'en': ' *',
+      'km': '*',
+      'zh_Hant': '*',
+    },
+    '79oxvz0o': {
+      'en': 'Select Schedule Type',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'xmbl4rst': {
+      'en': 'Search...',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '0yqrej6i': {
+      'en': 'Schedule Type is require!',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    'hofvfwyl': {
+      'en': 'Interval',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    'cieelek5': {
+      'en': ' *',
+      'km': '*',
+      'zh_Hant': '*',
+    },
+    'si11w2b7': {
+      'en': 'Select Interval',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'rrvt3d5c': {
+      'en': 'Search...',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'ag12u5q9': {
+      'en': 'InterValue',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'umgylchz': {
+      'en': 'Interval is require!',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    'ttapyk0l': {
+      'en': 'Start Date',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    'a5pffgon': {
+      'en': ' *',
+      'km': '*',
+      'zh_Hant': '*',
+    },
+    '42dauzm7': {
+      'en': 'Start Date is require!',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    'g25hgy6y': {
+      'en': 'End Date',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    'r2japc50': {
+      'en': ' *',
+      'km': '*',
+      'zh_Hant': '*',
+    },
+    'zas8i17v': {
+      'en': 'LastExecutedTime',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    '90wkj4t1': {
+      'en': 'NextExecuteTime',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    'lgok66dk': {
+      'en': 'RetryCount',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    '9oimhjmw': {
+      'en': ' *',
+      'km': '*',
+      'zh_Hant': '*',
+    },
+    'jxihbh3q': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'yaybx6z6': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'ma9gied4': {
+      'en': 'RetryCount is require!',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    'huhqx4l3': {
+      'en': 'Status',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    '7znp8i97': {
+      'en': ' *',
+      'km': '*',
+      'zh_Hant': '*',
+    },
+    'uy90jt7q': {
+      'en': 'Billing Device',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'gtp9d36m': {
+      'en': 'Device',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    '8z6z3kw3': {
+      'en': ' *',
+      'km': '*',
+      'zh_Hant': '*',
+    },
+    '2v7ej0d4': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'oj8xfbsr': {
+      'en': 'Search...',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '8w9g48jj': {
+      'en': 'Device is require!',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    '4bfdosc3': {
+      'en': 'DeviceGroup',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    'jvtsairu': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '986hs42m': {
+      'en': 'Search...',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'eibczyc4': {
+      'en': 'DeviceGroup is require!',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    'kymd4nyc': {
+      'en': 'Site',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    'pym64z7p': {
+      'en': ' *',
+      'km': '*',
+      'zh_Hant': '*',
+    },
+    'jemoqw2h': {
+      'en': 'Select Site',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '3xewe3p7': {
+      'en': 'Search...',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'xhkrcili': {
+      'en': 'Site is require!',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    '43bq4g4r': {
+      'en': 'TimeOfUse',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    '0bc91uwp': {
+      'en': ' *',
+      'km': '*',
+      'zh_Hant': '*',
+    },
+    'g6h8wpk3': {
+      'en': 'Select TimeOfUse',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'l1lrjpi7': {
+      'en': 'Search...',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'wghnsbgp': {
+      'en': 'TimeOfUse is require!',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    'im9aa4ok': {
+      'en': 'Field is required',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '724il945': {
+      'en': 'Please choose an option from the dropdown',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '0nxwkiy9': {
+      'en': 'More Info',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'o4eb6ryl': {
+      'en': 'Device',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    '7htjhdp2': {
+      'en': 'SerialNumber :',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'metuyi2t': {
+      'en': 'DeviceType :',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'xop0slzp': {
+      'en': 'Model :',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '3rq4jt1c': {
+      'en': 'Manufacturer :',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'gtrznpiw': {
+      'en': 'Status :',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'lod9xqbe': {
+      'en': 'Link Status :',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '1xvp6l5c': {
+      'en': 'Device Group',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    'yaem29sc': {
+      'en': 'Name :',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'a57ltdr4': {
+      'en': 'Desciption :',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'k802pt11': {
+      'en': 'Total Device :',
+      'km': '',
+      'zh_Hant': '',
+    },
+    't050ugnt': {
+      'en': 'Site',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    '09se6yrx': {
+      'en': 'Name :',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'nxfm6lma': {
+      'en': 'Desciption :',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'mpy3krwa': {
+      'en': 'Total Sub Site :',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'rzko2pig': {
+      'en': 'TimeOfUse',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    'j3yd2hkp': {
+      'en': 'Code :',
+      'km': '',
+      'zh_Hant': '',
+    },
+    't0f6wzu7': {
+      'en': 'Name :',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '4gu4nb7n': {
+      'en': 'Desciption :',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // cScheduleAction
+  {
+    'o556ry09': {
+      'en': 'Update',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '4kqthhih': {
+      'en': 'Delete',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'c18ele5m': {
+      'en': 'View',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // deviceInfos
+  {
+    'kudfk4o5': {
+      'en': 'Device Info',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '3izc82m1': {
+      'en': 'Channel',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'les8is87': {
+      'en': 'Code',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'g2p7cric': {
+      'en': 'Name',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'wmi371lt': {
+      'en': 'Unit',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'iivuhp38': {
+      'en': 'Flow Direction',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'h48ws1kk': {
+      'en': 'Device Attribute',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'oabzmjzt': {
+      'en': 'Name',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'k9lvn4jd': {
+      'en': 'Value',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'ff3kfpbr': {
+      'en': 'Load Profile',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '29etfnv7': {
+      'en': 'No',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'xjs7el2i': {
+      'en': 'Date Time',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '1ng2x9xl': {
+      'en': 'Value',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'mv1y09bc': {
+      'en': 'Units',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '0q622srs': {
+      'en': 'Flow Direction',
+      'km': '',
+      'zh_Hant': '',
+    },
+    't0clw49s': {
+      'en': 'Phase',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '51r6nr6p': {
+      'en': 'Apportion Policy',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '0iagpyev': {
+      'en': 'Rows per page',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'abmvi9q5': {
+      'en': '25',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'owai7qnl': {
+      'en': 'Search...',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'oa1b23r6': {
+      'en': '25',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'ma7ofk3j': {
+      'en': '50',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'jtfhlgqa': {
+      'en': '100',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'wg5ivag0': {
+      'en': '1',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '1odz4rgh': {
+      'en': 'of',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '6mpi94hr': {
+      'en': 'Reading',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '3yikwmuj': {
+      'en': 'Name',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'tnbf2t6p': {
+      'en': 'Value',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'x79a7bs6': {
+      'en': 'Meter ID',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'kx4xzgc8': {
+      'en': 'Meter ID',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'vjn1tsoi': {
+      'en': 'Device Specification',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'evbhb5q5': {
+      'en': 'Name',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'rp6hgude': {
+      'en': 'Value',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'f7aqwyc1': {
+      'en': 'Voltage Rating',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '6mh01k7c': {
+      'en': '\t230V',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'eqw9jn49': {
+      'en': 'Schedule',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'krd55jp8': {
+      'en': 'From',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'd3ryqnzd': {
+      'en': 'Start Date',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'phc4i99d': {
+      'en': 'End Date',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'fbamm210': {
+      'en': 'Type',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'wrmggmoh': {
+      'en': 'Interval',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '2jlqeh0l': {
+      'en': 'Retry Count',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '77nkjo0b': {
+      'en': 'Retry Count',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'wzv3bzfz': {
+      'en': 'Location',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '3h0rmks8': {
+      'en': 'Location',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'o4fyc7t5': {
+      'en': 'Latitude',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'fj4ixuty': {
+      'en': 'Longitude',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // cDeviceListforSearch
+  {
+    'f7laizuz': {
+      'en': 'Search',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'wgru1aok': {
+      'en': 'No',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '1crkl27x': {
+      'en': 'Serial Number',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'rnsly7in': {
+      'en': 'DeviceType',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'al8qoibq': {
+      'en': 'Model',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '4amcesy1': {
+      'en': 'Manufacturer',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '87863w1g': {
+      'en': 'Status',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'kqkfvirc': {
+      'en': 'Link Status',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'q4zlxa6s': {
+      'en': 'Rows per page',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'zk2wt5xr': {
+      'en': '25',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '17a5vxkg': {
+      'en': 'Search...',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '2sg8lw6l': {
+      'en': '25',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '2876a7wm': {
+      'en': '50',
+      'km': '៥០',
+      'zh_Hant': '50',
+    },
+    'bribau8d': {
+      'en': '100',
+      'km': '១០០',
+      'zh_Hant': '100',
+    },
+    'l9gitggq': {
+      'en': '1',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'mk4fe65r': {
+      'en': 'of',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'nrg9tuyp': {
+      'en': 'Search',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '4xhcbhys': {
+      'en': 'Device List',
+      'km': '',
+      'zh_Hant': '',
+    },
+    's7yx13kx': {
+      'en': '25',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'q8jhodh7': {
+      'en': 'Search...',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '0dmkrymp': {
+      'en': '25',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'vr6o4arm': {
+      'en': '50',
+      'km': '៥០',
+      'zh_Hant': '50',
+    },
+    '23lv94hw': {
+      'en': '100',
+      'km': '១០០',
+      'zh_Hant': '100',
+    },
+    '8475qivx': {
+      'en': '1',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'jue5qzal': {
+      'en': 'of',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // cIntegration
+  {
+    'ta9qucdg': {
+      'en': 'Integration',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'luyre64q': {
+      'en': 'TOU',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'naqfutvy': {
+      'en': 'Select TOU',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '7htm0tt9': {
+      'en': 'Search...',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '5900fmbj': {
+      'en': 'Link Status',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'xeyh9l56': {
+      'en': 'None',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'dc13wa85': {
+      'en': 'Search...',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'c9getu8x': {
+      'en': 'Status',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'mgcae3ci': {
+      'en': 'None',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'v7ma89rq': {
+      'en': 'Search...',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // cDeviceMaps
+  {
+    '1ax8ubeh': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'yswxyndw': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // cGeneralInfo
+  {
+    '84bovnfx': {
+      'en': 'General Info',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '7amcn8qn': {
+      'en': 'Serial Number',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'ziedugmb': {
+      'en': ' *',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'svkleauj': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'z4c5hg19': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'q5gz7398': {
+      'en': 'Model',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '7jddbxsu': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '2phrclxw': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '0ydgrj9g': {
+      'en': 'Manufacture',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'u7mwvaxc': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'ypxkxo26': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'xupg4hj2': {
+      'en': 'Location',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'jf8ahoc5': {
+      'en': 'Location2',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '250c02hu': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '1fc5fj2u': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'zir09zk9': {
+      'en': 'Device Type',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'zjg18kb4': {
+      'en': 'None',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '2pcpk7h3': {
+      'en': 'Search...',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'jpezww47': {
+      'en': 'Device Group',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'x9u5z5k0': {
+      'en': 'None',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'yfuedqz7': {
+      'en': 'Search...',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'pouiorbo': {
+      'en': '0',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'omhksurd': {
+      'en': '5',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'x050xnu0': {
+      'en': '10',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'co0j2y8h': {
+      'en': '15',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'odhl7can': {
+      'en': '20',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // cDeviceDetails
+  {
+    'mxo0iz90': {
+      'en': 'Field is required',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'gvpdw609': {
+      'en': 'Please choose an option from the dropdown',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '4l3564k5': {
+      'en': 'Field is required',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '5byxuclm': {
+      'en': 'Please choose an option from the dropdown',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '4cevt6xf': {
+      'en': 'Field is required',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'sg8a92f9': {
+      'en': 'Please choose an option from the dropdown',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '049ekast': {
+      'en': 'currentPage is required',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '6cp6on9s': {
+      'en': 'Please choose an option from the dropdown',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '1dkgzw6p': {
+      'en': 'Field is required',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'pyqzdeiz': {
+      'en': 'Please choose an option from the dropdown',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'vqammvpb': {
+      'en': 'Field is required',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '5po6s0mh': {
+      'en': 'Please choose an option from the dropdown',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'bywtdfhk': {
+      'en': 'Field is required',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '57bi7ogg': {
+      'en': 'Please choose an option from the dropdown',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'hi6vnf3y': {
+      'en': 'currentPage is required',
+      'km': '',
+      'zh_Hant': '',
+    },
+    't087toxa': {
+      'en': 'Please choose an option from the dropdown',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // DeviceGroupAction
+  {
+    'qqlle0an': {
+      'en': 'Update',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'v039bcib': {
+      'en': 'Delete',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'o0ywyj5j': {
+      'en': 'View',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // MainDeviceGroupDetialView
+  {
+    '64it1zfk': {
+      'en': 'Device Group',
+      'km': 'ថ្ងៃពិសេស',
+      'zh_Hant': '特別的日子',
+    },
+    '6i2ltzu2': {
+      'en': 'Name',
+      'km': 'ឈ្មោះ',
+      'zh_Hant': '姓名',
+    },
+    'tyz5yfn4': {
+      'en': ' *',
+      'km': '*',
+      'zh_Hant': '*',
+    },
+    '8rtcl27k': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'cqlbhizt': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'iq2ma51h': {
+      'en': 'Description',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '描述',
+    },
+    '6ha8phvz': {
+      'en': ' ',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'bza81skw': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'oduwhgih': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'hcr13xdv': {
+      'en': 'Field is required',
+      'km': 'វាលត្រូវបានទាមទារ',
+      'zh_Hant': '欄位為必填項',
+    },
+    '3619d39w': {
+      'en': 'Please choose an option from the dropdown',
+      'km': 'សូមជ្រើសរើសជម្រើសមួយពីបញ្ជីទម្លាក់ចុះ',
+      'zh_Hant': '請從下拉清單中選擇一個選項',
+    },
+    'lat20sn1': {
+      'en': 'Field is required',
+      'km': 'វាលត្រូវបានទាមទារ',
+      'zh_Hant': '欄位為必填項',
+    },
+    'suhwnhc6': {
+      'en': 'Please choose an option from the dropdown',
+      'km': 'សូមជ្រើសរើសជម្រើសមួយពីបញ្ជីទម្លាក់ចុះ',
+      'zh_Hant': '請從下拉清單中選擇一個選項',
+    },
+    'byo7wvar': {
+      'en': 'Devices',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'mictl49j': {
+      'en': 'Search',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'i0wrxd72': {
+      'en': 'No',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'an2szirn': {
+      'en': 'Serial Number',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'ftpaiqjv': {
+      'en': 'DeviceType',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '1qbk6wx2': {
+      'en': 'Model',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'newihz9b': {
+      'en': 'Manufacturer',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'jqsa3wlu': {
+      'en': 'Status',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'urk3p8qw': {
+      'en': 'Link Status',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'y4f03lqk': {
+      'en': 'Rows per page',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'yzb5ui90': {
+      'en': '25',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'pb2r9d19': {
+      'en': 'Search...',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'tvklyada': {
+      'en': '25',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'khq1pp6c': {
+      'en': '50',
+      'km': '៥០',
+      'zh_Hant': '50',
+    },
+    '7zn12to7': {
+      'en': '100',
+      'km': '១០០',
+      'zh_Hant': '100',
+    },
+    'lbuiytco': {
+      'en': '1',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'jrcd3ane': {
+      'en': 'of',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '0g9qsa2d': {
+      'en': 'Schedules',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'zt0u30ik': {
+      'en': 'Search',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '5evpn245': {
+      'en': 'No',
+      'km': 'ទេ',
+      'zh_Hant': '不',
+    },
+    '7l0g9eu2': {
+      'en': 'Start Date\t',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '描述',
+    },
+    'jbr34pka': {
+      'en': 'End Date\t',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '描述',
+    },
+    '9okxttrl': {
+      'en': 'Schedule Type',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '描述',
+    },
+    '1105cmem': {
+      'en': 'Interval',
+      'km': 'ជួរខែ',
+      'zh_Hant': '月份範圍',
+    },
+    'yczxygj3': {
+      'en': 'Last Execute Time',
+      'km': 'ជួរខែ',
+      'zh_Hant': '月份範圍',
+    },
+    '76jwexj1': {
+      'en': 'Next Execute Time',
+      'km': 'ជួរខែ',
+      'zh_Hant': '月份範圍',
+    },
+    'xuqexdzb': {
+      'en': 'Status',
+      'km': 'ការពិពណ៌នា',
+      'zh_Hant': '描述',
+    },
+    '677ezizc': {
+      'en': 'Rows per page',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'udkuuwe6': {
+      'en': '25',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'l8l993ev': {
+      'en': 'Search...',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '61jwt8fq': {
+      'en': '25',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'ncfsrw5i': {
+      'en': '50',
+      'km': '៥០',
+      'zh_Hant': '50',
+    },
+    'acyvt5ef': {
+      'en': '100',
+      'km': '១០០',
+      'zh_Hant': '100',
+    },
+    'doi8h1kx': {
+      'en': '1',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '8c5fm7v8': {
+      'en': 'of',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // confirmInfo
+  {
+    'wbmlu8iw': {
+      'en': 'Message',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'w6o13l4e': {
+      'en': 'Are you sure to ',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'iuy5axm0': {
+      'en': ' ?',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'fp4lwxtb': {
+      'en': 'Are you sure to Enable?',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'dc1g4eon': {
+      'en': 'No',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '34x8mkko': {
+      'en': 'Yes',
+      'km': '',
+      'zh_Hant': '',
+    },
+  },
+  // cGoogleMapCopy
+  {
+    'ly82smtg': {
+      'en': 'TextField',
+      'km': '',
+      'zh_Hant': '',
+    },
+    '1qa8fde9': {
+      'en': 'Hello World',
       'km': '',
       'zh_Hant': '',
     },
@@ -5597,6 +5860,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '',
     },
     '421iy8pp': {
+      'en': '',
+      'km': '',
+      'zh_Hant': '',
+    },
+    'xwqa51fz': {
       'en': '',
       'km': '',
       'zh_Hant': '',

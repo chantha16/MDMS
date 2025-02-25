@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:collection/collection.dart';
 import 'package:from_css_color/from_css_color.dart';
 import 'dart:math' show pow, pi, sin;
+import 'package:geolocator/geolocator.dart';
 import 'package:intl/intl.dart';
 import 'package:json_path/json_path.dart';
 import 'package:timeago/timeago.dart' as timeago;
@@ -13,11 +14,12 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../main.dart';
 
+import 'package:ff_commons/flutter_flow/lat_lng.dart';
 
 export 'keep_alive_wrapper.dart';
-export 'lat_lng.dart';
-export 'place.dart';
-export 'uploaded_file.dart';
+export 'package:ff_commons/flutter_flow/lat_lng.dart';
+export 'package:ff_commons/flutter_flow/place.dart';
+export 'package:ff_commons/flutter_flow/uploaded_file.dart';
 export '../app_state.dart';
 export '../app_constants.dart';
 export '../environment_values.dart';
@@ -27,6 +29,7 @@ export 'dart:typed_data' show Uint8List;
 export 'dart:convert' show jsonEncode, jsonDecode;
 export 'package:intl/intl.dart';
 export 'package:page_transition/page_transition.dart';
+export 'custom_icons.dart' show FFIcons;
 export 'internationalization.dart' show FFLocalizations;
 export 'nav/nav.dart';
 
@@ -69,7 +72,7 @@ Theme wrapInMaterialDatePickerTheme(
   final dateTimeMaterialStateForegroundColor =
       WidgetStateProperty.resolveWith((states) {
     if (states.contains(WidgetState.disabled)) {
-      return pickerForegroundColor.withOpacity(0.60);
+      return pickerForegroundColor.applyAlpha(0.60);
     }
     if (states.contains(WidgetState.selected)) {
       return selectedDateTimeForegroundColor;
@@ -93,7 +96,7 @@ Theme wrapInMaterialDatePickerTheme(
       colorScheme: baseTheme.colorScheme.copyWith(
         onSurface: pickerForegroundColor,
       ),
-      disabledColor: pickerForegroundColor.withOpacity(0.3),
+      disabledColor: pickerForegroundColor.applyAlpha(0.3),
       textTheme: baseTheme.textTheme.copyWith(
         headlineSmall: headerTextStyle,
         headlineMedium: headerTextStyle,
@@ -108,11 +111,11 @@ Theme wrapInMaterialDatePickerTheme(
             ),
             overlayColor: WidgetStateProperty.resolveWith((states) {
               if (states.contains(WidgetState.hovered)) {
-                return actionButtonForegroundColor.withOpacity(0.04);
+                return actionButtonForegroundColor.applyAlpha(0.04);
               }
               if (states.contains(WidgetState.focused) ||
                   states.contains(WidgetState.pressed)) {
-                return actionButtonForegroundColor.withOpacity(0.12);
+                return actionButtonForegroundColor.applyAlpha(0.12);
               }
               return null;
             })),
@@ -162,11 +165,11 @@ Theme wrapInMaterialTimePickerTheme(
             ),
             overlayColor: WidgetStateProperty.resolveWith((states) {
               if (states.contains(WidgetState.hovered)) {
-                return actionButtonForegroundColor.withOpacity(0.04);
+                return actionButtonForegroundColor.applyAlpha(0.04);
               }
               if (states.contains(WidgetState.focused) ||
                   states.contains(WidgetState.pressed)) {
-                return actionButtonForegroundColor.withOpacity(0.12);
+                return actionButtonForegroundColor.applyAlpha(0.12);
               }
               return null;
             })),
@@ -400,6 +403,48 @@ const kTextValidatorEmailRegex =
 const kTextValidatorWebsiteRegex =
     r'(https?:\/\/)?(www\.)[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,10}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)|(https?:\/\/)?(www\.)?(?!ww)[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,10}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)';
 
+LatLng? cachedUserLocation;
+Future<LatLng> getCurrentUserLocation(
+    {required LatLng defaultLocation, bool cached = false}) async {
+  if (cached && cachedUserLocation != null) {
+    return cachedUserLocation!;
+  }
+  return queryCurrentUserLocation().then((loc) {
+    if (loc != null) {
+      cachedUserLocation = loc;
+    }
+    return loc ?? defaultLocation;
+  }).onError((error, _) {
+    print("Error querying user location: $error");
+    return defaultLocation;
+  });
+}
+
+Future<LatLng?> queryCurrentUserLocation() async {
+  final serviceEnabled = await Geolocator.isLocationServiceEnabled();
+  if (!serviceEnabled) {
+    return Future.error('Location services are disabled.');
+  }
+
+  var permission = await Geolocator.checkPermission();
+  if (permission == LocationPermission.denied) {
+    permission = await Geolocator.requestPermission();
+    if (permission == LocationPermission.denied) {
+      return Future.error('Location permissions are denied');
+    }
+  }
+
+  if (permission == LocationPermission.deniedForever) {
+    return Future.error(
+        'Location permissions are permanently denied, we cannot request permissions.');
+  }
+
+  final position = await Geolocator.getCurrentPosition();
+  return position.latitude != 0 && position.longitude != 0
+      ? LatLng(position.latitude, position.longitude)
+      : null;
+}
+
 extension FFTextEditingControllerExt on TextEditingController? {
   String get text => this == null ? '' : this!.text;
   set text(String newText) => this?.text = newText;
@@ -537,17 +582,8 @@ void fixStatusBarOniOS16AndBelow(BuildContext context) {
   }
 }
 
-extension ListUniqueExt<T> on Iterable<T> {
-  List<T> unique(dynamic Function(T) getKey) {
-    var distinctSet = <dynamic>{};
-    var distinctList = <T>[];
-    for (var item in this) {
-      if (distinctSet.add(getKey(item))) {
-        distinctList.add(item);
-      }
-    }
-    return distinctList;
-  }
+extension ColorOpacityExt on Color {
+  Color applyAlpha(double val) => withValues(alpha: val);
 }
 
 String roundTo(double value, int decimalPoints) {
@@ -587,5 +623,20 @@ double computeGradientAlignmentY(double evaluatedAngle) {
   return double.parse(roundTo(y, 2));
 }
 
+extension ListUniqueExt<T> on Iterable<T> {
+  List<T> unique(dynamic Function(T) getKey) {
+    var distinctSet = <dynamic>{};
+    var distinctList = <T>[];
+    for (var item in this) {
+      if (distinctSet.add(getKey(item))) {
+        distinctList.add(item);
+      }
+    }
+    return distinctList;
+  }
+}
+
 String getCurrentRoute(BuildContext context) =>
     context.mounted ? MyApp.of(context).getRoute() : '';
+List<String> getCurrentRouteStack(BuildContext context) =>
+    context.mounted ? MyApp.of(context).getRouteStack() : [];

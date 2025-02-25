@@ -6,8 +6,11 @@ import 'package:provider/provider.dart';
 import '/backend/schema/structs/index.dart';
 import '/backend/schema/enums/enums.dart';
 
-import '/index.dart';
+import '/auth/custom_auth/custom_auth_user_provider.dart';
+
 import '/flutter_flow/flutter_flow_util.dart';
+
+import '/index.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -22,7 +25,46 @@ class AppStateNotifier extends ChangeNotifier {
   static AppStateNotifier? _instance;
   static AppStateNotifier get instance => _instance ??= AppStateNotifier._();
 
+  MDMSUIAutomateTestAuthUser? initialUser;
+  MDMSUIAutomateTestAuthUser? user;
   bool showSplashImage = true;
+  String? _redirectLocation;
+
+  /// Determines whether the app will refresh and build again when a sign
+  /// in or sign out happens. This is useful when the app is launched or
+  /// on an unexpected logout. However, this must be turned off when we
+  /// intend to sign in/out and then navigate or perform any actions after.
+  /// Otherwise, this will trigger a refresh and interrupt the action(s).
+  bool notifyOnAuthChange = true;
+
+  bool get loading => user == null || showSplashImage;
+  bool get loggedIn => user?.loggedIn ?? false;
+  bool get initiallyLoggedIn => initialUser?.loggedIn ?? false;
+  bool get shouldRedirect => loggedIn && _redirectLocation != null;
+
+  String getRedirectLocation() => _redirectLocation!;
+  bool hasRedirect() => _redirectLocation != null;
+  void setRedirectLocationIfUnset(String loc) => _redirectLocation ??= loc;
+  void clearRedirectLocation() => _redirectLocation = null;
+
+  /// Mark as not needing to notify on a sign in / out when we intend
+  /// to perform subsequent actions (such as navigation) afterwards.
+  void updateNotifyOnAuthChange(bool notify) => notifyOnAuthChange = notify;
+
+  void update(MDMSUIAutomateTestAuthUser newUser) {
+    final shouldUpdate =
+        user?.uid == null || newUser.uid == null || user?.uid != newUser.uid;
+    initialUser ??= newUser;
+    user = newUser;
+    // Refresh the app on auth change unless explicitly marked otherwise.
+    // No need to update unless the user has changed.
+    if (notifyOnAuthChange && shouldUpdate) {
+      notifyListeners();
+    }
+    // Once again mark the notifier as needing to update on auth change
+    // (in order to catch sign in / out events).
+    updateNotifyOnAuthChange(true);
+  }
 
   void stopShowingSplashImage() {
     showSplashImage = false;
@@ -36,56 +78,21 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) =>
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
-      errorBuilder: (context, state) => appStateNotifier.showSplashImage
-          ? Builder(
-              builder: (context) => Container(
-                color: Colors.transparent,
-                child: Image.asset(
-                  'assets/images/MDM-Sincal-Animation-Key-Visual-12fps.gif',
-                  fit: BoxFit.cover,
-                ),
-              ),
-            )
-          : entryPage ?? DashboardPageWidget(),
+      errorBuilder: (context, state) => appStateNotifier.loggedIn
+          ? entryPage ?? DashboardPageWidget()
+          : AuthenticationPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => appStateNotifier.showSplashImage
-              ? Builder(
-                  builder: (context) => Container(
-                    color: Colors.transparent,
-                    child: Image.asset(
-                      'assets/images/MDM-Sincal-Animation-Key-Visual-12fps.gif',
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                )
-              : entryPage ?? DashboardPageWidget(),
+          builder: (context, _) => appStateNotifier.loggedIn
+              ? entryPage ?? DashboardPageWidget()
+              : AuthenticationPageWidget(),
         ),
         FFRoute(
-          name: 'DevicesPage',
-          path: '/devices',
-          builder: (context, params) => DevicesPageWidget(),
-        ),
-        FFRoute(
-          name: 'ResourcesPage',
-          path: '/resourcesPage',
-          builder: (context, params) => ResourcesPageWidget(),
-        ),
-        FFRoute(
-          name: 'AddDevicePage',
-          path: '/pAddDevice',
-          builder: (context, params) => AddDevicePageWidget(),
-        ),
-        FFRoute(
-          name: 'DeviceSettingPage',
-          path: '/pDeviceSetting',
-          builder: (context, params) => DeviceSettingPageWidget(),
-        ),
-        FFRoute(
-          name: 'DashboardPage',
-          path: '/dashboard',
+          name: DashboardPageWidget.routeName,
+          path: DashboardPageWidget.routePath,
+          requireAuth: true,
           builder: (context, params) => DashboardPageWidget(
             code: params.getParam(
               'code',
@@ -94,88 +101,48 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) =>
           ),
         ),
         FFRoute(
-          name: 'ResourcePage',
-          path: '/resourcePage',
+          name: ResourcePageWidget.routeName,
+          path: ResourcePageWidget.routePath,
           builder: (context, params) => ResourcePageWidget(),
         ),
         FFRoute(
-          name: 'TouDetails',
-          path: '/tou-details',
-          builder: (context, params) => TouDetailsWidget(),
-        ),
-        FFRoute(
-          name: 'TouPage',
-          path: '/tou',
-          builder: (context, params) => TouPageWidget(),
-        ),
-        FFRoute(
-          name: 'TimeBandDetails',
-          path: '/pAddTimeBand',
-          builder: (context, params) => TimeBandDetailsWidget(),
-        ),
-        FFRoute(
-          name: 'TimeBandPage',
-          path: '/time-bands',
-          builder: (context, params) => TimeBandPageWidget(),
-        ),
-        FFRoute(
-          name: 'seasonmaintest',
-          path: '/seasonmaintest',
-          builder: (context, params) => SeasonmaintestWidget(),
-        ),
-        FFRoute(
-          name: 'EventPage',
-          path: '/events',
-          builder: (context, params) => EventPageWidget(),
-        ),
-        FFRoute(
-          name: 'EventDetailPage',
-          path: '/event-deatails',
-          builder: (context, params) => EventDetailPageWidget(),
-        ),
-        FFRoute(
-          name: 'VideoPlayPage',
-          path: '/videoPlayPage',
-          builder: (context, params) => VideoPlayPageWidget(),
-        ),
-        FFRoute(
-          name: 'DeviceDetailsPage',
-          path: '/deviceDetailsPage',
-          builder: (context, params) => DeviceDetailsPageWidget(),
-        ),
-        FFRoute(
-          name: 'sandbox1',
-          path: '/sandbox1',
-          builder: (context, params) => Sandbox1Widget(),
-        ),
-        FFRoute(
-          name: 'sandbox3',
-          path: '/sandbox3',
-          builder: (context, params) => Sandbox3Widget(),
-        ),
-        FFRoute(
-          name: 'pSeason',
-          path: '/Season',
-          builder: (context, params) => PSeasonWidget(),
-        ),
-        FFRoute(
-          name: 'pSeasonDetail',
-          path: '/Season-Detail',
-          builder: (context, params) => PSeasonDetailWidget(
+          name: TouDetailsWidget.routeName,
+          path: TouDetailsWidget.routePath,
+          builder: (context, params) => TouDetailsWidget(
             type: params.getParam<Flag>(
               'type',
               ParamType.Enum,
             ),
-            seasonId: params.getParam(
-              'seasonId',
+            id: params.getParam(
+              'id',
               ParamType.int,
             ),
           ),
         ),
         FFRoute(
-          name: 'pSpecailDayList',
-          path: '/pSpecailDayList',
-          builder: (context, params) => PSpecailDayListWidget(
+          name: TimeBandPageWidget.routeName,
+          path: TimeBandPageWidget.routePath,
+          builder: (context, params) => TimeBandPageWidget(),
+        ),
+        FFRoute(
+          name: EventPageWidget.routeName,
+          path: EventPageWidget.routePath,
+          builder: (context, params) => EventPageWidget(),
+        ),
+        FFRoute(
+          name: EventDetailPageWidget.routeName,
+          path: EventDetailPageWidget.routePath,
+          builder: (context, params) => EventDetailPageWidget(),
+        ),
+        FFRoute(
+          name: Sandbox3Widget.routeName,
+          path: Sandbox3Widget.routePath,
+          builder: (context, params) => Sandbox3Widget(),
+        ),
+        FFRoute(
+          name: SpecailDayListWidget.routeName,
+          path: SpecailDayListWidget.routePath,
+          builder: (context, params) => SpecailDayListWidget(
             type: params.getParam<Flag>(
               'type',
               ParamType.Enum,
@@ -189,9 +156,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) =>
           ),
         ),
         FFRoute(
-          name: 'pSpecialDayDetail',
-          path: '/pSpecialDayDetail',
-          builder: (context, params) => PSpecialDayDetailWidget(
+          name: SpecialDayDetailPageWidget.routeName,
+          path: SpecialDayDetailPageWidget.routePath,
+          builder: (context, params) => SpecialDayDetailPageWidget(
             types: params.getParam<Flag>(
               'types',
               ParamType.Enum,
@@ -209,9 +176,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) =>
           ),
         ),
         FFRoute(
-          name: 'pSpecialDayAdd',
-          path: '/pSpecialDayAdd',
-          builder: (context, params) => PSpecialDayAddWidget(
+          name: SpecialDayAddWidget.routeName,
+          path: SpecialDayAddWidget.routePath,
+          builder: (context, params) => SpecialDayAddWidget(
             types: params.getParam<Flag>(
               'types',
               ParamType.Enum,
@@ -225,9 +192,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) =>
           ),
         ),
         FFRoute(
-          name: 'pSpecialDayView',
-          path: '/pSpecialDayView',
-          builder: (context, params) => PSpecialDayViewWidget(
+          name: SpecialDayPageWidget.routeName,
+          path: SpecialDayPageWidget.routePath,
+          builder: (context, params) => SpecialDayPageWidget(
             types: params.getParam<Flag>(
               'types',
               ParamType.Enum,
@@ -251,14 +218,187 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) =>
           ),
         ),
         FFRoute(
-          name: 'ProductSettingPage',
-          path: '/productSettingPage',
+          name: ProductSettingPageWidget.routeName,
+          path: ProductSettingPageWidget.routePath,
           builder: (context, params) => ProductSettingPageWidget(),
         ),
         FFRoute(
-          name: 'fffff',
-          path: '/fffff',
-          builder: (context, params) => FffffWidget(),
+          name: MainSitePageWidget.routeName,
+          path: MainSitePageWidget.routePath,
+          builder: (context, params) => MainSitePageWidget(),
+        ),
+        FFRoute(
+          name: MainSiteDetailPageWidget.routeName,
+          path: MainSiteDetailPageWidget.routePath,
+          builder: (context, params) => MainSiteDetailPageWidget(
+            parentid: params.getParam(
+              'parentid',
+              ParamType.int,
+            ),
+            type: params.getParam<Flag>(
+              'type',
+              ParamType.Enum,
+            ),
+            siteId: params.getParam(
+              'siteId',
+              ParamType.int,
+            ),
+            triggerRefresh: params.getParam(
+              'triggerRefresh',
+              ParamType.bool,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: SubsiteDetailPageWidget.routeName,
+          path: SubsiteDetailPageWidget.routePath,
+          builder: (context, params) => SubsiteDetailPageWidget(
+            type: params.getParam<Flag>(
+              'type',
+              ParamType.Enum,
+            ),
+            siteId: params.getParam(
+              'siteId',
+              ParamType.int,
+            ),
+            parentId: params.getParam(
+              'parentId',
+              ParamType.int,
+            ),
+            triggerRefresh: params.getParam(
+              'triggerRefresh',
+              ParamType.bool,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: TimeBandDetailPageWidget.routeName,
+          path: TimeBandDetailPageWidget.routePath,
+          builder: (context, params) => TimeBandDetailPageWidget(
+            type: params.getParam<Flag>(
+              'type',
+              ParamType.Enum,
+            ),
+            timeBandId: params.getParam(
+              'timeBandId',
+              ParamType.int,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: SeasonPageWidget.routeName,
+          path: SeasonPageWidget.routePath,
+          builder: (context, params) => SeasonPageWidget(),
+        ),
+        FFRoute(
+          name: SeasonDetailPageWidget.routeName,
+          path: SeasonDetailPageWidget.routePath,
+          builder: (context, params) => SeasonDetailPageWidget(
+            type: params.getParam<Flag>(
+              'type',
+              ParamType.Enum,
+            ),
+            seasonId: params.getParam(
+              'seasonId',
+              ParamType.int,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: TouListWidget.routeName,
+          path: TouListWidget.routePath,
+          builder: (context, params) => TouListWidget(),
+        ),
+        FFRoute(
+          name: DeviceListsWidget.routeName,
+          path: DeviceListsWidget.routePath,
+          builder: (context, params) => DeviceListsWidget(
+            type: params.getParam<Flag>(
+              'type',
+              ParamType.Enum,
+            ),
+            types: params.getParam(
+              'types',
+              ParamType.DataStruct,
+              isList: false,
+              structBuilder: FlagStruct.fromSerializableMap,
+            ),
+            deviceId: params.getParam(
+              'deviceId',
+              ParamType.String,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: PDeviceDetailsWidget.routeName,
+          path: PDeviceDetailsWidget.routePath,
+          builder: (context, params) => PDeviceDetailsWidget(
+            type: params.getParam<Flag>(
+              'type',
+              ParamType.Enum,
+            ),
+            deviceId: params.getParam(
+              'deviceId',
+              ParamType.String,
+            ),
+            types: params.getParam(
+              'types',
+              ParamType.DataStruct,
+              isList: false,
+              structBuilder: FlagStruct.fromSerializableMap,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: AuthenticationPageWidget.routeName,
+          path: AuthenticationPageWidget.routePath,
+          builder: (context, params) => AuthenticationPageWidget(),
+        ),
+        FFRoute(
+          name: DeviceGroupPageWidget.routeName,
+          path: DeviceGroupPageWidget.routePath,
+          builder: (context, params) => DeviceGroupPageWidget(),
+        ),
+        FFRoute(
+          name: DeviceGroupDetailPageWidget.routeName,
+          path: DeviceGroupDetailPageWidget.routePath,
+          builder: (context, params) => DeviceGroupDetailPageWidget(
+            type: params.getParam<Flag>(
+              'type',
+              ParamType.Enum,
+            ),
+            deviceGroupId: params.getParam(
+              'deviceGroupId',
+              ParamType.int,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: ScheduleListWidget.routeName,
+          path: ScheduleListWidget.routePath,
+          builder: (context, params) => ScheduleListWidget(),
+        ),
+        FFRoute(
+          name: ScheduleViewWidget.routeName,
+          path: ScheduleViewWidget.routePath,
+          builder: (context, params) => ScheduleViewWidget(
+            type: params.getParam<Flag>(
+              'type',
+              ParamType.Enum,
+            ),
+            scheduleId: params.getParam(
+              'scheduleId',
+              ParamType.String,
+            ),
+            typeSchedule: params.getParam<FlagSchedule>(
+              'typeSchedule',
+              ParamType.Enum,
+            ),
+            deviceGroupId: params.getParam(
+              'deviceGroupId',
+              ParamType.int,
+            ),
+          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -272,6 +412,40 @@ extension NavParamExtensions on Map<String, String?> {
 }
 
 extension NavigationExtensions on BuildContext {
+  void goNamedAuth(
+    String name,
+    bool mounted, {
+    Map<String, String> pathParameters = const <String, String>{},
+    Map<String, String> queryParameters = const <String, String>{},
+    Object? extra,
+    bool ignoreRedirect = false,
+  }) =>
+      !mounted || GoRouter.of(this).shouldRedirect(ignoreRedirect)
+          ? null
+          : goNamed(
+              name,
+              pathParameters: pathParameters,
+              queryParameters: queryParameters,
+              extra: extra,
+            );
+
+  void pushNamedAuth(
+    String name,
+    bool mounted, {
+    Map<String, String> pathParameters = const <String, String>{},
+    Map<String, String> queryParameters = const <String, String>{},
+    Object? extra,
+    bool ignoreRedirect = false,
+  }) =>
+      !mounted || GoRouter.of(this).shouldRedirect(ignoreRedirect)
+          ? null
+          : pushNamed(
+              name,
+              pathParameters: pathParameters,
+              queryParameters: queryParameters,
+              extra: extra,
+            );
+
   void safePop() {
     // If there is only one route on the stack, navigate to the initial
     // page instead of popping.
@@ -281,6 +455,19 @@ extension NavigationExtensions on BuildContext {
       go('/');
     }
   }
+}
+
+extension GoRouterExtensions on GoRouter {
+  AppStateNotifier get appState => AppStateNotifier.instance;
+  void prepareAuthEvent([bool ignoreRedirect = false]) =>
+      appState.hasRedirect() && !ignoreRedirect
+          ? null
+          : appState.updateNotifyOnAuthChange(false);
+  bool shouldRedirect(bool ignoreRedirect) =>
+      !ignoreRedirect && appState.hasRedirect();
+  void clearRedirectLocation() => appState.clearRedirectLocation();
+  void setRedirectLocationIfUnset(String location) =>
+      appState.updateNotifyOnAuthChange(false);
 }
 
 extension _GoRouterStateExtensions on GoRouterState {
@@ -373,6 +560,19 @@ class FFRoute {
   GoRoute toRoute(AppStateNotifier appStateNotifier) => GoRoute(
         name: name,
         path: path,
+        redirect: (context, state) {
+          if (appStateNotifier.shouldRedirect) {
+            final redirectLocation = appStateNotifier.getRedirectLocation();
+            appStateNotifier.clearRedirectLocation();
+            return redirectLocation;
+          }
+
+          if (requireAuth && !appStateNotifier.loggedIn) {
+            appStateNotifier.setRedirectLocationIfUnset(state.uri.toString());
+            return '/authentication';
+          }
+          return null;
+        },
         pageBuilder: (context, state) {
           fixStatusBarOniOS16AndBelow(context);
           final ffParams = FFParameters(state, asyncParams);
@@ -382,7 +582,15 @@ class FFRoute {
                   builder: (context, _) => builder(context, ffParams),
                 )
               : builder(context, ffParams);
-          final child = page;
+          final child = appStateNotifier.loading
+              ? Container(
+                  color: Colors.transparent,
+                  child: Image.asset(
+                    'assets/images/MDM-Sincal-Animation-Key-Visual-12fps.gif',
+                    fit: BoxFit.cover,
+                  ),
+                )
+              : page;
 
           final transitionInfo = state.transitionInfo;
           return transitionInfo.hasTransition

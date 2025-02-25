@@ -1,164 +1,103 @@
 import '/backend/api_requests/api_calls.dart';
 import '/backend/schema/structs/index.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/actions/actions.dart' as action_blocks;
-import '/custom_code/actions/index.dart' as actions;
+import 'package:epower_library_llyhdh/dialogs/custom_dialogs/custom_dialogs_widget.dart'
+    as epower_library_llyhdh;
+import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 
-Future validateAuth(BuildContext context) async {
-  String? handleRedirectCodeResponse;
-  ApiCallResponse? exchangeTokenResponse;
-  ApiCallResponse? getProfileResponse;
+Future logoutBlock(BuildContext context) async {}
 
-  handleRedirectCodeResponse = await actions.handleRedirect(
-    'code',
-  );
-  if (handleRedirectCodeResponse != null && handleRedirectCodeResponse != '') {
-    if (FFAppState().isLoggedIn) {
-      await action_blocks.checkSessionTokenBlock(context);
-      return;
-    } else {
-      exchangeTokenResponse = await KeycloakGroup.exchangeTokenCall.call(
-        code: handleRedirectCodeResponse,
-        redirectUri: FFAppState().urlPath,
+Future handleExceptions(
+  BuildContext context, {
+  String? message,
+  String? title,
+  bool? isConfirm,
+}) async {
+  await showDialog(
+    context: context,
+    builder: (dialogContext) {
+      return Dialog(
+        elevation: 0,
+        insetPadding: EdgeInsets.zero,
+        backgroundColor: Colors.transparent,
+        alignment:
+            AlignmentDirectional(0.0, 0.0).resolve(Directionality.of(context)),
+        child: epower_library_llyhdh.CustomDialogsWidget(
+          message: message,
+          title: valueOrDefault<String>(
+            title,
+            'Warning...!',
+          ),
+          width: 350.0,
+          fillColor: FlutterFlowTheme.of(context).secondaryBackground,
+          borderRadius: 12.0,
+          isConfirmDialog: isConfirm,
+          iconProperties: Icon(
+            Icons.warning,
+            color: FlutterFlowTheme.of(context).secondaryBackground,
+            size: 32.0,
+          ),
+          headerColor: FlutterFlowTheme.of(context).primary,
+          headerHeight: 12.0,
+          titleSize: 16.0,
+          titleColor: FlutterFlowTheme.of(context).secondaryText,
+          titleAlign: 0.0,
+          messageSize: 14.0,
+          messageColor: FlutterFlowTheme.of(context).secondaryText,
+          messageAlign: 0.0,
+          close: 'Close',
+          closeSize: 14.0,
+          closeColor: FlutterFlowTheme.of(context).primary,
+          no: 'No',
+          noSize: 14.0,
+          noColor: FlutterFlowTheme.of(context).error,
+          yes: 'Yes',
+          yesSize: 14.0,
+          yesColor: FlutterFlowTheme.of(context).primary,
+          onChanged: () async {},
+        ),
       );
-
-      if ((exchangeTokenResponse.succeeded ?? true)) {
-        FFAppState().isLoggedIn = true;
-        FFAppState().token = TokenResponseModelStruct.maybeFromMap(
-            (exchangeTokenResponse.jsonBody ?? ''))!;
-        FFAppState().update(() {});
-        FFAppState().updateTokenStruct(
-          (e) => e,
-        );
-        FFAppState().update(() {});
-        getProfileResponse = await KeycloakGroup.getProfileCall.call(
-          token: TokenResponseModelStruct.maybeFromMap(
-                  (exchangeTokenResponse.jsonBody ?? ''))
-              ?.accessToken,
-        );
-
-        if ((getProfileResponse.succeeded ?? true)) {
-          FFAppState().profile = GetProfileResponseModelStruct.maybeFromMap(
-              (getProfileResponse.jsonBody ?? ''))!;
-          // Go to dashboard
-
-          context.goNamed(
-            'ResourcesPage',
-            extra: <String, dynamic>{
-              kTransitionInfoKey: TransitionInfo(
-                hasTransition: true,
-                transitionType: PageTransitionType.fade,
-                duration: Duration(milliseconds: 0),
-              ),
-            },
-          );
-
-          return;
-        } else {
-          return;
-        }
-      } else {
-        return;
-      }
-    }
-  } else {
-    await action_blocks.checkSessionTokenBlock(context);
-    return;
-  }
+    },
+  );
 }
 
-Future checkSessionTokenBlock(BuildContext context) async {
-  ApiCallResponse? introspectResponse;
-
-  if ((FFAppState().token.accessToken != '') &&
-      FFAppState().isLoggedIn) {
-    introspectResponse = await KeycloakGroup.introspectCall.call(
-      token: FFAppState().token.accessToken,
-    );
-
-    if ((introspectResponse.succeeded ?? true)) {
-      if (IntrospectModelStruct.maybeFromMap(
-                  (introspectResponse.jsonBody ?? ''))
-              ?.active ==
-          true) {
-        // Go to dashboard
-
-        context.pushNamed(
-          'ResourcesPage',
-          extra: <String, dynamic>{
-            kTransitionInfoKey: TransitionInfo(
-              hasTransition: true,
-              transitionType: PageTransitionType.fade,
-              duration: Duration(milliseconds: 0),
-            ),
-          },
-        );
-
-        return;
-      } else {
-        await action_blocks.refreshTokenBlock(context);
-        return;
-      }
-    } else {
-      await action_blocks.checkSessionTokenBlock(context);
-      return;
-    }
-  } else {
-    FFAppState().isLoggedIn = false;
-    FFAppState().update(() {});
-    await actions.openWebLogin();
-    return;
-  }
+Future<dynamic> retriggerApi(BuildContext context) async {
+  return null;
 }
+
+Future checkSessionTokenBlock(BuildContext context) async {}
+
+Future validateAuth(BuildContext context) async {}
 
 Future refreshTokenBlock(
   BuildContext context, {
   bool? tokenExpired,
 }) async {}
 
-Future logoutBlock(BuildContext context) async {
-  ApiCallResponse? logoutResponse;
+Future<List<ScheduleStruct>?> reuseAPI(
+  BuildContext context, {
+  String? deviceId,
+  int? groupId,
+}) async {
+  ApiCallResponse? apiResult3y8;
+  ApiCallResponse? apiResult8jr;
 
-  logoutResponse = await KeycloakGroup.logoutCall.call();
+  FFAppState().update(() {});
+  await Future.wait([
+    Future(() async {
+      apiResult3y8 = await ScheduleGroup.readScheduleByDeviceIdCall.call();
 
-  if ((logoutResponse.succeeded ?? true)) {
-    FFAppState().isLoggedIn = false;
-    FFAppState().deleteToken();
-    FFAppState().token = TokenResponseModelStruct();
+      if ((apiResult3y8?.succeeded ?? true)) {}
+    }),
+    Future(() async {
+      apiResult8jr = await ScheduleGroup.readScheduleByDeviceGroupCall.call();
 
-    FFAppState().deleteProfile();
-    FFAppState().profile = GetProfileResponseModelStruct();
+      if ((apiResult8jr?.succeeded ?? true)) {
+        FFAppState().update(() {});
+      }
+    }),
+  ]);
 
-    FFAppState().update(() {});
-    await actions.openWebLogin();
-    return;
-  } else {
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(
-          'Logout failed.',
-          style: TextStyle(
-            color: FlutterFlowTheme.of(context).info,
-          ),
-        ),
-        duration: Duration(milliseconds: 4000),
-        backgroundColor: FlutterFlowTheme.of(context).error,
-      ),
-    );
-    return;
-  }
+  return null;
 }
-
-Future handleException(
-  BuildContext context, {
-  dynamic error,
-}) async {}
-
-Future actionBlock(BuildContext context) async {}
-
-Future handle(
-  BuildContext context, {
-  dynamic payload,
-}) async {}

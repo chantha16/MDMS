@@ -1,0 +1,64 @@
+import '/backend/schema/enums/enums.dart';
+import '/components/layout/main_layout/main_layout_widget.dart';
+import '/flutter_flow/flutter_flow_util.dart';
+import '/modules/events/components/event_view/event_view_widget.dart';
+import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
+import 'package:flutter/material.dart';
+import 'event_page_model.dart';
+export 'event_page_model.dart';
+
+class EventPageWidget extends StatefulWidget {
+  const EventPageWidget({super.key});
+
+  static String routeName = 'EventPage';
+  static String routePath = '/events';
+
+  @override
+  State<EventPageWidget> createState() => _EventPageWidgetState();
+}
+
+class _EventPageWidgetState extends State<EventPageWidget> {
+  late EventPageModel _model;
+
+  final scaffoldKey = GlobalKey<ScaffoldState>();
+
+  @override
+  void initState() {
+    super.initState();
+    _model = createModel(context, () => EventPageModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
+  }
+
+  @override
+  void dispose() {
+    _model.dispose();
+
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        FocusScope.of(context).unfocus();
+        FocusManager.instance.primaryFocus?.unfocus();
+      },
+      child: Scaffold(
+        key: scaffoldKey,
+        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        body: SafeArea(
+          top: true,
+          child: wrapWithModel(
+            model: _model.mainLayoutModel,
+            updateCallback: () => safeSetState(() {}),
+            child: MainLayoutWidget(
+              menu: MenuItems.Events,
+              child: () => EventViewWidget(),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}

@@ -1,6 +1,8 @@
 import '/flutter_flow/flutter_flow_data_table.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import 'package:epower_library_llyhdh/app_state.dart'
+    as epower_library_llyhdh_app_state;
+import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'sample_data_table_model.dart';
@@ -40,6 +42,7 @@ class _SampleDataTableWidgetState extends State<SampleDataTableWidget> {
   @override
   Widget build(BuildContext context) {
     context.watch<FFAppState>();
+    context.watch<epower_library_llyhdh_app_state.FFAppState>();
 
     return Builder(
       builder: (context) {

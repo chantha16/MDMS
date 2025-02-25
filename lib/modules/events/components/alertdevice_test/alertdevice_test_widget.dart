@@ -1,7 +1,8 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/index.dart';
+import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'alertdevice_test_model.dart';
 export 'alertdevice_test_model.dart';
@@ -139,7 +140,7 @@ class _AlertdeviceTestWidgetState extends State<AlertdeviceTestWidget> {
                                 highlightColor: Colors.transparent,
                                 onTap: () async {
                                   context.pushNamed(
-                                    'EventDetailPage',
+                                    EventDetailPageWidget.routeName,
                                     extra: <String, dynamic>{
                                       kTransitionInfoKey: TransitionInfo(
                                         hasTransition: true,

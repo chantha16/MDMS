@@ -1,48 +1,45 @@
 // ignore_for_file: unnecessary_getters_setters
 
 import '/backend/schema/util/schema_util.dart';
-import '/backend/schema/enums/enums.dart';
 
 import 'index.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 
 class IdStruct extends BaseStruct {
   IdStruct({
-    Idseason? id,
+    String? id,
   }) : _id = id;
 
   // "Id" field.
-  Idseason? _id;
-  Idseason? get id => _id;
-  set id(Idseason? val) => _id = val;
+  String? _id;
+  String get id => _id ?? '';
+  set id(String? val) => _id = val;
 
   bool hasId() => _id != null;
 
   static IdStruct fromMap(Map<String, dynamic> data) => IdStruct(
-        id: data['Id'] is Idseason
-            ? data['Id']
-            : deserializeEnum<Idseason>(data['Id']),
+        id: data['Id'] as String?,
       );
 
   static IdStruct? maybeFromMap(dynamic data) =>
       data is Map ? IdStruct.fromMap(data.cast<String, dynamic>()) : null;
 
   Map<String, dynamic> toMap() => {
-        'Id': _id?.serialize(),
+        'Id': _id,
       }.withoutNulls;
 
   @override
   Map<String, dynamic> toSerializableMap() => {
         'Id': serializeParam(
           _id,
-          ParamType.Enum,
+          ParamType.String,
         ),
       }.withoutNulls;
 
   static IdStruct fromSerializableMap(Map<String, dynamic> data) => IdStruct(
-        id: deserializeParam<Idseason>(
+        id: deserializeParam(
           data['Id'],
-          ParamType.Enum,
+          ParamType.String,
           false,
         ),
       );
@@ -60,7 +57,7 @@ class IdStruct extends BaseStruct {
 }
 
 IdStruct createIdStruct({
-  Idseason? id,
+  String? id,
 }) =>
     IdStruct(
       id: id,

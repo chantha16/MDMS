@@ -1,14 +1,17 @@
 import '/backend/schema/enums/enums.dart';
-import '/components/main_layout_v2/main_layout_v2_widget.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
+import '/components/layout/main_layout/main_layout_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/modules/events/components/event_detail_view/event_detail_view_widget.dart';
+import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'event_detail_page_model.dart';
 export 'event_detail_page_model.dart';
 
 class EventDetailPageWidget extends StatefulWidget {
   const EventDetailPageWidget({super.key});
+
+  static String routeName = 'EventDetailPage';
+  static String routePath = '/event-deatails';
 
   @override
   State<EventDetailPageWidget> createState() => _EventDetailPageWidgetState();
@@ -47,9 +50,9 @@ class _EventDetailPageWidgetState extends State<EventDetailPageWidget> {
         body: SafeArea(
           top: true,
           child: wrapWithModel(
-            model: _model.mainLayoutV2Model,
+            model: _model.mainLayoutModel,
             updateCallback: () => safeSetState(() {}),
-            child: MainLayoutV2Widget(
+            child: MainLayoutWidget(
               menu: MenuItems.Events,
               child: () => EventDetailViewWidget(),
             ),

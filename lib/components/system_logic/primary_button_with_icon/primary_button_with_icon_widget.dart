@@ -1,6 +1,6 @@
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'primary_button_with_icon_model.dart';
 export 'primary_button_with_icon_model.dart';
@@ -63,11 +63,18 @@ class _PrimaryButtonWithIconWidgetState
         width: 120.0,
         height: 40.0,
         padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+        iconAlignment: IconAlignment.end,
         iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-        color: widget.colorbottom,
+        color: valueOrDefault<Color>(
+          widget.colorbottom,
+          FlutterFlowTheme.of(context).primary,
+        ),
         textStyle: FlutterFlowTheme.of(context).titleSmall.override(
               fontFamily: 'Inter Tight',
-              color: widget.textcolor,
+              color: valueOrDefault<Color>(
+                widget.textcolor,
+                FlutterFlowTheme.of(context).secondaryBackground,
+              ),
               fontSize: 14.0,
               letterSpacing: 0.0,
               fontWeight: FontWeight.w500,

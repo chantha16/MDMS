@@ -1,10 +1,12 @@
 import '/components/data_table/row_items/row_items_widget.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/flutter_flow/custom_functions.dart' as functions;
+import 'package:epower_library_llyhdh/app_state.dart'
+    as epower_library_llyhdh_app_state;
+import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
@@ -71,6 +73,7 @@ class _DataTableWidgetState extends State<DataTableWidget> {
   @override
   Widget build(BuildContext context) {
     context.watch<FFAppState>();
+    context.watch<epower_library_llyhdh_app_state.FFAppState>();
 
     return Container(
       width: double.infinity,

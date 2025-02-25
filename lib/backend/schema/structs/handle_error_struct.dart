@@ -10,9 +10,11 @@ class HandleErrorStruct extends BaseStruct {
     String? error,
     String? path,
     String? code,
+    String? warning,
   })  : _error = error,
         _path = path,
-        _code = code;
+        _code = code,
+        _warning = warning;
 
   // "error" field.
   String? _error;
@@ -35,11 +37,20 @@ class HandleErrorStruct extends BaseStruct {
 
   bool hasCode() => _code != null;
 
+  // "warning" field.
+  String? _warning;
+  String get warning =>
+      _warning ?? 'Code field already exists. Please use a different value.';
+  set warning(String? val) => _warning = val;
+
+  bool hasWarning() => _warning != null;
+
   static HandleErrorStruct fromMap(Map<String, dynamic> data) =>
       HandleErrorStruct(
         error: data['error'] as String?,
         path: data['path'] as String?,
         code: data['code'] as String?,
+        warning: data['warning'] as String?,
       );
 
   static HandleErrorStruct? maybeFromMap(dynamic data) => data is Map
@@ -50,6 +61,7 @@ class HandleErrorStruct extends BaseStruct {
         'error': _error,
         'path': _path,
         'code': _code,
+        'warning': _warning,
       }.withoutNulls;
 
   @override
@@ -64,6 +76,10 @@ class HandleErrorStruct extends BaseStruct {
         ),
         'code': serializeParam(
           _code,
+          ParamType.String,
+        ),
+        'warning': serializeParam(
+          _warning,
           ParamType.String,
         ),
       }.withoutNulls;
@@ -85,6 +101,11 @@ class HandleErrorStruct extends BaseStruct {
           ParamType.String,
           false,
         ),
+        warning: deserializeParam(
+          data['warning'],
+          ParamType.String,
+          false,
+        ),
       );
 
   @override
@@ -95,20 +116,23 @@ class HandleErrorStruct extends BaseStruct {
     return other is HandleErrorStruct &&
         error == other.error &&
         path == other.path &&
-        code == other.code;
+        code == other.code &&
+        warning == other.warning;
   }
 
   @override
-  int get hashCode => const ListEquality().hash([error, path, code]);
+  int get hashCode => const ListEquality().hash([error, path, code, warning]);
 }
 
 HandleErrorStruct createHandleErrorStruct({
   String? error,
   String? path,
   String? code,
+  String? warning,
 }) =>
     HandleErrorStruct(
       error: error,
       path: path,
       code: code,
+      warning: warning,
     );

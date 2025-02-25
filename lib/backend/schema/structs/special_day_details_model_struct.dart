@@ -8,19 +8,17 @@ import '/flutter_flow/flutter_flow_util.dart';
 class SpecialDayDetailsModelStruct extends BaseStruct {
   SpecialDayDetailsModelStruct({
     int? id,
-    String? name,
+    String? specialDayId,
     String? description,
     String? startDate,
     String? endDate,
     bool? active,
-    DateTime? date,
   })  : _id = id,
-        _name = name,
+        _specialDayId = specialDayId,
         _description = description,
         _startDate = startDate,
         _endDate = endDate,
-        _active = active,
-        _date = date;
+        _active = active;
 
   // "Id" field.
   int? _id;
@@ -31,12 +29,12 @@ class SpecialDayDetailsModelStruct extends BaseStruct {
 
   bool hasId() => _id != null;
 
-  // "Name" field.
-  String? _name;
-  String get name => _name ?? '';
-  set name(String? val) => _name = val;
+  // "SpecialDayId" field.
+  String? _specialDayId;
+  String get specialDayId => _specialDayId ?? '';
+  set specialDayId(String? val) => _specialDayId = val;
 
-  bool hasName() => _name != null;
+  bool hasSpecialDayId() => _specialDayId != null;
 
   // "Description" field.
   String? _description;
@@ -66,22 +64,14 @@ class SpecialDayDetailsModelStruct extends BaseStruct {
 
   bool hasActive() => _active != null;
 
-  // "date" field.
-  DateTime? _date;
-  DateTime? get date => _date;
-  set date(DateTime? val) => _date = val;
-
-  bool hasDate() => _date != null;
-
   static SpecialDayDetailsModelStruct fromMap(Map<String, dynamic> data) =>
       SpecialDayDetailsModelStruct(
         id: castToType<int>(data['Id']),
-        name: data['Name'] as String?,
+        specialDayId: data['SpecialDayId'] as String?,
         description: data['Description'] as String?,
         startDate: data['StartDate'] as String?,
         endDate: data['EndDate'] as String?,
         active: data['Active'] as bool?,
-        date: data['date'] as DateTime?,
       );
 
   static SpecialDayDetailsModelStruct? maybeFromMap(dynamic data) => data is Map
@@ -90,12 +80,11 @@ class SpecialDayDetailsModelStruct extends BaseStruct {
 
   Map<String, dynamic> toMap() => {
         'Id': _id,
-        'Name': _name,
+        'SpecialDayId': _specialDayId,
         'Description': _description,
         'StartDate': _startDate,
         'EndDate': _endDate,
         'Active': _active,
-        'date': _date,
       }.withoutNulls;
 
   @override
@@ -104,8 +93,8 @@ class SpecialDayDetailsModelStruct extends BaseStruct {
           _id,
           ParamType.int,
         ),
-        'Name': serializeParam(
-          _name,
+        'SpecialDayId': serializeParam(
+          _specialDayId,
           ParamType.String,
         ),
         'Description': serializeParam(
@@ -124,10 +113,6 @@ class SpecialDayDetailsModelStruct extends BaseStruct {
           _active,
           ParamType.bool,
         ),
-        'date': serializeParam(
-          _date,
-          ParamType.DateTime,
-        ),
       }.withoutNulls;
 
   static SpecialDayDetailsModelStruct fromSerializableMap(
@@ -138,8 +123,8 @@ class SpecialDayDetailsModelStruct extends BaseStruct {
           ParamType.int,
           false,
         ),
-        name: deserializeParam(
-          data['Name'],
+        specialDayId: deserializeParam(
+          data['SpecialDayId'],
           ParamType.String,
           false,
         ),
@@ -163,11 +148,6 @@ class SpecialDayDetailsModelStruct extends BaseStruct {
           ParamType.bool,
           false,
         ),
-        date: deserializeParam(
-          data['date'],
-          ParamType.DateTime,
-          false,
-        ),
       );
 
   @override
@@ -177,34 +157,31 @@ class SpecialDayDetailsModelStruct extends BaseStruct {
   bool operator ==(Object other) {
     return other is SpecialDayDetailsModelStruct &&
         id == other.id &&
-        name == other.name &&
+        specialDayId == other.specialDayId &&
         description == other.description &&
         startDate == other.startDate &&
         endDate == other.endDate &&
-        active == other.active &&
-        date == other.date;
+        active == other.active;
   }
 
   @override
   int get hashCode => const ListEquality()
-      .hash([id, name, description, startDate, endDate, active, date]);
+      .hash([id, specialDayId, description, startDate, endDate, active]);
 }
 
 SpecialDayDetailsModelStruct createSpecialDayDetailsModelStruct({
   int? id,
-  String? name,
+  String? specialDayId,
   String? description,
   String? startDate,
   String? endDate,
   bool? active,
-  DateTime? date,
 }) =>
     SpecialDayDetailsModelStruct(
       id: id,
-      name: name,
+      specialDayId: specialDayId,
       description: description,
       startDate: startDate,
       endDate: endDate,
       active: active,
-      date: date,
     );

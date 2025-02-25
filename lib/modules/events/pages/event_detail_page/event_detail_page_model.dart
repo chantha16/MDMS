@@ -1,4 +1,4 @@
-import '/components/main_layout_v2/main_layout_v2_widget.dart';
+import '/components/layout/main_layout/main_layout_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'event_detail_page_widget.dart' show EventDetailPageWidget;
 import 'package:flutter/material.dart';
@@ -6,16 +6,16 @@ import 'package:flutter/material.dart';
 class EventDetailPageModel extends FlutterFlowModel<EventDetailPageWidget> {
   ///  State fields for stateful widgets in this page.
 
-  // Model for MainLayoutV2 component.
-  late MainLayoutV2Model mainLayoutV2Model;
+  // Model for MainLayout component.
+  late MainLayoutModel mainLayoutModel;
 
   @override
   void initState(BuildContext context) {
-    mainLayoutV2Model = createModel(context, () => MainLayoutV2Model());
+    mainLayoutModel = createModel(context, () => MainLayoutModel());
   }
 
   @override
   void dispose() {
-    mainLayoutV2Model.dispose();
+    mainLayoutModel.dispose();
   }
 }
