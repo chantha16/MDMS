@@ -35,7 +35,35 @@ void main() async {
         .initializePersistedState();
   });
 
-  group('Nary', () {});
+  group('Nary', () {
+    testWidgets('Add Device', (WidgetTester tester) async {
+      _overrideOnError();
+
+      await tester.pumpWidget(MultiProvider(
+        providers: [
+          ChangeNotifierProvider(
+            create: (context) => FFAppState(),
+          ),
+          ChangeNotifierProvider(
+            create: (context) => epower_library_llyhdh_app_state.FFAppState(),
+          ),
+        ],
+        child: MyApp(
+          entryPage: DashboardPageWidget(),
+        ),
+      ));
+
+      await tester.tap(find.byKey(ValueKey('DashboardPage_birf')));
+      await tester.tap(find.text('Device Management'));
+      await tester.tap(find.text('Devices'));
+      await tester.pumpAndSettle(Duration(milliseconds: 1000));
+      expect(find.byKey(ValueKey('DeviceLists_hy8u')), findsOneWidget);
+      await tester.pumpAndSettle(Duration(milliseconds: 1000));
+      await tester.tap(find.text('Add'));
+      await tester.pumpAndSettle(Duration(milliseconds: 1000));
+      expect(find.byKey(ValueKey('pDeviceDetails_4svf')), findsOneWidget);
+    });
+  });
 
   group('Chantha', () {
     testWidgets('DeviceManagement', (WidgetTester tester) async {
