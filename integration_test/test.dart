@@ -54,13 +54,14 @@ void main() async {
       ));
 
       await tester.tap(find.byKey(ValueKey('DashboardPage_birf')));
+      await tester.pumpAndSettle(Duration(milliseconds: 2000));
       await tester.tap(find.text('Device Management'));
       await tester.tap(find.text('Devices'));
-      await tester.pumpAndSettle(Duration(milliseconds: 1000));
+      await tester.pumpAndSettle(Duration(milliseconds: 2000));
       expect(find.byKey(ValueKey('DeviceLists_hy8u')), findsOneWidget);
-      await tester.pumpAndSettle(Duration(milliseconds: 1000));
+      await tester.pumpAndSettle(Duration(milliseconds: 2000));
       await tester.tap(find.text('Add'));
-      await tester.pumpAndSettle(Duration(milliseconds: 1000));
+      await tester.pumpAndSettle(Duration(milliseconds: 2000));
       expect(find.byKey(ValueKey('pDeviceDetails_4svf')), findsOneWidget);
     });
   });
@@ -85,7 +86,9 @@ void main() async {
 
       await tester.pumpAndSettle(Duration(milliseconds: 10000));
       await tester.tap(find.text('Device Management'));
-      await tester.pumpAndSettle(Duration(milliseconds: 10));
+      await tester.pumpAndSettle(Duration(milliseconds: 1000));
+      expect(find.text(' Devices'), findsOneWidget);
+      await tester.pumpAndSettle(Duration(milliseconds: 1000));
     });
   });
 }
