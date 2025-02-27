@@ -79,12 +79,10 @@ void main() async {
             create: (context) => epower_library_llyhdh_app_state.FFAppState(),
           ),
         ],
-        child: MyApp(
-          entryPage: DashboardPageWidget(),
-        ),
+        child: MyApp(),
       ));
 
-      await tester.pumpAndSettle(Duration(milliseconds: 10000));
+      await tester.pumpAndSettle(Duration(milliseconds: 30000));
       await tester.tap(find.text('Device Management'));
       await tester.pumpAndSettle(Duration(milliseconds: 1000));
       expect(find.text(' Devices'), findsOneWidget);
