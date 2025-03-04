@@ -38,7 +38,8 @@ void main() async {
   group('Chantha', () {
     testWidgets('DeviceManagement', (WidgetTester tester) async {
       _overrideOnError();
-
+      await FirebaseAuth.instance.signInWithEmailAndPassword(
+          email: 'chantha.voeurn@oone.bz', password: 'P111@oone');
       await tester.pumpWidget(MultiProvider(
         providers: [
           ChangeNotifierProvider(
@@ -48,9 +49,7 @@ void main() async {
             create: (context) => epower_library_llyhdh_app_state.FFAppState(),
           ),
         ],
-        child: MyApp(
-          entryPage: DashboardPageWidget(),
-        ),
+        child: MyApp(),
       ));
 
       await tester.pumpAndSettle(Duration(milliseconds: 20000));
@@ -60,7 +59,8 @@ void main() async {
 
     testWidgets('Authentication', (WidgetTester tester) async {
       _overrideOnError();
-
+      await FirebaseAuth.instance.signInWithEmailAndPassword(
+          email: 'chantha.voeurn@oone.bz', password: 'P111@oone');
       await tester.pumpWidget(MultiProvider(
         providers: [
           ChangeNotifierProvider(
@@ -70,9 +70,7 @@ void main() async {
             create: (context) => epower_library_llyhdh_app_state.FFAppState(),
           ),
         ],
-        child: MyApp(
-          entryPage: AuthenticationPageWidget(),
-        ),
+        child: MyApp(),
       ));
 
       await tester.pumpAndSettle(Duration(milliseconds: 10000));
