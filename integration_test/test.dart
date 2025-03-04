@@ -48,7 +48,9 @@ void main() async {
             create: (context) => epower_library_llyhdh_app_state.FFAppState(),
           ),
         ],
-        child: MyApp(),
+        child: MyApp(
+          entryPage: DashboardPageWidget(),
+        ),
       ));
 
       await tester.pumpAndSettle(Duration(milliseconds: 20000));
