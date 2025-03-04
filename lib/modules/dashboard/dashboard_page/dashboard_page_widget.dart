@@ -5,7 +5,6 @@ import '/components/layout/main_layout/main_layout_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/modules/dashboard/components/dashboard_view/dashboard_view_widget.dart';
 import '/backend/schema/structs/index.dart';
-import '/index.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
@@ -64,7 +63,7 @@ class _DashboardPageWidgetState extends State<DashboardPageWidget> {
           GoRouter.of(context).clearRedirectLocation();
 
           _navigate = () => context.goNamedAuth(
-              AuthenticationPageWidget.routeName, context.mounted);
+              DashboardPageWidget.routeName, context.mounted);
         }
       }
 
