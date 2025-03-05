@@ -1,4 +1,5 @@
-import 'package:collection/collection.dart';
+import 'package:ff_commons/flutter_flow/enums.dart';
+export 'package:ff_commons/flutter_flow/enums.dart';
 
 enum UserProfile {
   email,
@@ -158,15 +159,6 @@ enum SelectDeviceOption {
 enum TypeSchedule {
   Group,
   Personal,
-}
-
-extension FFEnumExtensions<T extends Enum> on T {
-  String serialize() => name;
-}
-
-extension FFEnumListExtensions<T extends Enum> on Iterable<T> {
-  T? deserialize(String? value) =>
-      firstWhereOrNull((e) => e.serialize() == value);
 }
 
 T? deserializeEnum<T>(String? value) {

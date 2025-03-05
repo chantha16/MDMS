@@ -80,18 +80,19 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) =>
       navigatorKey: appNavigatorKey,
       errorBuilder: (context, state) => appStateNotifier.loggedIn
           ? entryPage ?? DashboardPageWidget()
-          : DashboardPageWidget(),
+          : AuthenticationPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
               ? entryPage ?? DashboardPageWidget()
-              : DashboardPageWidget(),
+              : AuthenticationPageWidget(),
         ),
         FFRoute(
           name: DashboardPageWidget.routeName,
           path: DashboardPageWidget.routePath,
+          requireAuth: true,
           builder: (context, params) => DashboardPageWidget(
             code: params.getParam(
               'code',
@@ -568,7 +569,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.uri.toString());
-            return '/dashboard';
+            return '/authentication';
           }
           return null;
         },

@@ -36,6 +36,27 @@ void main() async {
   });
 
   group('Chantha', () {
+    testWidgets('Authentication', (WidgetTester tester) async {
+      _overrideOnError();
+      await FirebaseAuth.instance.signInWithEmailAndPassword(
+          email: 'chantha.voeurn@oone.bz', password: 'P111@oone');
+      await tester.pumpWidget(MultiProvider(
+        providers: [
+          ChangeNotifierProvider(
+            create: (context) => FFAppState(),
+          ),
+          ChangeNotifierProvider(
+            create: (context) => epower_library_llyhdh_app_state.FFAppState(),
+          ),
+        ],
+        child: const MyApp(),
+      ));
+
+      await tester.pumpAndSettle(const Duration(milliseconds: 10000));
+      expect(find.text('Email'), findsOneWidget);
+      await tester.pumpAndSettle(const Duration(milliseconds: 10000));
+    });
+
     testWidgets('DeviceManagement', (WidgetTester tester) async {
       _overrideOnError();
 
@@ -53,30 +74,9 @@ void main() async {
         ),
       ));
 
-      await tester.pumpAndSettle(Duration(milliseconds: 20000));
+      await tester.pumpAndSettle(const Duration(milliseconds: 20000));
       await tester.tap(find.text('Setting'));
-      await tester.pumpAndSettle(Duration(milliseconds: 10000));
-    });
-
-    testWidgets('Authentication', (WidgetTester tester) async {
-      _overrideOnError();
-      await FirebaseAuth.instance.signInWithEmailAndPassword(
-          email: 'chantha.voeurn@oone.bz', password: 'P111@oone');
-      await tester.pumpWidget(MultiProvider(
-        providers: [
-          ChangeNotifierProvider(
-            create: (context) => FFAppState(),
-          ),
-          ChangeNotifierProvider(
-            create: (context) => epower_library_llyhdh_app_state.FFAppState(),
-          ),
-        ],
-        child: MyApp(),
-      ));
-
-      await tester.pumpAndSettle(Duration(milliseconds: 10000));
-      expect(find.text('Email'), findsOneWidget);
-      await tester.pumpAndSettle(Duration(milliseconds: 10000));
+      await tester.pumpAndSettle(const Duration(milliseconds: 10000));
     });
   });
 }
